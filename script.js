@@ -9,6 +9,8 @@ let worldNameMap = {};
 let wikiExtraData = {}; // Wiki额外信息数据
 let currentScope = 'world'; 
 let gameMode = '', questionPool = [], currentQ = null, score = 0, totalQs = 0, isProcessing = false, myChart = null;
+let footballDifficulty = 'easy'; // 足球模式难度：easy, medium, hard
+let isFootballSubMenu = false; // 是否在足球子菜单中
 
 // --- 模块2: 配置数据 ---
 // 所有翻译数据已直接存储在 countries.json 中，不再需要单独的翻译文件
@@ -85,7 +87,16 @@ function showView(id) {
         console.error("找不到视图 ID:", id); // 方便调试
     }
 }
-function goHome() { isProcessing = false; closeMap(); showView('view-menu'); }
+function goHome() { 
+    isProcessing = false; 
+    closeMap(); 
+    // 如果在足球子菜单中，返回体育模式主菜单
+    if (isFootballSubMenu && currentScope === 'sports') {
+        enterGameScope('sports');
+    } else {
+        showView('view-menu'); 
+    }
+}
 
 // --- 模块5.1: 游戏范围选择 ---
 function enterGameScope(scope) {
@@ -120,10 +131,11 @@ function enterGameScope(scope) {
         if (compendiumBtn) compendiumBtn.style.display = 'none';
         if (pkModeBtn) pkModeBtn.style.display = 'none';
     } else if (isSports) {
+        isFootballSubMenu = false; // 重置足球子菜单状态
         document.getElementById('menu-title').textContent = "⚽ 体育挑战";
         document.getElementById('menu-subtitle').textContent = `F1赛道 ${dbF1Tracks.length} 条 | 足球俱乐部 ${dbFootballClubs.length} 个`;
         enableBtn('btn-mode-1', 'f1', '🏎️', 'F1赛道挑战', '看赛道图，猜赛道名', '20');
-        enableBtn('btn-mode-2', 'football', '⚽', '足球俱乐部挑战', '看队徽，猜俱乐部名', '20');
+        enableBtn('btn-mode-2', 'football_menu', '⚽', '足球俱乐部挑战', '选择难度开始挑战', '--');
         disableBtn('btn-mode-3');
         disableBtn('btn-mode-all');
         // 隐藏知识图鉴和PK模式按钮（暂时不提供）
@@ -134,6 +146,48 @@ function enterGameScope(scope) {
     }
 
     showView('view-menu');
+    updateBackButton();
+}
+
+// --- 模块5.2: 足球子菜单 ---
+function enterFootballSubMenu() {
+    isFootballSubMenu = true;
+    document.getElementById('menu-title').textContent = "⚽ 足球俱乐部挑战";
+    document.getElementById('menu-subtitle').textContent = `收录 ${dbFootballClubs.length} 个俱乐部`;
+    enableBtn('btn-mode-1', 'football_easy', '⚽', '简单难度', '遮罩30%，可见范围较大', '20');
+    enableBtn('btn-mode-2', 'football_medium', '⚽', '中等难度', '遮罩20%，可见范围适中', '20');
+    enableBtn('btn-mode-3', 'football_hard', '⚽', '困难难度', '遮罩10%，仅显示中心', '20');
+    disableBtn('btn-mode-all');
+    // 隐藏知识图鉴和PK模式按钮
+    const compendiumBtn = document.getElementById('compendium-btn');
+    const pkModeBtn = document.getElementById('pk-mode-btn');
+    if (compendiumBtn) compendiumBtn.style.display = 'none';
+    if (pkModeBtn) pkModeBtn.style.display = 'none';
+    showView('view-menu');
+    updateBackButton();
+}
+
+// --- 模块5.3: 返回按钮处理 ---
+function handleBackBtn() {
+    if (isFootballSubMenu && currentScope === 'sports') {
+        // 在足球子菜单中，返回体育模式主菜单
+        enterGameScope('sports');
+    } else {
+        // 否则返回主入口
+        showView('view-landing');
+    }
+}
+
+// --- 模块5.4: 更新返回按钮文本 ---
+function updateBackButton() {
+    const backBtnText = document.getElementById('back-btn-text');
+    if (backBtnText) {
+        if (isFootballSubMenu && currentScope === 'sports') {
+            backBtnText.textContent = '返回体育模式';
+        } else {
+            backBtnText.textContent = '切换区域';
+        }
+    }
 }
 
 function enableBtn(btnId, modeKey, icon, title, desc, count) {
@@ -173,6 +227,14 @@ function disableBtn(btnId) {
 // --- 模块6: 游戏引擎 ---
 // ============================================================================
 function startGame(modeKey) {
+    if (isProcessing) return;
+    
+    // 如果点击的是足球菜单入口，显示足球难度选择
+    if (modeKey === 'football_menu' && currentScope === 'sports') {
+        enterFootballSubMenu();
+        return;
+    }
+    
     gameMode = modeKey; 
     score = 0; isProcessing = false;
     window.currentGameSeed = null; // 重置种子
@@ -254,8 +316,9 @@ function startGame(modeKey) {
         if (gameMode === 'f1') {
             // F1模式：看赛道图猜赛道名
             questionPool = dbF1Tracks.sort(()=>Math.random()-0.5).slice(0, 20);
-        } else if (gameMode === 'football') {
-            // 足球模式：看队徽猜俱乐部名
+        } else if (gameMode.startsWith('football_')) {
+            // 足球模式：看队徽猜俱乐部名（根据难度）
+            footballDifficulty = gameMode.split('_')[1]; // 提取难度：easy, medium, hard
             questionPool = dbFootballClubs.sort(()=>Math.random()-0.5).slice(0, 20);
         }
     }
@@ -271,7 +334,7 @@ function startGame(modeKey) {
     else if (currentScope === 'china') prefix = '🇨🇳 ';
     else if (currentScope === 'sports') {
         if (gameMode === 'f1') prefix = '🏎️ ';
-        else if (gameMode === 'football') prefix = '⚽ ';
+        else if (gameMode.startsWith('football_')) prefix = '⚽ ';
     }
     
     let modeLabel = "挑战中";
@@ -330,7 +393,12 @@ function nextRound() {
     plate.style.display = 'none';
     city.style.display = 'none';
     img.classList.remove('silhouette');
-    img.classList.remove('football-mask');
+    img.classList.remove('football-mask-easy', 'football-mask-medium', 'football-mask-hard');
+    // 重置图片样式
+    img.style.opacity = '1';
+    img.style.transition = '';
+    // 清除badge默认文本
+    badge.textContent = '';
 
     if (currentScope === 'world') {
         img.style.display = 'block';
@@ -365,17 +433,37 @@ function nextRound() {
             img.src = currentQ.img;
             // 为F1赛道图添加荧光效果（类似国家轮廓）
             img.classList.add('silhouette');
-            img.classList.remove('football-mask');
+            img.classList.remove('football-mask-easy', 'football-mask-medium', 'football-mask-hard');
             badge.textContent = "🏎️ 猜赛道";
-        } else if (gameMode === 'football') {
+        } else if (gameMode.startsWith('football_')) {
             // 足球模式：显示队徽，猜俱乐部名
             img.style.display = 'block';
+            // 先设置透明度为0，等加载完成后再显示，避免显示加载中的状态
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.3s';
+            img.onload = function() {
+                this.style.opacity = '1';
+            };
+            img.onerror = function() {
+                console.error('图片加载失败:', currentQ.img);
+                this.style.opacity = '1'; // 即使加载失败也显示
+            };
             img.src = currentQ.img;
             // 移除silhouette类，因为队徽不需要荧光效果
             img.classList.remove('silhouette');
-            // 添加圆形遮罩，只显示中间部分
-            img.classList.add('football-mask');
-            badge.textContent = "⚽ 猜俱乐部";
+            // 移除所有难度遮罩类
+            img.classList.remove('football-mask-easy', 'football-mask-medium', 'football-mask-hard');
+            // 根据难度添加对应的遮罩类
+            if (footballDifficulty === 'easy') {
+                img.classList.add('football-mask-easy');
+                badge.textContent = "⚽ 猜俱乐部 (简单)";
+            } else if (footballDifficulty === 'medium') {
+                img.classList.add('football-mask-medium');
+                badge.textContent = "⚽ 猜俱乐部 (中等)";
+            } else if (footballDifficulty === 'hard') {
+                img.classList.add('football-mask-hard');
+                badge.textContent = "⚽ 猜俱乐部 (困难)";
+            }
         }
     }
 
@@ -385,7 +473,7 @@ function nextRound() {
     else if (currentScope === 'china') sourceDB = dbPlates;
     else if (currentScope === 'sports') {
         if (gameMode === 'f1') sourceDB = dbF1Tracks;
-        else if (gameMode === 'football') sourceDB = dbFootballClubs;
+        else if (gameMode.startsWith('football_')) sourceDB = dbFootballClubs;
         else sourceDB = [];
     } else sourceDB = [];
     let opts = [currentQ];
@@ -477,7 +565,7 @@ function nextRound() {
                     opts.push(r);
                 }
             }
-        } else if (gameMode === 'football') {
+        } else if (gameMode.startsWith('football_')) {
             // 足球模式：看队徽猜俱乐部名
             // 随机选择3个其他俱乐部作为干扰项
             while(opts.length < 4) {
@@ -520,7 +608,7 @@ function nextRound() {
             if (gameMode === 'f1') {
                 // F1模式：显示赛道名（看赛道图猜赛道名）
                 btn.textContent = opt.name;
-            } else if (gameMode === 'football') {
+            } else if (gameMode.startsWith('football_')) {
                 // 足球模式：显示俱乐部名（看队徽猜俱乐部名）
                 btn.textContent = opt.name;
             }
@@ -556,7 +644,7 @@ function checkAnswer(choice, btn) {
             // F1模式：看赛道图猜赛道名
             isCorrect = (choice.id === currentQ.id);
             correctText = currentQ.name;
-        } else if (gameMode === 'football') {
+        } else if (gameMode.startsWith('football_')) {
             // 足球模式：看队徽猜俱乐部名
             isCorrect = (choice.id === currentQ.id);
             correctText = currentQ.name;
@@ -580,7 +668,7 @@ function checkAnswer(choice, btn) {
         } else if (currentScope === 'sports') {
             if (gameMode === 'f1') {
                 fb.innerHTML = `正确答案: <b>${currentQ.name}</b>`;
-            } else if (gameMode === 'football') {
+            } else if (gameMode.startsWith('football_')) {
                 fb.innerHTML = `正确答案: <b>${currentQ.name}</b>`;
             }
         }

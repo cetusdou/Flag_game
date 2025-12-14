@@ -47,8 +47,8 @@
 
 <div class="container" id="view-menu">
     <div class="menu-header">
-        <button class="icon-btn back-btn" onclick="showView('view-landing')">
-            <span>‹</span> 切换区域
+        <button class="icon-btn back-btn" onclick="handleBackBtn()">
+            <span>‹</span> <span id="back-btn-text">切换区域</span>
         </button>
         <button class="icon-btn" onclick="showRank()">
             <span>🏆</span>
@@ -130,12 +130,12 @@
     <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
     
     <div class="flag-box">
-        <img id="flag-img" class="flag-img" style="display:none" onerror="this.style.display='none'">
+        <img id="flag-img" class="flag-img" style="display:none" loading="lazy" onerror="this.style.display='none'">
         <div id="plate-display" class="license-plate" style="display:none"></div>
         <div id="city-display" class="city-name-large" style="display:none"></div>
     </div>
     
-    <div id="question-type-badge" class="type-badge">猜国家</div>
+    <div id="question-type-badge" class="type-badge"></div>
     <div class="options-grid" id="options-area"></div>
     <div id="answer-feedback"></div>
     
