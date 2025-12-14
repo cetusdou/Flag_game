@@ -434,6 +434,30 @@ h1 {
     color: #B0E0E6;
 }
 
+/* 查看位置按钮 - 蓝色渐变 */
+.game-map-btn {
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%) !important;
+    border: 1px solid rgba(33, 150, 243, 0.5) !important;
+    color: #fff !important;
+}
+.game-map-btn:hover {
+    background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%) !important;
+    border-color: rgba(33, 150, 243, 0.7) !important;
+    transform: translateY(-2px);
+}
+
+/* 下一题按钮 - 绿色渐变 */
+.next-btn {
+    background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%) !important;
+    border: 1px solid rgba(76, 175, 80, 0.5) !important;
+    color: #fff !important;
+}
+.next-btn:hover {
+    background: linear-gradient(135deg, #388E3C 0%, #2E7D32 100%) !important;
+    border-color: rgba(76, 175, 80, 0.7) !important;
+    transform: translateY(-2px);
+}
+
 #answer-feedback {
     margin-top: 15px; 
     padding: 15px;
@@ -722,4 +746,73 @@ h1 {
 /* 排行榜特殊样式 */
 #rank-list {
     color: #87CEEB;
+}
+
+/* PK模式种子输入弹窗样式 */
+.pk-seed-card {
+    max-width: 400px;
+    padding: 40px 30px;
+}
+
+.pk-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(255, 107, 107, 0.5));
+}
+
+.pk-seed-input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 255, 136, 0.4);
+    background: rgba(0, 0, 0, 0.4);
+    color: #87CEEB;
+    font-size: 1.2rem;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+
+.pk-seed-input:focus {
+    outline: none;
+    border-color: rgba(0, 255, 136, 0.8);
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.pk-seed-input::placeholder {
+    color: rgba(135, 206, 235, 0.5);
+}
+
+.pk-seed-hint {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.btn-pk-confirm {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%) !important;
+    border-color: rgba(255, 107, 107, 0.6) !important;
+    color: #fff !important;
+}
+
+.btn-pk-confirm:hover {
+    background: linear-gradient(135deg, #FF5252 0%, #FF7043 100%) !important;
+    border-color: rgba(255, 107, 107, 0.8) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+/* 错误提示弹窗样式 */
+.error-card {
+    max-width: 350px;
+    padding: 35px 25px;
+}
+
+.error-icon {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
 }

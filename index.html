@@ -133,8 +133,8 @@
     <div class="options-grid" id="options-area"></div>
     <div id="answer-feedback"></div>
     
-    <button class="menu-btn" style="background:#2196F3; margin-top:10px; display:none" id="game-map-btn" onclick="if(window.currentQ) openMap(window.currentQ)">🗺️ 查看位置</button>
-    <button class="menu-btn" style="background:#4CAF50; margin-top:10px; display:none" id="next-btn" onclick="nextRound()">下一题</button>
+    <button class="menu-btn game-map-btn" style="margin-top:10px; display:none; color:#fff;" id="game-map-btn" onclick="if(window.currentQ) openMap(window.currentQ)">🗺️ 查看位置</button>
+    <button class="menu-btn next-btn" style="margin-top:10px; display:none; color:#fff;" id="next-btn" onclick="nextRound()">下一题</button>
 </div>
 
 <div class="container" id="view-result">
@@ -180,6 +180,31 @@
             <button onclick="closeMap()" style="background:none;border:none;color:white;font-size:1.5rem;padding:0 10px;">✕</button>
         </div>
         <div id="echarts-map-container"></div>
+    </div>
+</div>
+
+<!-- PK模式种子输入弹窗 -->
+<div class="modal-overlay" id="pk-seed-modal" onclick="closePKSeedModal(event)">
+    <div class="glass-card pk-seed-card" onclick="event.stopPropagation()">
+        <div class="pk-icon">⚔️</div>
+        <h2 style="margin-top: 10px; margin-bottom: 5px;">PK模式</h2>
+        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 20px;">输入相同的种子，与朋友进行同题PK！</p>
+        <input type="number" id="pk-seed-input" class="pk-seed-input" placeholder="请输入数字种子..." autofocus>
+        <div class="pk-seed-hint">💡 提示：输入任意数字作为种子，相同种子会生成相同的50题</div>
+        <div class="action-row" style="margin-top: 20px;">
+            <button class="action-btn btn-close" onclick="closePKSeedModal(event)">取消</button>
+            <button class="action-btn btn-pk-confirm" onclick="confirmPKSeed()">开始PK</button>
+        </div>
+    </div>
+</div>
+
+<!-- 错误提示弹窗 -->
+<div class="modal-overlay" id="error-modal" onclick="closeErrorModal(event)">
+    <div class="glass-card error-card" onclick="event.stopPropagation()">
+        <div class="error-icon">⚠️</div>
+        <h2 style="margin-top: 10px; margin-bottom: 15px;">提示</h2>
+        <p id="error-message" style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 20px;"></p>
+        <button class="action-btn btn-pk-confirm" onclick="closeErrorModal(event)" style="width: 100%;">确定</button>
     </div>
 </div>
 

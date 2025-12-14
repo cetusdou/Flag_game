@@ -193,21 +193,9 @@ function startGame(modeKey) {
         else if (modeKey === 'mode_2') questionPool = sovereignPool.sort(()=>Math.random()-0.5).slice(0, 30);
         else if (modeKey === 'mode_3') questionPool = pool.sort(()=>Math.random()-0.5).slice(0, 50);
         else if (modeKey === 'pk') {
-            // PK模式：需要输入种子
-            const seedInput = prompt('请输入PK种子（数字）:\n\n与朋友输入相同的种子，将生成相同的50题进行PK！');
-            if (seedInput === null) {
-                goHome();
-                return;
-            }
-            const seed = parseInt(seedInput);
-            if (isNaN(seed)) {
-                alert('请输入有效的数字！');
-                goHome();
-                return;
-            }
-            window.currentGameSeed = seed;
-            const rng = window.mulberry32(seed);
-            questionPool = window.shuffleArray(sovereignPool, rng).slice(0, 50);
+            // PK模式：需要输入种子 - 使用自定义弹窗
+            showPKSeedModal();
+            return; // 等待用户输入
         } else {
             questionPool = pool.sort(()=>Math.random()-0.5);
         }
@@ -311,13 +299,43 @@ function nextRound() {
     // 生成选项
     let sourceDB = (currentScope === 'world') ? dbWorld : dbPlates;
     let opts = [currentQ];
+    let optionTexts = new Set(); // 用于跟踪已使用的选项文本，避免重复
     
     if (currentScope === 'world' && gameMode === 'mode_1') {
         // 🔥 猜首都模式：只选择有有效中文首都的国家作为干扰项
         let validDB = sourceDB.filter(c => c.capital_cn && c.capital_cn !== "无" && c.capital !== "无");
+        
+        // 如果当前国家有最大城市且与首都不一样，将最大城市也加入选项
+        const currentCapital = currentQ.capital_cn || currentQ.capital;
+        const currentLargestCity = currentQ.largestCity_cn || currentQ.largestCity;
+        if (currentLargestCity && 
+            currentLargestCity !== "" && 
+            currentLargestCity !== currentCapital &&
+            currentLargestCity !== "无") {
+            // 创建一个虚拟选项对象，用于显示最大城市
+            const largestCityOption = {
+                ...currentQ,
+                _isLargestCity: true, // 标记这是最大城市选项
+                _displayText: currentLargestCity
+            };
+            opts.push(largestCityOption);
+            optionTexts.add(currentLargestCity);
+        }
+        
+        // 添加正确答案的首都到已使用文本集合
+        optionTexts.add(currentCapital);
+        
+        // 继续添加其他国家的首都作为干扰项
         while(opts.length < 4) {
             let r = validDB[Math.floor(Math.random() * validDB.length)];
-            if (!opts.includes(r)) opts.push(r);
+            if (!opts.includes(r)) {
+                const rCapital = r.capital_cn || r.capital;
+                // 确保不重复，且不与当前国家的首都或最大城市重复
+                if (!optionTexts.has(rCapital) && rCapital !== currentCapital && rCapital !== currentLargestCity) {
+                    opts.push(r);
+                    optionTexts.add(rCapital);
+                }
+            }
         }
     } else {
         while(opts.length < 4) {
@@ -335,7 +353,16 @@ function nextRound() {
         
         if (currentScope === 'world') {
             // 🔥 猜首都模式使用中文首都
-            btn.textContent = (gameMode === 'mode_1') ? (opt.capital_cn || opt.capital) : opt.name; 
+            if (gameMode === 'mode_1') {
+                // 如果是标记的最大城市选项，显示最大城市
+                if (opt._isLargestCity && opt._displayText) {
+                    btn.textContent = opt._displayText;
+                } else {
+                    btn.textContent = opt.capital_cn || opt.capital;
+                }
+            } else {
+                btn.textContent = opt.name;
+            }
         } else {
             if (gameMode === 'mode_3') btn.textContent = opt.plate;
             else btn.textContent = opt.name;
@@ -352,9 +379,14 @@ function checkAnswer(choice, btn) {
     let correctText = "";
     
     if (currentScope === 'world') {
-        isCorrect = (choice.id === currentQ.id);
-        // 🔥 猜首都模式使用中文首都
-        correctText = (gameMode === 'mode_1') ? (currentQ.capital_cn || currentQ.capital) : currentQ.name;
+        // 🔥 猜首都模式：只有选择当前国家且不是最大城市选项才算正确
+        if (gameMode === 'mode_1') {
+            isCorrect = (choice.id === currentQ.id && !choice._isLargestCity);
+            correctText = currentQ.capital_cn || currentQ.capital;
+        } else {
+            isCorrect = (choice.id === currentQ.id);
+            correctText = currentQ.name;
+        }
     } else {
         isCorrect = (choice.plate === currentQ.plate);
         correctText = (gameMode === 'mode_3') ? currentQ.plate : currentQ.name;
@@ -643,3 +675,107 @@ function initEChartsMap(code) {
 // 将函数暴露到 window 对象，以便在 openMap 中调用
 window.initEChartsMap = initEChartsMap;
 function closeMap() { document.getElementById('map-modal').style.display = 'none'; }
+
+// ============================================================================
+// --- PK模式弹窗处理 ---
+// ============================================================================
+let pendingPKMode = null; // 存储待处理的PK模式
+
+function showPKSeedModal() {
+    pendingPKMode = 'pk'; // 标记为PK模式
+    const modal = document.getElementById('pk-seed-modal');
+    const input = document.getElementById('pk-seed-input');
+    modal.style.display = 'flex';
+    input.value = ''; // 清空输入
+    input.focus(); // 自动聚焦
+    
+    // 监听回车键
+    input.onkeydown = function(e) {
+        if (e.key === 'Enter') {
+            confirmPKSeed();
+        } else if (e.key === 'Escape') {
+            closePKSeedModal();
+        }
+    };
+}
+
+function closePKSeedModal(e) {
+    if (e && e.target.id !== 'pk-seed-modal' && !e.target.closest('.pk-seed-card')) {
+        return; // 点击弹窗内容时不关闭
+    }
+    document.getElementById('pk-seed-modal').style.display = 'none';
+    pendingPKMode = null;
+}
+
+function confirmPKSeed() {
+    const input = document.getElementById('pk-seed-input');
+    const seedValue = input.value.trim();
+    
+    if (!seedValue) {
+        showErrorModal('请输入一个数字种子！');
+        return;
+    }
+    
+    const seed = parseInt(seedValue);
+    if (isNaN(seed)) {
+        showErrorModal('请输入有效的数字！');
+        return;
+    }
+    
+    // 关闭弹窗
+    closePKSeedModal();
+    
+    // 继续PK模式的游戏逻辑
+    window.currentGameSeed = seed;
+    if (currentScope === 'world') {
+        const sovereignPool = dbWorld.filter(c => c.sovereign === true);
+        const rng = window.mulberry32(seed);
+        questionPool = window.shuffleArray(sovereignPool, rng).slice(0, 50);
+    } else {
+        // 中国模式不支持PK
+        showErrorModal('PK模式目前仅支持世界模式！');
+        return;
+    }
+    
+    // 继续游戏流程
+    gameMode = 'pk';
+    totalQs = questionPool.length;
+    if(totalQs === 0) { 
+        showErrorModal('题库为空！'); 
+        return; 
+    }
+
+    score = 0;
+    isProcessing = false;
+    
+    // 重置UI状态
+    document.getElementById('answer-feedback').style.display = 'none';
+    document.getElementById('game-map-btn').style.display = 'none';
+    document.getElementById('next-btn').style.display = 'none';
+
+    let prefix = (currentScope === 'world') ? '🌍 ' : '🇨🇳 ';
+    let modeLabel = `PK模式 (种子: ${window.currentGameSeed})`;
+    document.getElementById('game-mode-label').textContent = prefix + modeLabel;
+    
+    showView('view-game');
+    nextRound();
+}
+
+function showErrorModal(message) {
+    const modal = document.getElementById('error-modal');
+    const messageEl = document.getElementById('error-message');
+    messageEl.textContent = message;
+    modal.style.display = 'flex';
+}
+
+function closeErrorModal(e) {
+    if (e && e.target.id !== 'error-modal' && !e.target.closest('.error-card')) {
+        return;
+    }
+    document.getElementById('error-modal').style.display = 'none';
+    // 如果是在PK模式输入时出错，返回菜单
+    if (pendingPKMode === 'pk') {
+        goHome();
+        pendingPKMode = null;
+    }
+}
