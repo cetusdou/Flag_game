@@ -339,6 +339,14 @@ h1 {
     transition: all 0.5s ease;
 }
 
+/* 足球模式圆形遮罩 - 只显示中间部分 */
+.football-mask {
+    clip-path: circle(30%);
+    -webkit-clip-path: circle(30%);
+    object-fit: cover;
+    border-radius: 0;
+}
+
 /* 🚗 中国车牌特别样式 */
 #view-game-china .flag-box {
     background: linear-gradient(180deg, #e0e0e0 0%, #ffffff 100%);
@@ -590,6 +598,7 @@ h1 {
 .glass-card { 
     width: 85%; 
     max-width: 360px; 
+    max-height: 85vh; 
     background: rgba(40, 40, 60, 0.2); 
     backdrop-filter: blur(50px); 
     -webkit-backdrop-filter: blur(50px); 
@@ -601,6 +610,41 @@ h1 {
     position: relative; 
     animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 自定义滚动条样式 */
+.glass-card::-webkit-scrollbar {
+    width: 6px;
+}
+.glass-card::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.glass-card::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.glass-card::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.wiki-info-content::-webkit-scrollbar {
+    width: 6px;
+}
+.wiki-info-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.wiki-info-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.wiki-info-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 @keyframes popIn { 
     from {transform: scale(0.9); opacity: 0;} 
@@ -619,16 +663,23 @@ h1 {
     margin: 5px 0; 
     font-size: 1.8rem; 
     color: #ffffff;
+    flex-shrink: 0;
 }
 .glass-card p {
     color: #ffffff;
+}
+.glass-card img.flag-large {
+    flex-shrink: 0;
+}
+.glass-card .en-name {
+    flex-shrink: 0;
 }
 .info-grid { 
     display: grid; 
     grid-template-columns: 1fr; 
     gap: 10px; 
     text-align: left; 
-    margin-bottom: 25px; 
+    margin-bottom: 15px; 
     background: rgba(255, 255, 255, 0.05); 
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -636,6 +687,7 @@ h1 {
     border-radius: 16px; 
     margin-top: 15px;
     border: none;
+    flex-shrink: 0;
 }
 .info-row { 
     display: flex; 
@@ -647,7 +699,12 @@ h1 {
 .info-row:last-child { border-bottom: none; padding-bottom: 0; }
 .info-label { color: rgba(255,255,255,0.8); }
 .info-val { color: #ffffff; }
-.action-row { display: flex; gap: 12px; }
+.action-row { 
+    display: flex; 
+    gap: 12px; 
+    margin-top: 10px;
+    flex-shrink: 0;
+}
 .action-btn { 
     flex: 1; 
     padding: 12px; 
@@ -694,6 +751,7 @@ h1 {
 #wiki-info-container {
     margin-top: 15px;
     margin-bottom: 15px;
+    flex-shrink: 0;
 }
 
 .wiki-toggle-btn {
@@ -734,8 +792,11 @@ h1 {
     -webkit-backdrop-filter: blur(15px);
     padding: 15px;
     border-radius: 12px;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 300px;
     animation: slideDown 0.3s ease-out;
+    flex-shrink: 0;
 }
 
 @keyframes slideDown {

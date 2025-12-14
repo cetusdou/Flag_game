@@ -283,6 +283,9 @@
     "currency": "Australian dollar",
     "area": "7,688,287 km2",
     "landmarks": [
+      "Uluru (Ayers Rock)",
+      "Great Barrier Reef",
+      "Sydney Opera House",
       "Charles IIIKing of Australia"
     ]
   },
@@ -666,7 +669,11 @@
     "gini": "51.6high inequality",
     "currency": "Real",
     "area": "8,515,767 km2",
-    "landmarks": []
+    "landmarks": [
+      "Christ the Redeemer",
+      "Sugarloaf Mountain",
+      "Iguazu Falls"
+    ]
   },
   "bb": {
     "id": "bb",
@@ -890,7 +897,11 @@
     "gini": "36.0medium inequality",
     "currency": "Renminbi",
     "area": "9,596,961 km2",
-    "landmarks": []
+    "landmarks": [
+      "Great Wall of China",
+      "Forbidden City",
+      "Terracotta Army"
+    ]
   },
   "ci": {
     "id": "ci",
@@ -1190,6 +1201,9 @@
     "currency": "Euro",
     "area": "357,022 km2",
     "landmarks": [
+      "Brandenburg Gate",
+      "Cologne Cathedral",
+      "Neuschwanstein Castle",
       "C.D. Friedrich, Wanderer above the Sea of Fog (1818)"
     ]
   },
@@ -1520,7 +1534,11 @@
     "gini": "29.8low inequality",
     "currency": "Euro",
     "area": "632,702.3 km2",
-    "landmarks": []
+    "landmarks": [
+      "Eiffel Tower",
+      "Louvre Museum",
+      "Notre-Dame Cathedral"
+    ]
   },
   "fo": {
     "id": "fo",
@@ -1580,6 +1598,9 @@
     "currency": "Pound sterling",
     "area": "244,376 km2",
     "landmarks": [
+      "Big Ben",
+      "Buckingham Palace",
+      "Stonehenge",
       "Charles IIIKing",
       "Robert Burns (1759–1796)"
     ]
@@ -2058,7 +2079,11 @@
     "gini": "25.5low inequality",
     "currency": "Indian rupee",
     "area": "3,287,263 km2",
-    "landmarks": []
+    "landmarks": [
+      "Taj Mahal",
+      "Red Fort",
+      "Qutub Minar"
+    ]
   },
   "io": {
     "id": "io",
@@ -2266,7 +2291,11 @@
     "gini": "32.3medium inequality",
     "currency": "Japanese yen",
     "area": "377,975 km2",
-    "landmarks": []
+    "landmarks": [
+      "Mount Fuji",
+      "Tokyo Tower",
+      "Kinkaku-ji (Golden Pavilion)"
+    ]
   },
   "kz": {
     "id": "kz",
@@ -3671,7 +3700,11 @@
     "gini": "36.0medium inequality",
     "currency": "Russian ruble",
     "area": "17,098,246 km2",
-    "landmarks": []
+    "landmarks": [
+      "Saint Basil's Cathedral",
+      "Kremlin",
+      "Hermitage Museum"
+    ]
   },
   "rw": {
     "id": "rw",
@@ -4498,7 +4531,11 @@
     "area": "3,796,742 sq mi",
     "gini": "41.8medium inequality",
     "currency": "U.S. dollar",
-    "landmarks": []
+    "landmarks": [
+      "Statue of Liberty",
+      "White House",
+      "Golden Gate Bridge"
+    ]
   },
   "uz": {
     "id": "uz",
