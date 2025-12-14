@@ -826,7 +826,7 @@
   },
   {
     "id": "cd",
-    "name": "民主刚果",
+    "name": "刚果（布）",
     "name_en": "DR Congo",
     "fullName": "刚果民主共和国",
     "capital": "Kinshasa",
@@ -844,7 +844,7 @@
   },
   {
     "id": "cg",
-    "name": "刚果",
+    "name": "刚果（金）",
     "name_en": "Congo",
     "fullName": "刚果共和国",
     "capital": "Brazzaville",
@@ -2607,9 +2607,9 @@
   },
   {
     "id": "mk",
-    "name": "北馬其頓",
+    "name": "北马其顿",
     "name_en": "North Macedonia",
-    "fullName": "北馬其頓共和國",
+    "fullName": "北马其顿共和国",
     "capital": "Skopje",
     "region": "Europe",
     "subregion": "Southeast Europe",
@@ -4098,24 +4098,6 @@
     "largestCity": "Funafuti",
     "largestCity_cn": "富纳富提",
     "capital_cn": "富纳富提"
-  },
-  {
-    "id": "tw",
-    "name": "台灣",
-    "name_en": "Taiwan",
-    "fullName": "中華民國",
-    "capital": "Taipei",
-    "region": "Asia",
-    "subregion": "Eastern Asia",
-    "population": 0,
-    "area": 36193,
-    "languages": "Chinese",
-    "currency": "New Taiwan dollar",
-    "hasShape": true,
-    "sovereign": true,
-    "largestCity": "Kaohsiung",
-    "largestCity_cn": "高雄",
-    "capital_cn": "台北"
   },
   {
     "id": "tz",

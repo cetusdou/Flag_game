@@ -351,13 +351,6 @@ h1 {
     min-width: 180px;
     text-align: center;
 }
-.license-plate::after, .license-plate-large::after {
-    content: "·";
-    position: absolute;
-    left: 28%; top: 45%;
-    font-size: 2rem; color: #ccc;
-    transform: translate(-50%, -50%);
-}
 .city-name-large {
     font-size: 3.5rem; 
     font-weight: bold; 
@@ -491,37 +484,55 @@ h1 {
 .search-bar::placeholder {
     color: rgba(135, 206, 235, 0.6);
 }
-.compendium-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding-right: 5px; }
+.compendium-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
+    gap: 10px; 
+    padding-right: 5px; 
+}
 .compendium-item { 
-    background: rgba(135, 206, 235, 0.1); 
-    border: 1px solid rgba(135, 206, 235, 0.3);
+    background: rgba(135, 206, 235, 0.08); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 0px solid rgba(135, 206, 235, 0.3);
     border-radius: 12px; 
     padding: 10px 5px; 
     cursor: pointer; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    justify-content: center; 
+    justify-content: flex-start; /* 从顶部开始，文字用 margin-top: auto 推到底部 */
     font-size: 11px; 
     transition: all 0.3s;
-    /* 固定大小 */
+    /* 固定大小 - 确保等宽等高 */
     width: 100%;
+    min-width: 0; /* 允许内容收缩 */
+    max-width: 100%;
     height: 90px;
     min-height: 90px;
     max-height: 90px;
     box-sizing: border-box;
+    overflow: hidden; /* 防止内容溢出影响布局 */
+    position: relative;
+    text-align: center; /* 确保所有文字内容居中对齐 */
 }
+
+
+
 .compendium-item:hover { 
-    background: rgba(135, 206, 235, 0.2); 
+    background: rgba(135, 206, 235, 0.15); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-color: rgba(135, 206, 235, 0.5);
     transform: translateY(-2px);
 }
 .compendium-item img { 
-    width: 42px; 
-    height: 42px; 
-    object-fit: cover;
+    max-width: 80%;
+    max-height: 60px; /* 限制国旗最大高度，为文字留出空间 */
+    height: auto;
+    object-fit: contain;
     border-radius: 4px; 
-    margin-bottom: 6px;
+    margin-bottom: 4px; /* 减少间距 */
     flex-shrink: 0;
 }
 .compendium-item span { 
@@ -534,6 +545,8 @@ h1 {
     text-align: center;
     line-height: 1.2;
     flex-shrink: 0;
+    display: block;
+    margin-top: auto; /* 确保文字始终在底部 */
 }
 /* 中国模式车牌标签样式 */
 .compendium-item > div {
@@ -542,6 +555,10 @@ h1 {
     white-space: nowrap;
     max-width: 100%;
     flex-shrink: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: auto; /* 确保车牌标签和文字在底部对齐 */
 }
 
 /* 模态框 - 毛玻璃荧光边缘效果 */
@@ -551,7 +568,7 @@ h1 {
     left: 0; 
     width: 100%; 
     height: 100%; 
-    background: rgba(0,0,0,0.8); 
+    background: rgba(63, 62, 68, 0.85); 
     z-index: 100; 
     display: none; 
     align-items: center; 
@@ -562,17 +579,17 @@ h1 {
 .glass-card { 
     width: 85%; 
     max-width: 360px; 
-    background: rgba(40, 40, 60, 0.75); 
-    backdrop-filter: blur(30px); 
-    -webkit-backdrop-filter: blur(30px); 
-    border: 3px solid rgba(0, 255, 136, 0.6); 
+    background: rgba(40, 40, 60, 0.2); 
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px); 
+    border: none; 
     box-shadow: 0 25px 50px rgba(0,0,0,0.5);
     border-radius: 24px; 
     padding: 30px 20px; 
     text-align: center; 
     position: relative; 
     animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-    color: white;
+    color: #ffffff;
 }
 @keyframes popIn { 
     from {transform: scale(0.9); opacity: 0;} 
@@ -582,14 +599,18 @@ h1 {
 .glass-card img.flag-large { 
     width: 140px; 
     border-radius: 12px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    margin-bottom: 15px; 
-    border: 2px solid rgba(0, 255, 136, 0.4);
+    box-shadow: 0 10px 30px rgba(90, 90, 90, 0.5);
+    margin: 0 auto 15px auto; 
+    display: block;
+    border: 0px solid rgba(0, 255, 136, 0.4);
 }
 .glass-card h2 { 
     margin: 5px 0; 
     font-size: 1.8rem; 
-    color: #87CEEB;
+    color: #ffffff;
+}
+.glass-card p {
+    color: #ffffff;
 }
 .info-grid { 
     display: grid; 
@@ -597,60 +618,72 @@ h1 {
     gap: 10px; 
     text-align: left; 
     margin-bottom: 25px; 
-    background: rgba(0,0,0,0.3); 
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     padding: 15px; 
     border-radius: 16px; 
     margin-top: 15px;
-    border: 1px solid rgba(135, 206, 235, 0.2);
+    border: none;
 }
 .info-row { 
     display: flex; 
     justify-content: space-between; 
     padding-bottom: 8px; 
-    border-bottom: 1px solid rgba(135, 206, 235, 0.2); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
     font-size: 0.95rem; 
 }
 .info-row:last-child { border-bottom: none; padding-bottom: 0; }
-.info-label { color: rgba(255,255,255,0.6); }
-.info-val { color: #87CEEB; }
+.info-label { color: rgba(255,255,255,0.8); }
+.info-val { color: #ffffff; }
 .action-row { display: flex; gap: 12px; }
 .action-btn { 
     flex: 1; 
     padding: 12px; 
     border-radius: 12px; 
-    border: 1px solid rgba(135, 206, 235, 0.3); 
+    border: none; 
     cursor: pointer; 
     font-weight: bold; 
-    color: #87CEEB; 
+    color: #ffffff; 
     transition: all 0.3s; 
     font-size: 0.95rem;
-    background: rgba(135, 206, 235, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 .action-btn:active { transform: scale(0.95); }
 .action-btn:hover {
-    border-color: rgba(135, 206, 235, 0.5);
-    background: rgba(135, 206, 235, 0.2);
-    color: #B0E0E6;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 .btn-close { 
     background: rgba(255,255,255,0.1); 
-    border-color: rgba(255,255,255,0.2);
+    border: none;
+    color: #ffffff;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+.btn-close:hover {
+    background: rgba(255,255,255,0.2);
+    color: #ffffff;
 }
 .btn-map { 
-    background: rgba(33, 150, 243, 0.2); 
-    border-color: rgba(33, 150, 243, 0.3);
-    color: #2196F3;
+    background: rgba(255, 255, 255, 0.1); 
+    border: none;
+    color: #ffffff;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 .btn-map:hover {
-    background: rgba(33, 150, 243, 0.3);
-    border-color: rgba(33, 150, 243, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 
 /* 地图容器 */
 .map-modal-content { 
     width: 95%; 
     height: 65vh; 
-    background: #100C2A; 
+    background: #3f3e44; 
     border-radius: 16px; 
     overflow: hidden; 
     position: relative; 
@@ -661,7 +694,7 @@ h1 {
 }
 .map-header { 
     padding: 15px; 
-    background: rgba(0,0,0,0.4); 
+    background: rgba(63, 62, 68, 0.6); 
     backdrop-filter: blur(10px); 
     color: #87CEEB; 
     display: flex; 
@@ -669,7 +702,7 @@ h1 {
     align-items: center; 
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-#echarts-map-container { flex: 1; width: 100%; background: #100C2A; }
+#echarts-map-container { flex: 1; width: 100%; background: #3f3e44; }
 
 /* Loading */
 .loading-screen { 
@@ -678,7 +711,7 @@ h1 {
     left: 0; 
     width: 100%; 
     height: 100%; 
-    background: #0f0c29; 
+    background: #3f3e44; 
     display: flex; 
     justify-content: center; 
     align-items: center; 

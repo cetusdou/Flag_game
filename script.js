@@ -86,11 +86,22 @@ function enterGameScope(scope) {
         enableBtn('btn-mode-2', 'mode_2', '🧩', '形状挑战', '看剪影，猜国家', '30');
         enableBtn('btn-mode-3', 'mode_3', '⚡', '极速冲刺', '快速问答', '50');
         enableBtn('btn-mode-all', 'all', '♾️', '全图鉴', '不重复，死磕到底', 'All');
+        // 显示知识图鉴和PK模式按钮
+        const compendiumBtn = document.getElementById('compendium-btn');
+        const pkModeBtn = document.getElementById('pk-mode-btn');
+        if (compendiumBtn) compendiumBtn.style.display = 'flex';
+        if (pkModeBtn) pkModeBtn.style.display = 'flex';
     } else {
-        enableBtn('btn-mode-1', 'mode_1', '🚗', '简单模式', '地级市 & 省会', '20');
-        enableBtn('btn-mode-2', 'mode_2', '🔥', '困难模式', '含县级市/稀有', '30');
-        enableBtn('btn-mode-3', 'mode_3', '🏙️', '反向挑战', '看城市，猜车牌', '50');
+        // 中国模式下只显示一个游戏模式：看车牌猜地名
+        enableBtn('btn-mode-1', 'mode_1', '🚗', '车牌挑战', '看车牌，猜地名', '50');
+        disableBtn('btn-mode-2');
+        disableBtn('btn-mode-3');
         disableBtn('btn-mode-all');
+        // 隐藏知识图鉴和PK模式按钮
+        const compendiumBtn = document.getElementById('compendium-btn');
+        const pkModeBtn = document.getElementById('pk-mode-btn');
+        if (compendiumBtn) compendiumBtn.style.display = 'none';
+        if (pkModeBtn) pkModeBtn.style.display = 'none';
     }
 
     showView('view-menu');
@@ -136,6 +147,12 @@ function startGame(modeKey) {
     gameMode = modeKey; 
     score = 0; isProcessing = false;
     window.currentGameSeed = null; // 重置种子
+    
+    // 中国模式下暂时不提供PK模式
+    if (modeKey === 'pk' && currentScope === 'china') {
+        alert('中国模式下暂时不提供PK模式功能');
+        return;
+    }
     
     // 重置UI状态
     document.getElementById('answer-feedback').style.display = 'none';
@@ -200,13 +217,9 @@ function startGame(modeKey) {
             questionPool = pool.sort(()=>Math.random()-0.5);
         }
     } else {
-        // 中国模式
-        let pool = [];
-        if (modeKey === 'mode_1') pool = dbPlates.filter(i => i.type === 'prefecture');
-        else if (modeKey === 'mode_2') pool = dbPlates.filter(i => i.type === 'county');
-        else pool = [...dbPlates]; 
-        questionPool = pool.sort(()=>Math.random()-0.5).slice(0, (modeKey==='mode_3'?50:20));
-        if (modeKey === 'mode_2') questionPool = questionPool.slice(0, 30);
+        // 中国模式：看车牌猜地名
+        // 使用所有车牌数据，随机选择50题
+        questionPool = dbPlates.sort(()=>Math.random()-0.5).slice(0, 50);
     }
     
     totalQs = questionPool.length;
@@ -290,9 +303,10 @@ function nextRound() {
             city.textContent = currentQ.name;
             badge.textContent = "🏙️ 猜车牌";
         } else {
+            // 中国模式：显示车牌，猜地名
             plate.style.display = 'inline-block';
             plate.textContent = currentQ.plate;
-            badge.textContent = (currentQ.type === 'county') ? "🏡 猜县级市" : "🏙️ 猜城市";
+            badge.textContent = "看车牌，猜地名";
         }
     }
 
@@ -337,6 +351,46 @@ function nextRound() {
                 }
             }
         }
+    } else if (currentScope === 'china') {
+        // 中国模式：看车牌猜地名
+        // 从车牌中提取省份代码（第一个字符）
+        const provinceCode = currentQ.plate.charAt(0);
+        
+        // 找到同省的其他城市（排除当前城市）
+        const sameProvinceCities = sourceDB.filter(item => {
+            // 提取省份代码
+            const itemProvinceCode = item.plate.charAt(0);
+            // 同省且不是当前城市（注意：一个城市可能对应多个车牌）
+            return itemProvinceCode === provinceCode && 
+                   item.name !== currentQ.name &&
+                   !opts.includes(item);
+        });
+        
+        // 添加两个同省城市作为干扰项
+        let sameProvinceAdded = 0;
+        while (sameProvinceAdded < 2 && sameProvinceCities.length > 0) {
+            const randomIndex = Math.floor(Math.random() * sameProvinceCities.length);
+            const city = sameProvinceCities.splice(randomIndex, 1)[0];
+            if (city && !opts.includes(city)) {
+                opts.push(city);
+                optionTexts.add(city.name);
+                sameProvinceAdded++;
+            }
+        }
+        
+        // 添加一个随机城市（不同省的）
+        while (opts.length < 4) {
+            let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
+            const rProvinceCode = r.plate.charAt(0);
+            // 确保不是同省，且不是当前城市，且名称不重复
+            if (rProvinceCode !== provinceCode && 
+                r.name !== currentQ.name && 
+                !opts.includes(r) &&
+                !optionTexts.has(r.name)) {
+                opts.push(r);
+                optionTexts.add(r.name);
+            }
+        }
     } else {
         while(opts.length < 4) {
             let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
@@ -364,8 +418,8 @@ function nextRound() {
                 btn.textContent = opt.name;
             }
         } else {
-            if (gameMode === 'mode_3') btn.textContent = opt.plate;
-            else btn.textContent = opt.name;
+            // 中国模式：显示地名（看车牌猜地名）
+            btn.textContent = opt.name;
         }
         btn.onclick = () => checkAnswer(opt, btn);
         area.appendChild(btn);
@@ -388,8 +442,11 @@ function checkAnswer(choice, btn) {
             correctText = currentQ.name;
         }
     } else {
-        isCorrect = (choice.plate === currentQ.plate);
-        correctText = (gameMode === 'mode_3') ? currentQ.plate : currentQ.name;
+        // 中国模式：看车牌猜地名
+        // 注意：一个城市可能对应多个车牌（如北京有京A、京C等）
+        // 只要选择的地名与当前车牌对应的地名相同，就算正确
+        isCorrect = (choice.name === currentQ.name);
+        correctText = currentQ.name;
     }
 
     if (isCorrect) { btn.classList.add('correct'); score++; }
@@ -456,6 +513,12 @@ function mulberry32(a) {
 // --- 模块7: 图鉴功能 ---
 // ============================================================================
 function openCompendium() {
+    // 中国模式下暂时不提供知识图鉴
+    if (currentScope === 'china') {
+        alert('中国模式下暂时不提供知识图鉴功能');
+        return;
+    }
+    
     showView('view-compendium');
     const grid = document.getElementById('compendium-grid');
     grid.innerHTML = '';
