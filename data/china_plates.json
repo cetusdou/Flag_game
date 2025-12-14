@@ -1,0 +1,1852 @@
+[
+  {
+    "name": "北京(市区)",
+    "plate": "京A",
+    "type": "prefecture"
+  },
+  {
+    "name": "北京(市区)",
+    "plate": "京C",
+    "type": "county"
+  },
+  {
+    "name": "北京(市区)",
+    "plate": "京E",
+    "type": "county"
+  },
+  {
+    "name": "北京(市区)",
+    "plate": "京F",
+    "type": "county"
+  },
+  {
+    "name": "上海(市区)",
+    "plate": "沪A",
+    "type": "prefecture"
+  },
+  {
+    "name": "上海(市区)",
+    "plate": "沪B",
+    "type": "prefecture"
+  },
+  {
+    "name": "上海(郊区)",
+    "plate": "沪C",
+    "type": "county"
+  },
+  {
+    "name": "上海(市区)",
+    "plate": "沪D",
+    "type": "county"
+  },
+  {
+    "name": "天津(市区)",
+    "plate": "津A",
+    "type": "prefecture"
+  },
+  {
+    "name": "天津(市区)",
+    "plate": "津C",
+    "type": "county"
+  },
+  {
+    "name": "天津(市区)",
+    "plate": "津E",
+    "type": "county"
+  },
+  {
+    "name": "重庆(市区)",
+    "plate": "渝A",
+    "type": "prefecture"
+  },
+  {
+    "name": "重庆(市区)",
+    "plate": "渝B",
+    "type": "prefecture"
+  },
+  {
+    "name": "重庆(区县)",
+    "plate": "渝C",
+    "type": "county"
+  },
+  {
+    "name": "重庆(区县)",
+    "plate": "渝F",
+    "type": "county"
+  },
+  {
+    "name": "石家庄",
+    "plate": "冀A",
+    "type": "prefecture"
+  },
+  {
+    "name": "唐山",
+    "plate": "冀B",
+    "type": "prefecture"
+  },
+  {
+    "name": "秦皇岛",
+    "plate": "冀C",
+    "type": "county"
+  },
+  {
+    "name": "邯郸",
+    "plate": "冀D",
+    "type": "county"
+  },
+  {
+    "name": "邢台",
+    "plate": "冀E",
+    "type": "county"
+  },
+  {
+    "name": "保定",
+    "plate": "冀F",
+    "type": "county"
+  },
+  {
+    "name": "张家口",
+    "plate": "冀G",
+    "type": "county"
+  },
+  {
+    "name": "承德",
+    "plate": "冀H",
+    "type": "county"
+  },
+  {
+    "name": "沧州",
+    "plate": "冀J",
+    "type": "county"
+  },
+  {
+    "name": "廊坊",
+    "plate": "冀R",
+    "type": "county"
+  },
+  {
+    "name": "衡水",
+    "plate": "冀T",
+    "type": "county"
+  },
+  {
+    "name": "太原",
+    "plate": "晋A",
+    "type": "prefecture"
+  },
+  {
+    "name": "大同",
+    "plate": "晋B",
+    "type": "prefecture"
+  },
+  {
+    "name": "阳泉",
+    "plate": "晋C",
+    "type": "county"
+  },
+  {
+    "name": "长治",
+    "plate": "晋D",
+    "type": "county"
+  },
+  {
+    "name": "晋城",
+    "plate": "晋E",
+    "type": "county"
+  },
+  {
+    "name": "朔州",
+    "plate": "晋F",
+    "type": "county"
+  },
+  {
+    "name": "忻州",
+    "plate": "晋H",
+    "type": "county"
+  },
+  {
+    "name": "吕梁",
+    "plate": "晋J",
+    "type": "county"
+  },
+  {
+    "name": "晋中",
+    "plate": "晋K",
+    "type": "county"
+  },
+  {
+    "name": "临汾",
+    "plate": "晋L",
+    "type": "county"
+  },
+  {
+    "name": "运城",
+    "plate": "晋M",
+    "type": "county"
+  },
+  {
+    "name": "呼和浩特",
+    "plate": "蒙A",
+    "type": "prefecture"
+  },
+  {
+    "name": "包头",
+    "plate": "蒙B",
+    "type": "prefecture"
+  },
+  {
+    "name": "乌海",
+    "plate": "蒙C",
+    "type": "county"
+  },
+  {
+    "name": "赤峰",
+    "plate": "蒙D",
+    "type": "county"
+  },
+  {
+    "name": "呼伦贝尔",
+    "plate": "蒙E",
+    "type": "county"
+  },
+  {
+    "name": "兴安盟",
+    "plate": "蒙F",
+    "type": "county"
+  },
+  {
+    "name": "通辽",
+    "plate": "蒙G",
+    "type": "county"
+  },
+  {
+    "name": "锡林郭勒盟",
+    "plate": "蒙H",
+    "type": "county"
+  },
+  {
+    "name": "乌兰察布",
+    "plate": "蒙J",
+    "type": "county"
+  },
+  {
+    "name": "鄂尔多斯",
+    "plate": "蒙K",
+    "type": "county"
+  },
+  {
+    "name": "巴彦淖尔",
+    "plate": "蒙L",
+    "type": "county"
+  },
+  {
+    "name": "阿拉善盟",
+    "plate": "蒙M",
+    "type": "county"
+  },
+  {
+    "name": "沈阳",
+    "plate": "辽A",
+    "type": "prefecture"
+  },
+  {
+    "name": "大连",
+    "plate": "辽B",
+    "type": "prefecture"
+  },
+  {
+    "name": "鞍山",
+    "plate": "辽C",
+    "type": "county"
+  },
+  {
+    "name": "抚顺",
+    "plate": "辽D",
+    "type": "county"
+  },
+  {
+    "name": "本溪",
+    "plate": "辽E",
+    "type": "county"
+  },
+  {
+    "name": "丹东",
+    "plate": "辽F",
+    "type": "county"
+  },
+  {
+    "name": "锦州",
+    "plate": "辽G",
+    "type": "county"
+  },
+  {
+    "name": "营口",
+    "plate": "辽H",
+    "type": "county"
+  },
+  {
+    "name": "阜新",
+    "plate": "辽J",
+    "type": "county"
+  },
+  {
+    "name": "辽阳",
+    "plate": "辽K",
+    "type": "county"
+  },
+  {
+    "name": "盘锦",
+    "plate": "辽L",
+    "type": "county"
+  },
+  {
+    "name": "铁岭",
+    "plate": "辽M",
+    "type": "county"
+  },
+  {
+    "name": "朝阳",
+    "plate": "辽N",
+    "type": "county"
+  },
+  {
+    "name": "葫芦岛",
+    "plate": "辽P",
+    "type": "county"
+  },
+  {
+    "name": "长春",
+    "plate": "吉A",
+    "type": "prefecture"
+  },
+  {
+    "name": "吉林市",
+    "plate": "吉B",
+    "type": "prefecture"
+  },
+  {
+    "name": "四平",
+    "plate": "吉C",
+    "type": "county"
+  },
+  {
+    "name": "辽源",
+    "plate": "吉D",
+    "type": "county"
+  },
+  {
+    "name": "通化",
+    "plate": "吉E",
+    "type": "county"
+  },
+  {
+    "name": "白山",
+    "plate": "吉F",
+    "type": "county"
+  },
+  {
+    "name": "白城",
+    "plate": "吉G",
+    "type": "county"
+  },
+  {
+    "name": "延边",
+    "plate": "吉H",
+    "type": "county"
+  },
+  {
+    "name": "松原",
+    "plate": "吉J",
+    "type": "county"
+  },
+  {
+    "name": "哈尔滨",
+    "plate": "黑A",
+    "type": "prefecture"
+  },
+  {
+    "name": "齐齐哈尔",
+    "plate": "黑B",
+    "type": "prefecture"
+  },
+  {
+    "name": "牡丹江",
+    "plate": "黑C",
+    "type": "county"
+  },
+  {
+    "name": "佳木斯",
+    "plate": "黑D",
+    "type": "county"
+  },
+  {
+    "name": "大庆",
+    "plate": "黑E",
+    "type": "county"
+  },
+  {
+    "name": "伊春",
+    "plate": "黑F",
+    "type": "county"
+  },
+  {
+    "name": "鸡西",
+    "plate": "黑G",
+    "type": "county"
+  },
+  {
+    "name": "鹤岗",
+    "plate": "黑H",
+    "type": "county"
+  },
+  {
+    "name": "双鸭山",
+    "plate": "黑J",
+    "type": "county"
+  },
+  {
+    "name": "七台河",
+    "plate": "黑K",
+    "type": "county"
+  },
+  {
+    "name": "松花江",
+    "plate": "黑L",
+    "type": "county"
+  },
+  {
+    "name": "绥化",
+    "plate": "黑M",
+    "type": "county"
+  },
+  {
+    "name": "黑河",
+    "plate": "黑N",
+    "type": "county"
+  },
+  {
+    "name": "大兴安岭",
+    "plate": "黑P",
+    "type": "county"
+  },
+  {
+    "name": "南京",
+    "plate": "苏A",
+    "type": "prefecture"
+  },
+  {
+    "name": "无锡",
+    "plate": "苏B",
+    "type": "prefecture"
+  },
+  {
+    "name": "徐州",
+    "plate": "苏C",
+    "type": "county"
+  },
+  {
+    "name": "常州",
+    "plate": "苏D",
+    "type": "county"
+  },
+  {
+    "name": "苏州",
+    "plate": "苏E",
+    "type": "county"
+  },
+  {
+    "name": "南通",
+    "plate": "苏F",
+    "type": "county"
+  },
+  {
+    "name": "连云港",
+    "plate": "苏G",
+    "type": "county"
+  },
+  {
+    "name": "淮安",
+    "plate": "苏H",
+    "type": "county"
+  },
+  {
+    "name": "盐城",
+    "plate": "苏J",
+    "type": "county"
+  },
+  {
+    "name": "扬州",
+    "plate": "苏K",
+    "type": "county"
+  },
+  {
+    "name": "镇江",
+    "plate": "苏L",
+    "type": "county"
+  },
+  {
+    "name": "泰州",
+    "plate": "苏M",
+    "type": "county"
+  },
+  {
+    "name": "宿迁",
+    "plate": "苏N",
+    "type": "county"
+  },
+  {
+    "name": "杭州",
+    "plate": "浙A",
+    "type": "prefecture"
+  },
+  {
+    "name": "宁波",
+    "plate": "浙B",
+    "type": "prefecture"
+  },
+  {
+    "name": "温州",
+    "plate": "浙C",
+    "type": "county"
+  },
+  {
+    "name": "绍兴",
+    "plate": "浙D",
+    "type": "county"
+  },
+  {
+    "name": "湖州",
+    "plate": "浙E",
+    "type": "county"
+  },
+  {
+    "name": "嘉兴",
+    "plate": "浙F",
+    "type": "county"
+  },
+  {
+    "name": "金华",
+    "plate": "浙G",
+    "type": "county"
+  },
+  {
+    "name": "衢州",
+    "plate": "浙H",
+    "type": "county"
+  },
+  {
+    "name": "台州",
+    "plate": "浙J",
+    "type": "county"
+  },
+  {
+    "name": "丽水",
+    "plate": "浙K",
+    "type": "county"
+  },
+  {
+    "name": "舟山",
+    "plate": "浙L",
+    "type": "county"
+  },
+  {
+    "name": "合肥",
+    "plate": "皖A",
+    "type": "prefecture"
+  },
+  {
+    "name": "芜湖",
+    "plate": "皖B",
+    "type": "prefecture"
+  },
+  {
+    "name": "蚌埠",
+    "plate": "皖C",
+    "type": "county"
+  },
+  {
+    "name": "淮南",
+    "plate": "皖D",
+    "type": "county"
+  },
+  {
+    "name": "马鞍山",
+    "plate": "皖E",
+    "type": "county"
+  },
+  {
+    "name": "淮北",
+    "plate": "皖F",
+    "type": "county"
+  },
+  {
+    "name": "铜陵",
+    "plate": "皖G",
+    "type": "county"
+  },
+  {
+    "name": "安庆",
+    "plate": "皖H",
+    "type": "county"
+  },
+  {
+    "name": "黄山",
+    "plate": "皖J",
+    "type": "county"
+  },
+  {
+    "name": "阜阳",
+    "plate": "皖K",
+    "type": "county"
+  },
+  {
+    "name": "宿州",
+    "plate": "皖L",
+    "type": "county"
+  },
+  {
+    "name": "滁州",
+    "plate": "皖M",
+    "type": "county"
+  },
+  {
+    "name": "六安",
+    "plate": "皖N",
+    "type": "county"
+  },
+  {
+    "name": "宣城",
+    "plate": "皖P",
+    "type": "county"
+  },
+  {
+    "name": "巢湖",
+    "plate": "皖Q",
+    "type": "county"
+  },
+  {
+    "name": "池州",
+    "plate": "皖R",
+    "type": "county"
+  },
+  {
+    "name": "亳州",
+    "plate": "皖S",
+    "type": "county"
+  },
+  {
+    "name": "福州",
+    "plate": "闽A",
+    "type": "prefecture"
+  },
+  {
+    "name": "莆田",
+    "plate": "闽B",
+    "type": "prefecture"
+  },
+  {
+    "name": "泉州",
+    "plate": "闽C",
+    "type": "county"
+  },
+  {
+    "name": "厦门",
+    "plate": "闽D",
+    "type": "county"
+  },
+  {
+    "name": "漳州",
+    "plate": "闽E",
+    "type": "county"
+  },
+  {
+    "name": "龙岩",
+    "plate": "闽F",
+    "type": "county"
+  },
+  {
+    "name": "三明",
+    "plate": "闽G",
+    "type": "county"
+  },
+  {
+    "name": "南平",
+    "plate": "闽H",
+    "type": "county"
+  },
+  {
+    "name": "宁德",
+    "plate": "闽J",
+    "type": "county"
+  },
+  {
+    "name": "平潭",
+    "plate": "闽K",
+    "type": "county"
+  },
+  {
+    "name": "南昌",
+    "plate": "赣A",
+    "type": "prefecture"
+  },
+  {
+    "name": "赣州",
+    "plate": "赣B",
+    "type": "prefecture"
+  },
+  {
+    "name": "宜春",
+    "plate": "赣C",
+    "type": "county"
+  },
+  {
+    "name": "吉安",
+    "plate": "赣D",
+    "type": "county"
+  },
+  {
+    "name": "上饶",
+    "plate": "赣E",
+    "type": "county"
+  },
+  {
+    "name": "抚州",
+    "plate": "赣F",
+    "type": "county"
+  },
+  {
+    "name": "九江",
+    "plate": "赣G",
+    "type": "county"
+  },
+  {
+    "name": "景德镇",
+    "plate": "赣H",
+    "type": "county"
+  },
+  {
+    "name": "萍乡",
+    "plate": "赣J",
+    "type": "county"
+  },
+  {
+    "name": "新余",
+    "plate": "赣K",
+    "type": "county"
+  },
+  {
+    "name": "鹰潭",
+    "plate": "赣L",
+    "type": "county"
+  },
+  {
+    "name": "南昌",
+    "plate": "赣M",
+    "type": "county"
+  },
+  {
+    "name": "济南",
+    "plate": "鲁A",
+    "type": "prefecture"
+  },
+  {
+    "name": "青岛",
+    "plate": "鲁B",
+    "type": "prefecture"
+  },
+  {
+    "name": "淄博",
+    "plate": "鲁C",
+    "type": "county"
+  },
+  {
+    "name": "枣庄",
+    "plate": "鲁D",
+    "type": "county"
+  },
+  {
+    "name": "东营",
+    "plate": "鲁E",
+    "type": "county"
+  },
+  {
+    "name": "烟台",
+    "plate": "鲁F",
+    "type": "county"
+  },
+  {
+    "name": "潍坊",
+    "plate": "鲁G",
+    "type": "county"
+  },
+  {
+    "name": "济宁",
+    "plate": "鲁H",
+    "type": "county"
+  },
+  {
+    "name": "泰安",
+    "plate": "鲁J",
+    "type": "county"
+  },
+  {
+    "name": "威海",
+    "plate": "鲁K",
+    "type": "county"
+  },
+  {
+    "name": "日照",
+    "plate": "鲁L",
+    "type": "county"
+  },
+  {
+    "name": "滨州",
+    "plate": "鲁M",
+    "type": "county"
+  },
+  {
+    "name": "德州",
+    "plate": "鲁N",
+    "type": "county"
+  },
+  {
+    "name": "聊城",
+    "plate": "鲁P",
+    "type": "county"
+  },
+  {
+    "name": "临沂",
+    "plate": "鲁Q",
+    "type": "county"
+  },
+  {
+    "name": "菏泽",
+    "plate": "鲁R",
+    "type": "county"
+  },
+  {
+    "name": "莱芜",
+    "plate": "鲁S",
+    "type": "county"
+  },
+  {
+    "name": "青岛",
+    "plate": "鲁U",
+    "type": "county"
+  },
+  {
+    "name": "潍坊",
+    "plate": "鲁V",
+    "type": "county"
+  },
+  {
+    "name": "烟台",
+    "plate": "鲁Y",
+    "type": "county"
+  },
+  {
+    "name": "郑州",
+    "plate": "豫A",
+    "type": "prefecture"
+  },
+  {
+    "name": "开封",
+    "plate": "豫B",
+    "type": "prefecture"
+  },
+  {
+    "name": "洛阳",
+    "plate": "豫C",
+    "type": "county"
+  },
+  {
+    "name": "平顶山",
+    "plate": "豫D",
+    "type": "county"
+  },
+  {
+    "name": "安阳",
+    "plate": "豫E",
+    "type": "county"
+  },
+  {
+    "name": "鹤壁",
+    "plate": "豫F",
+    "type": "county"
+  },
+  {
+    "name": "新乡",
+    "plate": "豫G",
+    "type": "county"
+  },
+  {
+    "name": "焦作",
+    "plate": "豫H",
+    "type": "county"
+  },
+  {
+    "name": "濮阳",
+    "plate": "豫J",
+    "type": "county"
+  },
+  {
+    "name": "许昌",
+    "plate": "豫K",
+    "type": "county"
+  },
+  {
+    "name": "漯河",
+    "plate": "豫L",
+    "type": "county"
+  },
+  {
+    "name": "三门峡",
+    "plate": "豫M",
+    "type": "county"
+  },
+  {
+    "name": "商丘",
+    "plate": "豫N",
+    "type": "county"
+  },
+  {
+    "name": "周口",
+    "plate": "豫P",
+    "type": "county"
+  },
+  {
+    "name": "驻马店",
+    "plate": "豫Q",
+    "type": "county"
+  },
+  {
+    "name": "南阳",
+    "plate": "豫R",
+    "type": "county"
+  },
+  {
+    "name": "信阳",
+    "plate": "豫S",
+    "type": "county"
+  },
+  {
+    "name": "济源",
+    "plate": "豫U",
+    "type": "county"
+  },
+  {
+    "name": "武汉",
+    "plate": "鄂A",
+    "type": "prefecture"
+  },
+  {
+    "name": "黄石",
+    "plate": "鄂B",
+    "type": "prefecture"
+  },
+  {
+    "name": "十堰",
+    "plate": "鄂C",
+    "type": "county"
+  },
+  {
+    "name": "荆州",
+    "plate": "鄂D",
+    "type": "county"
+  },
+  {
+    "name": "宜昌",
+    "plate": "鄂E",
+    "type": "county"
+  },
+  {
+    "name": "襄阳",
+    "plate": "鄂F",
+    "type": "county"
+  },
+  {
+    "name": "鄂州",
+    "plate": "鄂G",
+    "type": "county"
+  },
+  {
+    "name": "荆门",
+    "plate": "鄂H",
+    "type": "county"
+  },
+  {
+    "name": "黄冈",
+    "plate": "鄂J",
+    "type": "county"
+  },
+  {
+    "name": "孝感",
+    "plate": "鄂K",
+    "type": "county"
+  },
+  {
+    "name": "咸宁",
+    "plate": "鄂L",
+    "type": "county"
+  },
+  {
+    "name": "仙桃",
+    "plate": "鄂M",
+    "type": "county"
+  },
+  {
+    "name": "潜江",
+    "plate": "鄂N",
+    "type": "county"
+  },
+  {
+    "name": "神农架",
+    "plate": "鄂P",
+    "type": "county"
+  },
+  {
+    "name": "恩施",
+    "plate": "鄂Q",
+    "type": "county"
+  },
+  {
+    "name": "天门",
+    "plate": "鄂R",
+    "type": "county"
+  },
+  {
+    "name": "随州",
+    "plate": "鄂S",
+    "type": "county"
+  },
+  {
+    "name": "长沙",
+    "plate": "湘A",
+    "type": "prefecture"
+  },
+  {
+    "name": "株洲",
+    "plate": "湘B",
+    "type": "prefecture"
+  },
+  {
+    "name": "湘潭",
+    "plate": "湘C",
+    "type": "county"
+  },
+  {
+    "name": "衡阳",
+    "plate": "湘D",
+    "type": "county"
+  },
+  {
+    "name": "邵阳",
+    "plate": "湘E",
+    "type": "county"
+  },
+  {
+    "name": "岳阳",
+    "plate": "湘F",
+    "type": "county"
+  },
+  {
+    "name": "张家界",
+    "plate": "湘G",
+    "type": "county"
+  },
+  {
+    "name": "益阳",
+    "plate": "湘H",
+    "type": "county"
+  },
+  {
+    "name": "常德",
+    "plate": "湘J",
+    "type": "county"
+  },
+  {
+    "name": "娄底",
+    "plate": "湘K",
+    "type": "county"
+  },
+  {
+    "name": "郴州",
+    "plate": "湘L",
+    "type": "county"
+  },
+  {
+    "name": "永州",
+    "plate": "湘M",
+    "type": "county"
+  },
+  {
+    "name": "怀化",
+    "plate": "湘N",
+    "type": "county"
+  },
+  {
+    "name": "湘西",
+    "plate": "湘U",
+    "type": "county"
+  },
+  {
+    "name": "广州",
+    "plate": "粤A",
+    "type": "prefecture"
+  },
+  {
+    "name": "深圳",
+    "plate": "粤B",
+    "type": "prefecture"
+  },
+  {
+    "name": "珠海",
+    "plate": "粤C",
+    "type": "county"
+  },
+  {
+    "name": "汕头",
+    "plate": "粤D",
+    "type": "county"
+  },
+  {
+    "name": "佛山",
+    "plate": "粤E",
+    "type": "county"
+  },
+  {
+    "name": "韶关",
+    "plate": "粤F",
+    "type": "county"
+  },
+  {
+    "name": "湛江",
+    "plate": "粤G",
+    "type": "county"
+  },
+  {
+    "name": "肇庆",
+    "plate": "粤H",
+    "type": "county"
+  },
+  {
+    "name": "江门",
+    "plate": "粤J",
+    "type": "county"
+  },
+  {
+    "name": "茂名",
+    "plate": "粤K",
+    "type": "county"
+  },
+  {
+    "name": "惠州",
+    "plate": "粤L",
+    "type": "county"
+  },
+  {
+    "name": "梅州",
+    "plate": "粤M",
+    "type": "county"
+  },
+  {
+    "name": "汕尾",
+    "plate": "粤N",
+    "type": "county"
+  },
+  {
+    "name": "河源",
+    "plate": "粤P",
+    "type": "county"
+  },
+  {
+    "name": "阳江",
+    "plate": "粤Q",
+    "type": "county"
+  },
+  {
+    "name": "清远",
+    "plate": "粤R",
+    "type": "county"
+  },
+  {
+    "name": "东莞",
+    "plate": "粤S",
+    "type": "county"
+  },
+  {
+    "name": "中山",
+    "plate": "粤T",
+    "type": "county"
+  },
+  {
+    "name": "潮州",
+    "plate": "粤U",
+    "type": "county"
+  },
+  {
+    "name": "揭阳",
+    "plate": "粤V",
+    "type": "county"
+  },
+  {
+    "name": "云浮",
+    "plate": "粤W",
+    "type": "county"
+  },
+  {
+    "name": "顺德",
+    "plate": "粤X",
+    "type": "county"
+  },
+  {
+    "name": "南海",
+    "plate": "粤Y",
+    "type": "county"
+  },
+  {
+    "name": "港澳入境",
+    "plate": "粤Z",
+    "type": "county"
+  },
+  {
+    "name": "南宁",
+    "plate": "桂A",
+    "type": "prefecture"
+  },
+  {
+    "name": "柳州",
+    "plate": "桂B",
+    "type": "prefecture"
+  },
+  {
+    "name": "桂林",
+    "plate": "桂C",
+    "type": "county"
+  },
+  {
+    "name": "梧州",
+    "plate": "桂D",
+    "type": "county"
+  },
+  {
+    "name": "北海",
+    "plate": "桂E",
+    "type": "county"
+  },
+  {
+    "name": "崇左",
+    "plate": "桂F",
+    "type": "county"
+  },
+  {
+    "name": "来宾",
+    "plate": "桂G",
+    "type": "county"
+  },
+  {
+    "name": "桂林",
+    "plate": "桂H",
+    "type": "county"
+  },
+  {
+    "name": "贺州",
+    "plate": "桂J",
+    "type": "county"
+  },
+  {
+    "name": "玉林",
+    "plate": "桂K",
+    "type": "county"
+  },
+  {
+    "name": "百色",
+    "plate": "桂L",
+    "type": "county"
+  },
+  {
+    "name": "河池",
+    "plate": "桂M",
+    "type": "county"
+  },
+  {
+    "name": "钦州",
+    "plate": "桂N",
+    "type": "county"
+  },
+  {
+    "name": "防城港",
+    "plate": "桂P",
+    "type": "county"
+  },
+  {
+    "name": "贵港",
+    "plate": "桂R",
+    "type": "county"
+  },
+  {
+    "name": "海口",
+    "plate": "琼A",
+    "type": "prefecture"
+  },
+  {
+    "name": "三亚",
+    "plate": "琼B",
+    "type": "prefecture"
+  },
+  {
+    "name": "琼北",
+    "plate": "琼C",
+    "type": "county"
+  },
+  {
+    "name": "五指山",
+    "plate": "琼D",
+    "type": "county"
+  },
+  {
+    "name": "洋浦",
+    "plate": "琼E",
+    "type": "county"
+  },
+  {
+    "name": "成都",
+    "plate": "川A",
+    "type": "prefecture"
+  },
+  {
+    "name": "绵阳",
+    "plate": "川B",
+    "type": "prefecture"
+  },
+  {
+    "name": "自贡",
+    "plate": "川C",
+    "type": "county"
+  },
+  {
+    "name": "攀枝花",
+    "plate": "川D",
+    "type": "county"
+  },
+  {
+    "name": "泸州",
+    "plate": "川E",
+    "type": "county"
+  },
+  {
+    "name": "德阳",
+    "plate": "川F",
+    "type": "county"
+  },
+  {
+    "name": "成都",
+    "plate": "川G",
+    "type": "county"
+  },
+  {
+    "name": "广元",
+    "plate": "川H",
+    "type": "county"
+  },
+  {
+    "name": "遂宁",
+    "plate": "川J",
+    "type": "county"
+  },
+  {
+    "name": "内江",
+    "plate": "川K",
+    "type": "county"
+  },
+  {
+    "name": "乐山",
+    "plate": "川L",
+    "type": "county"
+  },
+  {
+    "name": "资阳",
+    "plate": "川M",
+    "type": "county"
+  },
+  {
+    "name": "宜宾",
+    "plate": "川Q",
+    "type": "county"
+  },
+  {
+    "name": "南充",
+    "plate": "川R",
+    "type": "county"
+  },
+  {
+    "name": "达州",
+    "plate": "川S",
+    "type": "county"
+  },
+  {
+    "name": "雅安",
+    "plate": "川T",
+    "type": "county"
+  },
+  {
+    "name": "阿坝",
+    "plate": "川U",
+    "type": "county"
+  },
+  {
+    "name": "甘孜",
+    "plate": "川V",
+    "type": "county"
+  },
+  {
+    "name": "凉山",
+    "plate": "川W",
+    "type": "county"
+  },
+  {
+    "name": "广安",
+    "plate": "川X",
+    "type": "county"
+  },
+  {
+    "name": "巴中",
+    "plate": "川Y",
+    "type": "county"
+  },
+  {
+    "name": "眉山",
+    "plate": "川Z",
+    "type": "county"
+  },
+  {
+    "name": "贵阳",
+    "plate": "贵A",
+    "type": "prefecture"
+  },
+  {
+    "name": "六盘水",
+    "plate": "贵B",
+    "type": "prefecture"
+  },
+  {
+    "name": "遵义",
+    "plate": "贵C",
+    "type": "county"
+  },
+  {
+    "name": "铜仁",
+    "plate": "贵D",
+    "type": "county"
+  },
+  {
+    "name": "黔西南",
+    "plate": "贵E",
+    "type": "county"
+  },
+  {
+    "name": "毕节",
+    "plate": "贵F",
+    "type": "county"
+  },
+  {
+    "name": "安顺",
+    "plate": "贵G",
+    "type": "county"
+  },
+  {
+    "name": "黔东南",
+    "plate": "贵H",
+    "type": "county"
+  },
+  {
+    "name": "黔南",
+    "plate": "贵J",
+    "type": "county"
+  },
+  {
+    "name": "昆明",
+    "plate": "云A",
+    "type": "prefecture"
+  },
+  {
+    "name": "昭通",
+    "plate": "云C",
+    "type": "county"
+  },
+  {
+    "name": "曲靖",
+    "plate": "云D",
+    "type": "county"
+  },
+  {
+    "name": "楚雄",
+    "plate": "云E",
+    "type": "county"
+  },
+  {
+    "name": "玉溪",
+    "plate": "云F",
+    "type": "county"
+  },
+  {
+    "name": "红河",
+    "plate": "云G",
+    "type": "county"
+  },
+  {
+    "name": "文山",
+    "plate": "云H",
+    "type": "county"
+  },
+  {
+    "name": "普洱",
+    "plate": "云J",
+    "type": "county"
+  },
+  {
+    "name": "西双版纳",
+    "plate": "云K",
+    "type": "county"
+  },
+  {
+    "name": "大理",
+    "plate": "云L",
+    "type": "county"
+  },
+  {
+    "name": "保山",
+    "plate": "云M",
+    "type": "county"
+  },
+  {
+    "name": "德宏",
+    "plate": "云N",
+    "type": "county"
+  },
+  {
+    "name": "丽江",
+    "plate": "云P",
+    "type": "county"
+  },
+  {
+    "name": "怒江",
+    "plate": "云Q",
+    "type": "county"
+  },
+  {
+    "name": "迪庆",
+    "plate": "云R",
+    "type": "county"
+  },
+  {
+    "name": "临沧",
+    "plate": "云S",
+    "type": "county"
+  },
+  {
+    "name": "拉萨",
+    "plate": "藏A",
+    "type": "prefecture"
+  },
+  {
+    "name": "昌都",
+    "plate": "藏B",
+    "type": "prefecture"
+  },
+  {
+    "name": "山南",
+    "plate": "藏C",
+    "type": "county"
+  },
+  {
+    "name": "日喀则",
+    "plate": "藏D",
+    "type": "county"
+  },
+  {
+    "name": "那曲",
+    "plate": "藏E",
+    "type": "county"
+  },
+  {
+    "name": "阿里",
+    "plate": "藏F",
+    "type": "county"
+  },
+  {
+    "name": "林芝",
+    "plate": "藏G",
+    "type": "county"
+  },
+  {
+    "name": "西安",
+    "plate": "陕A",
+    "type": "prefecture"
+  },
+  {
+    "name": "铜川",
+    "plate": "陕B",
+    "type": "prefecture"
+  },
+  {
+    "name": "宝鸡",
+    "plate": "陕C",
+    "type": "county"
+  },
+  {
+    "name": "咸阳",
+    "plate": "陕D",
+    "type": "county"
+  },
+  {
+    "name": "渭南",
+    "plate": "陕E",
+    "type": "county"
+  },
+  {
+    "name": "汉中",
+    "plate": "陕F",
+    "type": "county"
+  },
+  {
+    "name": "安康",
+    "plate": "陕G",
+    "type": "county"
+  },
+  {
+    "name": "商洛",
+    "plate": "陕H",
+    "type": "county"
+  },
+  {
+    "name": "延安",
+    "plate": "陕J",
+    "type": "county"
+  },
+  {
+    "name": "榆林",
+    "plate": "陕K",
+    "type": "county"
+  },
+  {
+    "name": "杨凌",
+    "plate": "陕V",
+    "type": "county"
+  },
+  {
+    "name": "兰州",
+    "plate": "甘A",
+    "type": "prefecture"
+  },
+  {
+    "name": "嘉峪关",
+    "plate": "甘B",
+    "type": "prefecture"
+  },
+  {
+    "name": "金昌",
+    "plate": "甘C",
+    "type": "county"
+  },
+  {
+    "name": "白银",
+    "plate": "甘D",
+    "type": "county"
+  },
+  {
+    "name": "天水",
+    "plate": "甘E",
+    "type": "county"
+  },
+  {
+    "name": "酒泉",
+    "plate": "甘F",
+    "type": "county"
+  },
+  {
+    "name": "张掖",
+    "plate": "甘G",
+    "type": "county"
+  },
+  {
+    "name": "武威",
+    "plate": "甘H",
+    "type": "county"
+  },
+  {
+    "name": "定西",
+    "plate": "甘J",
+    "type": "county"
+  },
+  {
+    "name": "陇南",
+    "plate": "甘K",
+    "type": "county"
+  },
+  {
+    "name": "平凉",
+    "plate": "甘L",
+    "type": "county"
+  },
+  {
+    "name": "庆阳",
+    "plate": "甘M",
+    "type": "county"
+  },
+  {
+    "name": "临夏",
+    "plate": "甘N",
+    "type": "county"
+  },
+  {
+    "name": "甘南",
+    "plate": "甘P",
+    "type": "county"
+  },
+  {
+    "name": "西宁",
+    "plate": "青A",
+    "type": "prefecture"
+  },
+  {
+    "name": "海东",
+    "plate": "青B",
+    "type": "prefecture"
+  },
+  {
+    "name": "海北",
+    "plate": "青C",
+    "type": "county"
+  },
+  {
+    "name": "黄南",
+    "plate": "青D",
+    "type": "county"
+  },
+  {
+    "name": "海南州",
+    "plate": "青E",
+    "type": "county"
+  },
+  {
+    "name": "果洛",
+    "plate": "青F",
+    "type": "county"
+  },
+  {
+    "name": "玉树",
+    "plate": "青G",
+    "type": "county"
+  },
+  {
+    "name": "海西",
+    "plate": "青H",
+    "type": "county"
+  },
+  {
+    "name": "银川",
+    "plate": "宁A",
+    "type": "prefecture"
+  },
+  {
+    "name": "石嘴山",
+    "plate": "宁B",
+    "type": "prefecture"
+  },
+  {
+    "name": "吴忠",
+    "plate": "宁C",
+    "type": "county"
+  },
+  {
+    "name": "固原",
+    "plate": "宁D",
+    "type": "county"
+  },
+  {
+    "name": "中卫",
+    "plate": "宁E",
+    "type": "county"
+  },
+  {
+    "name": "乌鲁木齐",
+    "plate": "新A",
+    "type": "prefecture"
+  },
+  {
+    "name": "昌吉",
+    "plate": "新B",
+    "type": "prefecture"
+  },
+  {
+    "name": "石河子",
+    "plate": "新C",
+    "type": "county"
+  },
+  {
+    "name": "奎屯",
+    "plate": "新D",
+    "type": "county"
+  },
+  {
+    "name": "博尔塔拉",
+    "plate": "新E",
+    "type": "county"
+  },
+  {
+    "name": "伊犁",
+    "plate": "新F",
+    "type": "county"
+  },
+  {
+    "name": "塔城",
+    "plate": "新G",
+    "type": "county"
+  },
+  {
+    "name": "阿勒泰",
+    "plate": "新H",
+    "type": "county"
+  },
+  {
+    "name": "克拉玛依",
+    "plate": "新J",
+    "type": "county"
+  },
+  {
+    "name": "吐鲁番",
+    "plate": "新K",
+    "type": "county"
+  },
+  {
+    "name": "哈密",
+    "plate": "新L",
+    "type": "county"
+  },
+  {
+    "name": "巴音郭楞",
+    "plate": "新M",
+    "type": "county"
+  },
+  {
+    "name": "阿克苏",
+    "plate": "新N",
+    "type": "county"
+  },
+  {
+    "name": "克孜勒苏",
+    "plate": "新P",
+    "type": "county"
+  },
+  {
+    "name": "喀什",
+    "plate": "新Q",
+    "type": "county"
+  },
+  {
+    "name": "和田",
+    "plate": "新R",
+    "type": "county"
+  }
+]

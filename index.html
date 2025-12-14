@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>地理大师：UI升级版</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="./assets/libs/echarts.min.js"></script>
+    <script src="./assets/libs/world.js"></script>
+    <script src="./assets/libs/china.js"></script>
+    
+    <!-- 工具模块（按顺序加载） -->
+    <script src="./utils/random.js"></script>
+</head>
+<body>
+
+<div class="loading-screen" id="loading-screen">
+    <div class="loader-spinner"></div>
+    <p>正在装载数据...</p>
+</div>
+
+<div class="container active" id="view-landing">
+    <h1>🌍 地理大师</h1>
+    <p style="color:#aaa; margin-bottom:30px;">请选择挑战区域</p>
+    
+    <div class="landing-grid">
+        <div class="landing-card world" onclick="enterGameScope('world')">
+            <div class="icon">🌍</div>
+            <h2>世界模式</h2>
+            <p>248 个国家与地区<br>国旗 · 首都 · 版图</p>
+        </div>
+        
+        <div class="landing-card china" onclick="enterGameScope('china')">
+            <div class="icon">🚗</div>
+            <h2>中国模式</h2>
+            <p>车牌代码挑战<br>地级市 · 县级市</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="view-menu">
+    <div class="menu-header">
+        <button class="icon-btn back-btn" onclick="showView('view-landing')">
+            <span>‹</span> 切换区域
+        </button>
+        <button class="icon-btn" onclick="showRank()">
+            <span>🏆</span>
+        </button>
+    </div>
+
+    <div class="menu-titles">
+        <h1 id="menu-title">模式选择</h1>
+        <p id="menu-subtitle">--</p>
+    </div>
+
+    <div class="grid-menu">
+        <div id="btn-mode-1" class="game-card" onclick="startGame('mode_1')">
+            <div class="card-icon" id="txt-mode-1-icon">📅</div>
+            <div class="card-content">
+                <b id="txt-mode-1-title">加载中</b>
+                <small id="txt-mode-1-desc">...</small>
+            </div>
+            <span class="card-tag" id="txt-mode-1-count">20</span>
+        </div>
+        
+        <div id="btn-mode-2" class="game-card" onclick="startGame('mode_2')">
+            <div class="card-icon" id="txt-mode-2-icon">🧩</div>
+            <div class="card-content">
+                <b id="txt-mode-2-title">加载中</b>
+                <small id="txt-mode-2-desc">...</small>
+            </div>
+            <span class="card-tag" id="txt-mode-2-count">30</span>
+        </div>
+        
+        <div id="btn-mode-3" class="game-card" onclick="startGame('mode_3')">
+            <div class="card-icon" id="txt-mode-3-icon">⚡</div>
+            <div class="card-content">
+                <b id="txt-mode-3-title">加载中</b>
+                <small id="txt-mode-3-desc">...</small>
+            </div>
+            <span class="card-tag" id="txt-mode-3-count">50</span>
+        </div>
+        
+        <div id="btn-mode-all" class="game-card" onclick="startGame('all')">
+            <div class="card-icon" id="txt-mode-all-icon">🔒</div>
+            <div class="card-content">
+                <b id="txt-mode-all-title">敬请期待</b>
+                <small id="txt-mode-all-desc">Coming Soon</small>
+            </div>
+            <span class="card-tag" id="txt-mode-all-count" style="display:none"></span>
+        </div>
+    </div>
+
+    <button class="wide-card card-green" onclick="openCompendium()" style="margin-top:10px;">
+        <div class="wide-content">
+            <span class="big-icon" style="font-size:1.5rem">📖</span>
+            <div class="text-group">
+                <b style="color:#ffffff">知识图鉴</b>
+                <small style="color:#ffffff; opacity:0.8">查阅详细资料</small>
+            </div>
+        </div>
+        <span class="arrow-icon" style="color:#0f3d28">→</span>
+    </button>
+    
+    <button class="wide-card" onclick="startGame('pk')" style="margin-top:10px; background:linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);">
+        <div class="wide-content">
+            <span class="big-icon" style="font-size:1.5rem">⚔️</span>
+            <div class="text-group">
+                <b style="color:#fff">PK模式</b>
+                <small style="color:#fff; opacity:0.9">输入种子，同题PK</small>
+            </div>
+        </div>
+        <span class="arrow-icon" style="color:#fff">→</span>
+    </button>
+</div>
+
+<div class="container" id="view-game">
+    <div class="header">
+        <span id="game-mode-label">模式</span>
+        <span>得分: <b id="score-display" style="color:#4CAF50">0</b></span>
+        <button class="exit-btn" onclick="goHome()">退出</button>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+    
+    <div class="flag-box">
+        <img id="flag-img" class="flag-img" style="display:none" onerror="this.style.display='none'">
+        <div id="plate-display" class="license-plate" style="display:none"></div>
+        <div id="city-display" class="city-name-large" style="display:none"></div>
+    </div>
+    
+    <div id="question-type-badge" class="type-badge">猜国家</div>
+    <div class="options-grid" id="options-area"></div>
+    <div id="answer-feedback"></div>
+    
+    <button class="menu-btn" style="background:#2196F3; margin-top:10px; display:none" id="game-map-btn" onclick="if(window.currentQ) openMap(window.currentQ)">🗺️ 查看位置</button>
+    <button class="menu-btn" style="background:#4CAF50; margin-top:10px; display:none" id="next-btn" onclick="nextRound()">下一题</button>
+</div>
+
+<div class="container" id="view-result">
+    <h1 id="result-title">🎉 挑战完成!</h1>
+    <h2 id="result-score" style="font-size: 2.5rem; color:#4CAF50; margin: 20px 0;">0/0</h2>
+    <p id="result-detail" style="color:#aaa; margin-bottom:30px;">...</p>
+    <button class="menu-btn btn-daily" onclick="goHome()">🏠 返回主菜单</button>
+</div>
+
+<div class="container" id="view-rank">
+    <h2>🏆 历史记录排行榜</h2>
+    <div id="rank-list" style="text-align:left; margin-bottom:20px; max-height:400px; overflow-y:auto; padding:10px;"></div>
+    <button class="back-btn" onclick="goHome()">返回</button>
+    <button class="menu-btn" style="background:#f44336; margin-top:10px;" onclick="clearRecords()">🗑️ 清空记录</button>
+</div>
+
+<div class="container" id="view-compendium">
+    <h2>📖 知识图鉴</h2>
+    <input type="text" class="search-bar" id="search-input" placeholder="🔍 搜索..." oninput="filterCompendium()">
+    <div class="compendium-grid" id="compendium-grid"></div>
+    <button class="back-btn" onclick="goHome()">返回</button>
+</div>
+
+<div class="modal-overlay" id="info-modal" onclick="closeModal(event)">
+    <div class="glass-card">
+        <img src="" id="modal-img" class="flag-large" style="display:none">
+        <div id="modal-plate" class="license-plate" style="display:none; margin-bottom:20px;"></div>
+        
+        <h2 id="modal-name">...</h2>
+        <div id="modal-en-name" class="en-name">...</div>
+        <div class="info-grid"></div>
+        <div class="action-row">
+            <button class="action-btn btn-close" onclick="closeModal(event)">关闭</button>
+            <button class="action-btn btn-map" id="modal-map-btn">🗺️ 查看位置</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="map-modal">
+    <div class="map-modal-content">
+        <div class="map-header">
+            <span id="map-title">位置地图</span>
+            <button onclick="closeMap()" style="background:none;border:none;color:white;font-size:1.5rem;padding:0 10px;">✕</button>
+        </div>
+        <div id="echarts-map-container"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
