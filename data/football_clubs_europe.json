@@ -1052,17 +1052,5 @@
     "founded": "1970",
     "ground": "Stadium de Toulouse",
     "capacity": "33,150"
-  },
-  {
-    "id": "uefa_coefficient",
-    "name": "UEFA coefficient",
-    "league": "UEFA",
-    "img": "./assets/football_clubs_png/uefa_coefficient.png"
-  },
-  {
-    "id": "2024_25_uefa_champions_le",
-    "name": "2024–25 UEFA Champions League",
-    "league": "Europa",
-    "img": "./assets/football_clubs_png/2024_25_uefa_champions_le.png"
   }
 ]

@@ -1,110 +1,69 @@
 // ============================================================================
-// 🌍 地理大师 - 主程序文件
-// 架构：模块化设计，功能清晰分离
+// 🌍 地理大师 - 主程序文件（已部分模块化）
+// 架构：逐步迁移到模块化设计
+// 注意：数据管理和UI控制已迁移到独立模块，这里保留游戏引擎等核心逻辑
 // ============================================================================
 
-// --- 模块1: 数据存储 ---
-let dbWorld = [], dbPlates = [], dbF1Tracks = [], dbFootballClubs = [];
-let worldNameMap = {};
-let wikiExtraData = {}; // Wiki额外信息数据
-let currentScope = 'world'; 
-let gameMode = '', questionPool = [], currentQ = null, score = 0, totalQs = 0, isProcessing = false, myChart = null;
-let footballDifficulty = 'easy'; // 足球模式难度：easy, medium, hard
-let isFootballSubMenu = false; // 是否在足球子菜单中
+// 使用模块化的数据存储（从 js/data-manager.js 和 js/game-state.js 加载）
+// 为了兼容性，保留局部变量引用
+let dbWorld, dbPlates, dbF1Tracks, dbFootballClubs, worldNameMap, wikiExtraData;
+let currentScope, gameMode, questionPool, currentQ, score, totalQs, isProcessing, myChart;
+let footballDifficulty, isFootballSubMenu;
 
-// --- 模块2: 配置数据 ---
-// 所有翻译数据已直接存储在 countries.json 中，不再需要单独的翻译文件
-
-// --- 模块3: 工具函数 ---
-// 注意：capital_cn 字段现在直接从 countries.json 读取，无需翻译函数
-
-// ============================================================================
-// --- 模块4: 数据初始化 ---
-// ============================================================================
-async function initGame() {
-    try {
-        const [res1, res2, res3, res4, res5, res6] = await Promise.all([
-            fetch('./data/countries.json'),
-            fetch('./data/china_plates.json'),
-            fetch('./data/world_name_map.json'),
-            fetch('./data/countries_wiki_extra.json'),
-            fetch('./data/f1_tracks_final.json'),
-            fetch('./data/football_clubs_europe.json')
-        ]);
-        
-        if (res1.ok) {
-            dbWorld = await res1.json();
-            // capital_cn 字段已直接从 countries.json 读取，无需额外处理
-            
-            // 调试信息：检查数据完整性
-            const translatedCount = dbWorld.filter(c => c.capital_cn && c.capital_cn !== c.capital && c.capital_cn !== "").length;
-            const sovereignWithCapital = dbWorld.filter(c => 
-                c.sovereign === true && 
-                c.capital_cn && 
-                c.capital_cn !== "无" && 
-                c.capital_cn !== null &&
-                c.capital_cn !== "" &&
-                c.capital && 
-                c.capital !== "无"
-            ).length;
-            console.log(`✅ 数据加载完成: 共${dbWorld.length}个国家, ${translatedCount}个有中文翻译, ${sovereignWithCapital}个主权国家有有效首都`);
-        }
-        if (res2.ok) dbPlates = await res2.json();
-        if (res3.ok) worldNameMap = await res3.json();
-        if (res4.ok) wikiExtraData = await res4.json();
-        if (res5.ok) {
-            const f1Data = await res5.json();
-            dbF1Tracks = f1Data.circuits || [];
-            console.log(`✅ F1赛道数据加载完成: 共${dbF1Tracks.length}条赛道`);
-        }
-        if (res6.ok) {
-            dbFootballClubs = await res6.json();
-            console.log(`✅ 足球俱乐部数据加载完成: 共${dbFootballClubs.length}个俱乐部`);
-        }
-        
-        document.getElementById('loading-screen').style.display = 'none';
-        showView('view-landing');
-    } catch (e) {
-        alert("⚠️ 数据加载错误: " + e.message);
+// 初始化数据引用（在数据加载完成后调用）
+function initDataReferences() {
+    // 如果模块数据还未加载，使用本地变量（向后兼容）
+    if (window.GameData && window.GameData.dbWorld) {
+        dbWorld = window.GameData.dbWorld;
+        dbPlates = window.GameData.dbPlates;
+        dbF1Tracks = window.GameData.dbF1Tracks;
+        dbFootballClubs = window.GameData.dbFootballClubs;
+        worldNameMap = window.GameData.worldNameMap;
+        wikiExtraData = window.GameData.wikiExtraData;
     }
-}
-// 确保在DOM加载完成后初始化
-if (document.readyState === 'loading') {
-    window.addEventListener('DOMContentLoaded', initGame);
-} else {
-    window.onload = initGame;
-}
-
-// ============================================================================
-// --- 模块5: UI视图控制 ---
-// ============================================================================
-function showView(id) {
-    document.querySelectorAll('.container').forEach(d => d.classList.remove('active'));
-    const el = document.getElementById(id);
-    if (el) {
-        el.classList.add('active');
-    } else {
-        console.error("找不到视图 ID:", id); // 方便调试
-    }
-}
-function goHome() { 
-    isProcessing = false; 
-    closeMap(); 
-    // 如果在足球子菜单中，返回体育模式主菜单
-    if (isFootballSubMenu && currentScope === 'sports') {
-        enterGameScope('sports');
-    } else {
-        showView('view-menu'); 
+    
+    if (window.GameState) {
+        currentScope = window.GameState.currentScope || currentScope || 'world';
+        gameMode = window.GameState.gameMode || gameMode || '';
+        questionPool = window.GameState.questionPool || questionPool || [];
+        currentQ = window.GameState.currentQ || currentQ || null;
+        score = window.GameState.score !== undefined ? window.GameState.score : (score || 0);
+        totalQs = window.GameState.totalQs !== undefined ? window.GameState.totalQs : (totalQs || 0);
+        isProcessing = window.GameState.isProcessing !== undefined ? window.GameState.isProcessing : (isProcessing || false);
+        myChart = window.GameState.myChart || myChart || null;
+        footballDifficulty = window.GameState.footballDifficulty || footballDifficulty || 'easy';
+        isFootballSubMenu = window.GameState.isFootballSubMenu !== undefined ? window.GameState.isFootballSubMenu : (isFootballSubMenu || false);
     }
 }
 
-// --- 模块5.1: 游戏范围选择 ---
+// 同步状态到 GameState（在关键操作后调用）
+function syncStateToGameState() {
+    window.GameState.currentScope = currentScope;
+    window.GameState.gameMode = gameMode;
+    window.GameState.questionPool = questionPool;
+    window.GameState.currentQ = currentQ;
+    window.GameState.score = score;
+    window.GameState.totalQs = totalQs;
+    window.GameState.isProcessing = isProcessing;
+    window.GameState.myChart = myChart;
+    window.GameState.footballDifficulty = footballDifficulty;
+    window.GameState.isFootballSubMenu = isFootballSubMenu;
+}
+
+// ============================================================================
+// --- 模块5: UI视图控制（已迁移到 js/ui-controller.js）---
+// ============================================================================
+// UI控制函数已迁移到 js/ui-controller.js，这里保留兼容性引用
+
+// --- 模块5.1: 游戏范围选择（部分逻辑保留在这里以兼容现有代码）---
 function enterGameScope(scope) {
+    initDataReferences(); // 确保数据引用已初始化
     currentScope = scope;
+    syncStateToGameState();
     const isWorld = (scope === 'world');
     const isChina = (scope === 'china');
     const isSports = (scope === 'sports');
-    
+
     if (isWorld) {
         document.getElementById('menu-title').textContent = "🌍 世界挑战";
         document.getElementById('menu-subtitle').textContent = `收录 ${dbWorld.length} 个国家`;
@@ -227,6 +186,7 @@ function disableBtn(btnId) {
 // --- 模块6: 游戏引擎 ---
 // ============================================================================
 function startGame(modeKey) {
+    initDataReferences(); // 确保数据引用已初始化
     if (isProcessing) return;
     
     // 如果点击的是足球菜单入口，显示足球难度选择
@@ -238,6 +198,7 @@ function startGame(modeKey) {
     gameMode = modeKey; 
     score = 0; isProcessing = false;
     window.currentGameSeed = null; // 重置种子
+    syncStateToGameState();
     
     // 中国模式下暂时不提供PK模式
     if (modeKey === 'pk' && currentScope === 'china') {
@@ -295,7 +256,7 @@ function startGame(modeKey) {
                     const j = Math.floor(rng() * (i + 1)); 
                     [temp[i], temp[j]] = [temp[j], temp[i]]; 
                 }
-                questionPool = temp.slice(0, 20);
+            questionPool = temp.slice(0, 20);
             }
         }
         else if (modeKey === 'mode_2') questionPool = sovereignPool.sort(()=>Math.random()-0.5).slice(0, 30);
@@ -304,7 +265,7 @@ function startGame(modeKey) {
             // PK模式：需要输入种子 - 使用自定义弹窗
             showPKSeedModal();
             return; // 等待用户输入
-        } else {
+    } else {
             questionPool = pool.sort(()=>Math.random()-0.5);
         }
     } else if (currentScope === 'china') {
@@ -344,15 +305,17 @@ function startGame(modeKey) {
     document.getElementById('game-mode-label').textContent = prefix + modeLabel;
     
     // 🔥 修复：统一使用 view-game
-    showView('view-game');
+    syncStateToGameState();
+    window.showView('view-game');
     nextRound();
 }
 
 function nextRound() {
+    initDataReferences(); // 确保数据引用已初始化
     if (questionPool.length === 0) {
         // 游戏结束，保存记录
-        saveGameRecord();
-        showView('view-result');
+        if (window.saveGameRecord) window.saveGameRecord();
+        window.showView('view-result');
         document.getElementById('result-score').textContent = score + " / " + totalQs;
         document.getElementById('result-title').textContent = "🎉 挑战完成!";
         const percentage = Math.round((score / totalQs) * 100);
@@ -382,6 +345,7 @@ function nextRound() {
 
     currentQ = questionPool.shift();
     window.currentQ = currentQ; // 暴露到全局，供HTML调用
+    syncStateToGameState();
     
     const img = document.getElementById('flag-img');
     const plate = document.getElementById('plate-display');
@@ -576,9 +540,9 @@ function nextRound() {
             }
         }
     } else {
-        while(opts.length < 4) {
-            let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
-            if (!opts.includes(r)) opts.push(r);
+    while(opts.length < 4) {
+        let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
+        if (!opts.includes(r)) opts.push(r);
         }
     }
     opts.sort(() => Math.random() - 0.5);
@@ -595,7 +559,7 @@ function nextRound() {
                 // 如果是标记的最大城市选项，显示最大城市
                 if (opt._isLargestCity && opt._displayText) {
                     btn.textContent = opt._displayText;
-                } else {
+        } else {
                     btn.textContent = opt.capital_cn || opt.capital;
                 }
             } else {
@@ -619,7 +583,9 @@ function nextRound() {
 }
 
 function checkAnswer(choice, btn) {
+    initDataReferences(); // 确保数据引用已初始化
     if (isProcessing) return; isProcessing = true;
+    syncStateToGameState();
     
     let isCorrect = false;
     let correctText = "";
@@ -629,7 +595,7 @@ function checkAnswer(choice, btn) {
         if (gameMode === 'mode_1') {
             isCorrect = (choice.id === currentQ.id && !choice._isLargestCity);
             correctText = currentQ.capital_cn || currentQ.capital;
-        } else {
+    } else {
             isCorrect = (choice.id === currentQ.id);
             correctText = currentQ.name;
         }
@@ -676,6 +642,7 @@ function checkAnswer(choice, btn) {
     
     document.getElementById('score-display').textContent = score;
     document.getElementById('next-btn').style.display = 'block';
+    syncStateToGameState();
     
     if (currentScope === 'world') {
         document.getElementById('game-map-btn').style.display = 'block';
@@ -724,13 +691,14 @@ function mulberry32(a) {
 // --- 模块7: 图鉴功能 ---
 // ============================================================================
 function openCompendium() {
+    initDataReferences(); // 确保数据引用已初始化
     // 中国模式下暂时不提供知识图鉴
     if (currentScope === 'china') {
         alert('中国模式下暂时不提供知识图鉴功能');
         return;
     }
     
-    showView('view-compendium');
+    window.showView('view-compendium');
     const grid = document.getElementById('compendium-grid');
     grid.innerHTML = '';
     let sourceDB = (currentScope === 'world') ? dbWorld : dbPlates;
@@ -760,6 +728,7 @@ function filterCompendium() {
 }
 
 function showDetail(item) {
+    initDataReferences(); // 确保数据引用已初始化
     const modal = document.getElementById('info-modal');
     const img = document.getElementById('modal-img');
     const plate = document.getElementById('modal-plate');
@@ -809,7 +778,7 @@ function showDetail(item) {
         document.querySelector('.info-grid').innerHTML = infoHTML;
         
         // 检查并添加Wiki额外信息（默认隐藏，需要点击展开）
-        const wikiInfo = wikiExtraData[item.id.toLowerCase()];
+        const wikiInfo = window.GameData.wikiExtraData[item.id.toLowerCase()];
         const wikiContainer = document.getElementById('wiki-info-container');
         const wikiContent = document.getElementById('wiki-info-content');
         
@@ -892,11 +861,15 @@ function showDetail(item) {
                 
                 // 如果是官方语言字段，尝试分离连在一起的语言
                 if (key === 'official_languages') {
-                    displayValue = separateLanguages(value);
+                    displayValue = window.separateLanguages ? window.separateLanguages(value) : value;
                 }
                 // 如果是最大城市字段，处理括号后直接跟城市名的情况（如 "Sydney (metropolitan)Melbourne (urban)"）
                 else if (key === 'largest_city') {
-                    displayValue = separateCities(value);
+                    displayValue = window.separateCities ? window.separateCities(value) : value;
+                }
+                // 如果是官方文字字段，按逗号分割
+                else if (key === 'official_script') {
+                    displayValue = window.separateScripts ? window.separateScripts(value) : value;
                 }
                 
                 wikiHTML += `<div class="info-row"><span class="info-label">${label}</span><span class="info-val">${displayValue}</span></div>`;
@@ -1154,83 +1127,85 @@ function separateCities(cityStr) {
 }
 
 // ============================================================================
-// --- 模块9: 历史记录和排行榜 ---
+// --- 模块9: 历史记录和排行榜（已迁移到 js/leaderboard.js）---
 // ============================================================================
-function saveGameRecord() {
-    const record = {
-        scope: currentScope,
-        mode: gameMode,
-        score: score,
-        total: totalQs,
-        percentage: Math.round((score / totalQs) * 100),
-        date: new Date().toISOString(),
-        seed: window.currentGameSeed || null // PK模式的种子
-    };
-    
-    let records = JSON.parse(localStorage.getItem('gameRecords') || '[]');
-    records.push(record);
-    
-    // 只保留最近100条记录
-    if (records.length > 100) {
-        records = records.slice(-100);
-    }
-    
-    localStorage.setItem('gameRecords', JSON.stringify(records));
-}
-
-function showRank() {
-    showView('view-rank');
-    const records = JSON.parse(localStorage.getItem('gameRecords') || '[]');
-    const rankList = document.getElementById('rank-list');
-    
-    if (records.length === 0) {
-        rankList.innerHTML = '<p style="color:#aaa; text-align:center; padding:20px;">暂无历史记录</p>';
-        return;
-    }
-    
-    // 按分数和正确率排序
-    const sorted = records.sort((a, b) => {
-        if (b.percentage !== a.percentage) return b.percentage - a.percentage;
-        if (b.score !== a.score) return b.score - a.score;
-        return new Date(b.date) - new Date(a.date);
-    });
-    
-    let html = '<div style="display:grid; gap:10px;">';
-    sorted.slice(0, 20).forEach((r, idx) => {
-        const date = new Date(r.date);
-        const dateStr = `${date.getMonth()+1}/${date.getDate()} ${date.getHours().toString().padStart(2,'0')}:${date.getMinutes().toString().padStart(2,'0')}`;
-        const modeNames = {
-            'mode_1': '每日挑战',
-            'mode_2': '形状挑战',
-            'mode_3': '极速冲刺',
-            'all': '♾️ 全图鉴',
-            'pk': '⚔️ PK模式'
+// 排行榜功能已迁移到独立模块
+// 如果模块已加载，不定义这些函数，让模块版本生效
+// 如果模块未加载，定义后备实现
+if (!window.saveGameRecord) {
+    function saveGameRecord() {
+        initDataReferences();
+        const record = {
+            scope: currentScope,
+            mode: gameMode,
+            score: score,
+            total: totalQs,
+            percentage: Math.round((score / totalQs) * 100),
+            date: new Date().toISOString(),
+            seed: window.currentGameSeed || null
         };
-        const scopeName = r.scope === 'world' ? '🌍' : '🇨🇳';
-        const modeName = modeNames[r.mode] || r.mode;
-        
-        html += `
-            <div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:8px; display:flex; justify-content:space-between; align-items:center;">
-                <div>
-                    <span style="color:#4CAF50; font-weight:bold; margin-right:10px;">#${idx+1}</span>
-                    <span style="color:#fff;">${scopeName} ${modeName}</span>
-                    ${r.seed ? `<span style="color:#FF9800; margin-left:8px; font-size:0.85em;">种子:${r.seed}</span>` : ''}
-                    <span style="color:#4CAF50; margin-left:10px; font-weight:bold;">${r.score}/${r.total}</span>
-                    <span style="color:#aaa; margin-left:10px;">(${r.percentage}%)</span>
-                </div>
-                <span style="color:#888; font-size:0.9em;">${dateStr}</span>
-            </div>
-        `;
-    });
-    html += '</div>';
-    rankList.innerHTML = html;
+        let records = JSON.parse(localStorage.getItem('gameRecords') || '[]');
+        records.push(record);
+        if (records.length > 100) records = records.slice(-100);
+        localStorage.setItem('gameRecords', JSON.stringify(records));
+    }
+    window.saveGameRecord = saveGameRecord;
 }
 
-function clearRecords() {
-    if (confirm('确定要清空所有历史记录吗？此操作不可恢复！')) {
-        localStorage.removeItem('gameRecords');
-        showRank(); // 刷新显示
+if (!window.showRank) {
+    function showRank() {
+        window.showView('view-rank');
+        const records = JSON.parse(localStorage.getItem('gameRecords') || '[]');
+        const rankList = document.getElementById('rank-list');
+        if (records.length === 0) {
+            rankList.innerHTML = '<p style="color:#aaa; text-align:center; padding:20px;">暂无历史记录</p>';
+            return;
+        }
+        const sorted = records.sort((a, b) => {
+            if (b.percentage !== a.percentage) return b.percentage - a.percentage;
+            if (b.score !== a.score) return b.score - a.score;
+            return new Date(b.date) - new Date(a.date);
+        });
+        let html = '<div style="display:grid; gap:10px;">';
+        sorted.slice(0, 20).forEach((r, idx) => {
+            const date = new Date(r.date);
+            const dateStr = `${date.getMonth()+1}/${date.getDate()} ${date.getHours().toString().padStart(2,'0')}:${date.getMinutes().toString().padStart(2,'0')}`;
+            const modeNames = {
+                'mode_1': '每日挑战',
+                'mode_2': '形状挑战',
+                'mode_3': '极速冲刺',
+                'all': '♾️ 全图鉴',
+                'pk': '⚔️ PK模式'
+            };
+            const scopeName = r.scope === 'world' ? '🌍' : '🇨🇳';
+            const modeName = modeNames[r.mode] || r.mode;
+            html += `
+                <div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:8px; display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                        <span style="color:#4CAF50; font-weight:bold; margin-right:10px;">#${idx+1}</span>
+                        <span style="color:#fff;">${scopeName} ${modeName}</span>
+                        ${r.seed ? `<span style="color:#FF9800; margin-left:8px; font-size:0.85em;">种子:${r.seed}</span>` : ''}
+                        <span style="color:#4CAF50; margin-left:10px; font-weight:bold;">${r.score}/${r.total}</span>
+                        <span style="color:#aaa; margin-left:10px;">(${r.percentage}%)</span>
+                    </div>
+                    <span style="color:#888; font-size:0.9em;">${dateStr}</span>
+                </div>
+            `;
+        });
+        html += '</div>';
+        rankList.innerHTML = html;
     }
+    window.showRank = showRank;
+}
+
+if (!window.clearRecords) {
+    function clearRecords() {
+        if (confirm('确定要清空所有历史记录吗？此操作不可恢复！')) {
+            localStorage.removeItem('gameRecords');
+            showRank();
+        }
+    }
+    window.clearRecords = clearRecords;
 }
 
 // ============================================================================
@@ -1240,14 +1215,17 @@ function openMap(item) {
     document.getElementById('info-modal').style.display = 'none';
     document.getElementById('map-modal').style.display = 'flex';
     setTimeout(() => { 
-        initEChartsMap(item.id.toUpperCase());
+        if (window.initEChartsMap) window.initEChartsMap(item.id.toUpperCase());
+        else initEChartsMap(item.id.toUpperCase());
     }, 100);
 }
 
 function initEChartsMap(code) {
+    initDataReferences(); // 确保数据引用已初始化
     const dom = document.getElementById("echarts-map-container");
     if (myChart) myChart.dispose();
     myChart = echarts.init(dom);
+    syncStateToGameState();
     const option = {
         backgroundColor: '#100C2A',
         tooltip: { trigger: 'item', formatter: function(p){
@@ -1279,108 +1257,99 @@ function initEChartsMap(code) {
 }
 // 将函数暴露到 window 对象，以便在 openMap 中调用
 window.initEChartsMap = initEChartsMap;
+// 暴露函数到全局（如果模块未加载，使用本地实现）
+window.saveGameRecord = saveGameRecord;
+window.showRank = showRank;
+window.clearRecords = clearRecords;
+window.openMap = openMap;
+window.showDetail = showDetail;
+window.filterCompendium = filterCompendium;
+window.openCompendium = openCompendium;
+window.toggleWikiInfo = toggleWikiInfo;
+window.closeModal = closeModal;
+window.startGame = startGame;
+window.nextRound = nextRound;
+window.checkAnswer = checkAnswer;
+// 弹窗和排行榜函数已在模块中定义，或在这里作为后备定义
+// 不需要重复暴露
 function closeMap() { document.getElementById('map-modal').style.display = 'none'; }
+window.closeMap = closeMap; // 暴露到全局
 
 // ============================================================================
-// --- PK模式弹窗处理 ---
+// --- PK模式弹窗处理（已迁移到 js/modal-handler.js）---
 // ============================================================================
-let pendingPKMode = null; // 存储待处理的PK模式
-
-function showPKSeedModal() {
-    pendingPKMode = 'pk'; // 标记为PK模式
-    const modal = document.getElementById('pk-seed-modal');
-    const input = document.getElementById('pk-seed-input');
-    modal.style.display = 'flex';
-    input.value = ''; // 清空输入
-    input.focus(); // 自动聚焦
-    
-    // 监听回车键
-    input.onkeydown = function(e) {
-        if (e.key === 'Enter') {
-            confirmPKSeed();
-        } else if (e.key === 'Escape') {
-            closePKSeedModal();
+// 弹窗处理功能已迁移到独立模块
+// 如果模块已加载，不定义这些函数，让模块版本生效
+// 如果模块未加载，定义后备实现
+if (!window.showPKSeedModal) {
+    function showPKSeedModal() {
+        const modal = document.getElementById('pk-seed-modal');
+        const input = document.getElementById('pk-seed-input');
+        if (modal && input) {
+            modal.style.display = 'flex';
+            input.value = '';
+            input.focus();
+            input.onkeydown = function(e) {
+                if (e.key === 'Enter') confirmPKSeed();
+                else if (e.key === 'Escape') closePKSeedModal();
+            };
         }
-    };
+    }
+    window.showPKSeedModal = showPKSeedModal;
 }
 
-function closePKSeedModal(e) {
-    if (e && e.target.id !== 'pk-seed-modal' && !e.target.closest('.pk-seed-card')) {
-        return; // 点击弹窗内容时不关闭
+if (!window.closePKSeedModal) {
+    function closePKSeedModal(e) {
+        if (e && e.target.id !== 'pk-seed-modal' && !e.target.closest('.pk-seed-card')) {
+            return;
+        }
+        const modal = document.getElementById('pk-seed-modal');
+        if (modal) modal.style.display = 'none';
     }
-    document.getElementById('pk-seed-modal').style.display = 'none';
-    pendingPKMode = null;
+    window.closePKSeedModal = closePKSeedModal;
 }
 
-function confirmPKSeed() {
-    const input = document.getElementById('pk-seed-input');
-    const seedValue = input.value.trim();
-    
-    if (!seedValue) {
-        showErrorModal('请输入一个数字种子！');
-        return;
+if (!window.confirmPKSeed) {
+    function confirmPKSeed() {
+        const input = document.getElementById('pk-seed-input');
+        if (!input) return;
+        const seedValue = input.value.trim();
+        if (!seedValue) {
+            showErrorModal('请输入一个数字种子！');
+            return;
+        }
+        const seed = parseInt(seedValue);
+        if (isNaN(seed)) {
+            showErrorModal('请输入有效的数字！');
+            return;
+        }
+        closePKSeedModal();
+        alert('请确保已加载 js/modal-handler.js 模块！');
     }
-    
-    const seed = parseInt(seedValue);
-    if (isNaN(seed)) {
-        showErrorModal('请输入有效的数字！');
-        return;
-    }
-    
-    // 关闭弹窗
-    closePKSeedModal();
-    
-    // 继续PK模式的游戏逻辑
-    window.currentGameSeed = seed;
-    if (currentScope === 'world') {
-        const sovereignPool = dbWorld.filter(c => c.sovereign === true);
-        const rng = window.mulberry32(seed);
-        questionPool = window.shuffleArray(sovereignPool, rng).slice(0, 50);
-    } else {
-        // 中国模式不支持PK
-        showErrorModal('PK模式目前仅支持世界模式！');
-        return;
-    }
-    
-    // 继续游戏流程
-    gameMode = 'pk';
-    totalQs = questionPool.length;
-    if(totalQs === 0) { 
-        showErrorModal('题库为空！'); 
-        return; 
-    }
-
-    score = 0;
-    isProcessing = false;
-    
-    // 重置UI状态
-    document.getElementById('answer-feedback').style.display = 'none';
-    document.getElementById('game-map-btn').style.display = 'none';
-    document.getElementById('next-btn').style.display = 'none';
-
-    let prefix = (currentScope === 'world') ? '🌍 ' : '🇨🇳 ';
-    let modeLabel = `PK模式 (种子: ${window.currentGameSeed})`;
-    document.getElementById('game-mode-label').textContent = prefix + modeLabel;
-    
-    showView('view-game');
-    nextRound();
+    window.confirmPKSeed = confirmPKSeed;
 }
 
-function showErrorModal(message) {
-    const modal = document.getElementById('error-modal');
-    const messageEl = document.getElementById('error-message');
-    messageEl.textContent = message;
-    modal.style.display = 'flex';
+if (!window.showErrorModal) {
+    function showErrorModal(message) {
+        const modal = document.getElementById('error-modal');
+        const messageEl = document.getElementById('error-message');
+        if (modal && messageEl) {
+            messageEl.textContent = message;
+            modal.style.display = 'flex';
+        } else {
+            alert(message);
+        }
+    }
+    window.showErrorModal = showErrorModal;
 }
 
-function closeErrorModal(e) {
-    if (e && e.target.id !== 'error-modal' && !e.target.closest('.error-card')) {
-        return;
+if (!window.closeErrorModal) {
+    function closeErrorModal(e) {
+        if (e && e.target.id !== 'error-modal' && !e.target.closest('.error-card')) {
+            return;
+        }
+        const modal = document.getElementById('error-modal');
+        if (modal) modal.style.display = 'none';
     }
-    document.getElementById('error-modal').style.display = 'none';
-    // 如果是在PK模式输入时出错，返回菜单
-    if (pendingPKMode === 'pk') {
-        goHome();
-        pendingPKMode = null;
-    }
+    window.closeErrorModal = closeErrorModal;
 }
