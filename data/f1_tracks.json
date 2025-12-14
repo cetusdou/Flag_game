@@ -1,0 +1,391 @@
+{
+  "version": "1.0",
+  "total": 77,
+  "tracks": [
+    {
+      "id": "adelaide-1",
+      "name": "Adelaide",
+      "img": "./assets/f1_tracks/adelaide-1.svg"
+    },
+    {
+      "id": "aida-1",
+      "name": "Aida",
+      "img": "./assets/f1_tracks/aida-1.svg"
+    },
+    {
+      "id": "ain-diab-1",
+      "name": "Ain-Diab",
+      "img": "./assets/f1_tracks/ain-diab-1.svg"
+    },
+    {
+      "id": "aintree-1",
+      "name": "Aintree",
+      "img": "./assets/f1_tracks/aintree-1.svg"
+    },
+    {
+      "id": "anderstorp-1",
+      "name": "Anderstorp",
+      "img": "./assets/f1_tracks/anderstorp-1.svg"
+    },
+    {
+      "id": "austin-1",
+      "name": "Austin",
+      "img": "./assets/f1_tracks/austin-1.svg"
+    },
+    {
+      "id": "avus-1",
+      "name": "Avus",
+      "img": "./assets/f1_tracks/avus-1.svg"
+    },
+    {
+      "id": "bahrain-3",
+      "name": "Bahrain",
+      "img": "./assets/f1_tracks/bahrain-3.svg"
+    },
+    {
+      "id": "baku-1",
+      "name": "Baku",
+      "img": "./assets/f1_tracks/baku-1.svg"
+    },
+    {
+      "id": "brands-hatch-2",
+      "name": "Brands-Hatch",
+      "img": "./assets/f1_tracks/brands-hatch-2.svg"
+    },
+    {
+      "id": "bremgarten-1",
+      "name": "Bremgarten",
+      "img": "./assets/f1_tracks/bremgarten-1.svg"
+    },
+    {
+      "id": "buddh-1",
+      "name": "Buddh",
+      "img": "./assets/f1_tracks/buddh-1.svg"
+    },
+    {
+      "id": "buenos-aires-4",
+      "name": "Buenos-Aires",
+      "img": "./assets/f1_tracks/buenos-aires-4.svg"
+    },
+    {
+      "id": "bugatti-1",
+      "name": "Bugatti",
+      "img": "./assets/f1_tracks/bugatti-1.svg"
+    },
+    {
+      "id": "caesars-palace-1",
+      "name": "Caesars-Palace",
+      "img": "./assets/f1_tracks/caesars-palace-1.svg"
+    },
+    {
+      "id": "catalunya-6",
+      "name": "Catalunya",
+      "img": "./assets/f1_tracks/catalunya-6.svg"
+    },
+    {
+      "id": "clermont-ferrand-1",
+      "name": "Clermont-Ferrand",
+      "img": "./assets/f1_tracks/clermont-ferrand-1.svg"
+    },
+    {
+      "id": "dallas-1",
+      "name": "Dallas",
+      "img": "./assets/f1_tracks/dallas-1.svg"
+    },
+    {
+      "id": "detroit-2",
+      "name": "Detroit",
+      "img": "./assets/f1_tracks/detroit-2.svg"
+    },
+    {
+      "id": "dijon-2",
+      "name": "Dijon",
+      "img": "./assets/f1_tracks/dijon-2.svg"
+    },
+    {
+      "id": "donington-1",
+      "name": "Donington",
+      "img": "./assets/f1_tracks/donington-1.svg"
+    },
+    {
+      "id": "east-london-1",
+      "name": "East-London",
+      "img": "./assets/f1_tracks/east-london-1.svg"
+    },
+    {
+      "id": "estoril-2",
+      "name": "Estoril",
+      "img": "./assets/f1_tracks/estoril-2.svg"
+    },
+    {
+      "id": "fuji-2",
+      "name": "Fuji",
+      "img": "./assets/f1_tracks/fuji-2.svg"
+    },
+    {
+      "id": "hockenheimring-4",
+      "name": "Hockenheimring",
+      "img": "./assets/f1_tracks/hockenheimring-4.svg"
+    },
+    {
+      "id": "hungaroring-3",
+      "name": "Hungaroring",
+      "img": "./assets/f1_tracks/hungaroring-3.svg"
+    },
+    {
+      "id": "imola-3",
+      "name": "Imola",
+      "img": "./assets/f1_tracks/imola-3.svg"
+    },
+    {
+      "id": "indianapolis-2",
+      "name": "Indianapolis",
+      "img": "./assets/f1_tracks/indianapolis-2.svg"
+    },
+    {
+      "id": "interlagos-2",
+      "name": "Interlagos",
+      "img": "./assets/f1_tracks/interlagos-2.svg"
+    },
+    {
+      "id": "istanbul-1",
+      "name": "Istanbul",
+      "img": "./assets/f1_tracks/istanbul-1.svg"
+    },
+    {
+      "id": "jacarepagua-1",
+      "name": "Jacarepagua",
+      "img": "./assets/f1_tracks/jacarepagua-1.svg"
+    },
+    {
+      "id": "jarama-2",
+      "name": "Jarama",
+      "img": "./assets/f1_tracks/jarama-2.svg"
+    },
+    {
+      "id": "jeddah-1",
+      "name": "Jeddah",
+      "img": "./assets/f1_tracks/jeddah-1.svg"
+    },
+    {
+      "id": "jerez-2",
+      "name": "Jerez",
+      "img": "./assets/f1_tracks/jerez-2.svg"
+    },
+    {
+      "id": "kyalami-2",
+      "name": "Kyalami",
+      "img": "./assets/f1_tracks/kyalami-2.svg"
+    },
+    {
+      "id": "las-vegas-1",
+      "name": "Las-Vegas",
+      "img": "./assets/f1_tracks/las-vegas-1.svg"
+    },
+    {
+      "id": "long-beach-3",
+      "name": "Long-Beach",
+      "img": "./assets/f1_tracks/long-beach-3.svg"
+    },
+    {
+      "id": "lusail-1",
+      "name": "Lusail",
+      "img": "./assets/f1_tracks/lusail-1.svg"
+    },
+    {
+      "id": "magny-cours-3",
+      "name": "Magny-Cours",
+      "img": "./assets/f1_tracks/magny-cours-3.svg"
+    },
+    {
+      "id": "marina-bay-4",
+      "name": "Marina-Bay",
+      "img": "./assets/f1_tracks/marina-bay-4.svg"
+    },
+    {
+      "id": "melbourne-2",
+      "name": "Melbourne",
+      "img": "./assets/f1_tracks/melbourne-2.svg"
+    },
+    {
+      "id": "mexico-city-3",
+      "name": "Mexico-City",
+      "img": "./assets/f1_tracks/mexico-city-3.svg"
+    },
+    {
+      "id": "miami-1",
+      "name": "Miami",
+      "img": "./assets/f1_tracks/miami-1.svg"
+    },
+    {
+      "id": "monaco-5",
+      "name": "Monaco",
+      "img": "./assets/f1_tracks/monaco-5.svg"
+    },
+    {
+      "id": "monsanto-1",
+      "name": "Monsanto",
+      "img": "./assets/f1_tracks/monsanto-1.svg"
+    },
+    {
+      "id": "mont-tremblant-1",
+      "name": "Mont-Tremblant",
+      "img": "./assets/f1_tracks/mont-tremblant-1.svg"
+    },
+    {
+      "id": "montjuic-1",
+      "name": "Montjuic",
+      "img": "./assets/f1_tracks/montjuic-1.svg"
+    },
+    {
+      "id": "montreal-6",
+      "name": "Montreal",
+      "img": "./assets/f1_tracks/montreal-6.svg"
+    },
+    {
+      "id": "monza-6",
+      "name": "Monza",
+      "img": "./assets/f1_tracks/monza-6.svg"
+    },
+    {
+      "id": "mosport-1",
+      "name": "Mosport",
+      "img": "./assets/f1_tracks/mosport-1.svg"
+    },
+    {
+      "id": "mugello-1",
+      "name": "Mugello",
+      "img": "./assets/f1_tracks/mugello-1.svg"
+    },
+    {
+      "id": "nivelles-1",
+      "name": "Nivelles",
+      "img": "./assets/f1_tracks/nivelles-1.svg"
+    },
+    {
+      "id": "nurburgring-4",
+      "name": "Nurburgring",
+      "img": "./assets/f1_tracks/nurburgring-4.svg"
+    },
+    {
+      "id": "paul-ricard-3",
+      "name": "Paul-Ricard",
+      "img": "./assets/f1_tracks/paul-ricard-3.svg"
+    },
+    {
+      "id": "pedralbes-1",
+      "name": "Pedralbes",
+      "img": "./assets/f1_tracks/pedralbes-1.svg"
+    },
+    {
+      "id": "pescara-1",
+      "name": "Pescara",
+      "img": "./assets/f1_tracks/pescara-1.svg"
+    },
+    {
+      "id": "phoenix-2",
+      "name": "Phoenix",
+      "img": "./assets/f1_tracks/phoenix-2.svg"
+    },
+    {
+      "id": "portimao-1",
+      "name": "Portimao",
+      "img": "./assets/f1_tracks/portimao-1.svg"
+    },
+    {
+      "id": "porto-1",
+      "name": "Porto",
+      "img": "./assets/f1_tracks/porto-1.svg"
+    },
+    {
+      "id": "reims-2",
+      "name": "Reims",
+      "img": "./assets/f1_tracks/reims-2.svg"
+    },
+    {
+      "id": "riverside-1",
+      "name": "Riverside",
+      "img": "./assets/f1_tracks/riverside-1.svg"
+    },
+    {
+      "id": "rouen-2",
+      "name": "Rouen",
+      "img": "./assets/f1_tracks/rouen-2.svg"
+    },
+    {
+      "id": "sebring-1",
+      "name": "Sebring",
+      "img": "./assets/f1_tracks/sebring-1.svg"
+    },
+    {
+      "id": "sepang-1",
+      "name": "Sepang",
+      "img": "./assets/f1_tracks/sepang-1.svg"
+    },
+    {
+      "id": "shanghai-1",
+      "name": "Shanghai",
+      "img": "./assets/f1_tracks/shanghai-1.svg"
+    },
+    {
+      "id": "silverstone-8",
+      "name": "Silverstone",
+      "img": "./assets/f1_tracks/silverstone-8.svg"
+    },
+    {
+      "id": "sochi-1",
+      "name": "Sochi",
+      "img": "./assets/f1_tracks/sochi-1.svg"
+    },
+    {
+      "id": "spa-francorchamps-4",
+      "name": "Spa-Francorchamps",
+      "img": "./assets/f1_tracks/spa-francorchamps-4.svg"
+    },
+    {
+      "id": "spielberg-3",
+      "name": "Spielberg",
+      "img": "./assets/f1_tracks/spielberg-3.svg"
+    },
+    {
+      "id": "suzuka-2",
+      "name": "Suzuka",
+      "img": "./assets/f1_tracks/suzuka-2.svg"
+    },
+    {
+      "id": "valencia-1",
+      "name": "Valencia",
+      "img": "./assets/f1_tracks/valencia-1.svg"
+    },
+    {
+      "id": "watkins-glen-3",
+      "name": "Watkins-Glen",
+      "img": "./assets/f1_tracks/watkins-glen-3.svg"
+    },
+    {
+      "id": "yas-marina-2",
+      "name": "Yas-Marina",
+      "img": "./assets/f1_tracks/yas-marina-2.svg"
+    },
+    {
+      "id": "yeongam-1",
+      "name": "Yeongam",
+      "img": "./assets/f1_tracks/yeongam-1.svg"
+    },
+    {
+      "id": "zandvoort-5",
+      "name": "Zandvoort",
+      "img": "./assets/f1_tracks/zandvoort-5.svg"
+    },
+    {
+      "id": "zeltweg-1",
+      "name": "Zeltweg",
+      "img": "./assets/f1_tracks/zeltweg-1.svg"
+    },
+    {
+      "id": "zolder-2",
+      "name": "Zolder",
+      "img": "./assets/f1_tracks/zolder-2.svg"
+    }
+  ]
+}

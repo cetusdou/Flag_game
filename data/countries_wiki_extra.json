@@ -15,7 +15,10 @@
     "gdp_nominal_per_capita": "$35,717",
     "gini": "N/A",
     "currency": "Aruban florin",
-    "area": "180 km2"
+    "area": "180 km2",
+    "landmarks": [
+      "(left) Stone axe blade (right) Stone hand axe"
+    ]
   },
   "af": {
     "id": "af",
@@ -33,7 +36,8 @@
     "gdp_nominal_per_capita": "$411",
     "gini": "N/A",
     "currency": "Afghani",
-    "area": "652,864 km2"
+    "area": "652,864 km2",
+    "landmarks": []
   },
   "ao": {
     "id": "ao",
@@ -51,7 +55,8 @@
     "gdp_nominal_per_capita": "$2,880",
     "gini": "51.3high inequality",
     "currency": "Angolan kwanza",
-    "area": "1,246,700 km2"
+    "area": "1,246,700 km2",
+    "landmarks": []
   },
   "ai": {
     "id": "ai",
@@ -69,7 +74,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Eastern Caribbean dollar",
-    "area": "91 km2"
+    "area": "91 km2",
+    "landmarks": []
   },
   "ax": {
     "id": "ax",
@@ -87,7 +93,8 @@
     "gdp_nominal_per_capita": "€37,200",
     "gini": "N/A",
     "currency": "Euro",
-    "area": "1,580.12 km2"
+    "area": "1,580.12 km2",
+    "landmarks": []
   },
   "al": {
     "id": "al",
@@ -105,7 +112,8 @@
     "gdp_nominal_per_capita": "$10,526",
     "gini": "29.4low inequality",
     "currency": "Lek",
-    "area": "28,748 km2"
+    "area": "28,748 km2",
+    "landmarks": []
   },
   "ad": {
     "id": "ad",
@@ -123,7 +131,15 @@
     "gdp_nominal_per_capita": "$44,900",
     "gini": "40.0medium inequality",
     "currency": "Euro",
-    "area": "467.63 km2"
+    "area": "467.63 km2",
+    "landmarks": [
+      "Josep-Lluís Serrano PentinatBishop of Urgellsince 2025",
+      "Women's Folk costume (Le val d'Andorre)",
+      "Men's Folk costume (Le val d'Andorre)",
+      "Grandalla flower, the national symbol",
+      "Altar of Sant Romà de Vila",
+      "Santa Coloma d'Andorra"
+    ]
   },
   "ae": {
     "id": "ae",
@@ -141,7 +157,14 @@
     "gdp_nominal_per_capita": "$49,550",
     "gini": "26low inequality",
     "currency": "UAE dirham",
-    "area": "83,600 km2"
+    "area": "83,600 km2",
+    "landmarks": [
+      "United Arab Emirates",
+      "Baynunah-class corvette of the United Arab Emirates Navy",
+      "Dubai International Financial Center",
+      "Palm Jumeirah in Dubai",
+      "Skyline of Dubai, largest city of United Arab Emirates"
+    ]
   },
   "ar": {
     "id": "ar",
@@ -159,7 +182,8 @@
     "gdp_nominal_per_capita": "$14,362",
     "gini": "40.7medium inequality",
     "currency": "Argentine peso",
-    "area": "2,780,085 km2"
+    "area": "2,780,085 km2",
+    "landmarks": []
   },
   "am": {
     "id": "am",
@@ -177,7 +201,8 @@
     "gdp_nominal_per_capita": "$8,969",
     "gini": "27.9low inequality",
     "currency": "Dram",
-    "area": "29,743 km2"
+    "area": "29,743 km2",
+    "landmarks": []
   },
   "as": {
     "id": "as",
@@ -195,7 +220,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "United States dollar",
-    "area": "77 sq mi"
+    "area": "77 sq mi",
+    "landmarks": []
   },
   "tf": {
     "id": "tf",
@@ -214,7 +240,8 @@
     "gini": "N/A",
     "currency": "Euro",
     "population": "Officially 400~800 permanent scientists and military personnelNo known permanent population",
-    "area": "439,666.4 km2"
+    "area": "439,666.4 km2",
+    "landmarks": []
   },
   "ag": {
     "id": "ag",
@@ -232,7 +259,11 @@
     "gdp_nominal_per_capita": "$22,630",
     "gini": "N/A",
     "currency": "Eastern Caribbean dollar",
-    "area": "440 km2"
+    "area": "440 km2",
+    "landmarks": [
+      "class=notpageimage| Antigua and Barbuda",
+      ". . . but poverty is never far away."
+    ]
   },
   "au": {
     "id": "au",
@@ -250,7 +281,10 @@
     "gdp_nominal_per_capita": "$65,946",
     "gini": "32.4medium inequality",
     "currency": "Australian dollar",
-    "area": "7,688,287 km2"
+    "area": "7,688,287 km2",
+    "landmarks": [
+      "Charles IIIKing of Australia"
+    ]
   },
   "at": {
     "id": "at",
@@ -268,7 +302,8 @@
     "gdp_nominal_per_capita": "$58,190",
     "gini": "28.1low inequality",
     "currency": "Euro",
-    "area": "83,879 km2"
+    "area": "83,879 km2",
+    "landmarks": []
   },
   "az": {
     "id": "az",
@@ -286,7 +321,10 @@
     "gdp_nominal_per_capita": "$7,604",
     "gini": "33.7medium inequality",
     "currency": "Manat",
-    "area": "86,600 km2"
+    "area": "86,600 km2",
+    "landmarks": [
+      "Usta Gambar Karabakhi – Tree of Life(Palace of Shaki Khans)"
+    ]
   },
   "bi": {
     "id": "bi",
@@ -304,7 +342,8 @@
     "gdp_nominal_per_capita": "$489",
     "gini": "37.5medium inequality",
     "currency": "Burundian franc",
-    "area": "27,834 km2"
+    "area": "27,834 km2",
+    "landmarks": []
   },
   "be": {
     "id": "be",
@@ -322,7 +361,10 @@
     "gdp_nominal_per_capita": "$58,248",
     "gini": "24.9low inequality",
     "currency": "Euro",
-    "area": "30,689 km2"
+    "area": "30,689 km2",
+    "landmarks": [
+      "PhilippeKing of the Belgianssince 21 July 2013"
+    ]
   },
   "bj": {
     "id": "bj",
@@ -340,7 +382,8 @@
     "gdp_nominal_per_capita": "$1,449",
     "gini": "34.4medium inequality",
     "currency": "West African CFA franc",
-    "area": "114,763 km2"
+    "area": "114,763 km2",
+    "landmarks": []
   },
   "bf": {
     "id": "bf",
@@ -358,7 +401,8 @@
     "gdp_nominal_per_capita": "$1,110",
     "gini": "37.4medium inequality",
     "currency": "West African CFA franc",
-    "area": "274,223 km2"
+    "area": "274,223 km2",
+    "landmarks": []
   },
   "bd": {
     "id": "bd",
@@ -376,7 +420,13 @@
     "gdp_nominal_per_capita": "$2,730",
     "gini": "33.4medium inequality",
     "currency": "Taka",
-    "area": "148,460 km2"
+    "area": "148,460 km2",
+    "landmarks": [
+      "Countries that share diplomatic relations with Bangladesh",
+      "Bangladesh Army personnel on a BTR-80",
+      "The under-construction Rooppur Nuclear Power Plant at night",
+      "Kala bhuna, a popular beef dish from Chittagong Division"
+    ]
   },
   "bg": {
     "id": "bg",
@@ -394,7 +444,8 @@
     "gdp_nominal_per_capita": "$18,522",
     "gini": "37.2medium inequality",
     "currency": "Lev",
-    "area": "110,993.6 km2"
+    "area": "110,993.6 km2",
+    "landmarks": []
   },
   "bh": {
     "id": "bh",
@@ -412,7 +463,10 @@
     "gdp_nominal_per_capita": "$29,573",
     "gini": "N/A",
     "currency": "Bahraini dinar",
-    "area": "786.8 km2"
+    "area": "786.8 km2",
+    "landmarks": [
+      "RBNS Sabha of the Royal Bahraini Navy"
+    ]
   },
   "bs": {
     "id": "bs",
@@ -430,7 +484,10 @@
     "gdp_nominal_per_capita": "$35,257",
     "gini": "N/A",
     "currency": "Bahamian dollar",
-    "area": "13,943 km2"
+    "area": "13,943 km2",
+    "landmarks": [
+      "Charles IIIKing"
+    ]
   },
   "ba": {
     "id": "ba",
@@ -448,7 +505,11 @@
     "gdp_nominal_per_capita": "$9,659",
     "gini": "27.1low inequality",
     "currency": "Convertible mark",
-    "area": "51,209 km2"
+    "area": "51,209 km2",
+    "landmarks": [
+      "Željko KomšićChairman of the Presidency",
+      "Bosnia and Herzegovina's government building in Sarajevo"
+    ]
   },
   "bl": {
     "id": "bl",
@@ -466,7 +527,8 @@
     "gdp_nominal_per_capita": "US$51,735",
     "gini": "N/A",
     "currency": "Euro",
-    "area": "25 km2"
+    "area": "25 km2",
+    "landmarks": []
   },
   "sh": {
     "id": "sh",
@@ -484,7 +546,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Saint Helena pound",
-    "area": "394 km2"
+    "area": "394 km2",
+    "landmarks": []
   },
   "by": {
     "id": "by",
@@ -502,7 +565,8 @@
     "gdp_nominal_per_capita": "$7,477",
     "gini": "25.3low inequality",
     "currency": "Belarusian ruble",
-    "area": "207,600 km2"
+    "area": "207,600 km2",
+    "landmarks": []
   },
   "bz": {
     "id": "bz",
@@ -520,7 +584,10 @@
     "gdp_nominal_per_capita": "$8,355",
     "gini": "53.1high inequality",
     "currency": "Belize dollar",
-    "area": "22,966 km2"
+    "area": "22,966 km2",
+    "landmarks": [
+      "Charles IIIKing"
+    ]
   },
   "bm": {
     "id": "bm",
@@ -538,7 +605,8 @@
     "gdp_nominal_per_capita": "US$117,097",
     "gini": "N/A",
     "currency": "Bermudian dollar",
-    "area": "53.2 km2"
+    "area": "53.2 km2",
+    "landmarks": []
   },
   "bo": {
     "id": "bo",
@@ -556,7 +624,8 @@
     "gdp_nominal_per_capita": "$4,525",
     "gini": "40.9medium inequality",
     "currency": "Boliviano",
-    "area": "1,098,581 km2"
+    "area": "1,098,581 km2",
+    "landmarks": []
   },
   "bq": {
     "id": "bq",
@@ -574,7 +643,11 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "United States dollar",
-    "area": "322 km2"
+    "area": "322 km2",
+    "landmarks": [
+      "Klein Bonaire (Bonaire in the background)",
+      "The hilly terrain of Saba"
+    ]
   },
   "br": {
     "id": "br",
@@ -592,7 +665,8 @@
     "gdp_nominal_per_capita": "$9,964",
     "gini": "51.6high inequality",
     "currency": "Real",
-    "area": "8,515,767 km2"
+    "area": "8,515,767 km2",
+    "landmarks": []
   },
   "bb": {
     "id": "bb",
@@ -610,7 +684,8 @@
     "gdp_nominal_per_capita": "$21,442",
     "gini": "34.1medium inequality",
     "currency": "Barbadian dollar",
-    "area": "439 km2"
+    "area": "439 km2",
+    "landmarks": []
   },
   "bn": {
     "id": "bn",
@@ -628,7 +703,8 @@
     "gdp_nominal_per_capita": "$34,970",
     "gini": "N/A",
     "currency": "Brunei dollar",
-    "area": "5,765 km2"
+    "area": "5,765 km2",
+    "landmarks": []
   },
   "bt": {
     "id": "bt",
@@ -646,7 +722,15 @@
     "gdp_nominal_per_capita": "$4,300",
     "gini": "28.5low inequality",
     "currency": "Ngultrum",
-    "area": "38,394 km2"
+    "area": "38,394 km2",
+    "landmarks": [
+      "Jigme Khesar Namgyel Wangchuck,King of Bhutan",
+      "Languages of Bhutan",
+      "Gangkar Puensum, the highest mountain in Bhutan",
+      "Sub-alpine Himalayan landscape",
+      "A Himalayan peak from Bumthang",
+      "Jigme Dorji National Park"
+    ]
   },
   "bv": {
     "id": "bv",
@@ -664,7 +748,10 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "N/A",
-    "area": "49 km2"
+    "area": "49 km2",
+    "landmarks": [
+      "A view of the west coast of Bouvet Island"
+    ]
   },
   "bw": {
     "id": "bw",
@@ -682,7 +769,10 @@
     "gdp_nominal_per_capita": "$7,859",
     "gini": "45.5medium inequality",
     "currency": "Pula",
-    "area": "581,730 km2"
+    "area": "581,730 km2",
+    "landmarks": [
+      "Air Botswana (top) and Thapama Interchange (bottom)"
+    ]
   },
   "cf": {
     "id": "cf",
@@ -700,7 +790,8 @@
     "gdp_nominal_per_capita": "$539",
     "gini": "43medium inequality",
     "currency": "Central African CFA franc",
-    "area": "622,984 km2"
+    "area": "622,984 km2",
+    "landmarks": []
   },
   "ca": {
     "id": "ca",
@@ -718,7 +809,10 @@
     "gdp_nominal_per_capita": "$54,935",
     "gini": "29.2low inequality",
     "currency": "Canadian dollar",
-    "area": "9,093,507 km2"
+    "area": "9,093,507 km2",
+    "landmarks": [
+      "Charles III, King of Canada"
+    ]
   },
   "cc": {
     "id": "cc",
@@ -736,7 +830,10 @@
     "gdp_nominal_per_capita": "$18,570.91",
     "gini": "N/A",
     "currency": "Australian dollar",
-    "area": "14 km2"
+    "area": "14 km2",
+    "landmarks": [
+      "Home Island"
+    ]
   },
   "ch": {
     "id": "ch",
@@ -754,7 +851,8 @@
     "gdp_nominal_per_capita": "$111,047",
     "gini": "31.5medium inequality",
     "currency": "Swiss franc",
-    "area": "41,285 km2"
+    "area": "41,285 km2",
+    "landmarks": []
   },
   "cl": {
     "id": "cl",
@@ -772,7 +870,8 @@
     "gdp_nominal_per_capita": "$17,936",
     "gini": "44.8medium inequality",
     "currency": "Chilean peso",
-    "area": "756,101.96 km2"
+    "area": "756,101.96 km2",
+    "landmarks": []
   },
   "cn": {
     "id": "cn",
@@ -790,7 +889,8 @@
     "gdp_nominal_per_capita": "$13,806",
     "gini": "36.0medium inequality",
     "currency": "Renminbi",
-    "area": "9,596,961 km2"
+    "area": "9,596,961 km2",
+    "landmarks": []
   },
   "ci": {
     "id": "ci",
@@ -808,7 +908,8 @@
     "gdp_nominal_per_capita": "$2,728",
     "gini": "35.3medium inequality",
     "currency": "West African CFA franc",
-    "area": "322,462 km2"
+    "area": "322,462 km2",
+    "landmarks": []
   },
   "cm": {
     "id": "cm",
@@ -826,7 +927,8 @@
     "gdp_nominal_per_capita": "$2,027",
     "gini": "42.2medium inequality",
     "currency": "Central African CFA franc",
-    "area": "475,442 km2"
+    "area": "475,442 km2",
+    "landmarks": []
   },
   "cd": {
     "id": "cd",
@@ -844,7 +946,8 @@
     "gdp_nominal_per_capita": "$742",
     "gini": "42.1medium inequality",
     "currency": "Congolese franc",
-    "area": "2,345,409 km2"
+    "area": "2,345,409 km2",
+    "landmarks": []
   },
   "ck": {
     "id": "ck",
@@ -862,7 +965,12 @@
     "gdp_nominal_per_capita": "US$21,994",
     "gini": "N/A",
     "currency": "New Zealand dollar",
-    "area": "236.7 km2"
+    "area": "236.7 km2",
+    "landmarks": [
+      "Aerial photograph of Pukapuka",
+      "Tapuaetai (One Foot Island) at Aitutaki",
+      "Rock outcrop on Rarotonga"
+    ]
   },
   "co": {
     "id": "co",
@@ -880,7 +988,10 @@
     "gdp_nominal_per_capita": "$7,327",
     "gini": "54.8high inequality",
     "currency": "Colombian peso",
-    "area": "1,141,748 km2"
+    "area": "1,141,748 km2",
+    "landmarks": [
+      "Work by the painter and sculptor Fernando Botero"
+    ]
   },
   "km": {
     "id": "km",
@@ -898,7 +1009,8 @@
     "gdp_nominal_per_capita": "$1,377",
     "gini": "45.3medium inequality",
     "currency": "Comorian franc",
-    "area": "2,035 km2"
+    "area": "2,035 km2",
+    "landmarks": []
   },
   "cv": {
     "id": "cv",
@@ -916,7 +1028,8 @@
     "gdp_nominal_per_capita": "$4,502",
     "gini": "42.4medium inequality",
     "currency": "Cape Verdean escudo",
-    "area": "4,033 km2"
+    "area": "4,033 km2",
+    "landmarks": []
   },
   "cr": {
     "id": "cr",
@@ -934,7 +1047,8 @@
     "gdp_nominal_per_capita": "$19,095",
     "gini": "47.2high inequality",
     "currency": "Costa Rican colón",
-    "area": "51,179.92 km2"
+    "area": "51,179.92 km2",
+    "landmarks": []
   },
   "cu": {
     "id": "cu",
@@ -952,7 +1066,10 @@
     "gdp_nominal_per_capita": "$18,329",
     "gini": "38.0medium inequality",
     "currency": "Cuban peso",
-    "area": "110,860 km2"
+    "area": "110,860 km2",
+    "landmarks": [
+      "Gloria Estefan and Celia Cruz"
+    ]
   },
   "cw": {
     "id": "cw",
@@ -970,7 +1087,8 @@
     "gdp_nominal_per_capita": "$22,581",
     "gini": "N/A",
     "currency": "Caribbean guilder",
-    "area": "444 km2"
+    "area": "444 km2",
+    "landmarks": []
   },
   "cx": {
     "id": "cx",
@@ -988,7 +1106,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Australian dollar",
-    "area": "135 km2"
+    "area": "135 km2",
+    "landmarks": []
   },
   "ky": {
     "id": "ky",
@@ -1006,7 +1125,10 @@
     "gdp_nominal_per_capita": "$97,750",
     "gini": "N/A",
     "currency": "Cayman Islands dollar",
-    "area": "264 km2"
+    "area": "264 km2",
+    "landmarks": [
+      "Panorama of Seven Mile Beach in Grand Cayman"
+    ]
   },
   "cy": {
     "id": "cy",
@@ -1024,7 +1146,10 @@
     "gdp_nominal_per_capita": "$42,413",
     "gini": "29.4low inequality",
     "currency": "Euro",
-    "area": "9,251 km2"
+    "area": "9,251 km2",
+    "landmarks": [
+      "The port of Limassol, the busiest in Cyprus"
+    ]
   },
   "cz": {
     "id": "cz",
@@ -1042,7 +1167,10 @@
     "gdp_nominal_per_capita": "$31,365",
     "gini": "24.4low inequality",
     "currency": "Czech koruna",
-    "area": "78,871 km2"
+    "area": "78,871 km2",
+    "landmarks": [
+      "The National Theatre (left) and the Estates Theatre (right)"
+    ]
   },
   "de": {
     "id": "de",
@@ -1060,7 +1188,10 @@
     "gdp_nominal_per_capita": "$59,925",
     "gini": "29.4low inequality",
     "currency": "Euro",
-    "area": "357,022 km2"
+    "area": "357,022 km2",
+    "landmarks": [
+      "C.D. Friedrich, Wanderer above the Sea of Fog (1818)"
+    ]
   },
   "dj": {
     "id": "dj",
@@ -1078,7 +1209,10 @@
     "gdp_nominal_per_capita": "$3,761",
     "gini": "41.6medium inequality",
     "currency": "Djiboutian franc",
-    "area": "23,200 km2"
+    "area": "23,200 km2",
+    "landmarks": [
+      "A Somali woman in nomadic attire"
+    ]
   },
   "dm": {
     "id": "dm",
@@ -1096,7 +1230,8 @@
     "gdp_nominal_per_capita": "$7,860",
     "gini": "N/A",
     "currency": "East Caribbean dollar",
-    "area": "750 km2"
+    "area": "750 km2",
+    "landmarks": []
   },
   "dk": {
     "id": "dk",
@@ -1114,7 +1249,10 @@
     "gdp_nominal_per_capita": "$74,969",
     "gini": "27.7low",
     "currency": "Danish krone",
-    "area": "43,094 km2"
+    "area": "43,094 km2",
+    "landmarks": [
+      "Frederik X,King of Denmark"
+    ]
   },
   "do": {
     "id": "do",
@@ -1132,7 +1270,11 @@
     "gdp_nominal_per_capita": "$12,452",
     "gini": "37medium inequality",
     "currency": "Dominican peso",
-    "area": "48,671 km2"
+    "area": "48,671 km2",
+    "landmarks": [
+      "Frosted alpine forest in Constanza, Dominican Republic",
+      "Desert sand dunes of Baní, Dominican Republic"
+    ]
   },
   "dz": {
     "id": "dz",
@@ -1150,7 +1292,10 @@
     "gdp_nominal_per_capita": "$5,690",
     "gini": "27.6low inequality",
     "currency": "Algerian dinar",
-    "area": "2,381,741 km2"
+    "area": "2,381,741 km2",
+    "landmarks": [
+      "Apuleius"
+    ]
   },
   "ec": {
     "id": "ec",
@@ -1168,7 +1313,8 @@
     "gdp_nominal_per_capita": "$6,630",
     "gini": "44.6medium inequality",
     "currency": "United States dollara",
-    "area": "283,561 km2"
+    "area": "283,561 km2",
+    "landmarks": []
   },
   "eg": {
     "id": "eg",
@@ -1186,7 +1332,11 @@
     "gdp_nominal_per_capita": "$3,174",
     "gini": "31.9medium inequality",
     "currency": "Egyptian pound",
-    "area": "1,010,408 km2"
+    "area": "1,010,408 km2",
+    "landmarks": [
+      "Khayamiya design motives.",
+      "Soad Hosny"
+    ]
   },
   "er": {
     "id": "er",
@@ -1204,7 +1354,12 @@
     "gdp_nominal_per_capita": "$567",
     "gini": "N/A",
     "currency": "Nakfa",
-    "area": "120,000 km2"
+    "area": "120,000 km2",
+    "landmarks": [
+      "Tourists on a steam railway excursion from Asmara",
+      "The Sheikh Hanafi Mosque in Massawa",
+      "Eritrean national museum in Asmara"
+    ]
   },
   "eh": {
     "id": "eh",
@@ -1222,7 +1377,11 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "N/A",
-    "area": "565,581"
+    "area": "565,581",
+    "landmarks": [
+      "Western Sahara in Africa",
+      "Topography of Western Sahara"
+    ]
   },
   "es": {
     "id": "es",
@@ -1240,7 +1399,10 @@
     "gdp_nominal_per_capita": "$38,040",
     "gini": "31.2medium inequality",
     "currency": "Euro",
-    "area": "506,030 km2"
+    "area": "506,030 km2",
+    "landmarks": [
+      "Felipe VIKing"
+    ]
   },
   "ee": {
     "id": "ee",
@@ -1258,7 +1420,8 @@
     "gdp_nominal_per_capita": "$32,760",
     "gini": "30.6medium inequality",
     "currency": "Euro",
-    "area": "45,335 km2"
+    "area": "45,335 km2",
+    "landmarks": []
   },
   "et": {
     "id": "et",
@@ -1276,7 +1439,10 @@
     "gdp_nominal_per_capita": "$994",
     "gini": "35.0medium inequality",
     "currency": "Birr",
-    "area": "1,104,300 km2"
+    "area": "1,104,300 km2",
+    "landmarks": [
+      "Ruth Negga is an Ethiopian-born actress."
+    ]
   },
   "fi": {
     "id": "fi",
@@ -1294,7 +1460,10 @@
     "gdp_nominal_per_capita": "$54,160",
     "gini": "26.6low inequality",
     "currency": "Euro",
-    "area": "338,455 km2"
+    "area": "338,455 km2",
+    "landmarks": [
+      "The Parliament of Finland's main building in Helsinki"
+    ]
   },
   "fj": {
     "id": "fj",
@@ -1312,7 +1481,8 @@
     "gdp_nominal_per_capita": "$6,024",
     "gini": "30.7medium inequality",
     "currency": "Fijian dollar",
-    "area": "18,274 km2"
+    "area": "18,274 km2",
+    "landmarks": []
   },
   "fk": {
     "id": "fk",
@@ -1330,7 +1500,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "36.0medium",
     "currency": "Pound sterlingFalkland Islands pound",
-    "area": "12,173 km2"
+    "area": "12,173 km2",
+    "landmarks": []
   },
   "fr": {
     "id": "fr",
@@ -1348,7 +1519,8 @@
     "gdp_nominal_per_capita": "$46,792",
     "gini": "29.8low inequality",
     "currency": "Euro",
-    "area": "632,702.3 km2"
+    "area": "632,702.3 km2",
+    "landmarks": []
   },
   "fo": {
     "id": "fo",
@@ -1366,7 +1538,10 @@
     "gdp_nominal_per_capita": "US$58,585",
     "gini": "22.71low · Not ranked",
     "currency": "Faroese krónaDanish krone",
-    "area": "1,393 km2"
+    "area": "1,393 km2",
+    "landmarks": [
+      "Frederik X, King of Denmark since 2024"
+    ]
   },
   "ga": {
     "id": "ga",
@@ -1384,7 +1559,8 @@
     "gdp_nominal_per_capita": "$9,303",
     "gini": "38medium inequality",
     "currency": "Central African CFA franc",
-    "area": "267,668 km2"
+    "area": "267,668 km2",
+    "landmarks": []
   },
   "gb": {
     "id": "gb",
@@ -1402,7 +1578,11 @@
     "gdp_nominal_per_capita": "$56,661",
     "gini": "35.4medium inequality",
     "currency": "Pound sterling",
-    "area": "244,376 km2"
+    "area": "244,376 km2",
+    "landmarks": [
+      "Charles IIIKing",
+      "Robert Burns (1759–1796)"
+    ]
   },
   "gg": {
     "id": "gg",
@@ -1420,7 +1600,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Guernsey poundPound sterling",
-    "area": "62 km2"
+    "area": "62 km2",
+    "landmarks": []
   },
   "gh": {
     "id": "gh",
@@ -1438,7 +1619,8 @@
     "gdp_nominal_per_capita": "$2,520",
     "gini": "44medium inequality",
     "currency": "Cedi",
-    "area": "240,000 km2"
+    "area": "240,000 km2",
+    "landmarks": []
   },
   "gi": {
     "id": "gi",
@@ -1456,7 +1638,8 @@
     "gdp_nominal_per_capita": "£85,614",
     "gini": "N/A",
     "currency": "Pound sterlingGibraltar pound",
-    "area": "6.8 km2"
+    "area": "6.8 km2",
+    "landmarks": []
   },
   "gn": {
     "id": "gn",
@@ -1474,7 +1657,8 @@
     "gdp_nominal_per_capita": "$1,670",
     "gini": "33.7medium inequality",
     "currency": "Guinean franc",
-    "area": "245,857 km2"
+    "area": "245,857 km2",
+    "landmarks": []
   },
   "gp": {
     "id": "gp",
@@ -1492,7 +1676,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Euro (€) (EUR)",
-    "area": "€9.462 billion"
+    "area": "€9.462 billion",
+    "landmarks": []
   },
   "gm": {
     "id": "gm",
@@ -1511,7 +1696,10 @@
     "gini": "35.9medium inequality",
     "currency": "Gambian dalasi",
     "population": "34.4% Mandinka25.0% Fula15.4% Wolof9.5% Jola8.2% Soninke2.9% Serer4.6% other",
-    "area": "11,300 km2"
+    "area": "11,300 km2",
+    "landmarks": [
+      "Brightly painted fishing boats are common in Bakau"
+    ]
   },
   "gw": {
     "id": "gw",
@@ -1529,7 +1717,8 @@
     "gdp_nominal_per_capita": "$1,130",
     "gini": "33.4medium inequality",
     "currency": "West African CFA franc",
-    "area": "36,125 km2"
+    "area": "36,125 km2",
+    "landmarks": []
   },
   "gq": {
     "id": "gq",
@@ -1547,7 +1736,15 @@
     "gdp_nominal_per_capita": "$7,750",
     "gini": "N/A",
     "currency": "Central African CFA franc",
-    "area": "28,050 km2"
+    "area": "28,050 km2",
+    "landmarks": [
+      "Annobon",
+      "Islote Horacio",
+      "Near Ciudad de la Paz",
+      "Monte Alén National Park",
+      "Pico Basilé",
+      "Dissotis"
+    ]
   },
   "gr": {
     "id": "gr",
@@ -1565,7 +1762,8 @@
     "gdp_nominal_per_capita": "$27,170",
     "gini": "31.8medium inequality",
     "currency": "Euro",
-    "area": "131,957 km2"
+    "area": "131,957 km2",
+    "landmarks": []
   },
   "gd": {
     "id": "gd",
@@ -1583,7 +1781,8 @@
     "gdp_nominal_per_capita": "$11,437",
     "gini": "43.8medium inequality",
     "currency": "Eastern Caribbean dollar",
-    "area": "344 km2"
+    "area": "344 km2",
+    "landmarks": []
   },
   "gl": {
     "id": "gl",
@@ -1601,7 +1800,12 @@
     "gdp_nominal_per_capita": "$58,499",
     "gini": "56.0high",
     "currency": "Danish krone",
-    "area": "2,166,086 km2"
+    "area": "2,166,086 km2",
+    "landmarks": [
+      "Godthåb in Greenland, c. 1878",
+      "Greenlandic muskoxen at King Oscar Fjord",
+      "Frederik X, King of Denmark"
+    ]
   },
   "gt": {
     "id": "gt",
@@ -1619,7 +1823,8 @@
     "gdp_nominal_per_capita": "$6,682",
     "gini": "45.2medium inequality",
     "currency": "Quetzal",
-    "area": "108,889 km2"
+    "area": "108,889 km2",
+    "landmarks": []
   },
   "gf": {
     "id": "gf",
@@ -1637,7 +1842,10 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Euro (€) (EUR)",
-    "area": "€4.562 billion"
+    "area": "€4.562 billion",
+    "landmarks": [
+      "Antoine PoussierPrefect"
+    ]
   },
   "gu": {
     "id": "gu",
@@ -1655,7 +1863,8 @@
     "gdp_nominal_per_capita": "$37,387",
     "gini": "N/A",
     "currency": "United States dollar",
-    "area": "210 sq mi"
+    "area": "210 sq mi",
+    "landmarks": []
   },
   "gy": {
     "id": "gy",
@@ -1673,7 +1882,8 @@
     "gdp_nominal_per_capita": "$32,326",
     "gini": "44.6medium inequality",
     "currency": "Guyanese dollar",
-    "area": "214,969 km2"
+    "area": "214,969 km2",
+    "landmarks": []
   },
   "hk": {
     "id": "hk",
@@ -1691,7 +1901,8 @@
     "gdp_nominal_per_capita": "$56,844",
     "gini": "39.7medium",
     "currency": "Hong Kong dollar",
-    "area": "2,754.97 km2"
+    "area": "2,754.97 km2",
+    "landmarks": []
   },
   "hm": {
     "id": "hm",
@@ -1708,7 +1919,8 @@
     "gdp_nominal_total": "N/A",
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
-    "currency": "N/A"
+    "currency": "N/A",
+    "landmarks": []
   },
   "hn": {
     "id": "hn",
@@ -1726,7 +1938,8 @@
     "gdp_nominal_per_capita": "$3,245",
     "gini": "52.1high inequality",
     "currency": "Lempira",
-    "area": "112,492 km2"
+    "area": "112,492 km2",
+    "landmarks": []
   },
   "hr": {
     "id": "hr",
@@ -1744,7 +1957,13 @@
     "gdp_nominal_per_capita": "$26,960",
     "gini": "29.7low inequality",
     "currency": "Euro",
-    "area": "56,561 km2"
+    "area": "56,561 km2",
+    "landmarks": [
+      "Croatian Parliament (Sabor) in Zagreb",
+      "Croatian Navy.",
+      "class=notpageimage| Counties of Croatia",
+      "National and University Library"
+    ]
   },
   "ht": {
     "id": "ht",
@@ -1762,7 +1981,8 @@
     "gdp_nominal_per_capita": "$2,670",
     "gini": "41medium inequality",
     "currency": "Gourde",
-    "area": "27,700 km2"
+    "area": "27,700 km2",
+    "landmarks": []
   },
   "hu": {
     "id": "hu",
@@ -1780,7 +2000,8 @@
     "gdp_nominal_per_capita": "$25,920",
     "gini": "29.0low inequality",
     "currency": "Forint",
-    "area": "93,030 km2"
+    "area": "93,030 km2",
+    "landmarks": []
   },
   "id": {
     "id": "id",
@@ -1798,7 +2019,8 @@
     "gdp_nominal_per_capita": "$5,027",
     "gini": "37.9medium inequality",
     "currency": "Indonesian rupiah",
-    "area": "1,904,569 km2"
+    "area": "1,904,569 km2",
+    "landmarks": []
   },
   "im": {
     "id": "im",
@@ -1816,7 +2038,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Pound sterlingManx pound",
-    "area": "574 km2"
+    "area": "574 km2",
+    "landmarks": []
   },
   "in": {
     "id": "in",
@@ -1834,7 +2057,8 @@
     "gdp_nominal_per_capita": "$2,878",
     "gini": "25.5low inequality",
     "currency": "Indian rupee",
-    "area": "3,287,263 km2"
+    "area": "3,287,263 km2",
+    "landmarks": []
   },
   "io": {
     "id": "io",
@@ -1852,7 +2076,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Pound sterling",
-    "area": "54 km2"
+    "area": "54 km2",
+    "landmarks": []
   },
   "ie": {
     "id": "ie",
@@ -1869,7 +2094,8 @@
     "gdp_nominal_total": "N/A",
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
-    "currency": "N/A"
+    "currency": "N/A",
+    "landmarks": []
   },
   "ir": {
     "id": "ir",
@@ -1887,7 +2113,8 @@
     "gdp_nominal_per_capita": "$4,074",
     "gini": "34.8medium inequality",
     "currency": "Iranian Rial",
-    "area": "1,648,195 km2"
+    "area": "1,648,195 km2",
+    "landmarks": []
   },
   "iq": {
     "id": "iq",
@@ -1905,7 +2132,8 @@
     "gdp_nominal_per_capita": "$5,670",
     "gini": "29.5low inequality",
     "currency": "Iraqi dinar",
-    "area": "438,317 km2"
+    "area": "438,317 km2",
+    "landmarks": []
   },
   "is": {
     "id": "is",
@@ -1923,7 +2151,8 @@
     "gdp_nominal_per_capita": "$90,280",
     "gini": "23.2low inequality",
     "currency": "Icelandic króna",
-    "area": "103,125 km2"
+    "area": "103,125 km2",
+    "landmarks": []
   },
   "il": {
     "id": "il",
@@ -1941,7 +2170,8 @@
     "gdp_nominal_per_capita": "$60,010",
     "gini": "37.9medium inequality",
     "currency": "New shekel",
-    "area": "22,072 or 20,770 km2"
+    "area": "22,072 or 20,770 km2",
+    "landmarks": []
   },
   "it": {
     "id": "it",
@@ -1959,7 +2189,8 @@
     "gdp_nominal_per_capita": "$41,091",
     "gini": "32.5medium inequality",
     "currency": "Euro",
-    "area": "301,340 km2"
+    "area": "301,340 km2",
+    "landmarks": []
   },
   "jm": {
     "id": "jm",
@@ -1977,7 +2208,8 @@
     "gdp_nominal_per_capita": "$7,487",
     "gini": "40.2medium inequality",
     "currency": "Jamaican dollar",
-    "area": "10,991 km2"
+    "area": "10,991 km2",
+    "landmarks": []
   },
   "je": {
     "id": "je",
@@ -1995,7 +2227,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "0.3low",
     "currency": "Pound sterlingJersey pound",
-    "area": "119.6 km2"
+    "area": "119.6 km2",
+    "landmarks": []
   },
   "jo": {
     "id": "jo",
@@ -2013,7 +2246,8 @@
     "gdp_nominal_per_capita": "$4,850",
     "gini": "35.4medium inequality",
     "currency": "Jordanian dinar",
-    "area": "89,342 km2"
+    "area": "89,342 km2",
+    "landmarks": []
   },
   "jp": {
     "id": "jp",
@@ -2031,7 +2265,8 @@
     "gdp_nominal_per_capita": "$34,713",
     "gini": "32.3medium inequality",
     "currency": "Japanese yen",
-    "area": "377,975 km2"
+    "area": "377,975 km2",
+    "landmarks": []
   },
   "kz": {
     "id": "kz",
@@ -2049,7 +2284,8 @@
     "gdp_nominal_per_capita": "$14,770",
     "gini": "27.8low inequality",
     "currency": "Tenge",
-    "area": "2,724,900 km2"
+    "area": "2,724,900 km2",
+    "landmarks": []
   },
   "ke": {
     "id": "ke",
@@ -2067,7 +2303,8 @@
     "gdp_nominal_per_capita": "$2,470",
     "gini": "38.7medium inequality",
     "currency": "Kenyan shilling",
-    "area": "580,367 km2"
+    "area": "580,367 km2",
+    "landmarks": []
   },
   "kg": {
     "id": "kg",
@@ -2085,7 +2322,8 @@
     "gdp_nominal_per_capita": "$2,790",
     "gini": "26.4low inequality",
     "currency": "Kyrgyzstani som",
-    "area": "200,105 km2"
+    "area": "200,105 km2",
+    "landmarks": []
   },
   "kh": {
     "id": "kh",
@@ -2103,7 +2341,8 @@
     "gdp_nominal_per_capita": "$2,870",
     "gini": "23.6low inequality",
     "currency": "Riel",
-    "area": "181,035 km2"
+    "area": "181,035 km2",
+    "landmarks": []
   },
   "ki": {
     "id": "ki",
@@ -2121,7 +2360,8 @@
     "gdp_nominal_per_capita": "$1,989",
     "gini": "27.8low inequality",
     "currency": "Australian dollar",
-    "area": "811.19 km2"
+    "area": "811.19 km2",
+    "landmarks": []
   },
   "kn": {
     "id": "kn",
@@ -2139,7 +2379,8 @@
     "gdp_nominal_per_capita": "$18,158",
     "gini": "N/A",
     "currency": "East Caribbean dollar",
-    "area": "261 km2"
+    "area": "261 km2",
+    "landmarks": []
   },
   "kr": {
     "id": "kr",
@@ -2157,7 +2398,8 @@
     "gdp_nominal_per_capita": "$35,962",
     "gini": "33.3medium inequality",
     "currency": "Korean Republic won",
-    "area": "100,363 km2"
+    "area": "100,363 km2",
+    "landmarks": []
   },
   "xk": {
     "id": "xk",
@@ -2175,7 +2417,8 @@
     "gdp_nominal_per_capita": "$7,048",
     "gini": "29.0low inequality",
     "currency": "Euro",
-    "area": "10,887 km2"
+    "area": "10,887 km2",
+    "landmarks": []
   },
   "kw": {
     "id": "kw",
@@ -2193,7 +2436,8 @@
     "gdp_nominal_per_capita": "$29,950",
     "gini": "N/A",
     "currency": "Kuwaiti dinar",
-    "area": "17,818 km2"
+    "area": "17,818 km2",
+    "landmarks": []
   },
   "la": {
     "id": "la",
@@ -2211,7 +2455,8 @@
     "gdp_nominal_per_capita": "$2,100",
     "gini": "36.4medium inequality",
     "currency": "Kip",
-    "area": "236,800 km2"
+    "area": "236,800 km2",
+    "landmarks": []
   },
   "lb": {
     "id": "lb",
@@ -2229,7 +2474,8 @@
     "gdp_nominal_per_capita": "$3,283",
     "gini": "31.8medium inequality",
     "currency": "Lebanese pound",
-    "area": "10,452 km2"
+    "area": "10,452 km2",
+    "landmarks": []
   },
   "lr": {
     "id": "lr",
@@ -2247,7 +2493,8 @@
     "gdp_nominal_per_capita": "$907",
     "gini": "35.3medium inequality",
     "currency": "United States dollar",
-    "area": "43,000 sq mi"
+    "area": "43,000 sq mi",
+    "landmarks": []
   },
   "ly": {
     "id": "ly",
@@ -2265,7 +2512,8 @@
     "gdp_nominal_per_capita": "$6,800",
     "gini": "N/A",
     "currency": "Libyan dinar",
-    "area": "1,759,541 km2"
+    "area": "1,759,541 km2",
+    "landmarks": []
   },
   "lc": {
     "id": "lc",
@@ -2283,7 +2531,8 @@
     "gdp_nominal_per_capita": "$14,647",
     "gini": "51.2high inequality",
     "currency": "East Caribbean dollar",
-    "area": "617 km2"
+    "area": "617 km2",
+    "landmarks": []
   },
   "li": {
     "id": "li",
@@ -2301,7 +2550,8 @@
     "gdp_nominal_per_capita": "$207,974",
     "gini": "N/A",
     "currency": "Swiss franc",
-    "area": "160.50 km2"
+    "area": "160.50 km2",
+    "landmarks": []
   },
   "lk": {
     "id": "lk",
@@ -2319,7 +2569,8 @@
     "gdp_nominal_per_capita": "$4,516",
     "gini": "39.8medium inequality",
     "currency": "Sri Lankan rupee",
-    "area": "67,240 km2"
+    "area": "67,240 km2",
+    "landmarks": []
   },
   "ls": {
     "id": "ls",
@@ -2337,7 +2588,8 @@
     "gdp_nominal_per_capita": "$1,110",
     "gini": "44.9medium inequality",
     "currency": "Lesotho loti",
-    "area": "30,355 km2"
+    "area": "30,355 km2",
+    "landmarks": []
   },
   "lt": {
     "id": "lt",
@@ -2355,7 +2607,8 @@
     "gdp_nominal_per_capita": "$30,514",
     "gini": "35.7medium inequality",
     "currency": "Euro",
-    "area": "65,300 km2"
+    "area": "65,300 km2",
+    "landmarks": []
   },
   "lu": {
     "id": "lu",
@@ -2373,7 +2626,8 @@
     "gdp_nominal_per_capita": "$141,079",
     "gini": "30.6medium inequality",
     "currency": "Euro",
-    "area": "2,586.4 km2"
+    "area": "2,586.4 km2",
+    "landmarks": []
   },
   "lv": {
     "id": "lv",
@@ -2391,7 +2645,8 @@
     "gdp_nominal_per_capita": "$24,193",
     "gini": "35.7medium inequality",
     "currency": "Euro",
-    "area": "64,589 km2"
+    "area": "64,589 km2",
+    "landmarks": []
   },
   "mo": {
     "id": "mo",
@@ -2409,7 +2664,8 @@
     "gdp_nominal_per_capita": "$72,910",
     "gini": "36.0medium",
     "currency": "Macanese pataca",
-    "area": "119.3 km2"
+    "area": "119.3 km2",
+    "landmarks": []
   },
   "ma": {
     "id": "ma",
@@ -2427,7 +2683,8 @@
     "gdp_nominal_per_capita": "$4,440",
     "gini": "40.3medium inequality",
     "currency": "Moroccan dirham",
-    "area": "446,550 km2"
+    "area": "446,550 km2",
+    "landmarks": []
   },
   "mc": {
     "id": "mc",
@@ -2445,7 +2702,8 @@
     "gdp_nominal_per_capita": "^ Government offices are located in the Monaco-Ville quarter.^ GDP per capita calculations include non-resident workers from France and Italy.",
     "gini": "N/A",
     "currency": "Euro",
-    "area": "2.084 km2"
+    "area": "2.084 km2",
+    "landmarks": []
   },
   "md": {
     "id": "md",
@@ -2462,7 +2720,8 @@
     "gdp_nominal_total": "$19.620 billion",
     "gdp_nominal_per_capita": "$8,239",
     "gini": "25.7low inequality",
-    "currency": "Moldovan leu"
+    "currency": "Moldovan leu",
+    "landmarks": []
   },
   "mg": {
     "id": "mg",
@@ -2480,7 +2739,8 @@
     "gdp_nominal_per_capita": "$529",
     "gini": "42.6medium inequality",
     "currency": "Ariary",
-    "area": "592,796 km2"
+    "area": "592,796 km2",
+    "landmarks": []
   },
   "mv": {
     "id": "mv",
@@ -2498,7 +2758,8 @@
     "gdp_nominal_per_capita": "$17,287",
     "gini": "31.3medium inequality",
     "currency": "Maldivian rufiyaa",
-    "area": "298 km2"
+    "area": "298 km2",
+    "landmarks": []
   },
   "mx": {
     "id": "mx",
@@ -2516,7 +2777,8 @@
     "gdp_nominal_per_capita": "$12,692",
     "gini": "40.2medium inequality",
     "currency": "Mexican peso",
-    "area": "1,972,550 km2"
+    "area": "1,972,550 km2",
+    "landmarks": []
   },
   "mh": {
     "id": "mh",
@@ -2534,7 +2796,8 @@
     "gdp_nominal_per_capita": "$3,866",
     "gini": "N/A",
     "currency": "United States dollarSovereign",
-    "area": "181.43 km2"
+    "area": "181.43 km2",
+    "landmarks": []
   },
   "mk": {
     "id": "mk",
@@ -2552,7 +2815,8 @@
     "gdp_nominal_per_capita": "$9,882",
     "gini": "29.8low inequality",
     "currency": "Macedonian denar",
-    "area": "25,436 km2"
+    "area": "25,436 km2",
+    "landmarks": []
   },
   "ml": {
     "id": "ml",
@@ -2570,7 +2834,8 @@
     "gdp_nominal_per_capita": "$936",
     "gini": "33.0medium inequality",
     "currency": "West African CFA franc",
-    "area": "1,240,192 km2"
+    "area": "1,240,192 km2",
+    "landmarks": []
   },
   "mt": {
     "id": "mt",
@@ -2588,7 +2853,8 @@
     "gdp_nominal_per_capita": "$41,738",
     "gini": "31.4medium inequality",
     "currency": "Euro",
-    "area": "316 km2"
+    "area": "316 km2",
+    "landmarks": []
   },
   "mm": {
     "id": "mm",
@@ -2606,7 +2872,8 @@
     "gdp_nominal_per_capita": "$1,180",
     "gini": "30.7medium inequality",
     "currency": "Kyat",
-    "area": "676,579 km2"
+    "area": "676,579 km2",
+    "landmarks": []
   },
   "me": {
     "id": "me",
@@ -2624,7 +2891,8 @@
     "gdp_nominal_per_capita": "$14,990",
     "gini": "29.4low inequality",
     "currency": "Euro",
-    "area": "13,883 km2"
+    "area": "13,883 km2",
+    "landmarks": []
   },
   "mn": {
     "id": "mn",
@@ -2642,7 +2910,8 @@
     "gdp_nominal_per_capita": "$7,200",
     "gini": "32.7medium inequality",
     "currency": "Tögrög",
-    "area": "1,564,116 km2"
+    "area": "1,564,116 km2",
+    "landmarks": []
   },
   "mp": {
     "id": "mp",
@@ -2660,7 +2929,8 @@
     "gdp_nominal_per_capita": "$21,239",
     "gini": "N/A",
     "currency": "United States dollar",
-    "area": "464 km2"
+    "area": "464 km2",
+    "landmarks": []
   },
   "mz": {
     "id": "mz",
@@ -2678,7 +2948,8 @@
     "gdp_nominal_per_capita": "$663",
     "gini": "50.4high inequality",
     "currency": "Metical",
-    "area": "801,590 km2"
+    "area": "801,590 km2",
+    "landmarks": []
   },
   "mr": {
     "id": "mr",
@@ -2696,7 +2967,8 @@
     "gdp_nominal_per_capita": "$2,480",
     "gini": "32.6medium inequality",
     "currency": "Ouguiya",
-    "area": "1,030,000 km2"
+    "area": "1,030,000 km2",
+    "landmarks": []
   },
   "ms": {
     "id": "ms",
@@ -2714,7 +2986,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "East Caribbean dollar",
-    "area": "102 km2"
+    "area": "102 km2",
+    "landmarks": []
   },
   "mq": {
     "id": "mq",
@@ -2732,7 +3005,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Euro (€) (EUR)",
-    "area": "€9.082 billion"
+    "area": "€9.082 billion",
+    "landmarks": []
   },
   "mu": {
     "id": "mu",
@@ -2750,7 +3024,8 @@
     "gdp_nominal_per_capita": "$13,099",
     "gini": "36.8medium inequality",
     "currency": "Mauritian rupee",
-    "area": "2,040 km2"
+    "area": "2,040 km2",
+    "landmarks": []
   },
   "mw": {
     "id": "mw",
@@ -2768,7 +3043,8 @@
     "gdp_nominal_per_capita": "$579",
     "gini": "44.7medium inequality",
     "currency": "Malawian kwacha",
-    "area": "118,484 km2"
+    "area": "118,484 km2",
+    "landmarks": []
   },
   "my": {
     "id": "my",
@@ -2786,7 +3062,8 @@
     "gdp_nominal_per_capita": "$13,140",
     "gini": "40.7medium inequality",
     "currency": "Malaysian ringgit",
-    "area": "330,803 km2"
+    "area": "330,803 km2",
+    "landmarks": []
   },
   "yt": {
     "id": "yt",
@@ -2804,7 +3081,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Euro (€) (EUR)",
-    "area": "€2.932 billion"
+    "area": "€2.932 billion",
+    "landmarks": []
   },
   "na": {
     "id": "na",
@@ -2822,7 +3100,8 @@
     "gdp_nominal_per_capita": "$4,660",
     "gini": "59.1high inequality",
     "currency": "Namibian dollar",
-    "area": "825,615 km2"
+    "area": "825,615 km2",
+    "landmarks": []
   },
   "nc": {
     "id": "nc",
@@ -2840,7 +3119,8 @@
     "gdp_nominal_per_capita": "US$34,939",
     "gini": "N/A",
     "currency": "CFP franc",
-    "area": "18,575 km2"
+    "area": "18,575 km2",
+    "landmarks": []
   },
   "ne": {
     "id": "ne",
@@ -2858,7 +3138,8 @@
     "gdp_nominal_per_capita": "$751",
     "gini": "32.9medium inequality",
     "currency": "West African CFA franc",
-    "area": "1,267,000 km2"
+    "area": "1,267,000 km2",
+    "landmarks": []
   },
   "nf": {
     "id": "nf",
@@ -2876,7 +3157,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Australian dollar",
-    "area": "34.6 km2"
+    "area": "34.6 km2",
+    "landmarks": []
   },
   "ng": {
     "id": "ng",
@@ -2894,7 +3176,8 @@
     "gdp_nominal_per_capita": "$1,200",
     "gini": "35.1medium inequality",
     "currency": "Naira",
-    "area": "923,769 km2"
+    "area": "923,769 km2",
+    "landmarks": []
   },
   "ni": {
     "id": "ni",
@@ -2912,7 +3195,8 @@
     "gdp_nominal_per_capita": "$2,673",
     "gini": "46.2high inequality",
     "currency": "Córdoba",
-    "area": "130,375 km2"
+    "area": "130,375 km2",
+    "landmarks": []
   },
   "nu": {
     "id": "nu",
@@ -2930,7 +3214,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "New Zealand dollar",
-    "area": "261.46 km2"
+    "area": "261.46 km2",
+    "landmarks": []
   },
   "nl": {
     "id": "nl",
@@ -2948,7 +3233,8 @@
     "gdp_nominal_per_capita": "$70,480",
     "gini": "26.4low",
     "currency": "Euro",
-    "area": "41,865 km2"
+    "area": "41,865 km2",
+    "landmarks": []
   },
   "no": {
     "id": "no",
@@ -2966,7 +3252,8 @@
     "gdp_nominal_per_capita": "$89,690",
     "gini": "25.3low inequality",
     "currency": "Norwegian krone",
-    "area": "385,207 km2"
+    "area": "385,207 km2",
+    "landmarks": []
   },
   "np": {
     "id": "np",
@@ -2984,7 +3271,8 @@
     "gdp_nominal_per_capita": "$1,381",
     "gini": "30.0medium inequality",
     "currency": "Nepalese rupee",
-    "area": "147,516 km2"
+    "area": "147,516 km2",
+    "landmarks": []
   },
   "nr": {
     "id": "nr",
@@ -3002,7 +3290,8 @@
     "gdp_nominal_per_capita": "$10,125",
     "gini": "N/A",
     "currency": "Australian dollar",
-    "area": "21 km2"
+    "area": "21 km2",
+    "landmarks": []
   },
   "nz": {
     "id": "nz",
@@ -3020,7 +3309,8 @@
     "gdp_nominal_per_capita": "$46,013",
     "gini": "30.0medium inequality",
     "currency": "New Zealand dollar",
-    "area": "263,310 km2"
+    "area": "263,310 km2",
+    "landmarks": []
   },
   "om": {
     "id": "om",
@@ -3038,7 +3328,8 @@
     "gdp_nominal_per_capita": "$18,097",
     "gini": "30.75medium inequality",
     "currency": "Omani rial",
-    "area": "315,331 km2"
+    "area": "315,331 km2",
+    "landmarks": []
   },
   "pk": {
     "id": "pk",
@@ -3056,7 +3347,8 @@
     "gdp_nominal_per_capita": "$1,484.7",
     "gini": "29.6low inequality",
     "currency": "Pakistani rupee",
-    "area": "881,913 km2"
+    "area": "881,913 km2",
+    "landmarks": []
   },
   "pa": {
     "id": "pa",
@@ -3074,7 +3366,8 @@
     "gdp_nominal_per_capita": "$20,092",
     "gini": "48.9high inequality",
     "currency": "Balboa",
-    "area": "75,417 km2"
+    "area": "75,417 km2",
+    "landmarks": []
   },
   "pn": {
     "id": "pn",
@@ -3092,7 +3385,8 @@
     "gdp_nominal_per_capita": "NZ$4,617.02",
     "gini": "N/A",
     "currency": "New Zealand dollar",
-    "area": "47 km2"
+    "area": "47 km2",
+    "landmarks": []
   },
   "pe": {
     "id": "pe",
@@ -3110,7 +3404,8 @@
     "gdp_nominal_per_capita": "$8,814",
     "gini": "40.2medium inequality",
     "currency": "Peruvian sol",
-    "area": "1,285,216 km2"
+    "area": "1,285,216 km2",
+    "landmarks": []
   },
   "ph": {
     "id": "ph",
@@ -3128,7 +3423,8 @@
     "gdp_nominal_per_capita": "$4,350",
     "gini": "39.3medium inequality",
     "currency": "Philippine peso",
-    "area": "300,000 km2"
+    "area": "300,000 km2",
+    "landmarks": []
   },
   "pw": {
     "id": "pw",
@@ -3146,7 +3442,8 @@
     "gdp_nominal_per_capita": "$17,448",
     "gini": "N/A",
     "currency": "United States dollar",
-    "area": "459 km2"
+    "area": "459 km2",
+    "landmarks": []
   },
   "pg": {
     "id": "pg",
@@ -3164,7 +3461,8 @@
     "gdp_nominal_per_capita": "$2,560",
     "gini": "41.9medium inequality",
     "currency": "Kina",
-    "area": "462,840 km2"
+    "area": "462,840 km2",
+    "landmarks": []
   },
   "pl": {
     "id": "pl",
@@ -3182,7 +3480,8 @@
     "gdp_nominal_per_capita": "$28,484",
     "gini": "26.3low inequality",
     "currency": "Złoty",
-    "area": "312,696 km2"
+    "area": "312,696 km2",
+    "landmarks": []
   },
   "pr": {
     "id": "pr",
@@ -3200,7 +3499,8 @@
     "gdp_nominal_per_capita": "$37,930",
     "gini": "58high",
     "currency": "United States dollar",
-    "area": "13,792 km2"
+    "area": "13,792 km2",
+    "landmarks": []
   },
   "kp": {
     "id": "kp",
@@ -3218,7 +3518,8 @@
     "gdp_nominal_per_capita": "$1,261",
     "gini": "16.6low inequality",
     "currency": "Korean People's won",
-    "area": "120,538 km2"
+    "area": "120,538 km2",
+    "landmarks": []
   },
   "pt": {
     "id": "pt",
@@ -3236,7 +3537,8 @@
     "gdp_nominal_per_capita": "$31,415",
     "gini": "31.9medium inequality",
     "currency": "Euro",
-    "area": "92,230 km2"
+    "area": "92,230 km2",
+    "landmarks": []
   },
   "py": {
     "id": "py",
@@ -3254,7 +3556,8 @@
     "gdp_nominal_per_capita": "$7,089",
     "gini": "44.4medium inequality",
     "currency": "Guaraní",
-    "area": "406,752 km2"
+    "area": "406,752 km2",
+    "landmarks": []
   },
   "ps": {
     "id": "ps",
@@ -3272,7 +3575,8 @@
     "gdp_nominal_per_capita": "$3,464",
     "gini": "33.7medium inequality",
     "currency": "Israeli new shekelJordanian dinarEgyptian pound",
-    "area": "6,020 km2"
+    "area": "6,020 km2",
+    "landmarks": []
   },
   "pf": {
     "id": "pf",
@@ -3290,7 +3594,8 @@
     "gdp_nominal_per_capita": "USD 21,673",
     "gini": "N/A",
     "currency": "CFP franc",
-    "area": "4,167 km2"
+    "area": "4,167 km2",
+    "landmarks": []
   },
   "qa": {
     "id": "qa",
@@ -3308,7 +3613,8 @@
     "gdp_nominal_per_capita": "$71,650",
     "gini": "35.1medium inequality",
     "currency": "Qatari riyal",
-    "area": "11,581 km2"
+    "area": "11,581 km2",
+    "landmarks": []
   },
   "re": {
     "id": "re",
@@ -3326,7 +3632,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Euro (€) (EUR)",
-    "area": "€23.2 billion"
+    "area": "€23.2 billion",
+    "landmarks": []
   },
   "ro": {
     "id": "ro",
@@ -3344,7 +3651,8 @@
     "gdp_nominal_per_capita": "$22,436",
     "gini": "28.0low inequality",
     "currency": "Romanian leu",
-    "area": "238,397 km2"
+    "area": "238,397 km2",
+    "landmarks": []
   },
   "ru": {
     "id": "ru",
@@ -3362,7 +3670,8 @@
     "gdp_nominal_per_capita": "$17,446",
     "gini": "36.0medium inequality",
     "currency": "Russian ruble",
-    "area": "17,098,246 km2"
+    "area": "17,098,246 km2",
+    "landmarks": []
   },
   "rw": {
     "id": "rw",
@@ -3380,7 +3689,8 @@
     "gdp_nominal_per_capita": "$1,040",
     "gini": "39.4medium inequality",
     "currency": "Rwandan franc",
-    "area": "26,338 km2"
+    "area": "26,338 km2",
+    "landmarks": []
   },
   "sa": {
     "id": "sa",
@@ -3398,7 +3708,8 @@
     "gdp_nominal_per_capita": "$30,099",
     "gini": "45.9medium inequality",
     "currency": "Saudi riyal",
-    "area": "2,149,690 km2"
+    "area": "2,149,690 km2",
+    "landmarks": []
   },
   "sd": {
     "id": "sd",
@@ -3416,7 +3727,8 @@
     "gdp_nominal_per_capita": "$624",
     "gini": "34.2medium inequality",
     "currency": "Sudanese pound",
-    "area": "1,886,068 km2"
+    "area": "1,886,068 km2",
+    "landmarks": []
   },
   "sn": {
     "id": "sn",
@@ -3434,7 +3746,8 @@
     "gdp_nominal_per_capita": "$1,811",
     "gini": "40.3medium inequality",
     "currency": "West African CFA franc",
-    "area": "196,722 km2"
+    "area": "196,722 km2",
+    "landmarks": []
   },
   "sg": {
     "id": "sg",
@@ -3452,7 +3765,8 @@
     "gdp_nominal_per_capita": "$93,956",
     "gini": "43.3medium inequality",
     "currency": "Singapore dollar",
-    "area": "736.3 km2"
+    "area": "736.3 km2",
+    "landmarks": []
   },
   "gs": {
     "id": "gs",
@@ -3469,7 +3783,8 @@
     "gdp_nominal_total": "N/A",
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
-    "currency": "N/A"
+    "currency": "N/A",
+    "landmarks": []
   },
   "sj": {
     "id": "sj",
@@ -3487,7 +3802,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "N/A",
-    "area": "61,399 km2"
+    "area": "61,399 km2",
+    "landmarks": []
   },
   "sb": {
     "id": "sb",
@@ -3505,7 +3821,8 @@
     "gdp_nominal_per_capita": "$2,205.25",
     "gini": "37.1medium inequality",
     "currency": "Solomon Islands dollar",
-    "area": "28,896 km2"
+    "area": "28,896 km2",
+    "landmarks": []
   },
   "sl": {
     "id": "sl",
@@ -3523,7 +3840,8 @@
     "gdp_nominal_per_capita": "$915",
     "gini": "33.7medium inequality",
     "currency": "Leone",
-    "area": "73,252 km2"
+    "area": "73,252 km2",
+    "landmarks": []
   },
   "sv": {
     "id": "sv",
@@ -3541,7 +3859,8 @@
     "gdp_nominal_per_capita": "$5,893",
     "gini": "38.8medium inequality",
     "currency": "United States dollar",
-    "area": "21,041 km2"
+    "area": "21,041 km2",
+    "landmarks": []
   },
   "sm": {
     "id": "sm",
@@ -3559,7 +3878,8 @@
     "gdp_nominal_per_capita": "$59,405",
     "gini": "N/A",
     "currency": "Euro",
-    "area": "61.19 km2"
+    "area": "61.19 km2",
+    "landmarks": []
   },
   "so": {
     "id": "so",
@@ -3577,7 +3897,8 @@
     "gdp_nominal_per_capita": "$766",
     "gini": "36.8medium inequality",
     "currency": "Somali shilling",
-    "area": "637,657 km2"
+    "area": "637,657 km2",
+    "landmarks": []
   },
   "pm": {
     "id": "pm",
@@ -3595,7 +3916,8 @@
     "gdp_nominal_per_capita": "€39,778",
     "gini": "N/A",
     "currency": "Euro",
-    "area": "242 km2"
+    "area": "242 km2",
+    "landmarks": []
   },
   "rs": {
     "id": "rs",
@@ -3613,7 +3935,8 @@
     "gdp_nominal_per_capita": "$14,175",
     "gini": "31.9medium inequality",
     "currency": "Serbian dinar",
-    "area": "88,499 km2"
+    "area": "88,499 km2",
+    "landmarks": []
   },
   "ss": {
     "id": "ss",
@@ -3631,7 +3954,8 @@
     "gdp_nominal_per_capita": "$326",
     "gini": "44.1medium inequality",
     "currency": "South Sudanese pound",
-    "area": "644,329 km2"
+    "area": "644,329 km2",
+    "landmarks": []
   },
   "st": {
     "id": "st",
@@ -3649,7 +3973,8 @@
     "gdp_nominal_per_capita": "$3,167",
     "gini": "40.7medium inequality",
     "currency": "Dobra",
-    "area": "964 km2"
+    "area": "964 km2",
+    "landmarks": []
   },
   "sr": {
     "id": "sr",
@@ -3667,7 +3992,8 @@
     "gdp_nominal_per_capita": "$6,858",
     "gini": "N/A",
     "currency": "Surinamese dollar",
-    "area": "165,940 km2"
+    "area": "165,940 km2",
+    "landmarks": []
   },
   "sk": {
     "id": "sk",
@@ -3685,7 +4011,8 @@
     "gdp_nominal_per_capita": "$28,180",
     "gini": "21.2low inequality",
     "currency": "Euro",
-    "area": "49,035 km2"
+    "area": "49,035 km2",
+    "landmarks": []
   },
   "si": {
     "id": "si",
@@ -3703,7 +4030,8 @@
     "gdp_nominal_per_capita": "$37,178",
     "gini": "23.4low inequality",
     "currency": "Euro",
-    "area": "20,271 km2"
+    "area": "20,271 km2",
+    "landmarks": []
   },
   "se": {
     "id": "se",
@@ -3721,7 +4049,8 @@
     "gdp_nominal_per_capita": "$58,100",
     "gini": "27.6low inequality",
     "currency": "Swedish krona",
-    "area": "450,295 km2"
+    "area": "450,295 km2",
+    "landmarks": []
   },
   "sz": {
     "id": "sz",
@@ -3739,7 +4068,8 @@
     "gdp_nominal_per_capita": "$3,995",
     "gini": "54.6high inequality",
     "currency": "Lilangeni",
-    "area": "17,364 km2"
+    "area": "17,364 km2",
+    "landmarks": []
   },
   "sx": {
     "id": "sx",
@@ -3757,7 +4087,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "Caribbean guilder",
-    "area": "34 km2"
+    "area": "34 km2",
+    "landmarks": []
   },
   "sc": {
     "id": "sc",
@@ -3775,7 +4106,8 @@
     "gdp_nominal_per_capita": "$20,889",
     "gini": "32.1medium inequality",
     "currency": "Seychellois rupee",
-    "area": "457 km2"
+    "area": "457 km2",
+    "landmarks": []
   },
   "sy": {
     "id": "sy",
@@ -3793,7 +4125,8 @@
     "gdp_nominal_per_capita": "$800",
     "gini": "26.6low inequality",
     "currency": "Syrian pound",
-    "area": "185,180 km2"
+    "area": "185,180 km2",
+    "landmarks": []
   },
   "tc": {
     "id": "tc",
@@ -3811,7 +4144,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "United States dollar",
-    "area": "948 km2"
+    "area": "948 km2",
+    "landmarks": []
   },
   "td": {
     "id": "td",
@@ -3829,7 +4163,8 @@
     "gdp_nominal_per_capita": "$702",
     "gini": "37.4medium inequality",
     "currency": "Central African CFA franc",
-    "area": "1,280,000 km2"
+    "area": "1,280,000 km2",
+    "landmarks": []
   },
   "tg": {
     "id": "tg",
@@ -3847,7 +4182,8 @@
     "gdp_nominal_per_capita": "$1,050",
     "gini": "43.1medium inequality",
     "currency": "West African CFA franc",
-    "area": "56,785 km2"
+    "area": "56,785 km2",
+    "landmarks": []
   },
   "th": {
     "id": "th",
@@ -3865,7 +4201,8 @@
     "gdp_nominal_per_capita": "$7,942",
     "gini": "33.5medium inequality",
     "currency": "Thai baht",
-    "area": "513,120 km2"
+    "area": "513,120 km2",
+    "landmarks": []
   },
   "tj": {
     "id": "tj",
@@ -3883,7 +4220,8 @@
     "gdp_nominal_per_capita": "$1,276",
     "gini": "34medium inequality",
     "currency": "Somoni",
-    "area": "143,100 km2"
+    "area": "143,100 km2",
+    "landmarks": []
   },
   "tk": {
     "id": "tk",
@@ -3901,7 +4239,8 @@
     "gdp_nominal_per_capita": "US$6,275",
     "gini": "N/A",
     "currency": "New Zealand dollar",
-    "area": "10 km2"
+    "area": "10 km2",
+    "landmarks": []
   },
   "tm": {
     "id": "tm",
@@ -3919,7 +4258,8 @@
     "gdp_nominal_per_capita": "$13,334",
     "gini": "40.8medium inequality",
     "currency": "Manat",
-    "area": "491,210 km2"
+    "area": "491,210 km2",
+    "landmarks": []
   },
   "tl": {
     "id": "tl",
@@ -3937,7 +4277,8 @@
     "gdp_nominal_per_capita": "$1,490",
     "gini": "28.7low inequality",
     "currency": "United States dollar Timor-Leste centavo",
-    "area": "14,950 km2"
+    "area": "14,950 km2",
+    "landmarks": []
   },
   "to": {
     "id": "to",
@@ -3955,7 +4296,8 @@
     "gdp_nominal_per_capita": "$4,888",
     "gini": "27.1low inequality",
     "currency": "Paʻanga",
-    "area": "748 km2"
+    "area": "748 km2",
+    "landmarks": []
   },
   "tt": {
     "id": "tt",
@@ -3973,7 +4315,8 @@
     "gdp_nominal_per_capita": "$19,621",
     "gini": "39.0medium inequality",
     "currency": "Trinidad and Tobago dollar",
-    "area": "5,131 km2"
+    "area": "5,131 km2",
+    "landmarks": []
   },
   "tn": {
     "id": "tn",
@@ -3991,7 +4334,8 @@
     "gdp_nominal_per_capita": "$4,530",
     "gini": "33.7medium inequality",
     "currency": "Tunisian dinar",
-    "area": "163,610 km2"
+    "area": "163,610 km2",
+    "landmarks": []
   },
   "tr": {
     "id": "tr",
@@ -4009,7 +4353,8 @@
     "gdp_nominal_per_capita": "$18,200",
     "gini": "44.5medium inequality",
     "currency": "Turkish lira",
-    "area": "783,562 km2"
+    "area": "783,562 km2",
+    "landmarks": []
   },
   "tv": {
     "id": "tv",
@@ -4027,7 +4372,8 @@
     "gdp_nominal_per_capita": "$6,113",
     "gini": "39medium inequality",
     "currency": "Tuvaluan dollar Australian dollar",
-    "area": "25.14 km2"
+    "area": "25.14 km2",
+    "landmarks": []
   },
   "tw": {
     "id": "tw",
@@ -4063,7 +4409,8 @@
     "gdp_nominal_per_capita": "$1,280",
     "gini": "40.5medium inequality",
     "currency": "Tanzanian shilling",
-    "area": "947,303 km2"
+    "area": "947,303 km2",
+    "landmarks": []
   },
   "ug": {
     "id": "ug",
@@ -4081,7 +4428,8 @@
     "gdp_nominal_per_capita": "$1,340",
     "gini": "42.0medium inequality",
     "currency": "Ugandan shilling",
-    "area": "241,038 km2"
+    "area": "241,038 km2",
+    "landmarks": []
   },
   "ua": {
     "id": "ua",
@@ -4099,7 +4447,8 @@
     "gdp_nominal_per_capita": "$6,261",
     "gini": "25.6low inequality",
     "currency": "Ukrainian hryvnia",
-    "area": "603,628 km2"
+    "area": "603,628 km2",
+    "landmarks": []
   },
   "um": {
     "id": "um",
@@ -4117,7 +4466,8 @@
     "gdp_nominal_per_capita": "N/A",
     "gini": "N/A",
     "currency": "United States dollar",
-    "area": "49.26 km2"
+    "area": "49.26 km2",
+    "landmarks": []
   },
   "uy": {
     "id": "uy",
@@ -4135,7 +4485,8 @@
     "gdp_nominal_per_capita": "$23,088",
     "gini": "40.6medium inequality",
     "currency": "Uruguayan peso",
-    "area": "176,215 km2"
+    "area": "176,215 km2",
+    "landmarks": []
   },
   "us": {
     "id": "us",
@@ -4146,7 +4497,8 @@
     "gdp_nominal_per_capita": "$89,599",
     "area": "3,796,742 sq mi",
     "gini": "41.8medium inequality",
-    "currency": "U.S. dollar"
+    "currency": "U.S. dollar",
+    "landmarks": []
   },
   "uz": {
     "id": "uz",
@@ -4157,7 +4509,8 @@
     "gdp_nominal_per_capita": "$3,510",
     "area": "448,978 km2",
     "gini": "31.2medium inequality",
-    "currency": "Uzbek sum"
+    "currency": "Uzbek sum",
+    "landmarks": []
   },
   "va": {
     "id": "va",
@@ -4165,7 +4518,8 @@
     "gdp_ppp_total": "€14,859,970",
     "gdp_ppp_per_capita": "€19,450.22",
     "area": "0.49 km2",
-    "currency": "Euro"
+    "currency": "Euro",
+    "landmarks": []
   },
   "vc": {
     "id": "vc",
@@ -4175,7 +4529,8 @@
     "gdp_nominal_total": "$1 billion",
     "gdp_nominal_per_capita": "$9,360",
     "area": "389 km2",
-    "currency": "East Caribbean dollar"
+    "currency": "East Caribbean dollar",
+    "landmarks": []
   },
   "ve": {
     "id": "ve",
@@ -4186,7 +4541,8 @@
     "gdp_nominal_per_capita": "$4,068",
     "area": "916,445 km2",
     "gini": "44.8medium inequality",
-    "currency": "Venezuelan bolívar"
+    "currency": "Venezuelan bolívar",
+    "landmarks": []
   },
   "vg": {
     "id": "vg",
@@ -4194,7 +4550,8 @@
     "gdp_ppp_total": "$500 million",
     "gdp_ppp_per_capita": "$34,200",
     "area": "153 km2",
-    "currency": "United States dollar"
+    "currency": "United States dollar",
+    "landmarks": []
   },
   "vi": {
     "id": "vi",
@@ -4202,7 +4559,8 @@
     "gdp_ppp_per_capita": "$38,136",
     "gdp_nominal_total": "US$4.068 billion",
     "area": "133.73 sq mi",
-    "currency": "United States dollar"
+    "currency": "United States dollar",
+    "landmarks": []
   },
   "vn": {
     "id": "vn",
@@ -4213,7 +4571,8 @@
     "gdp_nominal_per_capita": "$4,806",
     "area": "331,344.82 km2",
     "gini": "36.1medium inequality",
-    "currency": "Vietnamese đồng"
+    "currency": "Vietnamese đồng",
+    "landmarks": []
   },
   "vu": {
     "id": "vu",
@@ -4224,7 +4583,8 @@
     "gdp_nominal_per_capita": "$3,188",
     "area": "12,189 km2",
     "gini": "32.3medium inequality",
-    "currency": "Vatu"
+    "currency": "Vatu",
+    "landmarks": []
   },
   "wf": {
     "id": "wf",
@@ -4232,7 +4592,8 @@
     "gdp_nominal_total": "US$212 million",
     "gdp_nominal_per_capita": "US$18,360",
     "area": "142.42 km2",
-    "currency": "CFP franc"
+    "currency": "CFP franc",
+    "landmarks": []
   },
   "ws": {
     "id": "ws",
@@ -4243,7 +4604,8 @@
     "gdp_nominal_per_capita": "$4,420",
     "area": "2,831 km2",
     "gini": "38.7medium inequality",
-    "currency": "Tālā"
+    "currency": "Tālā",
+    "landmarks": []
   },
   "ye": {
     "id": "ye",
@@ -4254,7 +4616,8 @@
     "gdp_nominal_per_capita": "$416",
     "area": "455,503 km2",
     "gini": "36.7medium inequality",
-    "currency": "Yemeni rial"
+    "currency": "Yemeni rial",
+    "landmarks": []
   },
   "za": {
     "id": "za",
@@ -4265,7 +4628,8 @@
     "gdp_nominal_per_capita": "$6,670",
     "area": "1,221,037 km2",
     "gini": "63.0very high inequality",
-    "currency": "South African rand"
+    "currency": "South African rand",
+    "landmarks": []
   },
   "zm": {
     "id": "zm",
@@ -4276,7 +4640,8 @@
     "gdp_nominal_per_capita": "$1,435",
     "area": "752,617 km2",
     "gini": "51.5high inequality",
-    "currency": "Zambian kwacha"
+    "currency": "Zambian kwacha",
+    "landmarks": []
   },
   "zw": {
     "id": "zw",
@@ -4287,6 +4652,26 @@
     "gdp_nominal_per_capita": "$3,070",
     "area": "390,757 km2",
     "gini": "50.3high inequality",
-    "currency": "De jure: Zimbabwe Gold"
+    "currency": "De jure: Zimbabwe Gold",
+    "landmarks": []
+  },
+  "cg": {
+    "landmarks": []
+  },
+  "fm": {
+    "landmarks": [
+      "Aerial view of Nauru",
+      "Aerial view Wake Island, looking westward",
+      "Nan Madol",
+      "Leluh",
+      "Latte stones",
+      "Rai stone"
+    ]
+  },
+  "ge": {
+    "landmarks": []
+  },
+  "mf": {
+    "landmarks": []
   }
 }

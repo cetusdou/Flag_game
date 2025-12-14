@@ -1,0 +1,689 @@
+{
+  "circuits": [
+    {
+      "id": "adelaide-1",
+      "name": "Adelaide",
+      "img": "./assets/f1_tracks/adelaide-1.svg",
+      "desc": "The Adelaide Street Circuit (also known as the Adelaide Parklands Circuit) is a temporary street circuit in the East Parklands adjacent to the Adelaide central business district in South Australia, Australia.\nThe 3.780 km (2.349 mi) \"Grand Prix\" version of the track hosted eleven Formula One Australian Grand Prix events from 1985 to 1995, as well as an American Le Mans Series endurance race on New Year's Eve in 2000 (Race of a Thousand Years). Between 1999 and 2020 and again from 2022, a shortened 3.219 km (2.000 mi) version of the circuit has been used for the Adelaide 500 touring car race.",
+      "length": "3.780 km",
+      "corners": "1",
+      "location": "Adelaide Street Circuit"
+    },
+    {
+      "id": "aida-1",
+      "name": "Aida",
+      "img": "./assets/f1_tracks/aida-1.svg",
+      "desc": "Okayama International Circuit (岡山国際サーキット), formerly known as TI Circuit Aida (TIサーキット英田) before 2005, is a 3.703 km (2.301 mi) private motorsport race track in Mimasaka, Okayama Prefecture, Japan. TI was the abbreviation of \"Tanaka International\" after the name of the golf club owner, Hajime Tanaka, though the name of the circuit was officially \"TI Circuit Aida\".\nAs well as hosting racing events, the circuit has rental facilities including bikes and go karts available..",
+      "length": "3.703 km",
+      "corners": "N/A",
+      "location": "Okayama International Circuit"
+    },
+    {
+      "id": "ain-diab-1",
+      "name": "Ain-Diab",
+      "img": "./assets/f1_tracks/ain-diab-1.svg",
+      "desc": "Ain Diab (Arabic: عين الذئاب, romanized: a'ayn a-thia'āb) is a neighborhood located at the Corniche of Casablanca, Morocco. The neighborhood is affluent and famous for the fashionable stretch of coastline known as the Corniche.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Ain-Diab"
+    },
+    {
+      "id": "aintree-1",
+      "name": "Aintree",
+      "img": "./assets/f1_tracks/aintree-1.svg",
+      "desc": "Aintree  is a village and civil parish in the Metropolitan Borough of Sefton, Merseyside, England. Historically in Lancashire, it lies between Walton and Maghull on the A59 road, 6 miles (10 kilometres) northeast of Liverpool city centre.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Aintree"
+    },
+    {
+      "id": "anderstorp-1",
+      "name": "Anderstorp",
+      "img": "./assets/f1_tracks/anderstorp-1.svg",
+      "desc": "Anderstorp Raceway, previously known as Scandinavian Raceway, is a 4.025 km (2.501 mi) motorsport race track in Anderstorp (Gislaved Municipality), Sweden and the sole Nordic host of a Formula One World Championship Grand Prix, when the Swedish Grand Prix was held for six years between 1973 and 1978..",
+      "length": "4.025 km",
+      "corners": "N/A",
+      "location": "Scandinavian Raceway"
+    },
+    {
+      "id": "austin-1",
+      "name": "Austin",
+      "img": "./assets/f1_tracks/austin-1.svg",
+      "desc": "Austin refers to:.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Austin"
+    },
+    {
+      "id": "avus-1",
+      "name": "Avus",
+      "img": "./assets/f1_tracks/avus-1.svg",
+      "desc": "The Automobil-Verkehrs- und Übungsstraße ('Automobile traffic and training road'), known as AVUS (German pronunciation: [ˈaːvʊs] ), is a public road in Berlin, Germany. Opened in 1921, it was also used as a motor racing circuit until 1998.",
+      "length": "19.569 km",
+      "corners": "N/A",
+      "location": "AVUS"
+    },
+    {
+      "id": "bahrain-3",
+      "name": "Bahrain",
+      "img": "./assets/f1_tracks/bahrain-3.svg",
+      "desc": "The Bahrain International Circuit (Arabic: حلبة البحرين الدولية, romanized: Ḥalba al-Baḥrayn ad-Dawliyya) is a 5.412 km (3.363 mi) motorsport venue opened in 2004 and used for drag racing, GP2 Series (now FIA Formula 2), and the annual  Formula One Bahrain Grand Prix. The 2004 Grand Prix was the first  Formula One race held in the Middle East.",
+      "length": "5.412 km",
+      "corners": "N/A",
+      "location": "Bahrain International Circuit"
+    },
+    {
+      "id": "baku-1",
+      "name": "Baku",
+      "img": "./assets/f1_tracks/baku-1.svg",
+      "desc": "The Baku City Circuit (Azerbaijani: Bakı Şəhər Halqası) is a motor racing street circuit located in Baku, Azerbaijan constructed near Baku Boulevard. A lap of the circuit is 6.003 km (3.730 mi), making it the fourth-longest circuit on the Formula One calendar (after Circuit de Spa-Francorchamps, Jeddah Street Circuit and Las Vegas Strip Circuit).",
+      "length": "6.003 km",
+      "corners": "N/A",
+      "location": "Baku City Circuit"
+    },
+    {
+      "id": "brands-hatch-2",
+      "name": "Brands-Hatch",
+      "img": "./assets/f1_tracks/brands-hatch-2.svg",
+      "desc": "Brands Hatch is a motor racing circuit in West Kingsdown, Kent, England. Originally used as a grasstrack motorcycle circuit on farmland, it hosted 12 runnings of the British Grand Prix between 1964 and 1986 and currently hosts many British and International racing events.",
+      "length": "1.928 km",
+      "corners": "N/A",
+      "location": "Brands-Hatch"
+    },
+    {
+      "id": "bremgarten-1",
+      "name": "Bremgarten",
+      "img": "./assets/f1_tracks/bremgarten-1.svg",
+      "desc": "Bremgarten may refer to:.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Bremgarten"
+    },
+    {
+      "id": "buddh-1",
+      "name": "Buddh",
+      "img": "./assets/f1_tracks/buddh-1.svg",
+      "desc": "The Buddh International Circuit is an Indian motor racing circuit situated in Jaypee Sports City, Greater Noida, Uttar Pradesh. The track shares its name with Gautama Buddha, as does the district of its location.",
+      "length": "5.125 km",
+      "corners": "N/A",
+      "location": "Buddh International Circuit"
+    },
+    {
+      "id": "buenos-aires-4",
+      "name": "Buenos-Aires",
+      "img": "./assets/f1_tracks/buenos-aires-4.svg",
+      "desc": "Buenos Aires, officially the Autonomous City of Buenos Aires, is the capital and largest city of Argentina. It is located on the southwest of the Río de la Plata.",
+      "length": "8.9 km",
+      "corners": "N/A",
+      "location": "Buenos-Aires"
+    },
+    {
+      "id": "bugatti-1",
+      "name": "Bugatti",
+      "img": "./assets/f1_tracks/bugatti-1.svg",
+      "desc": "Automobiles Ettore Bugatti was a French manufacturer of high-performance automobiles. The company was founded in 1909 in the then-German city of Molsheim, Alsace, by the Italian-born industrial designer Ettore Bugatti.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Bugatti"
+    },
+    {
+      "id": "caesars-palace-1",
+      "name": "Caesars-Palace",
+      "img": "./assets/f1_tracks/caesars-palace-1.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "catalunya-6",
+      "name": "Catalunya",
+      "img": "./assets/f1_tracks/catalunya-6.svg",
+      "desc": "Catalonia is an autonomous community of Spain, designated as a nationality by its Statute of Autonomy. Its territory is situated on the northeast of the Iberian Peninsula, to the south of the Pyrenees mountain range.",
+      "length": "580 km",
+      "corners": "N/A",
+      "location": "Catalunya"
+    },
+    {
+      "id": "clermont-ferrand-1",
+      "name": "Clermont-Ferrand",
+      "img": "./assets/f1_tracks/clermont-ferrand-1.svg",
+      "desc": "Clermont-Ferrand is a city and commune of France, in the Auvergne-Rhône-Alpes region, with a population of 147,284 (2020). Its metropolitan area (aire d'attraction) had 504,157 inhabitants at the 2018 census.",
+      "length": "190 km",
+      "corners": "N/A",
+      "location": "Clermont-Ferrand"
+    },
+    {
+      "id": "dallas-1",
+      "name": "Dallas",
+      "img": "./assets/f1_tracks/dallas-1.svg",
+      "desc": "Fair Park is a recreational and educational complex in Dallas, Texas, United States, located immediately east of downtown. The 277-acre (112 ha) area is registered as a Dallas Landmark and National Historic Landmark; many of the buildings were constructed for the Texas Centennial Exposition in 1936.\nFair Park has been designated a Great Place in America by the American Planning Association..",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Fair Park"
+    },
+    {
+      "id": "detroit-2",
+      "name": "Detroit",
+      "img": "./assets/f1_tracks/detroit-2.svg",
+      "desc": "The streets of Detroit, in the U.S. state of Michigan, hosted Formula One racing, and later Championship Auto Racing Teams (CART) racing, between the 1982 and 1991 seasons.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Detroit street circuit"
+    },
+    {
+      "id": "dijon-2",
+      "name": "Dijon",
+      "img": "./assets/f1_tracks/dijon-2.svg",
+      "desc": "Dijon-Prenois is a 3.801 km (2.362 mi) motor racing circuit located in Prenois, near Dijon, France. The undulating track is noted for its fast, sweeping bends.\nOpened in 1972, Dijon-Prenois hosted the Formula One French Grand Prix five times, and the Swiss Grand Prix in 1982.",
+      "length": "3.801 km",
+      "corners": "N/A",
+      "location": "Dijon-Prenois"
+    },
+    {
+      "id": "donington-1",
+      "name": "Donington",
+      "img": "./assets/f1_tracks/donington-1.svg",
+      "desc": "Donington Park is a motorsport circuit located near Castle Donington in Leicestershire, England. The circuit business is now owned by Jonathan Palmer's MotorSport Vision organisation, and the surrounding Donington Park Estate, still owned by the Wheatcroft family, is currently under lease by MotorSport Vision until 2038.",
+      "length": "3.518 km",
+      "corners": "N/A",
+      "location": "Donington Park"
+    },
+    {
+      "id": "east-london-1",
+      "name": "East-London",
+      "img": "./assets/f1_tracks/east-london-1.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "estoril-2",
+      "name": "Estoril",
+      "img": "./assets/f1_tracks/estoril-2.svg",
+      "desc": "The Circuito do Estoril or Autódromo do Estoril (Estoril Circuit), officially known as Autódromo Fernanda Pires da Silva, is a motorsport race track on the Portuguese Riviera, outside of Lisbon, owned by state-run holding management company Parpública. Its length is 4.182 km (2.599 mi).",
+      "length": "4.182 km",
+      "corners": "N/A",
+      "location": "Circuito do Estoril"
+    },
+    {
+      "id": "fuji-2",
+      "name": "Fuji",
+      "img": "./assets/f1_tracks/fuji-2.svg",
+      "desc": "Fuji Speedway (富士スピードウェイ, Fuji Supīdowei) is a motorsport race track standing in the foothills of Mount Fuji, in Oyama, Suntō District, Shizuoka Prefecture, Japan. It was built in the early 1960s.",
+      "length": "500 km",
+      "corners": "11",
+      "location": "Fuji Speedway"
+    },
+    {
+      "id": "hockenheimring-4",
+      "name": "Hockenheimring",
+      "img": "./assets/f1_tracks/hockenheimring-4.svg",
+      "desc": "The Hockenheimring, officially Hockenheimring Baden-Württemberg (German: [ˈhɔkŋ̍haɪmʁɪŋ ˌbaːdn̩ ˈvʏʁtəmbɛʁk] ) is a motor racing circuit situated in the Rhine valley near the town of Hockenheim in Baden-Württemberg, Germany, located on the Bertha Benz Memorial Route. Amongst other motor racing events, it has hosted the German Grand Prix, most recently in 2019.",
+      "length": "1.3 km",
+      "corners": "11",
+      "location": "Hockenheimring"
+    },
+    {
+      "id": "hungaroring-3",
+      "name": "Hungaroring",
+      "img": "./assets/f1_tracks/hungaroring-3.svg",
+      "desc": "The Hungaroring is a 4.381 km (2.722 mi) motorsport racetrack in Mogyoród, Pest County, Hungary where the Formula One Hungarian Grand Prix is held. In 1986, it became the location of the first Formula One Grand Prix behind the Iron Curtain.",
+      "length": "4.381 km",
+      "corners": "N/A",
+      "location": "Hungaroring"
+    },
+    {
+      "id": "imola-3",
+      "name": "Imola",
+      "img": "./assets/f1_tracks/imola-3.svg",
+      "desc": "The Imola Circuit, officially called Autodromo Internazionale Enzo e Dino Ferrari (Italian for 'Enzo and Dino Ferrari International Autodrome'), is a 4.909 km (3.050 mi) motor racing circuit. It is located in the town of Imola, in the Emilia-Romagna region of Italy, 40-kilometre (25 mi) east of Bologna.",
+      "length": "4.909 km",
+      "corners": "N/A",
+      "location": "Imola Circuit"
+    },
+    {
+      "id": "indianapolis-2",
+      "name": "Indianapolis",
+      "img": "./assets/f1_tracks/indianapolis-2.svg",
+      "desc": "The Indianapolis Motor Speedway is a motor racing circuit located in Speedway, Indiana, United States, an enclave suburb of Indianapolis, Indiana. It is the home of the Indianapolis 500 and the Brickyard 400, and formerly the home of the United States Grand Prix and the Indianapolis motorcycle Grand Prix.",
+      "length": "9.7 km",
+      "corners": "1",
+      "location": "Indianapolis Motor Speedway"
+    },
+    {
+      "id": "interlagos-2",
+      "name": "Interlagos",
+      "img": "./assets/f1_tracks/interlagos-2.svg",
+      "desc": "The Autódromo José Carlos Pace, better known as Interlagos, is a 4.309 km (2.677 miles) motorsport circuit located in the city of São Paulo, Brazil. It was inaugurated on 12 May 1940, by the federal intervener of the São Paulo province, Adhemar de Barros.",
+      "length": "4.309 km",
+      "corners": "N/A",
+      "location": "Interlagos Circuit"
+    },
+    {
+      "id": "istanbul-1",
+      "name": "Istanbul",
+      "img": "./assets/f1_tracks/istanbul-1.svg",
+      "desc": "Istanbul Park (Turkish: İstanbul Park), also known as the TOSFED İstanbul Park, is a motor sports race track in the Tuzla district of Istanbul, Turkey. Designed by Hermann Tilke, it opened on 19–21 August 2005.",
+      "length": "5.338 km",
+      "corners": "17",
+      "location": "Istanbul Park"
+    },
+    {
+      "id": "jacarepagua-1",
+      "name": "Jacarepagua",
+      "img": "./assets/f1_tracks/jacarepagua-1.svg",
+      "desc": "Jacarepaguá (Portuguese pronunciation: [ʒakaɾepaˈɡwa]), with a land area of 29.27 square miles (75.8 km2), is a neighborhood situated in the Southwest Zone of Rio de Janeiro, Brazil. In 2010, it had a population of 157,326.",
+      "length": "75.8 km",
+      "corners": "N/A",
+      "location": "Jacarepagua"
+    },
+    {
+      "id": "jarama-2",
+      "name": "Jarama",
+      "img": "./assets/f1_tracks/jarama-2.svg",
+      "desc": "The Circuito de Madrid Jarama - RACE, formerly known as Circuito del Jarama and Circuito Permanente del Jarama is a motorsport racetrack located in San Sebastián de los Reyes, 32 km (20 mi) north of Madrid. It was home to the Spanish Grand Prix nine times between 1968 and 1981, and the Spanish motorcycle Grand Prix 15 times between 1969 and 1988.\nDesigned by John Hugenholtz (who also created Suzuka), the 3.850 km (2.392 mi) circuit was built by Alessandro Rocci in 1967 on arid scrub land..",
+      "length": "32 km",
+      "corners": "N/A",
+      "location": "Circuito del Jarama"
+    },
+    {
+      "id": "jeddah-1",
+      "name": "Jeddah",
+      "img": "./assets/f1_tracks/jeddah-1.svg",
+      "desc": "The Jeddah Corniche Circuit (Arabic: حلبة كورنيش جدة) is a motor racing street circuit in Jeddah, Saudi Arabia. It currently hosts the Formula One Saudi Arabian Grand Prix since 2021, and the Formula E Jeddah ePrix since 2025.",
+      "length": "6.174 km",
+      "corners": "N/A",
+      "location": "Jeddah Corniche Circuit"
+    },
+    {
+      "id": "jerez-2",
+      "name": "Jerez",
+      "img": "./assets/f1_tracks/jerez-2.svg",
+      "desc": "Circuito de Jerez – Ángel Nieto (formerly known as Circuito de Jerez and Circuito de Velocidad Jerez), is a 4.428 km (2.751 mi) racing circuit located close to the city of Jerez de la Frontera, 90-kilometre (56 mi) south of Seville and deep within the sherry-producing region in the south of Spain. The project was led by the Spanish engineer Manuel Medina Lara, based on a preliminary idea from Alessandro Rocci..",
+      "length": "4.428 km",
+      "corners": "N/A",
+      "location": "Circuito de Jerez"
+    },
+    {
+      "id": "kyalami-2",
+      "name": "Kyalami",
+      "img": "./assets/f1_tracks/kyalami-2.svg",
+      "desc": "Kyalami Grand Prix Circuit (from Khaya lami, My home in Zulu) is a 4.529 km (2.814 mi) motor racing circuit located in Midrand, Gauteng, South Africa, just north of Johannesburg. The circuit has been used for Grand Prix and Formula One races and has hosted the South African Grand Prix twenty times.",
+      "length": "4.529 km",
+      "corners": "N/A",
+      "location": "Kyalami"
+    },
+    {
+      "id": "las-vegas-1",
+      "name": "Las-Vegas",
+      "img": "./assets/f1_tracks/las-vegas-1.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "long-beach-3",
+      "name": "Long-Beach",
+      "img": "./assets/f1_tracks/long-beach-3.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "lusail-1",
+      "name": "Lusail",
+      "img": "./assets/f1_tracks/lusail-1.svg",
+      "desc": "Lusail (Arabic: لوسيل, ALA-LC: Lūsayl, Arabic pronunciation: [luːˈsajl]) is the second-largest city in Qatar after Doha, and the economic capital of Qatar, located on the coast, in the southern part of the municipality of Al Daayen. Lusail lies about 23 kilometres (14 mi) north of the Doha city centre, just north of the West Bay Lagoon, on over 38 square kilometres (15 sq mi) and will eventually have the infrastructure to accommodate 450,000 people.",
+      "length": "3.5 km",
+      "corners": "N/A",
+      "location": "Lusail"
+    },
+    {
+      "id": "magny-cours-3",
+      "name": "Magny-Cours",
+      "img": "./assets/f1_tracks/magny-cours-3.svg",
+      "desc": "Magny-Cours (French pronunciation: [maɲi kuʁ]) is a commune in the Nièvre department in central France.\nIt is the home of the Circuit de Nevers Magny-Cours, a famous motor racing circuit (whose name is often abbreviated to 'Magny-Cours'). It formerly hosted the Formula One French Grand Prix.\nMagny-Cours also hosts the Conservatoire de la monoplace française..",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Magny-Cours"
+    },
+    {
+      "id": "marina-bay-4",
+      "name": "Marina-Bay",
+      "img": "./assets/f1_tracks/marina-bay-4.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "melbourne-2",
+      "name": "Melbourne",
+      "img": "./assets/f1_tracks/melbourne-2.svg",
+      "desc": "Melbourne is the capital and most populous city of the Australian state of Victoria, and the second most-populous city in Australia, after Sydney. The city's name generally refers to a 2,453-square-kilometre (947 sq mi) area, comprising an urban agglomeration of 31 local government areas.",
+      "length": "400 km",
+      "corners": "N/A",
+      "location": "Melbourne"
+    },
+    {
+      "id": "mexico-city-3",
+      "name": "Mexico-City",
+      "img": "./assets/f1_tracks/mexico-city-3.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "miami-1",
+      "name": "Miami",
+      "img": "./assets/f1_tracks/miami-1.svg",
+      "desc": "The Miami International Autodrome is a purpose-built temporary circuit around Hard Rock Stadium and its private facilities in Miami Gardens, Florida, United States. The track is 3.363 mi (5.412 km) long and features 19 corners with an average in a Formula One car of around 139 mph (224 km/h) in qualifying.",
+      "length": "5.412 km",
+      "corners": "N/A",
+      "location": "Miami International Autodrome"
+    },
+    {
+      "id": "monaco-5",
+      "name": "Monaco",
+      "img": "./assets/f1_tracks/monaco-5.svg",
+      "desc": "Circuit de Monaco is a 3.337 km (2.074 mi) street circuit laid out on the city streets of Monte Carlo and La Condamine around the harbour of the Principality of Monaco. It is commonly, and even officially, referred to as \"Monte Carlo\" because it is largely inside the Monte Carlo neighbourhood of Monaco.\nThe circuit is annually used on three weekends in April–May for Formula One Monaco Grand Prix, Formula E Monaco ePrix and Historic Grand Prix of Monaco.",
+      "length": "3.337 km",
+      "corners": "1",
+      "location": "Circuit de Monaco"
+    },
+    {
+      "id": "monsanto-1",
+      "name": "Monsanto",
+      "img": "./assets/f1_tracks/monsanto-1.svg",
+      "desc": "Monsanto Forest Park (Portuguese: Parque Florestal de Monsanto) is a municipal protected forest in Lisbon, Portugal, the largest green patch in the city, with almost 1000 ha (10 km2). It offers a well diversified tree-covered area to the Portuguese capital.\nMany species were introduced in the Monsanto Hills (Serra de Monsanto) during the reforesting period.",
+      "length": "10 km",
+      "corners": "N/A",
+      "location": "Monsanto Park"
+    },
+    {
+      "id": "mont-tremblant-1",
+      "name": "Mont-Tremblant",
+      "img": "./assets/f1_tracks/mont-tremblant-1.svg",
+      "desc": "Mont-Tremblant (French pronunciation: [mɔ̃ tʁɑ̃blɑ̃]) is a city in the Laurentian Mountains of Quebec, Canada, approximately 130 kilometres (81 mi) northwest of Montreal and 140 kilometres (87 mi) northeast of Ottawa, Ontario. The current municipality with city status was formed in 2000.",
+      "length": "233.75 km",
+      "corners": "N/A",
+      "location": "Mont-Tremblant"
+    },
+    {
+      "id": "montjuic-1",
+      "name": "Montjuic",
+      "img": "./assets/f1_tracks/montjuic-1.svg",
+      "desc": "The Montjuïc circuit was a street circuit located on the Montjuïc mountain in Barcelona, Catalonia, Spain. The circuit was also the venue for the Spanish motorcycle Grand Prix twelve times between 1951 and 1976.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Montjuïc circuit"
+    },
+    {
+      "id": "montreal-6",
+      "name": "Montreal",
+      "img": "./assets/f1_tracks/montreal-6.svg",
+      "desc": "Montreal (French: Montréal) is the largest city in the province of Quebec, the second-largest in Canada, and the eighth-largest city in North America. Founded in 1642 as Ville-Marie, or \"City of Mary\", it now takes its name from Mount Royal, the triple-peaked mountain around which the early settlement was built.",
+      "length": "32 km",
+      "corners": "N/A",
+      "location": "Montreal"
+    },
+    {
+      "id": "monza-6",
+      "name": "Monza",
+      "img": "./assets/f1_tracks/monza-6.svg",
+      "desc": "Monza (UK: , US: , Italian: [ˈmontsa] ; Lombard: Monça, locally Monscia [ˈmũːʃa]; Latin: Modoetia) is a city and comune (municipality) on the River Lambro, a tributary of the River Po, in the Lombardy region of Italy, about 15 kilometres (9 miles) north-northeast of Milan. It is the capital of the province of Monza and Brianza.",
+      "length": "5 km",
+      "corners": "N/A",
+      "location": "Monza"
+    },
+    {
+      "id": "mosport-1",
+      "name": "Mosport",
+      "img": "./assets/f1_tracks/mosport-1.svg",
+      "desc": "Canadian Tire Motorsport Park (formerly Mosport Park and Mosport International Raceway) is a multi-track motorsport venue located north of Bowmanville in Clarington, Ontario, Canada, approximately 75 kilometers (47 miles) east of Toronto. The facility features a 3.957 km (2.459 mi), 10-turn road course; a 2.9 km (1.8 mi) advance driver and race driver training facility with a 0.402 km (0.250 mi) skid pad (Driver Development Centre) and a 1.5 km (0.93 mi) kart track (Mosport Karting Centre Inc., previously \"Mosport Kartways\").",
+      "length": "3.957 km",
+      "corners": "N/A",
+      "location": "Mosport Park"
+    },
+    {
+      "id": "mugello-1",
+      "name": "Mugello",
+      "img": "./assets/f1_tracks/mugello-1.svg",
+      "desc": "The Mugello (Italian pronunciation: [muˈdʒɛllo]) is a historic region and valley in northern Tuscany, Italy, corresponding to the course of the River Sieve. It is located to the north of the city of Florence and includes the northernmost portion of the Metropolitan City of Florence.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Mugello"
+    },
+    {
+      "id": "nivelles-1",
+      "name": "Nivelles",
+      "img": "./assets/f1_tracks/nivelles-1.svg",
+      "desc": "Nivelles-Baulers was a 2.314 mi (3.724 km) race track in Nivelles (in French)/Nijvel (in Dutch) near Brussels, Belgium..",
+      "length": "3.724 km",
+      "corners": "N/A",
+      "location": "Nivelles-Baulers"
+    },
+    {
+      "id": "nurburgring-4",
+      "name": "Nurburgring",
+      "img": "./assets/f1_tracks/nurburgring-4.svg",
+      "desc": "The Nürburgring (German pronunciation: [ˈnyːɐ̯bʊʁkˌʁɪŋ] ) is a 150,000-person capacity motorsports complex located in the town of Nürburg, Rhineland-Palatinate, Germany. It features a Grand Prix race track built in 1984, and a long Nordschleife configuration, built in the 1920s, around the village and medieval castle of Nürburg in the Eifel mountains.",
+      "length": "20.830 km",
+      "corners": "8",
+      "location": "Nürburgring"
+    },
+    {
+      "id": "paul-ricard-3",
+      "name": "Paul-Ricard",
+      "img": "./assets/f1_tracks/paul-ricard-3.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "pedralbes-1",
+      "name": "Pedralbes",
+      "img": "./assets/f1_tracks/pedralbes-1.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "pescara-1",
+      "name": "Pescara",
+      "img": "./assets/f1_tracks/pescara-1.svg",
+      "desc": "The Pescara Circuit was a 16.032 mi (25.801 km) race course made up entirely of public roads near Pescara, Italy that hosted the Coppa Acerbo auto race. Pescara is the longest circuit to ever host a Formula One Grand Prix, but was used only once, for the 1957 Pescara Grand Prix, in which Scuderia Ferrari remained absent..",
+      "length": "25.801 km",
+      "corners": "N/A",
+      "location": "Pescara Circuit"
+    },
+    {
+      "id": "phoenix-2",
+      "name": "Phoenix",
+      "img": "./assets/f1_tracks/phoenix-2.svg",
+      "desc": "The Formula One United States Grand Prix was held on the Phoenix street circuit in Phoenix, Arizona, from 1989 to 1991. It was held in downtown by the Phoenix Civic Plaza and the America West Arena, prior to the introduction of the state's baseball stadium, Bank One Ballpark.",
+      "length": "3.800 km",
+      "corners": "N/A",
+      "location": "Phoenix street circuit"
+    },
+    {
+      "id": "portimao-1",
+      "name": "Portimao",
+      "img": "./assets/f1_tracks/portimao-1.svg",
+      "desc": "The Algarve International Circuit (Portuguese: Autódromo Internacional do Algarve), also known as the Portimão Circuit, is a 4.653 km (2.891 mi) race circuit located in Portimão, Algarve region, Portugal. The development includes a karting track, off-road track, technology park, five-star hotel, sports complex and apartments.\nThe circuit was designed by Ricardo Pina, Arquitectos.",
+      "length": "4.653 km",
+      "corners": "N/A",
+      "location": "Algarve International Circuit"
+    },
+    {
+      "id": "porto-1",
+      "name": "Porto",
+      "img": "./assets/f1_tracks/porto-1.svg",
+      "desc": "Porto, officially the Ancient, Very Noble, Ever Loyal and Undefeated City of Porto, also known in English as Oporto, is the second largest city in Portugal, after Lisbon. It is the capital of the Porto District and one of the Iberian Peninsula's major urban areas.",
+      "length": "41.42 km",
+      "corners": "N/A",
+      "location": "Porto"
+    },
+    {
+      "id": "reims-2",
+      "name": "Reims",
+      "img": "./assets/f1_tracks/reims-2.svg",
+      "desc": "Reims ( REEMZ; French: [ʁɛ̃s] ; also spelled Rheims in English) is the most populous city in the French department of Marne, and the 12th most populous city in France. The city lies 129 km (80 mi) northeast of Paris on the Vesle river, a tributary of the Aisne.\nFounded by the Gauls, Reims became a major city in the Roman Empire.",
+      "length": "129 km",
+      "corners": "N/A",
+      "location": "Reims"
+    },
+    {
+      "id": "riverside-1",
+      "name": "Riverside",
+      "img": "./assets/f1_tracks/riverside-1.svg",
+      "desc": "Riverside may refer to:.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Riverside"
+    },
+    {
+      "id": "rouen-2",
+      "name": "Rouen",
+      "img": "./assets/f1_tracks/rouen-2.svg",
+      "desc": "Rouen (UK: , US: ; French: [ʁwɑ̃]  or [ʁu.ɑ̃]) is a city on the River Seine, in northwestern France. It is in the prefecture of region of Normandy and the department of Seine-Maritime.",
+      "length": "159 km",
+      "corners": "N/A",
+      "location": "Rouen"
+    },
+    {
+      "id": "sebring-1",
+      "name": "Sebring",
+      "img": "./assets/f1_tracks/sebring-1.svg",
+      "desc": "Sebring may refer to:.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Sebring"
+    },
+    {
+      "id": "sepang-1",
+      "name": "Sepang",
+      "img": "./assets/f1_tracks/sepang-1.svg",
+      "desc": "Sepang International Circuit (Malay: Litar Antarabangsa Sepang) (known as Petronas Sepang International Circuit for commercial reasons) is a motorsport race track in Sepang, Selangor, Malaysia. It is located approximately 45-kilometre (28 mi) south of Kuala Lumpur, close to Kuala Lumpur International Airport.",
+      "length": "5.543 km",
+      "corners": "5",
+      "location": "Sepang International Circuit"
+    },
+    {
+      "id": "shanghai-1",
+      "name": "Shanghai",
+      "img": "./assets/f1_tracks/shanghai-1.svg",
+      "desc": "The Shanghai International Circuit (simplified Chinese: 上海国际赛车场; traditional Chinese: 上海國際賽車場; pinyin: Shànghǎi Guójì Sàichēchǎng), also called the SAIC Shanghai International Circuit (simplified Chinese: 上海上汽国际赛车场; traditional Chinese: 上海上汽國際賽車場; pinyin: Shànghǎi Shàngqì Guójì Sàichēchǎng) for sponsorship purposes, is a motorsport race track, situated in the Jiading District, Shanghai, China. The circuit is best known as the venue for the annual Chinese Grand Prix which was hosted from 2004 to 2019, and from 2024 onwards.",
+      "length": "1.2 km",
+      "corners": "1",
+      "location": "Shanghai International Circuit"
+    },
+    {
+      "id": "silverstone-8",
+      "name": "Silverstone",
+      "img": "./assets/f1_tracks/silverstone-8.svg",
+      "desc": "Silverstone Circuit is a motor racing circuit in England, near the Northamptonshire villages of Silverstone and Whittlebury. It is the home of the British Grand Prix, which it first hosted as the 1948 British Grand Prix.",
+      "length": "8.0 km",
+      "corners": "N/A",
+      "location": "Silverstone Circuit"
+    },
+    {
+      "id": "sochi-1",
+      "name": "Sochi",
+      "img": "./assets/f1_tracks/sochi-1.svg",
+      "desc": "The Sirius Autodrom (Russian: Сириус Автодром, romanized: Sirius Avtodrom), known before 2024 as Sochi Autodrom (Russian: Сочи Автодром, romanized: Sochi Avtodrom) and originally as the Sochi International Street Circuit and the Sochi Olympic Park Circuit, is a 5.848 km (3.634 mi) permanent race track in the settlement of Sirius next to the Black Sea resort city of Sochi in Krasnodar Krai, Russia.\nThe circuit ran around a former Olympic complex, the Sochi Olympic Park site, scene of the 2014 Winter Olympic Games. The TCR International Series raced at Sochi in 2015 and 2016.\nThe inaugural World Championship Russian Grand Prix took place in 2014, with the circuit hosting the Grand Prix up to 2021.",
+      "length": "5.848 km",
+      "corners": "N/A",
+      "location": "Sochi Autodrom"
+    },
+    {
+      "id": "spa-francorchamps-4",
+      "name": "Spa-Francorchamps",
+      "img": "./assets/f1_tracks/spa-francorchamps-4.svg",
+      "desc": "The Circuit de Spa-Francorchamps (French pronunciation: [siʁkɥi də spa fʁɑ̃kɔʁʃɑ̃]), informally referred to as Spa, is a 7.004 km (4.352 mi) motor-racing circuit located in Francorchamps, Stavelot, Wallonia, Belgium, about 8 km (5.0 mi) southeast of Spa. It is the current venue of the Formula One Belgian Grand Prix, hosting its first Grand Prix in 1925, also hosting an F1 race in the first ever F1 season with the 1950 Belgian Grand Prix, and has held a Grand Prix every year since 1985 except 2003 and 2006.\nSpa also hosts several other international events including the 24 Hours of Spa and the World Endurance Championship 6 Hours of Spa-Francorchamps.",
+      "length": "7.004 km",
+      "corners": "N/A",
+      "location": "Circuit de Spa-Francorchamps"
+    },
+    {
+      "id": "spielberg-3",
+      "name": "Spielberg",
+      "img": "./assets/f1_tracks/spielberg-3.svg",
+      "desc": "Steven Allan Spielberg ( SPEEL-burg; born December 18, 1946) is an American filmmaker. A major figure of the New Hollywood era and pioneer of the modern blockbuster, Spielberg is widely regarded as one of the greatest and most influential filmmakers in the history of cinema and is the highest-grossing film director of all time.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Spielberg"
+    },
+    {
+      "id": "suzuka-2",
+      "name": "Suzuka",
+      "img": "./assets/f1_tracks/suzuka-2.svg",
+      "desc": "The Suzuka International Racing Course (Japanese: 鈴鹿国際レーシングコース, Hepburn: Suzuka Kokusai Rēsingu Kōsu), a.k.a. the Suzuka Circuit (鈴鹿サーキット, Suzuka Sākitto), is a 5.807 km (3.608 mi) long motorsport race track located in Ino, Suzuka City, Mie Prefecture, Japan and operated by Honda Mobilityland, a subsidiary of Honda Motor Co, Ltd.",
+      "length": "5.807 km",
+      "corners": "N/A",
+      "location": "Suzuka Circuit"
+    },
+    {
+      "id": "valencia-1",
+      "name": "Valencia",
+      "img": "./assets/f1_tracks/valencia-1.svg",
+      "desc": "The Valencia Street Circuit (Valencian: Circuit Urbà de València, Spanish: Circuito Urbano de Valencia) was a street circuit in Valencia, Spain which hosted the Formula One European Grand Prix for five years (2008–2012). The first Formula One race meeting on the circuit was held over the 23–24 August 2008 weekend, with Felipe Massa winning the main event, the European Grand Prix, after starting from pole position.",
+      "length": "5.419 km",
+      "corners": "2",
+      "location": "Valencia Street Circuit"
+    },
+    {
+      "id": "watkins-glen-3",
+      "name": "Watkins-Glen",
+      "img": "./assets/f1_tracks/watkins-glen-3.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "yas-marina-2",
+      "name": "Yas-Marina",
+      "img": "./assets/f1_tracks/yas-marina-2.svg",
+      "desc": "Historic Formula 1 Circuit.",
+      "length": "Unknown",
+      "corners": "??"
+    },
+    {
+      "id": "yeongam-1",
+      "name": "Yeongam",
+      "img": "./assets/f1_tracks/yeongam-1.svg",
+      "desc": "Yeongam ([jʌŋam]) is a city and county in South Jeolla Province, South Korea. Bordered with Mokpo and Naju to the north, Jangheung County to the east, and Haenam and Gangjin to the south, Yeongam County comprises two eups and nine myeons, populated with about 57,000 people, and its county hall is seated in Yeongam-eup.\nThe Korean Grand Prix was held along the harbor side, at the Korea International Circuit from 2010 to 2013.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Yeongam"
+    },
+    {
+      "id": "zandvoort-5",
+      "name": "Zandvoort",
+      "img": "./assets/f1_tracks/zandvoort-5.svg",
+      "desc": "Circuit Zandvoort (Dutch pronunciation: [sɪrˈkʋi ˈzɑntfoːrt]), known for sponsorship reasons as CM.com Circuit Zandvoort, previously known as Circuit Park Zandvoort until 2017, is a 4.259 km (2.646 mi) motorsport race track located in the dunes north of Zandvoort, the Netherlands, near the North Sea coast line and 35 km (22 mi) west of Amsterdam. It returned to the Formula One calendar in 2021 as the location of the revived Dutch Grand Prix.",
+      "length": "4.259 km",
+      "corners": "3",
+      "location": "Circuit Zandvoort"
+    },
+    {
+      "id": "zeltweg-1",
+      "name": "Zeltweg",
+      "img": "./assets/f1_tracks/zeltweg-1.svg",
+      "desc": "Zeltweg Air Base, known in German as Fliegerhorst Hinterstoisser, is a military airfield in Styria, Austria near Zeltweg. It is the main airfield of the Austrian Air Force.",
+      "length": "N/A",
+      "corners": "N/A",
+      "location": "Zeltweg Airfield"
+    },
+    {
+      "id": "zolder-2",
+      "name": "Zolder",
+      "img": "./assets/f1_tracks/zolder-2.svg",
+      "desc": "The Circuit Zolder, also known as Circuit Terlamen, is an undulating 4.011 km (2.492 mi) motorsport race track in Heusden-Zolder, Belgium..",
+      "length": "4.011 km",
+      "corners": "N/A",
+      "location": "Circuit Zolder"
+    }
+  ],
+  "teams": [],
+  "drivers": []
+}
