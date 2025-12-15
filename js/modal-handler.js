@@ -58,6 +58,31 @@ function selectPKDifficulty(difficulty) {
 // 暴露到全局
 window.selectPKDifficulty = selectPKDifficulty;
 
+// 打开图片放大模态框
+function openImageZoom(imageSrc) {
+    const modal = document.getElementById('image-zoom-modal');
+    const zoomedImg = document.getElementById('zoomed-image');
+    if (!modal || !zoomedImg) {
+        return;
+    }
+    zoomedImg.src = imageSrc;
+    modal.style.display = 'flex';
+}
+
+// 关闭图片放大模态框
+function closeImageZoom(e) {
+    if (e && e.target.id !== 'image-zoom-modal' && !e.target.closest('.image-zoom-content') && e.target.id !== 'image-zoom-modal' && e.target.className !== 'image-zoom-close') {
+        return;
+    }
+    const modal = document.getElementById('image-zoom-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+window.openImageZoom = openImageZoom;
+window.closeImageZoom = closeImageZoom;
+
 // 关闭PK种子输入弹窗
 function closePKSeedModal(e) {
     if (e && e.target.id !== 'pk-seed-modal' && !e.target.closest('.pk-seed-card')) {

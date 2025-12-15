@@ -23,6 +23,7 @@ function initDataReferences() {
         dbPlates: gameData.dbPlates,
         dbF1Tracks: gameData.dbF1Tracks,
         dbFootballClubs: gameData.dbFootballClubs,
+        dbCityNetworks: gameData.dbCityNetworks,
         worldNameMap: gameData.worldNameMap,
         currentScope: gameState.currentScope || 'world',
         gameMode: gameState.gameMode || '',
@@ -161,11 +162,22 @@ function startGame(modeKey) {
             gameState.questionPool = pool.sort(() => Math.random() - 0.5);
         }
     } else if (currentScope === 'china') {
-        if (!refs.dbPlates || refs.dbPlates.length === 0) {
-            alert("⚠️ 中国车牌数据未加载，请刷新页面重试。");
-            return;
+        if (modeKey === 'city_network') {
+            // 路网挑战模式
+            if (!refs.dbCityNetworks || refs.dbCityNetworks.length === 0) {
+                alert("⚠️ 城市路网数据未加载，请刷新页面重试。");
+                return;
+            }
+            gameState.questionPool = refs.dbCityNetworks.sort(() => Math.random() - 0.5).slice(0, 5);
+            gameState.gameMode = 'city_network';
+        } else {
+            // 车牌挑战模式
+            if (!refs.dbPlates || refs.dbPlates.length === 0) {
+                alert("⚠️ 中国车牌数据未加载，请刷新页面重试。");
+                return;
+            }
+            gameState.questionPool = refs.dbPlates.sort(() => Math.random() - 0.5).slice(0, 50);
         }
-        gameState.questionPool = refs.dbPlates.sort(() => Math.random() - 0.5).slice(0, 50);
     } else if (currentScope === 'sports') {
         if (modeKey === 'pk') {
             window.showPKSeedModal();
@@ -204,7 +216,7 @@ function startGame(modeKey) {
                     gameState.questionPool = refs.dbFootballClubs.sort(() => Math.random() - 0.5).slice(0, 20);
                 }
             }
-            // PK模式的 questionPool 已经在 confirmPKSeed 中设置，这里不需要重新设置
+              // PK模式的 questionPool 已经在 confirmPKSeed 中设置，这里不需要重新设置
         } else {
             alert("⚠️ 未知的体育模式：" + gameState.gameMode);
             return;
@@ -320,6 +332,7 @@ function nextRound() {
     const plate = document.getElementById('plate-display');
     const city = document.getElementById('city-display');
     const badge = document.getElementById('question-type-badge');
+    const flagBox = document.querySelector('.flag-box');
 
     img.style.display = 'none';
     plate.style.display = 'none';
@@ -329,6 +342,11 @@ function nextRound() {
     img.style.opacity = '1';
     img.style.transition = '';
     badge.textContent = '';
+    
+    // 清除 flag-box 的足球模式类
+    if (flagBox) {
+        flagBox.classList.remove('football-mode', 'football-mode-medium', 'football-mode-hard', 'football-mode-hell');
+    }
 
     if (gameState.currentScope === 'world') {
         img.style.display = 'block';
@@ -346,7 +364,26 @@ function nextRound() {
             badge.textContent = (gameState.gameMode === 'mode_1') ? "🚩 猜首都" : "🚩 猜国家";
         }
     } else if (gameState.currentScope === 'china') {
-        if (gameState.gameMode === 'mode_3a' || gameState.gameMode === 'mode_3b') {
+        if (gameState.gameMode === 'city_network') {
+            // 路网挑战模式
+            img.style.display = 'block';
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.3s';
+            img.style.cursor = 'zoom-in';
+            img.onload = function() {
+                this.style.opacity = '1';
+            };
+            img.onerror = function() {
+                this.style.opacity = '1';
+            };
+            img.src = gameState.currentQ.img;
+            img.classList.remove('silhouette');
+            // 添加点击放大功能
+            img.onclick = function() {
+                openImageZoom(gameState.currentQ.img);
+            };
+            badge.textContent = "🗺️ 看路网，猜城市（点击图片放大）";
+        } else if (gameState.gameMode === 'mode_3a' || gameState.gameMode === 'mode_3b') {
             city.style.display = 'block';
             city.textContent = gameState.currentQ.name;
             badge.textContent = "🏙️ 猜车牌";
@@ -390,6 +427,18 @@ function nextRound() {
                 difficulty = 'easy';
             }
             
+            // 为 flag-box 添加对应的足球模式类，用于显示白色圆形背景和边框
+            if (flagBox) {
+                flagBox.classList.add('football-mode');
+                if (difficulty === 'medium') {
+                    flagBox.classList.add('football-mode-medium');
+                } else if (difficulty === 'hard') {
+                    flagBox.classList.add('football-mode-hard');
+                } else if (difficulty === 'hell') {
+                    flagBox.classList.add('football-mode-hell');
+                }
+            }
+            
             if (difficulty === 'easy') {
                 img.classList.add('football-mask-easy');
                 badge.textContent = "⚽ 猜俱乐部 (简单)";
@@ -411,8 +460,10 @@ function nextRound() {
 
     let sourceDB;
     if (gameState.currentScope === 'world') sourceDB = refs.dbWorld;
-    else if (gameState.currentScope === 'china') sourceDB = refs.dbPlates;
-    else if (gameState.currentScope === 'sports') {
+    else if (gameState.currentScope === 'china') {
+        if (gameState.gameMode === 'city_network') sourceDB = refs.dbCityNetworks;
+        else sourceDB = refs.dbPlates;
+    } else if (gameState.currentScope === 'sports') {
         if (gameState.gameMode === 'f1') sourceDB = refs.dbF1Tracks;
         else if (gameState.gameMode.startsWith('football_') || gameState.gameMode.startsWith('pk_football_')) sourceDB = refs.dbFootballClubs;
         else sourceDB = [];
@@ -564,8 +615,13 @@ function checkAnswer(choice, btn) {
             correctText = gameState.currentQ.name;
         }
     } else if (gameState.currentScope === 'china') {
-        isCorrect = (choice.name === gameState.currentQ.name);
-        correctText = gameState.currentQ.name;
+        if (gameState.gameMode === 'city_network') {
+            isCorrect = (choice.id === gameState.currentQ.id);
+            correctText = gameState.currentQ.name;
+        } else {
+            isCorrect = (choice.name === gameState.currentQ.name);
+            correctText = gameState.currentQ.name;
+        }
     } else if (gameState.currentScope === 'sports') {
         if (gameState.gameMode === 'f1') {
             isCorrect = (choice.id === gameState.currentQ.id);

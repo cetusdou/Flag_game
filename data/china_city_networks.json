@@ -1,0 +1,242 @@
+[
+  {
+    "id": "beijing",
+    "name": "北京",
+    "img": "./assets/city_networks/beijing.png"
+  },
+  {
+    "id": "shanghai",
+    "name": "上海",
+    "img": "./assets/city_networks/shanghai.png"
+  },
+  {
+    "id": "tianjin",
+    "name": "天津",
+    "img": "./assets/city_networks/tianjin.png"
+  },
+  {
+    "id": "chongqing",
+    "name": "重庆",
+    "img": "./assets/city_networks/chongqing.png"
+  },
+  {
+    "id": "guangzhou",
+    "name": "广州",
+    "img": "./assets/city_networks/guangzhou.png"
+  },
+  {
+    "id": "shenzhen",
+    "name": "深圳",
+    "img": "./assets/city_networks/shenzhen.png"
+  },
+  {
+    "id": "hong_kong",
+    "name": "香港",
+    "img": "./assets/city_networks/hong_kong.png"
+  },
+  {
+    "id": "macau",
+    "name": "澳门",
+    "img": "./assets/city_networks/macau.png"
+  },
+  {
+    "id": "zhuhai",
+    "name": "珠海",
+    "img": "./assets/city_networks/zhuhai.png"
+  },
+  {
+    "id": "haikou",
+    "name": "海口",
+    "img": "./assets/city_networks/haikou.png"
+  },
+  {
+    "id": "sanya",
+    "name": "三亚",
+    "img": "./assets/city_networks/sanya.png"
+  },
+  {
+    "id": "nanning",
+    "name": "南宁",
+    "img": "./assets/city_networks/nanning.png"
+  },
+  {
+    "id": "guilin",
+    "name": "桂林",
+    "img": "./assets/city_networks/guilin.png"
+  },
+  {
+    "id": "nanjing",
+    "name": "南京",
+    "img": "./assets/city_networks/nanjing.png"
+  },
+  {
+    "id": "suzhou",
+    "name": "苏州",
+    "img": "./assets/city_networks/suzhou.png"
+  },
+  {
+    "id": "hangzhou",
+    "name": "杭州",
+    "img": "./assets/city_networks/hangzhou.png"
+  },
+  {
+    "id": "ningbo",
+    "name": "宁波",
+    "img": "./assets/city_networks/ningbo.png"
+  },
+  {
+    "id": "hefei",
+    "name": "合肥",
+    "img": "./assets/city_networks/hefei.png"
+  },
+  {
+    "id": "fuzhou",
+    "name": "福州",
+    "img": "./assets/city_networks/fuzhou.png"
+  },
+  {
+    "id": "xiamen",
+    "name": "厦门",
+    "img": "./assets/city_networks/xiamen.png"
+  },
+  {
+    "id": "nanchang",
+    "name": "南昌",
+    "img": "./assets/city_networks/nanchang.png"
+  },
+  {
+    "id": "jinan",
+    "name": "济南",
+    "img": "./assets/city_networks/jinan.png"
+  },
+  {
+    "id": "qingdao",
+    "name": "青岛",
+    "img": "./assets/city_networks/qingdao.png"
+  },
+  {
+    "id": "wuhan",
+    "name": "武汉",
+    "img": "./assets/city_networks/wuhan.png"
+  },
+  {
+    "id": "changsha",
+    "name": "长沙",
+    "img": "./assets/city_networks/changsha.png"
+  },
+  {
+    "id": "zhengzhou",
+    "name": "郑州",
+    "img": "./assets/city_networks/zhengzhou.png"
+  },
+  {
+    "id": "luoyang",
+    "name": "洛阳",
+    "img": "./assets/city_networks/luoyang.png"
+  },
+  {
+    "id": "chengdu",
+    "name": "成都",
+    "img": "./assets/city_networks/chengdu.png"
+  },
+  {
+    "id": "kunming",
+    "name": "昆明",
+    "img": "./assets/city_networks/kunming.png"
+  },
+  {
+    "id": "dali",
+    "name": "大理",
+    "img": "./assets/city_networks/dali.png"
+  },
+  {
+    "id": "guiyang",
+    "name": "贵阳",
+    "img": "./assets/city_networks/guiyang.png"
+  },
+  {
+    "id": "lhasa",
+    "name": "拉萨",
+    "img": "./assets/city_networks/lhasa.png"
+  },
+  {
+    "id": "xi_an",
+    "name": "西安",
+    "img": "./assets/city_networks/xi_an.png"
+  },
+  {
+    "id": "lanzhou",
+    "name": "兰州",
+    "img": "./assets/city_networks/lanzhou.png"
+  },
+  {
+    "id": "xining",
+    "name": "西宁",
+    "img": "./assets/city_networks/xining.png"
+  },
+  {
+    "id": "yinchuan",
+    "name": "银川",
+    "img": "./assets/city_networks/yinchuan.png"
+  },
+  {
+    "id": "urumqi",
+    "name": "乌鲁木齐",
+    "img": "./assets/city_networks/urumqi.png"
+  },
+  {
+    "id": "kashgar",
+    "name": "喀什",
+    "img": "./assets/city_networks/kashgar.png"
+  },
+  {
+    "id": "dunhuang",
+    "name": "敦煌",
+    "img": "./assets/city_networks/dunhuang.png"
+  },
+  {
+    "id": "shijiazhuang",
+    "name": "石家庄",
+    "img": "./assets/city_networks/shijiazhuang.png"
+  },
+  {
+    "id": "taiyuan",
+    "name": "太原",
+    "img": "./assets/city_networks/taiyuan.png"
+  },
+  {
+    "id": "hohhot",
+    "name": "呼和浩特",
+    "img": "./assets/city_networks/hohhot.png"
+  },
+  {
+    "id": "shenyang",
+    "name": "沈阳",
+    "img": "./assets/city_networks/shenyang.png"
+  },
+  {
+    "id": "dalian",
+    "name": "大连",
+    "img": "./assets/city_networks/dalian.png"
+  },
+  {
+    "id": "changchun",
+    "name": "长春",
+    "img": "./assets/city_networks/changchun.png"
+  },
+  {
+    "id": "harbin",
+    "name": "哈尔滨",
+    "img": "./assets/city_networks/harbin.png"
+  },
+  {
+    "id": "taipei",
+    "name": "台北",
+    "img": "./assets/city_networks/taipei.png"
+  },
+  {
+    "id": "kaohsiung",
+    "name": "高雄",
+    "img": "./assets/city_networks/kaohsiung.png"
+  }
+]

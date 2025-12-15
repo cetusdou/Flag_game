@@ -95,7 +95,8 @@ function renderRankList(scope) {
             'pk_football_easy': '⚔️ 足球PK(简单)',
             'pk_football_medium': '⚔️ 足球PK(中等)',
             'pk_football_hard': '⚔️ 足球PK(困难)',
-            'pk_football_hell': '⚔️ 足球PK(地狱)'
+            'pk_football_hell': '⚔️ 足球PK(地狱)',
+            'city_network': '🗺️ 路网挑战'
         };
         const modeName = modeNames[r.mode] || r.mode;
         

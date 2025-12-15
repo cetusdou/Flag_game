@@ -38,34 +38,46 @@ function generateOptions(currentQ, currentScope, gameMode, sourceDB) {
             }
         }
     } else if (currentScope === 'china') {
-        const provinceCode = currentQ.plate.charAt(0);
-        const sameProvinceCities = sourceDB.filter(item => {
-            const itemProvinceCode = item.plate.charAt(0);
-            return itemProvinceCode === provinceCode && 
-                   item.name !== currentQ.name && 
-                   !opts.includes(item);
-        });
-        
-        let sameProvinceAdded = 0;
-        while (sameProvinceAdded < 2 && sameProvinceCities.length > 0) {
-            const randomIndex = Math.floor(Math.random() * sameProvinceCities.length);
-            const city = sameProvinceCities.splice(randomIndex, 1)[0];
-            if (city && !opts.includes(city)) {
-                opts.push(city);
-                optionTexts.add(city.name);
-                sameProvinceAdded++;
+        if (gameMode === 'city_network') {
+            // 路网挑战模式：随机选择3个其他城市
+            while(opts.length < 4) {
+                let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
+                if (!opts.includes(r) && r.id !== currentQ.id && !optionTexts.has(r.name)) {
+                    opts.push(r);
+                    optionTexts.add(r.name);
+                }
             }
-        }
-        
-        while (opts.length < 4) {
-            let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
-            const rProvinceCode = r.plate.charAt(0);
-            if (rProvinceCode !== provinceCode && 
-                r.name !== currentQ.name && 
-                !opts.includes(r) &&
-                !optionTexts.has(r.name)) {
-                opts.push(r);
-                optionTexts.add(r.name);
+        } else {
+            // 车牌挑战模式
+            const provinceCode = currentQ.plate.charAt(0);
+            const sameProvinceCities = sourceDB.filter(item => {
+                const itemProvinceCode = item.plate.charAt(0);
+                return itemProvinceCode === provinceCode && 
+                       item.name !== currentQ.name && 
+                       !opts.includes(item);
+            });
+            
+            let sameProvinceAdded = 0;
+            while (sameProvinceAdded < 2 && sameProvinceCities.length > 0) {
+                const randomIndex = Math.floor(Math.random() * sameProvinceCities.length);
+                const city = sameProvinceCities.splice(randomIndex, 1)[0];
+                if (city && !opts.includes(city)) {
+                    opts.push(city);
+                    optionTexts.add(city.name);
+                    sameProvinceAdded++;
+                }
+            }
+            
+            while (opts.length < 4) {
+                let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
+                const rProvinceCode = r.plate.charAt(0);
+                if (rProvinceCode !== provinceCode && 
+                    r.name !== currentQ.name && 
+                    !opts.includes(r) &&
+                    !optionTexts.has(r.name)) {
+                    opts.push(r);
+                    optionTexts.add(r.name);
+                }
             }
         }
     } else if (currentScope === 'sports') {

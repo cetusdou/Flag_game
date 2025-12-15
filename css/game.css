@@ -74,23 +74,60 @@
     transition: all 0.5s ease;
 }
 
+/* 足球模式下的 flag-box 背景 */
+.flag-box.football-mode::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 
+        0 0 0 2px rgba(0, 0, 0, 0.5),
+        0 2px 8px rgba(0, 0, 0, 0.4),
+        0 4px 12px rgba(0, 0, 0, 0.3),
+        inset 0 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    pointer-events: none;
+    aspect-ratio: 1;
+}
+.flag-box.football-mode-medium::before {
+    width: 75px;
+    height: 75px;
+}
+.flag-box.football-mode-hard::before,
+.flag-box.football-mode-hell::before {
+    width: 38px;
+    height: 38px;
+}
+
 .football-mask-easy {
     clip-path: circle(30%);
     -webkit-clip-path: circle(30%);
     object-fit: cover;
     border-radius: 0;
+    position: relative;
+    z-index: 1;
 }
 .football-mask-medium {
     clip-path: circle(20%);
     -webkit-clip-path: circle(20%);
     object-fit: cover;
     border-radius: 0;
+    position: relative;
+    z-index: 1;
 }
 .football-mask-hard {
     clip-path: circle(10%);
     -webkit-clip-path: circle(10%);
     object-fit: cover;
     border-radius: 0;
+    position: relative;
+    z-index: 1;
 }
 .football-mask-hell {
     clip-path: circle(10%);
@@ -99,6 +136,8 @@
     border-radius: 0;
     transform: rotate(var(--football-rotation, 0deg));
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 #view-game-china .flag-box {

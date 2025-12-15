@@ -51,10 +51,11 @@ function enterGameScope(scope) {
         if (compendiumBtn) compendiumBtn.style.display = 'flex';
         if (pkModeBtn) pkModeBtn.style.display = 'flex';
     } else if (isChina) {
-        document.getElementById('menu-title').textContent = "🇨🇳 车牌挑战";
-        document.getElementById('menu-subtitle').textContent = `收录 ${window.GameData.dbPlates.length} 个区域`;
+        document.getElementById('menu-title').textContent = "🇨🇳 中国挑战";
+        const cityNetworksCount = window.GameData.dbCityNetworks ? window.GameData.dbCityNetworks.length : 0;
+        document.getElementById('menu-subtitle').textContent = `车牌 ${window.GameData.dbPlates.length} 个 | 路网 ${cityNetworksCount} 个城市`;
         enableBtn('btn-mode-1', 'mode_1', '🚗', '车牌挑战', '看车牌，猜地名', '50');
-        disableBtn('btn-mode-2');
+        enableBtn('btn-mode-2', 'city_network', '🗺️', '路网挑战', '看路网，猜城市', '5');
         disableBtn('btn-mode-3');
         disableBtn('btn-mode-all');
         const compendiumBtn = document.getElementById('compendium-btn');
@@ -84,10 +85,10 @@ function enterFootballSubMenu() {
     window.GameState.isFootballSubMenu = true;
     document.getElementById('menu-title').textContent = "⚽ 足球俱乐部挑战";
     document.getElementById('menu-subtitle').textContent = `收录 ${window.GameData.dbFootballClubs.length} 个俱乐部`;
-    enableBtn('btn-mode-1', 'football_easy', '⚽', '简单难度', '遮罩30%，可见范围较大', '20');
-    enableBtn('btn-mode-2', 'football_medium', '⚽', '中等难度', '遮罩20%，可见范围适中', '20');
-    enableBtn('btn-mode-3', 'football_hard', '⚽', '困难难度', '遮罩10%，仅显示中心', '20');
-    enableBtn('btn-mode-all', 'football_hell', '🔥', '地狱难度', '随机旋转+遮罩10%', '20');
+    enableBtn('btn-mode-1', 'football_easy', '⚽', '简单难度', '可见范围较大', '20');
+    enableBtn('btn-mode-2', 'football_medium', '⚽', '中等难度', '可见范围适中', '20');
+    enableBtn('btn-mode-3', 'football_hard', '⚽', '困难难度', '仅显示中心', '20');
+    enableBtn('btn-mode-all', 'football_hell', '🔥', '地狱难度', '随机旋转', '20');
     const compendiumBtn = document.getElementById('compendium-btn');
     const pkModeBtn = document.getElementById('pk-mode-btn');
     if (compendiumBtn) compendiumBtn.style.display = 'flex';

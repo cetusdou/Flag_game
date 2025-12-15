@@ -26,25 +26,25 @@
 
 <div class="container active" id="view-landing">
     <h1>答题大师</h1>
-    <p style="color:#aaa; margin-bottom:30px;">请选择挑战</p>
+    <p style="color:#aaa; margin-bottom:30px;">选择你感兴趣的挑战领域</p>
     
     <div class="landing-grid">
         <div class="landing-card world" onclick="enterGameScope('world')">
             <div class="icon">🌍</div>
             <h2>世界模式</h2>
-            <p>248 个国家与地区<br>国旗 · 首都 · 版图</p>
+            <p>探索全球地理知识<br>国旗识别 · 首都记忆 · 版图形状</p>
         </div>
         
         <div class="landing-card china" onclick="enterGameScope('china')">
             <div class="icon">🚗</div>
             <h2>中国模式</h2>
-            <p>车牌代码挑战<br>地级市 · 县级市</p>
+            <p>挑战中国地理知识<br>车牌识别 · 城市路网</p>
         </div>
         
         <div class="landing-card f1" onclick="enterGameScope('sports')">
             <div class="icon">⚽</div>
             <h2>体育模式</h2>
-            <p>F1赛道 · 足球俱乐部<br>多种体育挑战</p>
+            <p>考验你的体育知识<br>F1赛道 · 足球俱乐部</p>
         </div>
     </div>
     
@@ -173,7 +173,7 @@
             <span>‹</span> <span>返回</span>
         </button>
     </div>
-    <h2>🏆 历史记录排行榜</h2>
+    <h2>🏆 历史成绩</h2>
     
     <!-- 标签页切换 -->
     <div class="rank-tabs">
@@ -199,7 +199,7 @@
         </button>
     </div>
     <h2>📖 知识图鉴</h2>
-    <input type="text" class="search-bar" id="search-input" placeholder="🔍 搜索..." oninput="filterCompendium()">
+    <input type="text" class="search-bar" id="search-input" placeholder="🔍 搜索城市、国家或地区..." oninput="filterCompendium()">
     <div class="compendium-grid" id="compendium-grid"></div>
 </div>
 
@@ -240,7 +240,7 @@
     <div class="glass-card pk-seed-card" onclick="event.stopPropagation()">
         <div class="pk-icon">⚔️</div>
         <h2 style="margin-top: 10px; margin-bottom: 5px;">PK模式</h2>
-        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 20px;">输入相同的种子，与朋友进行同题PK！</p>
+        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 20px;">与朋友输入相同的数字种子，挑战相同的题目！</p>
         
         <!-- 难度选择（仅体育模式显示） -->
         <div id="pk-difficulty-selector" style="display: none; margin-bottom: 15px;">
@@ -254,7 +254,7 @@
         </div>
         
         <input type="number" id="pk-seed-input" class="pk-seed-input" placeholder="请输入数字种子..." autofocus>
-        <div class="pk-seed-hint">💡 提示：输入任意数字作为种子，相同种子会生成相同的50题</div>
+        <div class="pk-seed-hint">💡 提示：输入相同的数字种子，即可与朋友进行同题PK</div>
         <div class="action-row" style="margin-top: 20px;">
             <button class="action-btn btn-close" onclick="closePKSeedModal(event)">取消</button>
             <button class="action-btn btn-pk-confirm" onclick="confirmPKSeed()">开始PK</button>
@@ -263,10 +263,18 @@
 </div>
 
 <!-- 错误提示弹窗 -->
+<!-- 图片放大模态框 -->
+<div class="modal-overlay" id="image-zoom-modal" onclick="closeImageZoom(event)">
+    <div class="image-zoom-content" onclick="event.stopPropagation()">
+        <button class="image-zoom-close" onclick="closeImageZoom(event)">✕</button>
+        <img id="zoomed-image" src="" alt="放大图片">
+    </div>
+</div>
+
 <div class="modal-overlay" id="error-modal" onclick="closeErrorModal(event)">
     <div class="glass-card error-card" onclick="event.stopPropagation()">
         <div class="error-icon">⚠️</div>
-        <h2 style="margin-top: 10px; margin-bottom: 15px;">提示</h2>
+        <h2 style="margin-top: 10px; margin-bottom: 15px;">提示信息</h2>
         <p id="error-message" style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 20px;"></p>
         <button class="action-btn btn-pk-confirm" onclick="closeErrorModal(event)" style="width: 100%;">确定</button>
     </div>
