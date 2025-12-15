@@ -168,7 +168,8 @@ function startGame(modeKey) {
                 alert("⚠️ 城市路网数据未加载，请刷新页面重试。");
                 return;
             }
-            gameState.questionPool = refs.dbCityNetworks.sort(() => Math.random() - 0.5).slice(0, 5);
+            gameState.questionPool = refs.dbCityNetworks.sort(() => Math.random() - 0.5).slice(0, 10);
+            // 题目数量
             gameState.gameMode = 'city_network';
         } else {
             // 车牌挑战模式

@@ -55,7 +55,7 @@ function enterGameScope(scope) {
         const cityNetworksCount = window.GameData.dbCityNetworks ? window.GameData.dbCityNetworks.length : 0;
         document.getElementById('menu-subtitle').textContent = `车牌 ${window.GameData.dbPlates.length} 个 | 路网 ${cityNetworksCount} 个城市`;
         enableBtn('btn-mode-1', 'mode_1', '🚗', '车牌挑战', '看车牌，猜地名', '50');
-        enableBtn('btn-mode-2', 'city_network', '🗺️', '路网挑战', '看路网，猜城市', '5');
+        enableBtn('btn-mode-2', 'city_network', '🗺️', '路网挑战', '看路网，猜城市', '10');
         disableBtn('btn-mode-3');
         disableBtn('btn-mode-all');
         const compendiumBtn = document.getElementById('compendium-btn');
