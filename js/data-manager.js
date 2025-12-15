@@ -36,7 +36,6 @@ async function initGameData() {
                 c.capital && 
                 c.capital !== "无"
             ).length;
-            console.log(`✅ 数据加载完成: 共${window.GameData.dbWorld.length}个国家, ${translatedCount}个有中文翻译, ${sovereignWithCapital}个主权国家有有效首都`);
         }
         if (res2.ok) window.GameData.dbPlates = await res2.json();
         if (res3.ok) window.GameData.worldNameMap = await res3.json();
@@ -44,16 +43,13 @@ async function initGameData() {
         if (res5.ok) {
             const f1Data = await res5.json();
             window.GameData.dbF1Tracks = f1Data.circuits || [];
-            console.log(`✅ F1赛道数据加载完成: 共${window.GameData.dbF1Tracks.length}条赛道`);
         }
         if (res6.ok) {
             window.GameData.dbFootballClubs = await res6.json();
-            console.log(`✅ 足球俱乐部数据加载完成: 共${window.GameData.dbFootballClubs.length}个俱乐部`);
         }
         
         return true;
     } catch (e) {
-        console.error("数据加载错误:", e);
         return false;
     }
 }

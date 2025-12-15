@@ -6,7 +6,8 @@
     "img": "./assets/football_clubs_png/arsenal_f_c.png",
     "full_name": "The Arsenal Football Club, ",
     "founded": "1886",
-    "ground": "Emirates Stadium"
+    "ground": "Emirates Stadium",
+    "name_zh": "阿森纳"
   },
   {
     "id": "aston_villa_f_c",
@@ -15,7 +16,8 @@
     "img": "./assets/football_clubs_png/aston_villa_f_c.png",
     "full_name": "Aston Villa Football Club",
     "founded": "1874",
-    "ground": "Villa Park"
+    "ground": "Villa Park",
+    "name_zh": "阿斯顿维拉"
   },
   {
     "id": "afc_bournemouth",
@@ -24,7 +26,8 @@
     "img": "./assets/football_clubs_png/afc_bournemouth.png",
     "full_name": "AFC Bournemouth, ",
     "founded": "1899",
-    "ground": "Dean Court"
+    "ground": "Dean Court",
+    "name_zh": "伯恩茅斯"
   },
   {
     "id": "brentford_f_c",
@@ -33,7 +36,8 @@
     "img": "./assets/football_clubs_png/brentford_f_c.png",
     "full_name": "Brentford Football Club",
     "founded": "1889",
-    "ground": "Brentford Community Stadium"
+    "ground": "Brentford Community Stadium",
+    "name_zh": "布伦特福德"
   },
   {
     "id": "brighton___hove_albion_f_",
@@ -42,7 +46,8 @@
     "img": "./assets/football_clubs_png/brighton___hove_albion_f_.png",
     "full_name": "Brighton & Hove Albion Football Club",
     "founded": "1901",
-    "ground": "Falmer Stadium"
+    "ground": "Falmer Stadium",
+    "name_zh": "布莱顿"
   },
   {
     "id": "chelsea_f_c",
@@ -51,7 +56,8 @@
     "img": "./assets/football_clubs_png/chelsea_f_c.png",
     "full_name": "Chelsea Football Club",
     "founded": "1905",
-    "ground": "Stamford Bridge"
+    "ground": "Stamford Bridge",
+    "name_zh": "切尔西"
   },
   {
     "id": "crystal_palace_f_c",
@@ -60,7 +66,8 @@
     "img": "./assets/football_clubs_png/crystal_palace_f_c.png",
     "full_name": "Crystal Palace Football Club",
     "founded": "1905",
-    "ground": "Selhurst Park"
+    "ground": "Selhurst Park",
+    "name_zh": "水晶宫"
   },
   {
     "id": "everton_f_c",
@@ -69,7 +76,8 @@
     "img": "./assets/football_clubs_png/everton_f_c.png",
     "full_name": "Everton Football Club",
     "founded": "1878",
-    "ground": "Hill Dickinson Stadium"
+    "ground": "Hill Dickinson Stadium",
+    "name_zh": "埃弗顿"
   },
   {
     "id": "fulham_f_c",
@@ -78,7 +86,8 @@
     "img": "./assets/football_clubs_png/fulham_f_c.png",
     "full_name": "Fulham Football Club",
     "founded": "1879",
-    "ground": "Craven Cottage"
+    "ground": "Craven Cottage",
+    "name_zh": "富勒姆"
   },
   {
     "id": "ipswich_town_f_c",
@@ -87,7 +96,8 @@
     "img": "./assets/football_clubs_png/ipswich_town_f_c.png",
     "full_name": "Ipswich Town Football Club",
     "founded": "1878",
-    "ground": "Portman Road"
+    "ground": "Portman Road",
+    "name_zh": "伊普斯维奇"
   },
   {
     "id": "leicester_city_f_c",
@@ -96,7 +106,8 @@
     "img": "./assets/football_clubs_png/leicester_city_f_c.png",
     "full_name": "Leicester City Football Club",
     "founded": "1884",
-    "ground": "King Power Stadium"
+    "ground": "King Power Stadium",
+    "name_zh": "莱斯特城"
   },
   {
     "id": "liverpool_f_c",
@@ -105,7 +116,8 @@
     "img": "./assets/football_clubs_png/liverpool_f_c.png",
     "full_name": "Liverpool Football Club",
     "founded": "1892",
-    "ground": "Anfield"
+    "ground": "Anfield",
+    "name_zh": "利物浦"
   },
   {
     "id": "manchester_city_f_c",
@@ -114,7 +126,8 @@
     "img": "./assets/football_clubs_png/manchester_city_f_c.png",
     "full_name": "Manchester City Football Club",
     "founded": "1880",
-    "ground": "City of Manchester Stadium"
+    "ground": "City of Manchester Stadium",
+    "name_zh": "曼城"
   },
   {
     "id": "manchester_united_f_c",
@@ -123,7 +136,8 @@
     "img": "./assets/football_clubs_png/manchester_united_f_c.png",
     "full_name": "Manchester United Football Club",
     "founded": "1878",
-    "ground": "Old Trafford"
+    "ground": "Old Trafford",
+    "name_zh": "曼联"
   },
   {
     "id": "newcastle_united_f_c",
@@ -132,7 +146,8 @@
     "img": "./assets/football_clubs_png/newcastle_united_f_c.png",
     "full_name": "Newcastle United Football Club",
     "founded": "1881",
-    "ground": "St James' Park"
+    "ground": "St James' Park",
+    "name_zh": "纽卡斯尔联"
   },
   {
     "id": "nottingham_forest_f_c",
@@ -141,7 +156,8 @@
     "img": "./assets/football_clubs_png/nottingham_forest_f_c.png",
     "full_name": "Nottingham Forest Football Club",
     "founded": "1865",
-    "ground": "City Ground"
+    "ground": "City Ground",
+    "name_zh": "诺丁汉森林"
   },
   {
     "id": "southampton_f_c",
@@ -150,7 +166,8 @@
     "img": "./assets/football_clubs_png/southampton_f_c.png",
     "full_name": "Southampton Football Club",
     "founded": "1885",
-    "ground": "St Mary's Stadium"
+    "ground": "St Mary's Stadium",
+    "name_zh": "南安普顿"
   },
   {
     "id": "tottenham_hotspur_f_c",
@@ -159,7 +176,8 @@
     "img": "./assets/football_clubs_png/tottenham_hotspur_f_c.png",
     "full_name": "Tottenham Hotspur Football Club",
     "founded": "1882",
-    "ground": "Tottenham Hotspur Stadium"
+    "ground": "Tottenham Hotspur Stadium",
+    "name_zh": "托特纳姆热刺"
   },
   {
     "id": "west_ham_united_f_c",
@@ -168,7 +186,8 @@
     "img": "./assets/football_clubs_png/west_ham_united_f_c.png",
     "full_name": "West Ham United Football Club",
     "founded": "1895",
-    "ground": "London Stadium"
+    "ground": "London Stadium",
+    "name_zh": "西汉姆联"
   },
   {
     "id": "wolverhampton_wanderers_f",
@@ -177,7 +196,8 @@
     "img": "./assets/football_clubs_png/wolverhampton_wanderers_f.png",
     "full_name": "Wolverhampton Wanderers Football Club",
     "founded": "1877",
-    "ground": "Molineux Stadium"
+    "ground": "Molineux Stadium",
+    "name_zh": "狼队"
   },
   {
     "id": "deportivo_alav_s",
@@ -186,7 +206,8 @@
     "img": "./assets/football_clubs_png/deportivo_alav_s.png",
     "full_name": "Deportivo Alavés, S.A.D.",
     "founded": "1921",
-    "ground": "Campo de fútbol de Mendizorroza"
+    "ground": "Campo de fútbol de Mendizorroza",
+    "name_zh": "阿拉维斯"
   },
   {
     "id": "athletic_bilbao",
@@ -195,7 +216,8 @@
     "img": "./assets/football_clubs_png/athletic_bilbao.png",
     "full_name": "Athletic Club, , ",
     "founded": "1898",
-    "ground": "Estadio San Mamés"
+    "ground": "Estadio San Mamés",
+    "name_zh": "毕尔巴鄂竞技"
   },
   {
     "id": "atl_tico_madrid",
@@ -204,7 +226,8 @@
     "img": "./assets/football_clubs_png/atl_tico_madrid.png",
     "full_name": "Club Atlético de Madrid, S.A.D.",
     "founded": "1903",
-    "ground": "Estadio Riyadh Air Metropolitano"
+    "ground": "Estadio Riyadh Air Metropolitano",
+    "name_zh": "马德里竞技"
   },
   {
     "id": "fc_barcelona",
@@ -213,7 +236,8 @@
     "img": "./assets/football_clubs_png/fc_barcelona.png",
     "full_name": "Futbol Club Barcelona",
     "founded": "1899",
-    "ground": "Camp Nou"
+    "ground": "Camp Nou",
+    "name_zh": "巴塞罗那"
   },
   {
     "id": "rc_celta_de_vigo",
@@ -222,7 +246,8 @@
     "img": "./assets/football_clubs_png/rc_celta_de_vigo.png",
     "full_name": "Real Club Celta de Vigo, S.A.D.",
     "founded": "1923",
-    "ground": "Balaídos"
+    "ground": "Balaídos",
+    "name_zh": "塞尔塔"
   },
   {
     "id": "rcd_espanyol",
@@ -231,7 +256,8 @@
     "img": "./assets/football_clubs_png/rcd_espanyol.png",
     "full_name": "Reial Club Deportiu, Espanyol de Barcelona, S.A.D.",
     "founded": "1900",
-    "ground": "RCDE Stadium"
+    "ground": "RCDE Stadium",
+    "name_zh": "西班牙人"
   },
   {
     "id": "getafe_cf",
@@ -240,7 +266,8 @@
     "img": "./assets/football_clubs_png/getafe_cf.png",
     "full_name": "Getafe Club de Fútbol S.A.D.",
     "founded": "1983",
-    "ground": "Estadio Coliseum"
+    "ground": "Estadio Coliseum",
+    "name_zh": "赫塔费"
   },
   {
     "id": "girona_fc",
@@ -249,7 +276,8 @@
     "img": "./assets/football_clubs_png/girona_fc.png",
     "full_name": "Girona Futbol Club, S.A.D.",
     "founded": "1930",
-    "ground": "Estadi Montilivi"
+    "ground": "Estadi Montilivi",
+    "name_zh": "吉罗纳"
   },
   {
     "id": "ud_las_palmas",
@@ -258,7 +286,8 @@
     "img": "./assets/football_clubs_png/ud_las_palmas.png",
     "full_name": "Unión Deportiva Las Palmas, S.A.D.",
     "founded": "1949",
-    "ground": "Estadio Gran Canaria"
+    "ground": "Estadio Gran Canaria",
+    "name_zh": "拉斯帕尔马斯"
   },
   {
     "id": "cd_legan_s",
@@ -267,7 +296,8 @@
     "img": "./assets/football_clubs_png/cd_legan_s.png",
     "full_name": "Club Deportivo Leganés, S.A.D.",
     "founded": "1928",
-    "ground": "Estadio Ontime Butarque"
+    "ground": "Estadio Ontime Butarque",
+    "name_zh": "莱加内斯"
   },
   {
     "id": "rcd_mallorca",
@@ -276,7 +306,8 @@
     "img": "./assets/football_clubs_png/rcd_mallorca.png",
     "full_name": "Real Club Deportivo Mallorca, S.A.D.",
     "founded": "1916",
-    "ground": "Estadi Mallorca Son Moix"
+    "ground": "Estadi Mallorca Son Moix",
+    "name_zh": "马略卡"
   },
   {
     "id": "ca_osasuna",
@@ -285,7 +316,8 @@
     "img": "./assets/football_clubs_png/ca_osasuna.png",
     "full_name": "Club Atlético Osasuna",
     "founded": "1920",
-    "ground": "Estadio El Sadar"
+    "ground": "Estadio El Sadar",
+    "name_zh": "奥萨苏纳"
   },
   {
     "id": "rayo_vallecano",
@@ -294,7 +326,8 @@
     "img": "./assets/football_clubs_png/rayo_vallecano.png",
     "full_name": "Rayo Vallecano de Madrid,, SAD",
     "founded": "1924",
-    "ground": "El Campo de Fútbol de Vallecas"
+    "ground": "El Campo de Fútbol de Vallecas",
+    "name_zh": "巴列卡诺"
   },
   {
     "id": "real_betis",
@@ -303,7 +336,8 @@
     "img": "./assets/football_clubs_png/real_betis.png",
     "full_name": "Real Betis Balompié,, S.A.D.",
     "founded": "1907",
-    "ground": "Estadio de La Cartuja, "
+    "ground": "Estadio de La Cartuja, ",
+    "name_zh": "皇家贝蒂斯"
   },
   {
     "id": "real_madrid_cf",
@@ -312,7 +346,8 @@
     "img": "./assets/football_clubs_png/real_madrid_cf.png",
     "full_name": "Real Madrid Club de Fútbol, ",
     "founded": "1902",
-    "ground": "Estadio Bernabéu"
+    "ground": "Estadio Bernabéu",
+    "name_zh": "皇家马德里"
   },
   {
     "id": "real_sociedad",
@@ -321,7 +356,8 @@
     "img": "./assets/football_clubs_png/real_sociedad.png",
     "full_name": "Real Sociedad de Fútbol,, S.A.D.",
     "founded": "1909",
-    "ground": "Reale Arena"
+    "ground": "Reale Arena",
+    "name_zh": "皇家社会"
   },
   {
     "id": "sevilla_fc",
@@ -330,7 +366,8 @@
     "img": "./assets/football_clubs_png/sevilla_fc.png",
     "full_name": "Sevilla Fútbol Club,, S.A.D.",
     "founded": "1890",
-    "ground": "Estadio Ramón Sánchez-Pizjuán"
+    "ground": "Estadio Ramón Sánchez-Pizjuán",
+    "name_zh": "塞维利亚"
   },
   {
     "id": "valencia_cf",
@@ -339,7 +376,8 @@
     "img": "./assets/football_clubs_png/valencia_cf.png",
     "full_name": "Valencia Club de Fútbol,, S. A. D.",
     "founded": "1919",
-    "ground": "Camp de Mestalla"
+    "ground": "Camp de Mestalla",
+    "name_zh": "瓦伦西亚"
   },
   {
     "id": "real_valladolid",
@@ -348,7 +386,8 @@
     "img": "./assets/football_clubs_png/real_valladolid.png",
     "full_name": "Real Valladolid Club de Fútbol, S.A.D.",
     "founded": "1928",
-    "ground": "José Zorrilla Stadium"
+    "ground": "José Zorrilla Stadium",
+    "name_zh": "皇家巴利亚多利德"
   },
   {
     "id": "villarreal_cf",
@@ -357,7 +396,8 @@
     "img": "./assets/football_clubs_png/villarreal_cf.png",
     "full_name": "Villarreal Club de Fútbol, S.A.D.",
     "founded": "1923",
-    "ground": "Estadio de la Cerámica"
+    "ground": "Estadio de la Cerámica",
+    "name_zh": "比利亚雷亚尔"
   },
   {
     "id": "fc_augsburg",
@@ -366,7 +406,8 @@
     "img": "./assets/football_clubs_png/fc_augsburg.png",
     "full_name": "Fußball-Club Augsburg 1907 e. V.",
     "founded": "1907",
-    "ground": "Augsburg Arena"
+    "ground": "Augsburg Arena",
+    "name_zh": "奥格斯堡"
   },
   {
     "id": "1__fc_union_berlin",
@@ -375,7 +416,8 @@
     "img": "./assets/football_clubs_png/1__fc_union_berlin.png",
     "full_name": "1. Fußballclub Union Berlin e. V.",
     "founded": "1966",
-    "ground": "Stadion An der Alten Försterei"
+    "ground": "Stadion An der Alten Försterei",
+    "name_zh": "柏林联合"
   },
   {
     "id": "vfl_bochum",
@@ -384,7 +426,8 @@
     "img": "./assets/football_clubs_png/vfl_bochum.png",
     "full_name": "Verein für Leibesübungen Bochum 1848 Fußballgemeinschaft e. V.",
     "founded": "1848",
-    "ground": "Vonovia-Ruhrstadion"
+    "ground": "Vonovia-Ruhrstadion",
+    "name_zh": "波鸿"
   },
   {
     "id": "sv_werder_bremen",
@@ -393,7 +436,8 @@
     "img": "./assets/football_clubs_png/sv_werder_bremen.png",
     "full_name": "Sportverein Werder Bremen, von 1899 e. V.",
     "founded": "1899",
-    "ground": "Weserstadion"
+    "ground": "Weserstadion",
+    "name_zh": "云达不莱梅"
   },
   {
     "id": "borussia_dortmund",
@@ -402,7 +446,8 @@
     "img": "./assets/football_clubs_png/borussia_dortmund.png",
     "full_name": "Ballspielverein Borussia 09 e. V. Dortmund",
     "founded": "1909",
-    "ground": "Signal Iduna Park"
+    "ground": "Signal Iduna Park",
+    "name_zh": "多特蒙德"
   },
   {
     "id": "eintracht_frankfurt",
@@ -411,7 +456,8 @@
     "img": "./assets/football_clubs_png/eintracht_frankfurt.png",
     "full_name": "Eintracht Frankfurt e. V.",
     "founded": "1899",
-    "ground": "Deutsche Bank Park"
+    "ground": "Deutsche Bank Park",
+    "name_zh": "法兰克福"
   },
   {
     "id": "sc_freiburg",
@@ -420,7 +466,8 @@
     "img": "./assets/football_clubs_png/sc_freiburg.png",
     "full_name": "Sport-Club Freiburg e.V.",
     "founded": "1904",
-    "ground": "Europa-Park Stadion"
+    "ground": "Europa-Park Stadion",
+    "name_zh": "弗赖堡"
   },
   {
     "id": "1__fc_heidenheim",
@@ -429,7 +476,8 @@
     "img": "./assets/football_clubs_png/1__fc_heidenheim.png",
     "full_name": "1. Fußballclub, Heidenheim 1846 e.V.",
     "founded": "1846",
-    "ground": "Voith-Arena"
+    "ground": "Voith-Arena",
+    "name_zh": "海登海姆"
   },
   {
     "id": "tsg_1899_hoffenheim",
@@ -438,7 +486,8 @@
     "img": "./assets/football_clubs_png/tsg_1899_hoffenheim.png",
     "full_name": "Turn- und Sportgemeinschaft, 1899 Hoffenheim e.V.",
     "founded": "1899",
-    "ground": "PreZero Arena"
+    "ground": "PreZero Arena",
+    "name_zh": "霍芬海姆"
   },
   {
     "id": "holstein_kiel",
@@ -447,7 +496,8 @@
     "img": "./assets/football_clubs_png/holstein_kiel.png",
     "full_name": "Kieler Sportvereinigung, Holstein von 1900 e.V.",
     "founded": "1900",
-    "ground": "Holstein-Stadion"
+    "ground": "Holstein-Stadion",
+    "name_zh": "基尔"
   },
   {
     "id": "rb_leipzig",
@@ -456,7 +506,8 @@
     "img": "./assets/football_clubs_png/rb_leipzig.png",
     "full_name": "RasenBallsport Leipzig e.V.",
     "founded": "2009",
-    "ground": "Red Bull Arena"
+    "ground": "Red Bull Arena",
+    "name_zh": "莱比锡红牛"
   },
   {
     "id": "bayer_04_leverkusen",
@@ -465,7 +516,8 @@
     "img": "./assets/football_clubs_png/bayer_04_leverkusen.png",
     "full_name": "Bayer 04 Leverkusen Fußball GmbH",
     "founded": "1904",
-    "ground": "BayArena, "
+    "ground": "BayArena, ",
+    "name_zh": "勒沃库森"
   },
   {
     "id": "1__fsv_mainz_05",
@@ -474,7 +526,8 @@
     "img": "./assets/football_clubs_png/1__fsv_mainz_05.png",
     "full_name": "1. Fußball- und Sport-Verein Mainz 05 e.V.",
     "founded": "1905",
-    "ground": "MEWA Arena"
+    "ground": "MEWA Arena",
+    "name_zh": "美因茨"
   },
   {
     "id": "borussia_m_nchengladbach",
@@ -483,7 +536,8 @@
     "img": "./assets/football_clubs_png/borussia_m_nchengladbach.png",
     "full_name": "Borussia Verein für Leibesübungen 1900 e.V. Mönchengladbach, ",
     "founded": "1900",
-    "ground": "Borussia-Park"
+    "ground": "Borussia-Park",
+    "name_zh": "门兴格拉德巴赫"
   },
   {
     "id": "fc_bayern_munich",
@@ -492,7 +546,8 @@
     "img": "./assets/football_clubs_png/fc_bayern_munich.png",
     "full_name": "Fußball-Club Bayern München, e. V.",
     "founded": "1900",
-    "ground": "Allianz Arena"
+    "ground": "Allianz Arena",
+    "name_zh": "拜仁慕尼黑"
   },
   {
     "id": "fc_st__pauli",
@@ -501,7 +556,8 @@
     "img": "./assets/football_clubs_png/fc_st__pauli.png",
     "full_name": "Fußball-Club St. Pauli von 1910 e.V.",
     "founded": "1910",
-    "ground": "Millerntor-Stadion"
+    "ground": "Millerntor-Stadion",
+    "name_zh": "圣保利"
   },
   {
     "id": "vfb_stuttgart",
@@ -510,7 +566,8 @@
     "img": "./assets/football_clubs_png/vfb_stuttgart.png",
     "full_name": "Verein für Bewegungsspiele Stuttgart 1893 e. V.",
     "founded": "1893",
-    "ground": "MHPArena"
+    "ground": "MHPArena",
+    "name_zh": "斯图加特"
   },
   {
     "id": "vfl_wolfsburg",
@@ -519,7 +576,8 @@
     "img": "./assets/football_clubs_png/vfl_wolfsburg.png",
     "full_name": "Verein für Leibesübungen Wolfsburg e. V., (Sports club), Verein für Leibesübungen Wolfsburg Fußball GmbH, (Professional football club)",
     "founded": "1945",
-    "ground": "Volkswagen Arena"
+    "ground": "Volkswagen Arena",
+    "name_zh": "沃尔夫斯堡"
   },
   {
     "id": "atalanta_bc",
@@ -528,7 +586,8 @@
     "img": "./assets/football_clubs_png/atalanta_bc.png",
     "full_name": "Atalanta Bergamasca Calcio, S.p.A.",
     "founded": "1907",
-    "ground": "New Balance Arena"
+    "ground": "New Balance Arena",
+    "name_zh": "亚特兰大"
   },
   {
     "id": "bologna_fc_1909",
@@ -537,7 +596,8 @@
     "img": "./assets/football_clubs_png/bologna_fc_1909.png",
     "full_name": "Bologna Football Club 1909, S.p.A.",
     "founded": "1909",
-    "ground": "Stadio Renato Dall'Ara"
+    "ground": "Stadio Renato Dall'Ara",
+    "name_zh": "博洛尼亚"
   },
   {
     "id": "cagliari_calcio",
@@ -546,7 +606,8 @@
     "img": "./assets/football_clubs_png/cagliari_calcio.png",
     "full_name": "Cagliari Calcio, S.p.A.",
     "founded": "1920",
-    "ground": "Unipol Domus"
+    "ground": "Unipol Domus",
+    "name_zh": "卡利亚里"
   },
   {
     "id": "como_1907",
@@ -555,7 +616,8 @@
     "img": "./assets/football_clubs_png/como_1907.png",
     "full_name": "Como 1907, S.r.l.",
     "founded": "1907",
-    "ground": "Stadio Giuseppe Sinigaglia"
+    "ground": "Stadio Giuseppe Sinigaglia",
+    "name_zh": "科莫"
   },
   {
     "id": "empoli_fc",
@@ -564,7 +626,8 @@
     "img": "./assets/football_clubs_png/empoli_fc.png",
     "full_name": "Empoli Football Club, S.p.A.",
     "founded": "1920",
-    "ground": "Stadio Carlo Castellani – Computer Gross Arena"
+    "ground": "Stadio Carlo Castellani – Computer Gross Arena",
+    "name_zh": "恩波利"
   },
   {
     "id": "acf_fiorentina",
@@ -573,7 +636,8 @@
     "img": "./assets/football_clubs_png/acf_fiorentina.png",
     "full_name": "Associazione Calcio Firenze Fiorentina, S.r.l., , , ",
     "founded": "1926",
-    "ground": "Stadio Artemio Franchi"
+    "ground": "Stadio Artemio Franchi",
+    "name_zh": "佛罗伦萨"
   },
   {
     "id": "genoa_cfc",
@@ -582,7 +646,8 @@
     "img": "./assets/football_clubs_png/genoa_cfc.png",
     "full_name": "Genoa Cricket and Football Club, S.p.A.",
     "founded": "1893",
-    "ground": "Stadio Luigi Ferraris"
+    "ground": "Stadio Luigi Ferraris",
+    "name_zh": "热那亚"
   },
   {
     "id": "hellas_verona_fc",
@@ -591,7 +656,8 @@
     "img": "./assets/football_clubs_png/hellas_verona_fc.png",
     "full_name": "Hellas Verona Football Club, S.p.A.",
     "founded": "1903",
-    "ground": "Stadio Marcantonio Bentegodi"
+    "ground": "Stadio Marcantonio Bentegodi",
+    "name_zh": "维罗纳"
   },
   {
     "id": "inter_milan",
@@ -600,7 +666,8 @@
     "img": "./assets/football_clubs_png/inter_milan.png",
     "full_name": "Football Club Internazionale Milano, S.p.A., , ",
     "founded": "1908",
-    "ground": "Stadio Giuseppe Meazza"
+    "ground": "Stadio Giuseppe Meazza",
+    "name_zh": "国际米兰"
   },
   {
     "id": "juventus_fc",
@@ -609,7 +676,8 @@
     "img": "./assets/football_clubs_png/juventus_fc.png",
     "full_name": "Juventus Football Club S.p.A.",
     "founded": "1897",
-    "ground": "Juventus Stadium"
+    "ground": "Juventus Stadium",
+    "name_zh": "尤文图斯"
   },
   {
     "id": "ss_lazio",
@@ -618,7 +686,8 @@
     "img": "./assets/football_clubs_png/ss_lazio.png",
     "full_name": "Società Sportiva Lazio, S.p.A.",
     "founded": "1900",
-    "ground": "Stadio Olimpico"
+    "ground": "Stadio Olimpico",
+    "name_zh": "拉齐奥"
   },
   {
     "id": "us_lecce",
@@ -627,7 +696,8 @@
     "img": "./assets/football_clubs_png/us_lecce.png",
     "full_name": "Unione Sportiva Lecce, S.p.A., (Sports Union Lecce S.p.A.)",
     "founded": "1908",
-    "ground": "Stadio Via del mare"
+    "ground": "Stadio Via del mare",
+    "name_zh": "莱切"
   },
   {
     "id": "ac_milan",
@@ -636,7 +706,8 @@
     "img": "./assets/football_clubs_png/ac_milan.png",
     "full_name": "Associazione Calcio Milan, S.p.A., ",
     "founded": "1899",
-    "ground": "San Siro Stadium"
+    "ground": "San Siro Stadium",
+    "name_zh": "AC米兰"
   },
   {
     "id": "ac_monza",
@@ -645,7 +716,8 @@
     "img": "./assets/football_clubs_png/ac_monza.png",
     "full_name": "Associazione Calcio Monza, S.p.A.",
     "founded": "1912",
-    "ground": "Stadio Brianteo"
+    "ground": "Stadio Brianteo",
+    "name_zh": "蒙扎"
   },
   {
     "id": "ssc_napoli",
@@ -654,7 +726,8 @@
     "img": "./assets/football_clubs_png/ssc_napoli.png",
     "full_name": "Società Sportiva Calcio Napoli, S.p.A.",
     "founded": "1926",
-    "ground": "Stadio Diego Armando Maradona"
+    "ground": "Stadio Diego Armando Maradona",
+    "name_zh": "那不勒斯"
   },
   {
     "id": "parma_calcio_1913",
@@ -663,7 +736,8 @@
     "img": "./assets/football_clubs_png/parma_calcio_1913.png",
     "full_name": "Parma Calcio 1913, S.r.l.",
     "founded": "1913",
-    "ground": "Stadio Ennio Tardini"
+    "ground": "Stadio Ennio Tardini",
+    "name_zh": "帕尔马"
   },
   {
     "id": "as_roma",
@@ -672,7 +746,8 @@
     "img": "./assets/football_clubs_png/as_roma.png",
     "full_name": "Associazione Sportiva Roma, S.p.A.",
     "founded": "1927",
-    "ground": "Stadio Olimpico"
+    "ground": "Stadio Olimpico",
+    "name_zh": "罗马"
   },
   {
     "id": "torino_fc",
@@ -681,7 +756,8 @@
     "img": "./assets/football_clubs_png/torino_fc.png",
     "full_name": "Torino Football Club, S.p.A.",
     "founded": "1906",
-    "ground": "Stadio Olimpico Grande Torino"
+    "ground": "Stadio Olimpico Grande Torino",
+    "name_zh": "都灵"
   },
   {
     "id": "udinese_calcio",
@@ -690,7 +766,8 @@
     "img": "./assets/football_clubs_png/udinese_calcio.png",
     "full_name": "Udinese Calcio, S.p.A.",
     "founded": "1896",
-    "ground": "Bluenergy Stadium - Stadio Friuli"
+    "ground": "Bluenergy Stadium - Stadio Friuli",
+    "name_zh": "乌迪内斯"
   },
   {
     "id": "venezia_fc",
@@ -699,7 +776,8 @@
     "img": "./assets/football_clubs_png/venezia_fc.png",
     "full_name": "Venezia Football Club, S.r.l.",
     "founded": "1907",
-    "ground": "Stadio Pier Luigi Penzo"
+    "ground": "Stadio Pier Luigi Penzo",
+    "name_zh": "威尼斯"
   },
   {
     "id": "angers_sco",
@@ -708,7 +786,8 @@
     "img": "./assets/football_clubs_png/angers_sco.png",
     "full_name": "Angers Sporting Club de l'Ouest",
     "founded": "1919",
-    "ground": "Stade Raymond Kopa"
+    "ground": "Stade Raymond Kopa",
+    "name_zh": "昂热"
   },
   {
     "id": "aj_auxerre",
@@ -717,7 +796,8 @@
     "img": "./assets/football_clubs_png/aj_auxerre.png",
     "full_name": "Association de la Jeunesse Auxerroise",
     "founded": "1905",
-    "ground": "Stade de l'Abbé-Deschamps"
+    "ground": "Stade de l'Abbé-Deschamps",
+    "name_zh": "欧塞尔"
   },
   {
     "id": "stade_brestois_29",
@@ -726,7 +806,8 @@
     "img": "./assets/football_clubs_png/stade_brestois_29.png",
     "full_name": "Stade Brestois 29",
     "founded": "1903",
-    "ground": "Stade Francis-Le Blé"
+    "ground": "Stade Francis-Le Blé",
+    "name_zh": "布雷斯特"
   },
   {
     "id": "le_havre_ac",
@@ -735,7 +816,8 @@
     "img": "./assets/football_clubs_png/le_havre_ac.png",
     "full_name": "Le Havre Athletic Club",
     "founded": "1884",
-    "ground": "Stade Océane"
+    "ground": "Stade Océane",
+    "name_zh": "勒阿弗尔"
   },
   {
     "id": "rc_lens",
@@ -744,7 +826,8 @@
     "img": "./assets/football_clubs_png/rc_lens.png",
     "full_name": "Racing Club de Lens",
     "founded": "1906",
-    "ground": "Stade Bollaert-Delelis"
+    "ground": "Stade Bollaert-Delelis",
+    "name_zh": "朗斯"
   },
   {
     "id": "lille_osc",
@@ -753,7 +836,8 @@
     "img": "./assets/football_clubs_png/lille_osc.png",
     "full_name": "Lille Olympique Sporting Club",
     "founded": "1944",
-    "ground": "Stade Pierre-Mauroy"
+    "ground": "Stade Pierre-Mauroy",
+    "name_zh": "里尔"
   },
   {
     "id": "olympique_lyonnais",
@@ -762,7 +846,8 @@
     "img": "./assets/football_clubs_png/olympique_lyonnais.png",
     "full_name": "Olympique Lyonnais",
     "founded": "1950",
-    "ground": "Parc Olympique Lyonnais"
+    "ground": "Parc Olympique Lyonnais",
+    "name_zh": "里昂"
   },
   {
     "id": "olympique_de_marseille",
@@ -771,7 +856,8 @@
     "img": "./assets/football_clubs_png/olympique_de_marseille.png",
     "full_name": "Olympique de Marseille",
     "founded": "1899",
-    "ground": "Stade Vélodrome"
+    "ground": "Stade Vélodrome",
+    "name_zh": "马赛"
   },
   {
     "id": "as_monaco_fc",
@@ -780,7 +866,8 @@
     "img": "./assets/football_clubs_png/as_monaco_fc.png",
     "full_name": "Association Sportive de Monaco Football Club",
     "founded": "1924",
-    "ground": "Stade Louis II"
+    "ground": "Stade Louis II",
+    "name_zh": "摩纳哥"
   },
   {
     "id": "montpellier_hsc",
@@ -789,7 +876,8 @@
     "img": "./assets/football_clubs_png/montpellier_hsc.png",
     "full_name": "Montpellier Hérault Sport Club",
     "founded": "1974",
-    "ground": "Stade de la Mosson"
+    "ground": "Stade de la Mosson",
+    "name_zh": "蒙彼利埃"
   },
   {
     "id": "fc_nantes",
@@ -798,7 +886,8 @@
     "img": "./assets/football_clubs_png/fc_nantes.png",
     "full_name": "Football Club de Nantes",
     "founded": "1943",
-    "ground": "Stade de la Beaujoire"
+    "ground": "Stade de la Beaujoire",
+    "name_zh": "南特"
   },
   {
     "id": "ogc_nice",
@@ -807,7 +896,8 @@
     "img": "./assets/football_clubs_png/ogc_nice.png",
     "full_name": "Olympique Gymnaste Club de Nice",
     "founded": "1904",
-    "ground": "Allianz Riviera"
+    "ground": "Allianz Riviera",
+    "name_zh": "尼斯"
   },
   {
     "id": "paris_saint_germain_fc",
@@ -816,7 +906,8 @@
     "img": "./assets/football_clubs_png/paris_saint_germain_fc.png",
     "full_name": "Paris Saint-Germain Football Club",
     "founded": "1970",
-    "ground": "Parc des Princes"
+    "ground": "Parc des Princes",
+    "name_zh": "巴黎圣日耳曼"
   },
   {
     "id": "stade_de_reims",
@@ -825,7 +916,8 @@
     "img": "./assets/football_clubs_png/stade_de_reims.png",
     "full_name": "Stade de Reims",
     "founded": "1931",
-    "ground": "Stade Auguste-Delaune"
+    "ground": "Stade Auguste-Delaune",
+    "name_zh": "兰斯"
   },
   {
     "id": "stade_rennais_fc",
@@ -834,7 +926,8 @@
     "img": "./assets/football_clubs_png/stade_rennais_fc.png",
     "full_name": "Stade Rennais Football Club",
     "founded": "1901",
-    "ground": "Roazhon Park"
+    "ground": "Roazhon Park",
+    "name_zh": "雷恩"
   },
   {
     "id": "rc_strasbourg_alsace",
@@ -843,7 +936,8 @@
     "img": "./assets/football_clubs_png/rc_strasbourg_alsace.png",
     "full_name": "Racing Club de Strasbourg Alsace",
     "founded": "1906",
-    "ground": "Stade de la Meinau"
+    "ground": "Stade de la Meinau",
+    "name_zh": "斯特拉斯堡"
   },
   {
     "id": "as_saint__tienne",
@@ -852,7 +946,8 @@
     "img": "./assets/football_clubs_png/as_saint__tienne.png",
     "full_name": "Association Sportive de Saint-Étienne Loire",
     "founded": "1919",
-    "ground": "Stade Geoffroy-Guichard"
+    "ground": "Stade Geoffroy-Guichard",
+    "name_zh": "圣埃蒂安"
   },
   {
     "id": "toulouse_fc",
@@ -861,7 +956,8 @@
     "img": "./assets/football_clubs_png/toulouse_fc.png",
     "full_name": "Toulouse Football Club",
     "founded": "1970",
-    "ground": "Stadium de Toulouse"
+    "ground": "Stadium de Toulouse",
+    "name_zh": "图卢兹"
   },
   {
     "id": "blackburn_rovers_f_c",
@@ -870,7 +966,8 @@
     "img": "./assets/football_clubs_png/blackburn_rovers_f_c.png",
     "full_name": "Blackburn Rovers Football Club",
     "founded": "1875",
-    "ground": "Ewood Park"
+    "ground": "Ewood Park",
+    "name_zh": "布莱克本流浪者"
   },
   {
     "id": "bristol_city_f_c",
@@ -879,7 +976,8 @@
     "img": "./assets/football_clubs_png/bristol_city_f_c.png",
     "full_name": "Bristol City Football Club",
     "founded": "1894",
-    "ground": "Ashton Gate"
+    "ground": "Ashton Gate",
+    "name_zh": "布里斯托尔城"
   },
   {
     "id": "burnley_f_c",
@@ -888,7 +986,8 @@
     "img": "./assets/football_clubs_png/burnley_f_c.png",
     "full_name": "Burnley Football Club",
     "founded": "1882",
-    "ground": "Turf Moor"
+    "ground": "Turf Moor",
+    "name_zh": "伯恩利"
   },
   {
     "id": "cardiff_city_f_c",
@@ -897,7 +996,8 @@
     "img": "./assets/football_clubs_png/cardiff_city_f_c.png",
     "full_name": "Cardiff City Football Club",
     "founded": "1899",
-    "ground": "Cardiff City Stadium"
+    "ground": "Cardiff City Stadium",
+    "name_zh": "加的夫城"
   },
   {
     "id": "coventry_city_f_c",
@@ -906,7 +1006,8 @@
     "img": "./assets/football_clubs_png/coventry_city_f_c.png",
     "full_name": "Coventry City Football Club",
     "founded": "1883",
-    "ground": "Coventry Building Society Arena"
+    "ground": "Coventry Building Society Arena",
+    "name_zh": "考文垂"
   },
   {
     "id": "derby_county_f_c",
@@ -915,7 +1016,8 @@
     "img": "./assets/football_clubs_png/derby_county_f_c.png",
     "full_name": "Derby County Football Club",
     "founded": "1884",
-    "ground": "Pride Park Stadium"
+    "ground": "Pride Park Stadium",
+    "name_zh": "德比郡"
   },
   {
     "id": "hull_city_a_f_c",
@@ -924,7 +1026,8 @@
     "img": "./assets/football_clubs_png/hull_city_a_f_c.png",
     "full_name": "Hull City Association Football Club",
     "founded": "1904",
-    "ground": "MKM Stadium"
+    "ground": "MKM Stadium",
+    "name_zh": "赫尔城"
   },
   {
     "id": "leeds_united_f_c",
@@ -933,7 +1036,8 @@
     "img": "./assets/football_clubs_png/leeds_united_f_c.png",
     "full_name": "Leeds United Football Club",
     "founded": "1919",
-    "ground": "Elland Road"
+    "ground": "Elland Road",
+    "name_zh": "利兹联"
   },
   {
     "id": "luton_town_f_c",
@@ -942,7 +1046,8 @@
     "img": "./assets/football_clubs_png/luton_town_f_c.png",
     "full_name": "Luton Town Football Club",
     "founded": "1885",
-    "ground": "Kenilworth Road"
+    "ground": "Kenilworth Road",
+    "name_zh": "卢顿"
   },
   {
     "id": "middlesbrough_f_c",
@@ -951,7 +1056,8 @@
     "img": "./assets/football_clubs_png/middlesbrough_f_c.png",
     "full_name": "Middlesbrough Football Club",
     "founded": "1876",
-    "ground": "Riverside Stadium"
+    "ground": "Riverside Stadium",
+    "name_zh": "米德尔斯堡"
   },
   {
     "id": "millwall_f_c",
@@ -960,7 +1066,8 @@
     "img": "./assets/football_clubs_png/millwall_f_c.png",
     "full_name": "Millwall Football Club",
     "founded": "1885",
-    "ground": "The Den"
+    "ground": "The Den",
+    "name_zh": "米尔沃尔"
   },
   {
     "id": "norwich_city_f_c",
@@ -969,7 +1076,8 @@
     "img": "./assets/football_clubs_png/norwich_city_f_c.png",
     "full_name": "Norwich City Football Club",
     "founded": "1902",
-    "ground": "Carrow Road"
+    "ground": "Carrow Road",
+    "name_zh": "诺维奇"
   },
   {
     "id": "oxford_united_f_c",
@@ -978,7 +1086,8 @@
     "img": "./assets/football_clubs_png/oxford_united_f_c.png",
     "full_name": "Oxford United Football Club",
     "founded": "1893",
-    "ground": "Kassam Stadium"
+    "ground": "Kassam Stadium",
+    "name_zh": "牛津联"
   },
   {
     "id": "plymouth_argyle_f_c",
@@ -987,7 +1096,8 @@
     "img": "./assets/football_clubs_png/plymouth_argyle_f_c.png",
     "full_name": "Plymouth Argyle Football Club",
     "founded": "1886",
-    "ground": "Home Park"
+    "ground": "Home Park",
+    "name_zh": "普利茅斯"
   },
   {
     "id": "portsmouth_f_c",
@@ -996,7 +1106,8 @@
     "img": "./assets/football_clubs_png/portsmouth_f_c.png",
     "full_name": "Portsmouth Football Club",
     "founded": "1898",
-    "ground": "Fratton Park"
+    "ground": "Fratton Park",
+    "name_zh": "朴茨茅斯"
   },
   {
     "id": "preston_north_end_f_c",
@@ -1005,7 +1116,8 @@
     "img": "./assets/football_clubs_png/preston_north_end_f_c.png",
     "full_name": "Preston North End Football Club",
     "founded": "1880",
-    "ground": "Deepdale"
+    "ground": "Deepdale",
+    "name_zh": "普雷斯顿"
   },
   {
     "id": "queens_park_rangers_f_c",
@@ -1014,7 +1126,8 @@
     "img": "./assets/football_clubs_png/queens_park_rangers_f_c.png",
     "full_name": "Queens Park Rangers Football Club",
     "founded": "1882",
-    "ground": "Loftus Road Stadium"
+    "ground": "Loftus Road Stadium",
+    "name_zh": "女王公园巡游者"
   },
   {
     "id": "sheffield_united_f_c",
@@ -1023,7 +1136,8 @@
     "img": "./assets/football_clubs_png/sheffield_united_f_c.png",
     "full_name": "Sheffield United Football Club",
     "founded": "1889",
-    "ground": "Bramall Lane"
+    "ground": "Bramall Lane",
+    "name_zh": "谢菲尔德联"
   },
   {
     "id": "sheffield_wednesday_f_c",
@@ -1032,7 +1146,8 @@
     "img": "./assets/football_clubs_png/sheffield_wednesday_f_c.png",
     "full_name": "Sheffield Wednesday Football Club",
     "founded": "1867",
-    "ground": "Hillsborough Stadium"
+    "ground": "Hillsborough Stadium",
+    "name_zh": "谢周三"
   },
   {
     "id": "stoke_city_f_c",
@@ -1041,7 +1156,8 @@
     "img": "./assets/football_clubs_png/stoke_city_f_c.png",
     "full_name": "Stoke City Football Club",
     "founded": "1863",
-    "ground": "bet365 Stadium"
+    "ground": "bet365 Stadium",
+    "name_zh": "斯托克城"
   },
   {
     "id": "sunderland_a_f_c",
@@ -1050,7 +1166,8 @@
     "img": "./assets/football_clubs_png/sunderland_a_f_c.png",
     "full_name": "Sunderland Association Football Club",
     "founded": "1879",
-    "ground": "Stadium of Light"
+    "ground": "Stadium of Light",
+    "name_zh": "桑德兰"
   },
   {
     "id": "swansea_city_a_f_c",
@@ -1059,7 +1176,8 @@
     "img": "./assets/football_clubs_png/swansea_city_a_f_c.png",
     "full_name": "Swansea City Association Football Club",
     "founded": "1912",
-    "ground": "Swansea.com Stadium"
+    "ground": "Swansea.com Stadium",
+    "name_zh": "斯旺西"
   },
   {
     "id": "watford_f_c",
@@ -1068,7 +1186,8 @@
     "img": "./assets/football_clubs_png/watford_f_c.png",
     "full_name": "Watford Football Club",
     "founded": "1881",
-    "ground": "Vicarage Road"
+    "ground": "Vicarage Road",
+    "name_zh": "沃特福德"
   },
   {
     "id": "west_bromwich_albion_f_c",
@@ -1077,7 +1196,8 @@
     "img": "./assets/football_clubs_png/west_bromwich_albion_f_c.png",
     "full_name": "West Bromwich Albion Football Club",
     "founded": "1878",
-    "ground": "The Hawthorns"
+    "ground": "The Hawthorns",
+    "name_zh": "西布罗姆维奇"
   },
   {
     "id": "hertha_bsc",
@@ -1086,7 +1206,8 @@
     "img": "./assets/football_clubs_png/hertha_bsc.png",
     "full_name": "Hertha, Berliner Sport-Club e. V., ",
     "founded": "1892",
-    "ground": "Olympiastadion"
+    "ground": "Olympiastadion",
+    "name_zh": "柏林赫塔"
   },
   {
     "id": "eintracht_braunschweig",
@@ -1095,7 +1216,8 @@
     "img": "./assets/football_clubs_png/eintracht_braunschweig.png",
     "full_name": "Braunschweiger Turn- und, Sportverein Eintracht von 1895 e.V.",
     "founded": "1895",
-    "ground": "Eintracht-Stadion, ,, Braunschweig"
+    "ground": "Eintracht-Stadion, ,, Braunschweig",
+    "name_zh": "布伦瑞克"
   },
   {
     "id": "sv_darmstadt_98",
@@ -1104,7 +1226,8 @@
     "img": "./assets/football_clubs_png/sv_darmstadt_98.png",
     "full_name": "Sportverein Darmstadt 1898 e.V.",
     "founded": "1898",
-    "ground": "Merck-Stadion am Böllenfalltor"
+    "ground": "Merck-Stadion am Böllenfalltor",
+    "name_zh": "达姆施塔特98"
   },
   {
     "id": "fortuna_d_sseldorf",
@@ -1113,7 +1236,8 @@
     "img": "./assets/football_clubs_png/fortuna_d_sseldorf.png",
     "full_name": "Düsseldorfer Turn- und Sportverein, Fortuna 1895 e.V.",
     "founded": "1895",
-    "ground": "Merkur Spiel-Arena"
+    "ground": "Merkur Spiel-Arena",
+    "name_zh": "杜塞尔多夫"
   },
   {
     "id": "sv_elversberg",
@@ -1122,7 +1246,8 @@
     "img": "./assets/football_clubs_png/sv_elversberg.png",
     "full_name": "Sportvereinigung 07 Elversberg e.V.",
     "founded": "1907",
-    "ground": "UrsapharmArena"
+    "ground": "UrsapharmArena",
+    "name_zh": "埃尔弗斯贝格"
   },
   {
     "id": "spvgg_greuther_f_rth",
@@ -1131,7 +1256,8 @@
     "img": "./assets/football_clubs_png/spvgg_greuther_f_rth.png",
     "full_name": "Spielvereinigung Greuther Fürth e. V.",
     "founded": "1903",
-    "ground": "Sportpark Ronhof"
+    "ground": "Sportpark Ronhof",
+    "name_zh": "菲尔特"
   },
   {
     "id": "hamburger_sv",
@@ -1140,7 +1266,8 @@
     "img": "./assets/football_clubs_png/hamburger_sv.png",
     "full_name": "Hamburger Sport-Verein e.V.",
     "founded": "1887",
-    "ground": "Volksparkstadion, ,, Hamburg"
+    "ground": "Volksparkstadion, ,, Hamburg",
+    "name_zh": "汉堡"
   },
   {
     "id": "hannover_96",
@@ -1149,7 +1276,8 @@
     "img": "./assets/football_clubs_png/hannover_96.png",
     "full_name": "Hannoverscher Sportverein von 1896 e.V.",
     "founded": "1896",
-    "ground": "Niedersachsenstadion"
+    "ground": "Niedersachsenstadion",
+    "name_zh": "汉诺威96"
   },
   {
     "id": "1__fc_kaiserslautern",
@@ -1158,7 +1286,8 @@
     "img": "./assets/football_clubs_png/1__fc_kaiserslautern.png",
     "full_name": "1. Fußball-Club Kaiserslautern e. V.",
     "founded": "1900",
-    "ground": "Fritz-Walter-Stadion"
+    "ground": "Fritz-Walter-Stadion",
+    "name_zh": "凯泽斯劳滕"
   },
   {
     "id": "karlsruher_sc",
@@ -1167,7 +1296,8 @@
     "img": "./assets/football_clubs_png/karlsruher_sc.png",
     "full_name": "Karlsruher Sport-Club, Mühlburg-Phönix e. V.",
     "founded": "1894",
-    "ground": "BBBank Wildpark"
+    "ground": "BBBank Wildpark",
+    "name_zh": "卡尔斯鲁厄"
   },
   {
     "id": "1__fc_k_ln",
@@ -1176,7 +1306,8 @@
     "img": "./assets/football_clubs_png/1__fc_k_ln.png",
     "full_name": "1. Fußball-Club Köln 01/07 e. V.",
     "founded": "1948",
-    "ground": "RheinEnergieStadion"
+    "ground": "RheinEnergieStadion",
+    "name_zh": "科隆"
   },
   {
     "id": "1__fc_magdeburg",
@@ -1185,7 +1316,8 @@
     "img": "./assets/football_clubs_png/1__fc_magdeburg.png",
     "full_name": "1. Fußballclub Magdeburg e. V.",
     "founded": "1965",
-    "ground": "Avnet Arena"
+    "ground": "Avnet Arena",
+    "name_zh": "马格德堡"
   },
   {
     "id": "sc_preu_en_m_nster",
@@ -1194,7 +1326,8 @@
     "img": "./assets/football_clubs_png/sc_preu_en_m_nster.png",
     "full_name": "Sportclub Preußen 1906 e.V. Münster",
     "founded": "1906",
-    "ground": "Preußenstadion"
+    "ground": "Preußenstadion",
+    "name_zh": "普鲁士明斯特"
   },
   {
     "id": "1__fc_n_rnberg",
@@ -1203,7 +1336,8 @@
     "img": "./assets/football_clubs_png/1__fc_n_rnberg.png",
     "full_name": "1. Fußball-Club Nürnberg Verein für Leibesübungen e. V.",
     "founded": "1900",
-    "ground": "Max-Morlock-Stadion"
+    "ground": "Max-Morlock-Stadion",
+    "name_zh": "纽伦堡"
   },
   {
     "id": "sc_paderborn_07",
@@ -1212,7 +1346,8 @@
     "img": "./assets/football_clubs_png/sc_paderborn_07.png",
     "full_name": "Sport-Club Paderborn 07 e.V.",
     "founded": "1907",
-    "ground": "Benteler-Arena"
+    "ground": "Benteler-Arena",
+    "name_zh": "帕德博恩07"
   },
   {
     "id": "ssv_jahn_regensburg",
@@ -1221,7 +1356,8 @@
     "img": "./assets/football_clubs_png/ssv_jahn_regensburg.png",
     "full_name": "Sport- und Schwimmverein, Jahn Regensburg e. V.",
     "founded": "1907",
-    "ground": "Jahnstadion Regensburg"
+    "ground": "Jahnstadion Regensburg",
+    "name_zh": "雷根斯堡"
   },
   {
     "id": "fc_schalke_04",
@@ -1230,7 +1366,8 @@
     "img": "./assets/football_clubs_png/fc_schalke_04.png",
     "full_name": "Fußballclub Gelsenkirchen-Schalke 04 e. V.",
     "founded": "1904",
-    "ground": "Veltins-Arena, ,, Gelsenkirchen"
+    "ground": "Veltins-Arena, ,, Gelsenkirchen",
+    "name_zh": "沙尔克04"
   },
   {
     "id": "ssv_ulm_1846",
@@ -1239,7 +1376,8 @@
     "img": "./assets/football_clubs_png/ssv_ulm_1846.png",
     "full_name": "SSV Ulm 1846 FUSSBALL e.V.",
     "founded": "1846",
-    "ground": "Donaustadion"
+    "ground": "Donaustadion",
+    "name_zh": "乌尔姆1846"
   },
   {
     "id": "ssc_bari",
@@ -1248,7 +1386,8 @@
     "img": "./assets/football_clubs_png/ssc_bari.png",
     "full_name": "Società Sportiva Calcio Bari, SpA, ",
     "founded": "1908",
-    "ground": "Stadio Comunale San Nicola"
+    "ground": "Stadio Comunale San Nicola",
+    "name_zh": "巴里"
   },
   {
     "id": "brescia_calcio",
@@ -1257,7 +1396,8 @@
     "img": "./assets/football_clubs_png/brescia_calcio.png",
     "full_name": "Brescia Calcio, S.p.A.",
     "founded": "1911",
-    "ground": "Stadio Mario Rigamonti"
+    "ground": "Stadio Mario Rigamonti",
+    "name_zh": "布雷西亚"
   },
   {
     "id": "carrarese_calcio_1908",
@@ -1266,7 +1406,8 @@
     "img": "./assets/football_clubs_png/carrarese_calcio_1908.png",
     "full_name": "Carrarese Calcio 1908, S.r.l.",
     "founded": "1908",
-    "ground": "Stadio dei Marmi - IV Olimpionici Azzurri"
+    "ground": "Stadio dei Marmi - IV Olimpionici Azzurri",
+    "name_zh": "卡拉雷塞"
   },
   {
     "id": "us_catanzaro_1929",
@@ -1275,7 +1416,8 @@
     "img": "./assets/football_clubs_png/us_catanzaro_1929.png",
     "full_name": "Unione Sportiva Catanzaro 1929, ",
     "founded": "1929",
-    "ground": "Stadio Nicola Ceravolo"
+    "ground": "Stadio Nicola Ceravolo",
+    "name_zh": "卡坦扎罗"
   },
   {
     "id": "cesena_fc",
@@ -1284,7 +1426,8 @@
     "img": "./assets/football_clubs_png/cesena_fc.png",
     "full_name": "Cesena Football Club",
     "founded": "1940",
-    "ground": "Orogel Stadium - Dino Manuzzi"
+    "ground": "Orogel Stadium - Dino Manuzzi",
+    "name_zh": "切塞纳"
   },
   {
     "id": "as_cittadella",
@@ -1293,7 +1436,8 @@
     "img": "./assets/football_clubs_png/as_cittadella.png",
     "full_name": "Associazione Sportiva Cittadella, S.r.l.",
     "founded": "1973",
-    "ground": "Stadio Pier Cesare Tombolato"
+    "ground": "Stadio Pier Cesare Tombolato",
+    "name_zh": "奇塔代拉"
   },
   {
     "id": "cosenza_calcio",
@@ -1302,7 +1446,8 @@
     "img": "./assets/football_clubs_png/cosenza_calcio.png",
     "full_name": "Cosenza Calcio S.r.l.",
     "founded": "1926",
-    "ground": "Stadio San Vito-Gigi Marulla"
+    "ground": "Stadio San Vito-Gigi Marulla",
+    "name_zh": "科森扎"
   },
   {
     "id": "us_cremonese",
@@ -1311,7 +1456,8 @@
     "img": "./assets/football_clubs_png/us_cremonese.png",
     "full_name": "Unione Sportiva Cremonese, S.p.A.",
     "founded": "1903",
-    "ground": "Stadio Giovanni Zini"
+    "ground": "Stadio Giovanni Zini",
+    "name_zh": "克雷莫内塞"
   },
   {
     "id": "frosinone_calcio",
@@ -1320,7 +1466,8 @@
     "img": "./assets/football_clubs_png/frosinone_calcio.png",
     "full_name": "Frosinone Calcio, S.r.l.",
     "founded": "1906",
-    "ground": "Stadio Benito Stirpe"
+    "ground": "Stadio Benito Stirpe",
+    "name_zh": "弗罗西诺内"
   },
   {
     "id": "ss_juve_stabia",
@@ -1329,7 +1476,8 @@
     "img": "./assets/football_clubs_png/ss_juve_stabia.png",
     "full_name": "Società Sportiva Juve Stabia",
     "founded": "1907",
-    "ground": "Stadio Comunale Romeo Menti"
+    "ground": "Stadio Comunale Romeo Menti",
+    "name_zh": "尤文斯塔比亚"
   },
   {
     "id": "mantova_1911",
@@ -1338,7 +1486,8 @@
     "img": "./assets/football_clubs_png/mantova_1911.png",
     "full_name": "Mantova 1911, S.r.l.",
     "founded": "1911",
-    "ground": "Stadio Danilo Martelli – Pata Stadium"
+    "ground": "Stadio Danilo Martelli – Pata Stadium",
+    "name_zh": "曼托瓦"
   },
   {
     "id": "modena_fc_2018",
@@ -1347,7 +1496,8 @@
     "img": "./assets/football_clubs_png/modena_fc_2018.png",
     "full_name": "Modena Football Club 2018, S.r.l.",
     "founded": "1912",
-    "ground": "Stadio Alberto Braglia"
+    "ground": "Stadio Alberto Braglia",
+    "name_zh": "摩德纳"
   },
   {
     "id": "palermo_fc",
@@ -1356,7 +1506,8 @@
     "img": "./assets/football_clubs_png/palermo_fc.png",
     "full_name": "Palermo Football Club",
     "founded": "1900",
-    "ground": "Stadio Renzo Barbera"
+    "ground": "Stadio Renzo Barbera",
+    "name_zh": "巴勒莫"
   },
   {
     "id": "pisa_sc",
@@ -1365,7 +1516,8 @@
     "img": "./assets/football_clubs_png/pisa_sc.png",
     "full_name": "Pisa Sporting Club, S.r.l.",
     "founded": "1909",
-    "ground": "Cetilar® Arena"
+    "ground": "Cetilar® Arena",
+    "name_zh": "比萨"
   },
   {
     "id": "ac_reggiana_1919",
@@ -1374,7 +1526,8 @@
     "img": "./assets/football_clubs_png/ac_reggiana_1919.png",
     "full_name": "Associazione Calcio Reggiana, S.r.l.",
     "founded": "1919",
-    "ground": "MAPEI Stadium - Città del Tricolore"
+    "ground": "MAPEI Stadium - Città del Tricolore",
+    "name_zh": "雷吉亚纳"
   },
   {
     "id": "us_salernitana_1919",
@@ -1383,7 +1536,8 @@
     "img": "./assets/football_clubs_png/us_salernitana_1919.png",
     "full_name": "Unione Sportiva Salernitana 1919, S.r.l.",
     "founded": "1919",
-    "ground": "Stadio Arechi, "
+    "ground": "Stadio Arechi, ",
+    "name_zh": "萨勒尼塔纳"
   },
   {
     "id": "uc_sampdoria",
@@ -1392,7 +1546,8 @@
     "img": "./assets/football_clubs_png/uc_sampdoria.png",
     "full_name": "Unione Calcio Sampdoria, S.p.A.",
     "founded": "1946",
-    "ground": "Stadio Comunale Luigi Ferraris"
+    "ground": "Stadio Comunale Luigi Ferraris",
+    "name_zh": "桑普多利亚"
   },
   {
     "id": "us_sassuolo_calcio",
@@ -1401,7 +1556,8 @@
     "img": "./assets/football_clubs_png/us_sassuolo_calcio.png",
     "full_name": "Unione Sportiva Sassuolo, Calcio, S.r.l.",
     "founded": "1920",
-    "ground": "Mapei Stadium – Città del Tricolore"
+    "ground": "Mapei Stadium – Città del Tricolore",
+    "name_zh": "萨索洛"
   },
   {
     "id": "spezia_calcio",
@@ -1410,7 +1566,8 @@
     "img": "./assets/football_clubs_png/spezia_calcio.png",
     "full_name": "Spezia Calcio",
     "founded": "1906",
-    "ground": "Stadio Alberto Picco"
+    "ground": "Stadio Alberto Picco",
+    "name_zh": "斯佩齐亚"
   },
   {
     "id": "fc_s_dtirol",
@@ -1419,7 +1576,8 @@
     "img": "./assets/football_clubs_png/fc_s_dtirol.png",
     "full_name": "Fußball Club Südtirol s.r.l.",
     "founded": "1974",
-    "ground": "Stadio Marco Druso"
+    "ground": "Stadio Marco Druso",
+    "name_zh": "南蒂罗尔"
   },
   {
     "id": "albacete_balompi",
@@ -1428,7 +1586,8 @@
     "img": "./assets/football_clubs_png/albacete_balompi.png",
     "full_name": "Albacete Balompié, S.A.D.",
     "founded": "1939",
-    "ground": "Estadio Carlos Belmonte"
+    "ground": "Estadio Carlos Belmonte",
+    "name_zh": "阿尔瓦塞特"
   },
   {
     "id": "ud_almer_a",
@@ -1437,7 +1596,8 @@
     "img": "./assets/football_clubs_png/ud_almer_a.png",
     "full_name": "Unión Deportiva Almería, S.A.D.",
     "founded": "1989",
-    "ground": "UD Almería Stadium"
+    "ground": "UD Almería Stadium",
+    "name_zh": "阿尔梅里亚"
   },
   {
     "id": "burgos_cf",
@@ -1446,7 +1606,8 @@
     "img": "./assets/football_clubs_png/burgos_cf.png",
     "full_name": "Burgos Club de Fútbol, S.A.D.",
     "founded": "1985",
-    "ground": "Estadio Municipal El Plantío"
+    "ground": "Estadio Municipal El Plantío",
+    "name_zh": "布尔戈斯"
   },
   {
     "id": "c_diz_cf",
@@ -1455,7 +1616,8 @@
     "img": "./assets/football_clubs_png/c_diz_cf.png",
     "full_name": "Cádiz Club de Fútbol,, S.A.D.",
     "founded": "1910",
-    "ground": "Estadio Nuevo Mirandilla"
+    "ground": "Estadio Nuevo Mirandilla",
+    "name_zh": "加的斯"
   },
   {
     "id": "fc_cartagena",
@@ -1464,7 +1626,8 @@
     "img": "./assets/football_clubs_png/fc_cartagena.png",
     "full_name": "Fútbol Club Cartagena, S.A.D.",
     "founded": "1995",
-    "ground": "Estadio Municipal Cartagonova"
+    "ground": "Estadio Municipal Cartagonova",
+    "name_zh": "卡塔赫纳"
   },
   {
     "id": "cd_castell_n",
@@ -1473,7 +1636,8 @@
     "img": "./assets/football_clubs_png/cd_castell_n.png",
     "full_name": "Club Deportivo Castellón, S.A.D.",
     "founded": "1922",
-    "ground": "Estadio SkyFi Castalia"
+    "ground": "Estadio SkyFi Castalia",
+    "name_zh": "卡斯特利翁"
   },
   {
     "id": "c_rdoba_cf",
@@ -1482,7 +1646,8 @@
     "img": "./assets/football_clubs_png/c_rdoba_cf.png",
     "full_name": "Córdoba Club de Fútbol (Unión Futbolística Cordobesa, S.A.D.)",
     "founded": "1954",
-    "ground": "Estadio Bahrain Victorious Nuevo Arcángel de Córdoba"
+    "ground": "Estadio Bahrain Victorious Nuevo Arcángel de Córdoba",
+    "name_zh": "科尔多瓦"
   },
   {
     "id": "deportivo_de_la_coru_a",
@@ -1491,7 +1656,8 @@
     "img": "./assets/football_clubs_png/deportivo_de_la_coru_a.png",
     "full_name": "Real Club Deportivo de La Coruña, S.A.D.",
     "founded": "1906",
-    "ground": "Riazor"
+    "ground": "Riazor",
+    "name_zh": "拉科鲁尼亚"
   },
   {
     "id": "sd_eibar",
@@ -1500,7 +1666,8 @@
     "img": "./assets/football_clubs_png/sd_eibar.png",
     "full_name": "Sociedad Deportiva Eibar, S.A.D.",
     "founded": "1940",
-    "ground": "Estadio Municipal de Ipurúa"
+    "ground": "Estadio Municipal de Ipurúa",
+    "name_zh": "埃瓦尔"
   },
   {
     "id": "elche_cf",
@@ -1509,7 +1676,8 @@
     "img": "./assets/football_clubs_png/elche_cf.png",
     "full_name": "Elche Club de Fútbol, S.A.D.",
     "founded": "1923",
-    "ground": "Estadio Martínez Valero"
+    "ground": "Estadio Martínez Valero",
+    "name_zh": "埃尔切"
   },
   {
     "id": "cd_eldense",
@@ -1518,7 +1686,8 @@
     "img": "./assets/football_clubs_png/cd_eldense.png",
     "full_name": "Club Deportivo Eldense",
     "founded": "1921",
-    "ground": "Estadio Municipal Nuevo Pepico Amat, ,, Elda, ,, Valencia, , Spain"
+    "ground": "Estadio Municipal Nuevo Pepico Amat, ,, Elda, ,, Valencia, , Spain",
+    "name_zh": "埃尔登塞"
   },
   {
     "id": "granada_cf",
@@ -1527,7 +1696,8 @@
     "img": "./assets/football_clubs_png/granada_cf.png",
     "full_name": "Granada Club de Fútbol",
     "founded": "1931",
-    "ground": "Estadio Nuevo Los Cármenes"
+    "ground": "Estadio Nuevo Los Cármenes",
+    "name_zh": "格拉纳达"
   },
   {
     "id": "sd_huesca",
@@ -1536,7 +1706,8 @@
     "img": "./assets/football_clubs_png/sd_huesca.png",
     "full_name": "Sociedad Deportiva Huesca, S.A.D., ",
     "founded": "1960",
-    "ground": "Estadio El Alcoraz"
+    "ground": "Estadio El Alcoraz",
+    "name_zh": "韦斯卡"
   },
   {
     "id": "levante_ud",
@@ -1545,7 +1716,8 @@
     "img": "./assets/football_clubs_png/levante_ud.png",
     "full_name": "Levante Unión Deportiva, S.A.D.",
     "founded": "1909",
-    "ground": "Estadio Ciutat de València"
+    "ground": "Estadio Ciutat de València",
+    "name_zh": "莱万特"
   },
   {
     "id": "m_laga_cf",
@@ -1554,7 +1726,8 @@
     "img": "./assets/football_clubs_png/m_laga_cf.png",
     "full_name": "Málaga Club de Fútbol, S.A.D.",
     "founded": "1948",
-    "ground": "La Rosaleda"
+    "ground": "La Rosaleda",
+    "name_zh": "马拉加"
   },
   {
     "id": "cd_mirand_s",
@@ -1563,7 +1736,8 @@
     "img": "./assets/football_clubs_png/cd_mirand_s.png",
     "full_name": "Club Deportivo Mirandés",
     "founded": "1927",
-    "ground": "Estadio Municipal de Anduva"
+    "ground": "Estadio Municipal de Anduva",
+    "name_zh": "米兰德斯"
   },
   {
     "id": "real_oviedo",
@@ -1572,7 +1746,8 @@
     "img": "./assets/football_clubs_png/real_oviedo.png",
     "full_name": "Real Oviedo, S.A.D.",
     "founded": "1926",
-    "ground": "Estadio Carlos Tartiere"
+    "ground": "Estadio Carlos Tartiere",
+    "name_zh": "皇家奥维耶多"
   },
   {
     "id": "racing_de_ferrol",
@@ -1581,7 +1756,8 @@
     "img": "./assets/football_clubs_png/racing_de_ferrol.png",
     "full_name": "Racing Club de Ferrol, S.A.D.",
     "founded": "1919",
-    "ground": "Estadio Municipal de A Malata"
+    "ground": "Estadio Municipal de A Malata",
+    "name_zh": "费罗尔竞赛"
   },
   {
     "id": "racing_de_santander",
@@ -1590,7 +1766,8 @@
     "img": "./assets/football_clubs_png/racing_de_santander.png",
     "full_name": "Real Racing Club de Santander, S.A.D.",
     "founded": "1913",
-    "ground": "Stadium El Sardinero"
+    "ground": "Stadium El Sardinero",
+    "name_zh": "桑坦德竞技"
   },
   {
     "id": "sporting_de_gij_n",
@@ -1599,7 +1776,8 @@
     "img": "./assets/football_clubs_png/sporting_de_gij_n.png",
     "full_name": "Real Sporting de Gijón,, S.A.D.",
     "founded": "1905",
-    "ground": "Estadio Municipal El Molinón – Enrique Castro \"Quini\""
+    "ground": "Estadio Municipal El Molinón – Enrique Castro \"Quini\"",
+    "name_zh": "希洪竞技"
   },
   {
     "id": "cd_tenerife",
@@ -1608,7 +1786,8 @@
     "img": "./assets/football_clubs_png/cd_tenerife.png",
     "full_name": "Club Deportivo Tenerife, S.A.D.",
     "founded": "1922",
-    "ground": "Estadio Heliodoro Rodríguez López"
+    "ground": "Estadio Heliodoro Rodríguez López",
+    "name_zh": "特内里费"
   },
   {
     "id": "real_zaragoza",
@@ -1617,7 +1796,8 @@
     "img": "./assets/football_clubs_png/real_zaragoza.png",
     "full_name": "Real Zaragoza,, S.A.D.",
     "founded": "1932",
-    "ground": "Ibercaja Stadium"
+    "ground": "Ibercaja Stadium",
+    "name_zh": "皇家萨拉戈萨"
   },
   {
     "id": "afc_ajax",
@@ -1626,7 +1806,8 @@
     "img": "./assets/football_clubs_png/afc_ajax.png",
     "full_name": "Amsterdamsche Football Club Ajax",
     "founded": "1900",
-    "ground": "Johan Cruyff Arena"
+    "ground": "Johan Cruyff Arena",
+    "name_zh": "阿贾克斯"
   },
   {
     "id": "almere_city_fc",
@@ -1635,7 +1816,8 @@
     "img": "./assets/football_clubs_png/almere_city_fc.png",
     "full_name": "Almere City Football Club",
     "founded": "2001",
-    "ground": "Yanmar Stadion"
+    "ground": "Yanmar Stadion",
+    "name_zh": "阿尔梅勒城"
   },
   {
     "id": "az_alkmaar",
@@ -1644,7 +1826,8 @@
     "img": "./assets/football_clubs_png/az_alkmaar.png",
     "full_name": "Alkmaar Zaanstreek",
     "founded": "1967",
-    "ground": "AFAS Stadion"
+    "ground": "AFAS Stadion",
+    "name_zh": "阿尔克马尔"
   },
   {
     "id": "feyenoord",
@@ -1653,7 +1836,8 @@
     "img": "./assets/football_clubs_png/feyenoord.png",
     "full_name": "Feyenoord Rotterdam",
     "founded": "1908",
-    "ground": "De Kuip"
+    "ground": "De Kuip",
+    "name_zh": "费耶诺德"
   },
   {
     "id": "fortuna_sittard",
@@ -1662,7 +1846,8 @@
     "img": "./assets/football_clubs_png/fortuna_sittard.png",
     "full_name": "Fortuna Sittard",
     "founded": "1968",
-    "ground": "Fortuna Sittard Stadion"
+    "ground": "Fortuna Sittard Stadion",
+    "name_zh": "福图纳锡塔德"
   },
   {
     "id": "go_ahead_eagles",
@@ -1671,7 +1856,8 @@
     "img": "./assets/football_clubs_png/go_ahead_eagles.png",
     "full_name": "Go Ahead Eagles",
     "founded": "1902",
-    "ground": "De Adelaarshorst"
+    "ground": "De Adelaarshorst",
+    "name_zh": "前进之鹰"
   },
   {
     "id": "fc_groningen",
@@ -1680,7 +1866,8 @@
     "img": "./assets/football_clubs_png/fc_groningen.png",
     "full_name": "Football Club Groningen",
     "founded": "1971",
-    "ground": "Euroborg"
+    "ground": "Euroborg",
+    "name_zh": "格罗宁根"
   },
   {
     "id": "sc_heerenveen",
@@ -1689,7 +1876,8 @@
     "img": "./assets/football_clubs_png/sc_heerenveen.png",
     "full_name": "Sportclub Heerenveen",
     "founded": "1920",
-    "ground": "Abe Lenstra Stadion"
+    "ground": "Abe Lenstra Stadion",
+    "name_zh": "海伦芬"
   },
   {
     "id": "heracles_almelo",
@@ -1698,7 +1886,8 @@
     "img": "./assets/football_clubs_png/heracles_almelo.png",
     "full_name": "Heracles Almelo",
     "founded": "1903",
-    "ground": "Asito Stadion"
+    "ground": "Asito Stadion",
+    "name_zh": "赫拉克勒斯"
   },
   {
     "id": "nac_breda",
@@ -1707,7 +1896,8 @@
     "img": "./assets/football_clubs_png/nac_breda.png",
     "full_name": "N, ooit opgeven altijd doorzetten,, A, angenaam door vermaak en nuttig door ontspanning,, C, ombinatie Breda",
     "founded": "1912",
-    "ground": "Rat Verlegh Stadion, Breda, , Netherlands"
+    "ground": "Rat Verlegh Stadion, Breda, , Netherlands",
+    "name_zh": "布雷达"
   },
   {
     "id": "nec_nijmegen",
@@ -1716,7 +1906,8 @@
     "img": "./assets/football_clubs_png/nec_nijmegen.png",
     "full_name": "Nijmegen Eendracht Combinatie (Nijmegen Unity Combination)",
     "founded": "1900",
-    "ground": "Goffertstadion"
+    "ground": "Goffertstadion",
+    "name_zh": "奈梅亨"
   },
   {
     "id": "pec_zwolle",
@@ -1725,7 +1916,8 @@
     "img": "./assets/football_clubs_png/pec_zwolle.png",
     "full_name": "Prins Hendrik, Ende Desespereert Nimmer, Combinatie Zwolle, , ",
     "founded": "1910",
-    "ground": "MAC³PARK Stadion"
+    "ground": "MAC³PARK Stadion",
+    "name_zh": "兹沃勒"
   },
   {
     "id": "psv_eindhoven",
@@ -1734,7 +1926,8 @@
     "img": "./assets/football_clubs_png/psv_eindhoven.png",
     "full_name": "Philips Sport Vereniging, NV",
     "founded": "1913",
-    "ground": "Philips Stadion"
+    "ground": "Philips Stadion",
+    "name_zh": "埃因霍温"
   },
   {
     "id": "rkc_waalwijk",
@@ -1743,7 +1936,8 @@
     "img": "./assets/football_clubs_png/rkc_waalwijk.png",
     "full_name": "Rooms Katholieke Combinatie Waalwijk",
     "founded": "1940",
-    "ground": "Mandemakers Stadion"
+    "ground": "Mandemakers Stadion",
+    "name_zh": "瓦尔韦克"
   },
   {
     "id": "sparta_rotterdam",
@@ -1752,7 +1946,8 @@
     "img": "./assets/football_clubs_png/sparta_rotterdam.png",
     "full_name": "Sparta Rotterdam",
     "founded": "1888",
-    "ground": "Sparta Stadion"
+    "ground": "Sparta Stadion",
+    "name_zh": "鹿特丹斯巴达"
   },
   {
     "id": "fc_twente",
@@ -1761,7 +1956,8 @@
     "img": "./assets/football_clubs_png/fc_twente.png",
     "full_name": "Football Club Twente",
     "founded": "1965",
-    "ground": "De Grolsch Veste"
+    "ground": "De Grolsch Veste",
+    "name_zh": "特温特"
   },
   {
     "id": "fc_utrecht",
@@ -1770,7 +1966,8 @@
     "img": "./assets/football_clubs_png/fc_utrecht.png",
     "full_name": "Football Club Utrecht",
     "founded": "1970",
-    "ground": "Stadion Galgenwaard"
+    "ground": "Stadion Galgenwaard",
+    "name_zh": "乌得勒支"
   },
   {
     "id": "willem_ii__football_club",
@@ -1779,7 +1976,8 @@
     "img": "./assets/football_clubs_png/willem_ii__football_club.png",
     "full_name": "Willem II Tilburg",
     "founded": "1896",
-    "ground": "Koning Willem II Stadion"
+    "ground": "Koning Willem II Stadion",
+    "name_zh": "威廉二世"
   },
   {
     "id": "f_c__arouca",
@@ -1788,7 +1986,8 @@
     "img": "./assets/football_clubs_png/f_c__arouca.png",
     "full_name": "Futebol Clube de Arouca",
     "founded": "1951",
-    "ground": "Estádio Municipal"
+    "ground": "Estádio Municipal",
+    "name_zh": "阿罗卡"
   },
   {
     "id": "avs_futebol_sad",
@@ -1797,7 +1996,8 @@
     "img": "./assets/football_clubs_png/avs_futebol_sad.png",
     "full_name": "AVS Futebol SAD",
     "founded": "2023",
-    "ground": "Estádio do CD Aves, ,, Vila das Aves"
+    "ground": "Estádio do CD Aves, ,, Vila das Aves",
+    "name_zh": "AVS足球俱乐部"
   },
   {
     "id": "s_l__benfica",
@@ -1806,7 +2006,8 @@
     "img": "./assets/football_clubs_png/s_l__benfica.png",
     "full_name": "Sport Lisboa e Benfica",
     "founded": "1904",
-    "ground": "Estádio da Luz"
+    "ground": "Estádio da Luz",
+    "name_zh": "本菲卡"
   },
   {
     "id": "boavista_f_c",
@@ -1815,7 +2016,8 @@
     "img": "./assets/football_clubs_png/boavista_f_c.png",
     "full_name": "Boavista Futebol Clube",
     "founded": "1903",
-    "ground": "Estádio do Bessa"
+    "ground": "Estádio do Bessa",
+    "name_zh": "博阿维斯塔"
   },
   {
     "id": "s_c__braga",
@@ -1824,7 +2026,8 @@
     "img": "./assets/football_clubs_png/s_c__braga.png",
     "full_name": "Sporting Clube de Braga",
     "founded": "1921",
-    "ground": "Estádio Municipal de Braga"
+    "ground": "Estádio Municipal de Braga",
+    "name_zh": "布拉加"
   },
   {
     "id": "casa_pia_a_c",
@@ -1832,7 +2035,8 @@
     "league": "Primeira Liga",
     "img": "./assets/football_clubs_png/casa_pia_a_c.png",
     "founded": "1920",
-    "ground": "Estádio Pina Manique,, Lisbon, (currently playing in, Estádio Municipal de Rio Maior, )"
+    "ground": "Estádio Pina Manique,, Lisbon, (currently playing in, Estádio Municipal de Rio Maior, )",
+    "name_zh": "卡萨皮亚"
   },
   {
     "id": "g_d__estoril_praia",
@@ -1841,7 +2045,8 @@
     "img": "./assets/football_clubs_png/g_d__estoril_praia.png",
     "full_name": "Grupo Desportivo Estoril Praia",
     "founded": "1939",
-    "ground": "Estádio António Coimbra da Mota"
+    "ground": "Estádio António Coimbra da Mota",
+    "name_zh": "埃斯托里尔"
   },
   {
     "id": "c_f__estrela_da_amadora",
@@ -1850,7 +2055,8 @@
     "img": "./assets/football_clubs_png/c_f__estrela_da_amadora.png",
     "full_name": "Club Football Estrela da Amadora SAD",
     "founded": "2020",
-    "ground": "Estádio José Gomes"
+    "ground": "Estádio José Gomes",
+    "name_zh": "阿马多拉之星"
   },
   {
     "id": "f_c__famalic_o",
@@ -1859,7 +2065,8 @@
     "img": "./assets/football_clubs_png/f_c__famalic_o.png",
     "full_name": "Futebol Clube de Famalicão",
     "founded": "1931",
-    "ground": "Estádio Municipal 22 de Junho, Vila Nova de Famalicão"
+    "ground": "Estádio Municipal 22 de Junho, Vila Nova de Famalicão",
+    "name_zh": "法马利康"
   },
   {
     "id": "s_c__farense",
@@ -1868,7 +2075,8 @@
     "img": "./assets/football_clubs_png/s_c__farense.png",
     "full_name": "Sporting Clube Farense",
     "founded": "1910",
-    "ground": "Estádio de São Luís"
+    "ground": "Estádio de São Luís",
+    "name_zh": "法伦斯"
   },
   {
     "id": "gil_vicente_f_c",
@@ -1877,7 +2085,8 @@
     "img": "./assets/football_clubs_png/gil_vicente_f_c.png",
     "full_name": "Gil Vicente Futebol Clube",
     "founded": "1924",
-    "ground": "Estádio Cidade de Barcelos"
+    "ground": "Estádio Cidade de Barcelos",
+    "name_zh": "吉尔维森特"
   },
   {
     "id": "moreirense_f_c",
@@ -1886,7 +2095,8 @@
     "img": "./assets/football_clubs_png/moreirense_f_c.png",
     "full_name": "Moreirense Futebol Clube",
     "founded": "1938",
-    "ground": "Parque de Jogos Comendador Joaquim de Almeida Freitas"
+    "ground": "Parque de Jogos Comendador Joaquim de Almeida Freitas",
+    "name_zh": "莫雷伦斯"
   },
   {
     "id": "c_d__nacional",
@@ -1895,7 +2105,8 @@
     "img": "./assets/football_clubs_png/c_d__nacional.png",
     "full_name": "Clube Desportivo Nacional",
     "founded": "1910",
-    "ground": "Estádio da Madeira"
+    "ground": "Estádio da Madeira",
+    "name_zh": "国民队"
   },
   {
     "id": "fc_porto",
@@ -1904,7 +2115,8 @@
     "img": "./assets/football_clubs_png/fc_porto.png",
     "full_name": "Futebol Clube do Porto",
     "founded": "1893",
-    "ground": "Estádio do Dragão"
+    "ground": "Estádio do Dragão",
+    "name_zh": "波尔图"
   },
   {
     "id": "rio_ave_f_c",
@@ -1913,7 +2125,8 @@
     "img": "./assets/football_clubs_png/rio_ave_f_c.png",
     "full_name": "Rio Ave Futebol Clube",
     "founded": "1939",
-    "ground": "Estádio dos Arcos"
+    "ground": "Estádio dos Arcos",
+    "name_zh": "里奥阿维"
   },
   {
     "id": "c_d__santa_clara",
@@ -1922,7 +2135,8 @@
     "img": "./assets/football_clubs_png/c_d__santa_clara.png",
     "full_name": "Clube Desportivo Santa Clara",
     "founded": "1921",
-    "ground": "Estádio de São Miguel, ,, Ponta Delgada, ,, Portugal"
+    "ground": "Estádio de São Miguel, ,, Ponta Delgada, ,, Portugal",
+    "name_zh": "圣克拉拉"
   },
   {
     "id": "sporting_cp",
@@ -1931,7 +2145,8 @@
     "img": "./assets/football_clubs_png/sporting_cp.png",
     "full_name": "Sporting Clube de Portugal",
     "founded": "1906",
-    "ground": "Estádio José Alvalade"
+    "ground": "Estádio José Alvalade",
+    "name_zh": "里斯本竞技"
   },
   {
     "id": "vit_ria_s_c",
@@ -1940,7 +2155,8 @@
     "img": "./assets/football_clubs_png/vit_ria_s_c.png",
     "full_name": "Vitória Sport Clube",
     "founded": "1922",
-    "ground": "Estádio D. Afonso Henriques"
+    "ground": "Estádio D. Afonso Henriques",
+    "name_zh": "吉马良斯"
   },
   {
     "id": "adana_demirspor",
@@ -1949,7 +2165,8 @@
     "img": "./assets/football_clubs_png/adana_demirspor.png",
     "full_name": "Adana Demirspor Kulübü, A.Ş.",
     "founded": "1940",
-    "ground": "New Adana Stadium"
+    "ground": "New Adana Stadium",
+    "name_zh": "阿达纳德米尔体育"
   },
   {
     "id": "alanyaspor",
@@ -1958,7 +2175,8 @@
     "img": "./assets/football_clubs_png/alanyaspor.png",
     "full_name": "Alanyaspor Kulübü",
     "founded": "1948",
-    "ground": "Alanya Oba Stadium, "
+    "ground": "Alanya Oba Stadium, ",
+    "name_zh": "阿拉尼亚体育"
   },
   {
     "id": "antalyaspor",
@@ -1967,7 +2185,8 @@
     "img": "./assets/football_clubs_png/antalyaspor.png",
     "full_name": "Antalyaspor Kulübü, A.Ş.",
     "founded": "1966",
-    "ground": "Antalya Stadium"
+    "ground": "Antalya Stadium",
+    "name_zh": "安塔利亚体育"
   },
   {
     "id": "stanbul_ba_ak_ehir_f_k",
@@ -1976,7 +2195,8 @@
     "img": "./assets/football_clubs_png/stanbul_ba_ak_ehir_f_k.png",
     "full_name": "İstanbul Başakşehir Futbol Kulübü",
     "founded": "1990",
-    "ground": "Başakşehir Fatih Terim Stadium"
+    "ground": "Başakşehir Fatih Terim Stadium",
+    "name_zh": "伊斯坦布尔巴萨克赛尔"
   },
   {
     "id": "be_ikta__j_k",
@@ -1985,7 +2205,8 @@
     "img": "./assets/football_clubs_png/be_ikta__j_k.png",
     "full_name": "Beşiktaş Jimnastik Kulübü, ",
     "founded": "1903",
-    "ground": "Beşiktaş Stadium"
+    "ground": "Beşiktaş Stadium",
+    "name_zh": "贝西克塔斯"
   },
   {
     "id": "bodrum_f_k",
@@ -1994,7 +2215,8 @@
     "img": "./assets/football_clubs_png/bodrum_f_k.png",
     "full_name": "Bodrum Futbol Kulübü, A.Ş.",
     "founded": "1931",
-    "ground": "Grey Beton Bodrum Stadyumu, "
+    "ground": "Grey Beton Bodrum Stadyumu, ",
+    "name_zh": "博德鲁姆"
   },
   {
     "id": "ey_pspor",
@@ -2003,7 +2225,8 @@
     "img": "./assets/football_clubs_png/ey_pspor.png",
     "full_name": "Eyüpspor Kulübü",
     "founded": "1919",
-    "ground": "Recep Tayyip Erdoğan Stadium, ,, Istanbul"
+    "ground": "Recep Tayyip Erdoğan Stadium, ,, Istanbul",
+    "name_zh": "埃于普体育"
   },
   {
     "id": "fenerbah_e_s_k___football",
@@ -2012,7 +2235,8 @@
     "img": "./assets/football_clubs_png/fenerbah_e_s_k___football.png",
     "full_name": "Fenerbahçe Spor Kulübü",
     "founded": "1907",
-    "ground": "Şükrü Saracoğlu Stadium"
+    "ground": "Şükrü Saracoğlu Stadium",
+    "name_zh": "费内巴切"
   },
   {
     "id": "galatasaray_s_k___footbal",
@@ -2021,7 +2245,8 @@
     "img": "./assets/football_clubs_png/galatasaray_s_k___footbal.png",
     "full_name": "Galatasaray Spor Kulübü",
     "founded": "1905",
-    "ground": "Rams Park"
+    "ground": "Rams Park",
+    "name_zh": "加拉塔萨雷"
   },
   {
     "id": "gaziantep_f_k",
@@ -2030,7 +2255,8 @@
     "img": "./assets/football_clubs_png/gaziantep_f_k.png",
     "full_name": "Gaziantep Futbol Kulübü, A.Ş., ",
     "founded": "1988",
-    "ground": "Gaziantep Stadium"
+    "ground": "Gaziantep Stadium",
+    "name_zh": "加济安泰普"
   },
   {
     "id": "g_ztepe_s_k",
@@ -2039,7 +2265,8 @@
     "img": "./assets/football_clubs_png/g_ztepe_s_k.png",
     "full_name": "Göztepe Spor Kulübü",
     "founded": "1925",
-    "ground": "Gürsel Aksel Stadium, "
+    "ground": "Gürsel Aksel Stadium, ",
+    "name_zh": "戈泽特佩"
   },
   {
     "id": "hatayspor",
@@ -2048,7 +2275,8 @@
     "img": "./assets/football_clubs_png/hatayspor.png",
     "full_name": "Hatayspor Kulübü",
     "founded": "1967",
-    "ground": "Sarıseki Fuat Tosyalı Sports Complex (temporary venue)"
+    "ground": "Sarıseki Fuat Tosyalı Sports Complex (temporary venue)",
+    "name_zh": "哈塔伊体育"
   },
   {
     "id": "kas_mpa_a_s_k",
@@ -2057,7 +2285,8 @@
     "img": "./assets/football_clubs_png/kas_mpa_a_s_k.png",
     "full_name": "Kasımpaşa Sportif Faaliyetler, A.Ş.",
     "founded": "1921",
-    "ground": "Recep Tayyip Erdoğan Stadium"
+    "ground": "Recep Tayyip Erdoğan Stadium",
+    "name_zh": "卡斯帕萨"
   },
   {
     "id": "kayserispor",
@@ -2066,7 +2295,8 @@
     "img": "./assets/football_clubs_png/kayserispor.png",
     "full_name": "Kayserispor Futbol, A.Ş., , ",
     "founded": "1966",
-    "ground": "RHG EnerTürk Enerji, "
+    "ground": "RHG EnerTürk Enerji, ",
+    "name_zh": "开塞利体育"
   },
   {
     "id": "konyaspor",
@@ -2075,7 +2305,8 @@
     "img": "./assets/football_clubs_png/konyaspor.png",
     "full_name": "Konyaspor Kulübü",
     "founded": "1922",
-    "ground": "Konya Municipality Stadium"
+    "ground": "Konya Municipality Stadium",
+    "name_zh": "科尼亚体育"
   },
   {
     "id": "aykur_rizespor",
@@ -2084,7 +2315,8 @@
     "img": "./assets/football_clubs_png/aykur_rizespor.png",
     "full_name": "Çaykur Rize Gençlik ve Spor Kulübü Derneği, ",
     "founded": "1953",
-    "ground": "Rize City Stadium"
+    "ground": "Rize City Stadium",
+    "name_zh": "里泽体育"
   },
   {
     "id": "samsunspor",
@@ -2093,7 +2325,8 @@
     "img": "./assets/football_clubs_png/samsunspor.png",
     "full_name": "Samsunspor Futbol Kulübü, A.Ş., ",
     "founded": "1965",
-    "ground": "19 Mayıs Stadium"
+    "ground": "19 Mayıs Stadium",
+    "name_zh": "萨姆松体育"
   },
   {
     "id": "sivasspor",
@@ -2102,7 +2335,8 @@
     "img": "./assets/football_clubs_png/sivasspor.png",
     "full_name": "Sivasspor Kulübü",
     "founded": "1967",
-    "ground": "Sivas 4 Eylül Stadium"
+    "ground": "Sivas 4 Eylül Stadium",
+    "name_zh": "锡瓦斯体育"
   },
   {
     "id": "trabzonspor",
@@ -2111,7 +2345,8 @@
     "img": "./assets/football_clubs_png/trabzonspor.png",
     "full_name": "Trabzonspor Kulübü",
     "founded": "1967",
-    "ground": "Papara Park"
+    "ground": "Papara Park",
+    "name_zh": "特拉布宗体育"
   },
   {
     "id": "atlanta_united_fc",
@@ -2120,7 +2355,8 @@
     "img": "./assets/football_clubs_png/atlanta_united_fc.png",
     "full_name": "Atlanta United FC",
     "founded": "2014",
-    "ground": "Mercedes-Benz Stadium"
+    "ground": "Mercedes-Benz Stadium",
+    "name_zh": "亚特兰大联"
   },
   {
     "id": "austin_fc",
@@ -2128,7 +2364,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/austin_fc.png",
     "founded": "2018",
-    "ground": "Q2 Stadium, Austin, Texas"
+    "ground": "Q2 Stadium, Austin, Texas",
+    "name_zh": "奥斯汀"
   },
   {
     "id": "charlotte_fc",
@@ -2137,7 +2374,8 @@
     "img": "./assets/football_clubs_png/charlotte_fc.png",
     "full_name": "Charlotte Football Club",
     "founded": "2019",
-    "ground": "Bank of America Stadium, Charlotte, North Carolina"
+    "ground": "Bank of America Stadium, Charlotte, North Carolina",
+    "name_zh": "夏洛特"
   },
   {
     "id": "chicago_fire_fc",
@@ -2145,7 +2383,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/chicago_fire_fc.png",
     "founded": "1997",
-    "ground": "Soldier Field, Chicago, Illinois"
+    "ground": "Soldier Field, Chicago, Illinois",
+    "name_zh": "芝加哥火焰"
   },
   {
     "id": "fc_cincinnati",
@@ -2154,7 +2393,8 @@
     "img": "./assets/football_clubs_png/fc_cincinnati.png",
     "full_name": "Football Club Cincinnati, , ",
     "founded": "2015",
-    "ground": "TQL Stadium, Cincinnati, Ohio"
+    "ground": "TQL Stadium, Cincinnati, Ohio",
+    "name_zh": "辛辛那提"
   },
   {
     "id": "colorado_rapids",
@@ -2162,7 +2402,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/colorado_rapids.png",
     "founded": "1995",
-    "ground": "Dick's Sporting Goods Park, Commerce City, Colorado"
+    "ground": "Dick's Sporting Goods Park, Commerce City, Colorado",
+    "name_zh": "科罗拉多急流"
   },
   {
     "id": "columbus_crew",
@@ -2171,7 +2412,8 @@
     "img": "./assets/football_clubs_png/columbus_crew.png",
     "full_name": "Columbus Crew, ",
     "founded": "1994",
-    "ground": "ScottsMiracle-Gro Field, Columbus, Ohio"
+    "ground": "ScottsMiracle-Gro Field, Columbus, Ohio",
+    "name_zh": "哥伦布机员"
   },
   {
     "id": "fc_dallas",
@@ -2179,7 +2421,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/fc_dallas.png",
     "founded": "1995",
-    "ground": "Toyota Stadium, Frisco, Texas"
+    "ground": "Toyota Stadium, Frisco, Texas",
+    "name_zh": "达拉斯FC"
   },
   {
     "id": "d_c__united",
@@ -2187,7 +2430,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/d_c__united.png",
     "founded": "1994",
-    "ground": "Audi Field, Washington, D.C."
+    "ground": "Audi Field, Washington, D.C.",
+    "name_zh": "华盛顿特区联"
   },
   {
     "id": "houston_dynamo_fc",
@@ -2195,7 +2439,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/houston_dynamo_fc.png",
     "founded": "2005",
-    "ground": "Shell Energy Stadium, Houston, Texas"
+    "ground": "Shell Energy Stadium, Houston, Texas",
+    "name_zh": "休斯顿迪纳摩"
   },
   {
     "id": "la_galaxy",
@@ -2203,7 +2448,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/la_galaxy.png",
     "founded": "1994",
-    "ground": "Dignity Health Sports Park, Carson, California"
+    "ground": "Dignity Health Sports Park, Carson, California",
+    "name_zh": "洛杉矶银河"
   },
   {
     "id": "los_angeles_fc",
@@ -2212,7 +2458,8 @@
     "img": "./assets/football_clubs_png/los_angeles_fc.png",
     "full_name": "Los Angeles Football Club",
     "founded": "2014",
-    "ground": "BMO Stadium, Los Angeles, California"
+    "ground": "BMO Stadium, Los Angeles, California",
+    "name_zh": "洛杉矶FC"
   },
   {
     "id": "minnesota_united_fc",
@@ -2221,7 +2468,8 @@
     "img": "./assets/football_clubs_png/minnesota_united_fc.png",
     "full_name": "Minnesota United Football Club",
     "founded": "2015",
-    "ground": "Allianz Field, Saint Paul, Minnesota"
+    "ground": "Allianz Field, Saint Paul, Minnesota",
+    "name_zh": "明尼苏达联"
   },
   {
     "id": "inter_miami_cf",
@@ -2230,7 +2478,8 @@
     "img": "./assets/football_clubs_png/inter_miami_cf.png",
     "full_name": "Club Internacional de Fútbol Miami",
     "founded": "2018",
-    "ground": "Chase Stadium, Fort Lauderdale, Florida"
+    "ground": "Chase Stadium, Fort Lauderdale, Florida",
+    "name_zh": "迈阿密国际"
   },
   {
     "id": "cf_montr_al",
@@ -2239,7 +2488,8 @@
     "img": "./assets/football_clubs_png/cf_montr_al.png",
     "full_name": "CF Montréal",
     "founded": "1992",
-    "ground": "Saputo Stadium"
+    "ground": "Saputo Stadium",
+    "name_zh": "蒙特利尔CF"
   },
   {
     "id": "nashville_sc",
@@ -2248,7 +2498,8 @@
     "img": "./assets/football_clubs_png/nashville_sc.png",
     "full_name": "Nashville Soccer Club",
     "founded": "2016",
-    "ground": "Geodis Park, Nashville, Tennessee"
+    "ground": "Geodis Park, Nashville, Tennessee",
+    "name_zh": "纳什维尔SC"
   },
   {
     "id": "new_england_revolution",
@@ -2257,7 +2508,8 @@
     "img": "./assets/football_clubs_png/new_england_revolution.png",
     "full_name": "New England Revolution",
     "founded": "1994",
-    "ground": "Gillette Stadium"
+    "ground": "Gillette Stadium",
+    "name_zh": "新英格兰革命"
   },
   {
     "id": "new_york_city_fc",
@@ -2266,7 +2518,8 @@
     "img": "./assets/football_clubs_png/new_york_city_fc.png",
     "full_name": "New York City Football Club, ",
     "founded": "2013",
-    "ground": "Yankee Stadium, ,, The Bronx, New York, Citi Field, ,, Queens, New York, "
+    "ground": "Yankee Stadium, ,, The Bronx, New York, Citi Field, ,, Queens, New York, ",
+    "name_zh": "纽约城FC"
   },
   {
     "id": "new_york_red_bulls",
@@ -2275,7 +2528,8 @@
     "img": "./assets/football_clubs_png/new_york_red_bulls.png",
     "full_name": "Red Bull New York",
     "founded": "1994",
-    "ground": "Sports Illustrated Stadium, Harrison, New Jersey, , U.S."
+    "ground": "Sports Illustrated Stadium, Harrison, New Jersey, , U.S.",
+    "name_zh": "纽约红牛"
   },
   {
     "id": "orlando_city_sc",
@@ -2283,7 +2537,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/orlando_city_sc.png",
     "founded": "2010",
-    "ground": "Inter&Co Stadium, Orlando, Florida"
+    "ground": "Inter&Co Stadium, Orlando, Florida",
+    "name_zh": "奥兰多城"
   },
   {
     "id": "philadelphia_union",
@@ -2292,7 +2547,8 @@
     "img": "./assets/football_clubs_png/philadelphia_union.png",
     "full_name": "Philadelphia Union",
     "founded": "2008",
-    "ground": "Subaru Park"
+    "ground": "Subaru Park",
+    "name_zh": "费城联合"
   },
   {
     "id": "portland_timbers",
@@ -2300,7 +2556,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/portland_timbers.png",
     "founded": "2000",
-    "ground": "Providence Park"
+    "ground": "Providence Park",
+    "name_zh": "波特兰伐木工"
   },
   {
     "id": "real_salt_lake",
@@ -2308,7 +2565,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/real_salt_lake.png",
     "founded": "2004",
-    "ground": "America First Field, Sandy, Utah"
+    "ground": "America First Field, Sandy, Utah",
+    "name_zh": "皇家盐湖城"
   },
   {
     "id": "san_jose_earthquakes",
@@ -2316,7 +2574,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/san_jose_earthquakes.png",
     "founded": "1994",
-    "ground": "PayPal Park, San Jose, ,, California"
+    "ground": "PayPal Park, San Jose, ,, California",
+    "name_zh": "圣何塞地震"
   },
   {
     "id": "seattle_sounders_fc",
@@ -2324,7 +2583,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/seattle_sounders_fc.png",
     "founded": "2007",
-    "ground": "Lumen Field"
+    "ground": "Lumen Field",
+    "name_zh": "西雅图海湾人"
   },
   {
     "id": "sporting_kansas_city",
@@ -2333,7 +2593,8 @@
     "img": "./assets/football_clubs_png/sporting_kansas_city.png",
     "full_name": "Sporting Kansas City, , ",
     "founded": "1995",
-    "ground": "Sporting Park, Kansas City, Kansas"
+    "ground": "Sporting Park, Kansas City, Kansas",
+    "name_zh": "堪萨斯城体育"
   },
   {
     "id": "st__louis_city_sc",
@@ -2342,7 +2603,8 @@
     "img": "./assets/football_clubs_png/st__louis_city_sc.png",
     "full_name": "St. Louis City Soccer Club, ",
     "founded": "2019",
-    "ground": "Energizer Park, St. Louis, Missouri"
+    "ground": "Energizer Park, St. Louis, Missouri",
+    "name_zh": "圣路易斯城"
   },
   {
     "id": "toronto_fc",
@@ -2351,7 +2613,8 @@
     "img": "./assets/football_clubs_png/toronto_fc.png",
     "full_name": "Toronto Football Club",
     "founded": "2005",
-    "ground": "BMO Field, Toronto, , Ontario"
+    "ground": "BMO Field, Toronto, , Ontario",
+    "name_zh": "多伦多FC"
   },
   {
     "id": "vancouver_whitecaps_fc",
@@ -2359,7 +2622,8 @@
     "league": "MLS",
     "img": "./assets/football_clubs_png/vancouver_whitecaps_fc.png",
     "founded": "1973",
-    "ground": "BC Place, ,, Vancouver"
+    "ground": "BC Place, ,, Vancouver",
+    "name_zh": "温哥华白浪"
   },
   {
     "id": "al_ahli_saudi_fc",
@@ -2368,7 +2632,8 @@
     "img": "./assets/football_clubs_png/al_ahli_saudi_fc.png",
     "full_name": "AL AHLI Saudi Football Club ltd.",
     "founded": "1937",
-    "ground": "King Abdullah Sports City, Prince Abdullah Al-Faisal Sports City, (selected matches)"
+    "ground": "King Abdullah Sports City, Prince Abdullah Al-Faisal Sports City, (selected matches)",
+    "name_zh": "沙特阿赫利"
   },
   {
     "id": "al_ettifaq_fc",
@@ -2377,7 +2642,8 @@
     "img": "./assets/football_clubs_png/al_ettifaq_fc.png",
     "full_name": "Al-Ettifaq Club",
     "founded": "1945",
-    "ground": "EGO STADIUM, Dammam, ,, Saudi Arabia"
+    "ground": "EGO STADIUM, Dammam, ,, Saudi Arabia",
+    "name_zh": "伊蒂法克"
   },
   {
     "id": "al_fateh_sc",
@@ -2386,7 +2652,8 @@
     "img": "./assets/football_clubs_png/al_fateh_sc.png",
     "full_name": "Al-Fateh Sports Club",
     "founded": "1958",
-    "ground": "Al-Fateh Stadium"
+    "ground": "Al-Fateh Stadium",
+    "name_zh": "法特赫"
   },
   {
     "id": "al_fayha_fc",
@@ -2395,7 +2662,8 @@
     "img": "./assets/football_clubs_png/al_fayha_fc.png",
     "full_name": "Al-Fayha Club",
     "founded": "1953",
-    "ground": "Al-Majma'ah Sports City Stadium"
+    "ground": "Al-Majma'ah Sports City Stadium",
+    "name_zh": "费哈"
   },
   {
     "id": "al_hilal_sfc",
@@ -2404,7 +2672,8 @@
     "img": "./assets/football_clubs_png/al_hilal_sfc.png",
     "full_name": "Al Hilal Saudi Football Club",
     "founded": "1957",
-    "ground": "Kingdom Arena"
+    "ground": "Kingdom Arena",
+    "name_zh": "利雅得新月"
   },
   {
     "id": "al_ittihad_club__jeddah",
@@ -2413,7 +2682,8 @@
     "img": "./assets/football_clubs_png/al_ittihad_club__jeddah.png",
     "full_name": "Al-Ittihad Saudi Football Club",
     "founded": "1927",
-    "ground": "King Abdullah Sports City, Prince Abdullah Al-Faisal Sports City, (selected matches)"
+    "ground": "King Abdullah Sports City, Prince Abdullah Al-Faisal Sports City, (selected matches)",
+    "name_zh": "吉达联合"
   },
   {
     "id": "al_khaleej_fc",
@@ -2422,7 +2692,8 @@
     "img": "./assets/football_clubs_png/al_khaleej_fc.png",
     "full_name": "Khaleej Club",
     "founded": "1945",
-    "ground": "Prince Nayef Sports City Stadium, Qatif, ,, Saudi Arabia"
+    "ground": "Prince Nayef Sports City Stadium, Qatif, ,, Saudi Arabia",
+    "name_zh": "哈立德国王俱乐部"
   },
   {
     "id": "al_kholood_club",
@@ -2431,7 +2702,8 @@
     "img": "./assets/football_clubs_png/al_kholood_club.png",
     "full_name": "Al-Kholood Club",
     "founded": "1970",
-    "ground": "Al-Hazem Club Stadium, Ar Rass, ,, Saudi Arabia"
+    "ground": "Al-Hazem Club Stadium, Ar Rass, ,, Saudi Arabia",
+    "name_zh": "胡卢德俱乐部"
   },
   {
     "id": "al_nassr_fc",
@@ -2440,7 +2712,8 @@
     "img": "./assets/football_clubs_png/al_nassr_fc.png",
     "full_name": "Al-Nassr Football Club",
     "founded": "1955",
-    "ground": "Al-Awwal Park"
+    "ground": "Al-Awwal Park",
+    "name_zh": "利雅得胜利"
   },
   {
     "id": "al_okhdood_club",
@@ -2449,7 +2722,8 @@
     "img": "./assets/football_clubs_png/al_okhdood_club.png",
     "full_name": "Al-Okhdood Club",
     "founded": "1976",
-    "ground": "Prince Hathloul bin Abdulaziz Sports City"
+    "ground": "Prince Hathloul bin Abdulaziz Sports City",
+    "name_zh": "奥胡德俱乐部"
   },
   {
     "id": "al_orobah_fc",
@@ -2458,7 +2732,8 @@
     "img": "./assets/football_clubs_png/al_orobah_fc.png",
     "full_name": "Al Oroubah Football Club",
     "founded": "1975",
-    "ground": "Al-Orobah Club Stadium"
+    "ground": "Al-Orobah Club Stadium",
+    "name_zh": "奥鲁巴俱乐部"
   },
   {
     "id": "al_qadsiah_fc",
@@ -2467,7 +2742,8 @@
     "img": "./assets/football_clubs_png/al_qadsiah_fc.png",
     "full_name": "Al-Qadsiah Saudi Football Club",
     "founded": "1967",
-    "ground": "Prince Mohamed bin Fahd Stadium, Dammam, ,, Saudi Arabia, (, Aramco Stadium, planned)"
+    "ground": "Prince Mohamed bin Fahd Stadium, Dammam, ,, Saudi Arabia, (, Aramco Stadium, planned)",
+    "name_zh": "卡迪西亚"
   },
   {
     "id": "al_raed_fc",
@@ -2476,7 +2752,8 @@
     "img": "./assets/football_clubs_png/al_raed_fc.png",
     "full_name": "Al Raed Saudi Football Club",
     "founded": "1954",
-    "ground": "King Abdullah Sport City Stadium, ,, Buraidah, , Saudi Arabia"
+    "ground": "King Abdullah Sport City Stadium, ,, Buraidah, , Saudi Arabia",
+    "name_zh": "拉德"
   },
   {
     "id": "al_riyadh_sc",
@@ -2485,7 +2762,8 @@
     "img": "./assets/football_clubs_png/al_riyadh_sc.png",
     "full_name": "Al-Riyadh Saudi Club, ",
     "founded": "1953",
-    "ground": "Prince Turki bin Abdul Aziz Stadium"
+    "ground": "Prince Turki bin Abdul Aziz Stadium",
+    "name_zh": "利雅得体育"
   },
   {
     "id": "al_shabab_fc__riyadh",
@@ -2494,7 +2772,8 @@
     "img": "./assets/football_clubs_png/al_shabab_fc__riyadh.png",
     "full_name": "Al-Shabab Saudi Football Club",
     "founded": "1947",
-    "ground": "Al-Shabab Club Stadium, ,, Riyadh"
+    "ground": "Al-Shabab Club Stadium, ,, Riyadh",
+    "name_zh": "利雅得青年"
   },
   {
     "id": "al_taawoun_fc",
@@ -2503,7 +2782,8 @@
     "img": "./assets/football_clubs_png/al_taawoun_fc.png",
     "full_name": "Al-Taawoun Football Club",
     "founded": "1956",
-    "ground": "King Abdullah Sport City Stadium, ,, Al-Taawoun Stadium, ,, Al-Qassim, , Saudi Arabia"
+    "ground": "King Abdullah Sport City Stadium, ,, Al-Taawoun Stadium, ,, Al-Qassim, , Saudi Arabia",
+    "name_zh": "塔伊"
   },
   {
     "id": "al_wehda_fc",
@@ -2512,7 +2792,8 @@
     "img": "./assets/football_clubs_png/al_wehda_fc.png",
     "full_name": "Al-Wehda Football Club",
     "founded": "1916",
-    "ground": "King Abdulaziz Sports City"
+    "ground": "King Abdulaziz Sports City",
+    "name_zh": "瓦赫达"
   },
   {
     "id": "damac_fc",
@@ -2521,6 +2802,7 @@
     "img": "./assets/football_clubs_png/damac_fc.png",
     "full_name": "Damac Club",
     "founded": "1972",
-    "ground": "Al-Mahalah Stadium, ,, Damac Club Stadium, ,, Asir Province, ,, Saudi Arabia"
+    "ground": "Al-Mahalah Stadium, ,, Damac Club Stadium, ,, Asir Province, ,, Saudi Arabia",
+    "name_zh": "达马克"
   }
 ]

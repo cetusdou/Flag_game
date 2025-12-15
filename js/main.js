@@ -13,7 +13,6 @@ async function initGame() {
             }
         } else {
             // 如果模块未加载，使用 script.js 中的 initGame（向后兼容）
-            console.warn("数据管理模块未加载，使用 script.js 中的初始化");
             return; // script.js 会自己初始化
         }
         
@@ -25,7 +24,6 @@ async function initGame() {
             window.showView('view-landing');
         }
     } catch (e) {
-        console.error("初始化错误:", e);
         alert("⚠️ 初始化错误: " + e.message);
     }
 }
@@ -35,7 +33,6 @@ async function initGame() {
 let isInitialized = false;
 function doInit() {
     if (isInitialized) {
-        console.warn('initGame 已被调用，跳过重复初始化');
         return;
     }
     isInitialized = true;

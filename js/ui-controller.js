@@ -7,8 +7,6 @@ function showView(id) {
     const el = document.getElementById(id);
     if (el) {
         el.classList.add('active');
-    } else {
-        console.error("找不到视图 ID:", id);
     }
 }
 
@@ -92,6 +90,23 @@ function enterFootballSubMenu() {
     enableBtn('btn-mode-all', 'football_hell', '🔥', '地狱难度', '随机旋转+遮罩10%', '20');
     const compendiumBtn = document.getElementById('compendium-btn');
     const pkModeBtn = document.getElementById('pk-mode-btn');
+    if (compendiumBtn) compendiumBtn.style.display = 'flex';
+    if (pkModeBtn) pkModeBtn.style.display = 'flex';
+    showView('view-menu');
+    updateBackButton();
+}
+
+// 极速冲刺子菜单
+function enterSprintSubMenu() {
+    window.GameState.isSprintSubMenu = true;
+    document.getElementById('menu-title').textContent = "⚡ 极速冲刺";
+    document.getElementById('menu-subtitle').textContent = `选择难度开始挑战`;
+    enableBtn('btn-mode-1', 'mode_3a', '⚡', '简单难度', '4选项，快速问答', '50');
+    enableBtn('btn-mode-2', 'mode_3b', '⚡', '困难难度', '6选项，同区域干扰', '50');
+    disableBtn('btn-mode-3');
+    disableBtn('btn-mode-all');
+    const compendiumBtn = document.getElementById('compendium-btn');
+    const pkModeBtn = document.getElementById('pk-mode-btn');
     if (compendiumBtn) compendiumBtn.style.display = 'none';
     if (pkModeBtn) pkModeBtn.style.display = 'none';
     showView('view-menu');
@@ -114,11 +129,11 @@ function updateBackButton() {
     const backBtnText = document.getElementById('back-btn-text');
     if (backBtnText) {
         if (window.GameState.isFootballSubMenu && window.GameState.currentScope === 'sports') {
-            backBtnText.textContent = '返回体育模式';
+            backBtnText.textContent = '返回';
         } else if (window.GameState.isSprintSubMenu && window.GameState.currentScope === 'world') {
-            backBtnText.textContent = '返回世界模式';
+            backBtnText.textContent = '返回';
         } else {
-            backBtnText.textContent = '切换区域';
+            backBtnText.textContent = '返回';
         }
     }
 }
@@ -126,7 +141,7 @@ function updateBackButton() {
 function enableBtn(btnId, modeKey, icon, title, desc, count) {
     const btn = document.getElementById(btnId);
     if (!btn) return;
-    btn.onclick = function() { startGame(modeKey); };
+    btn.onclick = function() { window.startGame(modeKey); };
     btn.style.cursor = "pointer";
     btn.className = "game-card"; 
 

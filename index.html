@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>答题大师</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/compendium.css">
+    <link rel="stylesheet" href="css/modal.css">
     
     <script src="./assets/libs/echarts.min.js"></script>
     <script src="./assets/libs/world.js"></script>
@@ -52,7 +56,7 @@
 <div class="container" id="view-menu">
     <div class="menu-header">
         <button class="icon-btn back-btn" onclick="handleBackBtn()">
-            <span>‹</span> <span id="back-btn-text">切换区域</span>
+            <span>‹</span> <span id="back-btn-text">返回</span>
         </button>
         <button class="icon-btn" onclick="showRank()">
             <span>🏆</span>
@@ -126,11 +130,15 @@
 </div>
 
 <div class="container" id="view-game">
+    <div class="menu-header">
+        <button class="icon-btn back-btn" onclick="goHome()">
+            <span>‹</span> <span>返回</span>
+        </button>
+    </div>
     <div class="header">
         <span id="game-mode-label">模式</span>
         <span>得分: <b id="score-display" style="color:#4CAF50">0</b> | 剩余: <b id="remaining-questions" style="color:#87CEEB">0</b></span>
         <span id="countdown-display" style="display:none; color:#FF6B6B; font-weight:bold; font-size:1.1rem;">15</span>
-        <button class="exit-btn" onclick="goHome()">退出</button>
     </div>
     <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
     
@@ -145,28 +153,54 @@
     <div id="answer-feedback"></div>
     
     <button class="menu-btn game-map-btn" style="margin-top:10px; display:none; color:#fff;" id="game-map-btn" onclick="if(window.currentQ) openMap(window.currentQ)">🗺️ 查看位置</button>
-    <button class="menu-btn next-btn" style="margin-top:10px; display:none; color:#fff;" id="next-btn" onclick="nextRound()">下一题</button>
+    <!-- 下一题按钮已移除，改为自动跳转 -->
 </div>
 
 <div class="container" id="view-result">
+    <div class="menu-header">
+        <button class="icon-btn back-btn" onclick="goHome()">
+            <span>‹</span> <span>返回</span>
+        </button>
+    </div>
     <h1 id="result-title">🎉 挑战完成!</h1>
     <h2 id="result-score" style="font-size: 2.5rem; color:#4CAF50; margin: 20px 0;">0/0</h2>
     <p id="result-detail" style="color:#aaa; margin-bottom:30px;">...</p>
-    <button class="menu-btn btn-daily" onclick="goHome()">🏠 返回主菜单</button>
 </div>
 
 <div class="container" id="view-rank">
+    <div class="menu-header">
+        <button class="icon-btn back-btn" onclick="goHome()">
+            <span>‹</span> <span>返回</span>
+        </button>
+    </div>
     <h2>🏆 历史记录排行榜</h2>
-    <div id="rank-list" style="text-align:left; margin-bottom:20px; max-height:400px; overflow-y:auto; padding:10px;"></div>
-    <button class="back-btn" onclick="goHome()">返回</button>
+    
+    <!-- 标签页切换 -->
+    <div class="rank-tabs">
+        <button class="rank-tab active" data-tab="world" onclick="switchRankTab('world')">🌍 世界模式</button>
+        <button class="rank-tab" data-tab="china" onclick="switchRankTab('china')">🇨🇳 中国模式</button>
+        <button class="rank-tab" data-tab="sports" onclick="switchRankTab('sports')">⚽ 体育模式</button>
+    </div>
+    
+    <!-- 记录列表容器 -->
+    <div class="rank-content">
+        <div id="rank-list-world" class="rank-list active"></div>
+        <div id="rank-list-china" class="rank-list"></div>
+        <div id="rank-list-sports" class="rank-list"></div>
+    </div>
+    
     <button class="menu-btn" style="background:#f44336; margin-top:10px;" onclick="clearRecords()">🗑️ 清空记录</button>
 </div>
 
 <div class="container" id="view-compendium">
+    <div class="menu-header">
+        <button class="icon-btn back-btn" onclick="goHome()">
+            <span>‹</span> <span>返回</span>
+        </button>
+    </div>
     <h2>📖 知识图鉴</h2>
     <input type="text" class="search-bar" id="search-input" placeholder="🔍 搜索..." oninput="filterCompendium()">
     <div class="compendium-grid" id="compendium-grid"></div>
-    <button class="back-btn" onclick="goHome()">返回</button>
 </div>
 
 <div class="modal-overlay" id="info-modal" onclick="closeModal(event)">
@@ -207,6 +241,18 @@
         <div class="pk-icon">⚔️</div>
         <h2 style="margin-top: 10px; margin-bottom: 5px;">PK模式</h2>
         <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 20px;">输入相同的种子，与朋友进行同题PK！</p>
+        
+        <!-- 难度选择（仅体育模式显示） -->
+        <div id="pk-difficulty-selector" style="display: none; margin-bottom: 15px;">
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.85rem; margin-bottom: 10px;">选择难度：</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                <button class="pk-difficulty-btn" data-difficulty="easy" onclick="selectPKDifficulty('easy')">简单</button>
+                <button class="pk-difficulty-btn" data-difficulty="medium" onclick="selectPKDifficulty('medium')">中等</button>
+                <button class="pk-difficulty-btn" data-difficulty="hard" onclick="selectPKDifficulty('hard')">困难</button>
+                <button class="pk-difficulty-btn" data-difficulty="hell" onclick="selectPKDifficulty('hell')">地狱</button>
+            </div>
+        </div>
+        
         <input type="number" id="pk-seed-input" class="pk-seed-input" placeholder="请输入数字种子..." autofocus>
         <div class="pk-seed-hint">💡 提示：输入任意数字作为种子，相同种子会生成相同的50题</div>
         <div class="action-row" style="margin-top: 20px;">
@@ -229,12 +275,15 @@
     <!-- 模块化脚本文件 -->
     <script src="js/data-manager.js"></script>
     <script src="js/game-state.js"></script>
-    <script src="js/ui-controller.js"></script>
+    <script src="js/random-utils.js"></script>
     <script src="js/text-utils.js"></script>
+    <script src="js/ui-controller.js"></script>
+    <script src="js/option-generator.js"></script>
+    <script src="js/game-engine.js"></script>
+    <script src="js/compendium.js"></script>
+    <script src="js/map-handler.js"></script>
     <script src="js/leaderboard.js"></script>
     <script src="js/modal-handler.js"></script>
-    <!-- 注意：game-engine.js, compendium.js, map-handler.js 仍在 script.js 中 -->
-    <!-- script.js 保留核心游戏逻辑，逐步迁移中 -->
     <script src="script.js"></script>
     <script src="js/main.js"></script>
 
