@@ -15,6 +15,12 @@ body {
 }
 body::-webkit-scrollbar { width: 0; }
 
+/* 倒计时闪烁动画 */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
 /* --- 2. 核心容器 (毛玻璃效果) --- */
 .glass-panel, .container {
     background: rgba(30, 30, 46, 0.7);
@@ -67,9 +73,21 @@ h1 {
 }
 .landing-card:active { transform: scale(0.98); }
 .landing-card:hover {
-    border-color: rgba(255,255,255,0.2);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.landing-card.world:hover {
+    border-color: rgba(25, 118, 210, 0.7);
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+.landing-card.china:hover {
+    border-color: rgba(255, 193, 7, 0.7);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+.landing-card.f1:hover,
+.landing-card.sports:hover {
+    border-color: rgba(211, 47, 47, 0.7);
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
 }
 .landing-card .icon { 
     font-size: 2.5rem; 
@@ -90,18 +108,34 @@ h1 {
     line-height: 1.3;
     text-align: left;
 }
-/* 大厅卡片特定色调 */
+/* 大厅卡片特定色调 - 使用较深的渐变色 */
 .landing-card.world { 
-    background: linear-gradient(135deg, rgba(33,150,243,0.15), rgba(33,150,243,0.02)); 
-    border-color: rgba(33, 150, 243, 0.3);
+    background: linear-gradient(135deg, rgba(25, 118, 210, 0.4), rgba(13, 71, 161, 0.3)); 
+    border-color: rgba(25, 118, 210, 0.);
 }
 .landing-card.china { 
-    background: linear-gradient(135deg, rgba(244,67,54,0.15), rgba(244,67,54,0.02)); 
-    border-color: rgba(244, 67, 54, 0.3);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.4), rgba(255, 152, 0, 0.3)); 
+    border-color: rgba(255, 193, 7,0.0);
 }
-.landing-card.f1 { 
-    background: linear-gradient(135deg, rgba(255,152,0,0.15), rgba(255,152,0,0.02)); 
-    border-color: rgba(255, 152, 0, 0.3);
+.landing-card.f1,
+.landing-card.sports { 
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.4), rgba(183, 28, 28, 0.3)); 
+    border-color: rgba(211, 47, 47, 0.0);
+}
+
+/* 作者信息 */
+.author-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+.author-info p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 /* --- 4. 主菜单 (Menu UI 升级版) --- */
@@ -214,6 +248,11 @@ h1 {
 .card-green {
     background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); 
     border-color: rgba(56, 249, 215, 0.3);
+    color: #ffffff;
+}
+.card-red {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); 
+    border-color: rgba(238, 90, 111, 0.3);
     color: #ffffff;
 }
 
@@ -357,6 +396,15 @@ h1 {
     -webkit-clip-path: circle(10%);
     object-fit: cover;
     border-radius: 0;
+}
+.football-mask-hell {
+    clip-path: circle(10%);
+    -webkit-clip-path: circle(10%);
+    object-fit: cover;
+    border-radius: 0;
+    /* 地狱难度：随机旋转角度，增加难度 */
+    transform: rotate(var(--football-rotation, 0deg));
+    transition: transform 0.3s ease;
 }
 
 /* 🚗 中国车牌特别样式 */

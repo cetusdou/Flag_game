@@ -31,12 +31,22 @@ async function initGame() {
 }
 
 // 确保在DOM加载完成后初始化
-// 注意：如果 script.js 已经初始化，这里不会重复初始化
+// 使用标志防止重复初始化
+let isInitialized = false;
+function doInit() {
+    if (isInitialized) {
+        console.warn('initGame 已被调用，跳过重复初始化');
+        return;
+    }
+    isInitialized = true;
+    initGame();
+}
+
 if (document.readyState === 'loading') {
     window.addEventListener('DOMContentLoaded', function() {
         // 延迟执行，确保 script.js 中的 initGame 不会冲突
-        setTimeout(initGame, 100);
+        setTimeout(doInit, 100);
     });
 } else {
-    setTimeout(initGame, 100);
+    setTimeout(doInit, 100);
 }

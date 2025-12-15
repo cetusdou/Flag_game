@@ -1,0 +1,2526 @@
+[
+  {
+    "id": "arsenal_f_c",
+    "name": "Arsenal",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/arsenal_f_c.png",
+    "full_name": "The Arsenal Football Club, ",
+    "founded": "1886",
+    "ground": "Emirates Stadium"
+  },
+  {
+    "id": "aston_villa_f_c",
+    "name": "Aston Villa",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/aston_villa_f_c.png",
+    "full_name": "Aston Villa Football Club",
+    "founded": "1874",
+    "ground": "Villa Park"
+  },
+  {
+    "id": "afc_bournemouth",
+    "name": "AFC Bournemouth",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/afc_bournemouth.png",
+    "full_name": "AFC Bournemouth, ",
+    "founded": "1899",
+    "ground": "Dean Court"
+  },
+  {
+    "id": "brentford_f_c",
+    "name": "Brentford",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/brentford_f_c.png",
+    "full_name": "Brentford Football Club",
+    "founded": "1889",
+    "ground": "Brentford Community Stadium"
+  },
+  {
+    "id": "brighton___hove_albion_f_",
+    "name": "Brighton & Hove Albion",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/brighton___hove_albion_f_.png",
+    "full_name": "Brighton & Hove Albion Football Club",
+    "founded": "1901",
+    "ground": "Falmer Stadium"
+  },
+  {
+    "id": "chelsea_f_c",
+    "name": "Chelsea",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/chelsea_f_c.png",
+    "full_name": "Chelsea Football Club",
+    "founded": "1905",
+    "ground": "Stamford Bridge"
+  },
+  {
+    "id": "crystal_palace_f_c",
+    "name": "Crystal Palace",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/crystal_palace_f_c.png",
+    "full_name": "Crystal Palace Football Club",
+    "founded": "1905",
+    "ground": "Selhurst Park"
+  },
+  {
+    "id": "everton_f_c",
+    "name": "Everton",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/everton_f_c.png",
+    "full_name": "Everton Football Club",
+    "founded": "1878",
+    "ground": "Hill Dickinson Stadium"
+  },
+  {
+    "id": "fulham_f_c",
+    "name": "Fulham",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/fulham_f_c.png",
+    "full_name": "Fulham Football Club",
+    "founded": "1879",
+    "ground": "Craven Cottage"
+  },
+  {
+    "id": "ipswich_town_f_c",
+    "name": "Ipswich Town",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/ipswich_town_f_c.png",
+    "full_name": "Ipswich Town Football Club",
+    "founded": "1878",
+    "ground": "Portman Road"
+  },
+  {
+    "id": "leicester_city_f_c",
+    "name": "Leicester City",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/leicester_city_f_c.png",
+    "full_name": "Leicester City Football Club",
+    "founded": "1884",
+    "ground": "King Power Stadium"
+  },
+  {
+    "id": "liverpool_f_c",
+    "name": "Liverpool",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/liverpool_f_c.png",
+    "full_name": "Liverpool Football Club",
+    "founded": "1892",
+    "ground": "Anfield"
+  },
+  {
+    "id": "manchester_city_f_c",
+    "name": "Manchester City",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/manchester_city_f_c.png",
+    "full_name": "Manchester City Football Club",
+    "founded": "1880",
+    "ground": "City of Manchester Stadium"
+  },
+  {
+    "id": "manchester_united_f_c",
+    "name": "Manchester United",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/manchester_united_f_c.png",
+    "full_name": "Manchester United Football Club",
+    "founded": "1878",
+    "ground": "Old Trafford"
+  },
+  {
+    "id": "newcastle_united_f_c",
+    "name": "Newcastle United",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/newcastle_united_f_c.png",
+    "full_name": "Newcastle United Football Club",
+    "founded": "1881",
+    "ground": "St James' Park"
+  },
+  {
+    "id": "nottingham_forest_f_c",
+    "name": "Nottingham Forest",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/nottingham_forest_f_c.png",
+    "full_name": "Nottingham Forest Football Club",
+    "founded": "1865",
+    "ground": "City Ground"
+  },
+  {
+    "id": "southampton_f_c",
+    "name": "Southampton",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/southampton_f_c.png",
+    "full_name": "Southampton Football Club",
+    "founded": "1885",
+    "ground": "St Mary's Stadium"
+  },
+  {
+    "id": "tottenham_hotspur_f_c",
+    "name": "Tottenham Hotspur",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/tottenham_hotspur_f_c.png",
+    "full_name": "Tottenham Hotspur Football Club",
+    "founded": "1882",
+    "ground": "Tottenham Hotspur Stadium"
+  },
+  {
+    "id": "west_ham_united_f_c",
+    "name": "West Ham United",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/west_ham_united_f_c.png",
+    "full_name": "West Ham United Football Club",
+    "founded": "1895",
+    "ground": "London Stadium"
+  },
+  {
+    "id": "wolverhampton_wanderers_f",
+    "name": "Wolverhampton Wanderers",
+    "league": "Premier League",
+    "img": "./assets/football_clubs_png/wolverhampton_wanderers_f.png",
+    "full_name": "Wolverhampton Wanderers Football Club",
+    "founded": "1877",
+    "ground": "Molineux Stadium"
+  },
+  {
+    "id": "deportivo_alav_s",
+    "name": "Deportivo Alavés",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/deportivo_alav_s.png",
+    "full_name": "Deportivo Alavés, S.A.D.",
+    "founded": "1921",
+    "ground": "Campo de fútbol de Mendizorroza"
+  },
+  {
+    "id": "athletic_bilbao",
+    "name": "Athletic Bilbao",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/athletic_bilbao.png",
+    "full_name": "Athletic Club, , ",
+    "founded": "1898",
+    "ground": "Estadio San Mamés"
+  },
+  {
+    "id": "atl_tico_madrid",
+    "name": "Atlético Madrid",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/atl_tico_madrid.png",
+    "full_name": "Club Atlético de Madrid, S.A.D.",
+    "founded": "1903",
+    "ground": "Estadio Riyadh Air Metropolitano"
+  },
+  {
+    "id": "fc_barcelona",
+    "name": "FC Barcelona",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/fc_barcelona.png",
+    "full_name": "Futbol Club Barcelona",
+    "founded": "1899",
+    "ground": "Camp Nou"
+  },
+  {
+    "id": "rc_celta_de_vigo",
+    "name": "RC Celta de Vigo",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/rc_celta_de_vigo.png",
+    "full_name": "Real Club Celta de Vigo, S.A.D.",
+    "founded": "1923",
+    "ground": "Balaídos"
+  },
+  {
+    "id": "rcd_espanyol",
+    "name": "RCD Espanyol",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/rcd_espanyol.png",
+    "full_name": "Reial Club Deportiu, Espanyol de Barcelona, S.A.D.",
+    "founded": "1900",
+    "ground": "RCDE Stadium"
+  },
+  {
+    "id": "getafe_cf",
+    "name": "Getafe",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/getafe_cf.png",
+    "full_name": "Getafe Club de Fútbol S.A.D.",
+    "founded": "1983",
+    "ground": "Estadio Coliseum"
+  },
+  {
+    "id": "girona_fc",
+    "name": "Girona FC",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/girona_fc.png",
+    "full_name": "Girona Futbol Club, S.A.D.",
+    "founded": "1930",
+    "ground": "Estadi Montilivi"
+  },
+  {
+    "id": "ud_las_palmas",
+    "name": "UD Las Palmas",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/ud_las_palmas.png",
+    "full_name": "Unión Deportiva Las Palmas, S.A.D.",
+    "founded": "1949",
+    "ground": "Estadio Gran Canaria"
+  },
+  {
+    "id": "cd_legan_s",
+    "name": "CD Leganés",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/cd_legan_s.png",
+    "full_name": "Club Deportivo Leganés, S.A.D.",
+    "founded": "1928",
+    "ground": "Estadio Ontime Butarque"
+  },
+  {
+    "id": "rcd_mallorca",
+    "name": "RCD Mallorca",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/rcd_mallorca.png",
+    "full_name": "Real Club Deportivo Mallorca, S.A.D.",
+    "founded": "1916",
+    "ground": "Estadi Mallorca Son Moix"
+  },
+  {
+    "id": "ca_osasuna",
+    "name": "CA Osasuna",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/ca_osasuna.png",
+    "full_name": "Club Atlético Osasuna",
+    "founded": "1920",
+    "ground": "Estadio El Sadar"
+  },
+  {
+    "id": "rayo_vallecano",
+    "name": "Rayo Vallecano",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/rayo_vallecano.png",
+    "full_name": "Rayo Vallecano de Madrid,, SAD",
+    "founded": "1924",
+    "ground": "El Campo de Fútbol de Vallecas"
+  },
+  {
+    "id": "real_betis",
+    "name": "Real Betis",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/real_betis.png",
+    "full_name": "Real Betis Balompié,, S.A.D.",
+    "founded": "1907",
+    "ground": "Estadio de La Cartuja, "
+  },
+  {
+    "id": "real_madrid_cf",
+    "name": "Real Madrid",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/real_madrid_cf.png",
+    "full_name": "Real Madrid Club de Fútbol, ",
+    "founded": "1902",
+    "ground": "Estadio Bernabéu"
+  },
+  {
+    "id": "real_sociedad",
+    "name": "Real Sociedad",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/real_sociedad.png",
+    "full_name": "Real Sociedad de Fútbol,, S.A.D.",
+    "founded": "1909",
+    "ground": "Reale Arena"
+  },
+  {
+    "id": "sevilla_fc",
+    "name": "Sevilla FC",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/sevilla_fc.png",
+    "full_name": "Sevilla Fútbol Club,, S.A.D.",
+    "founded": "1890",
+    "ground": "Estadio Ramón Sánchez-Pizjuán"
+  },
+  {
+    "id": "valencia_cf",
+    "name": "Valencia",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/valencia_cf.png",
+    "full_name": "Valencia Club de Fútbol,, S. A. D.",
+    "founded": "1919",
+    "ground": "Camp de Mestalla"
+  },
+  {
+    "id": "real_valladolid",
+    "name": "Real Valladolid",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/real_valladolid.png",
+    "full_name": "Real Valladolid Club de Fútbol, S.A.D.",
+    "founded": "1928",
+    "ground": "José Zorrilla Stadium"
+  },
+  {
+    "id": "villarreal_cf",
+    "name": "Villarreal",
+    "league": "La Liga",
+    "img": "./assets/football_clubs_png/villarreal_cf.png",
+    "full_name": "Villarreal Club de Fútbol, S.A.D.",
+    "founded": "1923",
+    "ground": "Estadio de la Cerámica"
+  },
+  {
+    "id": "fc_augsburg",
+    "name": "FC Augsburg",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/fc_augsburg.png",
+    "full_name": "Fußball-Club Augsburg 1907 e. V.",
+    "founded": "1907",
+    "ground": "Augsburg Arena"
+  },
+  {
+    "id": "1__fc_union_berlin",
+    "name": "1. FC Union Berlin",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/1__fc_union_berlin.png",
+    "full_name": "1. Fußballclub Union Berlin e. V.",
+    "founded": "1966",
+    "ground": "Stadion An der Alten Försterei"
+  },
+  {
+    "id": "vfl_bochum",
+    "name": "VfL Bochum",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/vfl_bochum.png",
+    "full_name": "Verein für Leibesübungen Bochum 1848 Fußballgemeinschaft e. V.",
+    "founded": "1848",
+    "ground": "Vonovia-Ruhrstadion"
+  },
+  {
+    "id": "sv_werder_bremen",
+    "name": "SV Werder Bremen",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/sv_werder_bremen.png",
+    "full_name": "Sportverein Werder Bremen, von 1899 e. V.",
+    "founded": "1899",
+    "ground": "Weserstadion"
+  },
+  {
+    "id": "borussia_dortmund",
+    "name": "Borussia Dortmund",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/borussia_dortmund.png",
+    "full_name": "Ballspielverein Borussia 09 e. V. Dortmund",
+    "founded": "1909",
+    "ground": "Signal Iduna Park"
+  },
+  {
+    "id": "eintracht_frankfurt",
+    "name": "Eintracht Frankfurt",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/eintracht_frankfurt.png",
+    "full_name": "Eintracht Frankfurt e. V.",
+    "founded": "1899",
+    "ground": "Deutsche Bank Park"
+  },
+  {
+    "id": "sc_freiburg",
+    "name": "SC Freiburg",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/sc_freiburg.png",
+    "full_name": "Sport-Club Freiburg e.V.",
+    "founded": "1904",
+    "ground": "Europa-Park Stadion"
+  },
+  {
+    "id": "1__fc_heidenheim",
+    "name": "1. FC Heidenheim",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/1__fc_heidenheim.png",
+    "full_name": "1. Fußballclub, Heidenheim 1846 e.V.",
+    "founded": "1846",
+    "ground": "Voith-Arena"
+  },
+  {
+    "id": "tsg_1899_hoffenheim",
+    "name": "TSG 1899 Hoffenheim",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/tsg_1899_hoffenheim.png",
+    "full_name": "Turn- und Sportgemeinschaft, 1899 Hoffenheim e.V.",
+    "founded": "1899",
+    "ground": "PreZero Arena"
+  },
+  {
+    "id": "holstein_kiel",
+    "name": "Holstein Kiel",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/holstein_kiel.png",
+    "full_name": "Kieler Sportvereinigung, Holstein von 1900 e.V.",
+    "founded": "1900",
+    "ground": "Holstein-Stadion"
+  },
+  {
+    "id": "rb_leipzig",
+    "name": "RB Leipzig",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/rb_leipzig.png",
+    "full_name": "RasenBallsport Leipzig e.V.",
+    "founded": "2009",
+    "ground": "Red Bull Arena"
+  },
+  {
+    "id": "bayer_04_leverkusen",
+    "name": "Bayer 04 Leverkusen",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/bayer_04_leverkusen.png",
+    "full_name": "Bayer 04 Leverkusen Fußball GmbH",
+    "founded": "1904",
+    "ground": "BayArena, "
+  },
+  {
+    "id": "1__fsv_mainz_05",
+    "name": "1. FSV Mainz 05",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/1__fsv_mainz_05.png",
+    "full_name": "1. Fußball- und Sport-Verein Mainz 05 e.V.",
+    "founded": "1905",
+    "ground": "MEWA Arena"
+  },
+  {
+    "id": "borussia_m_nchengladbach",
+    "name": "Borussia Mönchengladbach",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/borussia_m_nchengladbach.png",
+    "full_name": "Borussia Verein für Leibesübungen 1900 e.V. Mönchengladbach, ",
+    "founded": "1900",
+    "ground": "Borussia-Park"
+  },
+  {
+    "id": "fc_bayern_munich",
+    "name": "FC Bayern Munich",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/fc_bayern_munich.png",
+    "full_name": "Fußball-Club Bayern München, e. V.",
+    "founded": "1900",
+    "ground": "Allianz Arena"
+  },
+  {
+    "id": "fc_st__pauli",
+    "name": "FC St. Pauli",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/fc_st__pauli.png",
+    "full_name": "Fußball-Club St. Pauli von 1910 e.V.",
+    "founded": "1910",
+    "ground": "Millerntor-Stadion"
+  },
+  {
+    "id": "vfb_stuttgart",
+    "name": "VfB Stuttgart",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/vfb_stuttgart.png",
+    "full_name": "Verein für Bewegungsspiele Stuttgart 1893 e. V.",
+    "founded": "1893",
+    "ground": "MHPArena"
+  },
+  {
+    "id": "vfl_wolfsburg",
+    "name": "VfL Wolfsburg",
+    "league": "Bundesliga",
+    "img": "./assets/football_clubs_png/vfl_wolfsburg.png",
+    "full_name": "Verein für Leibesübungen Wolfsburg e. V., (Sports club), Verein für Leibesübungen Wolfsburg Fußball GmbH, (Professional football club)",
+    "founded": "1945",
+    "ground": "Volkswagen Arena"
+  },
+  {
+    "id": "atalanta_bc",
+    "name": "Atalanta BC",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/atalanta_bc.png",
+    "full_name": "Atalanta Bergamasca Calcio, S.p.A.",
+    "founded": "1907",
+    "ground": "New Balance Arena"
+  },
+  {
+    "id": "bologna_fc_1909",
+    "name": "Bologna FC 1909",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/bologna_fc_1909.png",
+    "full_name": "Bologna Football Club 1909, S.p.A.",
+    "founded": "1909",
+    "ground": "Stadio Renato Dall'Ara"
+  },
+  {
+    "id": "cagliari_calcio",
+    "name": "Cagliari Calcio",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/cagliari_calcio.png",
+    "full_name": "Cagliari Calcio, S.p.A.",
+    "founded": "1920",
+    "ground": "Unipol Domus"
+  },
+  {
+    "id": "como_1907",
+    "name": "Como 1907",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/como_1907.png",
+    "full_name": "Como 1907, S.r.l.",
+    "founded": "1907",
+    "ground": "Stadio Giuseppe Sinigaglia"
+  },
+  {
+    "id": "empoli_fc",
+    "name": "Empoli FC",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/empoli_fc.png",
+    "full_name": "Empoli Football Club, S.p.A.",
+    "founded": "1920",
+    "ground": "Stadio Carlo Castellani – Computer Gross Arena"
+  },
+  {
+    "id": "acf_fiorentina",
+    "name": "ACF Fiorentina",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/acf_fiorentina.png",
+    "full_name": "Associazione Calcio Firenze Fiorentina, S.r.l., , , ",
+    "founded": "1926",
+    "ground": "Stadio Artemio Franchi"
+  },
+  {
+    "id": "genoa_cfc",
+    "name": "Genoa",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/genoa_cfc.png",
+    "full_name": "Genoa Cricket and Football Club, S.p.A.",
+    "founded": "1893",
+    "ground": "Stadio Luigi Ferraris"
+  },
+  {
+    "id": "hellas_verona_fc",
+    "name": "Hellas Verona FC",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/hellas_verona_fc.png",
+    "full_name": "Hellas Verona Football Club, S.p.A.",
+    "founded": "1903",
+    "ground": "Stadio Marcantonio Bentegodi"
+  },
+  {
+    "id": "inter_milan",
+    "name": "Inter Milan",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/inter_milan.png",
+    "full_name": "Football Club Internazionale Milano, S.p.A., , ",
+    "founded": "1908",
+    "ground": "Stadio Giuseppe Meazza"
+  },
+  {
+    "id": "juventus_fc",
+    "name": "Juventus FC",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/juventus_fc.png",
+    "full_name": "Juventus Football Club S.p.A.",
+    "founded": "1897",
+    "ground": "Juventus Stadium"
+  },
+  {
+    "id": "ss_lazio",
+    "name": "SS Lazio",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/ss_lazio.png",
+    "full_name": "Società Sportiva Lazio, S.p.A.",
+    "founded": "1900",
+    "ground": "Stadio Olimpico"
+  },
+  {
+    "id": "us_lecce",
+    "name": "US Lecce",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/us_lecce.png",
+    "full_name": "Unione Sportiva Lecce, S.p.A., (Sports Union Lecce S.p.A.)",
+    "founded": "1908",
+    "ground": "Stadio Via del mare"
+  },
+  {
+    "id": "ac_milan",
+    "name": "AC Milan",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/ac_milan.png",
+    "full_name": "Associazione Calcio Milan, S.p.A., ",
+    "founded": "1899",
+    "ground": "San Siro Stadium"
+  },
+  {
+    "id": "ac_monza",
+    "name": "AC Monza",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/ac_monza.png",
+    "full_name": "Associazione Calcio Monza, S.p.A.",
+    "founded": "1912",
+    "ground": "Stadio Brianteo"
+  },
+  {
+    "id": "ssc_napoli",
+    "name": "SSC Napoli",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/ssc_napoli.png",
+    "full_name": "Società Sportiva Calcio Napoli, S.p.A.",
+    "founded": "1926",
+    "ground": "Stadio Diego Armando Maradona"
+  },
+  {
+    "id": "parma_calcio_1913",
+    "name": "Parma Calcio 1913",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/parma_calcio_1913.png",
+    "full_name": "Parma Calcio 1913, S.r.l.",
+    "founded": "1913",
+    "ground": "Stadio Ennio Tardini"
+  },
+  {
+    "id": "as_roma",
+    "name": "AS Roma",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/as_roma.png",
+    "full_name": "Associazione Sportiva Roma, S.p.A.",
+    "founded": "1927",
+    "ground": "Stadio Olimpico"
+  },
+  {
+    "id": "torino_fc",
+    "name": "Torino FC",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/torino_fc.png",
+    "full_name": "Torino Football Club, S.p.A.",
+    "founded": "1906",
+    "ground": "Stadio Olimpico Grande Torino"
+  },
+  {
+    "id": "udinese_calcio",
+    "name": "Udinese Calcio",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/udinese_calcio.png",
+    "full_name": "Udinese Calcio, S.p.A.",
+    "founded": "1896",
+    "ground": "Bluenergy Stadium - Stadio Friuli"
+  },
+  {
+    "id": "venezia_fc",
+    "name": "Venezia FC",
+    "league": "Serie A",
+    "img": "./assets/football_clubs_png/venezia_fc.png",
+    "full_name": "Venezia Football Club, S.r.l.",
+    "founded": "1907",
+    "ground": "Stadio Pier Luigi Penzo"
+  },
+  {
+    "id": "angers_sco",
+    "name": "Angers SCO",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/angers_sco.png",
+    "full_name": "Angers Sporting Club de l'Ouest",
+    "founded": "1919",
+    "ground": "Stade Raymond Kopa"
+  },
+  {
+    "id": "aj_auxerre",
+    "name": "AJ Auxerre",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/aj_auxerre.png",
+    "full_name": "Association de la Jeunesse Auxerroise",
+    "founded": "1905",
+    "ground": "Stade de l'Abbé-Deschamps"
+  },
+  {
+    "id": "stade_brestois_29",
+    "name": "Stade Brestois 29",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/stade_brestois_29.png",
+    "full_name": "Stade Brestois 29",
+    "founded": "1903",
+    "ground": "Stade Francis-Le Blé"
+  },
+  {
+    "id": "le_havre_ac",
+    "name": "Le Havre AC",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/le_havre_ac.png",
+    "full_name": "Le Havre Athletic Club",
+    "founded": "1884",
+    "ground": "Stade Océane"
+  },
+  {
+    "id": "rc_lens",
+    "name": "RC Lens",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/rc_lens.png",
+    "full_name": "Racing Club de Lens",
+    "founded": "1906",
+    "ground": "Stade Bollaert-Delelis"
+  },
+  {
+    "id": "lille_osc",
+    "name": "Lille OSC",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/lille_osc.png",
+    "full_name": "Lille Olympique Sporting Club",
+    "founded": "1944",
+    "ground": "Stade Pierre-Mauroy"
+  },
+  {
+    "id": "olympique_lyonnais",
+    "name": "Olympique Lyonnais",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/olympique_lyonnais.png",
+    "full_name": "Olympique Lyonnais",
+    "founded": "1950",
+    "ground": "Parc Olympique Lyonnais"
+  },
+  {
+    "id": "olympique_de_marseille",
+    "name": "Olympique de Marseille",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/olympique_de_marseille.png",
+    "full_name": "Olympique de Marseille",
+    "founded": "1899",
+    "ground": "Stade Vélodrome"
+  },
+  {
+    "id": "as_monaco_fc",
+    "name": "AS Monaco FC",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/as_monaco_fc.png",
+    "full_name": "Association Sportive de Monaco Football Club",
+    "founded": "1924",
+    "ground": "Stade Louis II"
+  },
+  {
+    "id": "montpellier_hsc",
+    "name": "Montpellier HSC",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/montpellier_hsc.png",
+    "full_name": "Montpellier Hérault Sport Club",
+    "founded": "1974",
+    "ground": "Stade de la Mosson"
+  },
+  {
+    "id": "fc_nantes",
+    "name": "FC Nantes",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/fc_nantes.png",
+    "full_name": "Football Club de Nantes",
+    "founded": "1943",
+    "ground": "Stade de la Beaujoire"
+  },
+  {
+    "id": "ogc_nice",
+    "name": "OGC Nice",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/ogc_nice.png",
+    "full_name": "Olympique Gymnaste Club de Nice",
+    "founded": "1904",
+    "ground": "Allianz Riviera"
+  },
+  {
+    "id": "paris_saint_germain_fc",
+    "name": "Paris Saint-Germain FC",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/paris_saint_germain_fc.png",
+    "full_name": "Paris Saint-Germain Football Club",
+    "founded": "1970",
+    "ground": "Parc des Princes"
+  },
+  {
+    "id": "stade_de_reims",
+    "name": "Stade de Reims",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/stade_de_reims.png",
+    "full_name": "Stade de Reims",
+    "founded": "1931",
+    "ground": "Stade Auguste-Delaune"
+  },
+  {
+    "id": "stade_rennais_fc",
+    "name": "Stade Rennais FC",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/stade_rennais_fc.png",
+    "full_name": "Stade Rennais Football Club",
+    "founded": "1901",
+    "ground": "Roazhon Park"
+  },
+  {
+    "id": "rc_strasbourg_alsace",
+    "name": "RC Strasbourg Alsace",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/rc_strasbourg_alsace.png",
+    "full_name": "Racing Club de Strasbourg Alsace",
+    "founded": "1906",
+    "ground": "Stade de la Meinau"
+  },
+  {
+    "id": "as_saint__tienne",
+    "name": "AS Saint-Étienne",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/as_saint__tienne.png",
+    "full_name": "Association Sportive de Saint-Étienne Loire",
+    "founded": "1919",
+    "ground": "Stade Geoffroy-Guichard"
+  },
+  {
+    "id": "toulouse_fc",
+    "name": "Toulouse FC",
+    "league": "Ligue 1",
+    "img": "./assets/football_clubs_png/toulouse_fc.png",
+    "full_name": "Toulouse Football Club",
+    "founded": "1970",
+    "ground": "Stadium de Toulouse"
+  },
+  {
+    "id": "blackburn_rovers_f_c",
+    "name": "Blackburn Rovers",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/blackburn_rovers_f_c.png",
+    "full_name": "Blackburn Rovers Football Club",
+    "founded": "1875",
+    "ground": "Ewood Park"
+  },
+  {
+    "id": "bristol_city_f_c",
+    "name": "Bristol City",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/bristol_city_f_c.png",
+    "full_name": "Bristol City Football Club",
+    "founded": "1894",
+    "ground": "Ashton Gate"
+  },
+  {
+    "id": "burnley_f_c",
+    "name": "Burnley",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/burnley_f_c.png",
+    "full_name": "Burnley Football Club",
+    "founded": "1882",
+    "ground": "Turf Moor"
+  },
+  {
+    "id": "cardiff_city_f_c",
+    "name": "Cardiff City",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/cardiff_city_f_c.png",
+    "full_name": "Cardiff City Football Club",
+    "founded": "1899",
+    "ground": "Cardiff City Stadium"
+  },
+  {
+    "id": "coventry_city_f_c",
+    "name": "Coventry City",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/coventry_city_f_c.png",
+    "full_name": "Coventry City Football Club",
+    "founded": "1883",
+    "ground": "Coventry Building Society Arena"
+  },
+  {
+    "id": "derby_county_f_c",
+    "name": "Derby County",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/derby_county_f_c.png",
+    "full_name": "Derby County Football Club",
+    "founded": "1884",
+    "ground": "Pride Park Stadium"
+  },
+  {
+    "id": "hull_city_a_f_c",
+    "name": "Hull City A.F.C.",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/hull_city_a_f_c.png",
+    "full_name": "Hull City Association Football Club",
+    "founded": "1904",
+    "ground": "MKM Stadium"
+  },
+  {
+    "id": "leeds_united_f_c",
+    "name": "Leeds United",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/leeds_united_f_c.png",
+    "full_name": "Leeds United Football Club",
+    "founded": "1919",
+    "ground": "Elland Road"
+  },
+  {
+    "id": "luton_town_f_c",
+    "name": "Luton Town",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/luton_town_f_c.png",
+    "full_name": "Luton Town Football Club",
+    "founded": "1885",
+    "ground": "Kenilworth Road"
+  },
+  {
+    "id": "middlesbrough_f_c",
+    "name": "Middlesbrough",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/middlesbrough_f_c.png",
+    "full_name": "Middlesbrough Football Club",
+    "founded": "1876",
+    "ground": "Riverside Stadium"
+  },
+  {
+    "id": "millwall_f_c",
+    "name": "Millwall",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/millwall_f_c.png",
+    "full_name": "Millwall Football Club",
+    "founded": "1885",
+    "ground": "The Den"
+  },
+  {
+    "id": "norwich_city_f_c",
+    "name": "Norwich City",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/norwich_city_f_c.png",
+    "full_name": "Norwich City Football Club",
+    "founded": "1902",
+    "ground": "Carrow Road"
+  },
+  {
+    "id": "oxford_united_f_c",
+    "name": "Oxford United",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/oxford_united_f_c.png",
+    "full_name": "Oxford United Football Club",
+    "founded": "1893",
+    "ground": "Kassam Stadium"
+  },
+  {
+    "id": "plymouth_argyle_f_c",
+    "name": "Plymouth Argyle",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/plymouth_argyle_f_c.png",
+    "full_name": "Plymouth Argyle Football Club",
+    "founded": "1886",
+    "ground": "Home Park"
+  },
+  {
+    "id": "portsmouth_f_c",
+    "name": "Portsmouth",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/portsmouth_f_c.png",
+    "full_name": "Portsmouth Football Club",
+    "founded": "1898",
+    "ground": "Fratton Park"
+  },
+  {
+    "id": "preston_north_end_f_c",
+    "name": "Preston North End",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/preston_north_end_f_c.png",
+    "full_name": "Preston North End Football Club",
+    "founded": "1880",
+    "ground": "Deepdale"
+  },
+  {
+    "id": "queens_park_rangers_f_c",
+    "name": "Queens Park Rangers",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/queens_park_rangers_f_c.png",
+    "full_name": "Queens Park Rangers Football Club",
+    "founded": "1882",
+    "ground": "Loftus Road Stadium"
+  },
+  {
+    "id": "sheffield_united_f_c",
+    "name": "Sheffield United",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/sheffield_united_f_c.png",
+    "full_name": "Sheffield United Football Club",
+    "founded": "1889",
+    "ground": "Bramall Lane"
+  },
+  {
+    "id": "sheffield_wednesday_f_c",
+    "name": "Sheffield Wednesday",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/sheffield_wednesday_f_c.png",
+    "full_name": "Sheffield Wednesday Football Club",
+    "founded": "1867",
+    "ground": "Hillsborough Stadium"
+  },
+  {
+    "id": "stoke_city_f_c",
+    "name": "Stoke City",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/stoke_city_f_c.png",
+    "full_name": "Stoke City Football Club",
+    "founded": "1863",
+    "ground": "bet365 Stadium"
+  },
+  {
+    "id": "sunderland_a_f_c",
+    "name": "Sunderland A.F.C.",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/sunderland_a_f_c.png",
+    "full_name": "Sunderland Association Football Club",
+    "founded": "1879",
+    "ground": "Stadium of Light"
+  },
+  {
+    "id": "swansea_city_a_f_c",
+    "name": "Swansea City A.F.C.",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/swansea_city_a_f_c.png",
+    "full_name": "Swansea City Association Football Club",
+    "founded": "1912",
+    "ground": "Swansea.com Stadium"
+  },
+  {
+    "id": "watford_f_c",
+    "name": "Watford",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/watford_f_c.png",
+    "full_name": "Watford Football Club",
+    "founded": "1881",
+    "ground": "Vicarage Road"
+  },
+  {
+    "id": "west_bromwich_albion_f_c",
+    "name": "West Bromwich Albion",
+    "league": "EFL Championship",
+    "img": "./assets/football_clubs_png/west_bromwich_albion_f_c.png",
+    "full_name": "West Bromwich Albion Football Club",
+    "founded": "1878",
+    "ground": "The Hawthorns"
+  },
+  {
+    "id": "hertha_bsc",
+    "name": "Hertha BSC",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/hertha_bsc.png",
+    "full_name": "Hertha, Berliner Sport-Club e. V., ",
+    "founded": "1892",
+    "ground": "Olympiastadion"
+  },
+  {
+    "id": "eintracht_braunschweig",
+    "name": "Eintracht Braunschweig",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/eintracht_braunschweig.png",
+    "full_name": "Braunschweiger Turn- und, Sportverein Eintracht von 1895 e.V.",
+    "founded": "1895",
+    "ground": "Eintracht-Stadion, ,, Braunschweig"
+  },
+  {
+    "id": "sv_darmstadt_98",
+    "name": "SV Darmstadt 98",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/sv_darmstadt_98.png",
+    "full_name": "Sportverein Darmstadt 1898 e.V.",
+    "founded": "1898",
+    "ground": "Merck-Stadion am Böllenfalltor"
+  },
+  {
+    "id": "fortuna_d_sseldorf",
+    "name": "Fortuna Düsseldorf",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/fortuna_d_sseldorf.png",
+    "full_name": "Düsseldorfer Turn- und Sportverein, Fortuna 1895 e.V.",
+    "founded": "1895",
+    "ground": "Merkur Spiel-Arena"
+  },
+  {
+    "id": "sv_elversberg",
+    "name": "SV Elversberg",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/sv_elversberg.png",
+    "full_name": "Sportvereinigung 07 Elversberg e.V.",
+    "founded": "1907",
+    "ground": "UrsapharmArena"
+  },
+  {
+    "id": "spvgg_greuther_f_rth",
+    "name": "SpVgg Greuther Fürth",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/spvgg_greuther_f_rth.png",
+    "full_name": "Spielvereinigung Greuther Fürth e. V.",
+    "founded": "1903",
+    "ground": "Sportpark Ronhof"
+  },
+  {
+    "id": "hamburger_sv",
+    "name": "Hamburger SV",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/hamburger_sv.png",
+    "full_name": "Hamburger Sport-Verein e.V.",
+    "founded": "1887",
+    "ground": "Volksparkstadion, ,, Hamburg"
+  },
+  {
+    "id": "hannover_96",
+    "name": "Hannover 96",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/hannover_96.png",
+    "full_name": "Hannoverscher Sportverein von 1896 e.V.",
+    "founded": "1896",
+    "ground": "Niedersachsenstadion"
+  },
+  {
+    "id": "1__fc_kaiserslautern",
+    "name": "1. FC Kaiserslautern",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/1__fc_kaiserslautern.png",
+    "full_name": "1. Fußball-Club Kaiserslautern e. V.",
+    "founded": "1900",
+    "ground": "Fritz-Walter-Stadion"
+  },
+  {
+    "id": "karlsruher_sc",
+    "name": "Karlsruher SC",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/karlsruher_sc.png",
+    "full_name": "Karlsruher Sport-Club, Mühlburg-Phönix e. V.",
+    "founded": "1894",
+    "ground": "BBBank Wildpark"
+  },
+  {
+    "id": "1__fc_k_ln",
+    "name": "1. FC Köln",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/1__fc_k_ln.png",
+    "full_name": "1. Fußball-Club Köln 01/07 e. V.",
+    "founded": "1948",
+    "ground": "RheinEnergieStadion"
+  },
+  {
+    "id": "1__fc_magdeburg",
+    "name": "1. FC Magdeburg",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/1__fc_magdeburg.png",
+    "full_name": "1. Fußballclub Magdeburg e. V.",
+    "founded": "1965",
+    "ground": "Avnet Arena"
+  },
+  {
+    "id": "sc_preu_en_m_nster",
+    "name": "SC Preußen Münster",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/sc_preu_en_m_nster.png",
+    "full_name": "Sportclub Preußen 1906 e.V. Münster",
+    "founded": "1906",
+    "ground": "Preußenstadion"
+  },
+  {
+    "id": "1__fc_n_rnberg",
+    "name": "1. FC Nürnberg",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/1__fc_n_rnberg.png",
+    "full_name": "1. Fußball-Club Nürnberg Verein für Leibesübungen e. V.",
+    "founded": "1900",
+    "ground": "Max-Morlock-Stadion"
+  },
+  {
+    "id": "sc_paderborn_07",
+    "name": "SC Paderborn 07",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/sc_paderborn_07.png",
+    "full_name": "Sport-Club Paderborn 07 e.V.",
+    "founded": "1907",
+    "ground": "Benteler-Arena"
+  },
+  {
+    "id": "ssv_jahn_regensburg",
+    "name": "SSV Jahn Regensburg",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/ssv_jahn_regensburg.png",
+    "full_name": "Sport- und Schwimmverein, Jahn Regensburg e. V.",
+    "founded": "1907",
+    "ground": "Jahnstadion Regensburg"
+  },
+  {
+    "id": "fc_schalke_04",
+    "name": "FC Schalke 04",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/fc_schalke_04.png",
+    "full_name": "Fußballclub Gelsenkirchen-Schalke 04 e. V.",
+    "founded": "1904",
+    "ground": "Veltins-Arena, ,, Gelsenkirchen"
+  },
+  {
+    "id": "ssv_ulm_1846",
+    "name": "SSV Ulm 1846",
+    "league": "2. Bundesliga",
+    "img": "./assets/football_clubs_png/ssv_ulm_1846.png",
+    "full_name": "SSV Ulm 1846 FUSSBALL e.V.",
+    "founded": "1846",
+    "ground": "Donaustadion"
+  },
+  {
+    "id": "ssc_bari",
+    "name": "SSC Bari",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/ssc_bari.png",
+    "full_name": "Società Sportiva Calcio Bari, SpA, ",
+    "founded": "1908",
+    "ground": "Stadio Comunale San Nicola"
+  },
+  {
+    "id": "brescia_calcio",
+    "name": "Brescia Calcio",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/brescia_calcio.png",
+    "full_name": "Brescia Calcio, S.p.A.",
+    "founded": "1911",
+    "ground": "Stadio Mario Rigamonti"
+  },
+  {
+    "id": "carrarese_calcio_1908",
+    "name": "Carrarese Calcio 1908",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/carrarese_calcio_1908.png",
+    "full_name": "Carrarese Calcio 1908, S.r.l.",
+    "founded": "1908",
+    "ground": "Stadio dei Marmi - IV Olimpionici Azzurri"
+  },
+  {
+    "id": "us_catanzaro_1929",
+    "name": "US Catanzaro 1929",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/us_catanzaro_1929.png",
+    "full_name": "Unione Sportiva Catanzaro 1929, ",
+    "founded": "1929",
+    "ground": "Stadio Nicola Ceravolo"
+  },
+  {
+    "id": "cesena_fc",
+    "name": "Cesena FC",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/cesena_fc.png",
+    "full_name": "Cesena Football Club",
+    "founded": "1940",
+    "ground": "Orogel Stadium - Dino Manuzzi"
+  },
+  {
+    "id": "as_cittadella",
+    "name": "AS Cittadella",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/as_cittadella.png",
+    "full_name": "Associazione Sportiva Cittadella, S.r.l.",
+    "founded": "1973",
+    "ground": "Stadio Pier Cesare Tombolato"
+  },
+  {
+    "id": "cosenza_calcio",
+    "name": "Cosenza Calcio",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/cosenza_calcio.png",
+    "full_name": "Cosenza Calcio S.r.l.",
+    "founded": "1926",
+    "ground": "Stadio San Vito-Gigi Marulla"
+  },
+  {
+    "id": "us_cremonese",
+    "name": "US Cremonese",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/us_cremonese.png",
+    "full_name": "Unione Sportiva Cremonese, S.p.A.",
+    "founded": "1903",
+    "ground": "Stadio Giovanni Zini"
+  },
+  {
+    "id": "frosinone_calcio",
+    "name": "Frosinone Calcio",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/frosinone_calcio.png",
+    "full_name": "Frosinone Calcio, S.r.l.",
+    "founded": "1906",
+    "ground": "Stadio Benito Stirpe"
+  },
+  {
+    "id": "ss_juve_stabia",
+    "name": "SS Juve Stabia",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/ss_juve_stabia.png",
+    "full_name": "Società Sportiva Juve Stabia",
+    "founded": "1907",
+    "ground": "Stadio Comunale Romeo Menti"
+  },
+  {
+    "id": "mantova_1911",
+    "name": "Mantova 1911",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/mantova_1911.png",
+    "full_name": "Mantova 1911, S.r.l.",
+    "founded": "1911",
+    "ground": "Stadio Danilo Martelli – Pata Stadium"
+  },
+  {
+    "id": "modena_fc_2018",
+    "name": "Modena FC 2018",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/modena_fc_2018.png",
+    "full_name": "Modena Football Club 2018, S.r.l.",
+    "founded": "1912",
+    "ground": "Stadio Alberto Braglia"
+  },
+  {
+    "id": "palermo_fc",
+    "name": "Palermo FC",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/palermo_fc.png",
+    "full_name": "Palermo Football Club",
+    "founded": "1900",
+    "ground": "Stadio Renzo Barbera"
+  },
+  {
+    "id": "pisa_sc",
+    "name": "Pisa SC",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/pisa_sc.png",
+    "full_name": "Pisa Sporting Club, S.r.l.",
+    "founded": "1909",
+    "ground": "Cetilar® Arena"
+  },
+  {
+    "id": "ac_reggiana_1919",
+    "name": "AC Reggiana 1919",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/ac_reggiana_1919.png",
+    "full_name": "Associazione Calcio Reggiana, S.r.l.",
+    "founded": "1919",
+    "ground": "MAPEI Stadium - Città del Tricolore"
+  },
+  {
+    "id": "us_salernitana_1919",
+    "name": "US Salernitana 1919",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/us_salernitana_1919.png",
+    "full_name": "Unione Sportiva Salernitana 1919, S.r.l.",
+    "founded": "1919",
+    "ground": "Stadio Arechi, "
+  },
+  {
+    "id": "uc_sampdoria",
+    "name": "UC Sampdoria",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/uc_sampdoria.png",
+    "full_name": "Unione Calcio Sampdoria, S.p.A.",
+    "founded": "1946",
+    "ground": "Stadio Comunale Luigi Ferraris"
+  },
+  {
+    "id": "us_sassuolo_calcio",
+    "name": "US Sassuolo Calcio",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/us_sassuolo_calcio.png",
+    "full_name": "Unione Sportiva Sassuolo, Calcio, S.r.l.",
+    "founded": "1920",
+    "ground": "Mapei Stadium – Città del Tricolore"
+  },
+  {
+    "id": "spezia_calcio",
+    "name": "Spezia Calcio",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/spezia_calcio.png",
+    "full_name": "Spezia Calcio",
+    "founded": "1906",
+    "ground": "Stadio Alberto Picco"
+  },
+  {
+    "id": "fc_s_dtirol",
+    "name": "FC Südtirol",
+    "league": "Serie B",
+    "img": "./assets/football_clubs_png/fc_s_dtirol.png",
+    "full_name": "Fußball Club Südtirol s.r.l.",
+    "founded": "1974",
+    "ground": "Stadio Marco Druso"
+  },
+  {
+    "id": "albacete_balompi",
+    "name": "Albacete Balompié",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/albacete_balompi.png",
+    "full_name": "Albacete Balompié, S.A.D.",
+    "founded": "1939",
+    "ground": "Estadio Carlos Belmonte"
+  },
+  {
+    "id": "ud_almer_a",
+    "name": "UD Almería",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/ud_almer_a.png",
+    "full_name": "Unión Deportiva Almería, S.A.D.",
+    "founded": "1989",
+    "ground": "UD Almería Stadium"
+  },
+  {
+    "id": "burgos_cf",
+    "name": "Burgos",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/burgos_cf.png",
+    "full_name": "Burgos Club de Fútbol, S.A.D.",
+    "founded": "1985",
+    "ground": "Estadio Municipal El Plantío"
+  },
+  {
+    "id": "c_diz_cf",
+    "name": "Cádiz",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/c_diz_cf.png",
+    "full_name": "Cádiz Club de Fútbol,, S.A.D.",
+    "founded": "1910",
+    "ground": "Estadio Nuevo Mirandilla"
+  },
+  {
+    "id": "fc_cartagena",
+    "name": "FC Cartagena",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/fc_cartagena.png",
+    "full_name": "Fútbol Club Cartagena, S.A.D.",
+    "founded": "1995",
+    "ground": "Estadio Municipal Cartagonova"
+  },
+  {
+    "id": "cd_castell_n",
+    "name": "CD Castellón",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/cd_castell_n.png",
+    "full_name": "Club Deportivo Castellón, S.A.D.",
+    "founded": "1922",
+    "ground": "Estadio SkyFi Castalia"
+  },
+  {
+    "id": "c_rdoba_cf",
+    "name": "Córdoba",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/c_rdoba_cf.png",
+    "full_name": "Córdoba Club de Fútbol (Unión Futbolística Cordobesa, S.A.D.)",
+    "founded": "1954",
+    "ground": "Estadio Bahrain Victorious Nuevo Arcángel de Córdoba"
+  },
+  {
+    "id": "deportivo_de_la_coru_a",
+    "name": "Deportivo de La Coruña",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/deportivo_de_la_coru_a.png",
+    "full_name": "Real Club Deportivo de La Coruña, S.A.D.",
+    "founded": "1906",
+    "ground": "Riazor"
+  },
+  {
+    "id": "sd_eibar",
+    "name": "SD Eibar",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/sd_eibar.png",
+    "full_name": "Sociedad Deportiva Eibar, S.A.D.",
+    "founded": "1940",
+    "ground": "Estadio Municipal de Ipurúa"
+  },
+  {
+    "id": "elche_cf",
+    "name": "Elche",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/elche_cf.png",
+    "full_name": "Elche Club de Fútbol, S.A.D.",
+    "founded": "1923",
+    "ground": "Estadio Martínez Valero"
+  },
+  {
+    "id": "cd_eldense",
+    "name": "CD Eldense",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/cd_eldense.png",
+    "full_name": "Club Deportivo Eldense",
+    "founded": "1921",
+    "ground": "Estadio Municipal Nuevo Pepico Amat, ,, Elda, ,, Valencia, , Spain"
+  },
+  {
+    "id": "granada_cf",
+    "name": "Granada",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/granada_cf.png",
+    "full_name": "Granada Club de Fútbol",
+    "founded": "1931",
+    "ground": "Estadio Nuevo Los Cármenes"
+  },
+  {
+    "id": "sd_huesca",
+    "name": "SD Huesca",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/sd_huesca.png",
+    "full_name": "Sociedad Deportiva Huesca, S.A.D., ",
+    "founded": "1960",
+    "ground": "Estadio El Alcoraz"
+  },
+  {
+    "id": "levante_ud",
+    "name": "Levante UD",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/levante_ud.png",
+    "full_name": "Levante Unión Deportiva, S.A.D.",
+    "founded": "1909",
+    "ground": "Estadio Ciutat de València"
+  },
+  {
+    "id": "m_laga_cf",
+    "name": "Málaga",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/m_laga_cf.png",
+    "full_name": "Málaga Club de Fútbol, S.A.D.",
+    "founded": "1948",
+    "ground": "La Rosaleda"
+  },
+  {
+    "id": "cd_mirand_s",
+    "name": "CD Mirandés",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/cd_mirand_s.png",
+    "full_name": "Club Deportivo Mirandés",
+    "founded": "1927",
+    "ground": "Estadio Municipal de Anduva"
+  },
+  {
+    "id": "real_oviedo",
+    "name": "Real Oviedo",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/real_oviedo.png",
+    "full_name": "Real Oviedo, S.A.D.",
+    "founded": "1926",
+    "ground": "Estadio Carlos Tartiere"
+  },
+  {
+    "id": "racing_de_ferrol",
+    "name": "Racing de Ferrol",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/racing_de_ferrol.png",
+    "full_name": "Racing Club de Ferrol, S.A.D.",
+    "founded": "1919",
+    "ground": "Estadio Municipal de A Malata"
+  },
+  {
+    "id": "racing_de_santander",
+    "name": "Racing de Santander",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/racing_de_santander.png",
+    "full_name": "Real Racing Club de Santander, S.A.D.",
+    "founded": "1913",
+    "ground": "Stadium El Sardinero"
+  },
+  {
+    "id": "sporting_de_gij_n",
+    "name": "Sporting de Gijón",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/sporting_de_gij_n.png",
+    "full_name": "Real Sporting de Gijón,, S.A.D.",
+    "founded": "1905",
+    "ground": "Estadio Municipal El Molinón – Enrique Castro \"Quini\""
+  },
+  {
+    "id": "cd_tenerife",
+    "name": "CD Tenerife",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/cd_tenerife.png",
+    "full_name": "Club Deportivo Tenerife, S.A.D.",
+    "founded": "1922",
+    "ground": "Estadio Heliodoro Rodríguez López"
+  },
+  {
+    "id": "real_zaragoza",
+    "name": "Real Zaragoza",
+    "league": "Segunda División",
+    "img": "./assets/football_clubs_png/real_zaragoza.png",
+    "full_name": "Real Zaragoza,, S.A.D.",
+    "founded": "1932",
+    "ground": "Ibercaja Stadium"
+  },
+  {
+    "id": "afc_ajax",
+    "name": "AFC Ajax",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/afc_ajax.png",
+    "full_name": "Amsterdamsche Football Club Ajax",
+    "founded": "1900",
+    "ground": "Johan Cruyff Arena"
+  },
+  {
+    "id": "almere_city_fc",
+    "name": "Almere City FC",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/almere_city_fc.png",
+    "full_name": "Almere City Football Club",
+    "founded": "2001",
+    "ground": "Yanmar Stadion"
+  },
+  {
+    "id": "az_alkmaar",
+    "name": "AZ Alkmaar",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/az_alkmaar.png",
+    "full_name": "Alkmaar Zaanstreek",
+    "founded": "1967",
+    "ground": "AFAS Stadion"
+  },
+  {
+    "id": "feyenoord",
+    "name": "Feyenoord",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/feyenoord.png",
+    "full_name": "Feyenoord Rotterdam",
+    "founded": "1908",
+    "ground": "De Kuip"
+  },
+  {
+    "id": "fortuna_sittard",
+    "name": "Fortuna Sittard",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/fortuna_sittard.png",
+    "full_name": "Fortuna Sittard",
+    "founded": "1968",
+    "ground": "Fortuna Sittard Stadion"
+  },
+  {
+    "id": "go_ahead_eagles",
+    "name": "Go Ahead Eagles",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/go_ahead_eagles.png",
+    "full_name": "Go Ahead Eagles",
+    "founded": "1902",
+    "ground": "De Adelaarshorst"
+  },
+  {
+    "id": "fc_groningen",
+    "name": "FC Groningen",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/fc_groningen.png",
+    "full_name": "Football Club Groningen",
+    "founded": "1971",
+    "ground": "Euroborg"
+  },
+  {
+    "id": "sc_heerenveen",
+    "name": "SC Heerenveen",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/sc_heerenveen.png",
+    "full_name": "Sportclub Heerenveen",
+    "founded": "1920",
+    "ground": "Abe Lenstra Stadion"
+  },
+  {
+    "id": "heracles_almelo",
+    "name": "Heracles Almelo",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/heracles_almelo.png",
+    "full_name": "Heracles Almelo",
+    "founded": "1903",
+    "ground": "Asito Stadion"
+  },
+  {
+    "id": "nac_breda",
+    "name": "NAC Breda",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/nac_breda.png",
+    "full_name": "N, ooit opgeven altijd doorzetten,, A, angenaam door vermaak en nuttig door ontspanning,, C, ombinatie Breda",
+    "founded": "1912",
+    "ground": "Rat Verlegh Stadion, Breda, , Netherlands"
+  },
+  {
+    "id": "nec_nijmegen",
+    "name": "NEC Nijmegen",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/nec_nijmegen.png",
+    "full_name": "Nijmegen Eendracht Combinatie (Nijmegen Unity Combination)",
+    "founded": "1900",
+    "ground": "Goffertstadion"
+  },
+  {
+    "id": "pec_zwolle",
+    "name": "PEC Zwolle",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/pec_zwolle.png",
+    "full_name": "Prins Hendrik, Ende Desespereert Nimmer, Combinatie Zwolle, , ",
+    "founded": "1910",
+    "ground": "MAC³PARK Stadion"
+  },
+  {
+    "id": "psv_eindhoven",
+    "name": "PSV Eindhoven",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/psv_eindhoven.png",
+    "full_name": "Philips Sport Vereniging, NV",
+    "founded": "1913",
+    "ground": "Philips Stadion"
+  },
+  {
+    "id": "rkc_waalwijk",
+    "name": "RKC Waalwijk",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/rkc_waalwijk.png",
+    "full_name": "Rooms Katholieke Combinatie Waalwijk",
+    "founded": "1940",
+    "ground": "Mandemakers Stadion"
+  },
+  {
+    "id": "sparta_rotterdam",
+    "name": "Sparta Rotterdam",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/sparta_rotterdam.png",
+    "full_name": "Sparta Rotterdam",
+    "founded": "1888",
+    "ground": "Sparta Stadion"
+  },
+  {
+    "id": "fc_twente",
+    "name": "FC Twente",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/fc_twente.png",
+    "full_name": "Football Club Twente",
+    "founded": "1965",
+    "ground": "De Grolsch Veste"
+  },
+  {
+    "id": "fc_utrecht",
+    "name": "FC Utrecht",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/fc_utrecht.png",
+    "full_name": "Football Club Utrecht",
+    "founded": "1970",
+    "ground": "Stadion Galgenwaard"
+  },
+  {
+    "id": "willem_ii__football_club",
+    "name": "Willem II (football club)",
+    "league": "Eredivisie",
+    "img": "./assets/football_clubs_png/willem_ii__football_club.png",
+    "full_name": "Willem II Tilburg",
+    "founded": "1896",
+    "ground": "Koning Willem II Stadion"
+  },
+  {
+    "id": "f_c__arouca",
+    "name": "F.C. Arouca",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/f_c__arouca.png",
+    "full_name": "Futebol Clube de Arouca",
+    "founded": "1951",
+    "ground": "Estádio Municipal"
+  },
+  {
+    "id": "avs_futebol_sad",
+    "name": "AVS Futebol SAD",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/avs_futebol_sad.png",
+    "full_name": "AVS Futebol SAD",
+    "founded": "2023",
+    "ground": "Estádio do CD Aves, ,, Vila das Aves"
+  },
+  {
+    "id": "s_l__benfica",
+    "name": "S.L. Benfica",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/s_l__benfica.png",
+    "full_name": "Sport Lisboa e Benfica",
+    "founded": "1904",
+    "ground": "Estádio da Luz"
+  },
+  {
+    "id": "boavista_f_c",
+    "name": "Boavista",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/boavista_f_c.png",
+    "full_name": "Boavista Futebol Clube",
+    "founded": "1903",
+    "ground": "Estádio do Bessa"
+  },
+  {
+    "id": "s_c__braga",
+    "name": "S.C. Braga",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/s_c__braga.png",
+    "full_name": "Sporting Clube de Braga",
+    "founded": "1921",
+    "ground": "Estádio Municipal de Braga"
+  },
+  {
+    "id": "casa_pia_a_c",
+    "name": "Casa Pia A.C.",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/casa_pia_a_c.png",
+    "founded": "1920",
+    "ground": "Estádio Pina Manique,, Lisbon, (currently playing in, Estádio Municipal de Rio Maior, )"
+  },
+  {
+    "id": "g_d__estoril_praia",
+    "name": "G.D. Estoril Praia",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/g_d__estoril_praia.png",
+    "full_name": "Grupo Desportivo Estoril Praia",
+    "founded": "1939",
+    "ground": "Estádio António Coimbra da Mota"
+  },
+  {
+    "id": "c_f__estrela_da_amadora",
+    "name": "C.F. Estrela da Amadora",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/c_f__estrela_da_amadora.png",
+    "full_name": "Club Football Estrela da Amadora SAD",
+    "founded": "2020",
+    "ground": "Estádio José Gomes"
+  },
+  {
+    "id": "f_c__famalic_o",
+    "name": "F.C. Famalicão",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/f_c__famalic_o.png",
+    "full_name": "Futebol Clube de Famalicão",
+    "founded": "1931",
+    "ground": "Estádio Municipal 22 de Junho, Vila Nova de Famalicão"
+  },
+  {
+    "id": "s_c__farense",
+    "name": "S.C. Farense",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/s_c__farense.png",
+    "full_name": "Sporting Clube Farense",
+    "founded": "1910",
+    "ground": "Estádio de São Luís"
+  },
+  {
+    "id": "gil_vicente_f_c",
+    "name": "Gil Vicente",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/gil_vicente_f_c.png",
+    "full_name": "Gil Vicente Futebol Clube",
+    "founded": "1924",
+    "ground": "Estádio Cidade de Barcelos"
+  },
+  {
+    "id": "moreirense_f_c",
+    "name": "Moreirense",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/moreirense_f_c.png",
+    "full_name": "Moreirense Futebol Clube",
+    "founded": "1938",
+    "ground": "Parque de Jogos Comendador Joaquim de Almeida Freitas"
+  },
+  {
+    "id": "c_d__nacional",
+    "name": "C.D. Nacional",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/c_d__nacional.png",
+    "full_name": "Clube Desportivo Nacional",
+    "founded": "1910",
+    "ground": "Estádio da Madeira"
+  },
+  {
+    "id": "fc_porto",
+    "name": "FC Porto",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/fc_porto.png",
+    "full_name": "Futebol Clube do Porto",
+    "founded": "1893",
+    "ground": "Estádio do Dragão"
+  },
+  {
+    "id": "rio_ave_f_c",
+    "name": "Rio Ave",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/rio_ave_f_c.png",
+    "full_name": "Rio Ave Futebol Clube",
+    "founded": "1939",
+    "ground": "Estádio dos Arcos"
+  },
+  {
+    "id": "c_d__santa_clara",
+    "name": "C.D. Santa Clara",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/c_d__santa_clara.png",
+    "full_name": "Clube Desportivo Santa Clara",
+    "founded": "1921",
+    "ground": "Estádio de São Miguel, ,, Ponta Delgada, ,, Portugal"
+  },
+  {
+    "id": "sporting_cp",
+    "name": "Sporting CP",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/sporting_cp.png",
+    "full_name": "Sporting Clube de Portugal",
+    "founded": "1906",
+    "ground": "Estádio José Alvalade"
+  },
+  {
+    "id": "vit_ria_s_c",
+    "name": "Vitória S.C.",
+    "league": "Primeira Liga",
+    "img": "./assets/football_clubs_png/vit_ria_s_c.png",
+    "full_name": "Vitória Sport Clube",
+    "founded": "1922",
+    "ground": "Estádio D. Afonso Henriques"
+  },
+  {
+    "id": "adana_demirspor",
+    "name": "Adana Demirspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/adana_demirspor.png",
+    "full_name": "Adana Demirspor Kulübü, A.Ş.",
+    "founded": "1940",
+    "ground": "New Adana Stadium"
+  },
+  {
+    "id": "alanyaspor",
+    "name": "Alanyaspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/alanyaspor.png",
+    "full_name": "Alanyaspor Kulübü",
+    "founded": "1948",
+    "ground": "Alanya Oba Stadium, "
+  },
+  {
+    "id": "antalyaspor",
+    "name": "Antalyaspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/antalyaspor.png",
+    "full_name": "Antalyaspor Kulübü, A.Ş.",
+    "founded": "1966",
+    "ground": "Antalya Stadium"
+  },
+  {
+    "id": "stanbul_ba_ak_ehir_f_k",
+    "name": "İstanbul Başakşehir F.K.",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/stanbul_ba_ak_ehir_f_k.png",
+    "full_name": "İstanbul Başakşehir Futbol Kulübü",
+    "founded": "1990",
+    "ground": "Başakşehir Fatih Terim Stadium"
+  },
+  {
+    "id": "be_ikta__j_k",
+    "name": "Beşiktaş J.K.",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/be_ikta__j_k.png",
+    "full_name": "Beşiktaş Jimnastik Kulübü, ",
+    "founded": "1903",
+    "ground": "Beşiktaş Stadium"
+  },
+  {
+    "id": "bodrum_f_k",
+    "name": "Bodrum F.K.",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/bodrum_f_k.png",
+    "full_name": "Bodrum Futbol Kulübü, A.Ş.",
+    "founded": "1931",
+    "ground": "Grey Beton Bodrum Stadyumu, "
+  },
+  {
+    "id": "ey_pspor",
+    "name": "Eyüpspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/ey_pspor.png",
+    "full_name": "Eyüpspor Kulübü",
+    "founded": "1919",
+    "ground": "Recep Tayyip Erdoğan Stadium, ,, Istanbul"
+  },
+  {
+    "id": "fenerbah_e_s_k___football",
+    "name": "Fenerbahçe S.K. (football)",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/fenerbah_e_s_k___football.png",
+    "full_name": "Fenerbahçe Spor Kulübü",
+    "founded": "1907",
+    "ground": "Şükrü Saracoğlu Stadium"
+  },
+  {
+    "id": "galatasaray_s_k___footbal",
+    "name": "Galatasaray S.K. (football)",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/galatasaray_s_k___footbal.png",
+    "full_name": "Galatasaray Spor Kulübü",
+    "founded": "1905",
+    "ground": "Rams Park"
+  },
+  {
+    "id": "gaziantep_f_k",
+    "name": "Gaziantep F.K.",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/gaziantep_f_k.png",
+    "full_name": "Gaziantep Futbol Kulübü, A.Ş., ",
+    "founded": "1988",
+    "ground": "Gaziantep Stadium"
+  },
+  {
+    "id": "g_ztepe_s_k",
+    "name": "Göztepe S.K.",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/g_ztepe_s_k.png",
+    "full_name": "Göztepe Spor Kulübü",
+    "founded": "1925",
+    "ground": "Gürsel Aksel Stadium, "
+  },
+  {
+    "id": "hatayspor",
+    "name": "Hatayspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/hatayspor.png",
+    "full_name": "Hatayspor Kulübü",
+    "founded": "1967",
+    "ground": "Sarıseki Fuat Tosyalı Sports Complex (temporary venue)"
+  },
+  {
+    "id": "kas_mpa_a_s_k",
+    "name": "Kasımpaşa S.K.",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/kas_mpa_a_s_k.png",
+    "full_name": "Kasımpaşa Sportif Faaliyetler, A.Ş.",
+    "founded": "1921",
+    "ground": "Recep Tayyip Erdoğan Stadium"
+  },
+  {
+    "id": "kayserispor",
+    "name": "Kayserispor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/kayserispor.png",
+    "full_name": "Kayserispor Futbol, A.Ş., , ",
+    "founded": "1966",
+    "ground": "RHG EnerTürk Enerji, "
+  },
+  {
+    "id": "konyaspor",
+    "name": "Konyaspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/konyaspor.png",
+    "full_name": "Konyaspor Kulübü",
+    "founded": "1922",
+    "ground": "Konya Municipality Stadium"
+  },
+  {
+    "id": "aykur_rizespor",
+    "name": "Çaykur Rizespor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/aykur_rizespor.png",
+    "full_name": "Çaykur Rize Gençlik ve Spor Kulübü Derneği, ",
+    "founded": "1953",
+    "ground": "Rize City Stadium"
+  },
+  {
+    "id": "samsunspor",
+    "name": "Samsunspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/samsunspor.png",
+    "full_name": "Samsunspor Futbol Kulübü, A.Ş., ",
+    "founded": "1965",
+    "ground": "19 Mayıs Stadium"
+  },
+  {
+    "id": "sivasspor",
+    "name": "Sivasspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/sivasspor.png",
+    "full_name": "Sivasspor Kulübü",
+    "founded": "1967",
+    "ground": "Sivas 4 Eylül Stadium"
+  },
+  {
+    "id": "trabzonspor",
+    "name": "Trabzonspor",
+    "league": "Süper Lig",
+    "img": "./assets/football_clubs_png/trabzonspor.png",
+    "full_name": "Trabzonspor Kulübü",
+    "founded": "1967",
+    "ground": "Papara Park"
+  },
+  {
+    "id": "atlanta_united_fc",
+    "name": "Atlanta United FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/atlanta_united_fc.png",
+    "full_name": "Atlanta United FC",
+    "founded": "2014",
+    "ground": "Mercedes-Benz Stadium"
+  },
+  {
+    "id": "austin_fc",
+    "name": "Austin FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/austin_fc.png",
+    "founded": "2018",
+    "ground": "Q2 Stadium, Austin, Texas"
+  },
+  {
+    "id": "charlotte_fc",
+    "name": "Charlotte FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/charlotte_fc.png",
+    "full_name": "Charlotte Football Club",
+    "founded": "2019",
+    "ground": "Bank of America Stadium, Charlotte, North Carolina"
+  },
+  {
+    "id": "chicago_fire_fc",
+    "name": "Chicago Fire FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/chicago_fire_fc.png",
+    "founded": "1997",
+    "ground": "Soldier Field, Chicago, Illinois"
+  },
+  {
+    "id": "fc_cincinnati",
+    "name": "FC Cincinnati",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/fc_cincinnati.png",
+    "full_name": "Football Club Cincinnati, , ",
+    "founded": "2015",
+    "ground": "TQL Stadium, Cincinnati, Ohio"
+  },
+  {
+    "id": "colorado_rapids",
+    "name": "Colorado Rapids",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/colorado_rapids.png",
+    "founded": "1995",
+    "ground": "Dick's Sporting Goods Park, Commerce City, Colorado"
+  },
+  {
+    "id": "columbus_crew",
+    "name": "Columbus Crew",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/columbus_crew.png",
+    "full_name": "Columbus Crew, ",
+    "founded": "1994",
+    "ground": "ScottsMiracle-Gro Field, Columbus, Ohio"
+  },
+  {
+    "id": "fc_dallas",
+    "name": "FC Dallas",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/fc_dallas.png",
+    "founded": "1995",
+    "ground": "Toyota Stadium, Frisco, Texas"
+  },
+  {
+    "id": "d_c__united",
+    "name": "D.C. United",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/d_c__united.png",
+    "founded": "1994",
+    "ground": "Audi Field, Washington, D.C."
+  },
+  {
+    "id": "houston_dynamo_fc",
+    "name": "Houston Dynamo FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/houston_dynamo_fc.png",
+    "founded": "2005",
+    "ground": "Shell Energy Stadium, Houston, Texas"
+  },
+  {
+    "id": "la_galaxy",
+    "name": "LA Galaxy",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/la_galaxy.png",
+    "founded": "1994",
+    "ground": "Dignity Health Sports Park, Carson, California"
+  },
+  {
+    "id": "los_angeles_fc",
+    "name": "Los Angeles FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/los_angeles_fc.png",
+    "full_name": "Los Angeles Football Club",
+    "founded": "2014",
+    "ground": "BMO Stadium, Los Angeles, California"
+  },
+  {
+    "id": "minnesota_united_fc",
+    "name": "Minnesota United FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/minnesota_united_fc.png",
+    "full_name": "Minnesota United Football Club",
+    "founded": "2015",
+    "ground": "Allianz Field, Saint Paul, Minnesota"
+  },
+  {
+    "id": "inter_miami_cf",
+    "name": "Inter Miami",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/inter_miami_cf.png",
+    "full_name": "Club Internacional de Fútbol Miami",
+    "founded": "2018",
+    "ground": "Chase Stadium, Fort Lauderdale, Florida"
+  },
+  {
+    "id": "cf_montr_al",
+    "name": "CF Montréal",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/cf_montr_al.png",
+    "full_name": "CF Montréal",
+    "founded": "1992",
+    "ground": "Saputo Stadium"
+  },
+  {
+    "id": "nashville_sc",
+    "name": "Nashville SC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/nashville_sc.png",
+    "full_name": "Nashville Soccer Club",
+    "founded": "2016",
+    "ground": "Geodis Park, Nashville, Tennessee"
+  },
+  {
+    "id": "new_england_revolution",
+    "name": "New England Revolution",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/new_england_revolution.png",
+    "full_name": "New England Revolution",
+    "founded": "1994",
+    "ground": "Gillette Stadium"
+  },
+  {
+    "id": "new_york_city_fc",
+    "name": "New York City FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/new_york_city_fc.png",
+    "full_name": "New York City Football Club, ",
+    "founded": "2013",
+    "ground": "Yankee Stadium, ,, The Bronx, New York, Citi Field, ,, Queens, New York, "
+  },
+  {
+    "id": "new_york_red_bulls",
+    "name": "New York Red Bulls",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/new_york_red_bulls.png",
+    "full_name": "Red Bull New York",
+    "founded": "1994",
+    "ground": "Sports Illustrated Stadium, Harrison, New Jersey, , U.S."
+  },
+  {
+    "id": "orlando_city_sc",
+    "name": "Orlando City SC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/orlando_city_sc.png",
+    "founded": "2010",
+    "ground": "Inter&Co Stadium, Orlando, Florida"
+  },
+  {
+    "id": "philadelphia_union",
+    "name": "Philadelphia Union",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/philadelphia_union.png",
+    "full_name": "Philadelphia Union",
+    "founded": "2008",
+    "ground": "Subaru Park"
+  },
+  {
+    "id": "portland_timbers",
+    "name": "Portland Timbers",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/portland_timbers.png",
+    "founded": "2000",
+    "ground": "Providence Park"
+  },
+  {
+    "id": "real_salt_lake",
+    "name": "Real Salt Lake",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/real_salt_lake.png",
+    "founded": "2004",
+    "ground": "America First Field, Sandy, Utah"
+  },
+  {
+    "id": "san_jose_earthquakes",
+    "name": "San Jose Earthquakes",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/san_jose_earthquakes.png",
+    "founded": "1994",
+    "ground": "PayPal Park, San Jose, ,, California"
+  },
+  {
+    "id": "seattle_sounders_fc",
+    "name": "Seattle Sounders FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/seattle_sounders_fc.png",
+    "founded": "2007",
+    "ground": "Lumen Field"
+  },
+  {
+    "id": "sporting_kansas_city",
+    "name": "Sporting Kansas City",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/sporting_kansas_city.png",
+    "full_name": "Sporting Kansas City, , ",
+    "founded": "1995",
+    "ground": "Sporting Park, Kansas City, Kansas"
+  },
+  {
+    "id": "st__louis_city_sc",
+    "name": "St. Louis City SC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/st__louis_city_sc.png",
+    "full_name": "St. Louis City Soccer Club, ",
+    "founded": "2019",
+    "ground": "Energizer Park, St. Louis, Missouri"
+  },
+  {
+    "id": "toronto_fc",
+    "name": "Toronto FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/toronto_fc.png",
+    "full_name": "Toronto Football Club",
+    "founded": "2005",
+    "ground": "BMO Field, Toronto, , Ontario"
+  },
+  {
+    "id": "vancouver_whitecaps_fc",
+    "name": "Vancouver Whitecaps FC",
+    "league": "MLS",
+    "img": "./assets/football_clubs_png/vancouver_whitecaps_fc.png",
+    "founded": "1973",
+    "ground": "BC Place, ,, Vancouver"
+  },
+  {
+    "id": "al_ahli_saudi_fc",
+    "name": "Al-Ahli Saudi FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_ahli_saudi_fc.png",
+    "full_name": "AL AHLI Saudi Football Club ltd.",
+    "founded": "1937",
+    "ground": "King Abdullah Sports City, Prince Abdullah Al-Faisal Sports City, (selected matches)"
+  },
+  {
+    "id": "al_ettifaq_fc",
+    "name": "Al-Ettifaq FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_ettifaq_fc.png",
+    "full_name": "Al-Ettifaq Club",
+    "founded": "1945",
+    "ground": "EGO STADIUM, Dammam, ,, Saudi Arabia"
+  },
+  {
+    "id": "al_fateh_sc",
+    "name": "Al Fateh SC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_fateh_sc.png",
+    "full_name": "Al-Fateh Sports Club",
+    "founded": "1958",
+    "ground": "Al-Fateh Stadium"
+  },
+  {
+    "id": "al_fayha_fc",
+    "name": "Al-Fayha FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_fayha_fc.png",
+    "full_name": "Al-Fayha Club",
+    "founded": "1953",
+    "ground": "Al-Majma'ah Sports City Stadium"
+  },
+  {
+    "id": "al_hilal_sfc",
+    "name": "Al Hilal SFC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_hilal_sfc.png",
+    "full_name": "Al Hilal Saudi Football Club",
+    "founded": "1957",
+    "ground": "Kingdom Arena"
+  },
+  {
+    "id": "al_ittihad_club__jeddah",
+    "name": "Al-Ittihad Club (Jeddah)",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_ittihad_club__jeddah.png",
+    "full_name": "Al-Ittihad Saudi Football Club",
+    "founded": "1927",
+    "ground": "King Abdullah Sports City, Prince Abdullah Al-Faisal Sports City, (selected matches)"
+  },
+  {
+    "id": "al_khaleej_fc",
+    "name": "Al-Khaleej FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_khaleej_fc.png",
+    "full_name": "Khaleej Club",
+    "founded": "1945",
+    "ground": "Prince Nayef Sports City Stadium, Qatif, ,, Saudi Arabia"
+  },
+  {
+    "id": "al_kholood_club",
+    "name": "Al-Kholood Club",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_kholood_club.png",
+    "full_name": "Al-Kholood Club",
+    "founded": "1970",
+    "ground": "Al-Hazem Club Stadium, Ar Rass, ,, Saudi Arabia"
+  },
+  {
+    "id": "al_nassr_fc",
+    "name": "Al Nassr FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_nassr_fc.png",
+    "full_name": "Al-Nassr Football Club",
+    "founded": "1955",
+    "ground": "Al-Awwal Park"
+  },
+  {
+    "id": "al_okhdood_club",
+    "name": "Al-Okhdood Club",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_okhdood_club.png",
+    "full_name": "Al-Okhdood Club",
+    "founded": "1976",
+    "ground": "Prince Hathloul bin Abdulaziz Sports City"
+  },
+  {
+    "id": "al_orobah_fc",
+    "name": "Al-Orobah FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_orobah_fc.png",
+    "full_name": "Al Oroubah Football Club",
+    "founded": "1975",
+    "ground": "Al-Orobah Club Stadium"
+  },
+  {
+    "id": "al_qadsiah_fc",
+    "name": "Al Qadsiah FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_qadsiah_fc.png",
+    "full_name": "Al-Qadsiah Saudi Football Club",
+    "founded": "1967",
+    "ground": "Prince Mohamed bin Fahd Stadium, Dammam, ,, Saudi Arabia, (, Aramco Stadium, planned)"
+  },
+  {
+    "id": "al_raed_fc",
+    "name": "Al Raed FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_raed_fc.png",
+    "full_name": "Al Raed Saudi Football Club",
+    "founded": "1954",
+    "ground": "King Abdullah Sport City Stadium, ,, Buraidah, , Saudi Arabia"
+  },
+  {
+    "id": "al_riyadh_sc",
+    "name": "Al-Riyadh SC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_riyadh_sc.png",
+    "full_name": "Al-Riyadh Saudi Club, ",
+    "founded": "1953",
+    "ground": "Prince Turki bin Abdul Aziz Stadium"
+  },
+  {
+    "id": "al_shabab_fc__riyadh",
+    "name": "Al Shabab FC (Riyadh)",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_shabab_fc__riyadh.png",
+    "full_name": "Al-Shabab Saudi Football Club",
+    "founded": "1947",
+    "ground": "Al-Shabab Club Stadium, ,, Riyadh"
+  },
+  {
+    "id": "al_taawoun_fc",
+    "name": "Al Taawoun FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_taawoun_fc.png",
+    "full_name": "Al-Taawoun Football Club",
+    "founded": "1956",
+    "ground": "King Abdullah Sport City Stadium, ,, Al-Taawoun Stadium, ,, Al-Qassim, , Saudi Arabia"
+  },
+  {
+    "id": "al_wehda_fc",
+    "name": "Al Wehda FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/al_wehda_fc.png",
+    "full_name": "Al-Wehda Football Club",
+    "founded": "1916",
+    "ground": "King Abdulaziz Sports City"
+  },
+  {
+    "id": "damac_fc",
+    "name": "Damac FC",
+    "league": "Saudi Pro League",
+    "img": "./assets/football_clubs_png/damac_fc.png",
+    "full_name": "Damac Club",
+    "founded": "1972",
+    "ground": "Al-Mahalah Stadium, ,, Damac Club Stadium, ,, Asir Province, ,, Saudi Arabia"
+  }
+]

@@ -12,7 +12,8 @@ window.GameState = {
     isProcessing: false,
     myChart: null,
     footballDifficulty: 'easy',
-    isFootballSubMenu: false
+    isFootballSubMenu: false,
+    isSprintSubMenu: false
 };
 
 // 获取数据引用（简化访问）

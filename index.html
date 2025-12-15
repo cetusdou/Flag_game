@@ -21,8 +21,8 @@
 </div>
 
 <div class="container active" id="view-landing">
-    <h1>🌍 地理大师</h1>
-    <p style="color:#aaa; margin-bottom:30px;">请选择挑战区域</p>
+    <h1>答题大师</h1>
+    <p style="color:#aaa; margin-bottom:30px;">请选择挑战</p>
     
     <div class="landing-grid">
         <div class="landing-card world" onclick="enterGameScope('world')">
@@ -42,6 +42,10 @@
             <h2>体育模式</h2>
             <p>F1赛道 · 足球俱乐部<br>多种体育挑战</p>
         </div>
+    </div>
+    
+    <div class="author-info">
+        <p>@Cetus</p>
     </div>
 </div>
 
@@ -125,6 +129,7 @@
     <div class="header">
         <span id="game-mode-label">模式</span>
         <span>得分: <b id="score-display" style="color:#4CAF50">0</b> | 剩余: <b id="remaining-questions" style="color:#87CEEB">0</b></span>
+        <span id="countdown-display" style="display:none; color:#FF6B6B; font-weight:bold; font-size:1.1rem;">15</span>
         <button class="exit-btn" onclick="goHome()">退出</button>
     </div>
     <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>

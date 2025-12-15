@@ -21,7 +21,7 @@ async function initGameData() {
             fetch('./data/world_name_map.json'),
             fetch('./data/countries_wiki_extra.json'),
             fetch('./data/f1_tracks_final.json'),
-            fetch('./data/football_clubs_europe.json')
+            fetch('./data/football_clubs_hardcore.json')
         ]);
         
         if (res1.ok) {

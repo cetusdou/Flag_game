@@ -15,6 +15,17 @@ function showView(id) {
 function goHome() { 
     window.GameState.isProcessing = false; 
     if (window.closeMap) window.closeMap(); 
+    
+    // 清除极速冲刺倒计时
+    if (window.sprintTimer) {
+        clearInterval(window.sprintTimer);
+        window.sprintTimer = null;
+    }
+    const countdownDisplay = document.getElementById('countdown-display');
+    if (countdownDisplay) {
+        countdownDisplay.style.display = 'none';
+    }
+    
     // 如果在足球子菜单中，返回体育模式主菜单
     if (window.GameState.isFootballSubMenu && window.GameState.currentScope === 'sports') {
         enterGameScope('sports');
@@ -35,7 +46,7 @@ function enterGameScope(scope) {
         document.getElementById('menu-subtitle').textContent = `收录 ${window.GameData.dbWorld.length} 个国家`;
         enableBtn('btn-mode-1', 'mode_1', '📅', '每日挑战', '看国旗，猜首都', '20');
         enableBtn('btn-mode-2', 'mode_2', '🧩', '形状挑战', '看剪影，猜国家', '30');
-        enableBtn('btn-mode-3', 'mode_3', '⚡', '极速冲刺', '快速问答', '50');
+        enableBtn('btn-mode-3', 'sprint_menu', '⚡', '极速冲刺', '选择难度开始挑战', '--');
         enableBtn('btn-mode-all', 'all', '♾️', '全图鉴', '不重复，死磕到底', 'All');
         const compendiumBtn = document.getElementById('compendium-btn');
         const pkModeBtn = document.getElementById('pk-mode-btn');
@@ -78,7 +89,7 @@ function enterFootballSubMenu() {
     enableBtn('btn-mode-1', 'football_easy', '⚽', '简单难度', '遮罩30%，可见范围较大', '20');
     enableBtn('btn-mode-2', 'football_medium', '⚽', '中等难度', '遮罩20%，可见范围适中', '20');
     enableBtn('btn-mode-3', 'football_hard', '⚽', '困难难度', '遮罩10%，仅显示中心', '20');
-    disableBtn('btn-mode-all');
+    enableBtn('btn-mode-all', 'football_hell', '🔥', '地狱难度', '随机旋转+遮罩10%', '20');
     const compendiumBtn = document.getElementById('compendium-btn');
     const pkModeBtn = document.getElementById('pk-mode-btn');
     if (compendiumBtn) compendiumBtn.style.display = 'none';
@@ -91,6 +102,8 @@ function enterFootballSubMenu() {
 function handleBackBtn() {
     if (window.GameState.isFootballSubMenu && window.GameState.currentScope === 'sports') {
         enterGameScope('sports');
+    } else if (window.GameState.isSprintSubMenu && window.GameState.currentScope === 'world') {
+        enterGameScope('world');
     } else {
         showView('view-landing');
     }
@@ -102,6 +115,8 @@ function updateBackButton() {
     if (backBtnText) {
         if (window.GameState.isFootballSubMenu && window.GameState.currentScope === 'sports') {
             backBtnText.textContent = '返回体育模式';
+        } else if (window.GameState.isSprintSubMenu && window.GameState.currentScope === 'world') {
+            backBtnText.textContent = '返回世界模式';
         } else {
             backBtnText.textContent = '切换区域';
         }
@@ -118,7 +133,14 @@ function enableBtn(btnId, modeKey, icon, title, desc, count) {
     if(btnId.includes('1')) btn.classList.add('card-blue');
     if(btnId.includes('2')) btn.classList.add('card-purple');
     if(btnId.includes('3')) btn.classList.add('card-orange');
-    if(btnId.includes('all')) btn.classList.add('card-green');
+    if(btnId.includes('all')) {
+        // 如果是足球模式的地狱难度，使用红色主题
+        if (modeKey === 'football_hell') {
+            btn.classList.add('card-red');
+        } else {
+            btn.classList.add('card-green');
+        }
+    }
 
     document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = title;
     document.getElementById(btnId.replace('btn-', 'txt-') + '-desc').textContent = desc;
@@ -148,6 +170,7 @@ window.showView = showView;
 window.goHome = goHome;
 window.enterGameScope = enterGameScope;
 window.enterFootballSubMenu = enterFootballSubMenu;
+window.enterSprintSubMenu = enterSprintSubMenu;
 window.handleBackBtn = handleBackBtn;
 window.updateBackButton = updateBackButton;
 window.enableBtn = enableBtn;

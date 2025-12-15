@@ -8,7 +8,9 @@
 // 为了兼容性，保留局部变量引用
 let dbWorld, dbPlates, dbF1Tracks, dbFootballClubs, worldNameMap, wikiExtraData;
 let currentScope, gameMode, questionPool, currentQ, score, totalQs, isProcessing, myChart;
-let footballDifficulty, isFootballSubMenu;
+let footballDifficulty, isFootballSubMenu, isSprintSubMenu;
+let sprintTimer = null; // 极速冲刺倒计时定时器
+window.sprintTimer = null; // 暴露到全局，供其他模块使用
 
 // 初始化数据引用（在数据加载完成后调用）
 function initDataReferences() {
@@ -33,6 +35,7 @@ function initDataReferences() {
         myChart = window.GameState.myChart || myChart || null;
         footballDifficulty = window.GameState.footballDifficulty || footballDifficulty || 'easy';
         isFootballSubMenu = window.GameState.isFootballSubMenu !== undefined ? window.GameState.isFootballSubMenu : (isFootballSubMenu || false);
+        isSprintSubMenu = window.GameState.isSprintSubMenu !== undefined ? window.GameState.isSprintSubMenu : (isSprintSubMenu || false);
     }
 }
 
@@ -48,6 +51,7 @@ function syncStateToGameState() {
     window.GameState.myChart = myChart;
     window.GameState.footballDifficulty = footballDifficulty;
     window.GameState.isFootballSubMenu = isFootballSubMenu;
+    window.GameState.isSprintSubMenu = isSprintSubMenu;
 }
 
 // ============================================================================
@@ -59,6 +63,8 @@ function syncStateToGameState() {
 function enterGameScope(scope) {
     initDataReferences(); // 确保数据引用已初始化
     currentScope = scope;
+    isFootballSubMenu = false; // 重置足球子菜单状态
+    isSprintSubMenu = false; // 重置极速冲刺子菜单状态
     syncStateToGameState();
     const isWorld = (scope === 'world');
     const isChina = (scope === 'china');
@@ -69,7 +75,7 @@ function enterGameScope(scope) {
         document.getElementById('menu-subtitle').textContent = `收录 ${dbWorld.length} 个国家`;
         enableBtn('btn-mode-1', 'mode_1', '📅', '每日挑战', '看国旗，猜首都', '20');
         enableBtn('btn-mode-2', 'mode_2', '🧩', '形状挑战', '看剪影，猜国家', '30');
-        enableBtn('btn-mode-3', 'mode_3', '⚡', '极速冲刺', '快速问答', '50');
+        enableBtn('btn-mode-3', 'sprint_menu', '⚡', '极速冲刺', '选择难度开始挑战', '--');
         enableBtn('btn-mode-all', 'all', '♾️', '全图鉴', '不重复，死磕到底', 'All');
         // 显示知识图鉴和PK模式按钮
         const compendiumBtn = document.getElementById('compendium-btn');
@@ -110,12 +116,44 @@ function enterGameScope(scope) {
 
 // --- 模块5.2: 足球子菜单 ---
 function enterFootballSubMenu() {
+    // 如果模块版本存在，使用模块版本
+    if (window.enterFootballSubMenu && window.enterFootballSubMenu !== enterFootballSubMenu) {
+        return window.enterFootballSubMenu();
+    }
+    // 后备实现
+    initDataReferences();
     isFootballSubMenu = true;
+    syncStateToGameState();
     document.getElementById('menu-title').textContent = "⚽ 足球俱乐部挑战";
     document.getElementById('menu-subtitle').textContent = `收录 ${dbFootballClubs.length} 个俱乐部`;
     enableBtn('btn-mode-1', 'football_easy', '⚽', '简单难度', '遮罩30%，可见范围较大', '20');
     enableBtn('btn-mode-2', 'football_medium', '⚽', '中等难度', '遮罩20%，可见范围适中', '20');
     enableBtn('btn-mode-3', 'football_hard', '⚽', '困难难度', '遮罩10%，仅显示中心', '20');
+    enableBtn('btn-mode-all', 'football_hell', '🔥', '地狱难度', '随机旋转+遮罩10%', '20');
+    // 隐藏知识图鉴和PK模式按钮
+    const compendiumBtn = document.getElementById('compendium-btn');
+    const pkModeBtn = document.getElementById('pk-mode-btn');
+    if (compendiumBtn) compendiumBtn.style.display = 'none';
+    if (pkModeBtn) pkModeBtn.style.display = 'none';
+    showView('view-menu');
+    updateBackButton();
+}
+
+// --- 模块5.2: 极速冲刺子菜单 ---
+function enterSprintSubMenu() {
+    // 如果模块版本存在，使用模块版本
+    if (window.enterSprintSubMenu && window.enterSprintSubMenu !== enterSprintSubMenu) {
+        return window.enterSprintSubMenu();
+    }
+    // 后备实现
+    initDataReferences();
+    isSprintSubMenu = true;
+    syncStateToGameState();
+    document.getElementById('menu-title').textContent = "⚡ 极速冲刺";
+    document.getElementById('menu-subtitle').textContent = `选择难度开始挑战`;
+    enableBtn('btn-mode-1', 'mode_3a', '⚡', '简单难度', '4选项，快速问答', '50');
+    enableBtn('btn-mode-2', 'mode_3b', '⚡', '困难难度', '6选项，同区域干扰', '50');
+    disableBtn('btn-mode-3');
     disableBtn('btn-mode-all');
     // 隐藏知识图鉴和PK模式按钮
     const compendiumBtn = document.getElementById('compendium-btn');
@@ -131,6 +169,9 @@ function handleBackBtn() {
     if (isFootballSubMenu && currentScope === 'sports') {
         // 在足球子菜单中，返回体育模式主菜单
         enterGameScope('sports');
+    } else if (isSprintSubMenu && currentScope === 'world') {
+        // 在极速冲刺子菜单中，返回世界模式主菜单
+        enterGameScope('world');
     } else {
         // 否则返回主入口
         showView('view-landing');
@@ -143,6 +184,8 @@ function updateBackButton() {
     if (backBtnText) {
         if (isFootballSubMenu && currentScope === 'sports') {
             backBtnText.textContent = '返回体育模式';
+        } else if (isSprintSubMenu && currentScope === 'world') {
+            backBtnText.textContent = '返回世界模式';
         } else {
             backBtnText.textContent = '切换区域';
         }
@@ -150,6 +193,11 @@ function updateBackButton() {
 }
 
 function enableBtn(btnId, modeKey, icon, title, desc, count) {
+    // 如果模块版本存在，使用模块版本
+    if (window.enableBtn && window.enableBtn !== enableBtn) {
+        return window.enableBtn(btnId, modeKey, icon, title, desc, count);
+    }
+    // 后备实现
     const btn = document.getElementById(btnId);
     if (!btn) return;
     btn.onclick = function() { startGame(modeKey); };
@@ -159,7 +207,14 @@ function enableBtn(btnId, modeKey, icon, title, desc, count) {
     if(btnId.includes('1')) btn.classList.add('card-blue');
     if(btnId.includes('2')) btn.classList.add('card-purple');
     if(btnId.includes('3')) btn.classList.add('card-orange');
-    if(btnId.includes('all')) btn.classList.add('card-green');
+    if(btnId.includes('all')) {
+        // 如果是足球模式的地狱难度，使用红色主题
+        if (modeKey === 'football_hell') {
+            btn.classList.add('card-red');
+        } else {
+            btn.classList.add('card-green');
+        }
+    }
 
     document.getElementById(btnId.replace('btn-', 'txt-') + '-icon').textContent = icon;
     document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = title;
@@ -192,6 +247,10 @@ function startGame(modeKey) {
     // 如果点击的是足球菜单入口，显示足球难度选择
     if (modeKey === 'football_menu' && currentScope === 'sports') {
         enterFootballSubMenu();
+        return;
+    }
+    if (modeKey === 'sprint_menu' && currentScope === 'world') {
+        enterSprintSubMenu();
         return;
     }
     
@@ -260,7 +319,7 @@ function startGame(modeKey) {
             }
         }
         else if (modeKey === 'mode_2') questionPool = sovereignPool.sort(()=>Math.random()-0.5).slice(0, 30);
-        else if (modeKey === 'mode_3') questionPool = pool.sort(()=>Math.random()-0.5).slice(0, 50);
+        else if (modeKey === 'mode_3a' || modeKey === 'mode_3b') questionPool = pool.sort(()=>Math.random()-0.5).slice(0, 50);
         else if (modeKey === 'pk') {
             // PK模式：需要输入种子 - 使用自定义弹窗
             showPKSeedModal();
@@ -279,7 +338,7 @@ function startGame(modeKey) {
             questionPool = dbF1Tracks.sort(()=>Math.random()-0.5).slice(0, 20);
         } else if (gameMode.startsWith('football_')) {
             // 足球模式：看队徽猜俱乐部名（根据难度）
-            footballDifficulty = gameMode.split('_')[1]; // 提取难度：easy, medium, hard
+            footballDifficulty = gameMode.split('_')[1]; // 提取难度：easy, medium, hard, hell
             questionPool = dbFootballClubs.sort(()=>Math.random()-0.5).slice(0, 20);
         }
     }
@@ -312,6 +371,18 @@ function startGame(modeKey) {
 
 function nextRound() {
     initDataReferences(); // 确保数据引用已初始化
+    
+    // 清除之前的倒计时
+    if (sprintTimer) {
+        clearInterval(sprintTimer);
+        sprintTimer = null;
+        window.sprintTimer = null;
+    }
+    const countdownDisplay = document.getElementById('countdown-display');
+    if (countdownDisplay) {
+        countdownDisplay.style.display = 'none';
+    }
+    
     if (questionPool.length === 0) {
         // 游戏结束，保存记录
         if (window.saveGameRecord) window.saveGameRecord();
@@ -380,7 +451,7 @@ function nextRound() {
             badge.textContent = (gameMode === 'mode_1') ? "🚩 猜首都" : "🚩 猜国家";
         }
     } else if (currentScope === 'china') {
-        if (gameMode === 'mode_3') {
+        if (gameMode === 'mode_3a' || gameMode === 'mode_3b') {
             city.style.display = 'block';
             city.textContent = currentQ.name;
             badge.textContent = "🏙️ 猜车牌";
@@ -416,7 +487,11 @@ function nextRound() {
             // 移除silhouette类，因为队徽不需要荧光效果
             img.classList.remove('silhouette');
             // 移除所有难度遮罩类
-            img.classList.remove('football-mask-easy', 'football-mask-medium', 'football-mask-hard');
+            img.classList.remove('football-mask-easy', 'football-mask-medium', 'football-mask-hard', 'football-mask-hell');
+            // 移除旋转样式
+            img.style.removeProperty('--football-rotation');
+            img.style.removeProperty('transform');
+            
             // 根据难度添加对应的遮罩类
             if (footballDifficulty === 'easy') {
                 img.classList.add('football-mask-easy');
@@ -427,6 +502,13 @@ function nextRound() {
             } else if (footballDifficulty === 'hard') {
                 img.classList.add('football-mask-hard');
                 badge.textContent = "⚽ 猜俱乐部 (困难)";
+            } else if (footballDifficulty === 'hell') {
+                // 地狱难度：随机旋转角度（-180度到180度）
+                const rotationAngle = Math.floor(Math.random() * 361) - 180; // -180 到 180 度
+                img.classList.add('football-mask-hell');
+                img.style.setProperty('--football-rotation', `${rotationAngle}deg`);
+                img.style.transform = `rotate(${rotationAngle}deg)`;
+                badge.textContent = "🔥 猜俱乐部 (地狱)";
             }
         }
     }
@@ -539,6 +621,35 @@ function nextRound() {
                 }
             }
         }
+    } else if (currentScope === 'world' && (gameMode === 'mode_3a' || gameMode === 'mode_3b')) {
+        // 极速冲刺模式：根据难度生成不同数量的选项
+        const targetCount = gameMode === 'mode_3a' ? 4 : 6;
+        
+        // 获取当前国家的region
+        const currentRegion = currentQ.region || '';
+        
+        // 找到同region的其他国家（排除当前国家）
+        const sameRegionCountries = sourceDB.filter(c => 
+            c.region === currentRegion && 
+            c.id !== currentQ.id && 
+            !opts.includes(c)
+        );
+        
+        // 添加一个同region的国家作为干扰项
+        if (sameRegionCountries.length > 0) {
+            const sameRegionCountry = sameRegionCountries[Math.floor(Math.random() * sameRegionCountries.length)];
+            opts.push(sameRegionCountry);
+            optionTexts.add(sameRegionCountry.name);
+        }
+        
+        // 继续添加其他选项直到达到目标数量
+        while(opts.length < targetCount) {
+            let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
+            if (!opts.includes(r) && r.id !== currentQ.id && !optionTexts.has(r.name)) {
+                opts.push(r);
+                optionTexts.add(r.name);
+            }
+        }
     } else {
     while(opts.length < 4) {
         let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
@@ -580,12 +691,119 @@ function nextRound() {
         btn.onclick = () => checkAnswer(opt, btn);
         area.appendChild(btn);
     });
+    
+    // 极速冲刺模式：启动15秒倒计时
+    if ((gameMode === 'mode_3a' || gameMode === 'mode_3b') && currentScope === 'world') {
+        startSprintCountdown();
+    }
+}
+
+// 极速冲刺倒计时函数
+function startSprintCountdown() {
+    const countdownDisplay = document.getElementById('countdown-display');
+    if (!countdownDisplay) return;
+    
+    let timeLeft = 15;
+    countdownDisplay.style.display = 'inline';
+    countdownDisplay.textContent = timeLeft;
+    countdownDisplay.style.color = '#FF6B6B';
+    
+    sprintTimer = setInterval(() => {
+        window.sprintTimer = sprintTimer; // 同步到全局
+        timeLeft--;
+        countdownDisplay.textContent = timeLeft;
+        
+        // 最后5秒变红
+        if (timeLeft <= 5) {
+            countdownDisplay.style.color = '#FF0000';
+        }
+        
+        if (timeLeft <= 0) {
+            clearInterval(sprintTimer);
+            sprintTimer = null;
+            window.sprintTimer = null;
+            countdownDisplay.style.display = 'none';
+            
+            // 时间到，自动进入下一题（算作答错）
+            if (!isProcessing && questionPool.length > 0) {
+                isProcessing = true;
+                syncStateToGameState();
+                
+                // 显示正确答案
+                const allBtns = document.getElementById('options-area').querySelectorAll('button');
+                const correctText = currentQ.name;
+                allBtns.forEach(b => { 
+                    if (b.textContent === correctText) b.classList.add('correct'); 
+                });
+                
+                // 显示反馈
+                const fb = document.getElementById('answer-feedback');
+                fb.style.display = 'block';
+                fb.innerHTML = `时间到！正确答案: <b>${currentQ.name}</b>`;
+                
+                // 禁用所有按钮
+                allBtns.forEach(b => b.disabled = true);
+                
+                // 显示下一题按钮
+                document.getElementById('next-btn').style.display = 'block';
+                if (currentScope === 'world') {
+                    document.getElementById('game-map-btn').style.display = 'block';
+                }
+                
+                // 2秒后自动进入下一题
+                setTimeout(() => {
+                    if (questionPool.length > 0) {
+                        isProcessing = false;
+                        syncStateToGameState();
+                        nextRound();
+                    } else {
+                        // 游戏结束
+                        isProcessing = false;
+                        syncStateToGameState();
+                        if (window.saveGameRecord) window.saveGameRecord();
+                        window.showView('view-result');
+                        document.getElementById('result-score').textContent = score + " / " + totalQs;
+                        document.getElementById('result-title').textContent = "🎉 挑战完成!";
+                        const percentage = Math.round((score / totalQs) * 100);
+                        let detail = `正确率: ${percentage}%`;
+                        if (percentage === 100) detail += " 🌟 完美！";
+                        else if (percentage >= 80) detail += " 👍 很棒！";
+                        else if (percentage >= 60) detail += " 💪 继续加油！";
+                        document.getElementById('result-detail').textContent = detail;
+                    }
+                }, 2000);
+            } else if (questionPool.length === 0) {
+                // 游戏结束
+                if (window.saveGameRecord) window.saveGameRecord();
+                window.showView('view-result');
+                document.getElementById('result-score').textContent = score + " / " + totalQs;
+                document.getElementById('result-title').textContent = "🎉 挑战完成!";
+                const percentage = Math.round((score / totalQs) * 100);
+                let detail = `正确率: ${percentage}%`;
+                if (percentage === 100) detail += " 🌟 完美！";
+                else if (percentage >= 80) detail += " 👍 很棒！";
+                else if (percentage >= 60) detail += " 💪 继续加油！";
+                document.getElementById('result-detail').textContent = detail;
+            }
+        }
+    }, 1000);
 }
 
 function checkAnswer(choice, btn) {
     initDataReferences(); // 确保数据引用已初始化
     if (isProcessing) return; isProcessing = true;
     syncStateToGameState();
+    
+    // 清除极速冲刺倒计时
+    if (sprintTimer) {
+        clearInterval(sprintTimer);
+        sprintTimer = null;
+        window.sprintTimer = null;
+        const countdownDisplay = document.getElementById('countdown-display');
+        if (countdownDisplay) {
+            countdownDisplay.style.display = 'none';
+        }
+    }
     
     let isCorrect = false;
     let correctText = "";
@@ -1173,7 +1391,8 @@ if (!window.showRank) {
             const modeNames = {
                 'mode_1': '每日挑战',
                 'mode_2': '形状挑战',
-                'mode_3': '极速冲刺',
+                'mode_3a': '极速冲刺 (简单)',
+                'mode_3b': '极速冲刺 (困难)',
                 'all': '♾️ 全图鉴',
                 'pk': '⚔️ PK模式'
             };
