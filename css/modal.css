@@ -317,6 +317,23 @@
     box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
 }
 
+.btn-share {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border-color: rgba(102, 126, 234, 0.6) !important;
+    color: #ffffff !important;
+    font-size: 1rem;
+    padding: 12px 24px;
+    width: auto;
+    margin: 20px auto;
+    display: block;
+}
+.btn-share:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%) !important;
+    border-color: rgba(102, 126, 234, 0.8) !important;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    transform: translateY(-2px);
+}
+
 /* 图片放大模态框 */
 #image-zoom-modal {
     display: none;
