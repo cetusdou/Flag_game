@@ -32,7 +32,8 @@ function initDataReferences() {
         score: gameState.score || 0,
         totalQs: gameState.totalQs || 0,
         isProcessing: gameState.isProcessing || false,
-        footballDifficulty: gameState.footballDifficulty || 'easy'
+        footballDifficulty: gameState.footballDifficulty || 'easy',
+        cityNetworkFillMode: gameState.cityNetworkFillMode || false
     };
 }
 
@@ -49,6 +50,9 @@ function syncStateToGameState(data) {
     window.GameState.totalQs = data.totalQs;
     window.GameState.isProcessing = data.isProcessing;
     window.GameState.footballDifficulty = data.footballDifficulty;
+    if (data.cityNetworkFillMode !== undefined) {
+        window.GameState.cityNetworkFillMode = data.cityNetworkFillMode;
+    }
 }
 
 function startGame(modeKey) {
@@ -171,6 +175,32 @@ function startGame(modeKey) {
             gameState.questionPool = refs.dbCityNetworks.sort(() => Math.random() - 0.5).slice(0, 10);
             // 题目数量
             gameState.gameMode = 'city_network';
+            // 使用GameState中已设置的模式（在入口按钮上已设置）
+            gameState.cityNetworkFillMode = window.GameState ? (window.GameState.cityNetworkFillMode || false) : false;
+        } else if (modeKey === 'china_daily_network') {
+            // 中国模式每日挑战（路网图）
+            if (!refs.dbCityNetworks || refs.dbCityNetworks.length === 0) {
+                alert("⚠️ 城市路网数据未加载，请刷新页面重试。");
+                return;
+            }
+            
+            // 使用每日种子生成题目
+            const today = new Date();
+            const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+            const rng = window.mulberry32(seed);
+            
+            let temp = [...refs.dbCityNetworks];
+            for (let i = temp.length - 1; i > 0; i--) { 
+                const j = Math.floor(rng() * (i + 1)); 
+                [temp[i], temp[j]] = [temp[j], temp[i]]; 
+            }
+            gameState.questionPool = temp.slice(0, 3);
+            gameState.gameMode = 'china_daily_network';
+            gameState.cityNetworkFillMode = true; // 强制填空题模式
+            
+            // 输出调试信息：显示今日的三个城市
+            const todayCities = gameState.questionPool.map(q => q.name).join('、');
+            console.log(`📅 今日挑战的三个城市：${todayCities}`);
         } else {
             // 车牌挑战模式
             if (!refs.dbPlates || refs.dbPlates.length === 0) {
@@ -178,6 +208,8 @@ function startGame(modeKey) {
                 return;
             }
             gameState.questionPool = refs.dbPlates.sort(() => Math.random() - 0.5).slice(0, 50);
+            gameState.gameMode = 'mode_1'; // 明确设置游戏模式
+            gameState.cityNetworkFillMode = false; // 车牌挑战不使用填空题模式
         }
     } else if (currentScope === 'sports') {
         if (modeKey === 'pk') {
@@ -338,10 +370,12 @@ function nextRound() {
     img.style.display = 'none';
     plate.style.display = 'none';
     city.style.display = 'none';
-    img.classList.remove('silhouette');
+    img.classList.remove('silhouette', 'city-network-daily-mask');
     img.classList.remove('football-mask-easy', 'football-mask-medium', 'football-mask-hard', 'football-mask-hell');
     img.style.opacity = '1';
     img.style.transition = '';
+    img.style.cursor = '';
+    img.onclick = null;
     badge.textContent = '';
     
     // 清除 flag-box 的足球模式类
@@ -365,12 +399,12 @@ function nextRound() {
             badge.textContent = (gameState.gameMode === 'mode_1') ? "🚩 猜首都" : "🚩 猜国家";
         }
     } else if (gameState.currentScope === 'china') {
-        if (gameState.gameMode === 'city_network') {
-            // 路网挑战模式
+        if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') {
+            // 路网挑战模式或中国每日挑战
             img.style.display = 'block';
             img.style.opacity = '0';
             img.style.transition = 'opacity 0.3s';
-            img.style.cursor = 'zoom-in';
+            img.style.cursor = gameState.gameMode === 'china_daily_network' ? 'default' : 'zoom-in';
             img.onload = function() {
                 this.style.opacity = '1';
             };
@@ -378,12 +412,24 @@ function nextRound() {
                 this.style.opacity = '1';
             };
             img.src = gameState.currentQ.img;
-            img.classList.remove('silhouette');
-            // 添加点击放大功能
-            img.onclick = function() {
-                openImageZoom(gameState.currentQ.img);
-            };
-            badge.textContent = "🗺️ 看路网，猜城市（点击图片放大）";
+            img.classList.remove('silhouette', 'city-network-daily-mask');
+            
+            // 中国每日挑战：添加中间50%区域的遮罩，并允许点击放大
+            if (gameState.gameMode === 'china_daily_network') {
+                img.classList.add('city-network-daily-mask');
+                img.style.cursor = 'zoom-in';
+                badge.textContent = "📅 每日挑战：看路网中间区域，猜城市（点击图片放大）";
+                // 添加点击放大功能
+                img.onclick = function() {
+                    openImageZoom(gameState.currentQ.img);
+                };
+            } else {
+                // 普通路网挑战：添加点击放大功能
+                img.onclick = function() {
+                    openImageZoom(gameState.currentQ.img);
+                };
+                badge.textContent = "🗺️ 看路网，猜城市（点击图片放大）";
+            }
         } else if (gameState.gameMode === 'mode_3a' || gameState.gameMode === 'mode_3b') {
             city.style.display = 'block';
             city.textContent = gameState.currentQ.name;
@@ -462,7 +508,7 @@ function nextRound() {
     let sourceDB;
     if (gameState.currentScope === 'world') sourceDB = refs.dbWorld;
     else if (gameState.currentScope === 'china') {
-        if (gameState.gameMode === 'city_network') sourceDB = refs.dbCityNetworks;
+        if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') sourceDB = refs.dbCityNetworks;
         else sourceDB = refs.dbPlates;
     } else if (gameState.currentScope === 'sports') {
         if (gameState.gameMode === 'f1') sourceDB = refs.dbF1Tracks;
@@ -470,17 +516,64 @@ function nextRound() {
         else sourceDB = [];
     } else sourceDB = [];
     
-    const opts = window.generateOptions(gameState.currentQ, gameState.currentScope, gameState.gameMode, sourceDB);
-
-    const area = document.getElementById('options-area');
-    area.innerHTML = '';
-    opts.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.className = 'game-opt-btn';
-        btn.textContent = window.getOptionDisplayText(opt, gameState.currentScope, gameState.gameMode);
-        btn.onclick = () => checkAnswer(opt, btn);
-        area.appendChild(btn);
-    });
+    // 路网模式：根据模式显示选项或输入框
+    const optionsArea = document.getElementById('options-area');
+    const fillAnswerArea = document.getElementById('fill-answer-area');
+    const fillAnswerInput = document.getElementById('fill-answer-input');
+    const toggleContainer = document.querySelector('.city-network-toggle-container');
+    
+    if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') {
+        // 根据模式显示选项或输入框
+        // 中国每日挑战强制使用填空题模式
+        const useFillMode = gameState.gameMode === 'china_daily_network' ? true : gameState.cityNetworkFillMode;
+        if (useFillMode) {
+            // 填空题模式
+            if (optionsArea) optionsArea.style.display = 'none';
+            if (fillAnswerArea) fillAnswerArea.style.display = 'block';
+            if (fillAnswerInput) {
+                fillAnswerInput.value = '';
+                fillAnswerInput.disabled = false;
+                fillAnswerInput.style.borderColor = 'rgba(255, 255, 255, 0.3)';
+                fillAnswerInput.style.background = 'rgba(255, 255, 255, 0.1)';
+                fillAnswerInput.focus();
+                // 支持回车提交
+                fillAnswerInput.onkeypress = function(e) {
+                    if (e.key === 'Enter') {
+                        submitFillAnswer();
+                    }
+                };
+            }
+        } else {
+            // 选择题模式
+            if (optionsArea) optionsArea.style.display = 'grid';
+            if (fillAnswerArea) fillAnswerArea.style.display = 'none';
+            
+            const opts = window.generateOptions(gameState.currentQ, gameState.currentScope, gameState.gameMode, sourceDB);
+            optionsArea.innerHTML = '';
+            opts.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'game-opt-btn';
+                btn.textContent = window.getOptionDisplayText(opt, gameState.currentScope, gameState.gameMode);
+                btn.onclick = () => checkAnswer(opt, btn);
+                optionsArea.appendChild(btn);
+            });
+        }
+    } else {
+        // 非路网模式，隐藏拨动开关和输入框
+        if (toggleContainer) toggleContainer.style.display = 'none';
+        if (fillAnswerArea) fillAnswerArea.style.display = 'none';
+        if (optionsArea) optionsArea.style.display = 'grid';
+        
+        const opts = window.generateOptions(gameState.currentQ, gameState.currentScope, gameState.gameMode, sourceDB);
+        optionsArea.innerHTML = '';
+        opts.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'game-opt-btn';
+            btn.textContent = window.getOptionDisplayText(opt, gameState.currentScope, gameState.gameMode);
+            btn.onclick = () => checkAnswer(opt, btn);
+            optionsArea.appendChild(btn);
+        });
+    }
     
     if ((gameState.gameMode === 'mode_3a' || gameState.gameMode === 'mode_3b') && gameState.currentScope === 'world') {
         startSprintCountdown();
@@ -616,7 +709,7 @@ function checkAnswer(choice, btn) {
             correctText = gameState.currentQ.name;
         }
     } else if (gameState.currentScope === 'china') {
-        if (gameState.gameMode === 'city_network') {
+        if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') {
             isCorrect = (choice.id === gameState.currentQ.id);
             correctText = gameState.currentQ.name;
         } else {
@@ -701,9 +794,136 @@ function checkAnswer(choice, btn) {
     }, 1000);
 }
 
+// 切换路网模式（选择题/填空题）
+// 切换路网模式（选择题/填空题）- 已移至入口按钮，此函数保留用于兼容
+function toggleCityNetworkMode() {
+    // 此函数已不再使用，拨动开关已移至入口按钮
+    // 拨动开关现在在入口按钮上，切换时会自动更新 GameState.cityNetworkFillMode
+}
+
+// 提交填空题答案
+function submitFillAnswer() {
+    const refs = initDataReferences();
+    if (!refs) return;
+    if (refs.isProcessing) return;
+    
+    const input = document.getElementById('fill-answer-input');
+    if (!input || !input.value.trim()) {
+        return;
+    }
+    
+    const userAnswer = input.value.trim();
+    const correctAnswer = refs.currentQ.name;
+    
+    // 检查答案
+    checkFillAnswer(userAnswer, correctAnswer, input);
+}
+
+// 检查填空题答案
+function checkFillAnswer(userAnswer, correctAnswer, input) {
+    const refs = initDataReferences();
+    if (!refs) return;
+    if (refs.isProcessing) return;
+    
+    let gameState = {
+        ...refs,
+        isProcessing: true
+    };
+    
+    // 答案匹配（忽略大小写和空格）
+    const normalizedUser = userAnswer.toLowerCase().replace(/\s+/g, '');
+    const normalizedCorrect = correctAnswer.toLowerCase().replace(/\s+/g, '');
+    const isCorrect = normalizedUser === normalizedCorrect;
+    
+    // 更新UI
+    if (input) {
+        input.disabled = true;
+        if (isCorrect) {
+            input.style.borderColor = '#4CAF50';
+            input.style.background = 'rgba(76, 175, 80, 0.2)';
+        } else {
+            input.style.borderColor = '#ff5252';
+            input.style.background = 'rgba(255, 82, 82, 0.2)';
+        }
+    }
+    
+    if (isCorrect) {
+        gameState.score++;
+    }
+    
+    syncStateToGameState(gameState);
+    
+    // 更新进度
+    const progressFill = document.getElementById('progress-fill');
+    const scoreDisplay = document.getElementById('score-display');
+    const remainingDisplay = document.getElementById('remaining-questions');
+    if (progressFill) {
+        const progress = ((gameState.totalQs - gameState.questionPool.length) / gameState.totalQs) * 100;
+        progressFill.style.width = progress + '%';
+    }
+    if (scoreDisplay) scoreDisplay.textContent = gameState.score;
+    if (remainingDisplay) remainingDisplay.textContent = gameState.questionPool.length;
+    
+    // 每日挑战模式：不显示正确答案，除非全部答对
+    const isDailyChallenge = refs.gameMode === 'china_daily_network';
+    if (isDailyChallenge) {
+        // 检查是否全部答对
+        const allAnswered = refs.questionPool.length === 0;
+        if (allAnswered && refs.score === refs.totalQs) {
+            // 全部答对，显示正确答案
+            if (!isCorrect && input) {
+                input.value = `${userAnswer} → ${correctAnswer}`;
+            }
+        } else {
+            // 未全部答对，只显示对错，不显示正确答案
+            if (!isCorrect && input) {
+                input.value = userAnswer; // 保持用户输入，不显示正确答案
+            }
+        }
+    } else {
+        // 非每日挑战模式：正常显示正确答案
+        if (!isCorrect && input) {
+            input.value = `${userAnswer} → ${correctAnswer}`;
+        }
+    }
+    
+    // 自动跳转下一题
+    window.autoNextTimer = setTimeout(() => {
+        window.autoNextTimer = null;
+        const finalRefs = initDataReferences();
+        if (finalRefs.questionPool.length > 0) {
+            let nextGameState = {
+                ...finalRefs,
+                isProcessing: false
+            };
+            syncStateToGameState(nextGameState);
+            nextRound();
+        } else {
+            let finalGameState = {
+                ...finalRefs,
+                isProcessing: false
+            };
+            syncStateToGameState(finalGameState);
+            if (window.saveGameRecord) window.saveGameRecord();
+            window.showView('view-result');
+            document.getElementById('result-score').textContent = finalRefs.score + " / " + finalRefs.totalQs;
+            document.getElementById('result-title').textContent = "🎉 挑战完成!";
+            const percentage = Math.round((finalRefs.score / finalRefs.totalQs) * 100);
+            let detail = `正确率: ${percentage}%`;
+            if (percentage === 100) detail += " 🌟 完美！";
+            else if (percentage >= 80) detail += " 👍 很棒！";
+            else if (percentage >= 60) detail += " 💪 继续加油！";
+            document.getElementById('result-detail').textContent = detail;
+        }
+    }, 1500);
+}
+
+// 暴露到全局
 window.startGame = startGame;
 window.nextRound = nextRound;
 window.checkAnswer = checkAnswer;
 window.startSprintCountdown = startSprintCountdown;
 window.initDataReferences = initDataReferences;
 window.syncStateToGameState = syncStateToGameState;
+window.toggleCityNetworkMode = toggleCityNetworkMode;
+window.submitFillAnswer = submitFillAnswer;

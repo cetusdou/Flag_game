@@ -2,1351 +2,1913 @@
   {
     "id": "beijing",
     "name": "北京",
+    "province": "直辖市",
     "img": "./assets/city_networks/beijing.png",
-    "pos": [
-      39.9042,
-      116.4074
-    ]
+    "lat": 39.9042,
+    "lon": 116.4074
   },
   {
     "id": "shanghai",
     "name": "上海",
+    "province": "直辖市",
     "img": "./assets/city_networks/shanghai.png",
-    "pos": [
-      31.2304,
-      121.4737
-    ]
+    "lat": 31.2304,
+    "lon": 121.4737
   },
   {
     "id": "tianjin",
     "name": "天津",
+    "province": "直辖市",
     "img": "./assets/city_networks/tianjin.png",
-    "pos": [
-      39.0842,
-      117.2009
-    ]
+    "lat": 39.0842,
+    "lon": 117.2009
   },
   {
     "id": "chongqing",
     "name": "重庆",
+    "province": "直辖市",
     "img": "./assets/city_networks/chongqing.png",
-    "pos": [
-      29.563,
-      106.5516
-    ]
+    "lat": 29.563,
+    "lon": 106.5516
   },
   {
     "id": "hong_kong",
     "name": "香港",
+    "province": "特别行政区",
     "img": "./assets/city_networks/hong_kong.png",
-    "pos": [
-      22.3193,
-      114.1694
-    ]
+    "lat": 22.3193,
+    "lon": 114.1694
   },
   {
     "id": "macau",
     "name": "澳门",
+    "province": "特别行政区",
     "img": "./assets/city_networks/macau.png",
-    "pos": [
-      22.1987,
-      113.5439
-    ]
-  },
-  {
-    "id": "taipei",
-    "name": "台北",
-    "img": "./assets/city_networks/taipei.png",
-    "pos": [
-      25.033,
-      121.5654
-    ]
-  },
-  {
-    "id": "guangzhou",
-    "name": "广州",
-    "img": "./assets/city_networks/guangzhou.png",
-    "pos": [
-      23.1291,
-      113.2644
-    ]
-  },
-  {
-    "id": "shenzhen",
-    "name": "深圳",
-    "img": "./assets/city_networks/shenzhen.png",
-    "pos": [
-      22.5431,
-      114.0579
-    ]
-  },
-  {
-    "id": "zhuhai",
-    "name": "珠海",
-    "img": "./assets/city_networks/zhuhai.png",
-    "pos": [
-      22.2707,
-      113.5767
-    ]
-  },
-  {
-    "id": "foshan",
-    "name": "佛山",
-    "img": "./assets/city_networks/foshan.png",
-    "pos": [
-      23.0215,
-      113.1214
-    ]
-  },
-  {
-    "id": "dongguan",
-    "name": "东莞",
-    "img": "./assets/city_networks/dongguan.png",
-    "pos": [
-      23.0205,
-      113.7518
-    ]
-  },
-  {
-    "id": "shantou",
-    "name": "汕头",
-    "img": "./assets/city_networks/shantou.png",
-    "pos": [
-      23.3517,
-      116.6787
-    ]
-  },
-  {
-    "id": "haikou",
-    "name": "海口",
-    "img": "./assets/city_networks/haikou.png",
-    "pos": [
-      20.044,
-      110.1999
-    ]
-  },
-  {
-    "id": "sanya",
-    "name": "三亚",
-    "img": "./assets/city_networks/sanya.png",
-    "pos": [
-      18.2528,
-      109.512
-    ]
-  },
-  {
-    "id": "nanning",
-    "name": "南宁",
-    "img": "./assets/city_networks/nanning.png",
-    "pos": [
-      22.817,
-      108.3665
-    ]
-  },
-  {
-    "id": "guilin",
-    "name": "桂林",
-    "img": "./assets/city_networks/guilin.png",
-    "pos": [
-      25.2345,
-      110.18
-    ]
-  },
-  {
-    "id": "liuzhou",
-    "name": "柳州",
-    "img": "./assets/city_networks/liuzhou.png",
-    "pos": [
-      24.3255,
-      109.4126
-    ]
-  },
-  {
-    "id": "beihai",
-    "name": "北海",
-    "img": "./assets/city_networks/beihai.png",
-    "pos": [
-      21.4812,
-      109.1192
-    ]
-  },
-  {
-    "id": "nanjing",
-    "name": "南京",
-    "img": "./assets/city_networks/nanjing.png",
-    "pos": [
-      32.0603,
-      118.7969
-    ]
-  },
-  {
-    "id": "suzhou",
-    "name": "苏州",
-    "img": "./assets/city_networks/suzhou.png",
-    "pos": [
-      31.2989,
-      120.5853
-    ]
-  },
-  {
-    "id": "wuxi",
-    "name": "无锡",
-    "img": "./assets/city_networks/wuxi.png",
-    "pos": [
-      31.4912,
-      120.3119
-    ]
-  },
-  {
-    "id": "changzhou",
-    "name": "常州",
-    "img": "./assets/city_networks/changzhou.png",
-    "pos": [
-      31.8112,
-      119.9741
-    ]
-  },
-  {
-    "id": "yangzhou",
-    "name": "扬州",
-    "img": "./assets/city_networks/yangzhou.png",
-    "pos": [
-      32.3942,
-      119.4129
-    ]
-  },
-  {
-    "id": "xuzhou",
-    "name": "徐州",
-    "img": "./assets/city_networks/xuzhou.png",
-    "pos": [
-      34.2048,
-      117.2841
-    ]
-  },
-  {
-    "id": "hangzhou",
-    "name": "杭州",
-    "img": "./assets/city_networks/hangzhou.png",
-    "pos": [
-      30.2741,
-      120.1551
-    ]
-  },
-  {
-    "id": "ningbo",
-    "name": "宁波",
-    "img": "./assets/city_networks/ningbo.png",
-    "pos": [
-      29.8683,
-      121.544
-    ]
-  },
-  {
-    "id": "wenzhou",
-    "name": "温州",
-    "img": "./assets/city_networks/wenzhou.png",
-    "pos": [
-      27.9943,
-      120.6994
-    ]
-  },
-  {
-    "id": "shaoxing",
-    "name": "绍兴",
-    "img": "./assets/city_networks/shaoxing.png",
-    "pos": [
-      30.0024,
-      120.5861
-    ]
-  },
-  {
-    "id": "jinhua",
-    "name": "金华",
-    "img": "./assets/city_networks/jinhua.png",
-    "pos": [
-      29.079,
-      119.6474
-    ]
-  },
-  {
-    "id": "yiwu",
-    "name": "义乌",
-    "img": "./assets/city_networks/yiwu.png",
-    "pos": [
-      29.3003,
-      120.0751
-    ]
-  },
-  {
-    "id": "hefei",
-    "name": "合肥",
-    "img": "./assets/city_networks/hefei.png",
-    "pos": [
-      31.8206,
-      117.2272
-    ]
-  },
-  {
-    "id": "fuzhou",
-    "name": "福州",
-    "img": "./assets/city_networks/fuzhou.png",
-    "pos": [
-      26.0745,
-      119.2965
-    ]
-  },
-  {
-    "id": "xiamen",
-    "name": "厦门",
-    "img": "./assets/city_networks/xiamen.png",
-    "pos": [
-      24.4798,
-      118.0894
-    ]
-  },
-  {
-    "id": "quanzhou",
-    "name": "泉州",
-    "img": "./assets/city_networks/quanzhou.png",
-    "pos": [
-      24.8741,
-      118.6757
-    ]
-  },
-  {
-    "id": "nanchang",
-    "name": "南昌",
-    "img": "./assets/city_networks/nanchang.png",
-    "pos": [
-      28.682,
-      115.8579
-    ]
-  },
-  {
-    "id": "jingdezhen",
-    "name": "景德镇",
-    "img": "./assets/city_networks/jingdezhen.png",
-    "pos": [
-      29.269,
-      117.1782
-    ]
-  },
-  {
-    "id": "jinan",
-    "name": "济南",
-    "img": "./assets/city_networks/jinan.png",
-    "pos": [
-      36.6512,
-      117.1201
-    ]
-  },
-  {
-    "id": "qingdao",
-    "name": "青岛",
-    "img": "./assets/city_networks/qingdao.png",
-    "pos": [
-      36.0671,
-      120.3826
-    ]
-  },
-  {
-    "id": "yantai",
-    "name": "烟台",
-    "img": "./assets/city_networks/yantai.png",
-    "pos": [
-      37.4638,
-      121.4479
-    ]
-  },
-  {
-    "id": "weifang",
-    "name": "潍坊",
-    "img": "./assets/city_networks/weifang.png",
-    "pos": [
-      36.7072,
-      119.1617
-    ]
-  },
-  {
-    "id": "zibo",
-    "name": "淄博",
-    "img": "./assets/city_networks/zibo.png",
-    "pos": [
-      36.8135,
-      118.055
-    ]
-  },
-  {
-    "id": "kaohsiung",
-    "name": "高雄",
-    "img": "./assets/city_networks/kaohsiung.png",
-    "pos": [
-      22.6273,
-      120.3014
-    ]
-  },
-  {
-    "id": "taichung",
-    "name": "台中",
-    "img": "./assets/city_networks/taichung.png",
-    "pos": [
-      24.1477,
-      120.6736
-    ]
-  },
-  {
-    "id": "tainan",
-    "name": "台南",
-    "img": "./assets/city_networks/tainan.png",
-    "pos": [
-      22.9997,
-      120.227
-    ]
-  },
-  {
-    "id": "wuhan",
-    "name": "武汉",
-    "img": "./assets/city_networks/wuhan.png",
-    "pos": [
-      30.5928,
-      114.3055
-    ]
-  },
-  {
-    "id": "yichang",
-    "name": "宜昌",
-    "img": "./assets/city_networks/yichang.png",
-    "pos": [
-      30.692,
-      111.2865
-    ]
-  },
-  {
-    "id": "xiangyang",
-    "name": "襄阳",
-    "img": "./assets/city_networks/xiangyang.png",
-    "pos": [
-      32.0087,
-      112.1224
-    ]
-  },
-  {
-    "id": "changsha",
-    "name": "长沙",
-    "img": "./assets/city_networks/changsha.png",
-    "pos": [
-      28.2282,
-      112.9388
-    ]
-  },
-  {
-    "id": "zhuzhou",
-    "name": "株洲",
-    "img": "./assets/city_networks/zhuzhou.png",
-    "pos": [
-      27.8274,
-      113.1338
-    ]
-  },
-  {
-    "id": "yueyang",
-    "name": "岳阳",
-    "img": "./assets/city_networks/yueyang.png",
-    "pos": [
-      29.3567,
-      113.1289
-    ]
-  },
-  {
-    "id": "zhangjiajie",
-    "name": "张家界",
-    "img": "./assets/city_networks/zhangjiajie.png",
-    "pos": [
-      29.117,
-      110.4792
-    ]
-  },
-  {
-    "id": "zhengzhou",
-    "name": "郑州",
-    "img": "./assets/city_networks/zhengzhou.png",
-    "pos": [
-      34.7466,
-      113.6253
-    ]
-  },
-  {
-    "id": "luoyang",
-    "name": "洛阳",
-    "img": "./assets/city_networks/luoyang.png",
-    "pos": [
-      34.6181,
-      112.454
-    ]
-  },
-  {
-    "id": "kaifeng",
-    "name": "开封",
-    "img": "./assets/city_networks/kaifeng.png",
-    "pos": [
-      34.7972,
-      114.3076
-    ]
+    "lat": 22.1987,
+    "lon": 113.5439
   },
   {
     "id": "shijiazhuang",
     "name": "石家庄",
+    "province": "河北省",
     "img": "./assets/city_networks/shijiazhuang.png",
-    "pos": [
-      38.0428,
-      114.5149
-    ]
+    "lat": 38.0428,
+    "lon": 114.5149
   },
   {
     "id": "tangshan",
     "name": "唐山",
+    "province": "河北省",
     "img": "./assets/city_networks/tangshan.png",
-    "pos": [
-      39.6301,
-      118.1802
-    ]
+    "lat": 39.6301,
+    "lon": 118.1802
   },
   {
     "id": "qinhuangdao",
     "name": "秦皇岛",
+    "province": "河北省",
     "img": "./assets/city_networks/qinhuangdao.png",
-    "pos": [
-      39.9617,
-      119.6005
-    ]
-  },
-  {
-    "id": "taiyuan",
-    "name": "太原",
-    "img": "./assets/city_networks/taiyuan.png",
-    "pos": [
-      37.8706,
-      112.5489
-    ]
-  },
-  {
-    "id": "datong",
-    "name": "大同",
-    "img": "./assets/city_networks/datong.png",
-    "pos": [
-      40.0768,
-      113.3001
-    ]
-  },
-  {
-    "id": "hohhot",
-    "name": "呼和浩特",
-    "img": "./assets/city_networks/hohhot.png",
-    "pos": [
-      40.8415,
-      111.7492
-    ]
-  },
-  {
-    "id": "baotou",
-    "name": "包头",
-    "img": "./assets/city_networks/baotou.png",
-    "pos": [
-      40.6579,
-      109.8404
-    ]
-  },
-  {
-    "id": "shenyang",
-    "name": "沈阳",
-    "img": "./assets/city_networks/shenyang.png",
-    "pos": [
-      41.8057,
-      123.4315
-    ]
-  },
-  {
-    "id": "dalian",
-    "name": "大连",
-    "img": "./assets/city_networks/dalian.png",
-    "pos": [
-      38.914,
-      121.6147
-    ]
-  },
-  {
-    "id": "changchun",
-    "name": "长春",
-    "img": "./assets/city_networks/changchun.png",
-    "pos": [
-      43.8171,
-      125.3235
-    ]
-  },
-  {
-    "id": "harbin",
-    "name": "哈尔滨",
-    "img": "./assets/city_networks/harbin.png",
-    "pos": [
-      45.8038,
-      126.535
-    ]
-  },
-  {
-    "id": "daqing",
-    "name": "大庆",
-    "img": "./assets/city_networks/daqing.png",
-    "pos": [
-      46.5845,
-      125.1037
-    ]
-  },
-  {
-    "id": "qiqihar",
-    "name": "齐齐哈尔",
-    "img": "./assets/city_networks/qiqihar.png",
-    "pos": [
-      47.3543,
-      123.9182
-    ]
-  },
-  {
-    "id": "jilin",
-    "name": "吉林市",
-    "img": "./assets/city_networks/jilin.png",
-    "pos": [
-      43.8378,
-      126.5496
-    ]
-  },
-  {
-    "id": "chengdu",
-    "name": "成都",
-    "img": "./assets/city_networks/chengdu.png",
-    "pos": [
-      30.5728,
-      104.0668
-    ]
-  },
-  {
-    "id": "leshan",
-    "name": "乐山",
-    "img": "./assets/city_networks/leshan.png",
-    "pos": [
-      29.5521,
-      103.7656
-    ]
-  },
-  {
-    "id": "kunming",
-    "name": "昆明",
-    "img": "./assets/city_networks/kunming.png",
-    "pos": [
-      24.8801,
-      102.8329
-    ]
-  },
-  {
-    "id": "dali",
-    "name": "大理",
-    "img": "./assets/city_networks/dali.png",
-    "pos": [
-      25.6065,
-      100.2676
-    ]
-  },
-  {
-    "id": "lijiang",
-    "name": "丽江",
-    "img": "./assets/city_networks/lijiang.png",
-    "pos": [
-      26.855,
-      100.2277
-    ]
-  },
-  {
-    "id": "jinghong",
-    "name": "景洪(版纳)",
-    "img": "./assets/city_networks/jinghong.png",
-    "pos": [
-      22.0017,
-      100.7979
-    ]
-  },
-  {
-    "id": "guiyang",
-    "name": "贵阳",
-    "img": "./assets/city_networks/guiyang.png",
-    "pos": [
-      26.647,
-      106.6302
-    ]
-  },
-  {
-    "id": "zunyi",
-    "name": "遵义",
-    "img": "./assets/city_networks/zunyi.png",
-    "pos": [
-      27.705,
-      106.927
-    ]
-  },
-  {
-    "id": "lhasa",
-    "name": "拉萨",
-    "img": "./assets/city_networks/lhasa.png",
-    "pos": [
-      29.6525,
-      91.1721
-    ]
-  },
-  {
-    "id": "shigatse",
-    "name": "日喀则",
-    "img": "./assets/city_networks/shigatse.png",
-    "pos": [
-      29.2675,
-      88.8752
-    ]
-  },
-  {
-    "id": "xi_an",
-    "name": "西安",
-    "img": "./assets/city_networks/xi_an.png",
-    "pos": [
-      34.3416,
-      108.9398
-    ]
-  },
-  {
-    "id": "baoji",
-    "name": "宝鸡",
-    "img": "./assets/city_networks/baoji.png",
-    "pos": [
-      34.3619,
-      107.2373
-    ]
-  },
-  {
-    "id": "yanan",
-    "name": "延安",
-    "img": "./assets/city_networks/yanan.png",
-    "pos": [
-      36.5854,
-      109.4897
-    ]
-  },
-  {
-    "id": "lanzhou",
-    "name": "兰州",
-    "img": "./assets/city_networks/lanzhou.png",
-    "pos": [
-      36.0611,
-      103.8343
-    ]
-  },
-  {
-    "id": "dunhuang",
-    "name": "敦煌",
-    "img": "./assets/city_networks/dunhuang.png",
-    "pos": [
-      40.1421,
-      94.662
-    ]
-  },
-  {
-    "id": "xining",
-    "name": "西宁",
-    "img": "./assets/city_networks/xining.png",
-    "pos": [
-      36.6171,
-      101.7782
-    ]
-  },
-  {
-    "id": "yinchuan",
-    "name": "银川",
-    "img": "./assets/city_networks/yinchuan.png",
-    "pos": [
-      38.4872,
-      106.2309
-    ]
-  },
-  {
-    "id": "zhongwei",
-    "name": "中卫",
-    "img": "./assets/city_networks/zhongwei.png",
-    "pos": [
-      37.5136,
-      105.1896
-    ]
-  },
-  {
-    "id": "urumqi",
-    "name": "乌鲁木齐",
-    "img": "./assets/city_networks/urumqi.png",
-    "pos": [
-      43.8256,
-      87.6168
-    ]
-  },
-  {
-    "id": "kashgar",
-    "name": "喀什",
-    "img": "./assets/city_networks/kashgar.png",
-    "pos": [
-      39.4704,
-      75.9898
-    ]
-  },
-  {
-    "id": "turpan",
-    "name": "吐鲁番",
-    "img": "./assets/city_networks/turpan.png",
-    "pos": [
-      42.9333,
-      89.1897
-    ]
-  },
-  {
-    "id": "korla",
-    "name": "库尔勒",
-    "img": "./assets/city_networks/korla.png",
-    "pos": [
-      41.7641,
-      86.1453
-    ]
-  },
-  {
-    "id": "karamay",
-    "name": "克拉玛依",
-    "img": "./assets/city_networks/karamay.png",
-    "pos": [
-      45.6032,
-      84.8694
-    ]
-  },
-  {
-    "id": "tekes",
-    "name": "特克斯",
-    "img": "./assets/city_networks/tekes.png",
-    "pos": [
-      43.2146,
-      81.8412
-    ]
-  },
-  {
-    "id": "shihezi",
-    "name": "石河子",
-    "img": "./assets/city_networks/shihezi.png",
-    "pos": [
-      44.3054,
-      86.0332
-    ]
-  },
-  {
-    "id": "jiaxing",
-    "name": "嘉兴",
-    "img": "./assets/city_networks/jiaxing.png",
-    "pos": [
-      30.7539,
-      120.7522
-    ]
-  },
-  {
-    "id": "huzhou",
-    "name": "湖州",
-    "img": "./assets/city_networks/huzhou.png",
-    "pos": [
-      30.893,
-      120.0873
-    ]
-  },
-  {
-    "id": "taizhou_zj",
-    "name": "台州",
-    "img": "./assets/city_networks/taizhou_zj.png",
-    "pos": [
-      28.6564,
-      121.4208
-    ]
-  },
-  {
-    "id": "zhenjiang",
-    "name": "镇江",
-    "img": "./assets/city_networks/zhenjiang.png",
-    "pos": [
-      32.1878,
-      119.4252
-    ]
-  },
-  {
-    "id": "taizhou_js",
-    "name": "泰州",
-    "img": "./assets/city_networks/taizhou_js.png",
-    "pos": [
-      32.4555,
-      119.9246
-    ]
-  },
-  {
-    "id": "nantong",
-    "name": "南通",
-    "img": "./assets/city_networks/nantong.png",
-    "pos": [
-      31.9802,
-      120.8943
-    ]
-  },
-  {
-    "id": "wuhu",
-    "name": "芜湖",
-    "img": "./assets/city_networks/wuhu.png",
-    "pos": [
-      31.3528,
-      118.3755
-    ]
-  },
-  {
-    "id": "anqing",
-    "name": "安庆",
-    "img": "./assets/city_networks/anqing.png",
-    "pos": [
-      30.5248,
-      117.0428
-    ]
-  },
-  {
-    "id": "jining",
-    "name": "济宁",
-    "img": "./assets/city_networks/jining.png",
-    "pos": [
-      35.4149,
-      116.5872
-    ]
-  },
-  {
-    "id": "weihai",
-    "name": "威海",
-    "img": "./assets/city_networks/weihai.png",
-    "pos": [
-      37.513,
-      122.1204
-    ]
-  },
-  {
-    "id": "linyi",
-    "name": "临沂",
-    "img": "./assets/city_networks/linyi.png",
-    "pos": [
-      35.0518,
-      118.3119
-    ]
-  },
-  {
-    "id": "ganzhou",
-    "name": "赣州",
-    "img": "./assets/city_networks/ganzhou.png",
-    "pos": [
-      25.8311,
-      114.9347
-    ]
-  },
-  {
-    "id": "zhanjiang",
-    "name": "湛江",
-    "img": "./assets/city_networks/zhanjiang.png",
-    "pos": [
-      21.2707,
-      110.3594
-    ]
-  },
-  {
-    "id": "huizhou",
-    "name": "惠州",
-    "img": "./assets/city_networks/huizhou.png",
-    "pos": [
-      23.1115,
-      114.4161
-    ]
-  },
-  {
-    "id": "zhongshan",
-    "name": "中山",
-    "img": "./assets/city_networks/zhongshan.png",
-    "pos": [
-      22.517,
-      113.3928
-    ]
-  },
-  {
-    "id": "jiangmen",
-    "name": "江门",
-    "img": "./assets/city_networks/jiangmen.png",
-    "pos": [
-      22.5787,
-      113.0819
-    ]
-  },
-  {
-    "id": "hengyang",
-    "name": "衡阳",
-    "img": "./assets/city_networks/hengyang.png",
-    "pos": [
-      26.8968,
-      112.5725
-    ]
-  },
-  {
-    "id": "changde",
-    "name": "常德",
-    "img": "./assets/city_networks/changde.png",
-    "pos": [
-      29.0317,
-      111.6985
-    ]
-  },
-  {
-    "id": "jingzhou",
-    "name": "荆州",
-    "img": "./assets/city_networks/jingzhou.png",
-    "pos": [
-      30.3323,
-      112.2354
-    ]
-  },
-  {
-    "id": "shiyan",
-    "name": "十堰",
-    "img": "./assets/city_networks/shiyan.png",
-    "pos": [
-      32.6475,
-      110.7993
-    ]
+    "lat": 39.9617,
+    "lon": 119.6005
   },
   {
     "id": "handan",
     "name": "邯郸",
+    "province": "河北省",
     "img": "./assets/city_networks/handan.png",
-    "pos": [
-      36.6256,
-      114.5391
-    ]
+    "lat": 36.6256,
+    "lon": 114.5391
   },
   {
     "id": "baoding",
     "name": "保定",
+    "province": "河北省",
     "img": "./assets/city_networks/baoding.png",
-    "pos": [
-      38.8738,
-      115.4648
-    ]
+    "lat": 38.8738,
+    "lon": 115.4648
   },
   {
     "id": "zhangjiakou",
-    "name": "张家界",
+    "name": "张家口",
+    "province": "河北省",
     "img": "./assets/city_networks/zhangjiakou.png",
-    "pos": [
-      40.8183,
-      114.8859
-    ]
+    "lat": 40.8183,
+    "lon": 114.8859
   },
   {
     "id": "chengde",
     "name": "承德",
+    "province": "河北省",
     "img": "./assets/city_networks/chengde.png",
-    "pos": [
-      40.9762,
-      117.9624
-    ]
+    "lat": 40.9762,
+    "lon": 117.9624
+  },
+  {
+    "id": "cangzhou",
+    "name": "沧州",
+    "province": "河北省",
+    "img": "./assets/city_networks/cangzhou.png",
+    "lat": 38.3045,
+    "lon": 116.8388
+  },
+  {
+    "id": "langfang",
+    "name": "廊坊",
+    "province": "河北省",
+    "img": "./assets/city_networks/langfang.png",
+    "lat": 39.538,
+    "lon": 116.6837
+  },
+  {
+    "id": "hengshui",
+    "name": "衡水",
+    "province": "河北省",
+    "img": "./assets/city_networks/hengshui.png",
+    "lat": 37.739,
+    "lon": 115.6744
+  },
+  {
+    "id": "taiyuan",
+    "name": "太原",
+    "province": "山西省",
+    "img": "./assets/city_networks/taiyuan.png",
+    "lat": 37.8706,
+    "lon": 112.5489
+  },
+  {
+    "id": "datong",
+    "name": "大同",
+    "province": "山西省",
+    "img": "./assets/city_networks/datong.png",
+    "lat": 40.0768,
+    "lon": 113.3001
+  },
+  {
+    "id": "yuncheng",
+    "name": "运城",
+    "province": "山西省",
+    "img": "./assets/city_networks/yuncheng.png",
+    "lat": 35.0264,
+    "lon": 111.0073
+  },
+  {
+    "id": "linfen",
+    "name": "临汾",
+    "province": "山西省",
+    "img": "./assets/city_networks/linfen.png",
+    "lat": 36.088,
+    "lon": 111.5189
+  },
+  {
+    "id": "changzhi",
+    "name": "长治",
+    "province": "山西省",
+    "img": "./assets/city_networks/changzhi.png",
+    "lat": 36.1954,
+    "lon": 113.1163
+  },
+  {
+    "id": "hohhot",
+    "name": "呼和浩特",
+    "province": "内蒙古自治区",
+    "img": "./assets/city_networks/hohhot.png",
+    "lat": 40.8415,
+    "lon": 111.7492
+  },
+  {
+    "id": "baotou",
+    "name": "包头",
+    "province": "内蒙古自治区",
+    "img": "./assets/city_networks/baotou.png",
+    "lat": 40.6579,
+    "lon": 109.8404
   },
   {
     "id": "ordos",
     "name": "鄂尔多斯",
+    "province": "内蒙古自治区",
     "img": "./assets/city_networks/ordos.png",
-    "pos": [
-      39.6083,
-      109.7816
-    ]
+    "lat": 39.6083,
+    "lon": 109.7816
+  },
+  {
+    "id": "chifeng",
+    "name": "赤峰",
+    "province": "内蒙古自治区",
+    "img": "./assets/city_networks/chifeng.png",
+    "lat": 42.2578,
+    "lon": 118.9636
+  },
+  {
+    "id": "tongliao",
+    "name": "通辽",
+    "province": "内蒙古自治区",
+    "img": "./assets/city_networks/tongliao.png",
+    "lat": 43.6137,
+    "lon": 122.2433
+  },
+  {
+    "id": "hulunbuir",
+    "name": "呼伦贝尔",
+    "province": "内蒙古自治区",
+    "img": "./assets/city_networks/hulunbuir.png",
+    "lat": 49.2116,
+    "lon": 119.7658
+  },
+  {
+    "id": "shenyang",
+    "name": "沈阳",
+    "province": "辽宁省",
+    "img": "./assets/city_networks/shenyang.png",
+    "lat": 41.8057,
+    "lon": 123.4315
+  },
+  {
+    "id": "dalian",
+    "name": "大连",
+    "province": "辽宁省",
+    "img": "./assets/city_networks/dalian.png",
+    "lat": 38.914,
+    "lon": 121.6147
   },
   {
     "id": "anshan",
     "name": "鞍山",
+    "province": "辽宁省",
     "img": "./assets/city_networks/anshan.png",
-    "pos": [
-      41.1075,
-      122.9944
-    ]
+    "lat": 41.1075,
+    "lon": 122.9944
+  },
+  {
+    "id": "fushun",
+    "name": "抚顺",
+    "province": "辽宁省",
+    "img": "./assets/city_networks/fushun.png",
+    "lat": 41.8655,
+    "lon": 123.9572
+  },
+  {
+    "id": "benxi",
+    "name": "本溪",
+    "province": "辽宁省",
+    "img": "./assets/city_networks/benxi.png",
+    "lat": 41.3005,
+    "lon": 123.7716
   },
   {
     "id": "dandong",
     "name": "丹东",
+    "province": "辽宁省",
     "img": "./assets/city_networks/dandong.png",
-    "pos": [
-      40.1242,
-      124.383
-    ]
+    "lat": 40.1242,
+    "lon": 124.383
   },
   {
     "id": "jinzhou",
     "name": "锦州",
+    "province": "辽宁省",
     "img": "./assets/city_networks/jinzhou.png",
-    "pos": [
-      41.0951,
-      121.127
-    ]
+    "lat": 41.0951,
+    "lon": 121.127
   },
   {
-    "id": "yanji",
-    "name": "延吉",
-    "img": "./assets/city_networks/yanji.png",
-    "pos": [
-      42.9068,
-      129.5076
-    ]
+    "id": "yingkou",
+    "name": "营口",
+    "province": "辽宁省",
+    "img": "./assets/city_networks/yingkou.png",
+    "lat": 40.6674,
+    "lon": 122.2319
   },
   {
-    "id": "xianyang",
-    "name": "咸阳",
-    "img": "./assets/city_networks/xianyang.png",
-    "pos": [
-      34.3296,
-      108.7089
-    ]
+    "id": "changchun",
+    "name": "长春",
+    "province": "吉林省",
+    "img": "./assets/city_networks/changchun.png",
+    "lat": 43.8171,
+    "lon": 125.3235
   },
   {
-    "id": "yulin_sx",
-    "name": "榆林",
-    "img": "./assets/city_networks/yulin_sx.png",
-    "pos": [
-      38.2853,
-      109.7347
-    ]
+    "id": "jilin",
+    "name": "吉林市",
+    "province": "吉林省",
+    "img": "./assets/city_networks/jilin.png",
+    "lat": 43.8378,
+    "lon": 126.5496
   },
   {
-    "id": "tianshui",
-    "name": "天水",
-    "img": "./assets/city_networks/tianshui.png",
-    "pos": [
-      34.5808,
-      105.7249
-    ]
+    "id": "siping",
+    "name": "四平",
+    "province": "吉林省",
+    "img": "./assets/city_networks/siping.png",
+    "lat": 43.1664,
+    "lon": 124.3504
   },
   {
-    "id": "jiuquan",
-    "name": "酒泉",
-    "img": "./assets/city_networks/jiuquan.png",
-    "pos": [
-      39.7321,
-      98.4942
-    ]
+    "id": "yanbian",
+    "name": "延边(延吉)",
+    "province": "吉林省",
+    "img": "./assets/city_networks/yanbian.png",
+    "lat": 42.9068,
+    "lon": 129.5076
   },
   {
-    "id": "hami",
-    "name": "哈密",
-    "img": "./assets/city_networks/hami.png",
-    "pos": [
-      42.8185,
-      93.5151
-    ]
+    "id": "harbin",
+    "name": "哈尔滨",
+    "province": "黑龙江省",
+    "img": "./assets/city_networks/harbin.png",
+    "lat": 45.8038,
+    "lon": 126.535
   },
   {
-    "id": "aksu",
-    "name": "阿克苏",
-    "img": "./assets/city_networks/aksu.png",
-    "pos": [
-      41.1687,
-      80.2606
-    ]
+    "id": "daqing",
+    "name": "大庆",
+    "province": "黑龙江省",
+    "img": "./assets/city_networks/daqing.png",
+    "lat": 46.5845,
+    "lon": 125.1037
   },
   {
-    "id": "mianyang",
-    "name": "绵阳",
-    "img": "./assets/city_networks/mianyang.png",
-    "pos": [
-      31.4674,
-      104.7578
-    ]
+    "id": "qiqihar",
+    "name": "齐齐哈尔",
+    "province": "黑龙江省",
+    "img": "./assets/city_networks/qiqihar.png",
+    "lat": 47.3543,
+    "lon": 123.9182
   },
   {
-    "id": "yibin",
-    "name": "宜宾",
-    "img": "./assets/city_networks/yibin.png",
-    "pos": [
-      28.7525,
-      104.6432
-    ]
+    "id": "mudanjiang",
+    "name": "牡丹江",
+    "province": "黑龙江省",
+    "img": "./assets/city_networks/mudanjiang.png",
+    "lat": 44.5768,
+    "lon": 129.6331
   },
   {
-    "id": "nanchong",
-    "name": "南充",
-    "img": "./assets/city_networks/nanchong.png",
-    "pos": [
-      30.7991,
-      106.0829
-    ]
+    "id": "jiamusi",
+    "name": "佳木斯",
+    "province": "黑龙江省",
+    "img": "./assets/city_networks/jiamusi.png",
+    "lat": 46.8021,
+    "lon": 130.3189
   },
   {
-    "id": "bijie",
-    "name": "毕节",
-    "img": "./assets/city_networks/bijie.png",
-    "pos": [
-      27.3019,
-      105.2863
-    ]
+    "id": "heihe",
+    "name": "黑河",
+    "province": "黑龙江省",
+    "img": "./assets/city_networks/heihe.png",
+    "lat": 50.2443,
+    "lon": 127.5276
   },
   {
-    "id": "shangrila",
-    "name": "香格里拉",
-    "img": "./assets/city_networks/shangrila.png",
-    "pos": [
-      27.8288,
-      99.7072
-    ]
+    "id": "nanjing",
+    "name": "南京",
+    "province": "江苏省",
+    "img": "./assets/city_networks/nanjing.png",
+    "lat": 32.0603,
+    "lon": 118.7969
   },
   {
-    "id": "panzhihua",
-    "name": "攀枝花",
-    "img": "./assets/city_networks/panzhihua.png",
-    "pos": [
-      26.5823,
-      101.7186
-    ]
+    "id": "suzhou",
+    "name": "苏州",
+    "province": "江苏省",
+    "img": "./assets/city_networks/suzhou.png",
+    "lat": 31.2989,
+    "lon": 120.5853
   },
   {
-    "id": "luzhou",
-    "name": "泸州",
-    "img": "./assets/city_networks/luzhou.png",
-    "pos": [
-      28.8724,
-      105.4404
-    ]
+    "id": "wuxi",
+    "name": "无锡",
+    "province": "江苏省",
+    "img": "./assets/city_networks/wuxi.png",
+    "lat": 31.4912,
+    "lon": 120.3119
   },
   {
-    "id": "deyang",
-    "name": "德阳",
-    "img": "./assets/city_networks/deyang.png",
-    "pos": [
-      31.1279,
-      104.3986
-    ]
+    "id": "xuzhou",
+    "name": "徐州",
+    "province": "江苏省",
+    "img": "./assets/city_networks/xuzhou.png",
+    "lat": 34.2048,
+    "lon": 117.2841
   },
   {
-    "id": "guangyuan",
-    "name": "广元",
-    "img": "./assets/city_networks/guangyuan.png",
-    "pos": [
-      32.4417,
-      105.8433
-    ]
+    "id": "changzhou",
+    "name": "常州",
+    "province": "江苏省",
+    "img": "./assets/city_networks/changzhou.png",
+    "lat": 31.8112,
+    "lon": 119.9741
   },
   {
-    "id": "dazhou",
-    "name": "达州",
-    "img": "./assets/city_networks/dazhou.png",
-    "pos": [
-      31.2096,
-      107.468
-    ]
+    "id": "nantong",
+    "name": "南通",
+    "province": "江苏省",
+    "img": "./assets/city_networks/nantong.png",
+    "lat": 31.9802,
+    "lon": 120.8943
   },
   {
-    "id": "liupanshui",
-    "name": "六盘水",
-    "img": "./assets/city_networks/liupanshui.png",
-    "pos": [
-      26.5926,
-      104.8302
-    ]
+    "id": "lianyungang",
+    "name": "连云港",
+    "province": "江苏省",
+    "img": "./assets/city_networks/lianyungang.png",
+    "lat": 34.5967,
+    "lon": 119.2215
   },
   {
-    "id": "anshun",
-    "name": "安顺",
-    "img": "./assets/city_networks/anshun.png",
-    "pos": [
-      26.253,
-      105.9462
-    ]
+    "id": "huai_an",
+    "name": "淮安",
+    "province": "江苏省",
+    "img": "./assets/city_networks/huai_an.png",
+    "lat": 33.6104,
+    "lon": 119.0153
   },
   {
-    "id": "tongren",
-    "name": "铜仁",
-    "img": "./assets/city_networks/tongren.png",
-    "pos": [
-      27.7172,
-      109.1899
-    ]
+    "id": "yancheng",
+    "name": "盐城",
+    "province": "江苏省",
+    "img": "./assets/city_networks/yancheng.png",
+    "lat": 33.3474,
+    "lon": 120.1636
   },
   {
-    "id": "qujing",
-    "name": "曲靖",
-    "img": "./assets/city_networks/qujing.png",
-    "pos": [
-      25.4899,
-      103.7978
-    ]
+    "id": "yangzhou",
+    "name": "扬州",
+    "province": "江苏省",
+    "img": "./assets/city_networks/yangzhou.png",
+    "lat": 32.3942,
+    "lon": 119.4129
   },
   {
-    "id": "yuxi",
-    "name": "玉溪",
-    "img": "./assets/city_networks/yuxi.png",
-    "pos": [
-      24.352,
-      102.5439
-    ]
+    "id": "zhenjiang",
+    "name": "镇江",
+    "province": "江苏省",
+    "img": "./assets/city_networks/zhenjiang.png",
+    "lat": 32.1878,
+    "lon": 119.4252
   },
   {
-    "id": "hanzhong",
-    "name": "汉中",
-    "img": "./assets/city_networks/hanzhong.png",
-    "pos": [
-      33.0676,
-      107.0236
-    ]
+    "id": "taizhou_js",
+    "name": "泰州",
+    "province": "江苏省",
+    "img": "./assets/city_networks/taizhou_js.png",
+    "lat": 32.4555,
+    "lon": 119.9246
   },
   {
-    "id": "jiayuguan",
-    "name": "嘉峪关",
-    "img": "./assets/city_networks/jiayuguan.png",
-    "pos": [
-      39.7731,
-      98.2891
-    ]
+    "id": "suqian",
+    "name": "宿迁",
+    "province": "江苏省",
+    "img": "./assets/city_networks/suqian.png",
+    "lat": 33.963,
+    "lon": 118.2752
   },
   {
-    "id": "zhangye",
-    "name": "张掖",
-    "img": "./assets/city_networks/zhangye.png",
-    "pos": [
-      38.9259,
-      100.4498
-    ]
+    "id": "hangzhou",
+    "name": "杭州",
+    "province": "浙江省",
+    "img": "./assets/city_networks/hangzhou.png",
+    "lat": 30.2741,
+    "lon": 120.1551
   },
   {
-    "id": "hotan",
-    "name": "和田",
-    "img": "./assets/city_networks/hotan.png",
-    "pos": [
-      37.1141,
-      79.9222
-    ]
+    "id": "ningbo",
+    "name": "宁波",
+    "province": "浙江省",
+    "img": "./assets/city_networks/ningbo.png",
+    "lat": 29.8683,
+    "lon": 121.544
   },
   {
-    "id": "yining",
-    "name": "伊宁",
-    "img": "./assets/city_networks/yining.png",
-    "pos": [
-      43.9143,
-      81.3179
-    ]
+    "id": "wenzhou",
+    "name": "温州",
+    "province": "浙江省",
+    "img": "./assets/city_networks/wenzhou.png",
+    "lat": 27.9943,
+    "lon": 120.6994
+  },
+  {
+    "id": "jiaxing",
+    "name": "嘉兴",
+    "province": "浙江省",
+    "img": "./assets/city_networks/jiaxing.png",
+    "lat": 30.7539,
+    "lon": 120.7522
+  },
+  {
+    "id": "huzhou",
+    "name": "湖州",
+    "province": "浙江省",
+    "img": "./assets/city_networks/huzhou.png",
+    "lat": 30.893,
+    "lon": 120.0873
+  },
+  {
+    "id": "shaoxing",
+    "name": "绍兴",
+    "province": "浙江省",
+    "img": "./assets/city_networks/shaoxing.png",
+    "lat": 30.0024,
+    "lon": 120.5861
+  },
+  {
+    "id": "jinhua",
+    "name": "金华",
+    "province": "浙江省",
+    "img": "./assets/city_networks/jinhua.png",
+    "lat": 29.079,
+    "lon": 119.6474
+  },
+  {
+    "id": "quzhou",
+    "name": "衢州",
+    "province": "浙江省",
+    "img": "./assets/city_networks/quzhou.png",
+    "lat": 28.9701,
+    "lon": 118.8593
+  },
+  {
+    "id": "zhoushan",
+    "name": "舟山",
+    "province": "浙江省",
+    "img": "./assets/city_networks/zhoushan.png",
+    "lat": 29.9855,
+    "lon": 122.2066
+  },
+  {
+    "id": "taizhou_zj",
+    "name": "台州",
+    "province": "浙江省",
+    "img": "./assets/city_networks/taizhou_zj.png",
+    "lat": 28.6564,
+    "lon": 121.4208
+  },
+  {
+    "id": "lishui",
+    "name": "丽水",
+    "province": "浙江省",
+    "img": "./assets/city_networks/lishui.png",
+    "lat": 28.4676,
+    "lon": 119.9218
+  },
+  {
+    "id": "hefei",
+    "name": "合肥",
+    "province": "安徽省",
+    "img": "./assets/city_networks/hefei.png",
+    "lat": 31.8206,
+    "lon": 117.2272
+  },
+  {
+    "id": "wuhu",
+    "name": "芜湖",
+    "province": "安徽省",
+    "img": "./assets/city_networks/wuhu.png",
+    "lat": 31.3528,
+    "lon": 118.3755
+  },
+  {
+    "id": "bengbu",
+    "name": "蚌埠",
+    "province": "安徽省",
+    "img": "./assets/city_networks/bengbu.png",
+    "lat": 32.9163,
+    "lon": 117.3897
+  },
+  {
+    "id": "huainan",
+    "name": "淮南",
+    "province": "安徽省",
+    "img": "./assets/city_networks/huainan.png",
+    "lat": 32.6255,
+    "lon": 116.9965
+  },
+  {
+    "id": "maanshan",
+    "name": "马鞍山",
+    "province": "安徽省",
+    "img": "./assets/city_networks/maanshan.png",
+    "lat": 31.67,
+    "lon": 118.5067
+  },
+  {
+    "id": "anqing",
+    "name": "安庆",
+    "province": "安徽省",
+    "img": "./assets/city_networks/anqing.png",
+    "lat": 30.5248,
+    "lon": 117.0428
+  },
+  {
+    "id": "huangshan",
+    "name": "黄山",
+    "province": "安徽省",
+    "img": "./assets/city_networks/huangshan.png",
+    "lat": 29.7147,
+    "lon": 118.3375
+  },
+  {
+    "id": "fuyang",
+    "name": "阜阳",
+    "province": "安徽省",
+    "img": "./assets/city_networks/fuyang.png",
+    "lat": 32.8901,
+    "lon": 115.8142
+  },
+  {
+    "id": "fuzhou",
+    "name": "福州",
+    "province": "福建省",
+    "img": "./assets/city_networks/fuzhou.png",
+    "lat": 26.0745,
+    "lon": 119.2965
+  },
+  {
+    "id": "xiamen",
+    "name": "厦门",
+    "province": "福建省",
+    "img": "./assets/city_networks/xiamen.png",
+    "lat": 24.4798,
+    "lon": 118.0894
+  },
+  {
+    "id": "putian",
+    "name": "莆田",
+    "province": "福建省",
+    "img": "./assets/city_networks/putian.png",
+    "lat": 25.4541,
+    "lon": 119.0078
+  },
+  {
+    "id": "sanming",
+    "name": "三明",
+    "province": "福建省",
+    "img": "./assets/city_networks/sanming.png",
+    "lat": 26.2634,
+    "lon": 117.6386
+  },
+  {
+    "id": "quanzhou",
+    "name": "泉州",
+    "province": "福建省",
+    "img": "./assets/city_networks/quanzhou.png",
+    "lat": 24.8741,
+    "lon": 118.6757
+  },
+  {
+    "id": "zhangzhou",
+    "name": "漳州",
+    "province": "福建省",
+    "img": "./assets/city_networks/zhangzhou.png",
+    "lat": 24.513,
+    "lon": 117.6473
+  },
+  {
+    "id": "nanping",
+    "name": "南平",
+    "province": "福建省",
+    "img": "./assets/city_networks/nanping.png",
+    "lat": 26.6375,
+    "lon": 118.1777
+  },
+  {
+    "id": "longyan",
+    "name": "龙岩",
+    "province": "福建省",
+    "img": "./assets/city_networks/longyan.png",
+    "lat": 25.0916,
+    "lon": 117.0298
+  },
+  {
+    "id": "ningde",
+    "name": "宁德",
+    "province": "福建省",
+    "img": "./assets/city_networks/ningde.png",
+    "lat": 26.6656,
+    "lon": 119.5479
+  },
+  {
+    "id": "nanchang",
+    "name": "南昌",
+    "province": "江西省",
+    "img": "./assets/city_networks/nanchang.png",
+    "lat": 28.682,
+    "lon": 115.8579
+  },
+  {
+    "id": "jingdezhen",
+    "name": "景德镇",
+    "province": "江西省",
+    "img": "./assets/city_networks/jingdezhen.png",
+    "lat": 29.269,
+    "lon": 117.1782
+  },
+  {
+    "id": "jiujiang",
+    "name": "九江",
+    "province": "江西省",
+    "img": "./assets/city_networks/jiujiang.png",
+    "lat": 29.7051,
+    "lon": 116.0019
+  },
+  {
+    "id": "ganzhou",
+    "name": "赣州",
+    "province": "江西省",
+    "img": "./assets/city_networks/ganzhou.png",
+    "lat": 25.8311,
+    "lon": 114.9347
+  },
+  {
+    "id": "yichun",
+    "name": "宜春",
+    "province": "江西省",
+    "img": "./assets/city_networks/yichun.png",
+    "lat": 27.8158,
+    "lon": 114.3826
+  },
+  {
+    "id": "shangrao",
+    "name": "上饶",
+    "province": "江西省",
+    "img": "./assets/city_networks/shangrao.png",
+    "lat": 28.4548,
+    "lon": 117.9436
+  },
+  {
+    "id": "jinan",
+    "name": "济南",
+    "province": "山东省",
+    "img": "./assets/city_networks/jinan.png",
+    "lat": 36.6512,
+    "lon": 117.1201
+  },
+  {
+    "id": "qingdao",
+    "name": "青岛",
+    "province": "山东省",
+    "img": "./assets/city_networks/qingdao.png",
+    "lat": 36.0671,
+    "lon": 120.3826
+  },
+  {
+    "id": "zibo",
+    "name": "淄博",
+    "province": "山东省",
+    "img": "./assets/city_networks/zibo.png",
+    "lat": 36.8135,
+    "lon": 118.055
+  },
+  {
+    "id": "zaozhuang",
+    "name": "枣庄",
+    "province": "山东省",
+    "img": "./assets/city_networks/zaozhuang.png",
+    "lat": 34.8105,
+    "lon": 117.323
+  },
+  {
+    "id": "dongying",
+    "name": "东营",
+    "province": "山东省",
+    "img": "./assets/city_networks/dongying.png",
+    "lat": 37.4341,
+    "lon": 118.6747
+  },
+  {
+    "id": "yantai",
+    "name": "烟台",
+    "province": "山东省",
+    "img": "./assets/city_networks/yantai.png",
+    "lat": 37.4638,
+    "lon": 121.4479
+  },
+  {
+    "id": "weifang",
+    "name": "潍坊",
+    "province": "山东省",
+    "img": "./assets/city_networks/weifang.png",
+    "lat": 36.7072,
+    "lon": 119.1617
+  },
+  {
+    "id": "jining",
+    "name": "济宁",
+    "province": "山东省",
+    "img": "./assets/city_networks/jining.png",
+    "lat": 35.4149,
+    "lon": 116.5872
+  },
+  {
+    "id": "taian",
+    "name": "泰安",
+    "province": "山东省",
+    "img": "./assets/city_networks/taian.png",
+    "lat": 36.2002,
+    "lon": 117.0877
+  },
+  {
+    "id": "weihai",
+    "name": "威海",
+    "province": "山东省",
+    "img": "./assets/city_networks/weihai.png",
+    "lat": 37.513,
+    "lon": 122.1204
+  },
+  {
+    "id": "rizhao",
+    "name": "日照",
+    "province": "山东省",
+    "img": "./assets/city_networks/rizhao.png",
+    "lat": 35.4164,
+    "lon": 119.527
+  },
+  {
+    "id": "linyi",
+    "name": "临沂",
+    "province": "山东省",
+    "img": "./assets/city_networks/linyi.png",
+    "lat": 35.0518,
+    "lon": 118.3119
   },
   {
     "id": "dezhou",
     "name": "德州",
+    "province": "山东省",
     "img": "./assets/city_networks/dezhou.png",
-    "pos": [
-      37.434,
-      116.3574
-    ]
+    "lat": 37.434,
+    "lon": 116.3574
+  },
+  {
+    "id": "liaocheng",
+    "name": "聊城",
+    "province": "山东省",
+    "img": "./assets/city_networks/liaocheng.png",
+    "lat": 36.4567,
+    "lon": 115.9855
+  },
+  {
+    "id": "binzhou",
+    "name": "滨州",
+    "province": "山东省",
+    "img": "./assets/city_networks/binzhou.png",
+    "lat": 37.382,
+    "lon": 117.9707
+  },
+  {
+    "id": "heze",
+    "name": "菏泽",
+    "province": "山东省",
+    "img": "./assets/city_networks/heze.png",
+    "lat": 35.2338,
+    "lon": 115.4807
+  },
+  {
+    "id": "zhengzhou",
+    "name": "郑州",
+    "province": "河南省",
+    "img": "./assets/city_networks/zhengzhou.png",
+    "lat": 34.7466,
+    "lon": 113.6253
+  },
+  {
+    "id": "kaifeng",
+    "name": "开封",
+    "province": "河南省",
+    "img": "./assets/city_networks/kaifeng.png",
+    "lat": 34.7972,
+    "lon": 114.3076
+  },
+  {
+    "id": "luoyang",
+    "name": "洛阳",
+    "province": "河南省",
+    "img": "./assets/city_networks/luoyang.png",
+    "lat": 34.6181,
+    "lon": 112.454
+  },
+  {
+    "id": "anyang",
+    "name": "安阳",
+    "province": "河南省",
+    "img": "./assets/city_networks/anyang.png",
+    "lat": 36.0975,
+    "lon": 114.3925
+  },
+  {
+    "id": "xinxiang",
+    "name": "新乡",
+    "province": "河南省",
+    "img": "./assets/city_networks/xinxiang.png",
+    "lat": 35.3026,
+    "lon": 113.9268
+  },
+  {
+    "id": "jiaozuo",
+    "name": "焦作",
+    "province": "河南省",
+    "img": "./assets/city_networks/jiaozuo.png",
+    "lat": 35.2158,
+    "lon": 113.2418
+  },
+  {
+    "id": "xuchang",
+    "name": "许昌",
+    "province": "河南省",
+    "img": "./assets/city_networks/xuchang.png",
+    "lat": 34.0355,
+    "lon": 113.8526
+  },
+  {
+    "id": "nanyang",
+    "name": "南阳",
+    "province": "河南省",
+    "img": "./assets/city_networks/nanyang.png",
+    "lat": 32.9908,
+    "lon": 112.5283
+  },
+  {
+    "id": "shangqiu",
+    "name": "商丘",
+    "province": "河南省",
+    "img": "./assets/city_networks/shangqiu.png",
+    "lat": 34.4134,
+    "lon": 115.6563
+  },
+  {
+    "id": "xinyang",
+    "name": "信阳",
+    "province": "河南省",
+    "img": "./assets/city_networks/xinyang.png",
+    "lat": 32.1469,
+    "lon": 114.0912
+  },
+  {
+    "id": "zhoukou",
+    "name": "周口",
+    "province": "河南省",
+    "img": "./assets/city_networks/zhoukou.png",
+    "lat": 33.6251,
+    "lon": 114.6973
+  },
+  {
+    "id": "wuhan",
+    "name": "武汉",
+    "province": "湖北省",
+    "img": "./assets/city_networks/wuhan.png",
+    "lat": 30.5928,
+    "lon": 114.3055
+  },
+  {
+    "id": "huangshi",
+    "name": "黄石",
+    "province": "湖北省",
+    "img": "./assets/city_networks/huangshi.png",
+    "lat": 30.2007,
+    "lon": 115.0441
+  },
+  {
+    "id": "shiyan",
+    "name": "十堰",
+    "province": "湖北省",
+    "img": "./assets/city_networks/shiyan.png",
+    "lat": 32.6475,
+    "lon": 110.7993
+  },
+  {
+    "id": "yichang",
+    "name": "宜昌",
+    "province": "湖北省",
+    "img": "./assets/city_networks/yichang.png",
+    "lat": 30.692,
+    "lon": 111.2865
+  },
+  {
+    "id": "xiangyang",
+    "name": "襄阳",
+    "province": "湖北省",
+    "img": "./assets/city_networks/xiangyang.png",
+    "lat": 32.0087,
+    "lon": 112.1224
+  },
+  {
+    "id": "jingmen",
+    "name": "荆门",
+    "province": "湖北省",
+    "img": "./assets/city_networks/jingmen.png",
+    "lat": 31.0354,
+    "lon": 112.1994
+  },
+  {
+    "id": "jingzhou",
+    "name": "荆州",
+    "province": "湖北省",
+    "img": "./assets/city_networks/jingzhou.png",
+    "lat": 30.3323,
+    "lon": 112.2354
+  },
+  {
+    "id": "huanggang",
+    "name": "黄冈",
+    "province": "湖北省",
+    "img": "./assets/city_networks/huanggang.png",
+    "lat": 30.4355,
+    "lon": 114.8726
+  },
+  {
+    "id": "xianning",
+    "name": "咸宁",
+    "province": "湖北省",
+    "img": "./assets/city_networks/xianning.png",
+    "lat": 29.8414,
+    "lon": 114.3225
+  },
+  {
+    "id": "enshi",
+    "name": "恩施",
+    "province": "湖北省",
+    "img": "./assets/city_networks/enshi.png",
+    "lat": 30.2728,
+    "lon": 109.4869
+  },
+  {
+    "id": "changsha",
+    "name": "长沙",
+    "province": "湖南省",
+    "img": "./assets/city_networks/changsha.png",
+    "lat": 28.2282,
+    "lon": 112.9388
+  },
+  {
+    "id": "zhuzhou",
+    "name": "株洲",
+    "province": "湖南省",
+    "img": "./assets/city_networks/zhuzhou.png",
+    "lat": 27.8274,
+    "lon": 113.1338
+  },
+  {
+    "id": "xiangtan",
+    "name": "湘潭",
+    "province": "湖南省",
+    "img": "./assets/city_networks/xiangtan.png",
+    "lat": 27.8297,
+    "lon": 112.944
+  },
+  {
+    "id": "hengyang",
+    "name": "衡阳",
+    "province": "湖南省",
+    "img": "./assets/city_networks/hengyang.png",
+    "lat": 26.8968,
+    "lon": 112.5725
+  },
+  {
+    "id": "shaoyang",
+    "name": "邵阳",
+    "province": "湖南省",
+    "img": "./assets/city_networks/shaoyang.png",
+    "lat": 27.2389,
+    "lon": 111.4693
+  },
+  {
+    "id": "yueyang",
+    "name": "岳阳",
+    "province": "湖南省",
+    "img": "./assets/city_networks/yueyang.png",
+    "lat": 29.3567,
+    "lon": 113.1289
+  },
+  {
+    "id": "changde",
+    "name": "常德",
+    "province": "湖南省",
+    "img": "./assets/city_networks/changde.png",
+    "lat": 29.0317,
+    "lon": 111.6985
+  },
+  {
+    "id": "zhangjiajie",
+    "name": "张家界",
+    "province": "湖南省",
+    "img": "./assets/city_networks/zhangjiajie.png",
+    "lat": 29.117,
+    "lon": 110.4792
+  },
+  {
+    "id": "yiyang",
+    "name": "益阳",
+    "province": "湖南省",
+    "img": "./assets/city_networks/yiyang.png",
+    "lat": 28.588,
+    "lon": 112.355
+  },
+  {
+    "id": "chenzhou",
+    "name": "郴州",
+    "province": "湖南省",
+    "img": "./assets/city_networks/chenzhou.png",
+    "lat": 25.7705,
+    "lon": 113.0145
+  },
+  {
+    "id": "huaihua",
+    "name": "怀化",
+    "province": "湖南省",
+    "img": "./assets/city_networks/huaihua.png",
+    "lat": 27.5501,
+    "lon": 109.9985
+  },
+  {
+    "id": "guangzhou",
+    "name": "广州",
+    "province": "广东省",
+    "img": "./assets/city_networks/guangzhou.png",
+    "lat": 23.1291,
+    "lon": 113.2644
+  },
+  {
+    "id": "shenzhen",
+    "name": "深圳",
+    "province": "广东省",
+    "img": "./assets/city_networks/shenzhen.png",
+    "lat": 22.5431,
+    "lon": 114.0579
+  },
+  {
+    "id": "zhuhai",
+    "name": "珠海",
+    "province": "广东省",
+    "img": "./assets/city_networks/zhuhai.png",
+    "lat": 22.2707,
+    "lon": 113.5767
+  },
+  {
+    "id": "shantou",
+    "name": "汕头",
+    "province": "广东省",
+    "img": "./assets/city_networks/shantou.png",
+    "lat": 23.3517,
+    "lon": 116.6787
+  },
+  {
+    "id": "foshan",
+    "name": "佛山",
+    "province": "广东省",
+    "img": "./assets/city_networks/foshan.png",
+    "lat": 23.0215,
+    "lon": 113.1214
+  },
+  {
+    "id": "shaoguan",
+    "name": "韶关",
+    "province": "广东省",
+    "img": "./assets/city_networks/shaoguan.png",
+    "lat": 24.8104,
+    "lon": 113.5975
+  },
+  {
+    "id": "zhanjiang",
+    "name": "湛江",
+    "province": "广东省",
+    "img": "./assets/city_networks/zhanjiang.png",
+    "lat": 21.2707,
+    "lon": 110.3594
+  },
+  {
+    "id": "maoming",
+    "name": "茂名",
+    "province": "广东省",
+    "img": "./assets/city_networks/maoming.png",
+    "lat": 21.662,
+    "lon": 110.9254
+  },
+  {
+    "id": "zhaoqing",
+    "name": "肇庆",
+    "province": "广东省",
+    "img": "./assets/city_networks/zhaoqing.png",
+    "lat": 23.0472,
+    "lon": 112.4651
+  },
+  {
+    "id": "huizhou",
+    "name": "惠州",
+    "province": "广东省",
+    "img": "./assets/city_networks/huizhou.png",
+    "lat": 23.1115,
+    "lon": 114.4161
+  },
+  {
+    "id": "meizhou",
+    "name": "梅州",
+    "province": "广东省",
+    "img": "./assets/city_networks/meizhou.png",
+    "lat": 24.2886,
+    "lon": 116.1228
+  },
+  {
+    "id": "dongguan",
+    "name": "东莞",
+    "province": "广东省",
+    "img": "./assets/city_networks/dongguan.png",
+    "lat": 23.0205,
+    "lon": 113.7518
+  },
+  {
+    "id": "zhongshan",
+    "name": "中山",
+    "province": "广东省",
+    "img": "./assets/city_networks/zhongshan.png",
+    "lat": 22.517,
+    "lon": 113.3928
+  },
+  {
+    "id": "jiangmen",
+    "name": "江门",
+    "province": "广东省",
+    "img": "./assets/city_networks/jiangmen.png",
+    "lat": 22.5787,
+    "lon": 113.0819
+  },
+  {
+    "id": "yangjiang",
+    "name": "阳江",
+    "province": "广东省",
+    "img": "./assets/city_networks/yangjiang.png",
+    "lat": 21.8569,
+    "lon": 111.9827
+  },
+  {
+    "id": "qingyuan",
+    "name": "清远",
+    "province": "广东省",
+    "img": "./assets/city_networks/qingyuan.png",
+    "lat": 23.6817,
+    "lon": 113.056
+  },
+  {
+    "id": "chaozhou",
+    "name": "潮州",
+    "province": "广东省",
+    "img": "./assets/city_networks/chaozhou.png",
+    "lat": 23.6669,
+    "lon": 116.63
+  },
+  {
+    "id": "jieyang",
+    "name": "揭阳",
+    "province": "广东省",
+    "img": "./assets/city_networks/jieyang.png",
+    "lat": 23.5253,
+    "lon": 116.3725
+  },
+  {
+    "id": "nanning",
+    "name": "南宁",
+    "province": "广西壮族自治区",
+    "img": "./assets/city_networks/nanning.png",
+    "lat": 22.817,
+    "lon": 108.3665
+  },
+  {
+    "id": "liuzhou",
+    "name": "柳州",
+    "province": "广西壮族自治区",
+    "img": "./assets/city_networks/liuzhou.png",
+    "lat": 24.3255,
+    "lon": 109.4126
+  },
+  {
+    "id": "guilin",
+    "name": "桂林",
+    "province": "广西壮族自治区",
+    "img": "./assets/city_networks/guilin.png",
+    "lat": 25.2345,
+    "lon": 110.18
+  },
+  {
+    "id": "wuzhou",
+    "name": "梧州",
+    "province": "广西壮族自治区",
+    "img": "./assets/city_networks/wuzhou.png",
+    "lat": 23.4769,
+    "lon": 111.2791
+  },
+  {
+    "id": "beihai",
+    "name": "北海",
+    "province": "广西壮族自治区",
+    "img": "./assets/city_networks/beihai.png",
+    "lat": 21.4812,
+    "lon": 109.1192
+  },
+  {
+    "id": "fangchenggang",
+    "name": "防城港",
+    "province": "广西壮族自治区",
+    "img": "./assets/city_networks/fangchenggang.png",
+    "lat": 21.6865,
+    "lon": 108.3538
+  },
+  {
+    "id": "yulin_gx",
+    "name": "玉林",
+    "province": "广西壮族自治区",
+    "img": "./assets/city_networks/yulin_gx.png",
+    "lat": 22.6372,
+    "lon": 110.1652
+  },
+  {
+    "id": "haikou",
+    "name": "海口",
+    "province": "海南省",
+    "img": "./assets/city_networks/haikou.png",
+    "lat": 20.044,
+    "lon": 110.1999
+  },
+  {
+    "id": "sanya",
+    "name": "三亚",
+    "province": "海南省",
+    "img": "./assets/city_networks/sanya.png",
+    "lat": 18.2528,
+    "lon": 109.512
+  },
+  {
+    "id": "sansha",
+    "name": "三沙(永兴岛)",
+    "province": "海南省",
+    "img": "./assets/city_networks/sansha.png",
+    "lat": 16.8377,
+    "lon": 112.3386
+  },
+  {
+    "id": "danzhou",
+    "name": "儋州",
+    "province": "海南省",
+    "img": "./assets/city_networks/danzhou.png",
+    "lat": 19.5225,
+    "lon": 109.5768
+  },
+  {
+    "id": "chengdu",
+    "name": "成都",
+    "province": "四川省",
+    "img": "./assets/city_networks/chengdu.png",
+    "lat": 30.5728,
+    "lon": 104.0668
+  },
+  {
+    "id": "zigong",
+    "name": "自贡",
+    "province": "四川省",
+    "img": "./assets/city_networks/zigong.png",
+    "lat": 29.3392,
+    "lon": 104.7784
+  },
+  {
+    "id": "panzhihua",
+    "name": "攀枝花",
+    "province": "四川省",
+    "img": "./assets/city_networks/panzhihua.png",
+    "lat": 26.5823,
+    "lon": 101.7186
+  },
+  {
+    "id": "luzhou",
+    "name": "泸州",
+    "province": "四川省",
+    "img": "./assets/city_networks/luzhou.png",
+    "lat": 28.8724,
+    "lon": 105.4404
+  },
+  {
+    "id": "deyang",
+    "name": "德阳",
+    "province": "四川省",
+    "img": "./assets/city_networks/deyang.png",
+    "lat": 31.1279,
+    "lon": 104.3986
+  },
+  {
+    "id": "mianyang",
+    "name": "绵阳",
+    "province": "四川省",
+    "img": "./assets/city_networks/mianyang.png",
+    "lat": 31.4674,
+    "lon": 104.7578
+  },
+  {
+    "id": "guangyuan",
+    "name": "广元",
+    "province": "四川省",
+    "img": "./assets/city_networks/guangyuan.png",
+    "lat": 32.4417,
+    "lon": 105.8433
+  },
+  {
+    "id": "suining",
+    "name": "遂宁",
+    "province": "四川省",
+    "img": "./assets/city_networks/suining.png",
+    "lat": 30.5328,
+    "lon": 105.5929
+  },
+  {
+    "id": "neijiang",
+    "name": "内江",
+    "province": "四川省",
+    "img": "./assets/city_networks/neijiang.png",
+    "lat": 29.5802,
+    "lon": 105.0584
+  },
+  {
+    "id": "leshan",
+    "name": "乐山",
+    "province": "四川省",
+    "img": "./assets/city_networks/leshan.png",
+    "lat": 29.5521,
+    "lon": 103.7656
+  },
+  {
+    "id": "nanchong",
+    "name": "南充",
+    "province": "四川省",
+    "img": "./assets/city_networks/nanchong.png",
+    "lat": 30.7991,
+    "lon": 106.0829
+  },
+  {
+    "id": "yibin",
+    "name": "宜宾",
+    "province": "四川省",
+    "img": "./assets/city_networks/yibin.png",
+    "lat": 28.7525,
+    "lon": 104.6432
+  },
+  {
+    "id": "dazhou",
+    "name": "达州",
+    "province": "四川省",
+    "img": "./assets/city_networks/dazhou.png",
+    "lat": 31.2096,
+    "lon": 107.468
+  },
+  {
+    "id": "xichang",
+    "name": "西昌(凉山)",
+    "province": "四川省",
+    "img": "./assets/city_networks/xichang.png",
+    "lat": 27.8932,
+    "lon": 102.2662
+  },
+  {
+    "id": "guiyang",
+    "name": "贵阳",
+    "province": "贵州省",
+    "img": "./assets/city_networks/guiyang.png",
+    "lat": 26.647,
+    "lon": 106.6302
+  },
+  {
+    "id": "liupanshui",
+    "name": "六盘水",
+    "province": "贵州省",
+    "img": "./assets/city_networks/liupanshui.png",
+    "lat": 26.5926,
+    "lon": 104.8302
+  },
+  {
+    "id": "zunyi",
+    "name": "遵义",
+    "province": "贵州省",
+    "img": "./assets/city_networks/zunyi.png",
+    "lat": 27.705,
+    "lon": 106.927
+  },
+  {
+    "id": "anshun",
+    "name": "安顺",
+    "province": "贵州省",
+    "img": "./assets/city_networks/anshun.png",
+    "lat": 26.253,
+    "lon": 105.9462
+  },
+  {
+    "id": "bijie",
+    "name": "毕节",
+    "province": "贵州省",
+    "img": "./assets/city_networks/bijie.png",
+    "lat": 27.3019,
+    "lon": 105.2863
+  },
+  {
+    "id": "tongren",
+    "name": "铜仁",
+    "province": "贵州省",
+    "img": "./assets/city_networks/tongren.png",
+    "lat": 27.7172,
+    "lon": 109.1899
+  },
+  {
+    "id": "kunming",
+    "name": "昆明",
+    "province": "云南省",
+    "img": "./assets/city_networks/kunming.png",
+    "lat": 24.8801,
+    "lon": 102.8329
+  },
+  {
+    "id": "qujing",
+    "name": "曲靖",
+    "province": "云南省",
+    "img": "./assets/city_networks/qujing.png",
+    "lat": 25.4899,
+    "lon": 103.7978
+  },
+  {
+    "id": "yuxi",
+    "name": "玉溪",
+    "province": "云南省",
+    "img": "./assets/city_networks/yuxi.png",
+    "lat": 24.352,
+    "lon": 102.5439
+  },
+  {
+    "id": "baoshan",
+    "name": "保山",
+    "province": "云南省",
+    "img": "./assets/city_networks/baoshan.png",
+    "lat": 25.1118,
+    "lon": 99.1618
+  },
+  {
+    "id": "lijiang",
+    "name": "丽江",
+    "province": "云南省",
+    "img": "./assets/city_networks/lijiang.png",
+    "lat": 26.855,
+    "lon": 100.2277
+  },
+  {
+    "id": "jinghong",
+    "name": "景洪(西双版纳)",
+    "province": "云南省",
+    "img": "./assets/city_networks/jinghong.png",
+    "lat": 22.0017,
+    "lon": 100.7979
+  },
+  {
+    "id": "dali",
+    "name": "大理",
+    "province": "云南省",
+    "img": "./assets/city_networks/dali.png",
+    "lat": 25.6065,
+    "lon": 100.2676
+  },
+  {
+    "id": "ruili",
+    "name": "瑞丽(德宏)",
+    "province": "云南省",
+    "img": "./assets/city_networks/ruili.png",
+    "lat": 24.0125,
+    "lon": 97.8519
+  },
+  {
+    "id": "shangrila",
+    "name": "香格里拉(迪庆)",
+    "province": "云南省",
+    "img": "./assets/city_networks/shangrila.png",
+    "lat": 27.8288,
+    "lon": 99.7072
+  },
+  {
+    "id": "lhasa",
+    "name": "拉萨",
+    "province": "西藏自治区",
+    "img": "./assets/city_networks/lhasa.png",
+    "lat": 29.6525,
+    "lon": 91.1721
+  },
+  {
+    "id": "shigatse",
+    "name": "日喀则",
+    "province": "西藏自治区",
+    "img": "./assets/city_networks/shigatse.png",
+    "lat": 29.2675,
+    "lon": 88.8752
+  },
+  {
+    "id": "nyingchi",
+    "name": "林芝",
+    "province": "西藏自治区",
+    "img": "./assets/city_networks/nyingchi.png",
+    "lat": 29.6453,
+    "lon": 94.3615
+  },
+  {
+    "id": "xi_an",
+    "name": "西安",
+    "province": "陕西省",
+    "img": "./assets/city_networks/xi_an.png",
+    "lat": 34.3416,
+    "lon": 108.9398
+  },
+  {
+    "id": "tongchuan",
+    "name": "铜川",
+    "province": "陕西省",
+    "img": "./assets/city_networks/tongchuan.png",
+    "lat": 35.0807,
+    "lon": 109.0892
+  },
+  {
+    "id": "baoji",
+    "name": "宝鸡",
+    "province": "陕西省",
+    "img": "./assets/city_networks/baoji.png",
+    "lat": 34.3619,
+    "lon": 107.2373
+  },
+  {
+    "id": "xianyang",
+    "name": "咸阳",
+    "province": "陕西省",
+    "img": "./assets/city_networks/xianyang.png",
+    "lat": 34.3296,
+    "lon": 108.7089
+  },
+  {
+    "id": "weinan",
+    "name": "渭南",
+    "province": "陕西省",
+    "img": "./assets/city_networks/weinan.png",
+    "lat": 34.4994,
+    "lon": 109.5089
+  },
+  {
+    "id": "yanan",
+    "name": "延安",
+    "province": "陕西省",
+    "img": "./assets/city_networks/yanan.png",
+    "lat": 36.5854,
+    "lon": 109.4897
+  },
+  {
+    "id": "hanzhong",
+    "name": "汉中",
+    "province": "陕西省",
+    "img": "./assets/city_networks/hanzhong.png",
+    "lat": 33.0676,
+    "lon": 107.0236
+  },
+  {
+    "id": "yulin_sx",
+    "name": "榆林",
+    "province": "陕西省",
+    "img": "./assets/city_networks/yulin_sx.png",
+    "lat": 38.2853,
+    "lon": 109.7347
+  },
+  {
+    "id": "ankang",
+    "name": "安康",
+    "province": "陕西省",
+    "img": "./assets/city_networks/ankang.png",
+    "lat": 32.6847,
+    "lon": 109.0292
+  },
+  {
+    "id": "lanzhou",
+    "name": "兰州",
+    "province": "甘肃省",
+    "img": "./assets/city_networks/lanzhou.png",
+    "lat": 36.0611,
+    "lon": 103.8343
+  },
+  {
+    "id": "jiayuguan",
+    "name": "嘉峪关",
+    "province": "甘肃省",
+    "img": "./assets/city_networks/jiayuguan.png",
+    "lat": 39.7731,
+    "lon": 98.2891
+  },
+  {
+    "id": "tianshui",
+    "name": "天水",
+    "province": "甘肃省",
+    "img": "./assets/city_networks/tianshui.png",
+    "lat": 34.5808,
+    "lon": 105.7249
+  },
+  {
+    "id": "wuwei",
+    "name": "武威",
+    "province": "甘肃省",
+    "img": "./assets/city_networks/wuwei.png",
+    "lat": 37.9283,
+    "lon": 102.6371
+  },
+  {
+    "id": "zhangye",
+    "name": "张掖",
+    "province": "甘肃省",
+    "img": "./assets/city_networks/zhangye.png",
+    "lat": 38.9259,
+    "lon": 100.4498
+  },
+  {
+    "id": "jiuquan",
+    "name": "酒泉",
+    "province": "甘肃省",
+    "img": "./assets/city_networks/jiuquan.png",
+    "lat": 39.7321,
+    "lon": 98.4942
+  },
+  {
+    "id": "qingyang",
+    "name": "庆阳",
+    "province": "甘肃省",
+    "img": "./assets/city_networks/qingyang.png",
+    "lat": 35.7383,
+    "lon": 107.6326
+  },
+  {
+    "id": "xining",
+    "name": "西宁",
+    "province": "青海省",
+    "img": "./assets/city_networks/xining.png",
+    "lat": 36.6171,
+    "lon": 101.7782
+  },
+  {
+    "id": "haidong",
+    "name": "海东",
+    "province": "青海省",
+    "img": "./assets/city_networks/haidong.png",
+    "lat": 36.5029,
+    "lon": 102.1033
+  },
+  {
+    "id": "golmud",
+    "name": "格尔木",
+    "province": "青海省",
+    "img": "./assets/city_networks/golmud.png",
+    "lat": 36.4023,
+    "lon": 94.9032
+  },
+  {
+    "id": "yinchuan",
+    "name": "银川",
+    "province": "宁夏回族自治区",
+    "img": "./assets/city_networks/yinchuan.png",
+    "lat": 38.4872,
+    "lon": 106.2309
+  },
+  {
+    "id": "shizuishan",
+    "name": "石嘴山",
+    "province": "宁夏回族自治区",
+    "img": "./assets/city_networks/shizuishan.png",
+    "lat": 39.0131,
+    "lon": 106.383
+  },
+  {
+    "id": "wuzhong",
+    "name": "吴忠",
+    "province": "宁夏回族自治区",
+    "img": "./assets/city_networks/wuzhong.png",
+    "lat": 37.9975,
+    "lon": 106.1982
+  },
+  {
+    "id": "zhongwei",
+    "name": "中卫",
+    "province": "宁夏回族自治区",
+    "img": "./assets/city_networks/zhongwei.png",
+    "lat": 37.5136,
+    "lon": 105.1896
+  },
+  {
+    "id": "urumqi",
+    "name": "乌鲁木齐",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/urumqi.png",
+    "lat": 43.8256,
+    "lon": 87.6168
+  },
+  {
+    "id": "karamay",
+    "name": "克拉玛依",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/karamay.png",
+    "lat": 45.6032,
+    "lon": 84.8694
+  },
+  {
+    "id": "turpan",
+    "name": "吐鲁番",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/turpan.png",
+    "lat": 42.9333,
+    "lon": 89.1897
+  },
+  {
+    "id": "hami",
+    "name": "哈密",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/hami.png",
+    "lat": 42.8185,
+    "lon": 93.5151
+  },
+  {
+    "id": "changji",
+    "name": "昌吉",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/changji.png",
+    "lat": 44.0131,
+    "lon": 87.304
+  },
+  {
+    "id": "korla",
+    "name": "库尔勒",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/korla.png",
+    "lat": 41.7641,
+    "lon": 86.1453
+  },
+  {
+    "id": "aksu",
+    "name": "阿克苏",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/aksu.png",
+    "lat": 41.1687,
+    "lon": 80.2606
+  },
+  {
+    "id": "kashgar",
+    "name": "喀什",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/kashgar.png",
+    "lat": 39.4704,
+    "lon": 75.9898
+  },
+  {
+    "id": "hotan",
+    "name": "和田",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/hotan.png",
+    "lat": 37.1141,
+    "lon": 79.9222
+  },
+  {
+    "id": "yining",
+    "name": "伊宁",
+    "province": "新疆维吾尔自治区",
+    "img": "./assets/city_networks/yining.png",
+    "lat": 43.9143,
+    "lon": 81.3179
+  },
+  {
+    "id": "taipei",
+    "name": "台北",
+    "province": "台湾省",
+    "img": "./assets/city_networks/taipei.png",
+    "lat": 25.033,
+    "lon": 121.5654
+  },
+  {
+    "id": "kaohsiung",
+    "name": "高雄",
+    "province": "台湾省",
+    "img": "./assets/city_networks/kaohsiung.png",
+    "lat": 22.6273,
+    "lon": 120.3014
+  },
+  {
+    "id": "taichung",
+    "name": "台中",
+    "province": "台湾省",
+    "img": "./assets/city_networks/taichung.png",
+    "lat": 24.1477,
+    "lon": 120.6736
+  },
+  {
+    "id": "tainan",
+    "name": "台南",
+    "province": "台湾省",
+    "img": "./assets/city_networks/tainan.png",
+    "lat": 22.9997,
+    "lon": 120.227
+  },
+  {
+    "id": "hualien",
+    "name": "花莲",
+    "province": "台湾省",
+    "img": "./assets/city_networks/hualien.png",
+    "lat": 23.9769,
+    "lon": 121.6068
   }
 ]

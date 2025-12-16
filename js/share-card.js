@@ -20,7 +20,8 @@ function getModeDisplayName(mode) {
         'pk_football_medium': '足球PK(中等)',
         'pk_football_hard': '足球PK(困难)',
         'pk_football_hell': '足球PK(地狱)',
-        'city_network': '路网挑战'
+        'city_network': '路网挑战',
+        'china_daily_network': '每日挑战(路网)'
     };
     return modeNames[mode] || mode;
 }

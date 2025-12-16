@@ -13,7 +13,8 @@ window.GameState = {
     myChart: null,
     footballDifficulty: 'easy',
     isFootballSubMenu: false,
-    isSprintSubMenu: false
+    isSprintSubMenu: false,
+    cityNetworkFillMode: false  // 路网模式：false=选择题，true=填空题
 };
 
 // 获取数据引用（简化访问）
