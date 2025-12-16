@@ -17,6 +17,22 @@ function mulberry32(seed) {
 }
 
 /**
+ * 获取今日的日期种子（使用中国时区UTC+8作为基准，确保所有用户在同一天看到相同题目）
+ * @returns {number} 日期种子，格式：YYYYMMDD（例如：20241215）
+ */
+function getTodaySeed() {
+    const today = new Date();
+    // 使用中国时区（UTC+8）作为基准，确保所有用户在同一天看到相同的题目
+    // 格式：YYYYMMDD，例如 20241215
+    // 将UTC时间转换为中国时区（UTC+8）
+    const chinaTime = new Date(today.getTime() + (8 * 60 * 60 * 1000));
+    const year = chinaTime.getUTCFullYear();
+    const month = chinaTime.getUTCMonth() + 1; // getUTCMonth() 返回 0-11
+    const date = chinaTime.getUTCDate();
+    return year * 10000 + month * 100 + date;
+}
+
+/**
  * 打乱数组（Fisher-Yates洗牌算法）
  * @param {Array} array - 要打乱的数组
  * @param {Function} rng - 随机数生成函数（可选，默认使用Math.random）
@@ -35,4 +51,5 @@ function shuffleArray(array, rng) {
 // 暴露到全局
 window.mulberry32 = mulberry32;
 window.shuffleArray = shuffleArray;
+window.getTodaySeed = getTodaySeed;
 

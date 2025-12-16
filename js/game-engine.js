@@ -142,8 +142,8 @@ function startGame(modeKey) {
                 return;
             }
             
-            const today = new Date();
-            const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+            // 使用每日种子生成题目（使用UTC日期，确保全球用户同一天看到相同题目）
+            const seed = window.getTodaySeed();
             const rng = window.mulberry32(seed);
             
             let temp = [...validPool];
@@ -184,9 +184,8 @@ function startGame(modeKey) {
                 return;
             }
             
-            // 使用每日种子生成题目
-            const today = new Date();
-            const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+            // 使用每日种子生成题目（使用UTC日期，确保全球用户同一天看到相同题目）
+            const seed = window.getTodaySeed();
             const rng = window.mulberry32(seed);
             
             let temp = [...refs.dbCityNetworks];
@@ -198,9 +197,9 @@ function startGame(modeKey) {
             gameState.gameMode = 'china_daily_network';
             gameState.cityNetworkFillMode = true; // 强制填空题模式
             
-            // 输出调试信息：显示今日的三个城市
+            // 输出调试信息：显示今日的三个城市和种子值
             const todayCities = gameState.questionPool.map(q => q.name).join('、');
-            console.log(`📅 今日挑战的三个城市：${todayCities}`);
+            console.log(`📅 今日挑战种子：${seed}，三个城市：${todayCities}`);
         } else {
             // 车牌挑战模式
             if (!refs.dbPlates || refs.dbPlates.length === 0) {
