@@ -147,12 +147,13 @@ function enableBtn(btnId, modeKey, icon, title, desc, count) {
     btn.className = "game-card"; 
 
     // 移除之前的图片叠加（如果存在）
-    const existingImg = btn.querySelector('.game-card-overlay-image');
-    if (existingImg) {
-        existingImg.remove();
-    }
-    // 移除之前的叠加类
-    btn.classList.remove('football-card-overlay');
+    const existingImgs = btn.querySelectorAll('.game-card-overlay-image');
+    existingImgs.forEach(img => img.remove());
+    
+    // 移除所有可能的叠加类
+    btn.classList.remove('card-daily', 'daily-card-overlay', 'card-sprint', 'sprint-card-overlay', 
+                         'card-shape', 'shape-card-overlay', 'card-city-network', 'city-network-card-overlay',
+                         'card-football', 'football-card-overlay', 'card-f1', 'f1-card-overlay');
 
     if(btnId.includes('1')) {
         // 如果是F1赛道挑战，使用特殊设计并添加图片
@@ -286,6 +287,16 @@ function disableBtn(btnId) {
     btn.onclick = null;
     btn.style.cursor = "not-allowed";
     btn.className = "game-card card-gray";
+    
+    // 清除所有图片叠加元素
+    const existingImgs = btn.querySelectorAll('.game-card-overlay-image');
+    existingImgs.forEach(img => img.remove());
+    
+    // 移除所有与图片叠加相关的类名
+    btn.classList.remove('card-daily', 'daily-card-overlay', 'card-sprint', 'sprint-card-overlay', 
+                         'card-shape', 'shape-card-overlay', 'card-city-network', 'city-network-card-overlay',
+                         'card-football', 'football-card-overlay', 'card-f1', 'f1-card-overlay');
+    
     document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = "敬请期待";
     document.getElementById(btnId.replace('btn-', 'txt-') + '-desc').textContent = "Coming Soon";
     // 隐藏图标，不显示任何图标

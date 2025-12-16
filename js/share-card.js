@@ -119,25 +119,40 @@ function generateShareCard() {
     // 设置分数
     shareCardScore.textContent = `${score}/${totalQs}`;
     
-    // 设置详情
+    // 设置详情，根据分数添加不同的评价和样式
     let detailText = `正确率: ${percentage}%`;
-    if (percentage === 100) detailText += " 完美！";
-    else if (percentage >= 80) detailText += " 很棒！";
-    else if (percentage >= 60) detailText += " 继续加油！";
+    let detailStyle = '';
+    if (percentage === 100) {
+        detailText += " 完美！";
+        detailStyle = 'text-shadow: 0 0 20px rgba(255,255,255,0.5), 0 4px 15px rgba(0,0,0,0.3);';
+    } else if (percentage >= 80) {
+        detailText += " 很棒！";
+        detailStyle = 'text-shadow: 0 0 15px rgba(255,255,255,0.3), 0 3px 12px rgba(0,0,0,0.3);';
+    } else if (percentage >= 60) {
+        detailText += " 继续加油！";
+        detailStyle = 'text-shadow: 0 2px 10px rgba(0,0,0,0.3);';
+    } else {
+        detailText += " 再接再厉！";
+        detailStyle = 'text-shadow: 0 2px 10px rgba(0,0,0,0.3);';
+    }
     shareCardDetail.textContent = detailText;
+    shareCardDetail.setAttribute('style', shareCardDetail.getAttribute('style') + detailStyle);
     
     // 设置日期
     const now = new Date();
     const dateStr = `${now.getFullYear()}年${now.getMonth()+1}月${now.getDate()}日 ${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
     shareCardDate.textContent = dateStr;
     
-    // 根据范围设置不同的渐变背景
+    // 根据范围设置不同的渐变背景，使用更丰富的渐变
     if (currentScope === 'world') {
-        shareCard.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        shareCard.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%)';
+        shareCard.style.boxShadow = '0 20px 60px rgba(102, 126, 234, 0.5), inset 0 1px 0 rgba(255,255,255,0.2)';
     } else if (currentScope === 'china') {
-        shareCard.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
+        shareCard.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #f093fb 100%)';
+        shareCard.style.boxShadow = '0 20px 60px rgba(240, 147, 251, 0.5), inset 0 1px 0 rgba(255,255,255,0.2)';
     } else if (currentScope === 'sports') {
-        shareCard.style.background = 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)';
+        shareCard.style.background = 'linear-gradient(135deg, #fa709a 0%, #fee140 50%, #fa709a 100%)';
+        shareCard.style.boxShadow = '0 20px 60px rgba(250, 112, 154, 0.5), inset 0 1px 0 rgba(255,255,255,0.2)';
     }
     
     // 生成图片
