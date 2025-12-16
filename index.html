@@ -32,20 +32,20 @@
     <p style="color:#aaa; margin-bottom:30px;">选择你感兴趣的挑战领域</p>
     
     <div class="landing-grid">
-        <div class="landing-card world" onclick="enterGameScope('world')">
-            <div class="icon">🌍</div>
+        <div class="landing-card world world-card" onclick="enterGameScope('world')">
+            <img src="assets/libs/Look-earth-from-the-moon.jpg" alt="Earth" class="world-overlay-image">
             <h2>世界模式</h2>
             <p>探索全球地理知识<br>国旗识别 · 首都记忆 · 版图形状</p>
         </div>
         
-        <div class="landing-card china" onclick="enterGameScope('china')">
-            <div class="icon">🚗</div>
+        <div class="landing-card china china-card" onclick="enterGameScope('china')">
+            <img src="assets/libs/VCG211537037714-GJY.jpg" alt="China" class="china-overlay-image">
             <h2>中国模式</h2>
             <p>挑战中国地理知识<br>车牌识别 · 城市路网</p>
         </div>
         
-        <div class="landing-card f1" onclick="enterGameScope('sports')">
-            <div class="icon">⚽</div>
+        <div class="landing-card f1 sports-card" onclick="enterGameScope('sports')">
+            <img src="assets/libs/2025ferraricarright.avif" alt="Ferrari" class="sports-overlay-image">
             <h2>体育模式</h2>
             <p>考验你的体育知识<br>F1赛道 · 足球俱乐部</p>
         </div>
@@ -171,6 +171,25 @@
     <button class="action-btn btn-share" onclick="generateShareCard()" style="margin-top: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
         生成分享卡片
     </button>
+</div>
+
+<!-- 分享卡片模态框 -->
+<div class="modal-overlay" id="share-card-modal" onclick="closeShareCardModal(event)">
+    <div class="share-card-modal-content" onclick="event.stopPropagation()">
+        <button class="share-card-close" onclick="closeShareCardModal(event)">✕</button>
+        <div id="share-card-preview-container" style="display: none;">
+            <img id="share-card-image" alt="分享卡片" style="max-width: 100%; max-height: 80vh; border-radius: 12px; user-select: none;">
+            <div style="text-align: center; margin-top: 15px; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+                <p>长按图片保存或右键保存图片</p>
+                <button class="action-btn btn-download-share" onclick="downloadShareCard()" style="margin-top: 10px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    下载图片
+                </button>
+            </div>
+        </div>
+        <div id="share-card-loading" style="text-align: center; color: #ffffff; padding: 40px;">
+            <div style="font-size: 1.2rem; margin-bottom: 20px;">正在生成分享卡片...</div>
+        </div>
+    </div>
 </div>
 
 <!-- 分享卡片（隐藏，用于生成图片） -->

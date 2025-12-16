@@ -146,9 +146,113 @@ function enableBtn(btnId, modeKey, icon, title, desc, count) {
     btn.style.cursor = "pointer";
     btn.className = "game-card"; 
 
-    if(btnId.includes('1')) btn.classList.add('card-blue');
-    if(btnId.includes('2')) btn.classList.add('card-purple');
-    if(btnId.includes('3')) btn.classList.add('card-orange');
+    // 移除之前的图片叠加（如果存在）
+    const existingImg = btn.querySelector('.game-card-overlay-image');
+    if (existingImg) {
+        existingImg.remove();
+    }
+    // 移除之前的叠加类
+    btn.classList.remove('football-card-overlay');
+
+    if(btnId.includes('1')) {
+        // 如果是F1赛道挑战，使用特殊设计并添加图片
+        if (modeKey === 'f1') {
+            btn.classList.add('card-f1');
+            btn.classList.add('f1-card-overlay');
+            // 添加图片元素
+            const img = document.createElement('img');
+            img.src = 'assets/libs/Brazil.avif';
+            img.alt = 'F1 Track';
+            img.className = 'game-card-overlay-image';
+            btn.appendChild(img);
+            // 隐藏emoji图标
+            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+            if (iconEl) iconEl.style.display = 'none';
+        } else if (modeKey === 'mode_1') {
+            // 每日挑战，只在世界模式下添加图片叠加
+            const currentScope = window.GameState ? window.GameState.currentScope : 'world';
+            if (currentScope === 'world') {
+                btn.classList.add('card-daily');
+                btn.classList.add('daily-card-overlay');
+                // 添加图片元素
+                const img = document.createElement('img');
+                img.src = 'assets/libs/taili.png';
+                img.alt = 'Daily Challenge';
+                img.className = 'game-card-overlay-image';
+                btn.appendChild(img);
+                // 隐藏emoji图标
+                const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+                if (iconEl) iconEl.style.display = 'none';
+            } else {
+                // 中国模式下的车牌挑战，不添加图片
+                btn.classList.add('card-blue');
+            }
+        } else {
+            btn.classList.add('card-blue');
+        }
+    }
+    if(btnId.includes('2')) {
+        // 如果是足球菜单入口，使用绿色并添加图片
+        if (modeKey === 'football_menu') {
+            btn.classList.add('card-football');
+            btn.classList.add('football-card-overlay');
+            // 添加图片元素
+            const img = document.createElement('img');
+            img.src = 'assets/libs/Football.jpeg';
+            img.alt = 'Football';
+            img.className = 'game-card-overlay-image';
+            btn.appendChild(img);
+            // 隐藏emoji图标
+            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+            if (iconEl) iconEl.style.display = 'none';
+        } else if (modeKey === 'mode_2') {
+            // 形状挑战，添加图片叠加
+            btn.classList.add('card-shape');
+            btn.classList.add('shape-card-overlay');
+            // 添加图片元素
+            const img = document.createElement('img');
+            img.src = 'assets/libs/VCG211437531476.jpg';
+            img.alt = 'Shape Challenge';
+            img.className = 'game-card-overlay-image';
+            btn.appendChild(img);
+            // 隐藏emoji图标
+            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+            if (iconEl) iconEl.style.display = 'none';
+        } else if (modeKey === 'city_network') {
+            // 路网挑战，添加图片叠加
+            btn.classList.add('card-city-network');
+            btn.classList.add('city-network-card-overlay');
+            // 添加图片元素
+            const img = document.createElement('img');
+            img.src = 'assets/libs/VCG211331711418.jpg';
+            img.alt = 'City Network Challenge';
+            img.className = 'game-card-overlay-image';
+            btn.appendChild(img);
+            // 隐藏emoji图标
+            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+            if (iconEl) iconEl.style.display = 'none';
+        } else {
+            btn.classList.add('card-purple');
+        }
+    }
+    if(btnId.includes('3')) {
+        // 如果是极速冲刺入口，添加图片叠加
+        if (modeKey === 'sprint_menu') {
+            btn.classList.add('card-sprint');
+            btn.classList.add('sprint-card-overlay');
+            // 添加图片元素
+            const img = document.createElement('img');
+            img.src = 'assets/libs/clock.png';
+            img.alt = 'Sprint Challenge';
+            img.className = 'game-card-overlay-image';
+            btn.appendChild(img);
+            // 隐藏emoji图标
+            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+            if (iconEl) iconEl.style.display = 'none';
+        } else {
+            btn.classList.add('card-orange');
+        }
+    }
     if(btnId.includes('all')) {
         // 如果是足球模式的地狱难度，使用红色主题
         if (modeKey === 'football_hell') {
@@ -156,11 +260,19 @@ function enableBtn(btnId, modeKey, icon, title, desc, count) {
         } else {
             btn.classList.add('card-green');
         }
+        // 如果是"敬请期待"模式，隐藏图标
+        if (modeKey === 'all') {
+            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+            if (iconEl) iconEl.style.display = 'none';
+        }
     }
 
     document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = title;
     document.getElementById(btnId.replace('btn-', 'txt-') + '-desc').textContent = desc;
-    document.getElementById(btnId.replace('btn-', 'txt-') + '-icon').textContent = icon;
+    const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+    if (iconEl && modeKey !== 'all') {
+        iconEl.textContent = icon;
+    }
     const tag = document.getElementById(btnId.replace('btn-', 'txt-') + '-count');
     if (tag) {
         tag.textContent = count;
@@ -176,7 +288,9 @@ function disableBtn(btnId) {
     btn.className = "game-card card-gray";
     document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = "敬请期待";
     document.getElementById(btnId.replace('btn-', 'txt-') + '-desc').textContent = "Coming Soon";
-    document.getElementById(btnId.replace('btn-', 'txt-') + '-icon').textContent = "🔒";
+    // 隐藏图标，不显示任何图标
+    const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
+    if (iconEl) iconEl.style.display = 'none';
     const tag = document.getElementById(btnId.replace('btn-', 'txt-') + '-count');
     if (tag) tag.style.display = 'none';
 }

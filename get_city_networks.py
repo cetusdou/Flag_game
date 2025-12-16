@@ -264,7 +264,8 @@ for i, item in enumerate(targets):
     json_data.append({
         "id": cid,
         "name": name,
-        "img": f"./assets/city_networks/{cid}.png"
+        "img": f"./assets/city_networks/{cid}.png",
+        'pos': [lat, lon]
     })
 
 # 覆盖保存 json

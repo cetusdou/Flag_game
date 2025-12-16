@@ -35,6 +35,40 @@ function getScopeDisplayName(scope) {
     return scopeNames[scope] || '';
 }
 
+// 存储当前生成的卡片数据URL
+let currentShareCardDataURL = null;
+let currentShareCardFileName = '';
+
+// 关闭分享卡片模态框
+function closeShareCardModal(event) {
+    if (event) {
+        event.stopPropagation();
+    }
+    const modal = document.getElementById('share-card-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+    // 重置状态
+    const previewContainer = document.getElementById('share-card-preview-container');
+    const loadingDiv = document.getElementById('share-card-loading');
+    if (previewContainer) previewContainer.style.display = 'none';
+    if (loadingDiv) loadingDiv.style.display = 'block';
+    currentShareCardDataURL = null;
+    currentShareCardFileName = '';
+}
+
+// 下载分享卡片
+function downloadShareCard() {
+    if (!currentShareCardDataURL) {
+        alert('分享卡片未生成，请重试');
+        return;
+    }
+    const link = document.createElement('a');
+    link.download = currentShareCardFileName;
+    link.href = currentShareCardDataURL;
+    link.click();
+}
+
 // 生成分享卡片
 function generateShareCard() {
     if (typeof html2canvas === 'undefined') {
@@ -54,6 +88,16 @@ function generateShareCard() {
     const currentScope = refs.currentScope || 'world';
     const percentage = totalQs > 0 ? Math.round((score / totalQs) * 100) : 0;
     
+    // 显示模态框
+    const modal = document.getElementById('share-card-modal');
+    const previewContainer = document.getElementById('share-card-preview-container');
+    const loadingDiv = document.getElementById('share-card-loading');
+    if (modal) {
+        modal.style.display = 'flex';
+        if (previewContainer) previewContainer.style.display = 'none';
+        if (loadingDiv) loadingDiv.style.display = 'block';
+    }
+    
     // 更新分享卡片内容
     const shareCard = document.getElementById('share-card');
     const shareCardMode = document.getElementById('share-card-mode');
@@ -63,6 +107,7 @@ function generateShareCard() {
     
     if (!shareCard || !shareCardMode || !shareCardScore || !shareCardDetail || !shareCardDate) {
         alert('分享卡片元素未找到');
+        if (modal) modal.style.display = 'none';
         return;
     }
     
@@ -96,25 +141,47 @@ function generateShareCard() {
     }
     
     // 生成图片
-    const container = document.getElementById('share-card-container');
     html2canvas(shareCard, {
         backgroundColor: null,
         scale: 2,
         width: 800,
         height: 600,
-        useCORS: true
+        useCORS: true,
+        logging: false
     }).then(canvas => {
-        // 创建下载链接
-        const link = document.createElement('a');
-        link.download = `答题大师_${scopeName}_${modeName}_${score}_${totalQs}_${Date.now()}.png`;
-        link.href = canvas.toDataURL('image/png');
-        link.click();
+        const dataURL = canvas.toDataURL('image/png');
+        currentShareCardDataURL = dataURL;
+        currentShareCardFileName = `答题大师_${scopeName}_${modeName}_${score}_${totalQs}_${Date.now()}.png`;
+        
+        // 显示图片
+        const shareCardImage = document.getElementById('share-card-image');
+        if (shareCardImage) {
+            shareCardImage.src = dataURL;
+            // 确保图片加载完成后再显示
+            shareCardImage.onload = function() {
+                // 隐藏加载提示，显示预览
+                if (loadingDiv) loadingDiv.style.display = 'none';
+                if (previewContainer) previewContainer.style.display = 'block';
+            };
+            // 如果图片已经缓存，立即显示
+            if (shareCardImage.complete) {
+                if (loadingDiv) loadingDiv.style.display = 'none';
+                if (previewContainer) previewContainer.style.display = 'block';
+            }
+        } else {
+            // 如果找不到图片元素，仍然显示预览容器
+            if (loadingDiv) loadingDiv.style.display = 'none';
+            if (previewContainer) previewContainer.style.display = 'block';
+        }
     }).catch(err => {
         console.error('生成分享卡片失败:', err);
         alert('生成分享卡片失败，请重试');
+        if (modal) modal.style.display = 'none';
     });
 }
 
 // 暴露到全局
 window.generateShareCard = generateShareCard;
+window.closeShareCardModal = closeShareCardModal;
+window.downloadShareCard = downloadShareCard;
 
