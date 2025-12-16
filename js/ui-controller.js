@@ -145,240 +145,97 @@ function updateBackButton() {
     }
 }
 
+/**
+ * 启用按钮
+ * @param {string} btnId - 按钮ID
+ * @param {string} modeKey - 模式键
+ * @param {string} icon - 图标（可选，如果未提供则从元数据中获取）
+ * @param {string} title - 标题（可选，如果未提供则从元数据中获取）
+ * @param {string} desc - 描述（可选，如果未提供则从元数据中获取）
+ * @param {string} count - 数量（可选，如果未提供则从元数据中获取）
+ */
 function enableBtn(btnId, modeKey, icon, title, desc, count) {
     const btn = document.getElementById(btnId);
     if (!btn) return;
+    
+    // 获取当前范围
+    const scope = window.GameState ? window.GameState.currentScope : 'world';
+    
+    // 获取按钮配置
+    const config = window.getButtonConfig(modeKey, scope);
+    
+    // 获取按钮元数据（如果参数未提供）
+    const metadata = window.getButtonMetadata(modeKey, scope);
+    const finalIcon = icon !== undefined ? icon : metadata.icon;
+    const finalTitle = title !== undefined ? title : metadata.title;
+    const finalDesc = desc !== undefined ? desc : metadata.desc;
+    const finalCount = count !== undefined ? count : metadata.count;
+    
+    // 基础设置
     btn.onclick = function() { window.startGame(modeKey); };
     btn.style.cursor = "pointer";
-    btn.className = "game-card"; 
-
-    // 移除之前的图片叠加（如果存在）
-    const existingImgs = btn.querySelectorAll('.game-card-overlay-image');
-    existingImgs.forEach(img => img.remove());
+    btn.className = "game-card";
     
-    // 清除拨动开关（如果存在）
-    const toggleContainer = btn.querySelector('.city-network-toggle-container');
-    if (toggleContainer) toggleContainer.remove();
+    // 清除之前的叠加元素
+    window.clearButtonOverlays(btn);
     
-    // 移除所有可能的叠加类
-    btn.classList.remove('card-daily', 'daily-card-overlay', 'card-sprint', 'sprint-card-overlay', 
-                         'card-shape', 'shape-card-overlay', 'card-city-network', 'city-network-card-overlay',
-                         'card-football', 'football-card-overlay', 'card-f1', 'f1-card-overlay',
-                         'card-all-compendium', 'all-compendium-card-overlay');
-
-    if(btnId.includes('1')) {
-        // 如果是F1赛道挑战，使用特殊设计并添加图片
-        if (modeKey === 'f1') {
-            btn.classList.add('card-f1');
-            btn.classList.add('f1-card-overlay');
-            // 添加图片元素
-            const img = document.createElement('img');
-            img.src = 'assets/libs/Brazil.avif';
-            img.alt = 'F1 Track';
-            img.className = 'game-card-overlay-image';
-            btn.appendChild(img);
-            // 隐藏emoji图标
-            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
-            if (iconEl) iconEl.style.display = 'none';
-        } else if (modeKey === 'mode_1') {
-            // 每日挑战，只在世界模式下添加图片叠加
-            const currentScope = window.GameState ? window.GameState.currentScope : 'world';
-            if (currentScope === 'world') {
-                btn.classList.add('card-daily');
-                btn.classList.add('daily-card-overlay');
-                // 添加图片元素
-                const img = document.createElement('img');
-                img.src = 'assets/libs/taili.png';
-                img.alt = 'Daily Challenge';
-                img.className = 'game-card-overlay-image';
-                btn.appendChild(img);
-                // 隐藏emoji图标
-                const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
-                if (iconEl) iconEl.style.display = 'none';
-            } else {
-                // 中国模式下的车牌挑战，不添加图片
-                btn.classList.add('card-blue');
-            }
-        } else {
-            btn.classList.add('card-blue');
-        }
+    // 应用基础样式类
+    if (config.style) {
+        btn.classList.add(config.style);
     }
-    if(btnId.includes('2')) {
-        // 如果是足球菜单入口，使用绿色并添加图片
-        if (modeKey === 'football_menu') {
-            btn.classList.add('card-football');
-            btn.classList.add('football-card-overlay');
-            // 添加图片元素
-            const img = document.createElement('img');
-            img.src = 'assets/libs/Football.jpeg';
-            img.alt = 'Football';
-            img.className = 'game-card-overlay-image';
-            btn.appendChild(img);
-            // 隐藏emoji图标
-            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
-            if (iconEl) iconEl.style.display = 'none';
-        } else if (modeKey === 'mode_2') {
-            // 形状挑战，添加图片叠加
-            btn.classList.add('card-shape');
-            btn.classList.add('shape-card-overlay');
-            // 添加图片元素
-            const img = document.createElement('img');
-            img.src = 'assets/libs/VCG211437531476.jpg';
-            img.alt = 'Shape Challenge';
-            img.className = 'game-card-overlay-image';
-            btn.appendChild(img);
-            // 隐藏emoji图标
-            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
-            if (iconEl) iconEl.style.display = 'none';
-        } else if (modeKey === 'city_network') {
-            // 路网挑战，添加图片叠加
-            btn.classList.add('card-city-network');
-            btn.classList.add('city-network-card-overlay');
-            // 添加图片元素
-            const img = document.createElement('img');
-            img.src = 'assets/libs/VCG211331711418.jpg';
-            img.alt = 'City Network Challenge';
-            img.className = 'game-card-overlay-image';
-            btn.appendChild(img);
-            // 隐藏emoji图标
-            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
-            if (iconEl) iconEl.style.display = 'none';
-            
-            // 添加拨动开关
-            const toggleContainer = document.createElement('div');
-            toggleContainer.className = 'city-network-toggle-container';
-            toggleContainer.onclick = function(e) {
-                e.stopPropagation(); // 阻止触发按钮的onclick
-            };
-            toggleContainer.onmousedown = function(e) {
-                e.stopPropagation(); // 阻止鼠标按下事件
-            };
-            toggleContainer.ontouchstart = function(e) {
-                e.stopPropagation(); // 阻止触摸事件
-            };
-            
-            const toggleLabel = document.createElement('label');
-            toggleLabel.className = 'city-network-toggle-label';
-            
-            const span1 = document.createElement('span');
-            span1.className = 'toggle-label-text';
-            span1.textContent = '选择题';
-            
-            const toggleSwitch = document.createElement('div');
-            toggleSwitch.className = 'toggle-switch';
-            
-            const toggleInput = document.createElement('input');
-            toggleInput.type = 'checkbox';
-            toggleInput.id = 'city-network-fill-mode-toggle';
-            toggleInput.checked = window.GameState ? (window.GameState.cityNetworkFillMode || false) : false;
-            
-            const toggleSlider = document.createElement('span');
-            toggleSlider.className = 'toggle-slider';
-            
-            toggleSwitch.appendChild(toggleInput);
-            toggleSwitch.appendChild(toggleSlider);
-            
-            const span2 = document.createElement('span');
-            span2.className = 'toggle-label-text';
-            span2.textContent = '填空题';
-            
-            toggleLabel.appendChild(span1);
-            toggleLabel.appendChild(toggleSwitch);
-            toggleLabel.appendChild(span2);
-            toggleContainer.appendChild(toggleLabel);
-            btn.appendChild(toggleContainer);
-            
-            // 更新拨动开关状态
-            toggleInput.onchange = function() {
-                if (window.GameState) {
-                    window.GameState.cityNetworkFillMode = toggleInput.checked;
-                    // 更新标签颜色
-                    updateToggleLabels(span1, span2, toggleInput.checked);
-                }
-            };
-            
-            // 初始化标签颜色
-            updateToggleLabels(span1, span2, toggleInput.checked);
-        } else {
-            btn.classList.add('card-purple');
-        }
+    
+    // 应用按钮配置（布局、文字样式、图标/标签显示等）
+    window.applyButtonConfig(btn, config);
+    
+    // 添加图片叠加
+    if (config.image) {
+        window.addImageOverlay(btn, config.image, scope);
     }
-    if(btnId.includes('3')) {
-        // 如果是极速冲刺入口，添加图片叠加
-        if (modeKey === 'sprint_menu') {
-            btn.classList.add('card-sprint');
-            btn.classList.add('sprint-card-overlay');
-            // 添加图片元素
-            const img = document.createElement('img');
-            img.src = 'assets/libs/clock.png';
-            img.alt = 'Sprint Challenge';
-            img.className = 'game-card-overlay-image';
-            btn.appendChild(img);
-            // 隐藏emoji图标
-            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
-            if (iconEl) iconEl.style.display = 'none';
-        } else {
-            btn.classList.add('card-orange');
-        }
+    
+    // 添加拨动开关
+    if (config.toggle) {
+        const toggleContainer = window.createToggleSwitch(btn);
+        btn.appendChild(toggleContainer);
     }
-    if(btnId.includes('all')) {
-        // 如果是足球模式的地狱难度，使用红色主题
-        if (modeKey === 'football_hell') {
-            btn.classList.add('card-red');
-        } else if (modeKey === 'all') {
-            // 全图鉴模式，添加图片叠加
-            btn.classList.add('card-all-compendium');
-            btn.classList.add('all-compendium-card-overlay');
-            // 添加图片元素
-            const img = document.createElement('img');
-            img.src = 'assets/libs/VCG211280932652.jpg';
-            img.alt = 'All Compendium';
-            img.className = 'game-card-overlay-image';
-            btn.appendChild(img);
-            // 隐藏emoji图标
-            const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
-            if (iconEl) iconEl.style.display = 'none';
-        } else {
-            btn.classList.add('card-green');
-        }
-    }
-
-    document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = title;
-    document.getElementById(btnId.replace('btn-', 'txt-') + '-desc').textContent = desc;
-    const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
-    if (iconEl && modeKey !== 'all') {
-        iconEl.textContent = icon;
-    }
+    
+    // 设置文本内容
+    document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = finalTitle;
+    document.getElementById(btnId.replace('btn-', 'txt-') + '-desc').textContent = finalDesc;
+    
+    // 设置数量标签
     const tag = document.getElementById(btnId.replace('btn-', 'txt-') + '-count');
     if (tag) {
-        tag.textContent = count;
-        tag.style.display = count === '--' ? 'none' : 'inline-block';
+        tag.textContent = finalCount;
+        // 标签显示逻辑：如果配置了hideTag为true，或者count为'--'，则隐藏
+        if (config.hideTag === true || finalCount === '--') {
+            tag.style.display = 'none';
+        } else {
+            tag.style.display = 'inline-block';
+        }
     }
 }
 
+/**
+ * 禁用按钮
+ * @param {string} btnId - 按钮ID
+ */
 function disableBtn(btnId) {
     const btn = document.getElementById(btnId);
     if (!btn) return;
+    
+    // 基础设置
     btn.onclick = null;
     btn.style.cursor = "not-allowed";
     btn.className = "game-card card-gray";
     
-    // 清除所有图片叠加元素
-    const existingImgs = btn.querySelectorAll('.game-card-overlay-image');
-    existingImgs.forEach(img => img.remove());
+    // 清除所有叠加元素
+    window.clearButtonOverlays(btn);
     
-    // 清除拨动开关（如果存在）
-    const toggleContainer = btn.querySelector('.city-network-toggle-container');
-    if (toggleContainer) toggleContainer.remove();
-    
-    // 移除所有与图片叠加相关的类名
-    btn.classList.remove('card-daily', 'daily-card-overlay', 'card-sprint', 'sprint-card-overlay', 
-                         'card-shape', 'shape-card-overlay', 'card-city-network', 'city-network-card-overlay',
-                         'card-football', 'football-card-overlay', 'card-f1', 'f1-card-overlay');
-    
+    // 设置文本内容
     document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = "敬请期待";
     document.getElementById(btnId.replace('btn-', 'txt-') + '-desc').textContent = "Coming Soon";
-    // 隐藏图标，不显示任何图标
+    
+    // 隐藏图标和数量标签
     const iconEl = document.getElementById(btnId.replace('btn-', 'txt-') + '-icon');
     if (iconEl) iconEl.style.display = 'none';
     const tag = document.getElementById(btnId.replace('btn-', 'txt-') + '-count');
@@ -387,21 +244,6 @@ function disableBtn(btnId) {
 
 // 暴露到全局
 window.showView = showView;
-// 更新拨动开关标签样式
-function updateToggleLabels(span1, span2, isChecked) {
-    if (isChecked) {
-        span1.style.opacity = '0.5';
-        span2.style.opacity = '1';
-        span2.style.fontWeight = '600';
-        span1.style.fontWeight = '400';
-    } else {
-        span1.style.opacity = '1';
-        span2.style.opacity = '0.5';
-        span1.style.fontWeight = '600';
-        span2.style.fontWeight = '400';
-    }
-}
-
 window.goHome = goHome;
 window.enterGameScope = enterGameScope;
 window.enterFootballSubMenu = enterFootballSubMenu;
