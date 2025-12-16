@@ -8,8 +8,10 @@
  * @returns {Function} - 返回随机数生成函数（0-1之间的浮点数）
  */
 function mulberry32(seed) {
+    // 使用局部变量保存种子，避免闭包中的种子被外部修改
+    let localSeed = seed;
     return function() {
-        let t = seed += 0x6D2B79F5;
+        let t = localSeed += 0x6D2B79F5;
         t = Math.imul(t ^ t >>> 15, t | 1);
         t ^= t + Math.imul(t ^ t >>> 7, t | 61);
         return ((t ^ t >>> 14) >>> 0) / 4294967296;

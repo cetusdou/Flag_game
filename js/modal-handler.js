@@ -59,13 +59,19 @@ function selectPKDifficulty(difficulty) {
 window.selectPKDifficulty = selectPKDifficulty;
 
 // 打开图片放大模态框
-function openImageZoom(imageSrc) {
+function openImageZoom(imageSrc, applyMask = false) {
     const modal = document.getElementById('image-zoom-modal');
     const zoomedImg = document.getElementById('zoomed-image');
     if (!modal || !zoomedImg) {
         return;
     }
     zoomedImg.src = imageSrc;
+    // 如果 applyMask 为 true，应用遮罩样式（用于每日挑战）
+    if (applyMask) {
+        zoomedImg.classList.add('city-network-daily-mask');
+    } else {
+        zoomedImg.classList.remove('city-network-daily-mask');
+    }
     modal.style.display = 'flex';
 }
 
@@ -75,8 +81,13 @@ function closeImageZoom(e) {
         return;
     }
     const modal = document.getElementById('image-zoom-modal');
+    const zoomedImg = document.getElementById('zoomed-image');
     if (modal) {
         modal.style.display = 'none';
+    }
+    // 清除遮罩样式，避免影响下次打开
+    if (zoomedImg) {
+        zoomedImg.classList.remove('city-network-daily-mask');
     }
 }
 

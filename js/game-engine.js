@@ -172,7 +172,8 @@ function startGame(modeKey) {
                 alert("⚠️ 城市路网数据未加载，请刷新页面重试。");
                 return;
             }
-            gameState.questionPool = refs.dbCityNetworks.sort(() => Math.random() - 0.5).slice(0, 10);
+            // 使用数组副本，避免修改原始数据（影响每日挑战的种子结果）
+            gameState.questionPool = [...refs.dbCityNetworks].sort(() => Math.random() - 0.5).slice(0, 10);
             // 题目数量
             gameState.gameMode = 'city_network';
             // 使用GameState中已设置的模式（在入口按钮上已设置）
@@ -413,14 +414,14 @@ function nextRound() {
             img.src = gameState.currentQ.img;
             img.classList.remove('silhouette', 'city-network-daily-mask');
             
-            // 中国每日挑战：添加中间50%区域的遮罩，并允许点击放大
+            // 中国每日挑战：添加中间50%区域的遮罩，允许点击放大（放大后也应用遮罩）
             if (gameState.gameMode === 'china_daily_network') {
                 img.classList.add('city-network-daily-mask');
-                img.style.cursor = 'zoom-in';
+                img.style.cursor = 'zoom-in'; // 允许点击放大
                 badge.textContent = "📅 每日挑战：看路网中间区域，猜城市（点击图片放大）";
-                // 添加点击放大功能
+                // 添加点击放大功能，但放大时也应用遮罩
                 img.onclick = function() {
-                    openImageZoom(gameState.currentQ.img);
+                    openImageZoom(gameState.currentQ.img, true); // 传入 true 表示应用遮罩
                 };
             } else {
                 // 普通路网挑战：添加点击放大功能
