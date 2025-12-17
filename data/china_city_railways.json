@@ -1,0 +1,34 @@
+[
+  {
+    "id": "beijing",
+    "name": "北京",
+    "img": "./assets/railway_layers_only/beijing_rail.png",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "zoom": 12
+  },
+  {
+    "id": "shanghai",
+    "name": "上海",
+    "img": "./assets/railway_layers_only/shanghai_rail.png",
+    "lat": 31.2304,
+    "lon": 121.4737,
+    "zoom": 12
+  },
+  {
+    "id": "tianjin",
+    "name": "天津",
+    "img": "./assets/railway_layers_only/tianjin_rail.png",
+    "lat": 39.14,
+    "lon": 117.21,
+    "zoom": 12
+  },
+  {
+    "id": "chongqing",
+    "name": "重庆",
+    "img": "./assets/railway_layers_only/chongqing_rail.png",
+    "lat": 29.563,
+    "lon": 106.5516,
+    "zoom": 12
+  }
+]

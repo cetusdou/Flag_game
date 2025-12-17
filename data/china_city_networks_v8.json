@@ -1,0 +1,10 @@
+[
+  {
+    "id": "yichun",
+    "name": "宜春",
+    "img": "./assets/city_networks_custom_v8/yichun.png",
+    "lat": 27.82,
+    "lon": 114.42,
+    "zoom": 13
+  }
+]
