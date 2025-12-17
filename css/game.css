@@ -230,8 +230,8 @@
 
 /* 中国每日挑战路网图遮罩 - 显示中间50%区域 */
 .city-network-daily-mask {
-    clip-path: inset(15% 15% 15% 15%);
-    -webkit-clip-path: inset(15% 15% 15% 15%);
+    clip-path: inset(25% 25% 25% 25%);
+    -webkit-clip-path: inset(25% 25% 25% 25%);
     object-fit: cover;
     border-radius: 0;
 }

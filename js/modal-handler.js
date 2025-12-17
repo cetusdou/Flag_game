@@ -65,13 +65,48 @@ function openImageZoom(imageSrc, applyMask = false) {
     if (!modal || !zoomedImg) {
         return;
     }
-    zoomedImg.src = imageSrc;
-    // 如果 applyMask 为 true，应用遮罩样式（用于每日挑战）
+    
+    // 如果 applyMask 为 true，使用Canvas显示遮罩后的图片（用于每日挑战）
     if (applyMask) {
-        zoomedImg.classList.add('city-network-daily-mask');
+        // 隐藏原始img标签
+        zoomedImg.style.display = 'none';
+        
+        // 清除可能存在的Canvas
+        const existingCanvas = modal.querySelector('canvas.masked-zoom-canvas');
+        if (existingCanvas) {
+            existingCanvas.remove();
+        }
+        
+        // 创建Canvas并应用遮罩（25%遮罩 = 显示中间50%区域）
+        window.createMaskedCanvas(imageSrc, 25).then((canvas) => {
+            canvas.className = 'masked-zoom-canvas';
+            canvas.style.maxWidth = '90vw';
+            canvas.style.maxHeight = '90vh';
+            canvas.style.objectFit = 'contain';
+            canvas.style.cursor = 'default';
+            
+            // 添加下载保护，确保使用通用文件名
+            window.protectCanvasDownload(canvas, 'daily-challenge.png');
+            
+            // 插入Canvas到模态框
+            const zoomContent = modal.querySelector('.image-zoom-content');
+            if (zoomContent) {
+                zoomContent.appendChild(canvas);
+            }
+        }).catch((error) => {
+            console.error('创建遮罩Canvas失败:', error);
+            // 如果Canvas创建失败，回退到原始img标签
+            zoomedImg.style.display = 'block';
+            zoomedImg.src = imageSrc;
+            zoomedImg.classList.add('city-network-daily-mask');
+        });
     } else {
+        // 普通模式：使用原始img标签
+        zoomedImg.style.display = 'block';
+        zoomedImg.src = imageSrc;
         zoomedImg.classList.remove('city-network-daily-mask');
     }
+    
     modal.style.display = 'flex';
 }
 
@@ -84,10 +119,17 @@ function closeImageZoom(e) {
     const zoomedImg = document.getElementById('zoomed-image');
     if (modal) {
         modal.style.display = 'none';
+        
+        // 清除可能存在的Canvas
+        const existingCanvas = modal.querySelector('canvas.masked-zoom-canvas');
+        if (existingCanvas) {
+            existingCanvas.remove();
+        }
     }
     // 清除遮罩样式，避免影响下次打开
     if (zoomedImg) {
         zoomedImg.classList.remove('city-network-daily-mask');
+        zoomedImg.style.display = 'block';
     }
 }
 

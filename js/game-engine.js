@@ -366,6 +366,12 @@ function nextRound() {
     const city = document.getElementById('city-display');
     const badge = document.getElementById('question-type-badge');
     const flagBox = document.querySelector('.flag-box');
+    
+    // 清除flag-box中可能存在的Canvas（每日挑战模式）
+    const existingCanvas = flagBox ? flagBox.querySelector('canvas.masked-image-canvas') : null;
+    if (existingCanvas) {
+        existingCanvas.remove();
+    }
 
     img.style.display = 'none';
     plate.style.display = 'none';
@@ -401,30 +407,75 @@ function nextRound() {
     } else if (gameState.currentScope === 'china') {
         if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') {
             // 路网挑战模式或中国每日挑战
-            img.style.display = 'block';
-            img.style.opacity = '0';
-            img.style.transition = 'opacity 0.3s';
-            img.style.cursor = gameState.gameMode === 'china_daily_network' ? 'default' : 'zoom-in';
-            img.onload = function() {
-                this.style.opacity = '1';
-            };
-            img.onerror = function() {
-                this.style.opacity = '1';
-            };
-            img.src = gameState.currentQ.img;
             img.classList.remove('silhouette', 'city-network-daily-mask');
             
-            // 中国每日挑战：添加中间50%区域的遮罩，允许点击放大（放大后也应用遮罩）
+            // 中国每日挑战：使用Canvas实现遮罩，防止用户下载原始图片
             if (gameState.gameMode === 'china_daily_network') {
-                img.classList.add('city-network-daily-mask');
-                img.style.cursor = 'zoom-in'; // 允许点击放大
+                // 隐藏原始img标签
+                img.style.display = 'none';
+                
+                // 清除flag-box中可能存在的Canvas
+                const flagBox = document.querySelector('.flag-box');
+                const existingCanvas = flagBox.querySelector('canvas.masked-image-canvas');
+                if (existingCanvas) {
+                    existingCanvas.remove();
+                }
+                
+                // 创建Canvas并应用遮罩（25%遮罩 = 显示中间50%区域）
+                window.createMaskedCanvas(gameState.currentQ.img, 25).then((canvas) => {
+                    canvas.className = 'flag-img masked-image-canvas';
+                    canvas.style.display = 'block';
+                    canvas.style.opacity = '0';
+                    canvas.style.transition = 'opacity 0.3s';
+                    canvas.style.cursor = 'zoom-in';
+                    canvas.style.maxWidth = '100%';
+                    canvas.style.maxHeight = '100%';
+                    canvas.style.width = '100%';
+                    canvas.style.height = '100%';
+                    canvas.style.objectFit = 'cover';
+                    
+                    // 添加下载保护，确保使用通用文件名
+                    window.protectCanvasDownload(canvas, 'daily-challenge.png');
+                    
+                    // 添加点击放大功能
+                    canvas.onclick = function() {
+                        openImageZoom(gameState.currentQ.img, true); // 传入 true 表示应用遮罩
+                    };
+                    
+                    // 插入Canvas到flag-box
+                    if (flagBox) {
+                        flagBox.appendChild(canvas);
+                        // 淡入效果
+                        setTimeout(() => {
+                            canvas.style.opacity = '1';
+                        }, 10);
+                    }
+                }).catch((error) => {
+                    console.error('创建遮罩Canvas失败:', error);
+                    // 如果Canvas创建失败，回退到原始img标签
+                    img.style.display = 'block';
+                    img.classList.add('city-network-daily-mask');
+                    img.style.cursor = 'zoom-in';
+                    img.src = gameState.currentQ.img;
+                    img.onclick = function() {
+                        openImageZoom(gameState.currentQ.img, true);
+                    };
+                });
+                
                 badge.textContent = "📅 每日挑战：看路网中间区域，猜城市（点击图片放大）";
-                // 添加点击放大功能，但放大时也应用遮罩
-                img.onclick = function() {
-                    openImageZoom(gameState.currentQ.img, true); // 传入 true 表示应用遮罩
-                };
             } else {
-                // 普通路网挑战：添加点击放大功能
+                // 普通路网挑战：使用原始img标签
+                img.style.display = 'block';
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s';
+                img.style.cursor = 'zoom-in';
+                img.onload = function() {
+                    this.style.opacity = '1';
+                };
+                img.onerror = function() {
+                    this.style.opacity = '1';
+                };
+                img.src = gameState.currentQ.img;
                 img.onclick = function() {
                     openImageZoom(gameState.currentQ.img);
                 };

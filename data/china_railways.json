@@ -1,0 +1,86 @@
+[
+  {
+    "id": "zhengzhou_rail",
+    "name": "郑州",
+    "hint": "火车拉来的城市，中原心脏",
+    "img": "./assets/railways/zhengzhou_rail.png"
+  },
+  {
+    "id": "wuhan_rail",
+    "name": "武汉",
+    "hint": "九省通衢，九头鸟的爪子",
+    "img": "./assets/railways/wuhan_rail.png"
+  },
+  {
+    "id": "xuzhou_rail",
+    "name": "徐州",
+    "hint": "五省通衢，京沪陇海交汇",
+    "img": "./assets/railways/xuzhou_rail.png"
+  },
+  {
+    "id": "xi_an_rail",
+    "name": "西安",
+    "hint": "西北门户，米字型规划",
+    "img": "./assets/railways/xi_an_rail.png"
+  },
+  {
+    "id": "hefei_rail",
+    "name": "合肥",
+    "hint": "新晋高铁霸主，时钟型",
+    "img": "./assets/railways/hefei_rail.png"
+  },
+  {
+    "id": "beijing_rail",
+    "name": "北京",
+    "hint": "首都放射源，条条铁路通北京",
+    "img": "./assets/railways/beijing_rail.png"
+  },
+  {
+    "id": "shanghai_rail",
+    "name": "上海",
+    "hint": "尽头式枢纽，汇聚入海",
+    "img": "./assets/railways/shanghai_rail.png"
+  },
+  {
+    "id": "guangzhou_rail",
+    "name": "广州",
+    "hint": "南大门，流量怪兽",
+    "img": "./assets/railways/guangzhou_rail.png"
+  },
+  {
+    "id": "chongqing_rail",
+    "name": "重庆",
+    "hint": "山城铁路，穿山越岭",
+    "img": "./assets/railways/chongqing_rail.png"
+  },
+  {
+    "id": "shenzhen_rail",
+    "name": "深圳",
+    "hint": "广深港大动脉",
+    "img": "./assets/railways/shenzhen_rail.png"
+  },
+  {
+    "id": "lanzhou_rail",
+    "name": "兰州",
+    "hint": "狭长河谷，东西大通道",
+    "img": "./assets/railways/lanzhou_rail.png"
+  },
+  {
+    "id": "zhuzhou_rail",
+    "name": "株洲",
+    "hint": "由于铁路而兴，南方十字",
+    "img": "./assets/railways/zhuzhou_rail.png"
+  },
+  {
+    "id": "yingtan_rail",
+    "name": "鹰潭",
+    "hint": "浙赣皖闽交汇点",
+    "img": "./assets/railways/yingtan_rail.png"
+  },
+  {
+    "id": "baoij_rail",
+    "name": "宝鸡",
+    "hint": "陇海宝成交汇",
+    "img": "./assets/railways/baoij_rail.png"
+  }
+]
