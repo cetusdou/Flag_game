@@ -225,7 +225,6 @@ function disableBtn(btnId) {
     
     // 基础设置
     btn.onclick = null;
-    btn.style.cursor = "not-allowed";
     btn.className = "game-card card-gray";
     
     // 清除所有叠加元素

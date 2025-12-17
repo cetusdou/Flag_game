@@ -434,6 +434,23 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
+/* 禁用状态的卡片样式 - 灰色，不可点击，无悬停效果 */
+.game-card.card-gray {
+    background: rgba(100, 100, 100, 0.2) !important;
+    cursor: not-allowed !important;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.game-card.card-gray:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.game-card.card-gray:active {
+    transform: none !important;
+}
+
 .card-icon { 
     font-size: 2.2rem; 
     margin-bottom: 10px; 
