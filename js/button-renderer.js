@@ -298,19 +298,32 @@ function addImageOverlay(btn, imageConfig, scope) {
 function applyButtonConfig(btn, config) {
     if (!config) return;
     
-    // 应用基础样式（background和boxShadow）
-    // 如果配置中指定了style，从BASE_CARD_STYLES中获取基础样式
+    // 应用基础样式类（background和boxShadow现在在CSS中定义）
+    // 如果配置中指定了style，添加对应的CSS类
     if (config.style) {
-        const baseStyle = window.getBaseCardStyle(config.style);
-        if (baseStyle.background && !config.background) {
-            btn.style.background = baseStyle.background;
-        }
-        if (baseStyle.boxShadow && !config.boxShadow) {
-            btn.style.boxShadow = baseStyle.boxShadow;
-        }
+        // 移除所有可能的基础样式类（包括所有颜色变体）
+        const allCardStyles = [
+            // 蓝色系
+            'card-blue', 'card-daily-blue', 'card-blue-light', 'card-blue-dark', 'card-blue-cyan',
+            // 紫色系
+            'card-purple', 'card-shape-purple', 'card-purple-light', 'card-purple-dark', 'card-purple-pink',
+            // 绿色系
+            'card-green', 'card-football-green', 'card-compendium-green', 'card-green-light', 'card-green-dark', 'card-green-teal',
+            // 橙色系
+            'card-orange', 'card-sprint-orange', 'card-orange-light', 'card-orange-dark', 'card-orange-red',
+            // 红色系
+            'card-red', 'card-red-light', 'card-red-dark', 'card-red-pink',
+            // 黄色系
+            'card-yellow', 'card-network-yellow', 'card-yellow-light', 'card-yellow-dark', 'card-yellow-amber',
+            // 其他
+            'card-grey', 'card-pink', 'card-cyan', 'card-indigo', 'card-teal', 'card-brown', 'card-lime'
+        ];
+        btn.classList.remove(...allCardStyles);
+        // 添加新的样式类
+        btn.classList.add(config.style);
     }
     
-    // 应用配置中直接指定的背景和阴影（优先级更高）
+    // 如果配置中直接指定了background或boxShadow，使用内联样式覆盖CSS类
     if (config.background) {
         btn.style.background = config.background;
     }
