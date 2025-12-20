@@ -8,6 +8,11 @@ function showView(id) {
     if (el) {
         el.classList.add('active');
     }
+    
+    // 记录视图变化到触摸手势管理器
+    if (window.touchGestureManager && window.touchGestureManager.recordViewChange) {
+        window.touchGestureManager.recordViewChange(id);
+    }
 }
 
 function goHome() { 
