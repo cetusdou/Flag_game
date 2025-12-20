@@ -128,24 +128,27 @@ for item in AIRPORT_DB:
     code, name, lat, lon, zoom = item
     
     # 下载图片
-    filename = generate_airport_image(code, name, lat, lon, zoom)
-    
-    if filename:
-        # 存入游戏数据
-        game_data.append({
-            "code": code,
-            "name": name,
-            "image": f"{IMG_DIR}/{filename}",
-            "lat": lat,
-            "lon": lon,
-            "difficulty": "Hard" if zoom > 14 else "Medium" # 简单逻辑
-        })
+    if os.path.exists(f"{IMG_DIR}/{code}.jpg"):
+        continue
+    else:
+        filename = generate_airport_image(code, name, lat, lon, zoom)
+        
+        if filename:
+            # 存入游戏数据
+            game_data.append({
+                "code": code,
+                "name": name,
+                "image": f"{IMG_DIR}/{filename}",
+                "lat": lat,
+                "lon": lon,
+                "difficulty": "Hard" if zoom > 14 else "Medium" # 简单逻辑
+            })
 
-# 保存题目数据 (JSON)
-with open(f"{DATA_DIR}/{JSON_NAME}", "w", encoding='utf-8') as f:
-    json.dump(game_data, f, ensure_ascii=False, indent=2)
+    # # 保存题目数据 (JSON)
+    # with open(f"{DATA_DIR}/{JSON_NAME}", "w", encoding='utf-8') as f:
+    #     json.dump(game_data, f, ensure_ascii=False, indent=2)
 
-print(f"\n🎉 素材下载完成！")
-print(f"📂 图片目录: {IMG_DIR}")
-print(f"📄 题目数据: {DATA_DIR}/{JSON_NAME}")
-print("👉 现在你可以写一个简单的网页或程序来读取 json 并显示图片了！")
+    print(f"\n🎉 素材下载完成！")
+    print(f"📂 图片目录: {IMG_DIR}")
+    print(f"📄 题目数据: {DATA_DIR}/{JSON_NAME}")
+    print("👉 现在你可以写一个简单的网页或程序来读取 json 并显示图片了！")

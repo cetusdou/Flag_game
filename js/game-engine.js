@@ -762,7 +762,8 @@ function startSprintCountdown() {
                 });
                 
                 allBtns.forEach(b => b.disabled = true);
-                if (currentRefs.currentScope === 'world') {
+                // 显示查看位置按钮（排除机场模式，因为机场数据没有国家代码）
+                if (currentRefs.currentScope === 'world' && currentRefs.gameMode !== 'airport') {
                     document.getElementById('game-map-btn').style.display = 'block';
                 }
                 
@@ -893,7 +894,10 @@ function checkAnswer(choice, btn) {
     syncStateToGameState(gameState);
     
     if (gameState.currentScope === 'world') {
-        document.getElementById('game-map-btn').style.display = 'block';
+        // 显示查看位置按钮（排除机场模式，因为机场数据没有国家代码）
+        if (gameState.gameMode !== 'airport') {
+            document.getElementById('game-map-btn').style.display = 'block';
+        }
         if (gameState.gameMode === 'mode_2') {
             document.getElementById('flag-img').classList.remove('silhouette');
         }

@@ -70,6 +70,12 @@ function initEChartsMap(code) {
 }
 
 function openMap(item) {
+    // 安全检查：确保 item 存在且有 id 字段
+    if (!item || !item.id) {
+        console.error('无法打开地图：缺少必要的数据字段', item);
+        return;
+    }
+    
     // 清除自动跳转定时器（如果存在）
     if (window.autoNextTimer) {
         clearTimeout(window.autoNextTimer);
