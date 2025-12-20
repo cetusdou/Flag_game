@@ -1,0 +1,2202 @@
+[
+  {
+    "id": 1,
+    "name": "bulbasaur",
+    "img": "assets/pokemon_200_silhouettes/001.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 2,
+    "name": "ivysaur",
+    "img": "assets/pokemon_200_silhouettes/002.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 3,
+    "name": "venusaur",
+    "img": "assets/pokemon_200_silhouettes/003.png",
+    "color_rgb": [
+      166,
+      148,
+      159
+    ],
+    "color_hex": "#a6949f"
+  },
+  {
+    "id": 4,
+    "name": "charmander",
+    "img": "assets/pokemon_200_silhouettes/004.png",
+    "color_rgb": [
+      234,
+      171,
+      125
+    ],
+    "color_hex": "#eaab7d"
+  },
+  {
+    "id": 5,
+    "name": "charmeleon",
+    "img": "assets/pokemon_200_silhouettes/005.png",
+    "color_rgb": [
+      226,
+      127,
+      110
+    ],
+    "color_hex": "#e27f6e"
+  },
+  {
+    "id": 6,
+    "name": "charizard",
+    "img": "assets/pokemon_200_silhouettes/006.png",
+    "color_rgb": [
+      78,
+      149,
+      164
+    ],
+    "color_hex": "#4e95a4"
+  },
+  {
+    "id": 7,
+    "name": "squirtle",
+    "img": "assets/pokemon_200_silhouettes/007.png",
+    "color_rgb": [
+      101,
+      156,
+      174
+    ],
+    "color_hex": "#659cae"
+  },
+  {
+    "id": 8,
+    "name": "wartortle",
+    "img": "assets/pokemon_200_silhouettes/008.png",
+    "color_rgb": [
+      175,
+      189,
+      220
+    ],
+    "color_hex": "#afbddc"
+  },
+  {
+    "id": 9,
+    "name": "blastoise",
+    "img": "assets/pokemon_200_silhouettes/009.png",
+    "color_rgb": [
+      142,
+      169,
+      207
+    ],
+    "color_hex": "#8ea9cf"
+  },
+  {
+    "id": 10,
+    "name": "caterpie",
+    "img": "assets/pokemon_200_silhouettes/010.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 11,
+    "name": "metapod",
+    "img": "assets/pokemon_200_silhouettes/011.png",
+    "color_rgb": [
+      131,
+      167,
+      81
+    ],
+    "color_hex": "#83a751"
+  },
+  {
+    "id": 12,
+    "name": "butterfree",
+    "img": "assets/pokemon_200_silhouettes/012.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 13,
+    "name": "weedle",
+    "img": "assets/pokemon_200_silhouettes/013.png",
+    "color_rgb": [
+      176,
+      135,
+      89
+    ],
+    "color_hex": "#b08759"
+  },
+  {
+    "id": 14,
+    "name": "kakuna",
+    "img": "assets/pokemon_200_silhouettes/014.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 15,
+    "name": "beedrill",
+    "img": "assets/pokemon_200_silhouettes/015.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 16,
+    "name": "pidgey",
+    "img": "assets/pokemon_200_silhouettes/016.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 17,
+    "name": "pidgeotto",
+    "img": "assets/pokemon_200_silhouettes/017.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 18,
+    "name": "pidgeot",
+    "img": "assets/pokemon_200_silhouettes/018.png",
+    "color_rgb": [
+      238,
+      227,
+      184
+    ],
+    "color_hex": "#eee3b8"
+  },
+  {
+    "id": 19,
+    "name": "rattata",
+    "img": "assets/pokemon_200_silhouettes/019.png",
+    "color_rgb": [
+      158,
+      129,
+      170
+    ],
+    "color_hex": "#9e81aa"
+  },
+  {
+    "id": 20,
+    "name": "raticate",
+    "img": "assets/pokemon_200_silhouettes/020.png",
+    "color_rgb": [
+      147,
+      104,
+      58
+    ],
+    "color_hex": "#93683a"
+  },
+  {
+    "id": 21,
+    "name": "spearow",
+    "img": "assets/pokemon_200_silhouettes/021.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 22,
+    "name": "fearow",
+    "img": "assets/pokemon_200_silhouettes/022.png",
+    "color_rgb": [
+      168,
+      118,
+      78
+    ],
+    "color_hex": "#a8764e"
+  },
+  {
+    "id": 23,
+    "name": "ekans",
+    "img": "assets/pokemon_200_silhouettes/023.png",
+    "color_rgb": [
+      137,
+      96,
+      127
+    ],
+    "color_hex": "#89607f"
+  },
+  {
+    "id": 24,
+    "name": "arbok",
+    "img": "assets/pokemon_200_silhouettes/024.png",
+    "color_rgb": [
+      115,
+      105,
+      116
+    ],
+    "color_hex": "#736974"
+  },
+  {
+    "id": 25,
+    "name": "pikachu",
+    "img": "assets/pokemon_200_silhouettes/025.png",
+    "color_rgb": [
+      244,
+      215,
+      124
+    ],
+    "color_hex": "#f4d77c"
+  },
+  {
+    "id": 26,
+    "name": "raichu",
+    "img": "assets/pokemon_200_silhouettes/026.png",
+    "color_rgb": [
+      239,
+      185,
+      93
+    ],
+    "color_hex": "#efb95d"
+  },
+  {
+    "id": 27,
+    "name": "sandshrew",
+    "img": "assets/pokemon_200_silhouettes/027.png",
+    "color_rgb": [
+      232,
+      201,
+      121
+    ],
+    "color_hex": "#e8c979"
+  },
+  {
+    "id": 28,
+    "name": "sandslash",
+    "img": "assets/pokemon_200_silhouettes/028.png",
+    "color_rgb": [
+      225,
+      190,
+      109
+    ],
+    "color_hex": "#e1be6d"
+  },
+  {
+    "id": 29,
+    "name": "nidoran-f",
+    "img": "assets/pokemon_200_silhouettes/029.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 30,
+    "name": "nidorina",
+    "img": "assets/pokemon_200_silhouettes/030.png",
+    "color_rgb": [
+      193,
+      216,
+      221
+    ],
+    "color_hex": "#c1d8dd"
+  },
+  {
+    "id": 31,
+    "name": "nidoqueen",
+    "img": "assets/pokemon_200_silhouettes/031.png",
+    "color_rgb": [
+      100,
+      139,
+      173
+    ],
+    "color_hex": "#648bad"
+  },
+  {
+    "id": 32,
+    "name": "nidoran-m",
+    "img": "assets/pokemon_200_silhouettes/032.png",
+    "color_rgb": [
+      155,
+      113,
+      157
+    ],
+    "color_hex": "#9b719d"
+  },
+  {
+    "id": 33,
+    "name": "nidorino",
+    "img": "assets/pokemon_200_silhouettes/033.png",
+    "color_rgb": [
+      194,
+      160,
+      199
+    ],
+    "color_hex": "#c2a0c7"
+  },
+  {
+    "id": 34,
+    "name": "nidoking",
+    "img": "assets/pokemon_200_silhouettes/034.png",
+    "color_rgb": [
+      173,
+      127,
+      174
+    ],
+    "color_hex": "#ad7fae"
+  },
+  {
+    "id": 35,
+    "name": "clefairy",
+    "img": "assets/pokemon_200_silhouettes/035.png",
+    "color_rgb": [
+      248,
+      207,
+      212
+    ],
+    "color_hex": "#f8cfd4"
+  },
+  {
+    "id": 36,
+    "name": "clefable",
+    "img": "assets/pokemon_200_silhouettes/036.png",
+    "color_rgb": [
+      244,
+      217,
+      210
+    ],
+    "color_hex": "#f4d9d2"
+  },
+  {
+    "id": 37,
+    "name": "vulpix",
+    "img": "assets/pokemon_200_silhouettes/037.png",
+    "color_rgb": [
+      194,
+      135,
+      112
+    ],
+    "color_hex": "#c28770"
+  },
+  {
+    "id": 38,
+    "name": "ninetales",
+    "img": "assets/pokemon_200_silhouettes/038.png",
+    "color_rgb": [
+      240,
+      228,
+      161
+    ],
+    "color_hex": "#f0e4a1"
+  },
+  {
+    "id": 39,
+    "name": "jigglypuff",
+    "img": "assets/pokemon_200_silhouettes/039.png",
+    "color_rgb": [
+      242,
+      205,
+      214
+    ],
+    "color_hex": "#f2cdd6"
+  },
+  {
+    "id": 40,
+    "name": "wigglytuff",
+    "img": "assets/pokemon_200_silhouettes/040.png",
+    "color_rgb": [
+      244,
+      212,
+      217
+    ],
+    "color_hex": "#f4d4d9"
+  },
+  {
+    "id": 41,
+    "name": "zubat",
+    "img": "assets/pokemon_200_silhouettes/041.png",
+    "color_rgb": [
+      163,
+      110,
+      166
+    ],
+    "color_hex": "#a36ea6"
+  },
+  {
+    "id": 42,
+    "name": "golbat",
+    "img": "assets/pokemon_200_silhouettes/042.png",
+    "color_rgb": [
+      34,
+      35,
+      35
+    ],
+    "color_hex": "#222323"
+  },
+  {
+    "id": 43,
+    "name": "oddish",
+    "img": "assets/pokemon_200_silhouettes/043.png",
+    "color_rgb": [
+      79,
+      167,
+      70
+    ],
+    "color_hex": "#4fa746"
+  },
+  {
+    "id": 44,
+    "name": "gloom",
+    "img": "assets/pokemon_200_silhouettes/044.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 45,
+    "name": "vileplume",
+    "img": "assets/pokemon_200_silhouettes/045.png",
+    "color_rgb": [
+      222,
+      153,
+      165
+    ],
+    "color_hex": "#de99a5"
+  },
+  {
+    "id": 46,
+    "name": "paras",
+    "img": "assets/pokemon_200_silhouettes/046.png",
+    "color_rgb": [
+      232,
+      155,
+      94
+    ],
+    "color_hex": "#e89b5e"
+  },
+  {
+    "id": 47,
+    "name": "parasect",
+    "img": "assets/pokemon_200_silhouettes/047.png",
+    "color_rgb": [
+      163,
+      95,
+      125
+    ],
+    "color_hex": "#a35f7d"
+  },
+  {
+    "id": 48,
+    "name": "venonat",
+    "img": "assets/pokemon_200_silhouettes/048.png",
+    "color_rgb": [
+      118,
+      114,
+      175
+    ],
+    "color_hex": "#7672af"
+  },
+  {
+    "id": 49,
+    "name": "venomoth",
+    "img": "assets/pokemon_200_silhouettes/049.png",
+    "color_rgb": [
+      228,
+      217,
+      236
+    ],
+    "color_hex": "#e4d9ec"
+  },
+  {
+    "id": 50,
+    "name": "diglett",
+    "img": "assets/pokemon_200_silhouettes/050.png",
+    "color_rgb": [
+      170,
+      140,
+      122
+    ],
+    "color_hex": "#aa8c7a"
+  },
+  {
+    "id": 51,
+    "name": "dugtrio",
+    "img": "assets/pokemon_200_silhouettes/051.png",
+    "color_rgb": [
+      155,
+      127,
+      111
+    ],
+    "color_hex": "#9b7f6f"
+  },
+  {
+    "id": 52,
+    "name": "meowth",
+    "img": "assets/pokemon_200_silhouettes/052.png",
+    "color_rgb": [
+      242,
+      233,
+      206
+    ],
+    "color_hex": "#f2e9ce"
+  },
+  {
+    "id": 53,
+    "name": "persian",
+    "img": "assets/pokemon_200_silhouettes/053.png",
+    "color_rgb": [
+      240,
+      221,
+      183
+    ],
+    "color_hex": "#f0ddb7"
+  },
+  {
+    "id": 54,
+    "name": "psyduck",
+    "img": "assets/pokemon_200_silhouettes/054.png",
+    "color_rgb": [
+      219,
+      183,
+      120
+    ],
+    "color_hex": "#dbb778"
+  },
+  {
+    "id": 55,
+    "name": "golduck",
+    "img": "assets/pokemon_200_silhouettes/055.png",
+    "color_rgb": [
+      127,
+      173,
+      209
+    ],
+    "color_hex": "#7fadd1"
+  },
+  {
+    "id": 56,
+    "name": "mankey",
+    "img": "assets/pokemon_200_silhouettes/056.png",
+    "color_rgb": [
+      244,
+      226,
+      213
+    ],
+    "color_hex": "#f4e2d5"
+  },
+  {
+    "id": 57,
+    "name": "primeape",
+    "img": "assets/pokemon_200_silhouettes/057.png",
+    "color_rgb": [
+      242,
+      223,
+      209
+    ],
+    "color_hex": "#f2dfd1"
+  },
+  {
+    "id": 58,
+    "name": "growlithe",
+    "img": "assets/pokemon_200_silhouettes/058.png",
+    "color_rgb": [
+      239,
+      217,
+      186
+    ],
+    "color_hex": "#efd9ba"
+  },
+  {
+    "id": 59,
+    "name": "arcanine",
+    "img": "assets/pokemon_200_silhouettes/059.png",
+    "color_rgb": [
+      242,
+      217,
+      189
+    ],
+    "color_hex": "#f2d9bd"
+  },
+  {
+    "id": 60,
+    "name": "poliwag",
+    "img": "assets/pokemon_200_silhouettes/060.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 61,
+    "name": "poliwhirl",
+    "img": "assets/pokemon_200_silhouettes/061.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 62,
+    "name": "poliwrath",
+    "img": "assets/pokemon_200_silhouettes/062.png",
+    "color_rgb": [
+      85,
+      116,
+      157
+    ],
+    "color_hex": "#55749d"
+  },
+  {
+    "id": 63,
+    "name": "abra",
+    "img": "assets/pokemon_200_silhouettes/063.png",
+    "color_rgb": [
+      238,
+      212,
+      87
+    ],
+    "color_hex": "#eed457"
+  },
+  {
+    "id": 64,
+    "name": "kadabra",
+    "img": "assets/pokemon_200_silhouettes/064.png",
+    "color_rgb": [
+      239,
+      211,
+      87
+    ],
+    "color_hex": "#efd357"
+  },
+  {
+    "id": 65,
+    "name": "alakazam",
+    "img": "assets/pokemon_200_silhouettes/065.png",
+    "color_rgb": [
+      233,
+      208,
+      86
+    ],
+    "color_hex": "#e9d056"
+  },
+  {
+    "id": 66,
+    "name": "machop",
+    "img": "assets/pokemon_200_silhouettes/066.png",
+    "color_rgb": [
+      164,
+      195,
+      206
+    ],
+    "color_hex": "#a4c3ce"
+  },
+  {
+    "id": 67,
+    "name": "machoke",
+    "img": "assets/pokemon_200_silhouettes/067.png",
+    "color_rgb": [
+      167,
+      173,
+      204
+    ],
+    "color_hex": "#a7adcc"
+  },
+  {
+    "id": 68,
+    "name": "machamp",
+    "img": "assets/pokemon_200_silhouettes/068.png",
+    "color_rgb": [
+      156,
+      177,
+      195
+    ],
+    "color_hex": "#9cb1c3"
+  },
+  {
+    "id": 69,
+    "name": "bellsprout",
+    "img": "assets/pokemon_200_silhouettes/069.png",
+    "color_rgb": [
+      175,
+      215,
+      150
+    ],
+    "color_hex": "#afd796"
+  },
+  {
+    "id": 70,
+    "name": "weepinbell",
+    "img": "assets/pokemon_200_silhouettes/070.png",
+    "color_rgb": [
+      135,
+      202,
+      143
+    ],
+    "color_hex": "#87ca8f"
+  },
+  {
+    "id": 71,
+    "name": "victreebel",
+    "img": "assets/pokemon_200_silhouettes/071.png",
+    "color_rgb": [
+      167,
+      212,
+      143
+    ],
+    "color_hex": "#a7d48f"
+  },
+  {
+    "id": 72,
+    "name": "tentacool",
+    "img": "assets/pokemon_200_silhouettes/072.png",
+    "color_rgb": [
+      16,
+      16,
+      17
+    ],
+    "color_hex": "#101011"
+  },
+  {
+    "id": 73,
+    "name": "tentacruel",
+    "img": "assets/pokemon_200_silhouettes/073.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 74,
+    "name": "geodude",
+    "img": "assets/pokemon_200_silhouettes/074.png",
+    "color_rgb": [
+      178,
+      175,
+      168
+    ],
+    "color_hex": "#b2afa8"
+  },
+  {
+    "id": 75,
+    "name": "graveler",
+    "img": "assets/pokemon_200_silhouettes/075.png",
+    "color_rgb": [
+      198,
+      198,
+      189
+    ],
+    "color_hex": "#c6c6bd"
+  },
+  {
+    "id": 76,
+    "name": "golem",
+    "img": "assets/pokemon_200_silhouettes/076.png",
+    "color_rgb": [
+      86,
+      82,
+      79
+    ],
+    "color_hex": "#56524f"
+  },
+  {
+    "id": 77,
+    "name": "ponyta",
+    "img": "assets/pokemon_200_silhouettes/077.png",
+    "color_rgb": [
+      251,
+      243,
+      204
+    ],
+    "color_hex": "#fbf3cc"
+  },
+  {
+    "id": 78,
+    "name": "rapidash",
+    "img": "assets/pokemon_200_silhouettes/078.png",
+    "color_rgb": [
+      244,
+      235,
+      195
+    ],
+    "color_hex": "#f4ebc3"
+  },
+  {
+    "id": 79,
+    "name": "slowpoke",
+    "img": "assets/pokemon_200_silhouettes/079.png",
+    "color_rgb": [
+      227,
+      165,
+      183
+    ],
+    "color_hex": "#e3a5b7"
+  },
+  {
+    "id": 80,
+    "name": "slowbro",
+    "img": "assets/pokemon_200_silhouettes/080.png",
+    "color_rgb": [
+      224,
+      164,
+      180
+    ],
+    "color_hex": "#e0a4b4"
+  },
+  {
+    "id": 81,
+    "name": "magnemite",
+    "img": "assets/pokemon_200_silhouettes/081.png",
+    "color_rgb": [
+      159,
+      192,
+      202
+    ],
+    "color_hex": "#9fc0ca"
+  },
+  {
+    "id": 82,
+    "name": "magneton",
+    "img": "assets/pokemon_200_silhouettes/082.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 83,
+    "name": "farfetchd",
+    "img": "assets/pokemon_200_silhouettes/083.png",
+    "color_rgb": [
+      158,
+      141,
+      138
+    ],
+    "color_hex": "#9e8d8a"
+  },
+  {
+    "id": 84,
+    "name": "doduo",
+    "img": "assets/pokemon_200_silhouettes/084.png",
+    "color_rgb": [
+      167,
+      126,
+      100
+    ],
+    "color_hex": "#a77e64"
+  },
+  {
+    "id": 85,
+    "name": "dodrio",
+    "img": "assets/pokemon_200_silhouettes/085.png",
+    "color_rgb": [
+      153,
+      117,
+      102
+    ],
+    "color_hex": "#997566"
+  },
+  {
+    "id": 86,
+    "name": "seel",
+    "img": "assets/pokemon_200_silhouettes/086.png",
+    "color_rgb": [
+      224,
+      232,
+      242
+    ],
+    "color_hex": "#e0e8f2"
+  },
+  {
+    "id": 87,
+    "name": "dewgong",
+    "img": "assets/pokemon_200_silhouettes/087.png",
+    "color_rgb": [
+      237,
+      242,
+      247
+    ],
+    "color_hex": "#edf2f7"
+  },
+  {
+    "id": 88,
+    "name": "grimer",
+    "img": "assets/pokemon_200_silhouettes/088.png",
+    "color_rgb": [
+      140,
+      121,
+      148
+    ],
+    "color_hex": "#8c7994"
+  },
+  {
+    "id": 89,
+    "name": "muk",
+    "img": "assets/pokemon_200_silhouettes/089.png",
+    "color_rgb": [
+      127,
+      114,
+      132
+    ],
+    "color_hex": "#7f7284"
+  },
+  {
+    "id": 90,
+    "name": "shellder",
+    "img": "assets/pokemon_200_silhouettes/090.png",
+    "color_rgb": [
+      166,
+      163,
+      201
+    ],
+    "color_hex": "#a6a3c9"
+  },
+  {
+    "id": 91,
+    "name": "cloyster",
+    "img": "assets/pokemon_200_silhouettes/091.png",
+    "color_rgb": [
+      131,
+      122,
+      150
+    ],
+    "color_hex": "#837a96"
+  },
+  {
+    "id": 92,
+    "name": "gastly",
+    "img": "assets/pokemon_200_silhouettes/092.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 93,
+    "name": "haunter",
+    "img": "assets/pokemon_200_silhouettes/093.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 94,
+    "name": "gengar",
+    "img": "assets/pokemon_200_silhouettes/094.png",
+    "color_rgb": [
+      125,
+      121,
+      163
+    ],
+    "color_hex": "#7d79a3"
+  },
+  {
+    "id": 95,
+    "name": "onix",
+    "img": "assets/pokemon_200_silhouettes/095.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 96,
+    "name": "drowzee",
+    "img": "assets/pokemon_200_silhouettes/096.png",
+    "color_rgb": [
+      236,
+      196,
+      73
+    ],
+    "color_hex": "#ecc449"
+  },
+  {
+    "id": 97,
+    "name": "hypno",
+    "img": "assets/pokemon_200_silhouettes/097.png",
+    "color_rgb": [
+      247,
+      216,
+      84
+    ],
+    "color_hex": "#f7d854"
+  },
+  {
+    "id": 98,
+    "name": "krabby",
+    "img": "assets/pokemon_200_silhouettes/098.png",
+    "color_rgb": [
+      242,
+      153,
+      105
+    ],
+    "color_hex": "#f29969"
+  },
+  {
+    "id": 99,
+    "name": "kingler",
+    "img": "assets/pokemon_200_silhouettes/099.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 100,
+    "name": "voltorb",
+    "img": "assets/pokemon_200_silhouettes/100.png",
+    "color_rgb": [
+      179,
+      185,
+      202
+    ],
+    "color_hex": "#b3b9ca"
+  },
+  {
+    "id": 101,
+    "name": "electrode",
+    "img": "assets/pokemon_200_silhouettes/101.png",
+    "color_rgb": [
+      234,
+      235,
+      238
+    ],
+    "color_hex": "#eaebee"
+  },
+  {
+    "id": 102,
+    "name": "exeggcute",
+    "img": "assets/pokemon_200_silhouettes/102.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 103,
+    "name": "exeggutor",
+    "img": "assets/pokemon_200_silhouettes/103.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 104,
+    "name": "cubone",
+    "img": "assets/pokemon_200_silhouettes/104.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 105,
+    "name": "marowak",
+    "img": "assets/pokemon_200_silhouettes/105.png",
+    "color_rgb": [
+      221,
+      221,
+      221
+    ],
+    "color_hex": "#dddddd"
+  },
+  {
+    "id": 106,
+    "name": "hitmonlee",
+    "img": "assets/pokemon_200_silhouettes/106.png",
+    "color_rgb": [
+      169,
+      149,
+      144
+    ],
+    "color_hex": "#a99590"
+  },
+  {
+    "id": 107,
+    "name": "hitmonchan",
+    "img": "assets/pokemon_200_silhouettes/107.png",
+    "color_rgb": [
+      199,
+      184,
+      169
+    ],
+    "color_hex": "#c7b8a9"
+  },
+  {
+    "id": 108,
+    "name": "lickitung",
+    "img": "assets/pokemon_200_silhouettes/108.png",
+    "color_rgb": [
+      245,
+      179,
+      185
+    ],
+    "color_hex": "#f5b3b9"
+  },
+  {
+    "id": 109,
+    "name": "koffing",
+    "img": "assets/pokemon_200_silhouettes/109.png",
+    "color_rgb": [
+      161,
+      160,
+      205
+    ],
+    "color_hex": "#a1a0cd"
+  },
+  {
+    "id": 110,
+    "name": "weezing",
+    "img": "assets/pokemon_200_silhouettes/110.png",
+    "color_rgb": [
+      133,
+      121,
+      135
+    ],
+    "color_hex": "#857987"
+  },
+  {
+    "id": 111,
+    "name": "rhyhorn",
+    "img": "assets/pokemon_200_silhouettes/111.png",
+    "color_rgb": [
+      150,
+      163,
+      171
+    ],
+    "color_hex": "#96a3ab"
+  },
+  {
+    "id": 112,
+    "name": "rhydon",
+    "img": "assets/pokemon_200_silhouettes/112.png",
+    "color_rgb": [
+      171,
+      180,
+      197
+    ],
+    "color_hex": "#abb4c5"
+  },
+  {
+    "id": 113,
+    "name": "chansey",
+    "img": "assets/pokemon_200_silhouettes/113.png",
+    "color_rgb": [
+      244,
+      207,
+      226
+    ],
+    "color_hex": "#f4cfe2"
+  },
+  {
+    "id": 114,
+    "name": "tangela",
+    "img": "assets/pokemon_200_silhouettes/114.png",
+    "color_rgb": [
+      107,
+      161,
+      193
+    ],
+    "color_hex": "#6ba1c1"
+  },
+  {
+    "id": 115,
+    "name": "kangaskhan",
+    "img": "assets/pokemon_200_silhouettes/115.png",
+    "color_rgb": [
+      209,
+      197,
+      157
+    ],
+    "color_hex": "#d1c59d"
+  },
+  {
+    "id": 116,
+    "name": "horsea",
+    "img": "assets/pokemon_200_silhouettes/116.png",
+    "color_rgb": [
+      133,
+      212,
+      237
+    ],
+    "color_hex": "#85d4ed"
+  },
+  {
+    "id": 117,
+    "name": "seadra",
+    "img": "assets/pokemon_200_silhouettes/117.png",
+    "color_rgb": [
+      130,
+      211,
+      236
+    ],
+    "color_hex": "#82d3ec"
+  },
+  {
+    "id": 118,
+    "name": "goldeen",
+    "img": "assets/pokemon_200_silhouettes/118.png",
+    "color_rgb": [
+      215,
+      211,
+      226
+    ],
+    "color_hex": "#d7d3e2"
+  },
+  {
+    "id": 119,
+    "name": "seaking",
+    "img": "assets/pokemon_200_silhouettes/119.png",
+    "color_rgb": [
+      238,
+      242,
+      240
+    ],
+    "color_hex": "#eef2f0"
+  },
+  {
+    "id": 120,
+    "name": "staryu",
+    "img": "assets/pokemon_200_silhouettes/120.png",
+    "color_rgb": [
+      109,
+      95,
+      81
+    ],
+    "color_hex": "#6d5f51"
+  },
+  {
+    "id": 121,
+    "name": "starmie",
+    "img": "assets/pokemon_200_silhouettes/121.png",
+    "color_rgb": [
+      137,
+      131,
+      152
+    ],
+    "color_hex": "#898398"
+  },
+  {
+    "id": 122,
+    "name": "mr-mime",
+    "img": "assets/pokemon_200_silhouettes/122.png",
+    "color_rgb": [
+      44,
+      84,
+      112
+    ],
+    "color_hex": "#2c5470"
+  },
+  {
+    "id": 123,
+    "name": "scyther",
+    "img": "assets/pokemon_200_silhouettes/123.png",
+    "color_rgb": [
+      156,
+      208,
+      144
+    ],
+    "color_hex": "#9cd090"
+  },
+  {
+    "id": 124,
+    "name": "jynx",
+    "img": "assets/pokemon_200_silhouettes/124.png",
+    "color_rgb": [
+      224,
+      107,
+      105
+    ],
+    "color_hex": "#e06b69"
+  },
+  {
+    "id": 125,
+    "name": "electabuzz",
+    "img": "assets/pokemon_200_silhouettes/125.png",
+    "color_rgb": [
+      251,
+      216,
+      132
+    ],
+    "color_hex": "#fbd884"
+  },
+  {
+    "id": 126,
+    "name": "magmar",
+    "img": "assets/pokemon_200_silhouettes/126.png",
+    "color_rgb": [
+      253,
+      218,
+      121
+    ],
+    "color_hex": "#fdda79"
+  },
+  {
+    "id": 127,
+    "name": "pinsir",
+    "img": "assets/pokemon_200_silhouettes/127.png",
+    "color_rgb": [
+      109,
+      98,
+      95
+    ],
+    "color_hex": "#6d625f"
+  },
+  {
+    "id": 128,
+    "name": "tauros",
+    "img": "assets/pokemon_200_silhouettes/128.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 129,
+    "name": "magikarp",
+    "img": "assets/pokemon_200_silhouettes/129.png",
+    "color_rgb": [
+      237,
+      235,
+      235
+    ],
+    "color_hex": "#edebeb"
+  },
+  {
+    "id": 130,
+    "name": "gyarados",
+    "img": "assets/pokemon_200_silhouettes/130.png",
+    "color_rgb": [
+      59,
+      145,
+      178
+    ],
+    "color_hex": "#3b91b2"
+  },
+  {
+    "id": 131,
+    "name": "lapras",
+    "img": "assets/pokemon_200_silhouettes/131.png",
+    "color_rgb": [
+      88,
+      181,
+      221
+    ],
+    "color_hex": "#58b5dd"
+  },
+  {
+    "id": 132,
+    "name": "ditto",
+    "img": "assets/pokemon_200_silhouettes/132.png",
+    "color_rgb": [
+      201,
+      183,
+      217
+    ],
+    "color_hex": "#c9b7d9"
+  },
+  {
+    "id": 133,
+    "name": "eevee",
+    "img": "assets/pokemon_200_silhouettes/133.png",
+    "color_rgb": [
+      198,
+      146,
+      94
+    ],
+    "color_hex": "#c6925e"
+  },
+  {
+    "id": 134,
+    "name": "vaporeon",
+    "img": "assets/pokemon_200_silhouettes/134.png",
+    "color_rgb": [
+      123,
+      207,
+      225
+    ],
+    "color_hex": "#7bcfe1"
+  },
+  {
+    "id": 135,
+    "name": "jolteon",
+    "img": "assets/pokemon_200_silhouettes/135.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 136,
+    "name": "flareon",
+    "img": "assets/pokemon_200_silhouettes/136.png",
+    "color_rgb": [
+      225,
+      205,
+      151
+    ],
+    "color_hex": "#e1cd97"
+  },
+  {
+    "id": 137,
+    "name": "porygon",
+    "img": "assets/pokemon_200_silhouettes/137.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 138,
+    "name": "omanyte",
+    "img": "assets/pokemon_200_silhouettes/138.png",
+    "color_rgb": [
+      226,
+      218,
+      182
+    ],
+    "color_hex": "#e2dab6"
+  },
+  {
+    "id": 139,
+    "name": "omastar",
+    "img": "assets/pokemon_200_silhouettes/139.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 140,
+    "name": "kabuto",
+    "img": "assets/pokemon_200_silhouettes/140.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 141,
+    "name": "kabutops",
+    "img": "assets/pokemon_200_silhouettes/141.png",
+    "color_rgb": [
+      174,
+      132,
+      92
+    ],
+    "color_hex": "#ae845c"
+  },
+  {
+    "id": 142,
+    "name": "aerodactyl",
+    "img": "assets/pokemon_200_silhouettes/142.png",
+    "color_rgb": [
+      174,
+      150,
+      194
+    ],
+    "color_hex": "#ae96c2"
+  },
+  {
+    "id": 143,
+    "name": "snorlax",
+    "img": "assets/pokemon_200_silhouettes/143.png",
+    "color_rgb": [
+      240,
+      229,
+      216
+    ],
+    "color_hex": "#f0e5d8"
+  },
+  {
+    "id": 144,
+    "name": "articuno",
+    "img": "assets/pokemon_200_silhouettes/144.png",
+    "color_rgb": [
+      50,
+      110,
+      154
+    ],
+    "color_hex": "#326e9a"
+  },
+  {
+    "id": 145,
+    "name": "zapdos",
+    "img": "assets/pokemon_200_silhouettes/145.png",
+    "color_rgb": [
+      255,
+      220,
+      128
+    ],
+    "color_hex": "#ffdc80"
+  },
+  {
+    "id": 146,
+    "name": "moltres",
+    "img": "assets/pokemon_200_silhouettes/146.png",
+    "color_rgb": [
+      249,
+      199,
+      116
+    ],
+    "color_hex": "#f9c774"
+  },
+  {
+    "id": 147,
+    "name": "dratini",
+    "img": "assets/pokemon_200_silhouettes/147.png",
+    "color_rgb": [
+      238,
+      236,
+      234
+    ],
+    "color_hex": "#eeecea"
+  },
+  {
+    "id": 148,
+    "name": "dragonair",
+    "img": "assets/pokemon_200_silhouettes/148.png",
+    "color_rgb": [
+      121,
+      175,
+      223
+    ],
+    "color_hex": "#79afdf"
+  },
+  {
+    "id": 149,
+    "name": "dragonite",
+    "img": "assets/pokemon_200_silhouettes/149.png",
+    "color_rgb": [
+      242,
+      180,
+      108
+    ],
+    "color_hex": "#f2b46c"
+  },
+  {
+    "id": 150,
+    "name": "mewtwo",
+    "img": "assets/pokemon_200_silhouettes/150.png",
+    "color_rgb": [
+      222,
+      217,
+      227
+    ],
+    "color_hex": "#ded9e3"
+  },
+  {
+    "id": 151,
+    "name": "mew",
+    "img": "assets/pokemon_200_silhouettes/151.png",
+    "color_rgb": [
+      244,
+      203,
+      211
+    ],
+    "color_hex": "#f4cbd3"
+  },
+  {
+    "id": 152,
+    "name": "chikorita",
+    "img": "assets/pokemon_200_silhouettes/152.png",
+    "color_rgb": [
+      167,
+      212,
+      149
+    ],
+    "color_hex": "#a7d495"
+  },
+  {
+    "id": 153,
+    "name": "bayleef",
+    "img": "assets/pokemon_200_silhouettes/153.png",
+    "color_rgb": [
+      249,
+      228,
+      156
+    ],
+    "color_hex": "#f9e49c"
+  },
+  {
+    "id": 154,
+    "name": "meganium",
+    "img": "assets/pokemon_200_silhouettes/154.png",
+    "color_rgb": [
+      238,
+      117,
+      139
+    ],
+    "color_hex": "#ee758b"
+  },
+  {
+    "id": 155,
+    "name": "cyndaquil",
+    "img": "assets/pokemon_200_silhouettes/155.png",
+    "color_rgb": [
+      230,
+      112,
+      79
+    ],
+    "color_hex": "#e6704f"
+  },
+  {
+    "id": 156,
+    "name": "quilava",
+    "img": "assets/pokemon_200_silhouettes/156.png",
+    "color_rgb": [
+      253,
+      227,
+      159
+    ],
+    "color_hex": "#fde39f"
+  },
+  {
+    "id": 157,
+    "name": "typhlosion",
+    "img": "assets/pokemon_200_silhouettes/157.png",
+    "color_rgb": [
+      255,
+      234,
+      159
+    ],
+    "color_hex": "#ffea9f"
+  },
+  {
+    "id": 158,
+    "name": "totodile",
+    "img": "assets/pokemon_200_silhouettes/158.png",
+    "color_rgb": [
+      103,
+      193,
+      204
+    ],
+    "color_hex": "#67c1cc"
+  },
+  {
+    "id": 159,
+    "name": "croconaw",
+    "img": "assets/pokemon_200_silhouettes/159.png",
+    "color_rgb": [
+      126,
+      200,
+      210
+    ],
+    "color_hex": "#7ec8d2"
+  },
+  {
+    "id": 160,
+    "name": "feraligatr",
+    "img": "assets/pokemon_200_silhouettes/160.png",
+    "color_rgb": [
+      101,
+      203,
+      233
+    ],
+    "color_hex": "#65cbe9"
+  },
+  {
+    "id": 161,
+    "name": "sentret",
+    "img": "assets/pokemon_200_silhouettes/161.png",
+    "color_rgb": [
+      179,
+      136,
+      119
+    ],
+    "color_hex": "#b38877"
+  },
+  {
+    "id": 162,
+    "name": "furret",
+    "img": "assets/pokemon_200_silhouettes/162.png",
+    "color_rgb": [
+      196,
+      173,
+      150
+    ],
+    "color_hex": "#c4ad96"
+  },
+  {
+    "id": 163,
+    "name": "hoothoot",
+    "img": "assets/pokemon_200_silhouettes/163.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 164,
+    "name": "noctowl",
+    "img": "assets/pokemon_200_silhouettes/164.png",
+    "color_rgb": [
+      109,
+      84,
+      79
+    ],
+    "color_hex": "#6d544f"
+  },
+  {
+    "id": 165,
+    "name": "ledyba",
+    "img": "assets/pokemon_200_silhouettes/165.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 166,
+    "name": "ledian",
+    "img": "assets/pokemon_200_silhouettes/166.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 167,
+    "name": "spinarak",
+    "img": "assets/pokemon_200_silhouettes/167.png",
+    "color_rgb": [
+      166,
+      211,
+      138
+    ],
+    "color_hex": "#a6d38a"
+  },
+  {
+    "id": 168,
+    "name": "ariados",
+    "img": "assets/pokemon_200_silhouettes/168.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 169,
+    "name": "crobat",
+    "img": "assets/pokemon_200_silhouettes/169.png",
+    "color_rgb": [
+      93,
+      150,
+      160
+    ],
+    "color_hex": "#5d96a0"
+  },
+  {
+    "id": 170,
+    "name": "chinchou",
+    "img": "assets/pokemon_200_silhouettes/170.png",
+    "color_rgb": [
+      254,
+      241,
+      223
+    ],
+    "color_hex": "#fef1df"
+  },
+  {
+    "id": 171,
+    "name": "lanturn",
+    "img": "assets/pokemon_200_silhouettes/171.png",
+    "color_rgb": [
+      113,
+      128,
+      170
+    ],
+    "color_hex": "#7180aa"
+  },
+  {
+    "id": 172,
+    "name": "pichu",
+    "img": "assets/pokemon_200_silhouettes/172.png",
+    "color_rgb": [
+      13,
+      58,
+      86
+    ],
+    "color_hex": "#0d3a56"
+  },
+  {
+    "id": 173,
+    "name": "cleffa",
+    "img": "assets/pokemon_200_silhouettes/173.png",
+    "color_rgb": [
+      250,
+      211,
+      201
+    ],
+    "color_hex": "#fad3c9"
+  },
+  {
+    "id": 174,
+    "name": "igglybuff",
+    "img": "assets/pokemon_200_silhouettes/174.png",
+    "color_rgb": [
+      252,
+      223,
+      224
+    ],
+    "color_hex": "#fcdfe0"
+  },
+  {
+    "id": 175,
+    "name": "togepi",
+    "img": "assets/pokemon_200_silhouettes/175.png",
+    "color_rgb": [
+      240,
+      225,
+      183
+    ],
+    "color_hex": "#f0e1b7"
+  },
+  {
+    "id": 176,
+    "name": "togetic",
+    "img": "assets/pokemon_200_silhouettes/176.png",
+    "color_rgb": [
+      229,
+      242,
+      224
+    ],
+    "color_hex": "#e5f2e0"
+  },
+  {
+    "id": 177,
+    "name": "natu",
+    "img": "assets/pokemon_200_silhouettes/177.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 178,
+    "name": "xatu",
+    "img": "assets/pokemon_200_silhouettes/178.png",
+    "color_rgb": [
+      117,
+      159,
+      71
+    ],
+    "color_hex": "#759f47"
+  },
+  {
+    "id": 179,
+    "name": "mareep",
+    "img": "assets/pokemon_200_silhouettes/179.png",
+    "color_rgb": [
+      196,
+      183,
+      153
+    ],
+    "color_hex": "#c4b799"
+  },
+  {
+    "id": 180,
+    "name": "flaaffy",
+    "img": "assets/pokemon_200_silhouettes/180.png",
+    "color_rgb": [
+      242,
+      163,
+      186
+    ],
+    "color_hex": "#f2a3ba"
+  },
+  {
+    "id": 181,
+    "name": "ampharos",
+    "img": "assets/pokemon_200_silhouettes/181.png",
+    "color_rgb": [
+      242,
+      203,
+      84
+    ],
+    "color_hex": "#f2cb54"
+  },
+  {
+    "id": 182,
+    "name": "bellossom",
+    "img": "assets/pokemon_200_silhouettes/182.png",
+    "color_rgb": [
+      186,
+      208,
+      151
+    ],
+    "color_hex": "#bad097"
+  },
+  {
+    "id": 183,
+    "name": "marill",
+    "img": "assets/pokemon_200_silhouettes/183.png",
+    "color_rgb": [
+      77,
+      183,
+      232
+    ],
+    "color_hex": "#4db7e8"
+  },
+  {
+    "id": 184,
+    "name": "azumarill",
+    "img": "assets/pokemon_200_silhouettes/184.png",
+    "color_rgb": [
+      62,
+      157,
+      204
+    ],
+    "color_hex": "#3e9dcc"
+  },
+  {
+    "id": 185,
+    "name": "sudowoodo",
+    "img": "assets/pokemon_200_silhouettes/185.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 186,
+    "name": "politoed",
+    "img": "assets/pokemon_200_silhouettes/186.png",
+    "color_rgb": [
+      139,
+      199,
+      90
+    ],
+    "color_hex": "#8bc75a"
+  },
+  {
+    "id": 187,
+    "name": "hoppip",
+    "img": "assets/pokemon_200_silhouettes/187.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 188,
+    "name": "skiploom",
+    "img": "assets/pokemon_200_silhouettes/188.png",
+    "color_rgb": [
+      119,
+      160,
+      71
+    ],
+    "color_hex": "#77a047"
+  },
+  {
+    "id": 189,
+    "name": "jumpluff",
+    "img": "assets/pokemon_200_silhouettes/189.png",
+    "color_rgb": [
+      116,
+      142,
+      200
+    ],
+    "color_hex": "#748ec8"
+  },
+  {
+    "id": 190,
+    "name": "aipom",
+    "img": "assets/pokemon_200_silhouettes/190.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 191,
+    "name": "sunkern",
+    "img": "assets/pokemon_200_silhouettes/191.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 192,
+    "name": "sunflora",
+    "img": "assets/pokemon_200_silhouettes/192.png",
+    "color_rgb": [
+      249,
+      242,
+      174
+    ],
+    "color_hex": "#f9f2ae"
+  },
+  {
+    "id": 193,
+    "name": "yanma",
+    "img": "assets/pokemon_200_silhouettes/193.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  },
+  {
+    "id": 194,
+    "name": "wooper",
+    "img": "assets/pokemon_200_silhouettes/194.png",
+    "color_rgb": [
+      151,
+      199,
+      225
+    ],
+    "color_hex": "#97c7e1"
+  },
+  {
+    "id": 195,
+    "name": "quagsire",
+    "img": "assets/pokemon_200_silhouettes/195.png",
+    "color_rgb": [
+      128,
+      163,
+      178
+    ],
+    "color_hex": "#80a3b2"
+  },
+  {
+    "id": 196,
+    "name": "espeon",
+    "img": "assets/pokemon_200_silhouettes/196.png",
+    "color_rgb": [
+      215,
+      186,
+      204
+    ],
+    "color_hex": "#d7bacc"
+  },
+  {
+    "id": 197,
+    "name": "umbreon",
+    "img": "assets/pokemon_200_silhouettes/197.png",
+    "color_rgb": [
+      71,
+      78,
+      80
+    ],
+    "color_hex": "#474e50"
+  },
+  {
+    "id": 198,
+    "name": "murkrow",
+    "img": "assets/pokemon_200_silhouettes/198.png",
+    "color_rgb": [
+      43,
+      65,
+      85
+    ],
+    "color_hex": "#2b4155"
+  },
+  {
+    "id": 199,
+    "name": "slowking",
+    "img": "assets/pokemon_200_silhouettes/199.png",
+    "color_rgb": [
+      204,
+      140,
+      135
+    ],
+    "color_hex": "#cc8c87"
+  },
+  {
+    "id": 200,
+    "name": "misdreavus",
+    "img": "assets/pokemon_200_silhouettes/200.png",
+    "color_rgb": [
+      0,
+      0,
+      0
+    ],
+    "color_hex": "#000000"
+  }
+]
