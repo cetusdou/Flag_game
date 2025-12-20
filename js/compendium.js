@@ -29,13 +29,29 @@ function openCompendium() {
         return;
     }
     
+    // 体育模式：默认使用足球图鉴（F1标记暂未添加）
+    if (refs.currentScope === 'sports') {
+        if (!window.GameState) {
+            window.GameState = {};
+        }
+        // F1标记暂未添加，暂时只支持足球
+        window.GameState.compendiumType = 'football';
+    }
+    
     window.showView('view-compendium');
     
     // 更新页面标题
     const compendiumTitle = document.querySelector('#view-compendium h2');
     if (compendiumTitle) {
         if (refs.currentScope === 'sports') {
-            compendiumTitle.textContent = '⚽ 足球俱乐部图鉴';
+            const compendiumType = window.GameState ? (window.GameState.compendiumType || 'football') : 'football';
+            if (compendiumType === 'football') {
+                compendiumTitle.textContent = '⚽ 足球俱乐部图鉴';
+            } else if (compendiumType === 'f1') {
+                compendiumTitle.textContent = '🏎️ F1赛道图鉴';
+            } else {
+                compendiumTitle.textContent = '⚽ 足球俱乐部图鉴';
+            }
         } else if (refs.currentScope === 'world') {
             compendiumTitle.textContent = '📖 知识图鉴';
         } else {
@@ -50,8 +66,14 @@ function openCompendium() {
     if (refs.currentScope === 'world') {
         sourceDB = refs.dbWorld;
     } else if (refs.currentScope === 'sports') {
-        // 体育模式：显示足球俱乐部
-        sourceDB = refs.dbFootballClubs || [];
+        const compendiumType = window.GameState ? (window.GameState.compendiumType || 'football') : 'football';
+        if (compendiumType === 'football') {
+            sourceDB = refs.dbFootballClubs || [];
+        } else if (compendiumType === 'f1') {
+            sourceDB = refs.dbF1Tracks || [];
+        } else {
+            sourceDB = refs.dbFootballClubs || [];
+        }
     } else {
         sourceDB = refs.dbPlates;
     }
@@ -64,7 +86,14 @@ function openCompendium() {
         if (refs.currentScope === 'world') {
             searchKey = `${c.name} ${c.name_en} ${c.fullName} ${c.capital} ${c.capital_cn || ''} ${c.id} ${c.largestCity || ''} ${c.largestCity_cn || ''}`.toLowerCase();
         } else if (refs.currentScope === 'sports') {
-            searchKey = `${c.name} ${c.name_zh || ''} ${c.league || ''} ${c.full_name || ''} ${c.id}`.toLowerCase();
+            const compendiumType = window.GameState ? (window.GameState.compendiumType || 'football') : 'football';
+            if (compendiumType === 'football') {
+                searchKey = `${c.name} ${c.name_zh || ''} ${c.league || ''} ${c.full_name || ''} ${c.id}`.toLowerCase();
+            } else if (compendiumType === 'f1') {
+                searchKey = `${c.name} ${c.name_zh || ''} ${c.country || ''} ${c.location || ''} ${c.id}`.toLowerCase();
+            } else {
+                searchKey = `${c.name} ${c.name_zh || ''} ${c.league || ''} ${c.full_name || ''} ${c.id}`.toLowerCase();
+            }
         } else {
             searchKey = `${c.name} ${c.plate}`.toLowerCase();
         }
@@ -74,6 +103,7 @@ function openCompendium() {
         if (refs.currentScope === 'world') {
             div.innerHTML = `<img src="./assets/flags/${c.id}.png" loading="lazy"><span>${c.name}</span>`;
         } else if (refs.currentScope === 'sports') {
+            const compendiumType = window.GameState ? (window.GameState.compendiumType || 'football') : 'football';
             div.innerHTML = `<img src="${c.img}" loading="lazy" style="object-fit: contain;"><span>${c.name_zh || c.name}</span>`;
         } else {
             div.innerHTML = `<div style="background:#00479d;color:white;padding:2px;font-size:10px;border-radius:4px;margin-bottom:5px">${c.plate}</div><span>${c.name}</span>`;
@@ -102,37 +132,54 @@ function showDetail(item) {
     const plate = document.getElementById('modal-plate');
     
     if (refs.currentScope === 'sports') {
-        // 足球俱乐部详情
+        const compendiumType = window.GameState ? (window.GameState.compendiumType || 'football') : 'football';
+        
         img.style.display = 'block';
         plate.style.display = 'none';
         img.src = item.img;
         img.style.objectFit = 'contain';
-        document.getElementById('modal-name').textContent = item.name_zh || item.name;
-        document.getElementById('modal-en-name').textContent = item.name || '';
         
         let infoHTML = '';
-        if (item.league) {
-            infoHTML += `<div class="info-row"><span class="info-label">联赛</span><span class="info-val">${item.league}</span></div>`;
-        }
-        if (item.full_name) {
-            infoHTML += `<div class="info-row"><span class="info-label">全称</span><span class="info-val">${item.full_name}</span></div>`;
-        }
-        if (item.founded) {
-            infoHTML += `<div class="info-row"><span class="info-label">成立年份</span><span class="info-val">${item.founded}</span></div>`;
-        }
-        if (item.ground) {
-            infoHTML += `<div class="info-row"><span class="info-label">主场</span><span class="info-val">${item.ground}</span></div>`;
+        
+        if (compendiumType === 'football') {
+            // 足球俱乐部详情
+            document.getElementById('modal-name').textContent = item.name_zh || item.name;
+            document.getElementById('modal-en-name').textContent = item.name || '';
+            
+            if (item.league) {
+                infoHTML += `<div class="info-row"><span class="info-label">联赛</span><span class="info-val">${item.league}</span></div>`;
+            }
+            if (item.full_name) {
+                infoHTML += `<div class="info-row"><span class="info-label">全称</span><span class="info-val">${item.full_name}</span></div>`;
+            }
+            if (item.founded) {
+                infoHTML += `<div class="info-row"><span class="info-label">成立年份</span><span class="info-val">${item.founded}</span></div>`;
+            }
+            if (item.ground) {
+                infoHTML += `<div class="info-row"><span class="info-label">主场</span><span class="info-val">${item.ground}</span></div>`;
+            }
+        } else if (compendiumType === 'f1') {
+            // F1赛道详情（F1标记暂未添加，暂时不显示）
+            document.getElementById('modal-name').textContent = item.name_zh || item.name;
+            document.getElementById('modal-en-name').textContent = item.name || '';
+            
+            if (item.country) {
+                infoHTML += `<div class="info-row"><span class="info-label">国家</span><span class="info-val">${item.country}</span></div>`;
+            }
+            if (item.location) {
+                infoHTML += `<div class="info-row"><span class="info-label">位置</span><span class="info-val">${item.location}</span></div>`;
+            }
         }
         
         document.querySelector('.info-grid').innerHTML = infoHTML;
         
-        // 隐藏 Wiki 信息（足球俱乐部没有 Wiki 信息）
+        // 隐藏 Wiki 信息（体育模式没有 Wiki 信息）
         const wikiContainer = document.getElementById('wiki-info-container');
         if (wikiContainer) {
             wikiContainer.style.display = 'none';
         }
         
-        // 隐藏地图按钮（足球俱乐部不需要地图）
+        // 隐藏地图按钮（体育模式不需要地图）
         const mapBtn = document.getElementById('modal-map-btn');
         if (mapBtn) {
             mapBtn.style.display = 'none';

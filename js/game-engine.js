@@ -24,6 +24,7 @@ function initDataReferences() {
         dbF1Tracks: gameData.dbF1Tracks,
         dbFootballClubs: gameData.dbFootballClubs,
         dbCityNetworks: gameData.dbCityNetworks,
+        dbAirports: gameData.dbAirports,
         worldNameMap: gameData.worldNameMap,
         currentScope: gameState.currentScope || 'world',
         gameMode: gameState.gameMode || '',
@@ -33,6 +34,8 @@ function initDataReferences() {
         totalQs: gameState.totalQs || 0,
         isProcessing: gameState.isProcessing || false,
         footballDifficulty: gameState.footballDifficulty || 'easy',
+        sprintDifficulty: gameState.sprintDifficulty || 'mode_3a',
+        flagGuessMode: gameState.flagGuessMode || 'mode_3a',
         cityNetworkFillMode: gameState.cityNetworkFillMode || false
     };
 }
@@ -50,6 +53,8 @@ function syncStateToGameState(data) {
     window.GameState.totalQs = data.totalQs;
     window.GameState.isProcessing = data.isProcessing;
     window.GameState.footballDifficulty = data.footballDifficulty;
+    window.GameState.sprintDifficulty = data.sprintDifficulty;
+    window.GameState.flagGuessMode = data.flagGuessMode;
     if (data.cityNetworkFillMode !== undefined) {
         window.GameState.cityNetworkFillMode = data.cityNetworkFillMode;
     }
@@ -79,17 +84,24 @@ function startGame(modeKey) {
         }
     }
     
+    // 足球俱乐部挑战：根据难度选择器直接进入游戏
     if (modeKey === 'football_menu' && currentScope === 'sports') {
-        if (window.enterFootballSubMenu) {
-            window.enterFootballSubMenu();
-        }
-        return;
+        // 使用当前选择的难度
+        const difficulty = refs.footballDifficulty || 'easy';
+        modeKey = 'football_' + difficulty;
     }
+    // 极速冲刺：根据难度选择器直接进入游戏
     if (modeKey === 'sprint_menu' && currentScope === 'world') {
-        if (window.enterSprintSubMenu) {
-            window.enterSprintSubMenu();
-        }
-        return;
+        // 使用当前选择的难度
+        const difficulty = refs.sprintDifficulty || 'mode_3a';
+        modeKey = difficulty;
+    }
+    
+    // 猜国旗：根据模式选择器直接进入游戏
+    if (modeKey === 'flag_guess' && currentScope === 'world') {
+        // 使用当前选择的模式
+        const flagGuessMode = refs.flagGuessMode || 'mode_3a';
+        modeKey = flagGuessMode;
     }
     
     // 创建 gameState，确保 questionPool 始终是数组
@@ -102,11 +114,14 @@ function startGame(modeKey) {
         currentQ: null,
         totalQs: 0,
         footballDifficulty: refs.footballDifficulty || 'easy',
+        sprintDifficulty: refs.sprintDifficulty || 'mode_3a',
+        flagGuessMode: refs.flagGuessMode || 'mode_3a',
         // 复制数据引用
         dbWorld: refs.dbWorld,
         dbPlates: refs.dbPlates,
         dbF1Tracks: refs.dbF1Tracks,
         dbFootballClubs: refs.dbFootballClubs,
+        dbAirports: refs.dbAirports,
         worldNameMap: refs.worldNameMap
     };
     window.currentGameSeed = null;
@@ -158,6 +173,14 @@ function startGame(modeKey) {
         }
         else if (modeKey === 'mode_3a' || modeKey === 'mode_3b') {
             gameState.questionPool = pool.sort(() => Math.random() - 0.5).slice(0, 50);
+        }
+        else if (modeKey === 'airport') {
+            // 猜机场模式
+            if (!refs.dbAirports || refs.dbAirports.length === 0) {
+                alert("⚠️ 机场数据未加载，请刷新页面重试。");
+                return;
+            }
+            gameState.questionPool = refs.dbAirports.sort(() => Math.random() - 0.5).slice(0, 20);
         }
         else if (modeKey === 'pk') {
             window.showPKSeedModal();
@@ -390,19 +413,82 @@ function nextRound() {
     }
 
     if (gameState.currentScope === 'world') {
-        img.style.display = 'block';
-        if (gameState.gameMode === 'mode_2') {
-            if (gameState.currentQ.hasShape) { 
-                img.classList.add('silhouette'); 
-                img.src = `./assets/shapes/${gameState.currentQ.id}.svg`; 
-                badge.textContent = "🗺️ 猜形状"; 
-            } else { 
-                img.src = `./assets/flags/${gameState.currentQ.id}.png`; 
-                badge.textContent = "🚩 猜国家 (无剪影)"; 
+        if (gameState.gameMode === 'airport') {
+            // 猜机场模式
+            img.style.display = 'block';
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.3s';
+            img.style.cursor = 'zoom-in';
+            
+            // 处理图片路径：统一使用 ./ 前缀（与其他模式保持一致）
+            let imagePath = gameState.currentQ.image || gameState.currentQ.img;
+            const airportCode = gameState.currentQ.code;
+            
+            if (imagePath) {
+                // 确保路径以 ./ 开头（与其他模式保持一致）
+                if (!imagePath.startsWith('./') && !imagePath.startsWith('/') && !imagePath.startsWith('http')) {
+                    imagePath = './' + imagePath;
+                } else if (imagePath.startsWith('/')) {
+                    imagePath = '.' + imagePath;
+                }
+            } else {
+                // 如果没有图片路径，根据 code 构建
+                if (airportCode) {
+                    imagePath = `./assets/airports_satellite/${airportCode}.jpg`;
+                } else {
+                    console.error('机场数据缺少 code 字段:', gameState.currentQ);
+                    imagePath = '';
+                }
             }
+            
+            // 保存最终路径用于错误处理
+            const finalImagePath = imagePath;
+            const finalCode = airportCode;
+            
+            img.onload = function() {
+                this.style.opacity = '1';
+            };
+            img.onerror = function() {
+                console.error('无法加载机场图片:', finalImagePath, '机场代码:', finalCode);
+                this.style.opacity = '1';
+                // 尝试备用路径（不使用 ./ 前缀）
+                if (finalCode) {
+                    const fallbackPath = `assets/airports_satellite/${finalCode}.jpg`;
+                    if (fallbackPath !== finalImagePath && !finalImagePath.includes(fallbackPath)) {
+                        console.log('尝试备用路径:', fallbackPath);
+                        this.src = fallbackPath;
+                    }
+                }
+            };
+            
+            if (imagePath) {
+                img.src = imagePath;
+            } else {
+                console.error('无法构建机场图片路径');
+                img.style.opacity = '1';
+            }
+            
+            img.onclick = function() {
+                if (finalImagePath) {
+                    openImageZoom(finalImagePath);
+                }
+            };
+            badge.textContent = "✈️ 看机场，猜名称（点击图片放大）";
         } else {
-            img.src = `./assets/flags/${gameState.currentQ.id}.png`;
-            badge.textContent = (gameState.gameMode === 'mode_1') ? "🚩 猜首都" : "🚩 猜国家";
+            img.style.display = 'block';
+            if (gameState.gameMode === 'mode_2') {
+                if (gameState.currentQ.hasShape) { 
+                    img.classList.add('silhouette'); 
+                    img.src = `./assets/shapes/${gameState.currentQ.id}.svg`; 
+                    badge.textContent = "🗺️ 猜形状"; 
+                } else { 
+                    img.src = `./assets/flags/${gameState.currentQ.id}.png`; 
+                    badge.textContent = "🚩 猜国家 (无剪影)"; 
+                }
+            } else {
+                img.src = `./assets/flags/${gameState.currentQ.id}.png`;
+                badge.textContent = (gameState.gameMode === 'mode_1') ? "🚩 猜首都" : "🚩 猜国家";
+            }
         }
     } else if (gameState.currentScope === 'china') {
         if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') {
@@ -557,7 +643,10 @@ function nextRound() {
     }
 
     let sourceDB;
-    if (gameState.currentScope === 'world') sourceDB = refs.dbWorld;
+    if (gameState.currentScope === 'world') {
+        if (gameState.gameMode === 'airport') sourceDB = refs.dbAirports;
+        else sourceDB = refs.dbWorld;
+    }
     else if (gameState.currentScope === 'china') {
         if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') sourceDB = refs.dbCityNetworks;
         else sourceDB = refs.dbPlates;
@@ -755,6 +844,9 @@ function checkAnswer(choice, btn) {
         if (gameState.gameMode === 'mode_1') {
             isCorrect = (choice.id === gameState.currentQ.id && !choice._isLargestCity);
             correctText = gameState.currentQ.capital_cn || gameState.currentQ.capital;
+        } else if (gameState.gameMode === 'airport') {
+            isCorrect = (choice.code === gameState.currentQ.code);
+            correctText = gameState.currentQ.name;
         } else {
             isCorrect = (choice.id === gameState.currentQ.id);
             correctText = gameState.currentQ.name;

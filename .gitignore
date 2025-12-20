@@ -28,3 +28,8 @@ Thumbs.db
 *.temp
 
 cache
+
+assets/city_networks_black
+assets/city_networks_old
+assets/railway_layers_only
+assets/network check

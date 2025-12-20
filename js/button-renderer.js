@@ -13,9 +13,18 @@ function clearButtonOverlays(btn) {
     const existingImgs = btn.querySelectorAll('.game-card-overlay-image');
     existingImgs.forEach(img => img.remove());
     
-    // 移除拨动开关
+    // 移除所有类型的选择器
     const toggleContainer = btn.querySelector('.city-network-toggle-container');
     if (toggleContainer) toggleContainer.remove();
+    
+    const footballSelector = btn.querySelector('.football-difficulty-selector-container');
+    if (footballSelector) footballSelector.remove();
+    
+    const sprintSelector = btn.querySelector('.sprint-difficulty-selector-container');
+    if (sprintSelector) sprintSelector.remove();
+    
+    const flagGuessSelector = btn.querySelector('.flag-guess-mode-selector-container');
+    if (flagGuessSelector) flagGuessSelector.remove();
     
     // 移除所有叠加相关的类名
     const overlayClasses = [
@@ -346,83 +355,78 @@ function applyButtonConfig(btn, config) {
 }
 
 /**
- * 创建拨动开关
+ * 创建路网挑战题型选择器（2个选项：选择题、填空题）
  * @param {HTMLElement} btn - 按钮元素
- * @returns {HTMLElement} 拨动开关容器
+ * @returns {HTMLElement} 题型选择器容器
  */
 function createToggleSwitch(btn) {
-    const toggleContainer = document.createElement('div');
-    toggleContainer.className = 'city-network-toggle-container';
+    const selectorContainer = document.createElement('div');
+    selectorContainer.className = 'city-network-toggle-container';
     
     // 阻止事件冒泡
     ['click', 'mousedown', 'touchstart'].forEach(eventType => {
-        toggleContainer.addEventListener(eventType, (e) => {
+        selectorContainer.addEventListener(eventType, (e) => {
             e.stopPropagation();
         });
     });
     
-    const toggleLabel = document.createElement('label');
-    toggleLabel.className = 'city-network-toggle-label';
+    const selectorLabel = document.createElement('div');
+    selectorLabel.className = 'city-network-toggle-label';
     
-    const span1 = document.createElement('span');
-    span1.className = 'toggle-label-text';
-    span1.textContent = '选择题';
+    const questionTypes = [
+        { key: false, label: '选择题', icon: '📝' },
+        { key: true, label: '填空题', icon: '✏️' }
+    ];
     
-    const toggleSwitch = document.createElement('div');
-    toggleSwitch.className = 'toggle-switch';
+    const currentFillMode = window.GameState ? (window.GameState.cityNetworkFillMode || false) : false;
     
-    const toggleInput = document.createElement('input');
-    toggleInput.type = 'checkbox';
-    toggleInput.id = 'city-network-fill-mode-toggle';
-    toggleInput.checked = window.GameState ? (window.GameState.cityNetworkFillMode || false) : false;
-    
-    const toggleSlider = document.createElement('span');
-    toggleSlider.className = 'toggle-slider';
-    
-    toggleSwitch.appendChild(toggleInput);
-    toggleSwitch.appendChild(toggleSlider);
-    
-    const span2 = document.createElement('span');
-    span2.className = 'toggle-label-text';
-    span2.textContent = '填空题';
-    
-    toggleLabel.appendChild(span1);
-    toggleLabel.appendChild(toggleSwitch);
-    toggleLabel.appendChild(span2);
-    toggleContainer.appendChild(toggleLabel);
-    
-    // 更新拨动开关状态
-    toggleInput.onchange = function() {
-        if (window.GameState) {
-            window.GameState.cityNetworkFillMode = toggleInput.checked;
-            updateToggleLabels(span1, span2, toggleInput.checked);
+    questionTypes.forEach((type) => {
+        const option = document.createElement('button');
+        option.type = 'button';
+        option.className = 'city-network-toggle-option';
+        option.dataset.fillMode = type.key;
+        option.innerHTML = `<span class="toggle-icon">${type.icon}</span><span class="toggle-label">${type.label}</span>`;
+        
+        if (type.key === currentFillMode) {
+            option.classList.add('active');
         }
-    };
+        
+        option.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // 移除所有active状态
+            selectorContainer.querySelectorAll('.city-network-toggle-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+            
+            // 添加active状态
+            option.classList.add('active');
+            
+            // 更新GameState
+            if (window.GameState) {
+                window.GameState.cityNetworkFillMode = type.key;
+            }
+        };
+        
+        selectorLabel.appendChild(option);
+    });
     
-    // 初始化标签颜色
-    updateToggleLabels(span1, span2, toggleInput.checked);
+    selectorContainer.appendChild(selectorLabel);
     
-    return toggleContainer;
+    return selectorContainer;
 }
 
 /**
- * 更新拨动开关标签样式
+ * 更新拨动开关标签样式（已废弃）
  * @param {HTMLElement} span1 - 第一个标签
  * @param {HTMLElement} span2 - 第二个标签
  * @param {boolean} isChecked - 是否选中
+ * @deprecated 此函数已不再使用，题型选择器现在使用按钮点击切换，通过CSS的active类自动处理样式
  */
 function updateToggleLabels(span1, span2, isChecked) {
-    if (isChecked) {
-        span1.style.opacity = '0.5';
-        span2.style.opacity = '1';
-        span2.style.fontWeight = '600';
-        span1.style.fontWeight = '400';
-    } else {
-        span1.style.opacity = '1';
-        span2.style.opacity = '0.5';
-        span1.style.fontWeight = '600';
-        span2.style.fontWeight = '400';
-    }
+    // 此函数已废弃，保留仅为兼容性
+    // 新的实现使用按钮点击切换，通过CSS的active类自动处理样式
 }
 
 /**
@@ -445,9 +449,214 @@ function setButtonIcon(btn, btnId, icon, showIcon) {
     }
 }
 
+/**
+ * 创建足球难度选择器（4个选项：简单、中等、困难、地狱）
+ * @param {HTMLElement} btn - 按钮元素
+ * @returns {HTMLElement} 难度选择器容器
+ */
+function createFootballDifficultySelector(btn) {
+    const selectorContainer = document.createElement('div');
+    selectorContainer.className = 'football-difficulty-selector-container';
+    
+    // 阻止事件冒泡
+    ['click', 'mousedown', 'touchstart'].forEach(eventType => {
+        selectorContainer.addEventListener(eventType, (e) => {
+            e.stopPropagation();
+        });
+    });
+    
+    const selectorLabel = document.createElement('div');
+    selectorLabel.className = 'football-difficulty-selector-label';
+    
+    const difficulties = [
+        { key: 'easy', label: '简单', icon: '⚽' },
+        { key: 'medium', label: '中等', icon: '⚽' },
+        { key: 'hard', label: '困难', icon: '⚽' },
+        { key: 'hell', label: '地狱', icon: '🔥' }
+    ];
+    
+    const currentDifficulty = window.GameState ? (window.GameState.footballDifficulty || 'easy') : 'easy';
+    
+    difficulties.forEach((diff) => {
+        const option = document.createElement('button');
+        option.type = 'button';
+        option.className = 'football-difficulty-option';
+        option.dataset.difficulty = diff.key;
+        option.innerHTML = `<span class="difficulty-icon">${diff.icon}</span><span class="difficulty-label">${diff.label}</span>`;
+        
+        if (diff.key === currentDifficulty) {
+            option.classList.add('active');
+        }
+        
+        option.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // 移除所有active状态
+            selectorContainer.querySelectorAll('.football-difficulty-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+            
+            // 添加active状态
+            option.classList.add('active');
+            
+            // 更新GameState
+            if (window.GameState) {
+                window.GameState.footballDifficulty = diff.key;
+            }
+        };
+        
+        selectorLabel.appendChild(option);
+    });
+    
+    selectorContainer.appendChild(selectorLabel);
+    
+    return selectorContainer;
+}
+
+/**
+ * 创建极速冲刺难度选择器（2个选项：简单、困难）
+ * @param {HTMLElement} btn - 按钮元素
+ * @returns {HTMLElement} 难度选择器容器
+ */
+function createSprintDifficultySelector(btn) {
+    const selectorContainer = document.createElement('div');
+    selectorContainer.className = 'sprint-difficulty-selector-container';
+    
+    // 阻止事件冒泡
+    ['click', 'mousedown', 'touchstart'].forEach(eventType => {
+        selectorContainer.addEventListener(eventType, (e) => {
+            e.stopPropagation();
+        });
+    });
+    
+    const selectorLabel = document.createElement('div');
+    selectorLabel.className = 'sprint-difficulty-selector-label';
+    
+    const difficulties = [
+        { key: 'mode_3a', label: '简单', desc: '4选项', icon: '⚡' },
+        { key: 'mode_3b', label: '困难', desc: '6选项', icon: '⚡' }
+    ];
+    
+    // 从 GameState 获取当前难度，默认为 mode_3a
+    const currentDifficulty = window.GameState ? (window.GameState.sprintDifficulty || 'mode_3a') : 'mode_3a';
+    
+    difficulties.forEach((diff) => {
+        const option = document.createElement('button');
+        option.type = 'button';
+        option.className = 'sprint-difficulty-option';
+        option.dataset.difficulty = diff.key;
+        option.innerHTML = `
+            <span class="difficulty-icon">${diff.icon}</span>
+            <span class="difficulty-label">${diff.label}</span>
+            <span class="difficulty-desc">${diff.desc}</span>
+        `;
+        
+        if (diff.key === currentDifficulty) {
+            option.classList.add('active');
+        }
+        
+        option.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // 移除所有active状态
+            selectorContainer.querySelectorAll('.sprint-difficulty-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+            
+            // 添加active状态
+            option.classList.add('active');
+            
+            // 更新GameState
+            if (window.GameState) {
+                window.GameState.sprintDifficulty = diff.key;
+            }
+        };
+        
+        selectorLabel.appendChild(option);
+    });
+    
+    selectorContainer.appendChild(selectorLabel);
+    
+    return selectorContainer;
+}
+
+/**
+ * 创建猜国旗模式选择器（3个选项：极速冲刺简单、极速冲刺困难、全图鉴）
+ * @param {HTMLElement} btn - 按钮元素
+ * @returns {HTMLElement} 模式选择器容器
+ */
+function createFlagGuessModeSelector(btn) {
+    const selectorContainer = document.createElement('div');
+    selectorContainer.className = 'flag-guess-mode-selector-container';
+    
+    // 阻止事件冒泡
+    ['click', 'mousedown', 'touchstart'].forEach(eventType => {
+        selectorContainer.addEventListener(eventType, (e) => {
+            e.stopPropagation();
+        });
+    });
+    
+    const selectorLabel = document.createElement('div');
+    selectorLabel.className = 'flag-guess-mode-selector-label';
+    
+    const modes = [
+        { key: 'mode_3a', label: '极速', desc: '4选项', icon: '⚡' },
+        { key: 'mode_3b', label: '极速', desc: '6选项', icon: '⚡' },
+        { key: 'all', label: '全图鉴', desc: '全部', icon: '♾️' }
+    ];
+    
+    // 从 GameState 获取当前模式，默认为 mode_3a
+    const currentMode = window.GameState ? (window.GameState.flagGuessMode || 'mode_3a') : 'mode_3a';
+    
+    modes.forEach((mode) => {
+        const option = document.createElement('button');
+        option.type = 'button';
+        option.className = 'flag-guess-mode-option';
+        option.dataset.mode = mode.key;
+        option.innerHTML = `
+            <span class="mode-icon">${mode.icon}</span>
+            <span class="mode-label">${mode.label}</span>
+            <span class="mode-desc">${mode.desc}</span>
+        `;
+        
+        if (mode.key === currentMode) {
+            option.classList.add('active');
+        }
+        
+        option.onclick = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // 移除所有active状态
+            selectorContainer.querySelectorAll('.flag-guess-mode-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+            
+            // 添加active状态
+            option.classList.add('active');
+            
+            // 更新GameState
+            if (window.GameState) {
+                window.GameState.flagGuessMode = mode.key;
+            }
+        };
+        
+        selectorLabel.appendChild(option);
+    });
+    
+    selectorContainer.appendChild(selectorLabel);
+    
+    return selectorContainer;
+}
+
 window.clearButtonOverlays = clearButtonOverlays;
 window.addImageOverlay = addImageOverlay;
 window.createToggleSwitch = createToggleSwitch;
+window.createFootballDifficultySelector = createFootballDifficultySelector;
+window.createSprintDifficultySelector = createSprintDifficultySelector;
+window.createFlagGuessModeSelector = createFlagGuessModeSelector;
 window.updateToggleLabels = updateToggleLabels;
 window.setButtonIcon = setButtonIcon;
 window.applyButtonConfig = applyButtonConfig;

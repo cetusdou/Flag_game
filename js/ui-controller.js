@@ -24,12 +24,7 @@ function goHome() {
         countdownDisplay.style.display = 'none';
     }
     
-    // 如果在足球子菜单中，返回体育模式主菜单
-    if (window.GameState.isFootballSubMenu && window.GameState.currentScope === 'sports') {
-        enterGameScope('sports');
-    } else {
-        showView('view-menu'); 
-    }
+    showView('view-menu');
 }
 
 // 游戏范围选择
@@ -47,9 +42,9 @@ function enterGameScope(scope) {
         document.getElementById('menu-title').textContent = "🌍 世界挑战";
         document.getElementById('menu-subtitle').textContent = `收录 ${window.GameData.dbWorld.length} 个国家`;
         enableBtn('btn-mode-1', 'mode_1', '📅', '每日挑战', '看国旗，猜首都', '20');
-        enableBtn('btn-mode-2', 'mode_2', '🧩', '形状挑战', '看剪影，猜国家', '30');
-        enableBtn('btn-mode-3', 'sprint_menu', '⚡', '极速冲刺', '选择难度开始挑战', '--');
-        enableBtn('btn-mode-all', 'all', '♾️', '全图鉴', '不重复，死磕到底', 'All');
+        enableBtn('btn-mode-2', 'flag_guess', '🏳️', '猜国旗', '选择模式开始挑战', '--');
+        enableBtn('btn-mode-3', 'mode_2', '🧩', '形状挑战', '看剪影，猜国家', '30');
+        enableBtn('btn-mode-all', 'airport', '✈️', '猜机场', '看机场图，猜名称', '20');
         const compendiumBtn = document.getElementById('compendium-btn');
         const pkModeBtn = document.getElementById('pk-mode-btn');
         if (compendiumBtn) compendiumBtn.style.display = 'flex';
@@ -73,59 +68,33 @@ function enterGameScope(scope) {
         document.getElementById('menu-title').textContent = "⚽ 体育挑战";
         document.getElementById('menu-subtitle').textContent = `F1赛道 ${window.GameData.dbF1Tracks.length} 条 | 足球俱乐部 ${window.GameData.dbFootballClubs.length} 个`;
         enableBtn('btn-mode-1', 'f1', '🏎️', 'F1赛道挑战', '看赛道图，猜赛道名', '20');
-        enableBtn('btn-mode-2', 'football_menu', '⚽', '足球俱乐部挑战', '选择难度开始挑战', '--');
+        enableBtn('btn-mode-2', 'football_menu', '⚽', '足球俱乐部挑战', '选择难度开始挑战', '20');
         disableBtn('btn-mode-3');
         disableBtn('btn-mode-all');
         const compendiumBtn = document.getElementById('compendium-btn');
         const pkModeBtn = document.getElementById('pk-mode-btn');
-        if (compendiumBtn) compendiumBtn.style.display = 'none';
-        if (pkModeBtn) pkModeBtn.style.display = 'none';
+        if (compendiumBtn) compendiumBtn.style.display = 'flex';
+        if (pkModeBtn) pkModeBtn.style.display = 'flex';
     }
 
     showView('view-menu');
     updateBackButton();
 }
 
-// 足球子菜单
-function enterFootballSubMenu() {
-    window.GameState.isFootballSubMenu = true;
-    document.getElementById('menu-title').textContent = "⚽ 足球俱乐部挑战";
-    document.getElementById('menu-subtitle').textContent = `收录 ${window.GameData.dbFootballClubs.length} 个俱乐部`;
-    enableBtn('btn-mode-1', 'football_easy', '⚽', '简单难度', '可见范围较大', '20');
-    enableBtn('btn-mode-2', 'football_medium', '⚽', '中等难度', '可见范围适中', '20');
-    enableBtn('btn-mode-3', 'football_hard', '⚽', '困难难度', '仅显示中心', '20');
-    enableBtn('btn-mode-all', 'football_hell', '🔥', '地狱难度', '随机旋转', '20');
-    const compendiumBtn = document.getElementById('compendium-btn');
-    const pkModeBtn = document.getElementById('pk-mode-btn');
-    if (compendiumBtn) compendiumBtn.style.display = 'flex';
-    if (pkModeBtn) pkModeBtn.style.display = 'flex';
-    showView('view-menu');
-    updateBackButton();
-}
+// 足球子菜单（已废弃，现在使用难度选择器）
+// function enterFootballSubMenu() {
+//     // 此函数已不再使用，足球挑战现在通过难度选择器直接进入游戏
+// }
 
-// 极速冲刺子菜单
-function enterSprintSubMenu() {
-    window.GameState.isSprintSubMenu = true;
-    document.getElementById('menu-title').textContent = "⚡ 极速冲刺";
-    document.getElementById('menu-subtitle').textContent = `选择难度开始挑战`;
-    enableBtn('btn-mode-1', 'mode_3a', '⚡', '简单难度', '4选项，快速问答', '50');
-    enableBtn('btn-mode-2', 'mode_3b', '⚡', '困难难度', '6选项，同区域干扰', '50');
-    disableBtn('btn-mode-3');
-    disableBtn('btn-mode-all');
-    const compendiumBtn = document.getElementById('compendium-btn');
-    const pkModeBtn = document.getElementById('pk-mode-btn');
-    if (compendiumBtn) compendiumBtn.style.display = 'none';
-    if (pkModeBtn) pkModeBtn.style.display = 'none';
-    showView('view-menu');
-    updateBackButton();
-}
+// 极速冲刺子菜单（已废弃，现在使用难度选择器）
+// function enterSprintSubMenu() {
+//     // 此函数已不再使用，极速冲刺现在通过难度选择器直接进入游戏
+// }
 
 // 返回按钮处理
 function handleBackBtn() {
     if (window.GameState.isFootballSubMenu && window.GameState.currentScope === 'sports') {
         enterGameScope('sports');
-    } else if (window.GameState.isSprintSubMenu && window.GameState.currentScope === 'world') {
-        enterGameScope('world');
     } else {
         showView('view-landing');
     }
@@ -135,11 +104,7 @@ function handleBackBtn() {
 function updateBackButton() {
     const backBtnText = document.getElementById('back-btn-text');
     if (backBtnText) {
-        if (window.GameState.isFootballSubMenu && window.GameState.currentScope === 'sports') {
-            backBtnText.textContent = '返回';
-        } else if (window.GameState.isSprintSubMenu && window.GameState.currentScope === 'world') {
-            backBtnText.textContent = '返回';
-        } else {
+        {
             backBtnText.textContent = '返回';
         }
     }
@@ -198,6 +163,24 @@ function enableBtn(btnId, modeKey, icon, title, desc, count) {
         btn.appendChild(toggleContainer);
     }
     
+    // 添加足球难度选择器
+    if (config.footballDifficulty) {
+        const selectorContainer = window.createFootballDifficultySelector(btn);
+        btn.appendChild(selectorContainer);
+    }
+    
+    // 添加极速冲刺难度选择器
+    if (config.sprintDifficulty) {
+        const selectorContainer = window.createSprintDifficultySelector(btn);
+        btn.appendChild(selectorContainer);
+    }
+    
+    // 添加猜国旗模式选择器
+    if (config.flagGuessMode) {
+        const selectorContainer = window.createFlagGuessModeSelector(btn);
+        btn.appendChild(selectorContainer);
+    }
+    
     // 设置文本内容
     document.getElementById(btnId.replace('btn-', 'txt-') + '-title').textContent = finalTitle;
     document.getElementById(btnId.replace('btn-', 'txt-') + '-desc').textContent = finalDesc;
@@ -245,8 +228,8 @@ function disableBtn(btnId) {
 window.showView = showView;
 window.goHome = goHome;
 window.enterGameScope = enterGameScope;
-window.enterFootballSubMenu = enterFootballSubMenu;
-window.enterSprintSubMenu = enterSprintSubMenu;
+// window.enterFootballSubMenu = enterFootballSubMenu; // 已废弃
+// window.enterSprintSubMenu = enterSprintSubMenu; // 已废弃
 window.handleBackBtn = handleBackBtn;
 window.updateBackButton = updateBackButton;
 window.enableBtn = enableBtn;

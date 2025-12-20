@@ -25,7 +25,10 @@
 const BUTTON_METADATA = {
     'world': {
         'mode_1': { icon: '📅', title: '每日挑战', desc: '看国旗，猜首都', count: '20' },
+        'flag_guess': { icon: '🏳️', title: '猜国旗', desc: '选择模式开始挑战', count: '--' },
         'mode_2': { icon: '🧩', title: '形状挑战', desc: '看剪影，猜国家', count: '30' },
+        'airport': { icon: '✈️', title: '猜机场', desc: '看机场图，猜名称', count: '20' },
+        'airport': { icon: '✈️', title: '猜机场', desc: '看机场图，猜名称', count: '20' },
         'sprint_menu': { icon: '⚡', title: '极速冲刺', desc: '选择难度开始挑战', count: '--' },
         'all': { icon: '♾️', title: '全图鉴', desc: '不重复，死磕到底', count: 'All' }
     },
@@ -281,6 +284,143 @@ const BUTTON_CONFIGS = {
                         { offset: '40%', color: 'rgba(255, 111, 66, 0.35)' },
                         { offset: '60%', color: 'rgba(255, 152, 0, 0.25)' },
                         { offset: '80%', color: 'rgba(255, 167, 38, 0.15)' },
+                        { offset: '100%', color: 'transparent' }
+                    ]
+                },
+                mixBlendMode: 'overlay'
+            },
+            textPosition: {
+                position: 'absolute',
+                top: '15px',
+                left: '15px',
+                zIndex: 2
+            }
+        },
+        sprintDifficulty: true
+    },
+    'flag_guess': {
+        style: 'card-sprint-orange',
+        layout: {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            padding: '15px',
+            minHeight: '130px'
+        },
+        textStyle: {
+            color: '#ffffff',
+            textShadow: '0 2px 8px rgba(0, 0, 0, 0.5)'
+        },
+        hideIcon: true,
+        hideTag: true,
+        image: {
+            src: 'assets/libs/VCG211280932652.jpg',
+            alt: 'Flag Guess',
+            classes: ['card-flag-guess', 'flag-guess-card-overlay'],
+            position: {
+                bottom: '0',
+                left: '0',
+                width: '100%',
+                height: '100%',
+                transform: 'translateY(35%)',
+                objectFit: 'cover',
+                objectPosition: 'center top',
+                maskGradient: {
+                    direction: 'to top',
+                    stops: [
+                        { offset: '0%', color: 'rgba(0,0,0,1)' },
+                        { offset: '15%', color: 'rgba(0,0,0,0.95)' },
+                        { offset: '30%', color: 'rgba(0,0,0,0.85)' },
+                        { offset: '50%', color: 'rgba(0,0,0,0.65)' },
+                        { offset: '70%', color: 'rgba(0,0,0,0.4)' },
+                        { offset: '85%', color: 'rgba(0,0,0,0.15)' },
+                        { offset: '100%', color: 'transparent' }
+                    ]
+                }
+            },
+            overlayGradient: {
+                position: {
+                    bottom: '0',
+                    left: '0',
+                    width: '100%',
+                    height: '90%'
+                },
+                gradient: {
+                    direction: 'to top',
+                    stops: [
+                        { offset: '0%', color: 'rgba(255, 87, 34, 0.55)' },
+                        { offset: '20%', color: 'rgba(255, 87, 34, 0.45)' },
+                        { offset: '40%', color: 'rgba(255, 111, 66, 0.35)' },
+                        { offset: '60%', color: 'rgba(255, 152, 0, 0.25)' },
+                        { offset: '80%', color: 'rgba(255, 167, 38, 0.15)' },
+                        { offset: '100%', color: 'transparent' }
+                    ]
+                },
+                mixBlendMode: 'overlay'
+            },
+            textPosition: {
+                position: 'absolute',
+                top: '15px',
+                left: '15px',
+                zIndex: 2
+            }
+        },
+        flagGuessMode: true
+    },
+    'airport': {
+        style: 'card-blue-cyan',
+        layout: {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            padding: '15px',
+            minHeight: '130px'
+        },
+        textStyle: {
+            color: '#ffffff',
+            textShadow: '0 2px 8px rgba(0, 0, 0, 0.5)'
+        },
+        hideIcon: true,
+        hideTag: true,
+        image: {
+            src: 'assets/libs/VCG211345194167.jpg',
+            alt: 'Airport',
+            classes: ['card-airport', 'airport-card-overlay'],
+            position: {
+                bottom: '0',
+                left: '0',
+                width: '100%',
+                height: '100%',
+                transform: 'translateY(35%) translateX(0%)',
+                objectFit: 'cover',
+                objectPosition: 'center top',
+                maskGradient: {
+                    direction: 'to top',
+                    stops: [
+                        { offset: '0%', color: 'rgba(0,0,0,1)' },
+                        { offset: '15%', color: 'rgba(0,0,0,0.95)' },
+                        { offset: '30%', color: 'rgba(0,0,0,0.85)' },
+                        { offset: '50%', color: 'rgba(0,0,0,0.65)' },
+                        { offset: '70%', color: 'rgba(0,0,0,0.4)' },
+                        { offset: '100%', color: 'transparent' }
+                    ]
+                }
+            },
+            overlayGradient: {
+                position: {
+                    bottom: '0',
+                    left: '0',
+                    width: '100%',
+                    height: '90%'
+                },
+                gradient: {
+                    direction: 'to top',
+                    stops: [
+                        { offset: '0%', color: 'rgba(0, 188, 212, 0.55)' },
+                        { offset: '20%', color: 'rgba(0, 188, 212, 0.45)' },
+                        { offset: '40%', color: 'rgba(0, 172, 193, 0.35)' },
+                        { offset: '60%', color: 'rgba(0, 151, 167, 0.25)' },
+                        { offset: '80%', color: 'rgba(0, 131, 143, 0.15)' },
                         { offset: '100%', color: 'transparent' }
                     ]
                 },
@@ -692,7 +832,8 @@ const BUTTON_CONFIGS = {
                 left: '15px',
                 zIndex: 2
             }
-        }
+        },
+        footballDifficulty: true
     },
     
     // 足球难度

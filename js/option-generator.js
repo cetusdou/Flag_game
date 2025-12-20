@@ -168,6 +168,16 @@ function generateOptions(currentQ, currentScope, gameMode, sourceDB) {
                 optionTexts.add(r.name);
             }
         }
+    } else if (currentScope === 'world' && gameMode === 'airport') {
+        // 猜机场模式：随机选择3个其他机场
+        optionTexts.add(currentQ.name);
+        while(opts.length < 4) {
+            let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
+            if (!opts.includes(r) && r.code !== currentQ.code && !optionTexts.has(r.name)) {
+                opts.push(r);
+                optionTexts.add(r.name);
+            }
+        }
     } else {
         while(opts.length < 4) {
             let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
@@ -179,6 +189,9 @@ function generateOptions(currentQ, currentScope, gameMode, sourceDB) {
 }
 
 function getOptionDisplayText(opt, currentScope, gameMode) {
+    if (currentScope === 'world' && gameMode === 'airport') {
+        return opt.name;
+    }
     if (currentScope === 'world') {
         if (gameMode === 'mode_1') {
             if (opt._isLargestCity && opt._displayText) {

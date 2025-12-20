@@ -9,6 +9,7 @@ window.GameData = {
     dbF1Tracks: [],
     dbFootballClubs: [],
     dbCityNetworks: [],
+    dbAirports: [],
     worldNameMap: {},
     wikiExtraData: {}
 };
@@ -16,14 +17,15 @@ window.GameData = {
 // 初始化数据加载
 async function initGameData() {
     try {
-        const [res1, res2, res3, res4, res5, res6, res7] = await Promise.all([
+        const [res1, res2, res3, res4, res5, res6, res7, res8] = await Promise.all([
             fetch('./data/countries.json'),
             fetch('./data/china_plates.json'),
             fetch('./data/world_name_map.json'),
             fetch('./data/countries_wiki_extra.json'),
             fetch('./data/f1_tracks_final.json'),
             fetch('./data/football_clubs_hardcore.json'),
-            fetch('./data/china_city_networks.json')
+            fetch('./data/china_city_networks.json'),
+            fetch('./data/airport_game_data.json')
         ]);
         
         if (res1.ok) {
@@ -51,6 +53,9 @@ async function initGameData() {
         }
         if (res7.ok) {
             window.GameData.dbCityNetworks = await res7.json();
+        }
+        if (res8.ok) {
+            window.GameData.dbAirports = await res8.json();
         }
         
         return true;
