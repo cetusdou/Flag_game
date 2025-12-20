@@ -25,6 +25,7 @@ function initDataReferences() {
         dbFootballClubs: gameData.dbFootballClubs,
         dbCityNetworks: gameData.dbCityNetworks,
         dbAirports: gameData.dbAirports,
+        dbPokemon: gameData.dbPokemon,
         worldNameMap: gameData.worldNameMap,
         currentScope: gameState.currentScope || 'world',
         gameMode: gameState.gameMode || '',
@@ -122,6 +123,7 @@ function startGame(modeKey) {
         dbF1Tracks: refs.dbF1Tracks,
         dbFootballClubs: refs.dbFootballClubs,
         dbAirports: refs.dbAirports,
+        dbPokemon: refs.dbPokemon,
         worldNameMap: refs.worldNameMap
     };
     window.currentGameSeed = null;
@@ -234,6 +236,12 @@ function startGame(modeKey) {
             gameState.gameMode = 'mode_1'; // 明确设置游戏模式
             gameState.cityNetworkFillMode = false; // 车牌挑战不使用填空题模式
         }
+    } else if (currentScope === 'pokemon') {
+        if (!refs.dbPokemon || refs.dbPokemon.length === 0) {
+            alert("⚠️ 宝可梦数据未加载，请刷新页面重试。");
+            return;
+        }
+        gameState.questionPool = refs.dbPokemon.sort(() => Math.random() - 0.5).slice(0, 20);
     } else if (currentScope === 'sports') {
         if (modeKey === 'pk') {
             window.showPKSeedModal();
@@ -302,7 +310,7 @@ function startGame(modeKey) {
     else if (currentScope === 'sports') {
         if (gameState.gameMode === 'f1') prefix = '🏎️ ';
         else if (gameState.gameMode.startsWith('football_')) prefix = '⚽ ';
-    }
+    } else if (currentScope === 'pokemon') prefix = '⚡ ';
     
     let modeLabel = "挑战中";
     if (gameState.gameMode === 'pk' || gameState.gameMode.startsWith('pk_football_')) {
@@ -490,6 +498,56 @@ function nextRound() {
                 badge.textContent = (gameState.gameMode === 'mode_1') ? "🚩 猜首都" : "🚩 猜国家";
             }
         }
+    } else if (gameState.currentScope === 'pokemon') {
+        // 宝可梦模式：显示剪影图片
+        img.style.display = 'block';
+        img.style.opacity = '0';
+        img.style.transition = 'opacity 0.3s';
+        img.style.cursor = 'zoom-in';
+        
+        // 处理图片路径
+        let imagePath = gameState.currentQ.img || gameState.currentQ.image;
+        if (imagePath) {
+            // 确保路径以 ./ 开头
+            if (!imagePath.startsWith('./') && !imagePath.startsWith('/') && !imagePath.startsWith('http')) {
+                imagePath = './' + imagePath;
+            } else if (imagePath.startsWith('/')) {
+                imagePath = '.' + imagePath;
+            }
+        } else {
+            // 如果没有图片路径，根据id构建
+            if (gameState.currentQ.id) {
+                const pokemonId = String(gameState.currentQ.id).padStart(3, '0');
+                imagePath = `./assets/pokemon_200_silhouettes/${pokemonId}.png`;
+            } else {
+                console.error('宝可梦数据缺少 id 字段:', gameState.currentQ);
+                imagePath = '';
+            }
+        }
+        
+        const finalImagePath = imagePath;
+        
+        img.onload = function() {
+            this.style.opacity = '1';
+        };
+        img.onerror = function() {
+            console.error('无法加载宝可梦图片:', finalImagePath);
+            this.style.opacity = '1';
+        };
+        
+        if (imagePath) {
+            img.src = imagePath;
+        } else {
+            console.error('无法构建宝可梦图片路径');
+            img.style.opacity = '1';
+        }
+        
+        img.onclick = function() {
+            if (finalImagePath) {
+                openImageZoom(finalImagePath);
+            }
+        };
+        badge.textContent = "⚡ 看剪影，猜宝可梦（点击图片放大）";
     } else if (gameState.currentScope === 'china') {
         if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') {
             // 路网挑战模式或中国每日挑战
@@ -654,6 +712,8 @@ function nextRound() {
         if (gameState.gameMode === 'f1') sourceDB = refs.dbF1Tracks;
         else if (gameState.gameMode.startsWith('football_') || gameState.gameMode.startsWith('pk_football_')) sourceDB = refs.dbFootballClubs;
         else sourceDB = [];
+    } else if (gameState.currentScope === 'pokemon') {
+        sourceDB = refs.dbPokemon;
     } else sourceDB = [];
     
     // 路网模式：根据模式显示选项或输入框
@@ -852,6 +912,9 @@ function checkAnswer(choice, btn) {
             isCorrect = (choice.id === gameState.currentQ.id);
             correctText = gameState.currentQ.name;
         }
+    } else if (gameState.currentScope === 'pokemon') {
+        isCorrect = (choice.id === gameState.currentQ.id);
+        correctText = gameState.currentQ.name_cn || gameState.currentQ.name;
     } else if (gameState.currentScope === 'china') {
         if (gameState.gameMode === 'city_network' || gameState.gameMode === 'china_daily_network') {
             isCorrect = (choice.id === gameState.currentQ.id);

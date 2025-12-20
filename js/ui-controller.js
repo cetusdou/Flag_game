@@ -38,6 +38,7 @@ function enterGameScope(scope) {
     const isWorld = (scope === 'world');
     const isChina = (scope === 'china');
     const isSports = (scope === 'sports');
+    const isPokemon = (scope === 'pokemon');
     
     // 移除所有模式特定的class
     const viewMenu = document.getElementById('view-menu');
@@ -80,6 +81,18 @@ function enterGameScope(scope) {
         const pkModeBtn = document.getElementById('pk-mode-btn');
         if (compendiumBtn) compendiumBtn.style.display = 'flex';
         if (pkModeBtn) pkModeBtn.style.display = 'flex';
+    } else if (isPokemon) {
+        document.getElementById('menu-title').textContent = "⚡ 宝可梦挑战";
+        const pokemonCount = window.GameData.dbPokemon ? window.GameData.dbPokemon.length : 0;
+        document.getElementById('menu-subtitle').textContent = `收录 ${pokemonCount} 个宝可梦`;
+        enableBtn('btn-mode-1', 'pokemon', '⚡', '猜宝可梦', '看剪影，猜宝可梦', '20');
+        disableBtn('btn-mode-2');
+        disableBtn('btn-mode-3');
+        disableBtn('btn-mode-all');
+        const compendiumBtn = document.getElementById('compendium-btn');
+        const pkModeBtn = document.getElementById('pk-mode-btn');
+        if (compendiumBtn) compendiumBtn.style.display = 'none';
+        if (pkModeBtn) pkModeBtn.style.display = 'none';
     }
 
     showView('view-menu');

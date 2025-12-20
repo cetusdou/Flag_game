@@ -48,6 +48,9 @@ const BUTTON_METADATA = {
     'sprint': {
         'mode_3a': { icon: '⚡', title: '简单难度', desc: '30秒挑战', count: '30' },
         'mode_3b': { icon: '⚡', title: '困难难度', desc: '15秒挑战', count: '15' }
+    },
+    'pokemon': {
+        'pokemon': { icon: '⚡', title: '猜宝可梦', desc: '看剪影，猜宝可梦', count: '20' }
     }
 };
 
@@ -856,6 +859,75 @@ const BUTTON_CONFIGS = {
     },
     'mode_3b': {
         style: 'card-orange'
+    },
+    
+    // 宝可梦模式
+    'pokemon': {
+        style: 'card-orange',
+        layout: {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            padding: '15px',
+            minHeight: '130px'
+        },
+        textStyle: {
+            color: '#ffffff',
+            textShadow: '0 2px 8px rgba(0, 0, 0, 0.5)'
+        },
+        hideIcon: true,
+        hideTag: true,
+        image: {
+            src: 'assets/libs/R.jpg',
+            alt: 'Pokemon',
+            classes: ['card-pokemon', 'pokemon-card-overlay'],
+            position: {
+                bottom: '0',
+                left: '0',
+                width: '100%',
+                height: '100%',
+                transform: 'translateY(35%) translateX(0%)',
+                objectFit: 'cover',
+                objectPosition: 'center top',
+                maskGradient: {
+                    direction: 'to top',
+                    stops: [
+                        { offset: '0%', color: 'rgba(0,0,0,1)' },
+                        { offset: '15%', color: 'rgba(0,0,0,0.95)' },
+                        { offset: '30%', color: 'rgba(0,0,0,0.85)' },
+                        { offset: '50%', color: 'rgba(0,0,0,0.65)' },
+                        { offset: '70%', color: 'rgba(0,0,0,0.4)' },
+                        { offset: '100%', color: 'transparent' }
+                    ]
+                }
+            },
+            overlayGradient: {
+                position: {
+                    bottom: '0',
+                    left: '0',
+                    width: '100%',
+                    height: '90%'
+                },
+                gradient: {
+                    direction: 'to top',
+                    stops: [
+                        { offset: '0%', color: 'rgba(255, 152, 0, 0.55)' },
+                        { offset: '30%', color: 'rgba(255, 193, 7, 0.4)' },
+                        { offset: '60%', color: 'rgba(255, 235, 59, 0.25)' },
+                        { offset: '100%', color: 'transparent' }
+                    ]
+                },
+                mixBlendMode: 'multiply'
+            },
+            textPosition: {
+                position: 'absolute',
+                top: '15px',
+                left: '15px',
+                zIndex: 2,
+                width: 'calc(100% - 30px)',
+                maxWidth: 'calc(100% - 30px)'
+            }
+        }
     }
 };
 

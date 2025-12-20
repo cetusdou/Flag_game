@@ -178,6 +178,18 @@ function generateOptions(currentQ, currentScope, gameMode, sourceDB) {
                 optionTexts.add(r.name);
             }
         }
+    } else if (currentScope === 'pokemon') {
+        // 宝可梦模式：随机选择3个其他宝可梦，使用name_cn作为显示文本
+        const currentNameCn = currentQ.name_cn || currentQ.name;
+        optionTexts.add(currentNameCn);
+        while(opts.length < 4) {
+            let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
+            const rNameCn = r.name_cn || r.name;
+            if (!opts.includes(r) && r.id !== currentQ.id && !optionTexts.has(rNameCn)) {
+                opts.push(r);
+                optionTexts.add(rNameCn);
+            }
+        }
     } else {
         while(opts.length < 4) {
             let r = sourceDB[Math.floor(Math.random() * sourceDB.length)];
@@ -208,6 +220,9 @@ function getOptionDisplayText(opt, currentScope, gameMode) {
             return opt.name_zh || opt.name;
         }
         return opt.name;
+    } else if (currentScope === 'pokemon') {
+        // 宝可梦模式使用中文名
+        return opt.name_cn || opt.name;
     }
     return opt.name;
 }

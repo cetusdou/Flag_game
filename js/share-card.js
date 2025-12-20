@@ -11,6 +11,7 @@ function getModeDisplayName(mode) {
         'mode_3b': '极速冲刺(困难)',
         'all': '全图鉴',
         'airport': '猜机场',
+        'pokemon': '猜宝可梦',
         'pk': 'PK模式',
         'f1': 'F1赛道',
         'football_easy': '足球(简单)',

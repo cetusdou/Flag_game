@@ -164,6 +164,41 @@
     z-index: 1;
 }
 
+/* 宝可梦模式卡片 */
+.landing-card.pokemon { 
+    background: 
+        linear-gradient(135deg, rgba(156, 39, 176, 0.7) 0%, rgba(123, 31, 162, 0.6) 50%, rgba(142, 36, 170, 0.8) 100%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.15) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%),
+        linear-gradient(135deg, rgba(142, 36, 170, 0.4), rgba(123, 31, 162, 0.3));
+    border: none;
+    box-shadow: 
+        0 2px 8px rgba(142, 36, 170, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.landing-card.pokemon:hover {
+    border-color: rgba(156, 39, 176, 0.9);
+    box-shadow: 
+        0 6px 20px rgba(142, 36, 170, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.landing-card.pokemon::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+    z-index: 1;
+}
+
 @keyframes shine {
     0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
     100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
@@ -172,7 +207,8 @@
 /* 入口大厅叠加图片 */
 .world-overlay-image,
 .china-overlay-image,
-.sports-overlay-image {
+.sports-overlay-image,
+.pokemon-overlay-image {
     position: absolute;
     right: 0;
     top: 50%;
@@ -187,7 +223,8 @@
     -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,1) 100%);
 }
 
-.sports-overlay-image {
+.sports-overlay-image,
+.pokemon-overlay-image {
     transform: translateY(-50%);
     height: 100%;
 }
@@ -195,7 +232,8 @@
 /* 入口大厅渐变蒙版叠加层 */
 .world-card::after,
 .china-card::after,
-.sports-card::after {
+.sports-card::after,
+.pokemon-card::after {
     content: '';
     position: absolute;
     right: 0;
