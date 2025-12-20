@@ -4,11 +4,11 @@
     "name": "bulbasaur",
     "img": "assets/pokemon_200_silhouettes/001.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      145,
+      205,
+      175
     ],
-    "color_hex": "#000000",
+    "color_hex": "#91cdaf",
     "name_cn": "妙蛙种子"
   },
   {
@@ -16,11 +16,11 @@
     "name": "ivysaur",
     "img": "assets/pokemon_200_silhouettes/002.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      135,
+      185,
+      185
     ],
-    "color_hex": "#000000",
+    "color_hex": "#87b9b9",
     "name_cn": "妙蛙草"
   },
   {
@@ -28,11 +28,11 @@
     "name": "venusaur",
     "img": "assets/pokemon_200_silhouettes/003.png",
     "color_rgb": [
-      166,
-      148,
-      159
+      65,
+      125,
+      135
     ],
-    "color_hex": "#a6949f",
+    "color_hex": "#417d87",
     "name_cn": "妙蛙花"
   },
   {
@@ -40,11 +40,11 @@
     "name": "charmander",
     "img": "assets/pokemon_200_silhouettes/004.png",
     "color_rgb": [
-      234,
-      171,
+      235,
+      175,
       125
     ],
-    "color_hex": "#eaab7d",
+    "color_hex": "#ebaf7d",
     "name_cn": "小火龙"
   },
   {
@@ -52,11 +52,11 @@
     "name": "charmeleon",
     "img": "assets/pokemon_200_silhouettes/005.png",
     "color_rgb": [
-      226,
-      127,
-      110
+      225,
+      125,
+      115
     ],
-    "color_hex": "#e27f6e",
+    "color_hex": "#e17d73",
     "name_cn": "火恐龙"
   },
   {
@@ -64,11 +64,11 @@
     "name": "charizard",
     "img": "assets/pokemon_200_silhouettes/006.png",
     "color_rgb": [
-      78,
-      149,
-      164
+      205,
+      135,
+      85
     ],
-    "color_hex": "#4e95a4",
+    "color_hex": "#cd8755",
     "name_cn": "喷火龙"
   },
   {
@@ -76,11 +76,11 @@
     "name": "squirtle",
     "img": "assets/pokemon_200_silhouettes/007.png",
     "color_rgb": [
-      101,
-      156,
-      174
+      105,
+      155,
+      175
     ],
-    "color_hex": "#659cae",
+    "color_hex": "#699baf",
     "name_cn": "杰尼龟"
   },
   {
@@ -88,11 +88,11 @@
     "name": "wartortle",
     "img": "assets/pokemon_200_silhouettes/008.png",
     "color_rgb": [
-      175,
-      189,
-      220
+      185,
+      225,
+      235
     ],
-    "color_hex": "#afbddc",
+    "color_hex": "#b9e1eb",
     "name_cn": "卡咪龟"
   },
   {
@@ -100,11 +100,11 @@
     "name": "blastoise",
     "img": "assets/pokemon_200_silhouettes/009.png",
     "color_rgb": [
-      142,
-      169,
-      207
+      115,
+      95,
+      75
     ],
-    "color_hex": "#8ea9cf",
+    "color_hex": "#735f4b",
     "name_cn": "水箭龟"
   },
   {
@@ -112,11 +112,11 @@
     "name": "caterpie",
     "img": "assets/pokemon_200_silhouettes/010.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      135,
+      205,
+      125
     ],
-    "color_hex": "#000000",
+    "color_hex": "#87cd7d",
     "name_cn": "绿毛虫"
   },
   {
@@ -124,11 +124,11 @@
     "name": "metapod",
     "img": "assets/pokemon_200_silhouettes/011.png",
     "color_rgb": [
-      131,
-      167,
-      81
+      135,
+      165,
+      85
     ],
-    "color_hex": "#83a751",
+    "color_hex": "#87a555",
     "name_cn": "铁甲蛹"
   },
   {
@@ -136,11 +136,11 @@
     "name": "butterfree",
     "img": "assets/pokemon_200_silhouettes/012.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      235,
+      245,
+      255
     ],
-    "color_hex": "#000000",
+    "color_hex": "#ebf5ff",
     "name_cn": "巴大蝶"
   },
   {
@@ -148,11 +148,11 @@
     "name": "weedle",
     "img": "assets/pokemon_200_silhouettes/013.png",
     "color_rgb": [
-      176,
+      175,
       135,
-      89
+      85
     ],
-    "color_hex": "#b08759",
+    "color_hex": "#af8755",
     "name_cn": "独角虫"
   },
   {
@@ -160,11 +160,11 @@
     "name": "kakuna",
     "img": "assets/pokemon_200_silhouettes/014.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      185,
+      155,
+      85
     ],
-    "color_hex": "#000000",
+    "color_hex": "#b99b55",
     "name_cn": "铁壳蛹"
   },
   {
@@ -172,11 +172,11 @@
     "name": "beedrill",
     "img": "assets/pokemon_200_silhouettes/015.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      225,
+      235,
+      245
     ],
-    "color_hex": "#000000",
+    "color_hex": "#e1ebf5",
     "name_cn": "大针蜂"
   },
   {
@@ -184,11 +184,11 @@
     "name": "pidgey",
     "img": "assets/pokemon_200_silhouettes/016.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      195,
+      185,
+      145
     ],
-    "color_hex": "#000000",
+    "color_hex": "#c3b991",
     "name_cn": "波波"
   },
   {
@@ -196,11 +196,11 @@
     "name": "pidgeotto",
     "img": "assets/pokemon_200_silhouettes/017.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      195,
+      185,
+      145
     ],
-    "color_hex": "#000000",
+    "color_hex": "#c3b991",
     "name_cn": "比比鸟"
   },
   {
@@ -208,11 +208,11 @@
     "name": "pidgeot",
     "img": "assets/pokemon_200_silhouettes/018.png",
     "color_rgb": [
-      238,
-      227,
-      184
+      205,
+      195,
+      155
     ],
-    "color_hex": "#eee3b8",
+    "color_hex": "#cdc39b",
     "name_cn": "大比鸟"
   },
   {
@@ -220,11 +220,11 @@
     "name": "rattata",
     "img": "assets/pokemon_200_silhouettes/019.png",
     "color_rgb": [
-      158,
-      129,
-      170
+      165,
+      135,
+      175
     ],
-    "color_hex": "#9e81aa",
+    "color_hex": "#a587af",
     "name_cn": "小拉达"
   },
   {
@@ -232,11 +232,11 @@
     "name": "raticate",
     "img": "assets/pokemon_200_silhouettes/020.png",
     "color_rgb": [
-      147,
-      104,
-      58
+      145,
+      105,
+      55
     ],
-    "color_hex": "#93683a",
+    "color_hex": "#916937",
     "name_cn": "拉达"
   },
   {
@@ -244,11 +244,11 @@
     "name": "spearow",
     "img": "assets/pokemon_200_silhouettes/021.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      145,
+      95,
+      75
     ],
-    "color_hex": "#000000",
+    "color_hex": "#915f4b",
     "name_cn": "烈雀"
   },
   {
@@ -256,11 +256,11 @@
     "name": "fearow",
     "img": "assets/pokemon_200_silhouettes/022.png",
     "color_rgb": [
-      168,
-      118,
-      78
+      175,
+      125,
+      75
     ],
-    "color_hex": "#a8764e",
+    "color_hex": "#af7d4b",
     "name_cn": "大嘴雀"
   },
   {
@@ -268,11 +268,11 @@
     "name": "ekans",
     "img": "assets/pokemon_200_silhouettes/023.png",
     "color_rgb": [
-      137,
-      96,
-      127
+      135,
+      95,
+      125
     ],
-    "color_hex": "#89607f",
+    "color_hex": "#875f7d",
     "name_cn": "阿柏蛇"
   },
   {
@@ -282,9 +282,9 @@
     "color_rgb": [
       115,
       105,
-      116
+      115
     ],
-    "color_hex": "#736974",
+    "color_hex": "#736973",
     "name_cn": "阿柏怪"
   },
   {
@@ -292,11 +292,11 @@
     "name": "pikachu",
     "img": "assets/pokemon_200_silhouettes/025.png",
     "color_rgb": [
-      244,
+      245,
       215,
-      124
+      125
     ],
-    "color_hex": "#f4d77c",
+    "color_hex": "#f5d77d",
     "name_cn": "皮卡丘"
   },
   {
@@ -304,11 +304,11 @@
     "name": "raichu",
     "img": "assets/pokemon_200_silhouettes/026.png",
     "color_rgb": [
-      239,
+      235,
       185,
-      93
+      95
     ],
-    "color_hex": "#efb95d",
+    "color_hex": "#ebb95f",
     "name_cn": "雷丘"
   },
   {
@@ -316,11 +316,11 @@
     "name": "sandshrew",
     "img": "assets/pokemon_200_silhouettes/027.png",
     "color_rgb": [
-      232,
-      201,
-      121
+      235,
+      205,
+      125
     ],
-    "color_hex": "#e8c979",
+    "color_hex": "#ebcd7d",
     "name_cn": "穿山鼠"
   },
   {
@@ -328,11 +328,11 @@
     "name": "sandslash",
     "img": "assets/pokemon_200_silhouettes/028.png",
     "color_rgb": [
-      225,
-      190,
-      109
+      115,
+      75,
+      35
     ],
-    "color_hex": "#e1be6d",
+    "color_hex": "#734b23",
     "name_cn": "穿山王"
   },
   {
@@ -340,11 +340,11 @@
     "name": "nidoran-f",
     "img": "assets/pokemon_200_silhouettes/029.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      205,
+      215,
+      235
     ],
-    "color_hex": "#000000",
+    "color_hex": "#cdd7eb",
     "name_cn": "尼多兰"
   },
   {
@@ -352,11 +352,11 @@
     "name": "nidorina",
     "img": "assets/pokemon_200_silhouettes/030.png",
     "color_rgb": [
-      193,
-      216,
-      221
+      195,
+      215,
+      225
     ],
-    "color_hex": "#c1d8dd",
+    "color_hex": "#c3d7e1",
     "name_cn": "尼多娜"
   },
   {
@@ -364,11 +364,11 @@
     "name": "nidoqueen",
     "img": "assets/pokemon_200_silhouettes/031.png",
     "color_rgb": [
-      100,
-      139,
-      173
+      135,
+      175,
+      195
     ],
-    "color_hex": "#648bad",
+    "color_hex": "#87afc3",
     "name_cn": "尼多后"
   },
   {
@@ -377,10 +377,10 @@
     "img": "assets/pokemon_200_silhouettes/032.png",
     "color_rgb": [
       155,
-      113,
-      157
+      115,
+      155
     ],
-    "color_hex": "#9b719d",
+    "color_hex": "#9b739b",
     "name_cn": "尼多朗"
   },
   {
@@ -388,11 +388,11 @@
     "name": "nidorino",
     "img": "assets/pokemon_200_silhouettes/033.png",
     "color_rgb": [
-      194,
-      160,
-      199
+      145,
+      115,
+      145
     ],
-    "color_hex": "#c2a0c7",
+    "color_hex": "#917391",
     "name_cn": "尼多力诺"
   },
   {
@@ -400,11 +400,11 @@
     "name": "nidoking",
     "img": "assets/pokemon_200_silhouettes/034.png",
     "color_rgb": [
-      173,
-      127,
-      174
+      175,
+      125,
+      175
     ],
-    "color_hex": "#ad7fae",
+    "color_hex": "#af7daf",
     "name_cn": "尼多王"
   },
   {
@@ -412,11 +412,11 @@
     "name": "clefairy",
     "img": "assets/pokemon_200_silhouettes/035.png",
     "color_rgb": [
-      248,
-      207,
-      212
+      245,
+      205,
+      215
     ],
-    "color_hex": "#f8cfd4",
+    "color_hex": "#f5cdd7",
     "name_cn": "皮皮"
   },
   {
@@ -424,11 +424,11 @@
     "name": "clefable",
     "img": "assets/pokemon_200_silhouettes/036.png",
     "color_rgb": [
-      244,
-      217,
-      210
+      245,
+      215,
+      215
     ],
-    "color_hex": "#f4d9d2",
+    "color_hex": "#f5d7d7",
     "name_cn": "皮可西"
   },
   {
@@ -436,11 +436,11 @@
     "name": "vulpix",
     "img": "assets/pokemon_200_silhouettes/037.png",
     "color_rgb": [
-      194,
+      195,
       135,
-      112
+      115
     ],
-    "color_hex": "#c28770",
+    "color_hex": "#c38773",
     "name_cn": "六尾"
   },
   {
@@ -448,11 +448,11 @@
     "name": "ninetales",
     "img": "assets/pokemon_200_silhouettes/038.png",
     "color_rgb": [
-      240,
-      228,
-      161
+      245,
+      225,
+      165
     ],
-    "color_hex": "#f0e4a1",
+    "color_hex": "#f5e1a5",
     "name_cn": "九尾"
   },
   {
@@ -460,11 +460,11 @@
     "name": "jigglypuff",
     "img": "assets/pokemon_200_silhouettes/039.png",
     "color_rgb": [
-      242,
+      245,
       205,
-      214
+      215
     ],
-    "color_hex": "#f2cdd6",
+    "color_hex": "#f5cdd7",
     "name_cn": "胖丁"
   },
   {
@@ -472,11 +472,11 @@
     "name": "wigglytuff",
     "img": "assets/pokemon_200_silhouettes/040.png",
     "color_rgb": [
-      244,
-      212,
-      217
+      245,
+      235,
+      245
     ],
-    "color_hex": "#f4d4d9",
+    "color_hex": "#f5ebf5",
     "name_cn": "胖可丁"
   },
   {
@@ -484,11 +484,11 @@
     "name": "zubat",
     "img": "assets/pokemon_200_silhouettes/041.png",
     "color_rgb": [
-      163,
-      110,
-      166
+      165,
+      115,
+      165
     ],
-    "color_hex": "#a36ea6",
+    "color_hex": "#a573a5",
     "name_cn": "超音蝠"
   },
   {
@@ -496,11 +496,11 @@
     "name": "golbat",
     "img": "assets/pokemon_200_silhouettes/042.png",
     "color_rgb": [
-      34,
-      35,
-      35
+      175,
+      115,
+      175
     ],
-    "color_hex": "#222323",
+    "color_hex": "#af73af",
     "name_cn": "大嘴蝠"
   },
   {
@@ -508,11 +508,11 @@
     "name": "oddish",
     "img": "assets/pokemon_200_silhouettes/043.png",
     "color_rgb": [
-      79,
-      167,
-      70
+      85,
+      125,
+      155
     ],
-    "color_hex": "#4fa746",
+    "color_hex": "#557d9b",
     "name_cn": "走路草"
   },
   {
@@ -520,11 +520,11 @@
     "name": "gloom",
     "img": "assets/pokemon_200_silhouettes/044.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      95,
+      135,
+      165
     ],
-    "color_hex": "#000000",
+    "color_hex": "#5f87a5",
     "name_cn": "臭臭花"
   },
   {
@@ -532,11 +532,11 @@
     "name": "vileplume",
     "img": "assets/pokemon_200_silhouettes/045.png",
     "color_rgb": [
-      222,
-      153,
+      225,
+      155,
       165
     ],
-    "color_hex": "#de99a5",
+    "color_hex": "#e19ba5",
     "name_cn": "霸王花"
   },
   {
@@ -544,11 +544,11 @@
     "name": "paras",
     "img": "assets/pokemon_200_silhouettes/046.png",
     "color_rgb": [
-      232,
+      235,
       155,
-      94
+      95
     ],
-    "color_hex": "#e89b5e",
+    "color_hex": "#eb9b5f",
     "name_cn": "派拉斯"
   },
   {
@@ -556,11 +556,11 @@
     "name": "parasect",
     "img": "assets/pokemon_200_silhouettes/047.png",
     "color_rgb": [
-      163,
+      165,
       95,
       125
     ],
-    "color_hex": "#a35f7d",
+    "color_hex": "#a55f7d",
     "name_cn": "派拉斯特"
   },
   {
@@ -568,11 +568,11 @@
     "name": "venonat",
     "img": "assets/pokemon_200_silhouettes/048.png",
     "color_rgb": [
-      118,
-      114,
-      175
+      95,
+      85,
+      145
     ],
-    "color_hex": "#7672af",
+    "color_hex": "#5f5591",
     "name_cn": "毛球"
   },
   {
@@ -580,11 +580,11 @@
     "name": "venomoth",
     "img": "assets/pokemon_200_silhouettes/049.png",
     "color_rgb": [
-      228,
-      217,
-      236
+      225,
+      215,
+      235
     ],
-    "color_hex": "#e4d9ec",
+    "color_hex": "#e1d7eb",
     "name_cn": "摩鲁蛾"
   },
   {
@@ -592,11 +592,11 @@
     "name": "diglett",
     "img": "assets/pokemon_200_silhouettes/050.png",
     "color_rgb": [
-      170,
-      140,
-      122
+      165,
+      135,
+      115
     ],
-    "color_hex": "#aa8c7a",
+    "color_hex": "#a58773",
     "name_cn": "地鼠"
   },
   {
@@ -605,10 +605,10 @@
     "img": "assets/pokemon_200_silhouettes/051.png",
     "color_rgb": [
       155,
-      127,
-      111
+      125,
+      115
     ],
-    "color_hex": "#9b7f6f",
+    "color_hex": "#9b7d73",
     "name_cn": "三地鼠"
   },
   {
@@ -616,11 +616,11 @@
     "name": "meowth",
     "img": "assets/pokemon_200_silhouettes/052.png",
     "color_rgb": [
-      242,
-      233,
-      206
+      245,
+      235,
+      205
     ],
-    "color_hex": "#f2e9ce",
+    "color_hex": "#f5ebcd",
     "name_cn": "喵喵"
   },
   {
@@ -628,11 +628,11 @@
     "name": "persian",
     "img": "assets/pokemon_200_silhouettes/053.png",
     "color_rgb": [
-      240,
-      221,
-      183
+      245,
+      225,
+      185
     ],
-    "color_hex": "#f0ddb7",
+    "color_hex": "#f5e1b9",
     "name_cn": "猫老大"
   },
   {
@@ -640,11 +640,11 @@
     "name": "psyduck",
     "img": "assets/pokemon_200_silhouettes/054.png",
     "color_rgb": [
-      219,
-      183,
-      120
+      215,
+      185,
+      125
     ],
-    "color_hex": "#dbb778",
+    "color_hex": "#d7b97d",
     "name_cn": "可达鸭"
   },
   {
@@ -652,11 +652,11 @@
     "name": "golduck",
     "img": "assets/pokemon_200_silhouettes/055.png",
     "color_rgb": [
-      127,
-      173,
-      209
+      125,
+      175,
+      205
     ],
-    "color_hex": "#7fadd1",
+    "color_hex": "#7dafcd",
     "name_cn": "哥达鸭"
   },
   {
@@ -664,11 +664,11 @@
     "name": "mankey",
     "img": "assets/pokemon_200_silhouettes/056.png",
     "color_rgb": [
-      244,
-      226,
-      213
+      245,
+      225,
+      215
     ],
-    "color_hex": "#f4e2d5",
+    "color_hex": "#f5e1d7",
     "name_cn": "猴怪"
   },
   {
@@ -676,11 +676,11 @@
     "name": "primeape",
     "img": "assets/pokemon_200_silhouettes/057.png",
     "color_rgb": [
-      242,
-      223,
-      209
+      135,
+      105,
+      105
     ],
-    "color_hex": "#f2dfd1",
+    "color_hex": "#876969",
     "name_cn": "火暴猴"
   },
   {
@@ -688,11 +688,11 @@
     "name": "growlithe",
     "img": "assets/pokemon_200_silhouettes/058.png",
     "color_rgb": [
-      239,
-      217,
-      186
+      205,
+      145,
+      105
     ],
-    "color_hex": "#efd9ba",
+    "color_hex": "#cd9169",
     "name_cn": "卡蒂狗"
   },
   {
@@ -700,11 +700,11 @@
     "name": "arcanine",
     "img": "assets/pokemon_200_silhouettes/059.png",
     "color_rgb": [
-      242,
-      217,
-      189
+      245,
+      215,
+      185
     ],
-    "color_hex": "#f2d9bd",
+    "color_hex": "#f5d7b9",
     "name_cn": "风速狗"
   },
   {
@@ -712,11 +712,11 @@
     "name": "poliwag",
     "img": "assets/pokemon_200_silhouettes/060.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      215,
+      225,
+      235
     ],
-    "color_hex": "#000000",
+    "color_hex": "#d7e1eb",
     "name_cn": "蚊香蝌蚪"
   },
   {
@@ -724,11 +724,11 @@
     "name": "poliwhirl",
     "img": "assets/pokemon_200_silhouettes/061.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      215,
+      225,
+      235
     ],
-    "color_hex": "#000000",
+    "color_hex": "#d7e1eb",
     "name_cn": "蚊香君"
   },
   {
@@ -737,10 +737,10 @@
     "img": "assets/pokemon_200_silhouettes/062.png",
     "color_rgb": [
       85,
-      116,
-      157
+      115,
+      155
     ],
-    "color_hex": "#55749d",
+    "color_hex": "#55739b",
     "name_cn": "蚊香泳士"
   },
   {
@@ -748,11 +748,11 @@
     "name": "abra",
     "img": "assets/pokemon_200_silhouettes/063.png",
     "color_rgb": [
-      238,
-      212,
-      87
+      235,
+      215,
+      85
     ],
-    "color_hex": "#eed457",
+    "color_hex": "#ebd755",
     "name_cn": "凯西"
   },
   {
@@ -760,11 +760,11 @@
     "name": "kadabra",
     "img": "assets/pokemon_200_silhouettes/064.png",
     "color_rgb": [
-      239,
-      211,
-      87
+      235,
+      215,
+      85
     ],
-    "color_hex": "#efd357",
+    "color_hex": "#ebd755",
     "name_cn": "勇基拉"
   },
   {
@@ -772,11 +772,11 @@
     "name": "alakazam",
     "img": "assets/pokemon_200_silhouettes/065.png",
     "color_rgb": [
-      233,
-      208,
-      86
+      235,
+      205,
+      85
     ],
-    "color_hex": "#e9d056",
+    "color_hex": "#ebcd55",
     "name_cn": "胡地"
   },
   {
@@ -784,11 +784,11 @@
     "name": "machop",
     "img": "assets/pokemon_200_silhouettes/066.png",
     "color_rgb": [
-      164,
+      165,
       195,
-      206
+      205
     ],
-    "color_hex": "#a4c3ce",
+    "color_hex": "#a5c3cd",
     "name_cn": "腕力"
   },
   {
@@ -796,11 +796,11 @@
     "name": "machoke",
     "img": "assets/pokemon_200_silhouettes/067.png",
     "color_rgb": [
-      167,
-      173,
-      204
+      165,
+      175,
+      205
     ],
-    "color_hex": "#a7adcc",
+    "color_hex": "#a5afcd",
     "name_cn": "豪力"
   },
   {
@@ -808,11 +808,11 @@
     "name": "machamp",
     "img": "assets/pokemon_200_silhouettes/068.png",
     "color_rgb": [
-      156,
-      177,
+      155,
+      175,
       195
     ],
-    "color_hex": "#9cb1c3",
+    "color_hex": "#9bafc3",
     "name_cn": "怪力"
   },
   {
@@ -820,11 +820,11 @@
     "name": "bellsprout",
     "img": "assets/pokemon_200_silhouettes/069.png",
     "color_rgb": [
-      175,
-      215,
-      150
+      235,
+      235,
+      115
     ],
-    "color_hex": "#afd796",
+    "color_hex": "#ebeb73",
     "name_cn": "喇叭芽"
   },
   {
@@ -833,10 +833,10 @@
     "img": "assets/pokemon_200_silhouettes/070.png",
     "color_rgb": [
       135,
-      202,
-      143
+      205,
+      145
     ],
-    "color_hex": "#87ca8f",
+    "color_hex": "#87cd91",
     "name_cn": "口呆花"
   },
   {
@@ -844,11 +844,11 @@
     "name": "victreebel",
     "img": "assets/pokemon_200_silhouettes/071.png",
     "color_rgb": [
-      167,
-      212,
-      143
+      165,
+      215,
+      145
     ],
-    "color_hex": "#a7d48f",
+    "color_hex": "#a5d791",
     "name_cn": "大食花"
   },
   {
@@ -856,11 +856,11 @@
     "name": "tentacool",
     "img": "assets/pokemon_200_silhouettes/072.png",
     "color_rgb": [
-      16,
-      16,
-      17
+      85,
+      165,
+      205
     ],
-    "color_hex": "#101011",
+    "color_hex": "#55a5cd",
     "name_cn": "玛瑙水母"
   },
   {
@@ -868,11 +868,11 @@
     "name": "tentacruel",
     "img": "assets/pokemon_200_silhouettes/073.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      75,
+      165,
+      205
     ],
-    "color_hex": "#000000",
+    "color_hex": "#4ba5cd",
     "name_cn": "毒刺水母"
   },
   {
@@ -880,11 +880,11 @@
     "name": "geodude",
     "img": "assets/pokemon_200_silhouettes/074.png",
     "color_rgb": [
-      178,
       175,
-      168
+      175,
+      165
     ],
-    "color_hex": "#b2afa8",
+    "color_hex": "#afafa5",
     "name_cn": "小拳石"
   },
   {
@@ -892,11 +892,11 @@
     "name": "graveler",
     "img": "assets/pokemon_200_silhouettes/075.png",
     "color_rgb": [
-      198,
-      198,
-      189
+      185,
+      185,
+      175
     ],
-    "color_hex": "#c6c6bd",
+    "color_hex": "#b9b9af",
     "name_cn": "隆隆石"
   },
   {
@@ -904,11 +904,11 @@
     "name": "golem",
     "img": "assets/pokemon_200_silhouettes/076.png",
     "color_rgb": [
-      86,
-      82,
-      79
+      95,
+      85,
+      85
     ],
-    "color_hex": "#56524f",
+    "color_hex": "#5f5555",
     "name_cn": "隆隆岩"
   },
   {
@@ -916,11 +916,11 @@
     "name": "ponyta",
     "img": "assets/pokemon_200_silhouettes/077.png",
     "color_rgb": [
-      251,
-      243,
-      204
+      255,
+      245,
+      205
     ],
-    "color_hex": "#fbf3cc",
+    "color_hex": "#fff5cd",
     "name_cn": "小火马"
   },
   {
@@ -928,11 +928,11 @@
     "name": "rapidash",
     "img": "assets/pokemon_200_silhouettes/078.png",
     "color_rgb": [
-      244,
+      245,
       235,
       195
     ],
-    "color_hex": "#f4ebc3",
+    "color_hex": "#f5ebc3",
     "name_cn": "烈焰马"
   },
   {
@@ -940,11 +940,11 @@
     "name": "slowpoke",
     "img": "assets/pokemon_200_silhouettes/079.png",
     "color_rgb": [
-      227,
+      225,
       165,
-      183
+      185
     ],
-    "color_hex": "#e3a5b7",
+    "color_hex": "#e1a5b9",
     "name_cn": "呆呆兽"
   },
   {
@@ -952,11 +952,11 @@
     "name": "slowbro",
     "img": "assets/pokemon_200_silhouettes/080.png",
     "color_rgb": [
-      224,
-      164,
-      180
+      225,
+      165,
+      185
     ],
-    "color_hex": "#e0a4b4",
+    "color_hex": "#e1a5b9",
     "name_cn": "呆壳兽"
   },
   {
@@ -964,11 +964,11 @@
     "name": "magnemite",
     "img": "assets/pokemon_200_silhouettes/081.png",
     "color_rgb": [
-      159,
-      192,
-      202
+      155,
+      195,
+      205
     ],
-    "color_hex": "#9fc0ca",
+    "color_hex": "#9bc3cd",
     "name_cn": "小磁怪"
   },
   {
@@ -976,11 +976,11 @@
     "name": "magneton",
     "img": "assets/pokemon_200_silhouettes/082.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      155,
+      185,
+      195
     ],
-    "color_hex": "#000000",
+    "color_hex": "#9bb9c3",
     "name_cn": "三合一磁怪"
   },
   {
@@ -988,11 +988,11 @@
     "name": "farfetchd",
     "img": "assets/pokemon_200_silhouettes/083.png",
     "color_rgb": [
-      158,
-      141,
-      138
+      155,
+      145,
+      135
     ],
-    "color_hex": "#9e8d8a",
+    "color_hex": "#9b9187",
     "name_cn": "大葱鸭"
   },
   {
@@ -1000,11 +1000,11 @@
     "name": "doduo",
     "img": "assets/pokemon_200_silhouettes/084.png",
     "color_rgb": [
-      167,
-      126,
-      100
+      165,
+      125,
+      105
     ],
-    "color_hex": "#a77e64",
+    "color_hex": "#a57d69",
     "name_cn": "嘟嘟"
   },
   {
@@ -1012,11 +1012,11 @@
     "name": "dodrio",
     "img": "assets/pokemon_200_silhouettes/085.png",
     "color_rgb": [
-      153,
-      117,
-      102
+      165,
+      125,
+      105
     ],
-    "color_hex": "#997566",
+    "color_hex": "#a57d69",
     "name_cn": "嘟嘟利"
   },
   {
@@ -1024,11 +1024,11 @@
     "name": "seel",
     "img": "assets/pokemon_200_silhouettes/086.png",
     "color_rgb": [
-      224,
-      232,
-      242
+      225,
+      235,
+      245
     ],
-    "color_hex": "#e0e8f2",
+    "color_hex": "#e1ebf5",
     "name_cn": "小海狮"
   },
   {
@@ -1036,11 +1036,11 @@
     "name": "dewgong",
     "img": "assets/pokemon_200_silhouettes/087.png",
     "color_rgb": [
-      237,
-      242,
-      247
+      235,
+      245,
+      245
     ],
-    "color_hex": "#edf2f7",
+    "color_hex": "#ebf5f5",
     "name_cn": "白海狮"
   },
   {
@@ -1048,11 +1048,11 @@
     "name": "grimer",
     "img": "assets/pokemon_200_silhouettes/088.png",
     "color_rgb": [
-      140,
-      121,
-      148
+      145,
+      125,
+      145
     ],
-    "color_hex": "#8c7994",
+    "color_hex": "#917d91",
     "name_cn": "臭泥"
   },
   {
@@ -1060,11 +1060,11 @@
     "name": "muk",
     "img": "assets/pokemon_200_silhouettes/089.png",
     "color_rgb": [
-      127,
-      114,
-      132
+      125,
+      115,
+      135
     ],
-    "color_hex": "#7f7284",
+    "color_hex": "#7d7387",
     "name_cn": "臭臭泥"
   },
   {
@@ -1072,11 +1072,11 @@
     "name": "shellder",
     "img": "assets/pokemon_200_silhouettes/090.png",
     "color_rgb": [
-      166,
-      163,
-      201
+      165,
+      165,
+      205
     ],
-    "color_hex": "#a6a3c9",
+    "color_hex": "#a5a5cd",
     "name_cn": "大舌贝"
   },
   {
@@ -1084,11 +1084,11 @@
     "name": "cloyster",
     "img": "assets/pokemon_200_silhouettes/091.png",
     "color_rgb": [
-      131,
-      122,
-      150
+      135,
+      125,
+      155
     ],
-    "color_hex": "#837a96",
+    "color_hex": "#877d9b",
     "name_cn": "刺甲贝"
   },
   {
@@ -1096,11 +1096,11 @@
     "name": "gastly",
     "img": "assets/pokemon_200_silhouettes/092.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      145,
+      115,
+      145
     ],
-    "color_hex": "#000000",
+    "color_hex": "#917391",
     "name_cn": "鬼斯"
   },
   {
@@ -1108,11 +1108,11 @@
     "name": "haunter",
     "img": "assets/pokemon_200_silhouettes/093.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      85,
+      75,
+      85
     ],
-    "color_hex": "#000000",
+    "color_hex": "#554b55",
     "name_cn": "鬼斯通"
   },
   {
@@ -1121,10 +1121,10 @@
     "img": "assets/pokemon_200_silhouettes/094.png",
     "color_rgb": [
       125,
-      121,
-      163
+      125,
+      165
     ],
-    "color_hex": "#7d79a3",
+    "color_hex": "#7d7da5",
     "name_cn": "耿鬼"
   },
   {
@@ -1132,11 +1132,11 @@
     "name": "onix",
     "img": "assets/pokemon_200_silhouettes/095.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      165,
+      165,
+      175
     ],
-    "color_hex": "#000000",
+    "color_hex": "#a5a5af",
     "name_cn": "大岩蛇"
   },
   {
@@ -1144,11 +1144,11 @@
     "name": "drowzee",
     "img": "assets/pokemon_200_silhouettes/096.png",
     "color_rgb": [
-      236,
-      196,
-      73
+      235,
+      195,
+      75
     ],
-    "color_hex": "#ecc449",
+    "color_hex": "#ebc34b",
     "name_cn": "催眠貘"
   },
   {
@@ -1156,11 +1156,11 @@
     "name": "hypno",
     "img": "assets/pokemon_200_silhouettes/097.png",
     "color_rgb": [
-      247,
-      216,
-      84
+      245,
+      215,
+      85
     ],
-    "color_hex": "#f7d854",
+    "color_hex": "#f5d755",
     "name_cn": "引梦貘人"
   },
   {
@@ -1168,11 +1168,11 @@
     "name": "krabby",
     "img": "assets/pokemon_200_silhouettes/098.png",
     "color_rgb": [
-      242,
-      153,
+      245,
+      155,
       105
     ],
-    "color_hex": "#f29969",
+    "color_hex": "#f59b69",
     "name_cn": "大钳蟹"
   },
   {
@@ -1180,11 +1180,11 @@
     "name": "kingler",
     "img": "assets/pokemon_200_silhouettes/099.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      195,
+      125,
+      85
     ],
-    "color_hex": "#000000",
+    "color_hex": "#c37d55",
     "name_cn": "巨钳蟹"
   },
   {
@@ -1192,11 +1192,11 @@
     "name": "voltorb",
     "img": "assets/pokemon_200_silhouettes/100.png",
     "color_rgb": [
-      179,
-      185,
-      202
+      225,
+      145,
+      135
     ],
-    "color_hex": "#b3b9ca",
+    "color_hex": "#e19187",
     "name_cn": "霹雳电球"
   },
   {
@@ -1204,11 +1204,11 @@
     "name": "electrode",
     "img": "assets/pokemon_200_silhouettes/101.png",
     "color_rgb": [
-      234,
       235,
-      238
+      235,
+      235
     ],
-    "color_hex": "#eaebee",
+    "color_hex": "#ebebeb",
     "name_cn": "顽皮雷弹"
   },
   {
@@ -1216,11 +1216,11 @@
     "name": "exeggcute",
     "img": "assets/pokemon_200_silhouettes/102.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      245,
+      225,
+      225
     ],
-    "color_hex": "#000000",
+    "color_hex": "#f5e1e1",
     "name_cn": "蛋蛋"
   },
   {
@@ -1228,11 +1228,11 @@
     "name": "exeggutor",
     "img": "assets/pokemon_200_silhouettes/103.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      105,
+      175,
+      125
     ],
-    "color_hex": "#000000",
+    "color_hex": "#69af7d",
     "name_cn": "椰蛋树"
   },
   {
@@ -1240,11 +1240,11 @@
     "name": "cubone",
     "img": "assets/pokemon_200_silhouettes/104.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      235,
+      225,
+      205
     ],
-    "color_hex": "#000000",
+    "color_hex": "#ebe1cd",
     "name_cn": "卡拉卡拉"
   },
   {
@@ -1252,11 +1252,11 @@
     "name": "marowak",
     "img": "assets/pokemon_200_silhouettes/105.png",
     "color_rgb": [
-      221,
-      221,
-      221
+      225,
+      225,
+      225
     ],
-    "color_hex": "#dddddd",
+    "color_hex": "#e1e1e1",
     "name_cn": "嘎啦嘎啦"
   },
   {
@@ -1264,11 +1264,11 @@
     "name": "hitmonlee",
     "img": "assets/pokemon_200_silhouettes/106.png",
     "color_rgb": [
-      169,
-      149,
-      144
+      165,
+      145,
+      145
     ],
-    "color_hex": "#a99590",
+    "color_hex": "#a59191",
     "name_cn": "飞腿郎"
   },
   {
@@ -1276,11 +1276,11 @@
     "name": "hitmonchan",
     "img": "assets/pokemon_200_silhouettes/107.png",
     "color_rgb": [
-      199,
-      184,
-      169
+      195,
+      185,
+      165
     ],
-    "color_hex": "#c7b8a9",
+    "color_hex": "#c3b9a5",
     "name_cn": "快拳郎"
   },
   {
@@ -1289,10 +1289,10 @@
     "img": "assets/pokemon_200_silhouettes/108.png",
     "color_rgb": [
       245,
-      179,
+      175,
       185
     ],
-    "color_hex": "#f5b3b9",
+    "color_hex": "#f5afb9",
     "name_cn": "大舌头"
   },
   {
@@ -1300,11 +1300,11 @@
     "name": "koffing",
     "img": "assets/pokemon_200_silhouettes/109.png",
     "color_rgb": [
-      161,
-      160,
-      205
+      125,
+      115,
+      145
     ],
-    "color_hex": "#a1a0cd",
+    "color_hex": "#7d7391",
     "name_cn": "瓦斯弹"
   },
   {
@@ -1312,11 +1312,11 @@
     "name": "weezing",
     "img": "assets/pokemon_200_silhouettes/110.png",
     "color_rgb": [
-      133,
-      121,
-      135
+      175,
+      165,
+      195
     ],
-    "color_hex": "#857987",
+    "color_hex": "#afa5c3",
     "name_cn": "双弹瓦斯"
   },
   {
@@ -1324,11 +1324,11 @@
     "name": "rhyhorn",
     "img": "assets/pokemon_200_silhouettes/111.png",
     "color_rgb": [
-      150,
-      163,
-      171
+      115,
+      125,
+      125
     ],
-    "color_hex": "#96a3ab",
+    "color_hex": "#737d7d",
     "name_cn": "独角犀牛"
   },
   {
@@ -1336,11 +1336,11 @@
     "name": "rhydon",
     "img": "assets/pokemon_200_silhouettes/112.png",
     "color_rgb": [
-      171,
-      180,
-      197
+      145,
+      145,
+      155
     ],
-    "color_hex": "#abb4c5",
+    "color_hex": "#91919b",
     "name_cn": "钻角犀兽"
   },
   {
@@ -1348,11 +1348,11 @@
     "name": "chansey",
     "img": "assets/pokemon_200_silhouettes/113.png",
     "color_rgb": [
-      244,
-      207,
-      226
+      245,
+      205,
+      225
     ],
-    "color_hex": "#f4cfe2",
+    "color_hex": "#f5cde1",
     "name_cn": "吉利蛋"
   },
   {
@@ -1360,11 +1360,11 @@
     "name": "tangela",
     "img": "assets/pokemon_200_silhouettes/114.png",
     "color_rgb": [
-      107,
-      161,
-      193
+      105,
+      165,
+      195
     ],
-    "color_hex": "#6ba1c1",
+    "color_hex": "#69a5c3",
     "name_cn": "蔓藤怪"
   },
   {
@@ -1372,11 +1372,11 @@
     "name": "kangaskhan",
     "img": "assets/pokemon_200_silhouettes/115.png",
     "color_rgb": [
-      209,
-      197,
-      157
+      205,
+      195,
+      155
     ],
-    "color_hex": "#d1c59d",
+    "color_hex": "#cdc39b",
     "name_cn": "袋兽"
   },
   {
@@ -1384,11 +1384,11 @@
     "name": "horsea",
     "img": "assets/pokemon_200_silhouettes/116.png",
     "color_rgb": [
-      133,
-      212,
-      237
+      135,
+      215,
+      235
     ],
-    "color_hex": "#85d4ed",
+    "color_hex": "#87d7eb",
     "name_cn": "墨海马"
   },
   {
@@ -1396,11 +1396,11 @@
     "name": "seadra",
     "img": "assets/pokemon_200_silhouettes/117.png",
     "color_rgb": [
-      130,
-      211,
-      236
+      125,
+      205,
+      235
     ],
-    "color_hex": "#82d3ec",
+    "color_hex": "#7dcdeb",
     "name_cn": "海刺龙"
   },
   {
@@ -1408,11 +1408,11 @@
     "name": "goldeen",
     "img": "assets/pokemon_200_silhouettes/118.png",
     "color_rgb": [
-      215,
-      211,
-      226
+      225,
+      225,
+      235
     ],
-    "color_hex": "#d7d3e2",
+    "color_hex": "#e1e1eb",
     "name_cn": "角金鱼"
   },
   {
@@ -1420,11 +1420,11 @@
     "name": "seaking",
     "img": "assets/pokemon_200_silhouettes/119.png",
     "color_rgb": [
-      238,
-      242,
-      240
+      235,
+      245,
+      245
     ],
-    "color_hex": "#eef2f0",
+    "color_hex": "#ebf5f5",
     "name_cn": "金鱼王"
   },
   {
@@ -1432,11 +1432,11 @@
     "name": "staryu",
     "img": "assets/pokemon_200_silhouettes/120.png",
     "color_rgb": [
-      109,
-      95,
-      81
+      125,
+      105,
+      85
     ],
-    "color_hex": "#6d5f51",
+    "color_hex": "#7d6955",
     "name_cn": "海星星"
   },
   {
@@ -1444,11 +1444,11 @@
     "name": "starmie",
     "img": "assets/pokemon_200_silhouettes/121.png",
     "color_rgb": [
-      137,
-      131,
-      152
+      135,
+      135,
+      155
     ],
-    "color_hex": "#898398",
+    "color_hex": "#87879b",
     "name_cn": "宝石海星"
   },
   {
@@ -1456,11 +1456,11 @@
     "name": "mr-mime",
     "img": "assets/pokemon_200_silhouettes/122.png",
     "color_rgb": [
-      44,
-      84,
-      112
+      45,
+      85,
+      115
     ],
-    "color_hex": "#2c5470",
+    "color_hex": "#2d5573",
     "name_cn": "魔墙人偶"
   },
   {
@@ -1468,11 +1468,11 @@
     "name": "scyther",
     "img": "assets/pokemon_200_silhouettes/123.png",
     "color_rgb": [
-      156,
-      208,
-      144
+      155,
+      205,
+      145
     ],
-    "color_hex": "#9cd090",
+    "color_hex": "#9bcd91",
     "name_cn": "飞天螳螂"
   },
   {
@@ -1480,11 +1480,11 @@
     "name": "jynx",
     "img": "assets/pokemon_200_silhouettes/124.png",
     "color_rgb": [
-      224,
-      107,
+      225,
+      105,
       105
     ],
-    "color_hex": "#e06b69",
+    "color_hex": "#e16969",
     "name_cn": "迷唇姐"
   },
   {
@@ -1492,11 +1492,11 @@
     "name": "electabuzz",
     "img": "assets/pokemon_200_silhouettes/125.png",
     "color_rgb": [
-      251,
-      216,
-      132
+      255,
+      215,
+      135
     ],
-    "color_hex": "#fbd884",
+    "color_hex": "#ffd787",
     "name_cn": "电击兽"
   },
   {
@@ -1504,11 +1504,11 @@
     "name": "magmar",
     "img": "assets/pokemon_200_silhouettes/126.png",
     "color_rgb": [
-      253,
-      218,
-      121
+      185,
+      95,
+      65
     ],
-    "color_hex": "#fdda79",
+    "color_hex": "#b95f41",
     "name_cn": "鸭嘴火兽"
   },
   {
@@ -1516,11 +1516,11 @@
     "name": "pinsir",
     "img": "assets/pokemon_200_silhouettes/127.png",
     "color_rgb": [
-      109,
-      98,
+      105,
+      95,
       95
     ],
-    "color_hex": "#6d625f",
+    "color_hex": "#695f5f",
     "name_cn": "凯罗斯"
   },
   {
@@ -1528,11 +1528,11 @@
     "name": "tauros",
     "img": "assets/pokemon_200_silhouettes/128.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      215,
+      165,
+      105
     ],
-    "color_hex": "#000000",
+    "color_hex": "#d7a569",
     "name_cn": "肯泰罗"
   },
   {
@@ -1540,11 +1540,11 @@
     "name": "magikarp",
     "img": "assets/pokemon_200_silhouettes/129.png",
     "color_rgb": [
-      237,
+      235,
       235,
       235
     ],
-    "color_hex": "#edebeb",
+    "color_hex": "#ebebeb",
     "name_cn": "鲤鱼王"
   },
   {
@@ -1552,11 +1552,11 @@
     "name": "gyarados",
     "img": "assets/pokemon_200_silhouettes/130.png",
     "color_rgb": [
-      59,
+      55,
       145,
-      178
+      175
     ],
-    "color_hex": "#3b91b2",
+    "color_hex": "#3791af",
     "name_cn": "暴鲤龙"
   },
   {
@@ -1564,11 +1564,11 @@
     "name": "lapras",
     "img": "assets/pokemon_200_silhouettes/131.png",
     "color_rgb": [
-      88,
-      181,
-      221
+      85,
+      185,
+      225
     ],
-    "color_hex": "#58b5dd",
+    "color_hex": "#55b9e1",
     "name_cn": "拉普拉斯"
   },
   {
@@ -1576,11 +1576,11 @@
     "name": "ditto",
     "img": "assets/pokemon_200_silhouettes/132.png",
     "color_rgb": [
-      201,
-      183,
-      217
+      205,
+      185,
+      215
     ],
-    "color_hex": "#c9b7d9",
+    "color_hex": "#cdb9d7",
     "name_cn": "百变怪"
   },
   {
@@ -1588,11 +1588,11 @@
     "name": "eevee",
     "img": "assets/pokemon_200_silhouettes/133.png",
     "color_rgb": [
-      198,
-      146,
-      94
+      195,
+      145,
+      95
     ],
-    "color_hex": "#c6925e",
+    "color_hex": "#c3915f",
     "name_cn": "伊布"
   },
   {
@@ -1600,11 +1600,11 @@
     "name": "vaporeon",
     "img": "assets/pokemon_200_silhouettes/134.png",
     "color_rgb": [
-      123,
-      207,
+      125,
+      205,
       225
     ],
-    "color_hex": "#7bcfe1",
+    "color_hex": "#7dcde1",
     "name_cn": "水伊布"
   },
   {
@@ -1612,11 +1612,11 @@
     "name": "jolteon",
     "img": "assets/pokemon_200_silhouettes/135.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      255,
+      215,
+      115
     ],
-    "color_hex": "#000000",
+    "color_hex": "#ffd773",
     "name_cn": "雷伊布"
   },
   {
@@ -1624,11 +1624,11 @@
     "name": "flareon",
     "img": "assets/pokemon_200_silhouettes/136.png",
     "color_rgb": [
-      225,
-      205,
-      151
+      235,
+      125,
+      75
     ],
-    "color_hex": "#e1cd97",
+    "color_hex": "#eb7d4b",
     "name_cn": "火伊布"
   },
   {
@@ -1636,11 +1636,11 @@
     "name": "porygon",
     "img": "assets/pokemon_200_silhouettes/137.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      245,
+      195,
+      205
     ],
-    "color_hex": "#000000",
+    "color_hex": "#f5c3cd",
     "name_cn": "多边兽"
   },
   {
@@ -1648,11 +1648,11 @@
     "name": "omanyte",
     "img": "assets/pokemon_200_silhouettes/138.png",
     "color_rgb": [
-      226,
-      218,
-      182
+      225,
+      215,
+      185
     ],
-    "color_hex": "#e2dab6",
+    "color_hex": "#e1d7b9",
     "name_cn": "菊石兽"
   },
   {
@@ -1660,11 +1660,11 @@
     "name": "omastar",
     "img": "assets/pokemon_200_silhouettes/139.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      155,
+      215,
+      225
     ],
-    "color_hex": "#000000",
+    "color_hex": "#9bd7e1",
     "name_cn": "多刺菊石兽"
   },
   {
@@ -1672,11 +1672,11 @@
     "name": "kabuto",
     "img": "assets/pokemon_200_silhouettes/140.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      185,
+      145,
+      95
     ],
-    "color_hex": "#000000",
+    "color_hex": "#b9915f",
     "name_cn": "化石盔"
   },
   {
@@ -1684,11 +1684,11 @@
     "name": "kabutops",
     "img": "assets/pokemon_200_silhouettes/141.png",
     "color_rgb": [
-      174,
-      132,
-      92
+      175,
+      135,
+      95
     ],
-    "color_hex": "#ae845c",
+    "color_hex": "#af875f",
     "name_cn": "镰刀盔"
   },
   {
@@ -1696,11 +1696,11 @@
     "name": "aerodactyl",
     "img": "assets/pokemon_200_silhouettes/142.png",
     "color_rgb": [
-      174,
-      150,
-      194
+      205,
+      205,
+      215
     ],
-    "color_hex": "#ae96c2",
+    "color_hex": "#cdcdd7",
     "name_cn": "化石翼龙"
   },
   {
@@ -1708,11 +1708,11 @@
     "name": "snorlax",
     "img": "assets/pokemon_200_silhouettes/143.png",
     "color_rgb": [
-      240,
-      229,
-      216
+      235,
+      225,
+      215
     ],
-    "color_hex": "#f0e5d8",
+    "color_hex": "#ebe1d7",
     "name_cn": "卡比兽"
   },
   {
@@ -1720,11 +1720,11 @@
     "name": "articuno",
     "img": "assets/pokemon_200_silhouettes/144.png",
     "color_rgb": [
-      50,
-      110,
-      154
+      125,
+      185,
+      225
     ],
-    "color_hex": "#326e9a",
+    "color_hex": "#7db9e1",
     "name_cn": "急冻鸟"
   },
   {
@@ -1733,10 +1733,10 @@
     "img": "assets/pokemon_200_silhouettes/145.png",
     "color_rgb": [
       255,
-      220,
-      128
+      215,
+      125
     ],
-    "color_hex": "#ffdc80",
+    "color_hex": "#ffd77d",
     "name_cn": "闪电鸟"
   },
   {
@@ -1744,11 +1744,11 @@
     "name": "moltres",
     "img": "assets/pokemon_200_silhouettes/146.png",
     "color_rgb": [
-      249,
-      199,
-      116
+      245,
+      195,
+      115
     ],
-    "color_hex": "#f9c774",
+    "color_hex": "#f5c373",
     "name_cn": "火焰鸟"
   },
   {
@@ -1756,11 +1756,11 @@
     "name": "dratini",
     "img": "assets/pokemon_200_silhouettes/147.png",
     "color_rgb": [
-      238,
-      236,
-      234
+      235,
+      235,
+      235
     ],
-    "color_hex": "#eeecea",
+    "color_hex": "#ebebeb",
     "name_cn": "迷你龙"
   },
   {
@@ -1768,11 +1768,11 @@
     "name": "dragonair",
     "img": "assets/pokemon_200_silhouettes/148.png",
     "color_rgb": [
-      121,
+      125,
       175,
-      223
+      225
     ],
-    "color_hex": "#79afdf",
+    "color_hex": "#7dafe1",
     "name_cn": "哈克龙"
   },
   {
@@ -1780,11 +1780,11 @@
     "name": "dragonite",
     "img": "assets/pokemon_200_silhouettes/149.png",
     "color_rgb": [
-      242,
-      180,
-      108
+      245,
+      185,
+      105
     ],
-    "color_hex": "#f2b46c",
+    "color_hex": "#f5b969",
     "name_cn": "快龙"
   },
   {
@@ -1792,11 +1792,11 @@
     "name": "mewtwo",
     "img": "assets/pokemon_200_silhouettes/150.png",
     "color_rgb": [
-      222,
-      217,
-      227
+      225,
+      215,
+      225
     ],
-    "color_hex": "#ded9e3",
+    "color_hex": "#e1d7e1",
     "name_cn": "超梦"
   },
   {
@@ -1804,11 +1804,11 @@
     "name": "mew",
     "img": "assets/pokemon_200_silhouettes/151.png",
     "color_rgb": [
-      244,
-      203,
-      211
+      235,
+      195,
+      205
     ],
-    "color_hex": "#f4cbd3",
+    "color_hex": "#ebc3cd",
     "name_cn": "梦幻"
   },
   {
@@ -1816,11 +1816,11 @@
     "name": "chikorita",
     "img": "assets/pokemon_200_silhouettes/152.png",
     "color_rgb": [
-      167,
-      212,
-      149
+      205,
+      225,
+      165
     ],
-    "color_hex": "#a7d495",
+    "color_hex": "#cde1a5",
     "name_cn": "菊草叶"
   },
   {
@@ -1828,11 +1828,11 @@
     "name": "bayleef",
     "img": "assets/pokemon_200_silhouettes/153.png",
     "color_rgb": [
-      249,
-      228,
-      156
+      245,
+      225,
+      155
     ],
-    "color_hex": "#f9e49c",
+    "color_hex": "#f5e19b",
     "name_cn": "月桂叶"
   },
   {
@@ -1840,11 +1840,11 @@
     "name": "meganium",
     "img": "assets/pokemon_200_silhouettes/154.png",
     "color_rgb": [
-      238,
-      117,
-      139
+      185,
+      215,
+      145
     ],
-    "color_hex": "#ee758b",
+    "color_hex": "#b9d791",
     "name_cn": "大竺葵"
   },
   {
@@ -1852,11 +1852,11 @@
     "name": "cyndaquil",
     "img": "assets/pokemon_200_silhouettes/155.png",
     "color_rgb": [
-      230,
-      112,
-      79
+      235,
+      215,
+      165
     ],
-    "color_hex": "#e6704f",
+    "color_hex": "#ebd7a5",
     "name_cn": "火球鼠"
   },
   {
@@ -1864,11 +1864,11 @@
     "name": "quilava",
     "img": "assets/pokemon_200_silhouettes/156.png",
     "color_rgb": [
-      253,
-      227,
-      159
+      255,
+      225,
+      155
     ],
-    "color_hex": "#fde39f",
+    "color_hex": "#ffe19b",
     "name_cn": "火岩鼠"
   },
   {
@@ -1876,11 +1876,11 @@
     "name": "typhlosion",
     "img": "assets/pokemon_200_silhouettes/157.png",
     "color_rgb": [
-      255,
-      234,
-      159
+      185,
+      165,
+      125
     ],
-    "color_hex": "#ffea9f",
+    "color_hex": "#b9a57d",
     "name_cn": "火暴兽"
   },
   {
@@ -1888,11 +1888,11 @@
     "name": "totodile",
     "img": "assets/pokemon_200_silhouettes/158.png",
     "color_rgb": [
-      103,
-      193,
-      204
+      85,
+      145,
+      145
     ],
-    "color_hex": "#67c1cc",
+    "color_hex": "#559191",
     "name_cn": "小锯鳄"
   },
   {
@@ -1900,11 +1900,11 @@
     "name": "croconaw",
     "img": "assets/pokemon_200_silhouettes/159.png",
     "color_rgb": [
-      126,
-      200,
-      210
+      125,
+      205,
+      215
     ],
-    "color_hex": "#7ec8d2",
+    "color_hex": "#7dcdd7",
     "name_cn": "蓝鳄"
   },
   {
@@ -1912,11 +1912,11 @@
     "name": "feraligatr",
     "img": "assets/pokemon_200_silhouettes/160.png",
     "color_rgb": [
-      101,
-      203,
-      233
+      105,
+      205,
+      235
     ],
-    "color_hex": "#65cbe9",
+    "color_hex": "#69cdeb",
     "name_cn": "大力鳄"
   },
   {
@@ -1924,11 +1924,11 @@
     "name": "sentret",
     "img": "assets/pokemon_200_silhouettes/161.png",
     "color_rgb": [
-      179,
-      136,
-      119
+      175,
+      135,
+      115
     ],
-    "color_hex": "#b38877",
+    "color_hex": "#af8773",
     "name_cn": "尾立"
   },
   {
@@ -1936,11 +1936,11 @@
     "name": "furret",
     "img": "assets/pokemon_200_silhouettes/162.png",
     "color_rgb": [
-      196,
-      173,
-      150
+      245,
+      215,
+      185
     ],
-    "color_hex": "#c4ad96",
+    "color_hex": "#f5d7b9",
     "name_cn": "大尾立"
   },
   {
@@ -1948,11 +1948,11 @@
     "name": "hoothoot",
     "img": "assets/pokemon_200_silhouettes/163.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      175,
+      145,
+      115
     ],
-    "color_hex": "#000000",
+    "color_hex": "#af9173",
     "name_cn": "咕咕"
   },
   {
@@ -1960,11 +1960,11 @@
     "name": "noctowl",
     "img": "assets/pokemon_200_silhouettes/164.png",
     "color_rgb": [
-      109,
-      84,
-      79
+      175,
+      135,
+      125
     ],
-    "color_hex": "#6d544f",
+    "color_hex": "#af877d",
     "name_cn": "猫头夜鹰"
   },
   {
@@ -1972,11 +1972,11 @@
     "name": "ledyba",
     "img": "assets/pokemon_200_silhouettes/165.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      225,
+      205,
+      155
     ],
-    "color_hex": "#000000",
+    "color_hex": "#e1cd9b",
     "name_cn": "芭瓢虫"
   },
   {
@@ -1984,11 +1984,11 @@
     "name": "ledian",
     "img": "assets/pokemon_200_silhouettes/166.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      175,
+      65,
+      85
     ],
-    "color_hex": "#000000",
+    "color_hex": "#af4155",
     "name_cn": "安瓢虫"
   },
   {
@@ -1996,11 +1996,11 @@
     "name": "spinarak",
     "img": "assets/pokemon_200_silhouettes/167.png",
     "color_rgb": [
-      166,
-      211,
-      138
+      165,
+      215,
+      135
     ],
-    "color_hex": "#a6d38a",
+    "color_hex": "#a5d787",
     "name_cn": "圆丝蛛"
   },
   {
@@ -2008,11 +2008,11 @@
     "name": "ariados",
     "img": "assets/pokemon_200_silhouettes/168.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      175,
+      75,
+      95
     ],
-    "color_hex": "#000000",
+    "color_hex": "#af4b5f",
     "name_cn": "阿利多斯"
   },
   {
@@ -2020,11 +2020,11 @@
     "name": "crobat",
     "img": "assets/pokemon_200_silhouettes/169.png",
     "color_rgb": [
-      93,
-      150,
-      160
+      95,
+      155,
+      165
     ],
-    "color_hex": "#5d96a0",
+    "color_hex": "#5f9ba5",
     "name_cn": "叉字蝠"
   },
   {
@@ -2032,11 +2032,11 @@
     "name": "chinchou",
     "img": "assets/pokemon_200_silhouettes/170.png",
     "color_rgb": [
-      254,
-      241,
-      223
+      95,
+      115,
+      165
     ],
-    "color_hex": "#fef1df",
+    "color_hex": "#5f73a5",
     "name_cn": "灯笼鱼"
   },
   {
@@ -2044,11 +2044,11 @@
     "name": "lanturn",
     "img": "assets/pokemon_200_silhouettes/171.png",
     "color_rgb": [
-      113,
-      128,
-      170
+      115,
+      125,
+      175
     ],
-    "color_hex": "#7180aa",
+    "color_hex": "#737daf",
     "name_cn": "电灯怪"
   },
   {
@@ -2056,11 +2056,11 @@
     "name": "pichu",
     "img": "assets/pokemon_200_silhouettes/172.png",
     "color_rgb": [
-      13,
-      58,
-      86
+      255,
+      245,
+      195
     ],
-    "color_hex": "#0d3a56",
+    "color_hex": "#fff5c3",
     "name_cn": "皮丘"
   },
   {
@@ -2068,11 +2068,11 @@
     "name": "cleffa",
     "img": "assets/pokemon_200_silhouettes/173.png",
     "color_rgb": [
-      250,
-      211,
-      201
+      255,
+      215,
+      205
     ],
-    "color_hex": "#fad3c9",
+    "color_hex": "#ffd7cd",
     "name_cn": "皮宝宝"
   },
   {
@@ -2080,11 +2080,11 @@
     "name": "igglybuff",
     "img": "assets/pokemon_200_silhouettes/174.png",
     "color_rgb": [
-      252,
-      223,
-      224
+      255,
+      225,
+      225
     ],
-    "color_hex": "#fcdfe0",
+    "color_hex": "#ffe1e1",
     "name_cn": "宝宝丁"
   },
   {
@@ -2092,11 +2092,11 @@
     "name": "togepi",
     "img": "assets/pokemon_200_silhouettes/175.png",
     "color_rgb": [
-      240,
-      225,
-      183
+      215,
+      215,
+      205
     ],
-    "color_hex": "#f0e1b7",
+    "color_hex": "#d7d7cd",
     "name_cn": "波克比"
   },
   {
@@ -2104,11 +2104,11 @@
     "name": "togetic",
     "img": "assets/pokemon_200_silhouettes/176.png",
     "color_rgb": [
-      229,
-      242,
-      224
+      235,
+      245,
+      225
     ],
-    "color_hex": "#e5f2e0",
+    "color_hex": "#ebf5e1",
     "name_cn": "波克基古"
   },
   {
@@ -2116,11 +2116,11 @@
     "name": "natu",
     "img": "assets/pokemon_200_silhouettes/177.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      135,
+      195,
+      85
     ],
-    "color_hex": "#000000",
+    "color_hex": "#87c355",
     "name_cn": "天然雀"
   },
   {
@@ -2128,11 +2128,11 @@
     "name": "xatu",
     "img": "assets/pokemon_200_silhouettes/178.png",
     "color_rgb": [
-      117,
-      159,
-      71
+      215,
+      225,
+      235
     ],
-    "color_hex": "#759f47",
+    "color_hex": "#d7e1eb",
     "name_cn": "天然鸟"
   },
   {
@@ -2140,11 +2140,11 @@
     "name": "mareep",
     "img": "assets/pokemon_200_silhouettes/179.png",
     "color_rgb": [
-      196,
-      183,
-      153
+      195,
+      185,
+      155
     ],
-    "color_hex": "#c4b799",
+    "color_hex": "#c3b99b",
     "name_cn": "咩利羊"
   },
   {
@@ -2152,11 +2152,11 @@
     "name": "flaaffy",
     "img": "assets/pokemon_200_silhouettes/180.png",
     "color_rgb": [
-      242,
-      163,
-      186
+      175,
+      185,
+      185
     ],
-    "color_hex": "#f2a3ba",
+    "color_hex": "#afb9b9",
     "name_cn": "茸茸羊"
   },
   {
@@ -2164,11 +2164,11 @@
     "name": "ampharos",
     "img": "assets/pokemon_200_silhouettes/181.png",
     "color_rgb": [
-      242,
-      203,
-      84
+      245,
+      205,
+      85
     ],
-    "color_hex": "#f2cb54",
+    "color_hex": "#f5cd55",
     "name_cn": "电龙"
   },
   {
@@ -2176,11 +2176,11 @@
     "name": "bellossom",
     "img": "assets/pokemon_200_silhouettes/182.png",
     "color_rgb": [
-      186,
-      208,
-      151
+      245,
+      215,
+      125
     ],
-    "color_hex": "#bad097",
+    "color_hex": "#f5d77d",
     "name_cn": "美丽花"
   },
   {
@@ -2188,11 +2188,11 @@
     "name": "marill",
     "img": "assets/pokemon_200_silhouettes/183.png",
     "color_rgb": [
-      77,
-      183,
-      232
+      75,
+      185,
+      235
     ],
-    "color_hex": "#4db7e8",
+    "color_hex": "#4bb9eb",
     "name_cn": "玛力露"
   },
   {
@@ -2200,11 +2200,11 @@
     "name": "azumarill",
     "img": "assets/pokemon_200_silhouettes/184.png",
     "color_rgb": [
-      62,
-      157,
-      204
+      65,
+      155,
+      205
     ],
-    "color_hex": "#3e9dcc",
+    "color_hex": "#419bcd",
     "name_cn": "玛力露丽"
   },
   {
@@ -2212,11 +2212,11 @@
     "name": "sudowoodo",
     "img": "assets/pokemon_200_silhouettes/185.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      165,
+      125,
+      105
     ],
-    "color_hex": "#000000",
+    "color_hex": "#a57d69",
     "name_cn": "树才怪"
   },
   {
@@ -2224,11 +2224,11 @@
     "name": "politoed",
     "img": "assets/pokemon_200_silhouettes/186.png",
     "color_rgb": [
-      139,
-      199,
-      90
+      135,
+      195,
+      95
     ],
-    "color_hex": "#8bc75a",
+    "color_hex": "#87c35f",
     "name_cn": "蚊香蛙皇"
   },
   {
@@ -2236,11 +2236,11 @@
     "name": "hoppip",
     "img": "assets/pokemon_200_silhouettes/187.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      245,
+      145,
+      175
     ],
-    "color_hex": "#000000",
+    "color_hex": "#f591af",
     "name_cn": "毽子草"
   },
   {
@@ -2248,11 +2248,11 @@
     "name": "skiploom",
     "img": "assets/pokemon_200_silhouettes/188.png",
     "color_rgb": [
-      119,
-      160,
-      71
+      135,
+      195,
+      85
     ],
-    "color_hex": "#77a047",
+    "color_hex": "#87c355",
     "name_cn": "毽子花"
   },
   {
@@ -2260,11 +2260,11 @@
     "name": "jumpluff",
     "img": "assets/pokemon_200_silhouettes/189.png",
     "color_rgb": [
-      116,
-      142,
-      200
+      115,
+      145,
+      205
     ],
-    "color_hex": "#748ec8",
+    "color_hex": "#7391cd",
     "name_cn": "毽子棉"
   },
   {
@@ -2272,11 +2272,11 @@
     "name": "aipom",
     "img": "assets/pokemon_200_silhouettes/190.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      165,
+      125,
+      185
     ],
-    "color_hex": "#000000",
+    "color_hex": "#a57db9",
     "name_cn": "长尾怪手"
   },
   {
@@ -2284,11 +2284,11 @@
     "name": "sunkern",
     "img": "assets/pokemon_200_silhouettes/191.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      235,
+      215,
+      105
     ],
-    "color_hex": "#000000",
+    "color_hex": "#ebd769",
     "name_cn": "向日种子"
   },
   {
@@ -2296,11 +2296,11 @@
     "name": "sunflora",
     "img": "assets/pokemon_200_silhouettes/192.png",
     "color_rgb": [
-      249,
-      242,
-      174
+      165,
+      205,
+      155
     ],
-    "color_hex": "#f9f2ae",
+    "color_hex": "#a5cd9b",
     "name_cn": "向日花怪"
   },
   {
@@ -2308,11 +2308,11 @@
     "name": "yanma",
     "img": "assets/pokemon_200_silhouettes/193.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      215,
+      95,
+      75
     ],
-    "color_hex": "#000000",
+    "color_hex": "#d75f4b",
     "name_cn": "蜻蜻蜓"
   },
   {
@@ -2320,11 +2320,11 @@
     "name": "wooper",
     "img": "assets/pokemon_200_silhouettes/194.png",
     "color_rgb": [
-      151,
-      199,
+      155,
+      205,
       225
     ],
-    "color_hex": "#97c7e1",
+    "color_hex": "#9bcde1",
     "name_cn": "乌波"
   },
   {
@@ -2332,11 +2332,11 @@
     "name": "quagsire",
     "img": "assets/pokemon_200_silhouettes/195.png",
     "color_rgb": [
-      128,
-      163,
-      178
+      155,
+      205,
+      225
     ],
-    "color_hex": "#80a3b2",
+    "color_hex": "#9bcde1",
     "name_cn": "沼王"
   },
   {
@@ -2345,10 +2345,10 @@
     "img": "assets/pokemon_200_silhouettes/196.png",
     "color_rgb": [
       215,
-      186,
-      204
+      185,
+      205
     ],
-    "color_hex": "#d7bacc",
+    "color_hex": "#d7b9cd",
     "name_cn": "太阳伊布"
   },
   {
@@ -2356,11 +2356,11 @@
     "name": "umbreon",
     "img": "assets/pokemon_200_silhouettes/197.png",
     "color_rgb": [
-      71,
-      78,
-      80
+      75,
+      75,
+      85
     ],
-    "color_hex": "#474e50",
+    "color_hex": "#4b4b55",
     "name_cn": "月亮伊布"
   },
   {
@@ -2368,11 +2368,11 @@
     "name": "murkrow",
     "img": "assets/pokemon_200_silhouettes/198.png",
     "color_rgb": [
-      43,
+      45,
       65,
       85
     ],
-    "color_hex": "#2b4155",
+    "color_hex": "#2d4155",
     "name_cn": "黑暗鸦"
   },
   {
@@ -2380,11 +2380,11 @@
     "name": "slowking",
     "img": "assets/pokemon_200_silhouettes/199.png",
     "color_rgb": [
-      204,
-      140,
+      205,
+      145,
       135
     ],
-    "color_hex": "#cc8c87",
+    "color_hex": "#cd9187",
     "name_cn": "呆呆王"
   },
   {
@@ -2392,11 +2392,11 @@
     "name": "misdreavus",
     "img": "assets/pokemon_200_silhouettes/200.png",
     "color_rgb": [
-      0,
-      0,
-      0
+      95,
+      135,
+      155
     ],
-    "color_hex": "#000000",
+    "color_hex": "#5f879b",
     "name_cn": "梦妖"
   }
 ]

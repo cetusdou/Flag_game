@@ -50,7 +50,7 @@ function enterGameScope(scope) {
         enableBtn('btn-mode-1', 'mode_1', '📅', '每日挑战', '看国旗，猜首都', '20');
         enableBtn('btn-mode-2', 'flag_guess', '🏳️', '猜国旗', '选择模式开始挑战', '--');
         enableBtn('btn-mode-3', 'mode_2', '🧩', '形状挑战', '看剪影，猜国家', '30');
-        enableBtn('btn-mode-all', 'airport', '✈️', '猜机场', '看机场图，猜名称', '20');
+        enableBtn('btn-mode-all', 'airport', '✈️', '猜机场', '看机场图，猜名称', '10');
         const compendiumBtn = document.getElementById('compendium-btn');
         const pkModeBtn = document.getElementById('pk-mode-btn');
         if (compendiumBtn) compendiumBtn.style.display = 'flex';
@@ -82,7 +82,7 @@ function enterGameScope(scope) {
         if (compendiumBtn) compendiumBtn.style.display = 'flex';
         if (pkModeBtn) pkModeBtn.style.display = 'flex';
     } else if (isPokemon) {
-        document.getElementById('menu-title').textContent = "⚡ 宝可梦挑战";
+        document.getElementById('menu-title').textContent = "👾 异世界挑战";
         const pokemonCount = window.GameData.dbPokemon ? window.GameData.dbPokemon.length : 0;
         document.getElementById('menu-subtitle').textContent = `收录 ${pokemonCount} 个宝可梦`;
         enableBtn('btn-mode-1', 'pokemon', '⚡', '猜宝可梦', '看剪影，猜宝可梦', '20');

@@ -1,218 +1,230 @@
-# import requests
-# from PIL import Image
-# from io import BytesIO
-# import os
-# import json
-# import time
-# from collections import Counter
-
-# # --- ⚙️ 配置 ---
-# # 图片保存目录
-# IMG_DIR = "./assets/pokemon_200_silhouettes"
-# # 数据保存目录
-# DATA_DIR = "./data"
-# os.makedirs(IMG_DIR, exist_ok=True)
-# os.makedirs(DATA_DIR, exist_ok=True)
-
-# # 目标数量：前 200 只 (最经典的范围)
-# TARGET_COUNT = 200
-
-# # API 设置
-# URL_API = "https://pokeapi.co/api/v2/pokemon/{id}"
-# IMG_SOURCE_KEY = "official-artwork"
-
-# # --- 🎨 智能颜色算法 (复用之前的逻辑) ---
-
-# def is_whiteish(rgb, threshold=240):
-#     """判断颜色是否太接近白色 (阈值调高到240，过滤掉浅灰)"""
-#     r, g, b = rgb
-#     return r > threshold and g > threshold and b > threshold
-
-# def get_dominant_color_smart(img_rgba):
-#     """提取主色调，智能跳过白色背景/身体"""
-#     pixels = img_rgba.getdata()
-#     valid_colors = []
-    
-#     for r, g, b, a in pixels:
-#         # 严格过滤半透明像素
-#         if a > 220: 
-#             valid_colors.append((r, g, b))
-            
-#     if not valid_colors:
-#         return (30, 30, 30) # 兜底黑
-        
-#     # 取前 10 名候选色
-#     top_candidates = Counter(valid_colors).most_common(10)
-    
-#     final_color = (30, 30, 30) # 默认深灰，比纯黑好看一点
-    
-#     for color, count in top_candidates:
-#         if not is_whiteish(color):
-#             final_color = color
-#             break
-            
-#     return final_color
-
-# # --- 🦕 核心处理逻辑 ---
-
-# def process_pokemon(poke_id):
-#     """下载 -> 提取颜色 -> 生成剪影 -> 返回数据字典"""
-#     try:
-#         # 1. 请求 API
-#         r = requests.get(URL_API.format(id=poke_id), timeout=5)
-#         if r.status_code != 200:
-#             print(f"⚠️ ID {poke_id} API 请求失败")
-#             return None
-            
-#         data = r.json()
-#         name = data['name']
-#         img_url = data['sprites']['other']['official-artwork']['front_default']
-        
-#         if not img_url:
-#             return None
-
-#         # 2. 下载图片
-#         r_img = requests.get(img_url, timeout=10)
-#         img_original = Image.open(BytesIO(r_img.content)).convert("RGBA")
-        
-#         # 3. 计算颜色
-#         dominant_rgb = get_dominant_color_smart(img_original)
-        
-#         # 4. 生成剪影
-#         alpha = img_original.getchannel('A')
-#         # 创建纯色剪影
-#         silhouette = Image.new("RGBA", img_original.size, (*dominant_rgb, 255))
-#         silhouette.putalpha(alpha)
-        
-#         # 5. 保存图片
-#         # 文件名格式: 001.png, 025.png (保持短小，方便前端调用)
-#         filename = f"{poke_id:03d}.png"
-#         save_path = f"{IMG_DIR}/{filename}"
-#         silhouette.save(save_path)
-        
-#         print(f"✅ [{poke_id:03d}] {name:<12} -> Color: {dominant_rgb}")
-        
-#         # 6. 返回数据结构
-#         return {
-#             "id": poke_id,
-#             "name": name, # 英文名 (前端可以用映射表转中文)
-#             "img": f"assets/pokemon_200_silhouettes/{filename}",
-#             "color_rgb": dominant_rgb,
-#             "color_hex": '#{:02x}{:02x}{:02x}'.format(*dominant_rgb) # 顺便生成 HEX 颜色码
-#         }
-
-#     except Exception as e:
-#         print(f"❌ ID {poke_id} 处理出错: {e}")
-#         return None
-
-# # --- 🚀 主程序 ---
-# if __name__ == "__main__":
-#     print(f"🚀 开始生成前 {TARGET_COUNT} 只宝可梦的智能剪影...")
-    
-#     all_pokemon_data = []
-    
-#     for pid in range(1, TARGET_COUNT + 1):
-#         result = process_pokemon(pid)
-#         if result:
-#             all_pokemon_data.append(result)
-        
-#         # 稍微延时，避免 API 限制
-#         # time.sleep(0.05)
-
-#     # 保存 JSON 索引文件
-#     json_path = f"{DATA_DIR}/pokemon_data.json"
-#     with open(json_path, "w", encoding='utf-8') as f:
-#         json.dump(all_pokemon_data, f, ensure_ascii=False, indent=2)
-        
-#     print("-" * 30)
-#     print(f"🎉 任务完成！")
-#     print(f"📂 图片位置: {IMG_DIR}")
-#     print(f"📄 数据文件: {json_path}")
-#     print(f"📊 共生成: {len(all_pokemon_data)} 条数据")
-
 import json
 import requests
+from PIL import Image
+from io import BytesIO
 import os
-import time
+from collections import Counter
 
 # --- ⚙️ 配置 ---
-JSON_PATH = "./data/pokemon_data.json"
-OUTPUT_PATH = "./data/pokemon_data_cn.json" # 为了安全，我们存个新文件，你也可以覆盖原文件
+# 读取你刚刚生成的带中文的 JSON
+INPUT_JSON = "./data/pokemon_data.json"
+# 保存回同一个文件（覆盖更新）
+OUTPUT_JSON = "./data/pokemon_data.json"
+# 图片目录 (需要重新生成图片，因为旧的可能是黑的)
+IMG_DIR = "./assets/pokemon_200_silhouettes"
 
-# API: 获取物种信息 (包含多语言名字)
-URL_SPECIES = "https://pokeapi.co/api/v2/pokemon-species/{id}"
+# API 地址
+URL_API = "https://pokeapi.co/api/v2/pokemon/{id}"
 
-def fetch_chinese_name(poke_id):
+# --- 🎨 升级版颜色算法 (V2) ---
+
+def get_dominant_color_v2(img_rgba):
     """
-    访问 Species API 获取 zh-Hans (简体中文) 名字
+    V2 算法特点：
+    1. 忽略透明像素
+    2. 忽略接近黑色的像素 (描边)
+    3. 忽略接近白色的像素 (高光/背景)
+    4. 颜色“分桶” (Binning): 把相近颜色归为一类，防止渐变色分散权重
     """
-    try:
-        r = requests.get(URL_SPECIES.format(id=poke_id), timeout=5)
-        if r.status_code != 200:
-            return None
+    # 缩略图加速处理 (100x100 足够分析颜色)
+    img_small = img_rgba.resize((100, 100), Image.Resampling.NEAREST)
+    pixels = img_small.getdata()
+    
+    valid_colors = []
+    
+    for r, g, b, a in pixels:
+        # 1. 忽略透明
+        if a < 200: continue
         
-        data = r.json()
-        names = data['names']
+        # 2. 忽略深色/黑色描边 (RGB均小于50)
+        if r < 50 and g < 50 and b < 50: continue
         
-        # 遍历名字列表，找到中文
-        for entry in names:
-            if entry['language']['name'] == 'zh-Hans': # 简体中文
-                return entry['name']
+        # 3. 忽略亮白/高光 (RGB均大于240)
+        if r > 240 and g > 240 and b > 240: continue
+        
+        # 4. 颜色分桶 (关键步骤)
+        # 将 RGB 值除以 10 取整，忽略细微的渐变差异
+        # 例如 (105, 200, 55) 和 (109, 202, 58) 都会变成 (10, 20, 5)
+        bin_r = (r // 10) * 10
+        bin_g = (g // 10) * 10
+        bin_b = (b // 10) * 10
+        
+        valid_colors.append((bin_r, bin_g, bin_b))
             
-    except Exception as e:
-        print(f"  ❌ API 请求错误: {e}")
+    if not valid_colors:
+        # 如果过滤完没剩啥颜色了（极其罕见），返回个默认灰
+        return (100, 100, 100)
+        
+    # 统计出现最多的“颜色桶”
+    most_common_bin = Counter(valid_colors).most_common(1)[0][0]
     
-    return None
+    # 为了颜色更好看，稍微提亮一点点 (可选)
+    final_color = (
+        min(most_common_bin[0] + 5, 255),
+        min(most_common_bin[1] + 5, 255),
+        min(most_common_bin[2] + 5, 255)
+    )
+    
+    return final_color
 
-def main():
-    print("🚀 启动中文名翻译补全程序...")
+# --- 🚀 主逻辑 ---
+
+def process_fix():
+    print("🚀 启动颜色修复程序 (去除黑色描边干扰)...")
     
-    # 1. 读取现有的 JSON 数据
-    if not os.path.exists(JSON_PATH):
-        print(f"❌ 找不到文件: {JSON_PATH}")
+    if not os.path.exists(INPUT_JSON):
+        print("❌ 找不到 JSON 文件")
         return
 
-    with open(JSON_PATH, "r", encoding='utf-8') as f:
-        pokemon_list = json.load(f)
-    
-    print(f"📊 读取到 {len(pokemon_list)} 条数据，准备开始翻译...")
-    
-    # 2. 遍历并翻译
-    # 使用 Session 可以稍微提高频繁请求的速度
+    with open(INPUT_JSON, "r", encoding='utf-8') as f:
+        data_list = json.load(f)
+        
+    print(f"📊 正在重新扫描 {len(data_list)} 只宝可梦...")
+
+    # 使用 session 复用连接
     with requests.Session() as session:
-        for index, p in enumerate(pokemon_list):
+        for p in data_list:
             poke_id = p['id']
-            en_name = p['name']
+            name = p.get('name_cn', p['name']) # 优先显示中文名用于日志
             
-            # 如果已经有中文名了，跳过 (方便断点续传)
-            if 'name_cn' in p:
-                continue
+            # 为了准确，我们需要重新下载原图来分析颜色
+            # (因为之前的脚本没有保存原图，只保存了剪影)
+            try:
+                # 1. 重新获取图片 URL
+                # 这里为了快，直接拼 URL 规则，不调 API 查 URL 了
+                img_url = f"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{poke_id}.png"
+                
+                r = session.get(img_url, timeout=5)
+                if r.status_code != 200:
+                    print(f"⚠️ ID {poke_id} 图片下载失败")
+                    continue
+                
+                img_original = Image.open(BytesIO(r.content)).convert("RGBA")
+                
+                # 2. 🔥重新计算颜色
+                new_rgb = get_dominant_color_v2(img_original)
+                new_hex = '#{:02x}{:02x}{:02x}'.format(*new_rgb)
+                
+                # 检查是否变了
+                old_hex = p.get('color_hex', '#000000')
+                if old_hex != new_hex:
+                    print(f"🔧 修复 [{poke_id:03d}] {name}: {old_hex} -> {new_hex}")
+                else:
+                    # print(f"✅ [{poke_id:03d}] {name} 颜色无变化")
+                    pass
+                
+                # 3. 更新 JSON 数据
+                p['color_rgb'] = new_rgb
+                p['color_hex'] = new_hex
+                
+                # 4. 🔥重新生成剪影图 (覆盖旧的)
+                # 因为旧的可能是黑色的，必须重画
+                alpha = img_original.getchannel('A')
+                silhouette = Image.new("RGBA", img_original.size, (*new_rgb, 255))
+                silhouette.putalpha(alpha)
+                
+                # 保存覆盖
+                filename = f"{poke_id:03d}.png"
+                save_path = f"{IMG_DIR}/{filename}"
+                silhouette.save(save_path)
+                
+            except Exception as e:
+                print(f"❌ 处理出错 ID {poke_id}: {e}")
 
-            print(f"[{index+1}/{len(pokemon_list)}] 正在翻译 ID:{poke_id} {en_name} ...", end="")
-            
-            cn_name = fetch_chinese_name(poke_id)
-            
-            if cn_name:
-                p['name_cn'] = cn_name
-                print(f" ✅ -> {cn_name}")
-            else:
-                p['name_cn'] = en_name # 如果找不到，暂存英文名
-                print(f" ⚠️ 未找到中文，保留英文")
-            
-            # 礼貌延时，防止触发 API 速率限制
-            # time.sleep(0.1)
-
-    # 3. 保存结果
-    with open(OUTPUT_PATH, "w", encoding='utf-8') as f:
-        json.dump(pokemon_list, f, ensure_ascii=False, indent=2)
-
+    # 保存新的 JSON
+    with open(OUTPUT_JSON, "w", encoding='utf-8') as f:
+        json.dump(data_list, f, ensure_ascii=False, indent=2)
+        
     print("-" * 30)
-    print(f"🎉 翻译完成！")
-    print(f"📄 新文件已保存: {OUTPUT_PATH}")
-    
-    # 打印前几个看看效果
-    print("\n👀 数据预览:")
-    print(json.dumps(pokemon_list[:3], ensure_ascii=False, indent=2))
+    print(f"🎉 颜色修复完成！JSON 已更新。")
+    print(f"📂 请检查 {IMG_DIR} 下的图片是否变成了彩色。")
 
 if __name__ == "__main__":
-    main()
+    process_fix()
+
+# import json
+# import requests
+# import os
+# import time
+
+# # --- ⚙️ 配置 ---
+# JSON_PATH = "./data/pokemon_data.json"
+# OUTPUT_PATH = "./data/pokemon_data_cn.json" # 为了安全，我们存个新文件，你也可以覆盖原文件
+
+# # API: 获取物种信息 (包含多语言名字)
+# URL_SPECIES = "https://pokeapi.co/api/v2/pokemon-species/{id}"
+
+# def fetch_chinese_name(poke_id):
+#     """
+#     访问 Species API 获取 zh-Hans (简体中文) 名字
+#     """
+#     try:
+#         r = requests.get(URL_SPECIES.format(id=poke_id), timeout=5)
+#         if r.status_code != 200:
+#             return None
+        
+#         data = r.json()
+#         names = data['names']
+        
+#         # 遍历名字列表，找到中文
+#         for entry in names:
+#             if entry['language']['name'] == 'zh-Hans': # 简体中文
+#                 return entry['name']
+            
+#     except Exception as e:
+#         print(f"  ❌ API 请求错误: {e}")
+    
+#     return None
+
+# def main():
+#     print("🚀 启动中文名翻译补全程序...")
+    
+#     # 1. 读取现有的 JSON 数据
+#     if not os.path.exists(JSON_PATH):
+#         print(f"❌ 找不到文件: {JSON_PATH}")
+#         return
+
+#     with open(JSON_PATH, "r", encoding='utf-8') as f:
+#         pokemon_list = json.load(f)
+    
+#     print(f"📊 读取到 {len(pokemon_list)} 条数据，准备开始翻译...")
+    
+#     # 2. 遍历并翻译
+#     # 使用 Session 可以稍微提高频繁请求的速度
+#     with requests.Session() as session:
+#         for index, p in enumerate(pokemon_list):
+#             poke_id = p['id']
+#             en_name = p['name']
+            
+#             # 如果已经有中文名了，跳过 (方便断点续传)
+#             if 'name_cn' in p:
+#                 continue
+
+#             print(f"[{index+1}/{len(pokemon_list)}] 正在翻译 ID:{poke_id} {en_name} ...", end="")
+            
+#             cn_name = fetch_chinese_name(poke_id)
+            
+#             if cn_name:
+#                 p['name_cn'] = cn_name
+#                 print(f" ✅ -> {cn_name}")
+#             else:
+#                 p['name_cn'] = en_name # 如果找不到，暂存英文名
+#                 print(f" ⚠️ 未找到中文，保留英文")
+            
+#             # 礼貌延时，防止触发 API 速率限制
+#             # time.sleep(0.1)
+
+#     # 3. 保存结果
+#     with open(OUTPUT_PATH, "w", encoding='utf-8') as f:
+#         json.dump(pokemon_list, f, ensure_ascii=False, indent=2)
+
+#     print("-" * 30)
+#     print(f"🎉 翻译完成！")
+#     print(f"📄 新文件已保存: {OUTPUT_PATH}")
+    
+#     # 打印前几个看看效果
+#     print("\n👀 数据预览:")
+#     print(json.dumps(pokemon_list[:3], ensure_ascii=False, indent=2))
+
+# if __name__ == "__main__":
+#     main()

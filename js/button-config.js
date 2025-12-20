@@ -27,8 +27,7 @@ const BUTTON_METADATA = {
         'mode_1': { icon: '📅', title: '每日挑战', desc: '看国旗，猜首都', count: '20' },
         'flag_guess': { icon: '🏳️', title: '猜国旗', desc: '选择模式开始挑战', count: '--' },
         'mode_2': { icon: '🧩', title: '形状挑战', desc: '看剪影，猜国家', count: '30' },
-        'airport': { icon: '✈️', title: '猜机场', desc: '看机场图，猜名称', count: '20' },
-        'airport': { icon: '✈️', title: '猜机场', desc: '看机场图，猜名称', count: '20' },
+        'airport': { icon: '✈️', title: '猜机场', desc: '看机场图，猜名称', count: '10' },
         'sprint_menu': { icon: '⚡', title: '极速冲刺', desc: '选择难度开始挑战', count: '--' },
         'all': { icon: '♾️', title: '全图鉴', desc: '不重复，死磕到底', count: 'All' }
     },

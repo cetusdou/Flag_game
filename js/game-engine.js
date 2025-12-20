@@ -182,7 +182,7 @@ function startGame(modeKey) {
                 alert("⚠️ 机场数据未加载，请刷新页面重试。");
                 return;
             }
-            gameState.questionPool = refs.dbAirports.sort(() => Math.random() - 0.5).slice(0, 20);
+            gameState.questionPool = refs.dbAirports.sort(() => Math.random() - 0.5).slice(0, 10);
         }
         else if (modeKey === 'pk') {
             window.showPKSeedModal();
